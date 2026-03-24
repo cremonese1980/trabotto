@@ -1,0 +1,194 @@
+video:
+  id: YT_BULL_NEOFITI_001
+  author: Bull
+  series: principianti
+  playlist: "Trading per neofiti"
+  video_index: 1
+  title: "Introduzione al trading: perché è difficile e come iniziare"
+  duration_minutes: 15
+  published_at: UNKNOWN
+
+meta:
+  intent: "Impostare il mindset corretto e distruggere l’idea del trading come scommessa"
+  audience_level: neofiti
+  tone: ["diretto", "duro", "educativo"]
+  confidence: HIGH
+
+entities:
+  - id: BULL_PRINCIPIANTI_001
+    entity_type: RULE
+    scope: GLOBAL
+    severity: HARD
+
+    tags:
+      - psychology
+      - beginner
+      - education
+
+    source:
+      timecode: "00:14-01:01"
+
+    condition:
+      - user_view_of_trading == GAMBLING
+    action:
+      - BLOCK_REAL_TRADING
+
+    statement: "Il trading è un mestiere professionale e non una scommessa."
+
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: TREND | RANGE
+      session: ANY
+
+    rationale:
+      - "Bull sottolinea che il mercato punisce immediatamente l’improvvisazione."
+
+    notes:
+      - "Paragone esplicito con professioni ad alta responsabilità."
+
+  - id: BULL_PRINCIPIANTI_002
+    entity_type: RULE
+    scope: GLOBAL
+    severity: HARD
+
+    tags:
+      - psychology
+      - beginner
+      - education
+
+    source:
+      timecode: "00:30-00:41"
+
+    condition:
+      - expected_learning_time_months < 6
+    action:
+      - FORCE_LONG_TERM_LEARNING_PATH
+
+    statement: "La competenza nel trading richiede anni di pratica."
+
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: TREND | RANGE
+      session: ANY
+
+    rationale:
+      - "Bull dichiara 4 anni di studio prima di vivere di trading."
+
+    notes:
+      - "Serve disinnescare aspettative irrealistiche."
+
+  - id: BULL_PRINCIPIANTI_003
+    entity_type: GUIDELINE
+    scope: PRE_FILTER
+
+    tags:
+      - order_book
+      - education
+      - beginner
+
+    source:
+      timecode: "01:31-01:45"
+
+    statement: "L’apprendimento iniziale deve avvenire osservando il book senza operare."
+
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: RANGE
+      session: ANY
+
+    rationale:
+      - "Bull indica l’osservazione come esercizio gratuito e fondamentale."
+
+    notes:
+      - "Nessun capitale richiesto."
+
+  - id: BULL_PRINCIPIANTI_004
+    entity_type: SETUP
+    scope: MONITORING
+
+    tags:
+      - order_book
+      - liquidity
+      - range
+
+    source:
+      timecode: "01:42-03:12"
+
+    requirements:
+      - significant_book_volume == true
+
+    invalidations:
+      - book_volume_flat == true
+
+    statement: "Numeri grandi nel book indicano potenziali supporti o resistenze."
+
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: RANGE
+      session: ANY
+
+    rationale:
+      - "Bull mostra come raggruppare il book per renderlo leggibile."
+
+    notes:
+      - "Il book va rallentato per essere compreso."
+
+  - id: BULL_PRINCIPIANTI_005
+    entity_type: RULE
+    scope: TRADE_EXECUTION
+    severity: HARD
+
+    tags:
+      - risk_management
+      - beginner
+      - execution
+
+    source:
+      timecode: "04:08-04:31"
+
+    condition:
+      - trader_experience == BEGINNER
+    action:
+      - LIMIT_CAPITAL
+      - MAX_LEVERAGE_10
+      - USE_ISOLATED_MARGIN
+
+    statement: "Per i neofiti è consentito solo capitale minimo con leva massima 10 e margine isolato."
+
+    applicability:
+      timeframes: [1m]
+      market_regime: HIGH_VOL
+      session: ANY
+
+    rationale:
+      - "Bull vieta perdite grandi nella fase iniziale."
+
+    notes:
+      - "Hard stop implicito al 10%."
+
+  - id: BULL_PRINCIPIANTI_006
+    entity_type: WARNING
+    scope: GLOBAL
+
+    tags:
+      - psychology
+      - beginner
+
+    source:
+      timecode: "05:35-06:09"
+
+    statement: "La mentalità da scommessa non è ammessa."
+
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: TREND | RANGE
+      session: ANY
+
+    rationale:
+      - "Bull vuole un ambiente orientato al mestiere."
+
+    notes:
+      - "Reddit/Facebook citati come ambienti incompatibili."
+
+summary:
+  core_message: "Il trading è un mestiere difficile che richiede tempo, osservazione e disciplina; senza mindset corretto si viene espulsi dal mercato."
