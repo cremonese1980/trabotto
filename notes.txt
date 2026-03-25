@@ -30,11 +30,11 @@ https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
 
 video 1
 https://www.youtube.com/watch?v=Ad-s9vWQ53U&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=1
-https://www.youtube.com/watch?v=Ad-s9vWQ53U
+python ingest/src/transcribe.py "https://www.youtube.com/watch?v=Ad-s9vWQ53U" --model medium
 
-video 2
-https://www.youtube.com/watch?v=FTar9aXmBYs&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=2
+## video 2
+python ingest/src/transcribe.py "https://www.youtube.com/watch?v=FTar9aXmBYs" --model medium
 
-video 3
-https://www.youtube.com/watch?v=bEpWpvtJWDg&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=3
+## video 3
+python ingest/src/transcribe.py "https://www.youtube.com/watch?v=bEpWpvtJWDg" --model medium
 

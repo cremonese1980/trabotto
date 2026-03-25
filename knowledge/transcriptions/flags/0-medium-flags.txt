@@ -1,0 +1,89 @@
+# Low-confidence segments for: 0_La_tecnica_del_DAILY._Tutorial_su_come_sfruttare_questa_tecnica.mp3
+# Total flagged: 28
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[10:02-10:09] (confidence: -0.324)
+  "acqua quindi adesso andiamo a cercare qualcosa però questo per esempio si potrebbe andare a"
+
+[10:09-10:20] (confidence: -0.324)
+  "comprare quando arriva sulla qua 350 compra col daily poi dopo poi perché il rimbalzo lo vedi"
+
+[10:20-10:25] (confidence: -0.324)
+  "se inizia a lateralizzare va bene se poi dopo chiude sotto il 10 dopo c'è spazio fino a qua"
+
+[10:25-10:32] (confidence: -0.247)
+  "che potrebbe essere il loss quindi tu lo vai a chiudere direttamente prima. Ah hot aspetta aspetta"
+
+[10:32-10:37] (confidence: -0.247)
+  "andiamo a dire hot, hot dovrebbe essere interessante perché è un titolo che è salito tanto, infatti è"
+
+[10:37-10:45] (confidence: -0.247)
+  "sempre bello andare a vedere anche quelli che stanno perdendo ecco questo per esempio è interessante"
+
+[10:45-10:51] (confidence: -0.247)
+  "perché hot era salito tantissimo ok? quando è iniziato a scendere uno dice dove posso comprare?"
+
+[14:19-14:27] (confidence: -0.209)
+  "fondo l'ingresso poteva essere vicino al 60 so qua non si è avvicinato tanto però il 60 è"
+
+[14:27-14:35] (confidence: -0.209)
+  "sempre un ottimo ingresso in questo caso c'era da fare poco comunque nel mondo cripto anche quello"
+
+[14:35-14:40] (confidence: -0.209)
+  "azionario sono tante le possibilità non si va a studiare il daily ecco qua è un altro daily"
+
+[14:40-14:48] (confidence: -0.209)
+  "interessante non mi piacciono quando fa di tanti spike quindi c'è l'ombra molto distante qua per"
+
+[19:22-19:31] (confidence: -0.336)
+  "il metodo quindi io semplicemente col cellulare tempo perso tanto il giorno comunque anche molto"
+
+[19:31-19:40] (confidence: -0.336)
+  "prima era letto mi mettevo lì invece di contare le pecore guardavo i grafici dopo un po dopo che"
+
+[19:40-19:48] (confidence: -0.336)
+  "ne hai visto un centinaio ti viene comunque sonno e e no questo non va bene questo no in gaso qua"
+
+[20:39-20:50] (confidence: -0.181)
+  "vostro stop in questo caso se invece per esempio quando si va ecco per esempio se si fosse comprato"
+
+[20:50-21:00] (confidence: -0.181)
+  "ecco se avessimo comprato qua in questo caso il vostro stop è la seconda linea è il 10 ok se"
+
+[21:00-21:05] (confidence: -0.181)
+  "comprate qua e inizia a salire e non vi accontentate cioè quando non siete diciamo quando vedete"
+
+[21:05-21:10] (confidence: -0.233)
+  "questi spike non siete ingolositi da voler chiudere voi potete tenere fino a quando sta sopra il 10"
+
+[21:10-21:17] (confidence: -0.233)
+  "però capite che poi qua per esempio in quanto a fare questo spike super gigantesco il 10 guarda"
+
+[21:17-21:24] (confidence: -0.233)
+  "quanto è distante 36 rispetto ai 60 è quasi la metà tendenzialmente quando fa gli spike potevamo"
+
+[21:24-21:30] (confidence: -0.233)
+  "capire che questo spike non era uno spike massimo ma lo era dopo che era il doppio tendenzialmente"
+
+[21:30-21:35] (confidence: -0.233)
+  "infatti io non cerco comunque mai massimi io non aspetto quando lavoro col daily di andare a"
+
+[23:43-23:52] (confidence: -0.161)
+  "per fare questa tecnica comprando appunto con queste rotture se invece il nostro indice"
+
+[23:52-23:57] (confidence: -0.161)
+  "tendenzialmente sta scendendo allora dovete fare molta attenzione ok nel caso del crypto il nostro"
+
+[23:57-24:05] (confidence: -0.161)
+  "indice è il bitcoin quindi fin quando c'è il bitcoin che o lateralizza o va in un trend rialzista"
+
+[24:05-24:11] (confidence: -0.161)
+  "cioè che è quello che sta facendo adesso possiamo adottare questo sistema ok nel caso in cui invece"
+
+[27:09-27:17] (confidence: -0.287)
+  "i vostri stop e uscire c'è poco da fare ok quindi è una tecnica che è una tecnica che funziona ma"
+
+[27:17-27:22] (confidence: -0.287)
+  "bisogna stare attento a il sentimento di mercato in cui sia in questo momento"
+

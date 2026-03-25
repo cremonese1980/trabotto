@@ -1,0 +1,92 @@
+# Low-confidence segments for: 0_TERZO_TOCCO_Plus_e_Plus_ultra_Tecnica_di_Trading_Tutorial.mp3
+# Total flagged: 29
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[5:19-5:25] (confidence: -0.301)
+  "i massimi bene, per diventare plus plus, e poi magari possiamo cambiare nove, però"
+
+[5:25-5:30] (confidence: -0.301)
+  "ancora più trigger, cosa potrebbe esserci?"
+
+[6:23-6:30] (confidence: -0.253)
+  "terzo tocco, uno è a time frame 30 minuti, quindi già è potente di suo, due, ha un massimo"
+
+[6:30-6:36] (confidence: -0.253)
+  "di ieri che è già trigger, tre se abbiamo anche, ovviamente non è semplice poter trovare"
+
+[6:36-6:43] (confidence: -0.253)
+  "colore, ma sapiate che quello è un ulteriore trigger, quindi più trigger, no? Mettiamo"
+
+[6:43-6:49] (confidence: -0.253)
+  "più possibilità che questo possa esplodere, ovviamente se sembra di un time high, dopo"
+
+[8:13-8:20] (confidence: -0.302)
+  "che ha le cose, xRP non è detto che solo il coin si fanno movimenti belli, precisi,"
+
+[8:20-8:25] (confidence: -0.302)
+  "delle volte vedete, opererò anche su bitcoin, quando vedo che fa delle cose belle, pulite"
+
+[8:25-8:30] (confidence: -0.302)
+  "eccetera e gli altri l'hanno già anticipato, ho solo rimasto indietro, io vado anche su"
+
+[8:30-8:36] (confidence: -0.302)
+  "bitcoin, in questo caso xRP meraviglioso. E' un terzo tocco plus, sì, perché abbiamo"
+
+[8:36-8:42] (confidence: -0.302)
+  "questo massimo che l'ha fatto ieri, questa ombra indica che è stato fatto ieri, abbiamo"
+
+[34:52-35:08] (confidence: -1.203)
+  "ah perché ho loccato 2"
+
+[35:08-35:23] (confidence: -0.367)
+  "2, la cancellata. Allora mettiamo DailyTrump, noi non è che possiamo sapere che Trump stava per dire"
+
+[35:23-35:32] (confidence: -0.367)
+  "vediamo i primi 220 holder del Trump coin che verranno a cena con me dopo fare una candela,"
+
+[35:57-36:03] (confidence: -0.146)
+  "comprando, lo sappiamo grazie alle conformazioni. Poi testando i livelli, a un certo punto vediamo"
+
+[36:03-36:06] (confidence: -0.146)
+  "se viene messo in difficoltà qualcuno, e qua magari c'è qualcuno short che viene messo in"
+
+[36:06-36:12] (confidence: -0.146)
+  "difficoltà, risommano a quelli che devono comprare, abbiamo chi deve chiudere il short,"
+
+[36:12-36:16] (confidence: -0.146)
+  "a chi è in fomo e si creano delle candele gigantesche, anche senza sapere la notizia."
+
+[36:16-36:22] (confidence: -0.146)
+  "Noi le conformazioni ci servono per capire dove sono i soldi, dove stanno entrando,"
+
+[36:22-36:27] (confidence: -0.146)
+  "dove stanno andando. Solo con le conformazioni possiamo anticipare le notizie, perché chi"
+
+[38:13-38:20] (confidence: -0.24)
+  "trigger, che è un rischio, è sempre un rischio, perché è quando raggiungi il livello trigger,"
+
+[38:20-38:29] (confidence: -0.24)
+  "quindi anche qua, quando raggiungi precisamente un tick sopra il livello massimo, quello è dove"
+
+[38:29-38:34] (confidence: -0.24)
+  "deve partire tutto, ma purtroppo arriva una valanga, cioè se è trigger arriva una valanga,"
+
+[38:34-38:39] (confidence: -0.24)
+  "arriva tutti quelli che devono chiudere il short, tutti quelli che sono in fo, cioè si sommano,"
+
+[45:43-45:50] (confidence: -0.189)
+  "tranquillamente fatto un terzo tocco plus, ma andiamo a rompere un Viagra, nell'EMA 10, daily"
+
+[45:50-45:55] (confidence: -0.189)
+  "importante, dove ci possiamo trovare una candela gigantesca, quindi in quel caso la tecnica della"
+
+[45:55-46:00] (confidence: -0.189)
+  "bicicletta, cioè dove lasciamo correre, ci potrebbe stare, poi volete contentarvi della prima candela"
+
+[46:00-46:07] (confidence: -0.189)
+  "30 minuti perché vi fa già tra felici, benissimo, zero stress prima e chiudiamo, meglio è, ma capite"
+
+[46:07-46:12] (confidence: -0.189)
+  "che se abbiamo un daily particolare, cioè non è solo i massimi di ieri, è proprio un daily particolarmente"
+
