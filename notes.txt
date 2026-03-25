@@ -1,3 +1,6 @@
+https://my.telegram.org/apps
+
+
 # Setup (una volta)
 cd ~/dev
 python3 -m venv whisper-env

@@ -1,5 +1,8 @@
 tmp_audio
 .env
+env.example
+*.session
+*.session-journal
 
 HELP.md
 .gradle
