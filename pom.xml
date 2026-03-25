@@ -23,12 +23,12 @@
         <resilience4j.version>2.2.0</resilience4j.version>
     </properties>
 
-    <!--<modules>
-        <module>triagemate-ingest</module>
-        <module>triagemate-triage</module>
-        <module>triagemate-contracts</module>
-        <module>triagemate-test-support</module>
-    </modules>-->
+    <modules>
+        <module>trabotto-domain</module>
+        <module>trabotto-infrastructure</module>
+        <module>trabotto-application</module>
+        <module>trabotto-boot</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
