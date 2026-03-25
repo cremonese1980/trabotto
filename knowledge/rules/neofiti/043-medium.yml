@@ -1,0 +1,66 @@
+video:
+  id: YT_BULL_PRINCIPIANTI_043
+  series: principianti
+  title: "Trading per neofiti — episodio 043"
+  video_index: 43
+  duration_minutes: 16
+
+entities:
+  - id: BULL_P_43_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [leverage, risk_management, beginner]
+    source:
+      timecode: "00:00-07:13"
+    conditions:
+      - selected_leverage <= 10
+      - margin_type == ISOLATED
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Per neofiti Bull impone leva contenuta e margine isolato per limitare la perdita."
+    notes: "Valida simmetricamente anche per setup short."
+  - id: BULL_P_43_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [breakout, trigger, retest]
+    source:
+      timecode: "00:00-07:13"
+    conditions:
+      - price_breaks_marked_level == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La rottura di livello è trattata come trigger iniziale da confermare."
+    notes: "Bull richiede osservazione della reazione immediata dopo la rottura."
+  - id: BULL_P_43_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "00:00-01:00"
+    statement: "Il trading va affrontato come mestiere e non come scommessa."
+    rationale: "Riduce comportamenti impulsivi e aspettative irrealistiche."
+  - id: BULL_P_43_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "00:00-07:13"
+    statement: "Osservare il book nel tempo aiuta a riconoscere supporti e resistenze dinamiche."
+    rationale: "È formazione operativa ma senza soglie deterministiche complete."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 2
+  core_message: "Disciplina, gestione del rischio e lettura contestuale del mercato sono prioritarie per chi inizia."
