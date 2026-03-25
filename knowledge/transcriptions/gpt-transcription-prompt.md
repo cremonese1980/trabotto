@@ -1,14 +1,19 @@
-# GPT Prompt — Bull Transcript Rule Extraction v2.0
+# GPT Prompt — Bull Transcript Rule Extraction v4.0
 
-## Instructions for Gabriele
-1. Place this file in `knowledge/gpt-transcription-prompt.md`
-2. For Codex: "Read knowledge/gpt-transcription-prompt.md, then for each .txt in knowledge/transcriptions/ generate the corresponding .yml in knowledge/rules/"
-3. For manual GPT: paste the SYSTEM PROMPT section, then one transcription per message
-4. After processing, bring YAMLs to Claude for review
+## Instructions for Codex
+Read this file, then for each *-medium.txt file in both knowledge/transcriptions/neofiti/
+and knowledge/transcriptions/tecniche-di-trading/ (sorted by filename):
+1. Read the transcription
+2. Ignore *-medium-flags.txt files
+3. Extract trading rules following the format and rules below
+4. Save the output as knowledge/rules/neofiti/{same_filename_without_extension}.yml
+   or knowledge/rules/tecniche-di-trading/{same_filename_without_extension}.yml accordingly
+
+Process all files in order. Output ONLY valid YAML. No commentary, no markdown fences.
 
 ---
 
-## SYSTEM PROMPT
+## ROLE
 
 You are a **Trading Knowledge Engineer** for the Trabotto project.
 Your job: extract structured YAML rules from video transcriptions by a trading educator called "Bull".
@@ -20,84 +25,90 @@ The transcriptions come from **Whisper AI** transcriptions of Italian YouTube vi
 - Filler words ("ragazzi", "ok?", "bene", "detto ciò")
 - Repetitions and storytelling
 - Mix of operational content and motivational talk
-- Bull speaks colloquially — extract the RULES, not the style
 
 Your job is to extract ONLY what matters for an **automated trading system**.
 
-## TWO CATEGORIES OF ENTITIES — THIS IS CRITICAL
+## TWO CATEGORIES — THE LITMUS TEST
 
-### Category A: MACHINE-EXECUTABLE entities
-Rules/setups that a bot CAN evaluate using market data.
-These have **concrete, verifiable conditions** on: price, indicators (EMA, volume),
-order book, timeframe, candle patterns, percentage thresholds.
+For every potential entity, ask: **"Can a program with access to candle data, order book,
+indicators, and position state evaluate this condition WITHOUT human judgment?"**
 
-Examples of machine-executable conditions:
-- `price_above_ema60 == true`
-- `diff_24h_pct < -3.0`
-- `timeframe_in: [1m, 5m]`
-- `leverage <= 10`
-- `margin_type == ISOLATED`
-- `order_book_wall_detected == true`
-- `daily_close_below_ema10 == true`
+**YES → MACHINE_EXECUTABLE.** Example: `price_below_ema60 == true`
+**NO → CONTEXT_ONLY.** Example: "trading is a profession, not a gamble"
 
-### Category B: CONTEXT-ONLY entities
-Knowledge that is useful for AI RAG retrieval but NOT evaluable by a rule engine.
-These are about psychology, mindset, learning process, general wisdom,
-OR basic market mechanics that the bot handles internally (e.g., how order books work,
-how to cross the spread — the bot already knows this).
+### Specific cases that are ALWAYS CONTEXT_ONLY:
+- **Basic execution mechanics** ("to buy immediately hit the ask", "market buy executes against sellers").
+  The bot already knows how to execute orders. These are educational, not operational.
+- **Human psychology/mindset** ("don't gamble", "be patient", "it takes years")
+- **Vague qualitative** conditions without specific thresholds ("when the trend is strong", "if context is good")
+- **Internal system decisions** (`need_immediate_buy == true`, `execution_priority == IMMEDIATE`)
 
-Examples of context-only:
-- "Trading is a profession, not a gamble"
-- "It takes years to become profitable"
-- "Observe the order book for months before trading"
-- "To buy immediately you must hit the ask" (basic execution — bot handles this)
+### Specific cases that ARE MACHINE_EXECUTABLE:
+- Price vs indicator: `price_above_ema60 == true`
+- Candle patterns: `small_candle_detected == true`, `daily_close_below_ema10 == true`
+- Position state: `position_open == true && unrealized_pnl_pct > 0`
+- Configuration: `leverage <= 10`, `margin_type == ISOLATED`
+- Setup classification: `touch_count(level) >= 3`, `first_touch_day == yesterday`
+- BTC regime: `btc_price_below_ema60_daily == true`
 
 ## ENTITY ID FORMAT — GLOBALLY UNIQUE
-
-IDs MUST be unique across ALL videos. Format:
 
 ```
 BULL_{P|T}_{VIDEO_INDEX_2DIGIT}_{ENTITY_NUMBER_2DIGIT}
 ```
 
-Examples:
-- `BULL_P_01_01` — principianti, video 1, entity 1
-- `BULL_T_03_05` — tecniche, video 3, entity 5
-- `BULL_P_02_CTX_01` — principianti, video 2, context entity 1
-- `BULL_T_01_CTX_03` — tecniche, video 1, context entity 3
+Context-only entities:
+```
+BULL_{P|T}_{VIDEO_INDEX_2DIGIT}_CTX_{NN}
+```
 
-Video index comes from the filename or playlist position.
+Examples: `BULL_P_01_01`, `BULL_T_03_05`, `BULL_P_02_CTX_01`
 
-## VALID ENTITY TYPES (no others allowed)
+## VALID ENTITY TYPES — NO OTHERS ALLOWED
 
-For MACHINE_EXECUTABLE:
-- `RULE` — a deterministic rule with conditions → action
-- `SETUP` — a pattern/configuration that triggers entry evaluation
-- `INVALIDATION` — a condition that forces exit or blocks entry
+MACHINE_EXECUTABLE only:
+- `RULE` — deterministic condition → action
+- `SETUP` — pattern that triggers entry evaluation
+- `INVALIDATION` — condition that forces exit or blocks entry
 
-For CONTEXT_ONLY:
-- `GUIDELINE` — general advice, best practice
-- `WARNING` — something to avoid or watch out for
+CONTEXT_ONLY only:
+- `GUIDELINE` — advice, best practice
+- `WARNING` — something to avoid
 
-**Any other entity_type is INVALID. Do not invent new ones.**
-
-## STANDARD ACTIONS (use ONLY these for MACHINE_EXECUTABLE)
+## STANDARD ACTIONS — USE ONLY THESE FOR MACHINE_EXECUTABLE
 
 ```
-ENTER_LONG              — open a long position
-ENTER_SHORT             — open a short position
-EXIT_POSITION           — close the current position
-SKIP_TRADE              — do not enter this trade
+ENTER_LONG              — open long position
+ENTER_SHORT             — open short position
+EXIT_POSITION           — close current position
+SKIP_TRADE              — signal does NOT qualify, discard
 MOVE_SL_TO_BREAKEVEN    — move stop loss to entry price
-REDUCE_SIZE             — reduce position size (specify by how much in notes)
-TIGHTEN_TP              — lower the take profit target
-MONITOR_LEVEL           — watch a price level for reaction
-CLASSIFY_SETUP          — tag this signal as a specific setup type (specify name)
-WAIT                    — do not act yet, wait for confirmation
+REDUCE_SIZE             — reduce position size (detail in notes)
+TIGHTEN_TP              — adjust take profit closer
+MONITOR_LEVEL           — watch a price level, no trade yet
+CLASSIFY_SETUP          — tag signal as setup type (name in notes)
+WAIT                    — conditions PARTIALLY met, re-check next tick
 ```
 
-If an action doesn't fit these, pick the closest one and add detail in `notes`.
-Do NOT create custom verbose actions like `allow_long_entry_for_high_breakout_continuation`.
+### SKIP_TRADE vs WAIT — GET THIS RIGHT
+- **SKIP_TRADE**: Signal does NOT qualify. Wrong TF, wrong regime, missing prerequisites. Discard.
+  Example: "technique requires 30m but signal is 5m" → SKIP_TRADE
+- **WAIT**: Conditions are partially met, could become valid soon. Keep watching.
+  Example: "price approaching EMA10 but hasn't touched it yet" → WAIT
+- **When in doubt → SKIP_TRADE.**
+
+## TAGS — MANDATORY FIELD, NEVER OMIT
+
+Every entity MUST have a `tags` field with 2-5 keywords. This is NOT optional.
+Pick from this list (or add clearly relevant ones):
+
+```
+candelina, ema, ema5, ema10, ema60, ema223, breakout, retest, book,
+risk_management, stop_loss, take_profit, daily, scalping, trend,
+reversal, btc_index, position_sizing, terzo_tocco, invalidation,
+psychology, beginner, leverage, margin, pullback, continuation,
+regime_filter, all_time_high, trigger, candle_pattern
+```
 
 ## YAML FORMAT
 
@@ -106,128 +117,103 @@ video:
   id: YT_BULL_{SERIES}_{NNN}
   series: principianti | tecniche
   title: "Video title (infer from content if not stated)"
-  video_index: {number in playlist}
-  duration_minutes: {approximate from last timecode}
+  video_index: {number}
+  duration_minutes: {from last timecode}
 
 entities:
 
-  # === MACHINE-EXECUTABLE ENTITIES ===
-
+  # === MACHINE-EXECUTABLE ===
   - id: BULL_{P|T}_{VV}_{NN}
     entity_type: RULE | SETUP | INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER | LIQUIDITY_GATE | TRADE_EXECUTION | MONITORING
     severity: HARD | SOFT
-
+    tags: [keyword1, keyword2, keyword3]
     source:
       timecode: "MM:SS-MM:SS"
-
     conditions:
-      - condition_in_pseudo_code
-      - another_condition
-
+      - observable_condition_in_pseudo_code
     action:
-      - STANDARD_ACTION_FROM_LIST_ABOVE
-
-    stop_loss: "only if Bull states specific value (e.g., stop_loss_max_pct: 1.0)"
-    take_profit: "only if Bull states specific value"
-
+      - STANDARD_ACTION
+    stop_loss: "only if specific value given"
+    take_profit: "only if specific value given"
     applicability:
-      timeframes: []                 # ONLY if Bull explicitly mentions specific TFs
-      market_regime: []              # ONLY if Bull explicitly mentions regime
+      timeframes: []
+      market_regime: []
+    rationale: "One sentence"
+    notes: "Details, nuance (1-2 sentences)"
 
-    rationale: "Why Bull says this (1 sentence)"
-    notes: "Nuance, exceptions, details about the action (1-2 sentences max)"
-
-  # === CONTEXT-ONLY ENTITIES ===
-
+  # === CONTEXT-ONLY ===
   - id: BULL_{P|T}_{VV}_CTX_{NN}
     entity_type: GUIDELINE | WARNING
     category: CONTEXT_ONLY
     scope: GLOBAL
-
+    tags: [keyword1, keyword2]
     source:
       timecode: "MM:SS-MM:SS"
-
-    statement: "The operational insight in one sentence"
-    rationale: "Why this matters"
+    statement: "Insight in one sentence"
+    rationale: "Why it matters"
 
 summary:
   total_machine_executable: {count}
   total_context_only: {count}
-  core_message: "1-2 sentence summary of the video's main contribution"
+  core_message: "1-2 sentences"
 ```
 
-## RULES YOU MUST FOLLOW
+## EXTRACTION RULES
 
-1. **Be ruthless about category assignment.**
-   If a condition cannot be checked against market data → CONTEXT_ONLY. No exceptions.
-   "Don't gamble" → CONTEXT_ONLY.
-   "EMA60 acts as support" → MACHINE_EXECUTABLE (bot can check price vs EMA60).
-   "To buy immediately hit the ask" → CONTEXT_ONLY (basic execution mechanics).
+1. **Apply the litmus test rigorously.**
+   Basic order execution mechanics (market buy hits ask, market sell hits bid) → CONTEXT_ONLY.
+   These are how exchanges work, not trading rules.
 
 2. **Do NOT invent applicability.**
-   If Bull doesn't mention specific timeframes → leave `applicability.timeframes` empty.
-   If Bull doesn't mention market regime → leave `applicability.market_regime` empty.
-   Never fill these fields by assumption.
+   Empty lists if Bull doesn't explicitly state timeframes or regime.
 
 3. **Fix transcription errors silently.**
-   "l'Eva 10" → "leva 10" (leverage 10).
-   "M60" or "m60" → "EMA 60".
-   "la 10" → "EMA 10".
-   "la 60" → "EMA 60".
-   "la 223" → "EMA 223".
-   Don't mention the corrections, just apply them.
+   "l'Eva 10" → "leva 10". "M60"/"m60"/"la 60" → "EMA 60".
+   "la 10" → "EMA 10". "la 223" → "EMA 223".
 
-4. **Conditions must be pseudo-code, not prose.**
-   BAD: "When the market is going down a lot"
-   GOOD: `diff_24h_pct < -3.0` or `candle_direction == BEARISH`
+4. **Conditions = pseudo-code on observable data.**
+   BAD: `need_immediate_buy == true`
+   BAD: `directional_context_confirmed == true`
+   GOOD: `price_below_ema60 == true`
+   GOOD: `small_candle_detected == true`
 
-5. **Actions must use the standard list.**
-   BAD: `allow_long_entry_for_high_breakout_continuation`
-   GOOD: `ENTER_LONG` with notes explaining the context.
+5. **Use standard actions only. No verbose custom actions.**
 
-6. **Extract IMPLICIT rules too.**
-   If Bull consistently does something without naming it as a rule, capture it.
-   E.g., if he always checks BTC before entering → that's a rule.
+6. **Extract implicit rules.** If Bull always does something → capture it.
 
-7. **Merge redundant entities.**
-   If Bull says the same thing 3 times in different ways, extract ONE entity, not three.
+7. **Merge redundant entities.** Same rule 3 times → ONE entity.
 
-8. **For the `tecniche` series: expect more MACHINE_EXECUTABLE entities.**
-   For the `principianti` series: expect more CONTEXT_ONLY entities.
-   Don't force machine-executable where there isn't one.
+8. **principianti → more CONTEXT_ONLY. tecniche → more MACHINE_EXECUTABLE.**
 
-9. **SL/TP values: only if Bull gives specific numbers.**
-   "Stop loss max 1%" → include `stop_loss_max_pct: 1.0`
-   "Put a stop loss" (generic) → do NOT include SL field.
+9. **SL/TP only with specific numbers.** "max 1%" → include. "put a stop" → omit.
 
-10. **Strategies/conformazioni: use Bull's exact terminology.**
+10. **Use Bull's exact strategy names.**
     bomba, sismografo, viagra, ath500, cambiocolore, rottura10daily,
     bicicletta, ema223, tf30ema60, short, rialzi, shimano, bud,
     terzo tocco, terzo tocco plus, terzo tocco plus plus, candelina.
-    Don't rename or translate these.
 
-11. **Flag suspicious transcription errors.**
-    If a phrase seems garbled AND is operationally relevant, add to `transcription_flags`:
+11. **Tags are MANDATORY.** 2-5 per entity. Never omit.
+
+12. **Flag suspicious transcription errors** in operationally relevant passages only:
     ```yaml
     transcription_flags:
-      - timecode: "06:26-06:36"
-        original_text: "garbled text here"
-        issue: "Brief description of the problem"
+      - timecode: "06:26"
+        original_text: "garbled text"
+        issue: "Brief description"
     ```
-    ONLY flag errors in operationally relevant passages. Omit section if no flags needed.
+    Omit section if no flags.
 
-12. **Output ONLY valid YAML. No commentary, no explanations, no markdown fences.**
+13. **Output ONLY valid YAML.**
 
-## WHEN YOU RECEIVE A TRANSCRIPTION
+## PROCESS PER TRANSCRIPTION
 
-1. Read the entire transcription
-2. Note the video index from the filename (e.g., "3-medium.txt" → video_index: 3)
+1. Read entire transcription
+2. Note video index from filename
 3. Fix transcription errors mentally
-4. Identify all operational content
-5. Classify each as MACHINE_EXECUTABLE or CONTEXT_ONLY
-6. Structure into YAML following the format above
-7. Output ONLY the YAML
-
-Ready. Send the first transcription.
+4. For each candidate entity → litmus test
+5. Classify MACHINE_EXECUTABLE or CONTEXT_ONLY
+6. Standard actions, SKIP vs WAIT
+7. Add tags (MANDATORY)
+8. Output YAML only

@@ -1,0 +1,92 @@
+# Low-confidence segments for: 030_BINANCE_ICO_STAKING_TUTORIAL_CONVIENE_COSA_SONO_COME_FUNZIONA_COME_FARE_SCALPING_CON_BNB.mp3
+# Total flagged: 29
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:23-0:31] (confidence: -0.217)
+  "faccio ad avere ATA che sta facendo più 3.400% prima della quotazione. Che uno, ovviamente,"
+
+[0:31-0:36] (confidence: -0.217)
+  "vede più 3.000 e rotti, il primo giorno dice cavolo, io qua ci vorrei mettere le mani."
+
+[0:36-0:42] (confidence: -0.217)
+  "E invece non è così semplice. Allora, l'unico modo per aver prima... Allora,"
+
+[0:42-0:48] (confidence: -0.217)
+  "Bynes cosa fa? Bynes fa una selezione e trova questi progetti, queste nuove cripto da quotare."
+
+[5:28-5:35] (confidence: -0.082)
+  "qualsiasi altra ICO, che viene suddivisa per tutti quelli che hanno comprato BNB, però c'è già una"
+
+[5:35-5:42] (confidence: -0.082)
+  "prima fregatura, cioè non è che devi comprare BNB appena esce e poi dopo ti dà la percentuale in base ai BNB"
+
+[5:42-5:48] (confidence: -0.082)
+  "che tu hai comprato in quell'istante, no, Binance, visto che c'è una domanda disumana, quindi c'è una domanda"
+
+[5:48-5:55] (confidence: -0.082)
+  "veramente incredibilmente alta per poter avere questi ICO, quindi Binance dice, a me non piace che tu"
+
+[8:26-8:39] (confidence: -0.13)
+  "Poi, ricordatevi che BNB, c'è gente che ha milioni di dollari in BNB, milioni, non è che gente che ha 10.000 o c'è gente che ha milioni, ok?"
+
+[8:39-8:51] (confidence: -0.13)
+  "Che tiene milioni, quindi ovviamente avrà delle percentuali più grandi, cioè BNB vale tantissimo, cioè è terza in classifica per market cap,"
+
+[8:51-9:00] (confidence: -0.101)
+  "quindi ci sono persone che hanno milioni di dollari in BNB, quindi ovviamente quando c'è i primi minuti vedete delle quantità enormi,"
+
+[9:00-9:16] (confidence: -0.101)
+  "oltre alla società, quindi ATA che ufficialmente ha la sua percentuale, poi dà la percentuale di ATA per gli altri, ma ovviamente anche la sua di percentuale,"
+
+[9:16-9:23] (confidence: -0.141)
+  "quindi ha percentuali grossi che ovviamente ne approfitterà per vendere all'inizio, ovviamente una grande percentuale,"
+
+[9:23-9:30] (confidence: -0.141)
+  "c'è anche BNB che ovviamente ne profitta all'inizio perché sennò sono solo compratori in pratica, quindi ne profita per scaricarli,"
+
+[9:30-9:40] (confidence: -0.141)
+  "quindi scarica sia chi ha fatto il progetto, scarica anche BNB, ovviamente ci guadagna un botto di soldi che fa il 4.000%,"
+
+[11:12-11:27] (confidence: -0.188)
+  "che fa delle oscillazioni pazzesche, cioè era a 680 un mese fa, cioè inizio maggio, cioè a maggio era a 680, adesso siamo a, era nato a 260 e adesso era anzi,"
+
+[11:27-11:40] (confidence: -0.188)
+  "era nato molto più giù, era nato a 207, 210 e adesso siamo a 400, cioè se holdi hai detto ok compro BNB qua perché voglio holdare per partecipare all'ICO, intanto hai perso il 50% quasi,"
+
+[12:03-12:24] (confidence: -0.166)
+  "Quindi per chi fa scoping come me invece cosa fa? Allora andiamo a vedere il daily di bitcoin, ok, daily di bitcoin vediamo quanto siamo distanti dalla 60, ok, il daily di BNB invece siamo arrivati sulla 60, ok, siamo arrivati sulla 60 dopo che hanno detto dell'ICO, ok, quindi c'è stata questa salita, nonostante la debolezza, ok,"
+
+[12:24-12:39] (confidence: -0.183)
+  "è vero che bitcoin comunque ha rimbalzato, riuscito a andare a fare questa giornata sopra al 10, ma abbiamo visto come è stato amplificato e come è andato fino alla 60, ok, che ha tenuto benissimo, vedi, il media mobile 60 è il top,"
+
+[12:39-12:59] (confidence: -0.125)
+  "comunque ha tenuto, ha fatto da resistenza benissimo, ok, bene, adesso in teoria dovrebbe esserci la debolezza e scendere sotto, ovviamente bitcoin permettendo, cioè se bitcoin è debole, BNB scenderà di più di bitcoin, se bitcoin invece è forte,"
+
+[12:59-13:19] (confidence: -0.204)
+  "se bitcoin invece salirà meno di bitcoin, ok, perché? Perché c'è questo meccanismo dove tutti quelli che adesso non gli interessa più data vendono, ok, e non gli interessa più fare stock vendono, poi magari fa una settimana ricomprono BNB aspettando il prossimo ICO e dopo loro potranno ricomprare, ok, quindi dopo già è diverso."
+
+[13:19-13:38] (confidence: -0.21)
+  "Io stamattina appunto ho postato su Telegram, cosa ho fatto? Andiamo a vedere, primo minuto, alle 8 del mattino andiamo a vedere se riusciamo a ritracciare, ecco sì, qua, 8, quotazione, alle 8 c'è stata la quotazione di ATTA,"
+
+[13:38-14:00] (confidence: -0.136)
+  "qua era prima delle 8 quindi io non ho fatto questo short qua, anche perché poi era sopra la 60, poi alle 8 aperto la quotazione è salito BNB, alla prima formazione short, cioè rompendo qua, io sono dato short e ho chiuso qua più o meno, 95 così, quindi ho fatto tutta questa posizione short, ok,"
+
+[14:00-14:26] (confidence: -0.159)
+  "poi ovviamente il trend è proseguito quindi avrei potuto guadagnare molto di più ma io me lo tengo più su contente, poi in teoria dovrebbe continuare a scendere, ovviamente bitcoin permettendo, dovrebbe amplificare quello che fa bitcoin, ok, adesso amplifica a ribasso quello che fa bitcoin, prima amplifica al rialzo quello che fa bitcoin, ok, quindi se scende scende meno, se sale sale di più, ok, questo è un po' il ragionamento."
+
+[14:26-14:54] (confidence: -0.171)
+  "E questo è un po' il funzionamento base, poi non vi sto a spiegare, tanto troverete mille video su come tecnicamente andare a fare l'ICO, io tanto ve lo sconsiglio, l'ho fatto capire perché, poi l'unico modo diciamo per consigliarvelo è che se voi state holdando BNB, DOT o BUSB, altre volte ci sono altri cripto con cui potete prendere, quindi se state già holdando,"
+
+[14:54-15:24] (confidence: -0.135)
+  "poi vedete che c'è un nuovo ICO e con quello potete avere una percentuale, ovviamente fatelo, tanto è gratis, vi danno anche una minima parte ma qualcosa vi danno, quindi partecipate, andate nella sezione launchpad, ok, sezione launchpad e partecipate, cliccate, è facile, è intuitivo, altrimenti io ve lo sconsiglio perché avete visto le percentuali sono troppo basse e la moneta stessa, la cripto stessa si muove troppo rispetto a quello che poi è quello che tu vai a guadagnare,"
+
+[15:41-16:01] (confidence: -0.145)
+  "Bene, spero di essere stato chiaro, se non ho chiarito un punto scrivetelo nei commenti, così magari faccio la seconda versione, perché di solito vi faccio così, non preparandomi nulla, parlo più o meno di quello che penso, poi magari voi avete qualche dettaglio che non ho calcolato, che magari vado a rifare nel secondo video."
+
+[16:01-16:24] (confidence: -0.124)
+  "Bene, iscrivetevi al canale, commentate, poi c'è anche Telegram, Discord e ricordatevi, mercoledì ore 20, quindi su YouTube live streaming, dalle 20 alle 22, si fa la seconda puntata di live dove impariamo a fare scalping, ok?"
+
+[16:24-16:34] (confidence: -0.145)
+  "Tutti insieme, impariamo come si fa e studiamo gli ingressi, riuscite a rispondere alla vostra domanda insomma. A mercoledì, ciao ragazzi."
+

@@ -1,0 +1,290 @@
+# Low-confidence segments for: 031_La_Psicologia_del_Trading_in_BULL_RUN_Come_dobbiamo_comportarci_e_cosa_evitare_di_fare_Parte_4.mp3
+# Total flagged: 95
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.76)
+  "ciao trade, stiate su scappi in the bull come gestire la bull run psicologia 4 sigla"
+
+[0:07-0:36] (confidence: -0.337)
+  "allora parliamo di bull run parliamo di come gestire i nostri trade in un momento"
+
+[0:36-0:45] (confidence: -0.231)
+  "completamente diverso rispetto a mesi fa insomma adesso accadono ci sono dei movimenti estremi"
+
+[0:45-0:56] (confidence: -0.231)
+  "qua siamo su qualcosa che ha aperto oggi nuovo ICO più 14 mila per cento capiamo che appunto"
+
+[0:56-1:03] (confidence: -0.231)
+  "sono dei movimenti strani ieri c'è stato un pump disumano mai visto prima che ha fatto il"
+
+[1:30-1:34] (confidence: -0.281)
+  "che fra l'altro faccia anch'io e vi voglio capire voglio partire ecco partire direttamente"
+
+[1:34-1:42] (confidence: -0.281)
+  "subito dal mio errore e poi dopo parliamo anche di come come gestire al meglio la bull run per"
+
+[1:42-1:48] (confidence: -0.281)
+  "capiremente psicologicamente è molto difficile sotto un certo aspetto e adesso vi farò capire"
+
+[1:48-1:57] (confidence: -0.281)
+  "quale allora il primo giorno ICO di dar ha aperto tipo 20.000 30.000 per cento anzi 30.000 per cento"
+
+[5:21-5:26] (confidence: -0.193)
+  "il 1000 per cento 1000 per cento in tre candele ma non è appunto come dicevo un pump da poco"
+
+[5:26-5:32] (confidence: -0.193)
+  "perché ha fatto tanti volumi adesso io la barra dei volumi mi rifiuto di averlo sotto ma comunque"
+
+[5:32-5:36] (confidence: -0.193)
+  "ha fatto tanti volumi altrimenti io neanche io sarei entrato io ovviamente l'ho visto dopo"
+
+[5:36-5:41] (confidence: -0.193)
+  "leggevo su telegram anche erano tutti impazziti e dopo ho fatto un paio di operazioni però vi"
+
+[5:41-5:48] (confidence: -0.193)
+  "voglio far capire una cosa ok questo è un esempio bellissimo perché io ovviamente non mi son fidato"
+
+[11:39-11:43] (confidence: -0.32)
+  "fare qualsiasi cosa aspettate un bellissimo bad spencer qual è il problema aspettiamo un"
+
+[11:43-11:53] (confidence: -0.32)
+  "bellissimo incrocio adesso qua ero rimasto qua per esempio io ho fatto oggi ho fatto farmi due"
+
+[11:53-12:00] (confidence: -0.32)
+  "rimbalzi ho fatto rimbalzi dei minimi perché c'era il crollo bellissimo crollo di bitcoin io"
+
+[12:00-12:04] (confidence: -0.32)
+  "con bitcoin non me ne frega niente inare short mi interessa perché vecchio rimbalzi che ho"
+
+[12:04-12:09] (confidence: -0.342)
+  "fatto beccare i due che scendevano di più il primo era manna ha fatto piccolo operazione"
+
+[12:09-12:15] (confidence: -0.342)
+  "da 167 usdt e poi dopo ho beccato il peggiore di tutti cioè shiba ha beccato rimbalzo fatto"
+
+[12:15-12:22] (confidence: -0.342)
+  "un bel 600 da 34 fine qual è il problema chi se ne frega dobbiamo spiegare beccare le conformazioni"
+
+[12:22-12:29] (confidence: -0.342)
+  "belle basta fine chi se ne frega se è qualcosa che sta facendo più 100% 13.000% noi dobbiamo"
+
+[12:29-12:34] (confidence: -0.156)
+  "fare un mestiere ragazzi se volete essere profitevoli e vi voglio trasformare in trader"
+
+[12:34-12:41] (confidence: -0.156)
+  "profitevoli ok diventiamo un gruppo il più grande gruppo di trader profitevoli al mondo ok"
+
+[12:41-12:50] (confidence: -0.156)
+  "semplicemente non fatevi fregare dall'adrenalina non fatevi fregare dal sistema non fatevi fregare"
+
+[12:50-13:00] (confidence: -0.193)
+  "dalle conformazioni che non sono belle pulite no è decise non facciamoci fregare basta 1 2 3"
+
+[13:00-13:04] (confidence: -0.193)
+  "operazioni al massimo che ci sono trades che fanno centinaia di operazioni io vi sto insegnando a"
+
+[13:04-13:14] (confidence: -0.193)
+  "farne 2 o 3 al giorno massimo ma belle ok ci sono i breakout che non funzionano ok se voi poi andate"
+
+[13:14-13:21] (confidence: -0.279)
+  "a cercare i break out ogni breakout per voi è da fare no beccate quello che ha più senso perché"
+
+[13:21-13:26] (confidence: -0.279)
+  "questo poi aveva senso non tommi nel daily questo aveva senso perché era il breakout sopra lema 60"
+
+[13:26-13:38] (confidence: -0.279)
+  "cos'è sta roba qua ecco ecco era il breakout sopra lema 60 il breakout sotto lema 60 non avrei mai"
+
+[13:38-13:43] (confidence: -0.279)
+  "fatto perché c'era subito lema 60 lì non mi sarei fidato qua è sotto lema 60 da troppo tempo"
+
+[15:01-15:09] (confidence: -0.177)
+  "due secondi ok perché non ha riposato non ha un appoggio questa è la differenza fra essere"
+
+[15:09-15:14] (confidence: -0.177)
+  "profittevoli o no riuscire in questo mestiere o no se voi siete quelli che appena fate un gain"
+
+[15:14-15:20] (confidence: -0.177)
+  "lo postate tutti i vostri amici fate le capriole indietro e dopo state talmente gasati che dopo"
+
+[15:20-15:25] (confidence: -0.177)
+  "fate subito dopo un'altra operazione poco più su dal breakout non riuscirete mai profittevoli"
+
+[15:25-15:32] (confidence: -0.183)
+  "ragazzi mai e soprattutto perderete soldi in un momento in cui dovete fare soldi hai visto"
+
+[15:32-15:38] (confidence: -0.183)
+  "cosa succede qua perché qua fa il 100% ma poi dopo scende normale noi dobbiamo solo cercare"
+
+[15:38-15:43] (confidence: -0.183)
+  "delle belle conformazioni che ci danno sicurezza specializzatevi in qualcosa in qualche tecnica"
+
+[15:43-15:48] (confidence: -0.183)
+  "avete visto quante tecniche ci sono una marea ce ne saranno un'altra marea che arrivano c'è"
+
+[15:48-15:51] (confidence: -0.183)
+  "il bull bot che vi danno a mano a selezionare adesso finalmente arrivano anche quelli col daily"
+
+[16:46-16:51] (confidence: -0.166)
+  "ok non siete a piazza fari siete su binance con centinaia centinaia di coppie e avete uno"
+
+[16:51-16:56] (confidence: -0.166)
+  "screener pazzesco che è il bull bot che vi dà una mano a cercare solo le cose belle ok questa è"
+
+[16:56-17:05] (confidence: -0.166)
+  "l'idea solo le cose belle ok solo le conformazioni belle che vi piacciono scrollate vedete la"
+
+[17:05-17:10] (confidence: -0.166)
+  "tecnica che volete guardate come messo bitcoin quello quello dovete fare non dovete star lì"
+
+[17:10-17:21] (confidence: -0.173)
+  "infatti il meno possibile due tre operazioni però ragionate con calma con formazione bella"
+
+[17:21-17:26] (confidence: -0.173)
+  "chiudete poi dopo il pc avete la giornata libera avete due soldi che avete guadagnato"
+
+[17:26-17:31] (confidence: -0.173)
+  "siete felici ci siete riusciti dedicate il vostro tempo a studiare ancora imparate poi"
+
+[17:31-17:36] (confidence: -0.173)
+  "un'altra conformazione testate con le linee poi testate con pochi soldi e piano piano si"
+
+[17:36-17:42] (confidence: -0.147)
+  "aumenta questa è la strada giusta ragazzi ci dobbiamo riuscire ok io ci tengo tanto ci"
+
+[17:42-17:46] (confidence: -0.147)
+  "voglio riuscire però mi dovete darne a mano ok non dovete cascare in queste cose non siamo"
+
+[17:46-17:53] (confidence: -0.147)
+  "su reddit non siamo to the moon non è una scommessa qua questo è un mestiere io non"
+
+[17:53-17:59] (confidence: -0.147)
+  "posso aver fatto un mestiere di qui campo da vent'anni su una scommessa ok questo è un"
+
+[17:59-18:05] (confidence: -0.147)
+  "mestiere analisi cercare la conformazione che ci dà fiducia e sfruttarlo se c'è un giorno in"
+
+[18:30-18:39] (confidence: -0.158)
+  "qua la qualità non dobbiamo fare 100 eseguiti e 60 in gain e 40 in perdita no no non funziona"
+
+[18:39-18:45] (confidence: -0.158)
+  "così dovete farne tre due tre ma anche zero e poi un giorno magari ne farete tre e un giorno"
+
+[18:45-18:49] (confidence: -0.158)
+  "ne farete solo uno solo un giorno anche zero quando c'è la conformazione guarda quanto ne"
+
+[18:49-18:55] (confidence: -0.158)
+  "stanno arrivando in continuazione poi guardate c'è la comunità c'è discord c'è telegram ci avete"
+
+[18:55-19:01] (confidence: -0.157)
+  "tanti di quei mezzi che magari avessi avuto io però non fatevi prendere ok poi se vedete"
+
+[19:01-19:05] (confidence: -0.157)
+  "il breakout che non sta funzionando appena fare breakout quando rientra dovete chiudere"
+
+[19:05-19:11] (confidence: -0.157)
+  "subito subito a zero o in perdita chi se ne frega chiudete subito il breakout deve andare"
+
+[19:11-19:16] (confidence: -0.157)
+  "quando quando rompe deve andare deve deve funzionare subito se fate due breakout e tutte e due"
+
+[19:16-19:21] (confidence: -0.157)
+  "non funzionano ragazzi smettete di fare i breakout quel giorno lì o fate un'altra conformazione"
+
+[19:21-19:27] (confidence: -0.201)
+  "torna a studiare e il giorno dopo fate qualcos'altro ogni giorno un giorno diverso ok non vi"
+
+[19:27-19:31] (confidence: -0.201)
+  "fissate se vedete qualcosa che fa il mille per cento non dovete pensare dove per forza"
+
+[19:31-19:38] (confidence: -0.201)
+  "partecipare non si fa si guarda si osserva e si studia bellissimo anche che ragazzi vi"
+
+[19:38-19:43] (confidence: -0.201)
+  "mettete qua in chat chat vocale c'è tantissimo da imparare da altre persone che hanno anche"
+
+[19:43-19:50] (confidence: -0.201)
+  "loro l'esperienza guarda quanti stanze che ci sono mettiti d'accordo con qualcuno vicino a voi per"
+
+[22:32-22:39] (confidence: -0.174)
+  "entrate mercato e prendete schiaffi dalla mattina alla sera fino a quando andate in rosso ok poi"
+
+[22:39-22:44] (confidence: -0.174)
+  "sapete già nata a casa vostra moglie vi da altri schiaffi vostri figli pure vostri amici anche quindi"
+
+[22:44-22:50] (confidence: -0.174)
+  "vita di merda ok tutto perché perché volete essere ricchi domani non serve a niente non sarete mai"
+
+[22:50-23:02] (confidence: -0.174)
+  "dovete studiare partire da zero essere umili umili non to the moon non esiste quando sbattete"
+
+[23:27-23:33] (confidence: -0.25)
+  "oggi non l'ha fatto ok va bene cioè il 10 lo fa il 5% delle volte va bene oggi è stato il 5%"
+
+[23:33-23:38] (confidence: -0.25)
+  "comunque ho sbagliato comunque lo sto vicino e va bene l'ho recuperato ma comunque non va bene"
+
+[23:38-23:46] (confidence: -0.25)
+  "ho comunque sbagliato e sono stato in bici mi sono dato del coglione e basta vado avanti poi dopo"
+
+[23:46-23:53] (confidence: -0.25)
+  "avete visto no? C'è una giornata lunga ce n'è di roba basta star calmi rilassati non c'è bisogno"
+
+[24:18-24:26] (confidence: -0.216)
+  "ma così ma io lo dico nel video dovete aspettare una conformazione non è un grattevizio ragazzi"
+
+[24:26-24:32] (confidence: -0.216)
+  "non scherzia perché dovete buttare i vostri soldi studiate perdete tempo a studiare c'è anche la"
+
+[24:32-24:38] (confidence: -0.216)
+  "biblioteca qua ma dove trovate una comunità ma magari avessi avuto questa cosa qua aver risparmiato"
+
+[24:38-24:44] (confidence: -0.216)
+  "non so quanti anni dov'è biblioteca biblioteca non volete vedere i video volete leggere oh"
+
+[25:38-25:46] (confidence: -0.123)
+  "di esperienza e so già dove state sbagliando quindi per piacere ci sono tanti già tanti personaggi"
+
+[25:46-25:52] (confidence: -0.123)
+  "di questa famiglia tante persone che sono pariti da zero e sono già profitevoli è incredibile ok"
+
+[25:52-25:57] (confidence: -0.123)
+  "ma ancora una percentuale troppo bassa è vero che non è ancora un anno che faccio che ho questo"
+
+[25:57-26:03] (confidence: -0.123)
+  "canale quindi effettivamente è già è già tanto però comunque ci sono già questi non sono pazzi"
+
+[26:03-26:09] (confidence: -0.18)
+  "non sono venuti da l'una sono persone che hanno hanno perso tempo a ragionare si fanno delle"
+
+[26:09-26:15] (confidence: -0.18)
+  "domande e si danno delle risposte e fanno un passo alla volta si riascolta nei video una volta che"
+
+[26:15-26:20] (confidence: -0.18)
+  "hai visto un video hai fatto i test ti sei fatto le domande ti sei dato le risposte e riascolta"
+
+[26:20-26:31] (confidence: -0.18)
+  "il video il video è nuovo ha delle sfumature completamente diverse ok dai per favore diventate"
+
+[26:31-26:39] (confidence: -0.124)
+  "profitevoli ok è tutto gratis ragazzi io non so che cos'altro posso fare per voi ok dovete solo"
+
+[26:39-26:48] (confidence: -0.124)
+  "ascoltare perdete tempo a ragionare a riflettere non fatevi prendere da questi gain facili o questi"
+
+[26:48-26:58] (confidence: -0.124)
+  "spike inutili ok aspettate una conformazione bella e precisa una volta o due o tre al massimo al giorno"
+
+[27:20-27:30] (confidence: -0.181)
+  "ragionate nel frattempo iscrivetevi alla bull family quindi discord youtube e due canali telegram"
+
+[27:30-27:37] (confidence: -0.181)
+  "poi prossimo videoanalisi ci sarà la novità perché adesso voglio tirare fuori prima da bull"
+
+[27:37-27:42] (confidence: -0.181)
+  "bot di daily ok così magari vi rilassate un attimo e non vi fate prendere da questi spike e"
+
+[27:42-27:47] (confidence: -0.181)
+  "cose varie ok quindi ritiro fuori prima e poi magari facciamo partire un test di abbonamento"
+

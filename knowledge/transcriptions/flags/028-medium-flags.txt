@@ -1,0 +1,185 @@
+# Low-confidence segments for: 028_PSICOLOGIA_DEL_TRADING_Parte_4_Accettare_la_sconfitta.mp3
+# Total flagged: 60
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:22-0:32] (confidence: -0.14)
+  "l'obiettivo, proprio sentivo un desiderio dentro fortissimo. Poi dopo, indagando in modo profondito"
+
+[0:32-0:39] (confidence: -0.14)
+  "la dopamina, questo qui l'ho abbastanza smussato, perché alla fine mi vedo come il topo che continua"
+
+[0:39-0:46] (confidence: -0.14)
+  "a cliccare il bottone perché c'è le scariche di dopamina. Quindi, tolto questo, il mio secondo"
+
+[27:20-27:30] (confidence: -0.14)
+  "più alto, quindi dico non esco da questo bad perché probabilmente questo va a farmi una finta"
+
+[27:30-27:41] (confidence: -0.14)
+  "e mi fa pensare che voglia scendere, quindi con quella specie di furbizia, di idea di fregare gli"
+
+[27:41-27:49] (confidence: -0.14)
+  "altri, di essere più furbo, mi sta al fatto che sto già perdendo, cioè non voglio perdere quella"
+
+[38:44-38:49] (confidence: -0.433)
+  "io mi sono messo questa regola qua e non mi viene voglia dico ok tanto non c'è non c'è il"
+
+[38:49-38:54] (confidence: -0.433)
+  "nutella a cercare e so che magari voi voi potete aver nascosto qualcosa perché parli ma non vado"
+
+[38:54-38:59] (confidence: -0.433)
+  "a cercarlo per quello c'è solo se lo trovo perché sto prendendo il cassetto per prendermi un piatto"
+
+[38:59-39:03] (confidence: -0.433)
+  "e lo vedo lì e allora dico la nascosto malissimo e fosse un dispetto finisco tutto"
+
+[39:03-39:12] (confidence: -0.487)
+  "e si sa che c'è io lo trovo, lo ho obbligato moralmente, lo devo finire per fare la punizione"
+
+[39:12-39:19] (confidence: -0.487)
+  "della mia moglie che non l'ha nascosto bene però sì cerco di mettermi sempre un po' delle regole"
+
+[39:19-39:27] (confidence: -0.487)
+  "però tornando un po' prima no cioè una cosa su cui magari devo cercare di fare un video cercare di"
+
+[41:08-41:15] (confidence: -0.265)
+  "andrebbe completamente cancellato e andrebbe la giustificazione la logica che devo adesso"
+
+[41:15-41:20] (confidence: -0.265)
+  "ci nella mente io adesso esco perché comunque sbagliato a stare dentro e le probabilità più"
+
+[41:20-41:25] (confidence: -0.265)
+  "grosse sono che è sbagliato a stare dentro ma è probabile che poi dopo io aspetta la conformazione"
+
+[41:25-41:31] (confidence: -0.265)
+  "dopo dove è magari da un'altra parte magari dopo che ha rotto il bad torna giù dopo io le mie"
+
+[41:31-41:35] (confidence: -0.265)
+  "ma quindi magari mi va a toccare la 60 magari vado a vedere un altro time frame vado a vedere"
+
+[47:02-47:07] (confidence: -0.451)
+  "allora sì me deve andare bene perché oggi è andata male quindi poi deve per forza di cosa andare bene"
+
+[47:07-47:14] (confidence: -0.451)
+  "e lavoro di nuovo su quella statistica 90 10 no? C'è la possibilità che su 10 ne perdo tutte 10"
+
+[47:14-47:22] (confidence: -0.451)
+  "magari la 10 no? Ne perdo magari la 10 ma mi va bene però una cosa tu le ho sorrelegano ma quello"
+
+[47:22-47:30] (confidence: -0.451)
+  "che diceva Luca prima e lui parlando diceva effettivamente ci rivedo anche io e anche"
+
+[47:30-47:37] (confidence: -0.437)
+  "parlando con tanti dice arriverà quel giorno no? Io lavoro arriverà quel giorno ma la domanda a"
+
+[47:37-47:45] (confidence: -0.437)
+  "bull tu in testa te quando mette a computer ragione arriverà quel giorno? Cazzo di giorno"
+
+[47:45-47:51] (confidence: -0.437)
+  "c'è in essenzio no? Che aspettativa c'hai? Sei lì e se c'è occasione entri? No no non è che deve"
+
+[47:51-47:56] (confidence: -0.437)
+  "arrivare un giorno no? Anche per noi non è una guerra. Ma esprimamente rivede una cosa che quando"
+
+[51:30-51:38] (confidence: -0.423)
+  "migliore cosa devo fare? Ricchi stavi parlando tu prima ti ho interrotto vedi che intanto luca"
+
+[51:38-51:46] (confidence: -0.423)
+  "si è allontanato no non mi ricordo talmente tante cose, è mia sorella che mi ha chiesto una cosa"
+
+[51:46-51:56] (confidence: -0.423)
+  "no dico per riflettere no anche io che mi ci sono avvicinata da poco no che ho iniziato a capire"
+
+[54:13-54:20] (confidence: -0.528)
+  "di statistica che è diverso è di conformazione se tutto si deve girare attorno a questo se"
+
+[54:20-54:27] (confidence: -0.528)
+  "volessero mestiere se un passatempo come andare al casino o poi a tutti i day-out di miguelo"
+
+[54:27-54:33] (confidence: -0.528)
+  "vediamo se sono fortunato no questo non c'entra niente col trading e non ti porterà mai a essere"
+
+[54:33-54:41] (confidence: -0.528)
+  "profittevo mai e se non per sbaglio è vero è per pochissimo tempo insomma quindi quindi vedere"
+
+[62:04-62:13] (confidence: -0.532)
+  "riapri ha fatto più più più più più 15 da per tutto cioè come mai questa cosa però sì"
+
+[62:13-62:22] (confidence: -0.532)
+  "voglio cercare di troppo utile parlare perché voglio proprio cercare di capire questo meccanismo"
+
+[62:22-62:30] (confidence: -0.532)
+  "dove il trader e finisce perché appunto la tecnica ti dice che non sta funzionando quindi si esce ma"
+
+[64:17-64:20] (confidence: -0.553)
+  "al buccato però tanto se l'ucido e in"
+
+[64:20-64:32] (confidence: -0.553)
+  "che adesso poi arrivano un tipo di cosa un secondino la cosa molto interessante che benedetta"
+
+[64:32-64:38] (confidence: -0.553)
+  "pure ha notato è che in realtà esiste qualche libro di psicologiato in trading ma non esistono"
+
+[64:38-64:44] (confidence: -0.553)
+  "in realtà studi anche diciamo ufficiali altro che capiscono queste cose quindi questa veramente è"
+
+[69:02-69:13] (confidence: -0.455)
+  "appunto quando la porto nei negozi di giochi così noi andiamo a girare per i giochi gli dico sempre"
+
+[69:13-69:17] (confidence: -0.455)
+  "mi vedi i giochi di cazzo di più mi piace questo no questo costa troppo non va bene"
+
+[69:17-69:22] (confidence: -0.455)
+  "poi va a vedere un altro gioco mi piace questo no ma questo sai quanto cosa quanto deve lavare"
+
+[69:22-69:26] (confidence: -0.455)
+  "al papà per comprare questo quando va bene e usciamo dal negozio di giochi dopo hai visto"
+
+[69:26-69:32] (confidence: -0.455)
+  "tutti i giochi che ti piacciono senza comprare nulla e non scherzo scusa bull se ti dico perché"
+
+[73:26-73:36] (confidence: -0.491)
+  "voglia di mangiare una una son perché la mattina ecco il potere che vuoi luca se vuoi"
+
+[73:36-73:44] (confidence: -0.491)
+  "sentito ti può adottare se vuoi questa cosa che con benedetta magari si possa studiare"
+
+[73:44-73:51] (confidence: -0.491)
+  "di esercizio delle cose per allenarsi in questo modo sarebbe fantastico c'era qualcosa di next"
+
+[75:54-76:00] (confidence: -0.417)
+  "ne parlava anche con lei nonostante tranquillo non parlava tranquillo e figurati fino quando poi"
+
+[76:00-76:08] (confidence: -0.417)
+  "non parlato con stefano che era uno esterno un po alla cosa diciamo che un po super partes diciamo"
+
+[76:08-76:15] (confidence: -0.417)
+  "che pensi che io l'ho registrato tutto di un fiato e puri ho fatto 20 minuti poi alla fine"
+
+[76:15-76:23] (confidence: -0.417)
+  "le parti che non andavano bene lo tagliate questa cosa qua ma ha riportato sulla terra come per dire"
+
+[84:52-85:01] (confidence: -0.165)
+  "manico andava basta per diventare campione per cui il percorso che ha dovuto fare è fatto anche"
+
+[85:01-85:06] (confidence: -0.165)
+  "di successi di meccanici che gli ha detto guarda che è girato male guarda che hai fatto male qua"
+
+[85:06-85:13] (confidence: -0.165)
+  "quindi lui ha costruito il suo il suo fatto di essere il campione del mondo attraverso le"
+
+[85:13-85:21] (confidence: -0.165)
+  "cadute e comunque il processo di potersi guardare indietro prima di tutto ecco io per esempio ho"
+
+[99:22-99:33] (confidence: -0.431)
+  "ma voi fino a quando state lì così ok questo mezzo e qualche giorno c'è ma basta 20 minuti"
+
+[99:33-99:39] (confidence: -0.431)
+  "mezz'oretta va bene va bene ma non capisco un attimo anche stasera potrebbe essere una cosa"
+
+[99:39-99:48] (confidence: -0.431)
+  "fattibile quando stasera dico potrebbe essersi tanto anche se scrivo a simo se può fare con"
+
+[99:48-99:52] (confidence: -0.593)
+  "telefono quando vuoi va bene perfetto"
+

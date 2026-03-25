@@ -1,0 +1,86 @@
+# Low-confidence segments for: 029_Livello_TRIGGER_nel_Trading_Cos_e_e_come_funziona_Tutorial_Completo.mp3
+# Total flagged: 27
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:17-1:25] (confidence: -0.128)
+  "avere e capire il livello trigger, perché si usa tantissimo come termine e appunto i trader"
+
+[1:25-1:33] (confidence: -0.128)
+  "devono assolutamente capire meglio il livello trigger, perché è quello in cui è meglio operare"
+
+[1:33-1:39] (confidence: -0.128)
+  "su un livello trigger, perché ci permette di avere un'esplosione, ci permette di stare anche"
+
+[1:39-1:44] (confidence: -0.128)
+  "meno tempo nel mercato, ci permette di testare e capire realmente chi sta comandando. Ecco,"
+
+[8:32-8:37] (confidence: -0.291)
+  "superiore dove è stato toccato ben tre volte, comunque ha cercato di rompere questo livello"
+
+[8:37-8:49] (confidence: -0.291)
+  "quindi il prezzo ha cercato di superare un determinato livello che era 0,065 non c'è"
+
+[8:49-8:54] (confidence: -0.291)
+  "riuscito, non c'è riuscito per ben tre volte, è sceso, qua era molto bello perché appunto com'andava"
+
+[8:54-8:59] (confidence: -0.291)
+  "la 10 quando poi roto fa tutto, se la cerchiamo la 10, tornando sopra dimostra forza perché questo"
+
+[9:25-9:34] (confidence: -0.169)
+  "trigger al di sotto del vero livello trigger, in questo caso stiamo parlando di time frame 30 minuti"
+
+[9:34-9:39] (confidence: -0.169)
+  "quindi qua abbiamo anche un livello daily molto importante, vedete che c'è anche questo è stato"
+
+[9:39-9:45] (confidence: -0.169)
+  "fatto il giorno precedente il 26 e questo diventa il 27 quindi un terzo tocco plus, andate a vederlo"
+
+[9:45-9:52] (confidence: -0.169)
+  "la tecnica nella playlist appunto delle tecniche e quindi questo è un terzo tocco plus, un livello"
+
+[10:40-10:50] (confidence: -0.167)
+  "il superamento di questo livello è come se avesse 200 milioni di azioni da vendere e li piazza"
+
+[10:50-10:57] (confidence: -0.167)
+  "lì, anche se nel book non lo vedi lui sta cercando di vendere e proteggere quella barriera, lui non"
+
+[10:57-11:05] (confidence: -0.167)
+  "vuole che si supera quella barriera lì, o comunque lui vuole vendere tutte le sue 200 milioni di azioni"
+
+[12:56-13:04] (confidence: -0.16)
+  "quel livello lì oppure subito dopo entra e quindi cosa succede che superando questo livello avremo"
+
+[13:04-13:11] (confidence: -0.16)
+  "una somma di due tipologie di ordini la somma di chi vuole comprare perché lo vedo come un'opportunità"
+
+[13:11-13:18] (confidence: -0.16)
+  "ok lo vedo come un'opportunità questo è un livello daily una rottura e quindi vuole comprare per"
+
+[13:18-13:25] (confidence: -0.16)
+  "tenerselo perché si aspetta appunto una grande accelerazione e ma e si sommano anche tutti quelli"
+
+[14:45-14:51] (confidence: -0.169)
+  "vedi non devi per forza mostrare il tuo livello tu puoi avere un iceberg o puoi semplicemente"
+
+[14:51-14:59] (confidence: -0.169)
+  "usare quel livello come livello massimo e poi vendere sotto in modo che tieni il prezzo"
+
+[14:59-15:07] (confidence: -0.169)
+  "schiacciato quando tu finisci tu fondo hai finito di vendere quel pezzo grande basta dai lì dopo"
+
+[15:07-15:12] (confidence: -0.169)
+  "ci sono solo gli acquirenti e chi è nato short chiude l'operazione per poi portarti al livello"
+
+[18:19-18:26] (confidence: -0.19)
+  "dobbiamo uscire fine ok questo è molto importante che capita questo e lo capite per esempio se io"
+
+[18:26-18:30] (confidence: -0.19)
+  "fossi entrato in questa candela qua perché magari nel buco ho visto qualcosa di grosso qua fossi"
+
+[18:30-18:38] (confidence: -0.19)
+  "entrato ma poi non rompe quindi magari fosse entrato a questo non vede questo ecco fossi entrato"
+
+[18:38-18:46] (confidence: -0.19)
+  "questo livello qua quindi anticipandolo leggermente il livello trigger e poi candelo dopo tono indietro"
+

@@ -1,0 +1,152 @@
+# Low-confidence segments for: 026_LA_PSICOLOGIA_DEL_TRADING_PARTE_2.mp3
+# Total flagged: 49
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:03] (confidence: -0.461)
+  "Ciao threader, siete su Scopin'the Bull e siete anche su Monte Altissimo"
+
+[0:05-0:12] (confidence: -0.461)
+  "2060 metri sopra il Lago di Garda, quello è il nord di Lago di Garda, quindi Trentino, quello laggiù è"
+
+[0:14-0:19] (confidence: -0.461)
+  "Riva del Garda dove faremo l'evento il 4 settembre, questa è mia bici"
+
+[0:20-0:22] (confidence: -0.461)
+  "Sono arrivato su la bici in turbo"
+
+[3:28-3:34] (confidence: -0.271)
+  "di poi andare a zero e quando siete a zero non avete l'esperienza per chiudere e quindi magari non chiudete"
+
+[3:34-3:41] (confidence: -0.271)
+  "tenete ancora sperando quando si spera, se abbia un brutto segno, di tornare in positivo, invece cosa fa? Vai in negativo"
+
+[3:41-3:49] (confidence: -0.271)
+  "e siete fortunati, back allo stop e comunque siete in sbattimento perché appunto non avete guadagnato e comunque è dubbicato lo stop"
+
+[3:50-3:52] (confidence: -0.271)
+  "se non avete messo lo stop"
+
+[3:52-3:55] (confidence: -0.271)
+  "arriva all'infinito a perdere oppure arriva la margin call"
+
+[4:22-4:29] (confidence: -0.213)
+  "perché i movimenti sono molto più grandi quindi potessi trovare con una perdita molto più grande del giorno prima facendo lo stesso tipo di movimento"
+
+[4:29-4:31] (confidence: -0.213)
+  "ok quindi cercate di"
+
+[4:32-4:37] (confidence: -0.213)
+  "ragionare sempre su quanto potete perdere, quanto potete guadagnare perché con la stessa conformazione"
+
+[4:38-4:44] (confidence: -0.213)
+  "cambia tantissimo in base a quanto sta salendo, quanto sta scendendo il titolo, c'è un abisso ok, vi cambia veramente tanto"
+
+[4:45-4:52] (confidence: -0.213)
+  "quindi primo punto, perché psicologicamente questo incide tantissimo sapete che è conveniente fare pochi trade ma fatti bene"
+
+[7:34-7:40] (confidence: -0.412)
+  "quel giorno avrebbe reso felice avreste potuto passare una giornata felice ok qua magari a guardare qua"
+
+[7:40-7:42] (confidence: -0.412)
+  "fra l'altro adesso ho visto per la prima volta che c'è anche il lago di ledro"
+
+[7:43-7:50] (confidence: -0.412)
+  "là in fondo se si vede c'è un piccolo puntino ci vede già il lago di ledro incredibile non ci avevo mai fatto caso comunque"
+
+[7:51-7:58] (confidence: -0.412)
+  "quindi non vi godete la giornata andate poi magari la moglie o la finanziata anche lei c'ha le balle girate perché lavora che c'ha cosa successo e"
+
+[7:58-8:01] (confidence: -0.412)
+  "devevi fare un disastro invece poteva essere una giornata super felice"
+
+[8:25-8:31] (confidence: -0.215)
+  "allora questo io lo faccio questa tecnica la utilizzo soprattutto per il nasdaq ok"
+
+[8:31-8:35] (confidence: -0.215)
+  "io in nasdaq spesso faccio un'operazione e ciao chiudo"
+
+[8:35-8:39] (confidence: -0.215)
+  "ce ne voglio neanche vedere uno spike o niente chiudo completamente"
+
+[8:39-8:44] (confidence: -0.215)
+  "per questo mi piace avere il nasdaq con un altro conto in dollari dove"
+
+[8:44-8:47] (confidence: -0.215)
+  "traendo solo il nasdaq perché chiudo il conto fine"
+
+[8:47-8:53] (confidence: -0.215)
+  "non ho tentazioni ok perché è difficile è difficile con il nasdaq non avere tentazioni"
+
+[10:06-10:12] (confidence: -0.198)
+  "size quando si è eventualmente in gain se appunto avete esperienza per capire che a quel punto c'è"
+
+[10:12-10:20] (confidence: -0.198)
+  "allora quando è che io aumento la size a un euro entro ok magari c'è un bel ingresso entro bene va"
+
+[10:20-10:30] (confidence: -0.198)
+  "a 1 0 2 ok sono 2% sopra a un daily bello a un obiettivo nel daily bello ok bene non chiudo fa"
+
+[13:35-13:40] (confidence: -0.217)
+  "bisogna per forza guadagnare perché ci sono quelle conformazioni ci sono i break out ci sono"
+
+[13:40-13:46] (confidence: -0.217)
+  "quelle cose che vi piacciono tanto che in cui vi trovate bene i soldi facili anche se non sono"
+
+[13:46-13:51] (confidence: -0.217)
+  "mai facili ma ci sono delle conformazioni dove delle volte ma voi lì non dovete recuperare le perdite"
+
+[13:51-13:55] (confidence: -0.217)
+  "per delle giornate in cui avete voluto per forza lavorare perché tutti i giorni dovete fare"
+
+[13:55-14:01] (confidence: -0.217)
+  "qualcosa no giorno che fa schifo non fate niente il giorno in cui fate entrata a due tradi fa schifo"
+
+[24:05-24:11] (confidence: -0.217)
+  "capirlo prima che quel punto poi voi non avete esperienza ok io non ho problemi a chiudere in"
+
+[24:11-24:20] (confidence: -0.217)
+  "perdita anzi io proprio non ho zero problemi ok per questo sono profitevole se è a inizio"
+
+[24:20-24:28] (confidence: -0.217)
+  "sicuramente avete questo problema in automatico quando fate l'ordine potete già mettere uno stop"
+
+[24:28-24:33] (confidence: -0.217)
+  "loss anche distante ok non non fate attenzione appunto perché non dovete mettere roba dove"
+
+[25:52-25:59] (confidence: -0.205)
+  "aver sbagliato quindi mio consiglio mettete uno stop anche distante ma mettetelo all'inizio"
+
+[25:59-26:04] (confidence: -0.205)
+  "pena va a vostro favore mettetelo spostate lo mettete più in alto ma mettetelo ok poi dovete"
+
+[26:04-26:10] (confidence: -0.205)
+  "imparare a capire dove è lo stop cioè dove ha senso lo stop quindi voi dovete il risolvente"
+
+[26:10-26:16] (confidence: -0.205)
+  "che ho sempre fatto io è entro a questo punto dove è il cambio di trend il cambio di trend è"
+
+[26:16-26:22] (confidence: -0.199)
+  "dove io metto lo stop quindi laddove non ha più senso che la gente possa comprare lì devo uscire"
+
+[26:22-26:28] (confidence: -0.199)
+  "questo è sempre stato mio ragionamento quindi laddove per me era logico non comprare più ma"
+
+[26:28-26:34] (confidence: -0.199)
+  "inizia da vendere lì deve essere il mio ultimo stop ok quindi l'ultimo stop duro meccanico lì"
+
+[26:34-26:40] (confidence: -0.199)
+  "ci deve essere e da lì non si deve muovere poi si va nella vostra direzione la talizza alzate"
+
+[27:50-27:59] (confidence: -0.194)
+  "e scrivete anche nei commenti su youtube scrivete quali sono le vostre così le vostre più grande"
+
+[27:59-28:06] (confidence: -0.194)
+  "difficoltà che magari parlarne no già quello aiuta perché vuol dire che state capendo il vostro"
+
+[28:06-28:10] (confidence: -0.194)
+  "problema e poi magari altri hanno stesso problema o comunque ci sono già passati vi possono aiutare"
+
+[28:10-28:15] (confidence: -0.194)
+  "questa è la forza della comunità questa è la bull family che sta venendo fuori che ci aiutiamo"
+

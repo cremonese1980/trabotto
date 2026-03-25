@@ -17,10 +17,10 @@ TODO
 *	Check rules with Claude and refine rule generation prompt
 *	Codex for codifing rules from trasnscriptions for all videos
 
-*	python ingest module - end to end reading from telegram source
 *	docker-compose.yml
 
 
 DONE
 
-*   Mavenization
+*   Mavenization main module
+*	python ingest module - end to end reading from telegram source

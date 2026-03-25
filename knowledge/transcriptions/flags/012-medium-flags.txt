@@ -1,0 +1,251 @@
+# Low-confidence segments for: 012_Come_faccio_Trading_sulle_Criptovalute.mp3
+# Total flagged: 82
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:56-1:00] (confidence: -0.145)
+  "questo schermo qua adesso mi tolgo anche le webcam così non mi vedete"
+
+[1:00-1:04] (confidence: -0.145)
+  "avete tutto schermo tanto mi faccio non serva nulla e vi faccio capire tutti i"
+
+[1:04-1:09] (confidence: -0.145)
+  "ragionamenti che faccio e poi dopo io queste pagine le vado a smistare sui"
+
+[1:09-1:12] (confidence: -0.145)
+  "vari schermi ok però lo facciamo un passo alla volta così potete capire"
+
+[1:12-1:15] (confidence: -0.145)
+  "anche voi ma prima di fare questo vi faccio capire una cosa visto che oggi in"
+
+[1:15-1:18] (confidence: -0.145)
+  "chat ne ho profitto perché abbiamo parlato di tante cose interessanti fra"
+
+[1:18-1:22] (confidence: -0.145)
+  "cui quale sono le probabilità che possa diventare un imprenditore di successo"
+
+[1:22-1:25] (confidence: -0.145)
+  "perché si parla spesso sul fatto che è troppo difficile fare trading qua"
+
+[4:12-4:18] (confidence: -0.402)
+  "piano cos'intendo per questo allora prima cosa quando mi sveglio voglio"
+
+[4:18-4:22] (confidence: -0.402)
+  "andare a vedere cosa accade quindi magari innanzitutto dover del global"
+
+[4:22-4:25] (confidence: -0.402)
+  "voglio andare a vedere anche tutti gli altri"
+
+[4:25-4:30] (confidence: -0.402)
+  "quindi quando abbiamo bitcoin abbiamo più 8 per cento più 10 per cento in russia"
+
+[4:30-4:34] (confidence: -0.402)
+  "ma perché adesso insomma si pensa che si possa finire la guerra vedremo"
+
+[4:34-4:38] (confidence: -0.402)
+  "comunque quindi per imbazzo e vado a vedere un attimino gli altri indici per"
+
+[4:38-4:43] (confidence: -0.302)
+  "capire se posso vedere qualcosa di particolare andiamo a vedere su nasdaq"
+
+[4:43-4:49] (confidence: -0.302)
+  "qualche livello che può far colorare co tesla su un supporto pericoloso ti"
+
+[4:49-4:52] (confidence: -0.302)
+  "potrebbe non tenere non dovesse tenere va beh che comunque è salito talmente"
+
+[4:52-5:00] (confidence: -0.302)
+  "tanto guardate che roba comunque mi vado a vedere un po anche piazzafario"
+
+[5:00-5:05] (confidence: -0.302)
+  "sapete lavoro anche a piazzafari anche se americ dice che è impossibile"
+
+[6:25-6:32] (confidence: -0.216)
+  "colpisce qua sono nel nei top cap quindi qua ho fatto ho creato una lista"
+
+[6:32-6:36] (confidence: -0.216)
+  "del quelli più grossi che possono muovermi mercato quindi lo tengo come"
+
+[6:36-6:40] (confidence: -0.216)
+  "lista per andare a vedere vedere cosa cosa sta succedendo"
+
+[6:40-6:44] (confidence: -0.216)
+  "ed effettivamente qua subito time frame un'ora e qua ci vorrà un alert"
+
+[6:44-6:48] (confidence: -0.216)
+  "assolutamente perché questo diventa un livello bellissimo da rottura per andare"
+
+[6:48-6:53] (confidence: -0.216)
+  "short e poi visto che scambiano di più io qua ci metto più soldi insomma perché"
+
+[8:17-8:22] (confidence: -0.221)
+  "rimasto sopra e con ton potremmo lavorare molto interessante sul cambio"
+
+[8:22-8:27] (confidence: -0.221)
+  "colore quindi passaggi di poi siamo in positivo nel daily questo è il livello"
+
+[8:27-8:33] (confidence: -0.221)
+  "del passaggio in negativo daily che a me piace tantissimo quindi potremmo andare"
+
+[8:33-8:38] (confidence: -0.221)
+  "avete visto che qua ecco l'unico vedete come colore qua vedete che c'è uno"
+
+[8:38-8:43] (confidence: -0.221)
+  "sfondo un po verde perché perché mnt non ha ancora rotto nei massimi nei"
+
+[8:43-8:47] (confidence: -0.221)
+  "minimi di ieri questa cosa per me è molto importante mi piace tanto e quindi"
+
+[12:55-13:00] (confidence: -0.19)
+  "una conformazione può essere un terzo tocco un bad un bad to the moon per andare"
+
+[13:00-13:04] (confidence: -0.19)
+  "avere il primo trigger che il cambio colore dopo una candela grande di ieri"
+
+[13:04-13:09] (confidence: -0.19)
+  "non è normale quindi già becco che è molto forte in più dopo puoi puntare"
+
+[13:09-13:11] (confidence: -0.19)
+  "addirittura i massimi di giornata quindi quello è un qualcosa che guardo quindi"
+
+[13:11-13:14] (confidence: -0.19)
+  "io guardo tutto dove le classifiche quindi prima di andare vedendo le"
+
+[13:14-13:20] (confidence: -0.19)
+  "conformazioni come ho fatto qua prima di andare a vedere quello io guardo prima"
+
+[13:20-13:25] (confidence: -0.19)
+  "la classifica delle 24 ore e voglio vedere appunto time frame 30 minuti e mi"
+
+[14:44-14:51] (confidence: -0.135)
+  "solito di mattina c'è tanta differenza ok qua di pomeriggio invece in questo caso c'è solo un"
+
+[14:51-14:58] (confidence: -0.135)
+  "paio di diversi e niente di che e per adesso tengo così guardiamo punti posso cliccare con"
+
+[14:58-15:02] (confidence: -0.135)
+  "la freccia in giù sulla tastiera nella zona dove avete le frecce basta cliccare frecci in"
+
+[15:02-15:08] (confidence: -0.135)
+  "giù e mi apre altri nove in automatico quindi magari ecco qua vedete che ancora il verde anche"
+
+[15:08-15:13] (confidence: -0.135)
+  "questo è ancora il verde non ha toccato non ha superato ancora o i massimi o i minimi di giornata"
+
+[18:17-18:25] (confidence: -0.23)
+  "che l'avevo scritto anche qua eccolo qua faccio vedere in chat avevo proprio scritto"
+
+[18:25-18:32] (confidence: -0.23)
+  "questa cosa qua prima di guardare un livello nel book perché simo aveva fatto una cosa un trade"
+
+[18:32-18:37] (confidence: -0.23)
+  "dove aveva visto un livello del book è entrato e era poi fra l'altro la prima volta che è entrato"
+
+[18:37-18:43] (confidence: -0.23)
+  "nel anzi ve lo faccio vedere perché eccolo qua prima volta che entra con un viagra vai"
+
+[19:09-19:14] (confidence: -0.267)
+  "un'altra volta e ritornare ancora giù alla terza volta noi facciamo con l'uscita lì ok perché"
+
+[19:14-19:19] (confidence: -0.267)
+  "così nei time frame più grandi abbiamo la possibilità 30 minuti sta sta lavorando"
+
+[19:19-19:25] (confidence: -0.267)
+  "su lemma 10 ha più possibilità appunto di dimostrare che la 10 torna a comandare a time"
+
+[19:25-19:30] (confidence: -0.267)
+  "frame 30 minuti e quindi dopo ci facciamo la nostra uscita altra cosa che mi ricordo mi raccomando"
+
+[19:30-19:34] (confidence: -0.267)
+  "tanto e lui ha fatto il trade a 5 minuti se avesse postato il trade da un minuto sempre stato"
+
+[19:34-19:42] (confidence: -0.189)
+  "sfidato cercate i trade a time frame 5 minuti hanno più validità rispetto a time frame un"
+
+[19:42-19:48] (confidence: -0.189)
+  "minuto ovviamente ma soprattutto ha più logica è più facile capire la logica rispetto ai time frame"
+
+[19:48-19:53] (confidence: -0.189)
+  "più grandi e time frame 5 minuti avete più tempo per operare e la candela da 5 minuti ovviamente"
+
+[19:53-19:59] (confidence: -0.189)
+  "paga di più quindi noi cerchiamo una conformazione per avere almeno una candela a favore se hai una"
+
+[26:17-26:24] (confidence: -0.209)
+  "immediatamente aspettiamo una conformazione laterizzazione un qualcosa che ci dà più ragione ok su"
+
+[26:24-26:29] (confidence: -0.209)
+  "più time frame anche qua bellissimo livello sta cercando di rompere quindi interessante torniamo"
+
+[26:29-26:38] (confidence: -0.209)
+  "a vedere a time frame 5 minuti torniamo nei migliori quindi torniamo qua lo scappi in the bull"
+
+[26:38-26:45] (confidence: -0.209)
+  "carichiamo il top in classifica ok vediamo perché bitcoin effettivamente sta rimbalzando anche qua"
+
+[30:11-30:18] (confidence: -0.238)
+  "accettato con la nostra proposta di non vendere a mercato quando chi chiama la x ma semplicemente"
+
+[30:18-30:23] (confidence: -0.238)
+  "perché a size grande per esempio qua 10.000 andrebbe giù fino a qua ok prendere tutti questi"
+
+[30:23-30:27] (confidence: -0.238)
+  "livelli invece adesso cosa fa prende il primo livello prende tutto quello che c'è accoglie anche"
+
+[30:27-30:33] (confidence: -0.238)
+  "chi compra a mercato se vengono eseguito bene se vengono eseguite solo una parte esce dal mercato"
+
+[30:33-30:38] (confidence: -0.238)
+  "e rientra questo lo fa in una frazione di secondo praticamente lo fa tre volte al secondo"
+
+[37:56-38:03] (confidence: -0.197)
+  "seguire con grosse capitilizzazione e lo tengo sempre a 30 minuti poi ho i daily quindi i migliori"
+
+[38:03-38:11] (confidence: -0.197)
+  "della nuova candela daily quindi a candela di oggi a time-free 30 minuti e la stessa classifica lo"
+
+[38:11-38:19] (confidence: -0.197)
+  "tengo eccolo qua a time-frame quindi a stessa classifica nei migliori daily però a time-frame"
+
+[38:19-38:29] (confidence: -0.147)
+  "5 minuti poi sotto tengo i peggiori in classifica i peggiori a time-frame 30 minuti e poi sotto"
+
+[38:29-38:34] (confidence: -0.147)
+  "ancora tengo aperto questo che liquidazioni che mi dice quando size grossi vengono liquidati mi"
+
+[38:34-38:41] (confidence: -0.147)
+  "arriva una notifica arriva il gallo bellissimo tengo sotto mi piace capire quando appunto avviene"
+
+[38:41-38:45] (confidence: -0.147)
+  "questa cosa quindi poi ci sono delle tecniche che ho spiegato poi insomma mi andrò a spiegare anche"
+
+[39:40-39:47] (confidence: -0.157)
+  "prima di operare su questo bottone in modo che potete vedere tutti i time frame avete una"
+
+[39:47-39:53] (confidence: -0.157)
+  "conformazione su più time frame esattamente con ragionamento che ho fatto vedere prima? Bene lì"
+
+[39:53-39:58] (confidence: -0.157)
+  "avete molto più possibilità che il vostro trade possa andare a un favore o comunque molto più"
+
+[39:58-40:05] (confidence: -0.157)
+  "possibilità che la vostra gerateria possa aver successo ok? Se non fate questo semplice passaggio"
+
+[40:05-40:10] (confidence: -0.157)
+  "di vedere a più time frame e qua basta farlo con un click non è come su trading view che"
+
+[40:34-40:40] (confidence: -0.148)
+  "e scelgo il time frame quindi 5 minuti 30 minuti è un'ora me lo tengo sempre qua oppure all'ultimo"
+
+[40:40-40:47] (confidence: -0.148)
+  "mi tengo il daily e me lo guardo ok? Poi mi piace car mi lo metto qua guardate qua in un click ho"
+
+[40:47-40:52] (confidence: -0.148)
+  "tutte tre qua e mi scelgo il time frame su cui operare così con una pagina sola quindi non avete"
+
+[40:52-40:58] (confidence: -0.148)
+  "set monitor come come ho io una pagina sola vedete avete di più volete un'altra cosa in più avete"
+
+[44:17-44:20] (confidence: -0.401)
+  "un qualcosa di più strutturato ciao"
+

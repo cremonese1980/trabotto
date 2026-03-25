@@ -1,0 +1,146 @@
+# Low-confidence segments for: 021_Live_Trading_RLC_2_SHORT_ETH_EOS_SHORT_MA_VA_IN_STOP_LOSS_Analisi_Tecnica.mp3
+# Total flagged: 47
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:03] (confidence: -0.517)
+  "ciao trade, sei da su scappi in the bull"
+
+[0:03-0:07] (confidence: -0.517)
+  "Quattro trade in analisi tecnica"
+
+[0:07-0:09] (confidence: -0.517)
+  "partiamo da"
+
+[0:09-0:11] (confidence: -0.517)
+  "RLC"
+
+[0:12-0:14] (confidence: -0.517)
+  "questo è il daily, spettacolare"
+
+[0:15-0:18] (confidence: -0.517)
+  "dopo questi 5 giorni"
+
+[0:18-0:21] (confidence: -0.517)
+  "laterali è avuto l'esplosione"
+
+[0:22-0:25] (confidence: -0.517)
+  "e qua siamo al secondo giorno"
+
+[0:25-0:29] (confidence: -0.517)
+  "dopo una candelona e stiamo andando"
+
+[0:29-0:32] (confidence: -0.436)
+  "il titolo sta andando sui nuovi massimi"
+
+[0:34-0:37] (confidence: -0.436)
+  "ci è già andato ma siamo appunto"
+
+[0:37-0:40] (confidence: -0.436)
+  "testato e tornato indietro e siamo sulla linea"
+
+[0:40-0:43] (confidence: -0.436)
+  "dello spike del giorno prima, quindi è un momento"
+
+[0:44-0:46] (confidence: -0.436)
+  "molto cruciale"
+
+[0:46-0:47] (confidence: -0.436)
+  "che piace a me"
+
+[0:48-0:51] (confidence: -0.436)
+  "perché comunque ha testato, ha spaccato"
+
+[0:51-0:54] (confidence: -0.436)
+  "di solito quando spacca va comunque molto di più"
+
+[0:54-0:56] (confidence: -0.436)
+  "e sta ritestando"
+
+[0:56-0:59] (confidence: -0.52)
+  "mi sta trovando un supporto sul picco massimo del giorno prima"
+
+[1:01-1:03] (confidence: -0.52)
+  "per questo mi piace"
+
+[1:05-1:08] (confidence: -0.52)
+  "ancora il daily, torniamo a un minuto"
+
+[1:08-1:09] (confidence: -0.52)
+  "perché guardo sempre anche"
+
+[1:09-1:12] (confidence: -0.52)
+  "il daily e anche il 30 minuti"
+
+[1:12-1:13] (confidence: -0.52)
+  "prima di neerci un minuto"
+
+[1:14-1:15] (confidence: -0.52)
+  "allora qua"
+
+[1:16-1:19] (confidence: -0.52)
+  "ho comprato che ho andato a fare nuovi massimi qua"
+
+[1:19-1:22] (confidence: -0.52)
+  "ho spettato questo un poco sopra"
+
+[1:22-1:25] (confidence: -0.52)
+  "questa sarebbe la linea in cui sarei dovuto entrare, sono entrato un po sopra"
+
+[1:25-1:28] (confidence: -0.415)
+  "perché era un numero pari e c'era la resistenza lì"
+
+[1:28-1:31] (confidence: -0.415)
+  "tecnicamente bastava entrare su questo picco"
+
+[1:31-1:32] (confidence: -0.415)
+  "sull'ombra"
+
+[1:32-1:35] (confidence: -0.415)
+  "però ho spettato la resistenza, preferisco sempre entrare con la resistenza"
+
+[1:35-1:37] (confidence: -0.415)
+  "visto che entro con quantità"
+
+[1:38-1:39] (confidence: -0.415)
+  "un po' più grandini"
+
+[1:39-1:42] (confidence: -0.415)
+  "qua siamo a 788"
+
+[1:42-1:45] (confidence: -0.415)
+  "qua nel book troviamo 2.300"
+
+[1:45-1:47] (confidence: -0.415)
+  "io raggruppo sempre"
+
+[1:47-1:50] (confidence: -0.415)
+  "questo è molto raggruppato però comunque"
+
+[1:50-1:53] (confidence: -0.415)
+  "nel raggruppamento chiuso le quantità non è un problema"
+
+[1:53-1:56] (confidence: -0.475)
+  "quasi 800 non è niente"
+
+[1:56-1:59] (confidence: -0.475)
+  "non ci sono problemi"
+
+[1:59-2:01] (confidence: -0.475)
+  "denaro un po' meno, perché stava tornando"
+
+[2:03-2:06] (confidence: -0.475)
+  "così diciamo mi sono dosato"
+
+[2:07-2:10] (confidence: -0.475)
+  "andiamo avanti, non sto vendendo"
+
+[2:10-2:12] (confidence: -0.475)
+  "qua adesso perché sto aspettando"
+
+[2:12-2:15] (confidence: -0.475)
+  "che posso fare ancora nuovi massimi"
+
+[2:19-2:21] (confidence: -0.475)
+  "semplicemente perché quella conformazione daily"
+

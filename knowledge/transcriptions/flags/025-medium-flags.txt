@@ -1,0 +1,206 @@
+# Low-confidence segments for: 025_PSICOLOGIA_DEL_TRADING_SCALPING_LA_MIA_ESPERIENZA.mp3
+# Total flagged: 67
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:23-0:32] (confidence: -0.191)
+  "avere una psicologia giusta che ti aiuta a fare il trader nel modo più, insomma nel"
+
+[0:32-0:42] (confidence: -0.191)
+  "modo migliore, e poi c'è un discorso psicologico sul dopo, sul dopo che abbiamo finito il trading,"
+
+[0:42-0:47] (confidence: -0.191)
+  "sul come vivere, insomma, come è il trader, la psicologia giusta di un trader, ovviamente"
+
+[0:47-0:57] (confidence: -0.158)
+  "legato al lavoro che fa, e insomma può sembar complicato, lo è, però vediamo se riesco"
+
+[0:57-1:04] (confidence: -0.158)
+  "a spiegarvi questa cosa. Allora, come al solito vi porto, mi piace portare un esempio, quindi"
+
+[1:04-1:13] (confidence: -0.158)
+  "qua siamo su Shiba, che ieri finalmente si è mosso nel mercato piatto con, oggi c'è la"
+
+[1:39-1:44] (confidence: -0.208)
+  "in modo sbagliato, anche in guadagno, come in questo caso, ma l'hai fatto troppo presto,"
+
+[1:44-1:49] (confidence: -0.208)
+  "di voler rientrare subito nel trade, ok? Vi ho detto che io non lo faccio mai, e per far"
+
+[1:49-1:55] (confidence: -0.208)
+  "questa cosa ci vuole una psicologia che spacca proprio, e ci vuole tanta esperienza, io cerco"
+
+[1:55-1:59] (confidence: -0.208)
+  "di spiegarlo così voi fate prima, insomma. Allora, qua vi faccio capire dove siamo,"
+
+[1:59-2:04] (confidence: -0.208)
+  "qua siamo su GameStop, il giorno del mega crollo, ok? Quindi qua io sono a un short"
+
+[2:04-2:11] (confidence: -0.215)
+  "a 375, qua era sopra ai 425, complimenti a Reddit e a quelli che hanno comprato a 400"
+
+[2:11-2:18] (confidence: -0.215)
+  "eurootti, comunque, e stanno ancora holdando, qua comunque short a 375, e chiudo l'operazione"
+
+[2:21-2:28] (confidence: -0.215)
+  "a 315, ok? Quindi ho guadagnato più di 2000 eurootti dollari, e qua c'è già lo spoiler,"
+
+[4:40-4:45] (confidence: -0.475)
+  "crolla, crolla, crolla, crolla, crolla, crolla, crolla, crolla, crolla, crolla, crolla, addirittura"
+
+[4:45-4:52] (confidence: -0.475)
+  "fino a se non sbaglio 115, una cosa del genere, cioè da 300 e, da 300 e, questo l'ho chiuso."
+
+[4:59-5:06] (confidence: -0.475)
+  "Ecco, tei c'era un momento, vabbè comunque sui 315 in cui l'ho chiuso io in cui l'ho"
+
+[5:09-5:20] (confidence: -0.212)
+  "qua siamo andati, cioè l'ho ricomprato a 129, penso che il guadagno avrei dovuto fare"
+
+[5:20-5:25] (confidence: -0.212)
+  "e che non ho fatto e non ho fatto niente qua, niente, niente, sono stato lì fermo,"
+
+[5:25-5:32] (confidence: -0.212)
+  "calmo, senza spaccare nulla, zero, guardare, osservare, niente, non ho più fatto niente,"
+
+[5:32-5:36] (confidence: -0.212)
+  "non ho più fatto niente, non ho più fatto nessun tipo di short, niente, ho osservato,"
+
+[8:36-8:43] (confidence: -0.202)
+  "aspetto lo short, ok, come quei tweet su dodge, fa i picchi, se non sei entrato non faccio niente e"
+
+[8:43-8:49] (confidence: -0.202)
+  "aspetto lo short, aspetto che finiscono tutti di gasarsi nel comprare e poi dopo vado short,"
+
+[8:49-8:57] (confidence: -0.202)
+  "e dopo mi gaso io, però questa parte è una parte psicologica molto molto molto importante,"
+
+[8:57-9:05] (confidence: -0.202)
+  "bisogna avere un carattere dove appunto non ti fai prendere, perché uno vivi proprio male,"
+
+[10:54-11:00] (confidence: -0.18)
+  "assolutamente libera e lucida, quindi non cercare di rincorrere false speranze,"
+
+[11:00-11:10] (confidence: -0.18)
+  "ecco quindi per far questo bisogna sempre essere al massimo, io cosa faccio quindi,"
+
+[11:10-11:19] (confidence: -0.18)
+  "per esempio io difficilmente sto tante ore davanti al computer, tendenzialmente mi piace aprire,"
+
+[11:19-11:24] (confidence: -0.18)
+  "fare delle operazioni, star concentrato una mezz'oretta, un'oretta e poi tendo a fare"
+
+[13:59-14:04] (confidence: -0.29)
+  "funzionando devi staccare, devi staccare un attimo, vai a fare qualcos'altro, torna e tu"
+
+[14:04-14:11] (confidence: -0.29)
+  "puoi riragione, non cercare di avere revenge, non di dire che cazzo, qua ho perso 200 adesso metto"
+
+[14:11-14:15] (confidence: -0.29)
+  "il doppio e recupero, no, sai già che stai sbagliando, sai già che prenderei altri schiaffi,"
+
+[14:15-14:23] (confidence: -0.29)
+  "ti demoralizzi e va a finire male, ok allora vi faccio un esempio, il trading ha un lavoro"
+
+[20:39-20:45] (confidence: -0.15)
+  "tanto so che non può succedere niente nel senso che non ho diciamo indicatori per andare a vedere"
+
+[20:45-20:50] (confidence: -0.15)
+  "cosa sta facendo e quindi riesco a dormire quindi non è un problema lo riesco a fare, ok? per esempio"
+
+[20:50-20:56] (confidence: -0.15)
+  "il mercato azionario americano l'over night non lo riesco assolutamente a fare perché poi c'è la"
+
+[20:56-21:03] (confidence: -0.15)
+  "quotazione e l'after hour quindi io magari vado a letto alle 11 e lì c'è l'after hour che anche"
+
+[21:03-21:08] (confidence: -0.15)
+  "a lunga potrai andare a vedere cosa sta facendo quindi tendenzialmente mi sveglio e vado a vedere"
+
+[21:32-21:38] (confidence: -0.206)
+  "me sono basse quindi non ho fatto niente quando sono nato 10.000 già mi saliva l'adrenalina e"
+
+[21:38-21:49] (confidence: -0.206)
+  "quindi ho smesso di fare la tecnica del daily ho iniziato a fare trading e basta quindi se ho"
+
+[21:49-21:54] (confidence: -0.206)
+  "una quantità bassa non mi interessa non mi crea adrenalina e riesco a dormire già con 10.000 era"
+
+[21:54-22:00] (confidence: -0.206)
+  "il mio limite quindi ho dovuto smettere quindi eventualmente comunque prima di andare a letto"
+
+[25:02-25:09] (confidence: -0.279)
+  "un ladro o qualcuno comunque in casa e non potermi svegliare non ho mai capito se io"
+
+[25:09-25:13] (confidence: -0.279)
+  "realmente che aveva mi sembrava sembrava di essere ero convinto di essere a letto"
+
+[25:13-25:17] (confidence: -0.279)
+  "sdraiato con gli occhi aperti ero convinto di essere con gli occhi aperti ma probabilmente"
+
+[25:17-25:26] (confidence: -0.279)
+  "non lo ero il corpo non mi si muoveva ma zero proprio fermo sasso e io è come se urlassi e"
+
+[25:26-25:29] (confidence: -0.279)
+  "cercavo di urlarlo non uscivo neanche urlare quindi come se qualcuno mi stava la mano sulla"
+
+[27:20-27:25] (confidence: -0.253)
+  "cinema sono riuscito a superarlo quindi metodo quello lì di mettere da parte più soldi questa"
+
+[27:25-27:30] (confidence: -0.253)
+  "cosa lo porto davanti quindi ho perso dei frattempo anche altri conti metto tutti i soldi"
+
+[27:30-27:36] (confidence: -0.253)
+  "li e quindi qualsiasi cosa succede io mi mando un bonifico c'è anche per sfiga dove se tipo"
+
+[27:36-27:43] (confidence: -0.253)
+  "ecco tipo qua adesso su Binance c'è questo il reparto Futures quindi lì dove c'è la marginazione"
+
+[27:43-27:49] (confidence: -0.253)
+  "è una cosa a parte devi cambiare usdt a parte che è una cosa intelligente perché se perdi questo"
+
+[28:12-28:19] (confidence: -0.151)
+  "e niente io quindi quella parte li sono riuscito a risolvere quindi sono riuscito finalmente andavo"
+
+[28:19-28:24] (confidence: -0.151)
+  "al cinema e dopo non mi succedeva più questa cosa e l'ho fatto appunto dove ho dovuto diciamo"
+
+[28:24-28:31] (confidence: -0.151)
+  "rafforzare quello che era il mio inconscio che diceva non ce la puoi fare quindi ho messo i"
+
+[28:31-28:38] (confidence: -0.151)
+  "conti questo mi ha dato più sicurezza personale e l'ho superato per quanto riguarda le paure la"
+
+[30:27-30:33] (confidence: -0.245)
+  "la mattina ti sono andate bene hai guadagato quello che ti fa ti rende felice bene basta fine"
+
+[30:33-30:38] (confidence: -0.245)
+  "basta vai fare altro ok per quel giorno li può anche non più fare niente che te frega poi dopo"
+
+[30:38-30:44] (confidence: -0.245)
+  "quando diventi più bravo dopo puoi rientrare magari fa anche qualche altra operazione eccetera però"
+
+[30:44-30:54] (confidence: -0.245)
+  "la mente la te la devi liberare ok devi riuscire a essere tranquillo e rilassato e non voler"
+
+[30:54-30:57] (confidence: -0.254)
+  "diventare il miliardo alle domani che te frega l'importante comunque no che hai guadagnato"
+
+[30:57-31:05] (confidence: -0.254)
+  "sei nato bene sei riuscito ok basta fine chiudi domani un altro giorno dopo tutto quel giorno"
+
+[31:05-31:09] (confidence: -0.254)
+  "il resto di quella giornata li la vivi bene la vivi fare altre cose non hai più il pensiero poi"
+
+[31:09-31:14] (confidence: -0.254)
+  "sì ok andrai a vedere i grafici magari dopo col cellulare lo so ti cadrà l'occhio andrai a vedere"
+
+[31:14-31:19] (confidence: -0.254)
+  "che magari da lì ha fatto più 30 per cento e tu non hai fatto niente ok va bene hai guadagnato"
+
+[33:36-33:43] (confidence: -0.283)
+  "d'aiuto ok iscrivetevi nel frattempo al canale fatemi sapere cosa ne pensate e poi le c'è in su"
+
+[33:43-33:49] (confidence: -0.283)
+  "tutto gratis gratis anche telegram e niente ciao ragazzi"
+

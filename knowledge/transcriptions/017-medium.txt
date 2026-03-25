@@ -1,0 +1,66 @@
+0:00 ciao traders, setta su scappina bull. Oggi vi parlo di lateralizzazione, prendo spunto da
+0:08 Dario che mi ha scritto un commento memorabile direi e faccio capire questo è un commento,
+0:22 pensa quanto lavoro ci ha messo dentro, tutto qua. Ovviamente tratterò un pezzo alla volta,
+0:28 farò un Q&A dove rispondo alle domande più veloci e invece per quanto è quella
+0:33 dell'atalizzazione era il suo punto due, era un video che volevo fare, siamo arrivati sul
+0:40 canale a 250 iscritti dai un numero pari, facciamo un bel video. Ho visto che appunto
+0:48 adesso che non sto più pubblicando quotidianamente che i video più guardati sono quelli appunto di
+0:55 tutorial e nonostante i live credo che siano più quelli più diciamo importanti per imparare
+1:07 ma i tutorial sono quelli che fanno più views quindi comunque andremo su questo. Niente il punto
+1:14 due qua, dove era? Qua sulla lateralizzazione accennavo spesso che appunto era uno dei miei
+1:22 set migliori per entrare e uscire un titolo e ho approfitto di unipolsae che sta facendo
+1:32 oggi una bella lateralizzazione, aspetta che lo apriamo qua, questa è una bella lateralizzazione,
+1:41 sta facendo più 3 qualcosa, più 3 e mezzo e il grafico doveva finire, niente l'ho chiuso,
+2:00 quindi riapriamo il grafico, facciamo vedere cosa sta succedendo quindi aperto in GappApp,
+2:10 ottimi dati poi in Atosu e il titolo diciamo il prezzo si è appiattito, sta creando un bel
+2:20 canale, in realtà potrebbe anche essere così, è passato poco, sono le 10 e mezza, sono solo
+2:26 10 e mezza il mattino però è già da un po', è già dalle 9 e mezza fino a 10 e mezza,
+2:34 quindi è un'ora più o meno che sta andando di traverso quindi io questo lo chiamo lateralizzazione
+2:38 perché è interessante, per diversi motivi, perché appunto si scarichano le medie quindi
+2:44 soprattutto mi chiedete cosa succede, visto che io seguo le medie mobile per comprare,
+2:49 soprattutto nei live vedete che entro con sfrutta la media dei 5-10 minuti, qua è tutto schiacciato
+2:56 quindi qua ci sono tutte le medie mobili, in questo momento qua sono tutte schiacciate,
+3:01 sono tutte lì, quindi le medie mobile non contano più niente, contano queste due linee che ho messo,
+3:06 cioè il minimo e il massimo della canalizzazione, però va verificato questo, sia minimo che massimo
+3:15 con il book, quindi con voi per coloro che usano i cfd ve ne fate poco, invece nel book, almeno che
+3:25 non sia qualcosa di estremamente liquido, quindi comunque il book serve a poco, allora vi basate
+3:31 proprio sulle linee, invece sul titolo è unipol, per essere sul mercato italiano è un titolo molto
+3:36 scambiato, però come vedete nel book ha un senso, allora questo livello inferiore che sta facendo
+3:42 la resistenza è il 247, bene andiamo a vederne il book, cosa c'è, a 247 abbiamo questo bel pezzone
+3:50 qua da 230, ok, questo sta facendo da resistenza, poi anche sotto ha un bel supporto, ok, quindi
+3:58 la rottura di questi 230 a 247 è anche la rottura di questa linea qua e quindi sarebbe ottimo per
+4:08 andare short, ok, la rottura, invece a rialzo qua andiamo a vedere il 2488, cosa c'è nel book,
+4:21 88 è qua, ok, 88 è qua, ma non è una vera resistenza grafica, la vera resistenza è qua a
+4:33 250, quindi il nostro rialzo del canale non è più qua, ma sarà a 250, andiamo a piazzare su 250,
+4:43 vediamo dov'è, è qua, 98, 50, ok, qua, quindi poi da lì si va a spaccarci i massimi, quindi in realtà
+4:52 il gioco è più alto di quello che sarebbe la canalizzazione, ok, quindi il canale si romperebbe
+4:56 già qua, ma non consiglierei l'acquisto, non consiglierei l'acquisto perché il casino,
+5:05 la resistenza reale è qua a 250, quindi cosa si fa in questi casi? semplicemente, si lascia andare,
+5:15 tu non fai niente, metti un alert, quindi vi faccio vedere come io inserisco l'alert,
+5:21 l'alert migliori fra fineco e webank, è sicuramente webank, il t3, si inseriscono
+5:30 l'alert molto, diciamo più facilmente, basta cliccare sul titolo, poi dopo inserisci il prezzo,
+5:37 quindi a 7 e in alto a 9, facciamo 9,2 prima, mi deve avvertire, questo lo facciamo prima,
+5:47 che mi deve avvertire prima, ok, poi clicca ok, condizione è già scattata perché siamo a 7,6,
+5:57 non è scattata, ok, infatti ci siamo, comunque ci sta avvicinando molto la resistenza a ribasso,
+6:04 ricordiamo però che non basta nemmeno questo, ok, per chi fa scalping, che come me si basa
+6:13 su tante notizie, ok, quindi guardiamo anche cosa sta facendo l'indice dei miei grandi indicatori,
+6:20 i miei grandi indicatori sono il DAX, il NASDAQ, ovviamente è il cdf perché si parte già dalle
+6:29 8 del mattino, è come se fosse un future sul NASDAQ, insomma, fa capire cosa farà, poi mercato italiano
+6:36 che oggi è abbastanza in sell-off, ha rimbalzato però, nonostante il rimbalzo dal sell-off,
+6:41 comunque unipol non ha rimbalzato, quindi comunque ti fa capire che è schiacciata fra due resistenze,
+6:54 quindi ottimo, brutto sarebbe se andasse sui minimi con l'indice che crolla, ok, quindi sarebbe un
+7:04 falso segnale, che però ti comina a andarci ma c'è il rischio che se poi rimbalza l'indice torna di
+7:10 nuovo nel canale, in quel caso devi per forza chiudere, quindi chiudi in perdita ma devi chiudere.
+7:14 Stessa cosa rialzo, se magari rompe il rialzo, rompe rialzo, va su quella resistenza grossa e lo
+7:22 rompe con l'indice che schizza su, devi fare attenzione perché in pratica sta andando su,
+7:26 perché sta andando su anche l'indice. Bello hai invece quando rompe uno delle tue resistenze
+7:32 senza l'indice che stia facendo qualcosa di significativo, quindi se l'indice non stava
+7:40 un pendere basso, non stava un pendere rialzo ma questo sì, allora è ottimo, allora è ottimo,
+7:46 io di solito aumento anche la quantità su cui operare sul titolo, se vedo che ci sta andando
+7:54 perché sta seguendo l'indice, abbasso le quantità, se vedo che ci sta andando perché,
+7:59 per i fatti suoi aumento, quindi mi fa capire che sta prendendo la sua direzione che è indipendente
+8:05 dall'indice, per questo io ho questi indicatori, mi servono per capire quanto è forte il segnale,
+8:13 la direzione del titolo. Niente dai, fatemi sapere nei commenti se sono stato chiaro,
+8:20 probabilmente farò altri perché adesso avrò dato per scontato tantissime cose. Voi scrivetemi
+8:26 nei commenti cos'è che non è chiaro e cosa magari specificare meglio e il prossimo video farà così.
+8:33 Ciao ragazzi, iscrivetevi e mettete un like se vi piace, ciao!

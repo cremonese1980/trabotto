@@ -1,0 +1,309 @@
+0:00 ciao a tutti e benvenuti su Skype in the Bull, oggi puntata su livelli trigger, molto importante
+0:06 perché si fa decisamente molta fatica a capire cosa sono i livelli trigger, perché funzionano,
+0:15 perché non funzionano, come gestire lo stop, quindi è importantissimo fare questo video.
+0:20 Poi abbiamo l'ausilio anche di Gemini, Gemini è l'intelligenza artificiale di Google, quindi
+0:26 il migliore per sapere un po' quello che trovate nel web e ho chiesto appunto a Gemini che cos'è
+0:33 un livello trigger e capite che l'intelligenza artificiale, cioè quello che c'è poi nel web
+0:37 dove lui va a prendere i dati, fa veramente schifo. E un passo alla volta però. Allora,
+0:43 livello trigger, quindi qua abbiamo visto, qua siamo con il bull web, diversi livelli trigger,
+0:48 ok? Andando mettendo in daily nell'ultimi 24 ore e possiamo trovare i terzi tocchi plus,
+0:54 che poi andrete, che questo video andrà nella playlist per neofti, piano piano,
+0:59 vedendo tutta la playlist per neofti, capendo tutti i termini e andando a vedere le tecniche,
+1:04 capirete meglio quello che sto dicendo oggi, quindi questo sarà un video che capirete molto
+1:11 meglio più avanti, capendo le tecniche e capendo la playlist per neofti. Ma comunque è importantissimo
+1:17 avere e capire il livello trigger, perché si usa tantissimo come termine e appunto i trader
+1:25 devono assolutamente capire meglio il livello trigger, perché è quello in cui è meglio operare
+1:33 su un livello trigger, perché ci permette di avere un'esplosione, ci permette di stare anche
+1:39 meno tempo nel mercato, ci permette di testare e capire realmente chi sta comandando. Ecco,
+1:44 questa è la parte più importante, il livello trigger ci fa capire se effettivamente in quella
+1:51 direzione ci sarà un'esplosione oppure no. Andremo a vedere diversi, qua c'è anche un livello trigger
+1:57 che non ha funzionato e se non si usa lo stop, guardate qua, solo la parte del corpo della
+2:03 candela è un meno 13, quindi questo è quasi un quasi meno 20 per cento, quindi se non si
+2:09 usano gli stop. Però è importante andare a capire il perché noi utilizziamo, perché i trader
+2:15 utilizzano i livelli trigger, soprattutto noi della bull family. Allora andiamo a leggere appunto Gemini,
+2:22 io immagino diciamo i livelli trigger un po' in questo modo qua, dove c'è un livello dove da
+2:31 lì in poi i soldi devono arrivare. Se non arrivano vuol dire che non era un livello trigger, l'altra
+2:39 parte è molto più forte e quindi si ritorna dall'altra parte, si ritorna indietro, vi spiegherò
+2:47 meglio i meccanismi, però immaginatevi un po' questa scena. Gemini, vai, quindi vi ripeto Gemini, ogni
+2:57 intelligenza artificiale ha un qualcosa in più rispetto agli altri, Gemini è il migliore essendo
+3:02 di Google sulle risposte di quello che c'è diciamo quello che dice la gente sul web, quindi
+3:07 se volete sapere cosa pensa il web fate una domanda Gemini e il risultato è un po' quello,
+3:13 così capite se la gente ha capito o meno il livello trigger e da lì capirete perché sto
+3:18 facendo questo video perché insomma. Ecco un disegno che può aiutare a capire un livello trigger
+3:23 nel trading, quindi già il grafico è veramente bruttissimo, fatto a linee non a candele, ma brutto
+3:29 perché per noi è brutto perché appunto non si capisce la direzione, prende la direzione e va
+3:34 al contrario dell'altro, quindi non c'è una direzione chiara, non capiamo dove stanno andando
+3:40 i soldi, ma soprattutto non c'è una parte più forte dall'altra, non interessa che sia solo la
+3:46 parte del rialzo più forte, dopo vi farò vedere gli esempi, interessa solo capire se è più forte
+3:53 chi sta acquistando e quindi chiaramente c'è un livello di rialzo o al contrario è più forte,
+3:59 sono più forte le vendite, entriamo a un livello dove possiamo guadagnare a ribasso,
+4:04 ok? Quindi non si guadagna solo long, si guadagna anche short nello stesso meccanismo. Fa vedere
+4:13 un livello trigger, in realtà qua se avessi avuto un nostro grafico, qua praticamente c'è
+4:19 un bad short, questo è un bad short ma veramente veramente molto brutto, quindi già l'esempio fa
+4:24 capire che google non cerca la pulizia, cioè google, in internet non si cerca la pulizia,
+4:33 soprattutto se andate a vedere i grafici appunto di chi lavora sul forex o comunque su altre cose,
+4:39 spesso i grafici li vedete che non hanno nessun tipo di pulizia e pure ci operano. Questo disegno
+4:44 illustra un livello di trigger nel trading, quindi veramente questo bad short, mostrando un grafico
+4:51 del prezzo delle azioni con un punto di prezzo specifico contrasegnato come trigger, ok? In realtà
+4:57 lui non prende il bad short, ti prende questo livello, uno delle massi minimi sempre più alti,
+5:07 ti prende il secondo, neanche il terzo o neanche il bad comunque, e indicano potenziale azione,
+5:14 acquisto vendita quando quel livello viene raggiunto. Come spiegaresti un punto trigger
+5:21 ad un neofita, gli ho chiesto, immagina il trading come un gioco, già questa parola è veramente brutta,
+5:25 in cui devi decidere quando comprare o vendere qualcosa come azione di un'azienda. Un punto
+5:31 trigger o livello di attivazione, livello di attivazione, può anche andare, è come un alarme
+5:40 che ha imposti, è un prezzo specifico che se raggiunto o superato ti dice che è il momento
+5:47 di agire, ok, ci può stare, perché è utile? Automatizza le decisioni, invece di stare incollato
+5:55 lo schermo a guardare i prezzi, imposti i tuoi trigger e sai che quando quel prezzo viene toccato
+6:00 è il momento di fare la tua mossa, anche questo ci può stare, gestisce il rischio,
+6:05 può impostare un trigger per vendere automaticamente se il prezzo scende troppo,
+6:11 per limitarle perde, ecco qua si sta proprio completamente perdendo perché si stia parlando
+6:15 o per comprare se sale ad un certo punto per non perdere un'opportunità, ok, qua ci può stare.
+6:22 Togli l'emozione nel trading, qua proprio scanna completamente, nel trading le emozioni possono
+6:28 portare a decisioni sbagliate, un trigger ti aiuta a seguire un piano predefinito basato sulla
+6:32 tua strategia, non sulla paura o la vedità del momento, qua non sono d'accordo perché è giusto
+6:41 che appunto non devi lavorare sulla paura o la vedità, ma il trigger è ben altro, andremo a
+6:48 capirlo poi dopo. Esempio pratico, di fatti qua per far capire che stai sbagliando,
+6:52 supponiamo che tu abbia comprato delle azioni a 10 euro e speri che salgano, e speri che salgano,
+6:58 bruttissimo termine, però se dovessero scendere non vuoi perdere troppo, quindi vedete come
+7:04 confonde lo stop loss col trigger, potresti impostare un trigger di vendita a 9 se il prezzo
+7:10 delle tue azioni scende a 9 euro, scatta l'alarme e tu vendi stop loss, limitando la tua perdita a
+7:17 1 euro per azione, questo è spesso chiamato stop loss, appunto non c'entra niente, oppure supponiamo
+7:23 che tu voglia comprare un'azione solo se supera un certo resistenza, ecco magari a 12 perché
+7:29 credi che una volta superato quella soglia il prezzo salirà ancora di più, questo sì, potresti
+7:34 impostare un trigger di acquisto a 12 quando il prezzo lo aggiunge o supera i 12 scatta l'alarma,
+7:39 ma questo è più un metodo di inserimento degli ordini, quindi non capisco, in sintesi un punto
+7:45 trigger, un prezzo predeterminato che ti fa scattare un'azione, comprare o vendere una
+7:51 volta che viene raggiunta aiutandote a gestire le tue operazioni in modo più strategico e emotivo,
+7:56 ok quindi questo è il riassunto di quello che c'è sul web, fa capire che non hanno capito nulla,
+7:59 bene cos'è un punto trigger? Un punto trigger è un momento chiave in cui andiamo ad aprire questo,
+8:06 anzi no andiamo sul reale, apriamo questi, ecco questa è un'operazione reale che ho fatto,
+8:12 questo è il pnl di questa operazione e ovviamente si stava lavorando su un momento trigger, amo
+8:18 lavorare sui momenti trigger, perché questo? Perché è un punto in cui ci mostra la verità
+8:26 di chi sta comandando, questo è molto bello come esempio perché oltre ad avere un livello trigger
+8:32 superiore dove è stato toccato ben tre volte, comunque ha cercato di rompere questo livello
+8:37 quindi il prezzo ha cercato di superare un determinato livello che era 0,065 non c'è
+8:49 riuscito, non c'è riuscito per ben tre volte, è sceso, qua era molto bello perché appunto com'andava
+8:54 la 10 quando poi roto fa tutto, se la cerchiamo la 10, tornando sopra dimostra forza perché questo
+8:59 dovrebbe andare nella EMA nella nostra media mobile inferiore, quello successivo al 10 e la 60,
+9:05 non andandoci significa che ha della forza, in questo caso sono riuscito a fare un ingresso
+9:12 anticipato al livello trigger cioè il livello dove da lì il prezzo potrebbe esplodere perché
+9:19 ho trovato una conformazione inferiore cioè una allateritazione quindi una praticamente un livello
+9:25 trigger al di sotto del vero livello trigger, in questo caso stiamo parlando di time frame 30 minuti
+9:34 quindi qua abbiamo anche un livello daily molto importante, vedete che c'è anche questo è stato
+9:39 fatto il giorno precedente il 26 e questo diventa il 27 quindi un terzo tocco plus, andate a vederlo
+9:45 la tecnica nella playlist appunto delle tecniche e quindi questo è un terzo tocco plus, un livello
+9:52 molto trigger ma perché molto trigger? 1, ha un time frame alto e stiamo operando appunto, questo è
+9:58 time frame 30 minuti ma è anche un livello daily, sento un terzo tocco plus questo era il massimo
+10:05 del giorno precedente, il giorno dopo quindi il giorno stesso in cui stavo operando ha fatto
+10:16 il secondo tocco quindi il secondo tentativo di rompere quella barriera, ha fatto dietro il terzo
+10:23 scende sfoga poi qua crea un'altra conformazione e un altro livello trigger, la differenza è come
+10:33 se ci fosse un pezzo molto grande nel book quindi ci fosse un venditore gigantesco che non permette
+10:40 il superamento di questo livello è come se avesse 200 milioni di azioni da vendere e li piazza
+10:50 lì, anche se nel book non lo vedi lui sta cercando di vendere e proteggere quella barriera, lui non
+10:57 vuole che si supera quella barriera lì, o comunque lui vuole vendere tutte le sue 200 milioni di azioni
+11:05 senza fare superare quel livello lì diventa poi un livello trigger perché se lui poi finisce quindi
+11:14 la gente compra e finisce quei 200 milioni di azioni e dopo non c'è più niente, ha finito, ha
+11:21 finito non c'è più niente e da lì possiamo avere l'esplosione ma perché poi c'è anche l'esplosione
+11:27 non solo perché quello grosso ha finito di vendere gli acquirenti, hanno comprato colui che stava
+11:35 vendendo ma anche perché nel frattempo e qua è importante appunto i time frame grandi perché quelli
+11:42 sono i veri livelli trigger nel frattempo le persone hanno per esempio chi è nato short qua
+11:47 dove mette lo stop quindi dove chiude l'operazione short lo chiude se va a fare nuovi massimi ok
+11:54 quindi cosa succede che passa tantissimo tempo tutti questi che sono nati short mettono lo stop
+12:01 al livello di rottura poi chi lo mette direttamente la rottura chi subito dopo ma comunque lo mette
+12:06 intorno al livello di rottura quindi quando poi va a finire e passa tanto tempo quindi immaginatevi
+12:13 ogni ogni 30 minuti quante persone magari sono nati short e vado a mettere la chiusura quindi
+12:19 lo stop loss dello short perché chi va short guadagna solo se scende magari il target era la
+12:24 sessanta non viene raggiunto quindi quando poi arriva quel livello lì o lo supera chi è short deve
+12:31 deve chiudere l'operazione per chiudere uno short devi comprare in più se è un livello molto
+12:36 importante si possono accumulare tanti i compratori quindi nel frattempo che passa il tempo ci saranno
+12:41 tante persone che mettono nel livello in cui chi è short mette lo stop chi acquista mette appunto
+12:49 un ordine condizionato di acquisto quindi va a inserire un ordine a 0,065 così se raggiunge
+12:56 quel livello lì oppure subito dopo entra e quindi cosa succede che superando questo livello avremo
+13:04 una somma di due tipologie di ordini la somma di chi vuole comprare perché lo vedo come un'opportunità
+13:11 ok lo vedo come un'opportunità questo è un livello daily una rottura e quindi vuole comprare per
+13:18 tenerselo perché si aspetta appunto una grande accelerazione e ma e si sommano anche tutti quelli
+13:25 che nell'arco di questo tempo qua hanno hanno aperto degli short e quindi quali devono chiudere
+13:33 quindi c'è chi vuole comprare e chi vuol chiudere gli short e si ritrova poi dopo avere questo grande
+13:38 esplosione che è quello un livello trigger che è un livello trigger e dove potenzialmente quindi
+13:45 non è una certezza ma potenzialmente può accadere che ci sia un'accelerazione di prezzo tenendo la
+13:52 mente che è molto importante poi testare quel livello lì perché se io io che ho fatto un ingresso
+13:58 anticipato perché qua trovato uno che non vedeva 200 milioni ma ne vendeva che ne so 50 milioni ha
+14:03 creato un sub livello quindi un livello che anticipa il livello trigger questi sono gli ingressi
+14:09 migliori perché ho un ingresso che va anticipare dove posso aspettarmi l'esplosione quindi mi
+14:16 aspetto una piccola esplosione per raggiungere il livello trigger dove può effettivamente andare
+14:21 a fare l'esplosione grande io l'ho anticipato ma il vantaggio del livello trigger è proprio lo stop
+14:26 quindi dove uscire cioè il prezzo lateralizza non riesce a superare quello scoglio non riesce
+14:33 a superare quel livello perché c'è qualcuno di grande che sta vendendo delle volte lo vedi
+14:40 nel book ma è maggiore la grande maggioranza delle volte non lo vedi nel book e non è tu che
+14:45 vedi non devi per forza mostrare il tuo livello tu puoi avere un iceberg o puoi semplicemente
+14:51 usare quel livello come livello massimo e poi vendere sotto in modo che tieni il prezzo
+14:59 schiacciato quando tu finisci tu fondo hai finito di vendere quel pezzo grande basta dai lì dopo
+15:07 ci sono solo gli acquirenti e chi è nato short chiude l'operazione per poi portarti al livello
+15:12 trigger ma se supera questo livello anche di pochissima anche solo di un tick quindi supera
+15:19 di lo spazio minore nel book quello è un tick lo spazio minore che trovi nel book lo supera
+15:27 proprio di un tick quindi da 0.0064 mettiamo forse precisamente 64 fa 0.006401 quindi l'ha
+15:37 superato di un tick e poi torna dentro io devo uscire capirete poi dopo perché faccio degli
+15:43 esempi perché ha dimostrato che non è trigger quindi lì non si sono sommati le chiusure degli
+15:50 short più gli acquirenti semplicemente quello grosso ha finito quei 20 milioni di azioni che
+15:57 aveva e dopo ne ha altri 20 milioni e quindi bisogna andarsene ok lo testiamo perché noi i fondi
+16:03 non è che comunicano con noi noi non possiamo sapere quanto deve vendere lo capiamo dalle
+16:09 conformazioni dalla pulizia quindi candele molto pulite sulle ema quindi capiamo che c'è un comando
+16:16 e lo capiamo testando i livelli così scopriamo se c'è qualcuno di grosso o no se mettiamo in
+16:28 difficoltà qualcuno meno lo scopriamo solo appunto entrando mercato supera di un tick quel livello
+16:33 bene quel livello lì ci devono essere tutti quelli che vogliono entrare più quelli che
+16:38 chiudono gli short quindi lì ci deve essere una grande esplosione altrimenti semplicemente
+16:42 non era un livello trigger era una finta chi ha venduto quei 20 milioni in realtà ne ha altri
+16:48 20 milioni e quindi non ha senso stare dentro anzi è una grande opportunità per fare il contrario
+16:55 quindi o chiudete e vi incassate quello che è la perdita oppure semplicemente oppure ribaltate
+17:00 situazione la situazione cioè chiudete e aprite un'altra posizione vi ricordo che su bybit c'è
+17:06 l'opzione reverse quando tu lo clicchi chiude la tua posizione a mercato anche se grazie a noi non
+17:15 è più a mercato ma va a chiudere i diversi livelli cioè entra ed esce dal book fino a chiudere quindi
+17:21 non è un mercato vero e puro e la seconda metà non te lo vende mercato ma te lo vende all'ultimo
+17:29 prezzo in cui ha venduto la tua posizione quindi sia l'ultimo prezzo che venduto la tua azione
+17:34 nel book era questo livello qua l'ordine nuovo di short andrà a quel livello lì e rimarrà nel
+17:41 book quindi non fai tu lo spike ok è un metodo molto intelligente e poi fare comunque appunto
+17:48 in quel modo puoi ribaltare con un clic solo chiude la tua posizione semi mercato e apre
+17:55 una posizione nuovo ma non è detto che viene eseguito perché comunque rimane nel book e nel
+18:00 caso hai il tuo ribaltamento per andare al trigger che è lema inferiore ok quindi i livelli trigger
+18:07 sono molto importanti per questa somma di cose capiamo seftamente qualcuno ha finito di vendere
+18:12 in caso in cui è un livello long e se non lo è o dire che semplicemente il trigger non ha funzionato
+18:19 dobbiamo uscire fine ok questo è molto importante che capita questo e lo capite per esempio se io
+18:26 fossi entrato in questa candela qua perché magari nel buco ho visto qualcosa di grosso qua fossi
+18:30 entrato ma poi non rompe quindi magari fosse entrato a questo non vede questo ecco fossi entrato
+18:38 questo livello qua quindi anticipandolo leggermente il livello trigger e poi candelo dopo tono indietro
+18:46 non deve in questo caso non andrei a vendere andrei a vendere solo se mi chiude sotto le ma 10 perché
+18:53 non ha testato il livello trigger non l'ha testato di un tick ok quindi io l'ho anticipato magari
+18:59 sbagliando o magari ho visto qualcosa nel book un livello interessante l'ho anticipato ma in questo
+19:04 caso io non vendo se non torno sotto la 10 se questa distanza è troppo grande abbassate la size
+19:11 invece di non so 10.000 mettete 5000 sia troppo mettete 2000 3000 quel che abbi dovete gestire
+19:16 ma questo lo imparerete più avanti ma in quel caso se non superi di un tick io non ho testato
+19:21 il livello trigger quindi non so se il livello trigger ha funzionato quindi porto pazienza fino
+19:27 alla chiusura sotto la 10 in questo caso è proprio lì sulla sulla 10 insomma ma non ha chiuso sotto
+19:33 aspetto la candela dopo poi dopo qua se qua avessi chiuso poi sotto la 10 sarei dovuto andare
+19:39 in questo caso poi fra l'altro c'era poi un doppio livello quindi qua per un tick se avessi chiuso
+19:45 livello sotto lo hai dovuto chiudere prima ancora che chiudesse la candela ma qua già
+19:50 entriamo un po in qualcosa di più tecnico comunque dopo qua ha andato a testare il livello trigger
+19:57 se avesse fatto solo uno sputino quindi fosse salito di un solo tick quindi 0.0006401 e poi
+20:06 fosse tenuto dentro li devo uscire posso ribaltare o comunque l'importante è capire che il trigger
+20:12 è stato superato non ha funzionato e quindi me ne andavo in questo caso invece ha funzionato e
+20:17 poi è arrivato al vero livello trigger che è quello più in alto perché questo è il vero livello
+20:23 trigger perché è stato lavorato perché è un livello daily ok questo è anche il massimo del
+20:29 giorno prima quindi è un è un trigger di livello come questo ma in più ha un altro trigger che
+20:36 è livello daily cioè un massimo di ieri quindi un altro punto in cui mi posso aspettare un
+20:41 esplosione quindi è una somma di livelli è andato a fare io poi non ho aspettato chiusura
+20:46 candela ho fatto il 3.7% ma questa è una candela che ha fatto quasi il 10 proprio perché è un
+20:52 punto trigger ok andiamo avanti negli esempi questo invece non è questo time frame 5 minuti
+20:58 quindi non è un plus non è non c'ha non ha livello daily e niente semplicemente però era
+21:05 era un livello importante del massimo precedente l'ho testato non l'ha toccato fa una candela di
+21:14 azzurramento qua fa capire che vuole andare a testare questo livello faccio il mio ingresso
+21:22 vedete proprio sul livello io ovviamente avendo size da 10.000 questo scambiava 49 milioni non
+21:30 è tantissimo io cerco di fare il mio ingresso non a livello preciso leggermente prima che
+21:38 quando io entro vado a toccare il livello trigger e voglio far saltare col mio ingresso tutti gli
+21:46 stop loss e tutti gli ingressi automatici ok quindi io in realtà lo anticipo leggermente di
+21:51 qualche tick dipende poi da quello che vedono il book ma l'importante è capire una volta che mi va
+21:57 qua in realtà in ingresso potrò fare superamento della candelina andate a vedere la tecnica della
+22:02 candelina però io l'ho fatto prima del livello trigger quando entro voglio vedere l'accelerazione
+22:06 se non succede niente anche qua ho fatto la chiusura anticipato queste 5 minuti potevo aspettare
+22:11 io ho fatto il 2 e mezzo ma anche qua era più di un 10 pazzesco e si molto più di un 10 però
+22:19 comunque livello trigger testato fatto ok anche perché comunque era un viagra non avevo pure che
+22:27 facessero lo sputino tra si indietro comunque mi sono contentato è andato a target eccolo qua
+22:32 abbiamo anche livello trigger short quindi il vero punto trigger è questo minimo ok questo time
+22:40 frame 5 minuti questo minimo ma va a crearsi un livello anticipato quindi io faccio il mio ingresso
+22:48 anticipato per vedere se quasi sono accumulato degli ordini di fatti poi dopo quando siamo
+22:53 arrivati fa una bella candela dal mio ingresso io faccio il 4 per cento in questo caso sono
+22:59 riuscito a aspettare la chiusura candela qua avevo altri livelli trigger quindi il minimo di
+23:04 questo era livello trigger qua però crea un livello molto interessante quindi molto probabilmente
+23:08 qualcuno qua che stava comprando ha finito di comprare e da lì c'è stata l'accelerazione che
+23:14 ha toccato il minimo questo potrebbe anche essere il minimo storico e questo il minimo di ieri quindi
+23:19 dopi livello trigger si sommano chi vuole vendere aprire gli short e chi era long e arriva all'equilazione
+23:28 allo stop loss e quindi fa la candelona dove noi entriamo faccio la mia candela chiudo perché poi
+23:33 vedete il rimbalzo livello trigger qua un altro livello trigger time frame 30 minuti è un livello
+23:41 no non è un livello plus perché questo è di giornata comunque terza volta che ci va terzo
+23:47 a quarto dipende come vedete questa candela ma l'importante è testiamo il livello va a fare
+23:52 nuovi massimi se lo fa di un sputo e non ci va si torna indietro che in questo caso sono riuscito
+23:57 a fare il 5 per cento ma altrimenti poi vedrete anche degli esempi dove bisognava andare questo
+24:04 bellissimo che è molto preciso pulito un altro livello lo riesco ad anticipare perché trovo
+24:09 un qualcosa nel book qua sta parlando di ethereum quindi praticamente sono entrato
+24:13 nel questo livello minimo faccio solo l'1 per cento ma essendo che scambia 5 miliardi sono
+24:20 entrato con una size molto più grande del solito e quindi non ho spettato la chiusura
+24:26 candela male perché avrei fatto il doppio e però a livello trigger e stiamo parlando di ethereum
+24:32 ogni tanto ricordatevi che quando i top cap quindi anche per noi bitcoin che l'indice o gli altri
+24:41 comunque che scambiano tantissimo scambiano miliardi e 5 miliardi e però se trovo pulizia
+24:49 in questo caso vedete che è molto pulito fra l'altro aveva anche un incrocio sopra tutto molto
+24:52 pulito senza candeloni con spike molto importanti quindi il corpo senza spike giganteschi
+24:59 assolutamente e quindi a un livello che mi dà fiducia e posso operare anche su bitcoin su ethereum su
+25:05 tutti quelli grandi ovviamente posso avere anche una size devo avere una size più grande perché
+25:09 queste candele sono molto più piccole ok avete visto per esempio questa è una candela del neanche
+25:15 2 per cento che fra l'altro è tanto per essere ethereum questa è una candela solo del corpo è
+25:24 del 5 capite che insomma c'è una grande differenza e questa è ethereum ecco questo è un grafico molto
+25:36 sporco mi sconsiglio di operare su queste candele questi grafici molto sporchi e te le ema
+25:43 tengono poco però mi ha creato un livello sopra al cambio colore quindi col daily positivo come
+25:49 se fosse un terzo tocco l'ho testato e ho detto beh vediamo vediamo se va ho riuscito a chiudere
+25:53 sopra e poi essendo un all time high questo nonostante fosse sporco io lavoravo per andare a
+26:00 testare questo livello quindi sono uscito a fare un ingresso anticipato e poi dopo andare a testare
+26:08 questo livello una volta fatto questo testato questo livello io me ne sono andato subito non
+26:12 fidandomi appunto essendo un all time high in altri casi vedete che io lo tengo ma essendo
+26:18 sporco ho tenuto poco ma l'importante era testare questo livello avesse fatto solo uno
+26:22 sputino comunque me ne sarei andato ada per esempio questa è un'operazione al time high in quattro
+26:31 ore quattro ore questo livello daily di più giorni di più giorni molto importante 2 e mezzo
+26:37 per cento e niente sono riuscito a fare questo livello anche su ada ok quindi anche su quelli
+26:44 grossi quando hanno una conformazione molto pulita questa è bellissima che va a fintare
+26:49 i livelli fa capire che a 10 a 10 tiene poi va a far costruttura l'ho testato ha funzionato
+26:56 e me ne sono andato ecco qua mi fa capire invece un livello trigger che non funziona
+27:09 a me non è piaciuto non so se era perché un daily c'era un aim in testo o qualcosa comunque
+27:16 non mi era piaciuto e quindi non ho fatto il livello di ingresso non ho fatto questo terzo
+27:21 tocco qua siamo al time high un minuto e facendo una chiusura una rottura ma chiude dentro quindi
+27:29 fa una candela di inversione io parto con lo short quindi questo livello trigger ha funzionato
+27:34 ma è stato completamente mangiato quindi cosa è successo tecnicamente qua qua c'era un livello
+27:39 che stava tenendo schiacciato il prezzo quindi qualcuno di più grosso del solito che stava
+27:44 vendendo rotto il livello accelerato ma poi dopo dimostra che aveva ancora altri pezzi da vendere
+27:49 ok e quindi semplicemente fa capire che è riuscito ad assorbire tutti i livelli trigger che si sono
+27:58 sommati e quindi diventa un'ottima opportunità per andare al contrario di fatti dopo sono stato short
+28:03 e ho chiuso addirittura sotto la 60 e qua probabilmente la 60 teneva da tanto time frame
+28:11 un minuto quindi a time frame 5 minuti era lema 10 che teneva da tanto e quindi essendo in viagra
+28:18 non mi sono fidato di fare questa rottura ho spettato la finta e poi sono andato a targa ho fatto
+28:23 bene il 6 per cento in questa operazione qua ok i livelli trigger sono eccellenti per quello che
+28:30 ho detto prima perché appunto siamo in un viagra magari non facciamo quindi viagra significa
+28:35 andare a vedere la tecnica nella playlist delle tecniche senza pubblicità su youtube e se siete
+28:43 in viagra vedi che il prezzo continua a salire da tantissimo tempo per me era troppo quindi non
+28:48 partecipo e quello però è un ottimo segnale di dire ok basta gli acquirenti hanno finito e quindi
+28:54 parti al contrario eccolo qua ecco questo è un ottimo esempio dove io ho testato questo livello
+29:01 ok time frame 5 minuti era un terzo tocco ho testato vediamo ha superato il livello si ha fatto
+29:07 questa candela qua era comunque il 5 per cento e tanto ho fatto la mia chiusura fine quando chiude
+29:13 dentro quindi rientra nel livello trigger e fa la chiusura candela quindi chiude la candela
+29:21 all'interno è trigger al contrario che non c'è più forza e quindi fa l'esatto contrario quindi
+29:28 questo è un ottimo esempio se avesse chiuso anche solo leggermente qua sarei uscito perché
+29:33 qua doveva fare la sua bella candela di accelerazione che poi ha fatto ma se non avesse fatto niente
+29:38 abbiamo testato il livello non è trigger non ha messo in difficoltà nessuno e quindi te ne vai
+29:42 questo è l'importante del trigger quando arriva al livello capiamo se questi sono forti o no
+29:51 se quando arriva lì questi qua si mettono sdraiati per terra abbiamo campo libero se quando arriviamo
+29:55 lì questi diventano il grosso e il doppio è inutile rimanere dentro ok andiamo al contrario
+30:01 chiudiamo l'operazione eventualmente ribaltiamo ma l'importante è chiudere l'operazione perché
+30:05 abbiamo capito che quando arriviamo lì noi pensiamo che questi siano inferiore a noi quando arriviamo
+30:12 lì magari si tolgono la tuta o tirano fuori è un'arma segreta noi diciamo ok niente dobbiamo
+30:20 andare non ha funzionato vi ricordo che comunque nel bulweb vedete qua tante informazioni vedete
+30:27 cosa può accadere quando un punto trigger non funziona se aspettate a time frame 5 minuti
+30:32 comunque c'era eccolo qua la candela di azzurramento proprio sul livello trigger il minimo di quella
+30:37 candela diventa il vostro out ok e poi dopo fatto della sua accelerazione quindi altrimenti
+30:46 vedete abbiamo dei livelli trigger veramente molto interessanti e poi vi ricordo basta
+30:52 andare su discord alla fine discord è gratis che è entrato il nostro discord gratis e in fondo in
+31:00 fondo vedete qua avete tutte le stanze in fondo in fondo leggete qua archivio bull apritelo
+31:07 perché delle volte è chiuso così invece voi lo dovete eccolo qua archivio bull cliccate per
+31:14 aprire avete tutte le stanze con le tecniche e voi semplicemente cliccate e trovate gli esempi
+31:22 ce n'è ce n'è un'infinità pazzesco con ovviamente l'ingresso di uscite size tutto
+31:29 trovate ok bene scrivete nei commenti in modo che magari poi ne possiamo parlare se avete dubbi
+31:37 però questo è livello trigger la potenza del livello trigger è proprio quello di capire
+31:44 chiaramente gli ingressi io devo addirittura anticiparlo se nel book c'è un livello molto
+31:49 grande gigantesco non anticipo il livello entro al mangiarsi di quel livello che vedo nel book
+31:56 quindi se nel book io vedo 200 mila euro sono su banana vedo 100 mila euro che per bananas è
+32:04 tanto non entro prima entro quando quei 100 mila magari diventano 30 mila e facciamo ingresso non
+32:12 faccio mai l'ingresso già triggerato perché è difficilissimo che vengono eseguito se vengo
+32:18 eseguito un tick topo e significa che già non sta funzionando che è raro che tu vini eseguito
+32:24 viene eseguito solo se non funziona quindi non ha senso quindi va o anticipato ma che il vostro
+32:30 ingresso vado poi a toccare il livello trigger come faccio io altrimenti se c'è qualcosa di grande
+32:37 entrate al mangiarsi al consumarsi di quel livello supera anche di pochissimo di un tick quel livello
+32:46 e non succede niente dovete uscire se non lo va a superare e vostro stop lma 10 quindi prima di
+32:52 fare un ingresso dovete capire la distanza del ma 10 se troppo abbassate la size e niente il
+33:00 livello trigger significa ok non ha funzionato me ne devo andare se non arriva quel livello trigger
+33:04 ci vuole pazienza quindi il vostro stop può essere più grande da lì capite la size che dovete utilizzare
+33:09 ok scrivetevi mettete un like ciao

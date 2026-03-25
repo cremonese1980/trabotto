@@ -1,0 +1,26 @@
+# Low-confidence segments for: 020_LIVE_TRADING_SHORT_TUTORIAL_ECCO_QUALCHE_ESEMPIO_SU_QUANDO_ANDARE_SHORT_BTC_ETH_BNB_SOL.mp3
+# Total flagged: 7
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:25-0:31] (confidence: -0.234)
+  "ma ragazzi come si fa a andare short? Ok basta vedere il live trading che faccio. In questo"
+
+[0:31-0:36] (confidence: -0.234)
+  "caso cerco di spiegarvelo ancora meglio e poi magari faccio un video dedicato. Comunque"
+
+[0:36-0:45] (confidence: -0.234)
+  "bisogna sempre cercare sempre una lateralizzazione dove hai fatto diversi reteste e dopo provi."
+
+[0:45-0:51] (confidence: -0.234)
+  "L'importante è poter avere lo stop molto vicino. Allora in questo caso è dato a fare uno,"
+
+[0:52-0:59] (confidence: -0.216)
+  "hai fatto tre basi con i massimi sempre scendenti. Questo è un ottimo segnale,"
+
+[0:59-1:08] (confidence: -0.216)
+  "ok? I massimi sempre di scendenti. Ribalza, torna su, reteste, torna su, alla terza che questo poi"
+
+[1:08-1:20] (confidence: -0.216)
+  "è coppa col manico e col cucchiaino. Comunque si poteva già provare alla seconda, ok? Però lo"
+

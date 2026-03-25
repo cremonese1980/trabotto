@@ -1,0 +1,110 @@
+# Low-confidence segments for: 032_Dove_si_mette_lo_Stop_Loss_Perche_a_chiusura_candela_Nei_Breakout_TUTORIAL_for_Dummies.mp3
+# Total flagged: 35
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.299)
+  "Ciao trader siete su scappinthebull ma siamo live su twitch ok siamo live su twitch come fate a sapere che"
+
+[0:07-0:12] (confidence: -0.299)
+  "Sono live su twitch perché qua lo vedete qua ok sono live esattamente su twitch"
+
+[0:12-0:18] (confidence: -0.299)
+  "Ma voglio fare una puntata live su twitch di casa bull dove però faccio un video per"
+
+[0:19-0:22] (confidence: -0.299)
+  "La playlist per niof di perché ogni volta che posto un trade mi chiedete sempre"
+
+[0:23-0:29] (confidence: -0.299)
+  "Dove è lo stop allora ve lo devo spiegare ok e ve lo spiego con con anche il book con una"
+
+[6:02-6:08] (confidence: -0.416)
+  "Quindi da qua i soldi si dovevano mostrare detto ciò se mi avesse rotto questo livello"
+
+[6:10-6:14] (confidence: -0.416)
+  "Quindi io ho comprato 219 me veste rotto qua indovinate cosa dovevo fare"
+
+[6:15-6:20] (confidence: -0.416)
+  "indovinate un po dovevo vendere quindi il mio stop non era l'ema 10 era sotto"
+
+[6:20-6:26] (confidence: -0.416)
+  "Le ma 10 perché c'erano i muri nel book a time frame un minuto andavo vedere c'erano i muri nel book ok"
+
+[6:28-6:30] (confidence: -0.416)
+  "Quindi non era prima delle ma 10"
+
+[7:53-8:00] (confidence: -0.487)
+  "Che comanda compro 10.643 vendono 11.186 più"
+
+[8:01-8:05] (confidence: -0.487)
+  "523 usdt ok da vedere dai fra un minuto sembra che io sei un marziano"
+
+[8:06-8:09] (confidence: -0.487)
+  "Ho comprato così nel vuoto nella rotunda del 123"
+
+[8:10-8:16] (confidence: -0.487)
+  "No sembra che abbia comprato così a caso guardate il tic più basso ho venduto più in alto 5 per cento così"
+
+[8:17-8:19] (confidence: -0.487)
+  "6 minuti 7 minuti quant'è"
+
+[8:19-8:21] (confidence: -0.422)
+  "7 minuti quant'è"
+
+[8:22-8:25] (confidence: -0.422)
+  "123456 7 minuti"
+
+[8:27-8:31] (confidence: -0.422)
+  "8 9 9 minuti ha venuto poi in quello 9 minuti che non sono un pazzo a semplicemente"
+
+[8:32-8:37] (confidence: -0.422)
+  "Ho letto il book ho visto il book e ho visto chi comandava a time frame 30 minuti ragazzi è tutto qua"
+
+[8:38-8:41] (confidence: -0.422)
+  "è tutto qua ragazzi sembra facile non lo è ovviamente perché poi"
+
+[8:42-8:45] (confidence: -0.422)
+  "però voi dovete farvi esperienza"
+
+[15:08-15:15] (confidence: -0.422)
+  "Entro 58 secondo 57 secondo dovete cliccare il bottone per uscire prima perché la seconda candela è altamente probabile che sarà una candela rossa"
+
+[15:15-15:25] (confidence: -0.422)
+  "Ok la seconda candela è altamente probabile che possa essere una candela rossa"
+
+[15:28-15:30] (confidence: -0.422)
+  "Che non disegni più"
+
+[15:30-15:32] (confidence: -0.422)
+  "Ok"
+
+[15:32-15:34] (confidence: -0.422)
+  "Candela rossa"
+
+[15:34-15:36] (confidence: -0.422)
+  "Tieno la rossa anche"
+
+[16:58-17:00] (confidence: -0.453)
+  "Comunque questo va nella cosa nella"
+
+[17:01-17:05] (confidence: -0.453)
+  "Nella playlist per neoftie ok quindi bisogna fare una cosa molto molto semplificato"
+
+[17:07-17:13] (confidence: -0.453)
+  "La posso fare ed eliminare piano piano piano piano ok ok"
+
+[17:15-17:22] (confidence: -0.453)
+  "Bene quindi se stiamo parlando di un break out c'è un livello ben preciso prima candela deve essere bella verde se non lo è uscite"
+
+[18:12-18:14] (confidence: -0.404)
+  "Non mi piace la chiusura candela"
+
+[18:14-18:22] (confidence: -0.404)
+  "Aspettare la chiusura candela ragazzi ma il prossimo che fa una roba del genere verrà bannato a vita dalla bull family ok"
+
+[18:22-18:31] (confidence: -0.404)
+  "Ovviamente non siete ciechi avete un cervello se questo Lema 60 è quello che comanda può sporcarlo"
+
+[18:31-18:38] (confidence: -0.404)
+  "Se nel book vedete dei livelli potete aspettare quei livelli lì perché è un livello che è un livello che è un livello"
+

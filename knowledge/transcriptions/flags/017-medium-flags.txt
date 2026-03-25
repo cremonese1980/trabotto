@@ -1,0 +1,29 @@
+# Low-confidence segments for: 017_Cos_e_la_Lateralizzazione_di_un_titolo_Tutorial.mp3
+# Total flagged: 8
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:31-3:36] (confidence: -0.264)
+  "proprio sulle linee, invece sul titolo è unipol, per essere sul mercato italiano è un titolo molto"
+
+[3:36-3:42] (confidence: -0.264)
+  "scambiato, però come vedete nel book ha un senso, allora questo livello inferiore che sta facendo"
+
+[3:42-3:50] (confidence: -0.264)
+  "la resistenza è il 247, bene andiamo a vederne il book, cosa c'è, a 247 abbiamo questo bel pezzone"
+
+[3:50-3:58] (confidence: -0.264)
+  "qua da 230, ok, questo sta facendo da resistenza, poi anche sotto ha un bel supporto, ok, quindi"
+
+[7:32-7:40] (confidence: -0.173)
+  "senza l'indice che stia facendo qualcosa di significativo, quindi se l'indice non stava"
+
+[7:40-7:46] (confidence: -0.173)
+  "un pendere basso, non stava un pendere rialzo ma questo sì, allora è ottimo, allora è ottimo,"
+
+[7:46-7:54] (confidence: -0.173)
+  "io di solito aumento anche la quantità su cui operare sul titolo, se vedo che ci sta andando"
+
+[7:54-7:59] (confidence: -0.173)
+  "perché sta seguendo l'indice, abbasso le quantità, se vedo che ci sta andando perché,"
+
