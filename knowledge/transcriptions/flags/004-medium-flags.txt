@@ -1,0 +1,101 @@
+# Low-confidence segments for: 004_BYBIT_TUTORIAL_DEFINITIVO_Scalping_Trading_setup_e_la_nuova_Carta_Ita.mp3
+# Total flagged: 32
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:50-0:59] (confidence: -0.259)
+  "che era su Rumble ma questo è un video diciamo più veloce e specificamente per"
+
+[0:59-1:06] (confidence: -0.259)
+  "youtube quindi come funziona Bybit? Allora basta iscriversi ci si può anche"
+
+[1:06-1:13] (confidence: -0.259)
+  "iscrivere senza mettere nessun tipo di referral e si può iscrivere anche"
+
+[1:13-1:17] (confidence: -0.259)
+  "senza mettere nessun tipo di soldi per i referral se volete i referral basta"
+
+[1:17-1:22] (confidence: -0.178)
+  "cliccare sotto il video o comunque nel nostro link 3 che trovate ovunque e qua"
+
+[1:22-1:27] (confidence: -0.178)
+  "trovate appunto qua cliccate col mio referral così avete gli sconti nelle"
+
+[1:27-1:35] (confidence: -0.178)
+  "commissioni che sono appunto meno rispetto a Binance"
+
+[1:35-1:42] (confidence: -0.178)
+  "usando futures sicuramente è molto meno rispetto a Binance spot poi potete"
+
+[1:42-1:46] (confidence: -0.178)
+  "cliccare una volta che vi iscrivete tramite questo anche senza mettere soldi"
+
+[2:12-2:19] (confidence: -0.185)
+  "c'è tipo 20 euro 25 dollari scusa da spendere in fee quindi in più oltre che"
+
+[2:19-2:25] (confidence: -0.185)
+  "il fatto che spendi molto meno negli fee negli eseguiti diciamo ti danno anche 25"
+
+[2:25-2:32] (confidence: -0.185)
+  "dollari da scalare dagli eseguiti quindi all'inizio se avete una size piccola e se"
+
+[2:32-2:36] (confidence: -0.185)
+  "state iniziando dovete avere una size piccola così spenderete"
+
+[2:36-2:42] (confidence: -0.185)
+  "praticamente niente poi qua c'è anche il discorso che se compri a mercato"
+
+[3:37-3:42] (confidence: -0.217)
+  "si vede adesso ho aggiunto un altro che questo ecco per modificare basta andare"
+
+[3:42-3:48] (confidence: -0.217)
+  "quindi aggiungere indicator scrivere ema clicchi poi vieni qua metti su settings"
+
+[3:48-3:52] (confidence: -0.217)
+  "e poi fai il cambiamento quindi metti i nostri colori che sono il rosso ema 5"
+
+[3:52-3:59] (confidence: -0.217)
+  "giallo basta avere eccola qua ema 223 se nascondo è uguale se lo rimetto che"
+
+[3:59-4:06] (confidence: -0.217)
+  "tanto ce l'ha già ok quindi dopo li cancellano mettete ema 5 10 60 e 223 e"
+
+[11:44-11:49] (confidence: -0.17)
+  "su un altro più exchange potrebbe liquidarti anche se nello specifico qua non c'è quindi per"
+
+[11:49-11:58] (confidence: -0.17)
+  "essere in sicurezza non essere liquidati mai a caso usate sempre la metà comunque lavorando con x10"
+
+[11:58-12:03] (confidence: -0.17)
+  "lo stop non dovrà mai essere comunque del 5 è comunque troppo grande ok quindi però al massimo"
+
+[12:03-12:09] (confidence: -0.17)
+  "se proprio fatte non so operazione daily eccetera non mettete lo stop non deve essere più alto"
+
+[12:34-12:39] (confidence: -0.206)
+  "voglio andare long voglio comprare solo se 0 17 compro e rimane lì ok limite quindi"
+
+[12:39-12:48] (confidence: -0.206)
+  "posso poi comprare anche a mercato usando limite cioè adesso il prezzo è 0 17 81 si metto 0 17 e"
+
+[12:48-12:55] (confidence: -0.206)
+  "9 comprerà tutto fino a 0 17 9 quindi io voglio comprare tutto quello che io sto trovando adesso"
+
+[12:55-13:02] (confidence: -0.206)
+  "fino al massimo 0 17 e 9 ok e vero comunque fillato fino a 0 17 9 quindi limit può anche"
+
+[26:06-26:12] (confidence: -0.28)
+  "stiamo imparando abbiamo una size di 50 non è che se se subaia sono una size di 50 perché"
+
+[26:12-26:17] (confidence: -0.28)
+  "sta stavate imparando e sapete che all'inizio stato imparando perderete i soldi che investiti"
+
+[26:17-26:23] (confidence: -0.28)
+  "quindi se investite 50 le andrete a perdere e quindi qua non c'è non dovete fare 50 per 10 quindi"
+
+[26:23-26:28] (confidence: -0.28)
+  "operato con 5 cento oppure sempre con 50 ma qual è il vantaggio che usando le va 10 la vostra size"
+
+[26:28-26:34] (confidence: -0.28)
+  "potete operare su addirittura 10 titoli che ne magari su spot vedevate tre conformazioni che"
+

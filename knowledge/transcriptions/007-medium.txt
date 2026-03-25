@@ -1,0 +1,943 @@
+0:00 Ciao Traders, siete su Skype in the Bull. Oggi puntata speciale con i ragazzi del 4 settembre,
+0:07 quindi quelle del corso, e parleremo del book e delle medie mobile. Partiamo da zero, quindi
+0:14 dalle basi e cerchiamo di fare un video più semplice dei video che ho già fatto sul book
+0:21 che trovate nella playlist per gli off-tii, quindi questo andrà comunque poi inserito
+0:26 sigla
+0:56 Eccoci qua, allora quindi questo sarà il primo video nella playlist per quanto riguarda
+1:13 il trading, quindi ci sarà prima il video non sulla psicologia ma quel video che tratta
+1:22 del trading è facile o non facile, che ovviamente è difficilissimo, poi dopo partirà con questo
+1:26 qua e poi dopo quelli che ho già visto che in tantissimi mi hanno detto appunto che
+1:32 era già abbastanza difficile diciamo come partenza. Efficialmente sono andato a rivedere,
+1:38 oggi ho guardato un po' i video precedenti e effizialmente sì, rifacendo lo adesso lo
+1:45 rifarei diversamente, in più ho la possibilità di poter avere voi, ecco questi sono i ragazzi
+1:52 di discord e quindi ho voi che potete darmi una mano con delle domande, insomma cerchiamo
+1:59 di capire. Allora perché è fondamentale poi dopo lo parliamo subito con Nado che è
+2:08 il primo diciamo che sta iniziando a fare trading e ovviamente la prima difficoltà
+2:17 è capire che cosa sono questi numeri, capire cos'è la domanda all'offerta, capire come
+2:24 si forma il prezzo e poi perché qua c'è la gandela, perché si muove, perché sale,
+2:30 perché ci sono le medie mobili, cerchiamo di capire questo per qualcuno che magari non
+2:34 l'ha mai visto prima o comunque che ha visto ma che non sta comunque ancora capendo bene
+2:39 il funzionamento perché comunque è un meccanismo molto complesso, ci sono tante teorie dietro,
+2:47 il mondo crypto per esempio si parla tantissimo delle whale, si parla di queste figure che
+2:55 comprono massicciamente o vendono massicciamente come se fosse delle figure singole, come
+3:00 se fosse una balena che conta e che fa la differenza e invece dietro comunque ci sono
+3:07 veramente tante persone, io spesso vi ho parlato di carattere quindi quando vi parlavo di
+3:13 un titolo soprattutto per quanto riguarda piazza affari che ha dei scambi veramente
+3:18 ridicoli in confronto, cioè passano dei minuti in cui non ci sono scambi quindi per dei minuti
+3:24 questo è come se fosse un fermi immagine e quindi ovviamente graficamente funziona tutto
+3:32 molto diversamente e poi anche all'interno c'è tutta una logica in extremis, cioè praticamente
+3:40 in un book con poco liquidità non viene visto solamente dal grafico, comunque anche in questo
+3:48 caso sia il grafico che il book comunque li va a individuare i livelli, ma a piazza affari
+3:54 addirittura c'è questo meccanismo dove non so, la resistenza può essere la lemma 60 ma nel
+4:02 book in realtà è proprio qua, magari qua c'è un livello che non so 76,2 c'è un livello finito
+4:09 quello si va direttamente a 77 in mezzo non c'è nulla quindi non puoi mettere non so lo stop
+4:14 lo stop limit a 76,5 come fai qua viene fillato a 76,53 no lì si mette lo stop limit a 76,5 e il
+4:27 pezzo è qua e dopo non c'è niente finito il pezzo ti va direttamente a 77,1 poi se hai un pezzo grande
+4:32 vai direttamente a 78 per esempio quindi lì proprio è la lettura del book ai massimi livelli
+4:40 proprio perché comunque oltre a doverlo leggere devi incorporarci le medie mobili e devi dosare
+4:46 il tuo size quindi la tua quantità quindi questo è giusto per complicarvi ancora più la vita
+4:54 ma facciamo mille passi indietro e partiamo appunto dal book, da che cos'è il book insomma
+5:03 perché penso che una persona che non ha mai visto questo prima vedrà questi numeri e penserà che
+5:09 sia un computer dietro che tipo un videogioco che spara dei numeri a caso e delle quantità
+5:14 invece aspetta intanto aspetta potremmo andare effettivamente qua che è meglio su spot effettivamente
+5:25 così vediamo le quantità allora vediamo un attimo ah qua vediamo gli scam si qua abbiamo delle
+5:33 cose in più allora andiamo su un titolo che scambia poco questo non è male vediamo se c'è
+5:40 qualcosa di meglio ah Parisian German scambierà pochissimo adesso fantastico Parisian German 24
+5:49 milioni nell'ultimo 24 infatti il disegno bruttissimo quando vedete un disegno bruttissimo
+5:55 con anche questo esempio questa è una candela significa che ha fatto uno scambio e basta non
+6:00 si è mosso perché altrimenti la candela sarebbe in alto e in basso quindi questo vuol dire che
+6:04 scambia poco anche senza dover vedere i volumi che sono gli scambi cioè gli incroci fra domanda
+6:10 offerta qua è pochissimo 24 milioni ok quindi cosa succede qua nel book ancora più leggibile
+6:17 perché abbiamo la possibilità di vedere diverse cose allora abbiamo il prezzo ogni portale ha dei
+6:25 colori diversi ed è posizionato in maniera diversa per esempio io so piazza affari ce le ho in modo
+6:30 orizzontale quindi chi compra a sinistra chi vende adesso comunque usiamo binance tanto uguale
+6:35 quindi chi compra è sotto quindi chi compra sempre il prezzo inferiore nel book ok chi vende ha sempre
+6:42 il prezzo più alto ok perché questo perché semplicemente chi compra cerca di mettere un
+6:49 prezzo nel book quindi fa un'offerta ad un prezzo inferiore al mercato sperando che poi qualcuno vada
+6:55 a vendere a quel prezzo lì e chi vende spera in un prezzo superiore quindi va a inserirsi
+7:02 all'interno del book ad un prezzo superiore quindi uno dice ma cosa serve perché se io voglio vendere
+7:09 vendo subito e vado subito qua no allora non è detto perché ognuno può decidere se è conveniente
+7:17 o meno vendere adesso ok per esempio adesso graficamente c'è questo grafico qua quindi
+7:22 può anche essere che a un certo punto questo sta guardando il grafico daily ok ed effettivamente
+7:28 è un grafico dopo messi che è sceso tantissimo e uno può anche dire io ho comprato a 32 e sotto
+7:38 33 e 5 no sotto 33 e 5 non voglio vendere quello è il mio target ok quindi cosa fa semplicemente
+7:46 inserisce il prezzo di vendita a 33.5 e dopo si vedrebbe la quantità che ha in questo caso su
+7:54 spot vediamo anche la cifra cioè il totale in usdd per semplificare in dollari quindi qua ci sono
+8:02 574 sì 564.9 quindi 574 chiamiamoli azioni o comunque partecipazioni insomma di psg quindi
+8:20 parisian german per un controvalore di 19.000 dollari ok sarebbe 19.000 usdt per far prima
+8:27 diciamo diciamo diciamo 19.000 dollari cosa succede che lo mette qua e lì c'è questo suo
+8:34 prezzo quindi lui ne ha comprato 18.000 e la messi lì ok 19.000 e la messi lì cosa succede
+8:39 però che c'è un altro che vuole a un po più di fretta sa contenta di un prezzo inferiore e si
+8:45 mette davanti e di fatti c'è un bel 1000 e 9 un controvalore di 33.000 e se messo davanti quindi
+8:52 a un prezzo inferiore poi c'è un altro che dice sì va anche io volevo vendere la 33.500 ma c'è già
+8:58 questo che è davanti allora io devo scendere ancora di prezzo per avere più possibilità di vendere ok
+9:02 ho un po più di fretta di te mi metto davanti quindi c'è altri 550 per 18.000 dollari ancora
+9:09 più avanti poi arriva un altro e dice cavolo anche io volevo vendere la 33.500 ma c'è troppo
+9:15 casino qua vado a scendere più vicino al prezzo di scambio di incrocio e anche questo 462 per 16.000
+9:23 e per ultimo invece c'è il primo livello di chi vende è la quantità minima più o inferiore son
+9:30 108 per 3.600 dollari ok questi sono i venditori i compratori invece sono questi quindi ci possono
+9:38 essere quelli che dicono a me non mi interessa comprare sopra 33 quindi mi metto sotto ok e
+9:44 si mettono i suoi ognuno si mette al proprio livello cosa succede che questi che hanno piazzato la
+9:51 vendita e questi che hanno piazzato l'acquisto nessuno di questi avranno lo scambio fino a
+9:57 quando il prezzo non sale o scende a quel livello per esempio adesso è sceso di un livello quindi
+10:02 quello che 33 prima era in acquisto adesso è in vendita quindi praticamente che il prezzo sta scendendo
+10:09 ok quindi chi aveva comprato chi era disposto a comprare questo questo titolo questa cripto
+10:16 a 33 è stato esaudito quindi adesso non c'è più qualcuno che vuole comprare a 33 il primo
+10:24 che vuole comprare è a 32 e 9 ok poi io adesso ho fatto il raggruppamento perché se vado nel
+10:30 gruppamento minimo in realtà vedresti altre cifre con somme piccole però noi andiamo a raggruppare
+10:35 per fare le sì delle cifre che abbia un minimo di senso ok così arrivando le cifre un po' più
+10:41 grandi poi dopo parleremo anche di quello perché per quanto riguarda la size vi faccio capire quanta
+10:46 è importante però il meccanismo è questo quindi cosa succede uno dice ok io voglio se la voglio
+10:52 avere la certezza di comprare bene quanto quanto devi comprare devi comprare 19.000 dollari ok se
+10:58 devi comprare 19.000 dollari hai fretta qua trovi la tua quantità e quindi ti basterà a comprare a
+11:04 33 quindi puoi mettere un prezzo che compra metti un limite prezzo limite quindi metti il prezzo di
+11:11 33 metti la quantità 340 e tu comprirai tranquillamente senza problemi 12.000 dollari a 33 ok adesso già
+11:22 non ce n'è più quindi ecco è tornato non ce n'è più insomma è già come se avessi avuto l'eseguito
+11:26 quindi se vuoi avere sei fretta e volevi comprare lì facevi così ma cosa succede se io invece di
+11:33 voler comprare 12.000 sono una whale cioè sono una persona che ha più disponibilità ok riteniamo
+11:43 che siamo ancora una persona comune non voglio comprare 12.000 ma voglio comprare 50.000 50.000
+11:51 dollari di paris and germain perché secondo me adesso andrà a rimbalzare perché è già sceso
+11:55 troppo perché fino alla settimana scorsa era a 60 adesso siamo a 32 33 quindi secondo me è
+12:04 sceso troppo lo vorrei comprare me lo tengo per un po perché secondo me fra un po tornerà a salire
+12:08 però ne devo comprare 50.000 dollari come faccio allora innanzitutto facciamo così faccio uno
+12:16 salva un frizzone attimo l'immagine quindi andiamo a qua andiamo a selezionare qua facciamo così
+12:27 così frizziamo la situazione ok impossibile per il file fantastico rifacciamo nuovo
+12:39 ok stavolta mi ha dato la possibilità di poterlo fare ecco qua ingrandiamo un po
+12:52 facciamo diventare un po' più grande ecco così vediamo tutti un po meglio bene ok allora in
+13:04 questo caso quindi prima avete visto c'era 12.000 dollari adesso sono addirittura 24.000 dollari
+13:09 però io ne voglio comprare sempre 50.000 dollari come faccio allora ho diverse possibilità posso
+13:15 dire io voglio comprare 50.000 dollari ma non voglio spendere più di 32.6 quindi semplicemente
+13:22 faccio un compra limite inserisco il prezzo di 32.6 vado a vedere nel grafico dov'è e inserisco e qua
+13:32 dopo mi ora fuori 50 i miei 50.000 dollari più quelle che ci sono già quindi mi accodo quindi
+13:39 diventeranno 62.000 dollari a 32.6 ok quindi cosa succede chi era a 32.5 dice che cavolo che mi metto
+13:48 dietro mi vado vado anticiparlo perché insomma prima che vanno vendere il suo pezzone mi ci metto
+13:57 davanti quindi si andrà a vedere che delle persone andranno a anticipare quel prezzo ok
+14:03 andranno avanti questo questo sistema fa schiacciare fa fa come se spremesse e fa spingere il prezzo
+14:10 verso chi sta vendendo ok quindi i muri diciamo servono un po questo però cosa succede che io
+14:17 comunque ve lo compro a 50.000 quindi io sto io dopo vedo che davanti a me si mettono invece
+14:21 di 12.000 avrò magari un 15.000 e poi questi aumenteranno diventano 30.000 dopo vedo che
+14:26 insomma vicino al mio prezzo non ci vanno quindi ok dico ok la mia strategia è sbagliata
+14:31 voglio comprare adesso un po più di fretta vedo che quando mi metto nel book e il prezzo non
+14:37 si avvicina mai allora dico ok un po più di fretta quindi quanto sono disposto a spendere 33 ok
+14:43 quanto ce n'è ce n'è 24.000 quindi se voglio comprare 50.000 dollari qua trovo venditori che
+14:49 mi danno in mano subito cash 24.000 mi rimangono altri 26 sono disposto a rimanere nel book
+14:57 con altri 26.000 dollari se sì bene allora faccio un compra limite a 33 intanto mi compro
+15:07 questi 24.000 e poi vedo se mi vendono se altri venditori accettano di di consegnarmi le loro
+15:14 quote a quel prezzo può succedere che invece dopo ci si mettono davanti quindi non ho neanche
+15:19 quella volta l'eseguito perché succede questo perché io dopo mi troverò che qua vedi la prima
+15:25 persona che compra in questo momento qua è 32.9 e ce n'è 10.000 se io vado a comprare 50.000 quindi
+15:32 mi mangio questi questo livello non è più fra i venditori ma fra i compratori e sarò sopra questo
+15:40 e ci saranno non 10.000 ma 26.000 quindi questo qua ci rimane un po male dice cavolo ma io
+15:46 insomma voglio comprare anch'io e quindi magari si mette sopra e va a comprare i 32 i 33.1 con i
+15:54 suoi 10.000 e le rimangono altri 6.000 e questo fa sì che il prezzo poi possa salire e dopo però
+15:59 io che ne volevo comprare tutti 50.000 non sono non ho avuto la risposta che ho avuto non ho avuto
+16:03 tutto l'eseguito ho avuto solo una parte quasi la metà ok quindi questo può essere una soluzione
+16:09 che non va bene quindi non è detto che ogni volta devo mettere un prezzo limite ok può
+16:15 essere che a un certo punto questo qua che adesso vedete fermo magari sta facendo un
+16:19 movimento molto veloce magari vicino alla resistenza vede che il prezzo sta iniziando
+16:22 a salire e io pur di cioè nel non aver fretta quindi nel volere inserire il prezzo nel book
+16:29 non ho avuto l'eseguito di tutto ho avuto un eseguito perziale nel frattempo il prezzo il
+16:34 prezzo schizza su e io rimango un po col cilino perché guadagno ma guadagno solo in parte quello
+16:40 che volevo quindi qual è l'altra opzione che possiamo valutare è comprare al sempre al limite
+16:48 ma con un prezzo molto più alto quindi io semplicemente vado a leggere nel book le quantità
+16:53 e dico qual è il prezzo che mi va a riempire tutti 50.000 ok allora i 33 mi daranno 24.000
+17:04 più i 4 fa 28 e qua dopo ci siamo già insomma quindi se vedo 33.3 io ho la certezza che pur
+17:13 mettendo un prezzo vado a comprare tutto qua vado a fillare completamente quello che io voglio
+17:19 comprare il prezzo salirà quindi andrà su quindi questa candela salirà però io dopo non
+17:25 ho più pensieri non devo pensare non ho comprato o devo togliere l'ordine puoi rimetterlo e puoi
+17:32 far salire no semplicemente così ho fatto tutto ok nel caso in cui io avessi molta fretta quindi
+17:38 non neanche il tempo di mettere il prezzo in realtà il prezzo a me non mi interessa mi interessa
+17:42 semplicemente fillare allora si usa compra mercato ok compre mercato significa semplicemente che i
+17:49 miei 50.000 entreranno fra i venditori fino a quando tutto tutta la quantità finisce quindi
+17:58 cosa succede prenderà i 24.000 di questi i 4.000 di questi quindi sali di prezzo salirà anche di
+18:05 questo e andrà a prendere anche una parte di questo qua ok quindi arriverà sempre a 33.3 come
+18:10 prima ma andrà su in un fulmine cioè in un batter d'occhio andrà su e se per caso quando
+18:16 io poi vado a cliccare bottone qua è cambiato qualcosa perché sai ogni ogni istante può
+18:20 succedere che questo questo valore cambia mi andrà sempre più su fino a quando non riesce
+18:25 a riempire tutto ok quindi cosa succede che quando noi vediamo una candela che fa degli sbalzi grandi
+18:32 vuol dire che ci sono delle persone come come in questo esempio che stanno comprando delle
+18:38 quantità più grandi dei livelli che noi vediamo e che hanno fretta e quindi comprono o al mercato
+18:43 oppure con un prezzo molto più alto del mercato e quindi va a creare un voto perché mangiano tutto
+18:48 ed stabilizzano questi altri che erano lì in attesa tranquilli tranquilli perché dopo questi
+18:54 non vengono venduti quindi questi non possono comprare perché il prezzo è salito e rimangono
+18:59 li fermi senza guadagnare niente e senza poter entrare diciamo nel gioco nella partita e quindi
+19:05 questi poi si muoveranno di seguito andranno sempre più su fino a quando anche questi non
+19:09 hanno fillato ok poi dopo quando c'è il panico succede che poi dopo ci sono gli short che chiudono
+19:15 ci sono le posizioni ma questa è una cosa poi troppo complessa però il meccanismo tale per cui
+19:20 noi possiamo vedere le candele che salgono velocemente è perché semplicemente ci sono
+19:24 persone che hanno fretta di comprare nel caso in cui la candela comunque il prezzo salga quindi
+19:35 se vedi la candela che sale ci sono persone che stanno comprando velocemente quindi hanno
+19:42 fretta di comprare al contrario se la candela invece è rossa quindi scende ci sono persone
+19:50 che hanno fretta di vendere ok e perché queste persone hanno fretta di comprare e fretta di
+19:55 vendere perché ognuno ha una visuale diversa del mercato quindi uno può pensare in questo
+19:59 momento qua che è un momento molto interessante da comprare quindi ha fretta e compra oppure il
+20:05 contrario può pensare hai già salito troppo hai già salito abbastanza e ho fretta di vendere ok
+20:11 ci sono delle situazioni ci possono essere notizie ci possono essere semplicemente conformazioni ci
+20:16 possono essere semplicemente vedi quello che succede spesso nei mercati azionari e meno nel
+20:24 mondo cripto che le notizie possono fare movimenti ok non vuol dire non serve una notizia positiva
+20:31 per far salire il titolo perché una notizia positiva in realtà potrebbe anche essere un
+20:35 ottimo momento per vendere quindi spesso esempio l'ultimo un esempio che magari conoscete tutti
+20:44 è amazon è uscito fuori con gli ultimi dati molto positivi ma comunque ha preso la bella schiaffa
+20:51 è sceso tantissimo perché uno perché comunque si sa quando escono i dati quindi magari si va
+20:58 a comprare prima dei dati pensando che siano buoni e il movimento lo fa prima che riunirà
+21:05 poi quando arrivi i dati poi dopo ognuno dice ok ho già incassato e vende quindi scende quindi
+21:09 questo comunque per farvi capire anzi poi c'è anche l'altro esempio che magari se io devo
+21:15 vendere tante quantità non pensare ai 50 mila ma pensa se devi vendere milioni che hai milioni
+21:21 di euro non un milione milione pensa a dover comprare un milione pensa 10 milioni devi
+21:27 comprare in questo momento arriva uno che deve comprare 10 milioni di azioni o comunque di
+21:33 cripto di peringion germani in questo momento qua pensa di quanto schizzerebbe sul prezzo
+21:39 se mette a mercato 10 milioni così al volo ovviamente non lo fa perché farebbe un vuoto
+21:46 enorme però fa molta fatica a comprare ok quindi lui per per per comprare lui aspetterà un momento
+21:54 in cui c'è una discesa perché perché aumentano i volumi cioè aumentano le persone che vogliono
+22:00 vendere e per lui il momento ottimo per comprare perché comprare quantità grosse quando il titolo
+22:06 sta salendo è faticoso soprattutto quando il titolo sta salendo tanto si fa fatica ok perché
+22:12 è più difficile comprare delle quantità perché sono anche altre persone che stanno stanno avendo
+22:16 la meglio nel comprare invece quando il titolo sta scendendo le quantità grosse sono di chi vende e
+22:21 quindi il titolo va a scendere ma ci sono compratori che approfittano di quei momenti lì per arrivare
+22:28 ok quindi voi vedete sempre che questo book quindi il book è una guerra fra chi sta comprando
+22:35 in questo caso i verdi è una guerra fra chi sta vendendo ok non pensate sempre ai piccoli
+22:42 compratori pensate a quelli che fanno veramente mercato cioè quelli che comprono delle quantità
+22:48 disumane ok comprono proprio quanti percentuali di società percentuali di società quindi puoi
+22:55 immaginare di che cifre stiamo parlando e per loro è un lavoro difficilissimo perché si devono
+23:01 dosare devono fare attenzione per questo tu puoi vedere delle delle dei disegni anche particolari
+23:07 che mi piacciono perché chi sta comprando quando tu vedi dei disegni nei grafici va beh questo forse
+23:15 un po troppo complesso comunque adesso me ne parlo un attimo però quando vedete dei grafici con dei
+23:21 disegni stupendi togliamo questo che adesso non serve più e vuol dire che non so se il disegno
+23:29 per esempio questo non è male prendiamo il daily ok questo è un disegno bellissimo coppa col manico
+23:39 disegno fantastico cosa significa come fai a fare dei disegni così belli chi sta comprando ha potere
+23:45 assoluto cioè ha una dominanza tale da poter addirittura permettersi di fare il trend che
+23:51 vuole ok quindi alla fine fa dei disegni pulitissimi per questo io amo molto quando
+23:56 vedo un grafico se siamo in una figura dove ci sono tipo questo momento brutto tipo qua
+24:04 questo momento brutto squalidissimo dove candele un po a caso ecco io non opero mai in queste
+24:12 condizioni mi piace quando ci sono dei disegni belli puliti perché perché per fare un disegno
+24:16 pulito ci vuole qualcuno che comanda quindi qua poi potete vedere che comanda lema 10 nel scendere
+24:22 ok ed il disegno è anche abbastanza pulito quindi rispetta qua vedi spica fuori quindi non rispetta
+24:31 tantissimo però qua è tutto bello pulito ok quindi sta comandando chi vende comanda facilmente
+24:36 riesce a fare di fare un disegno pulito che non va mai spaccare spaccare addirittura lema 5 quando
+24:42 ci sono disegni belli precisi puliti e anche più bello e più preciso poter fare gli ingressi
+24:48 perché è più probabile che possa tu possa entrare dove vuoi e tu posso e il trend possa
+24:53 proseguire in quella direzione perché chi sta comprando chi sta vendendo ha molto potere in
+24:59 quel momento lì ok quando il disegno invece fa schifo cioè tipo una candela che fa così
+25:05 fa primi massimi poi mi va in rosso in verde c'è grande confusione fra chi compra chi vende
+25:11 grandissima confusione la lotta cioè qua vuole dominare qua per far salire a un certo punto
+25:17 vuole dominare chi sta comprando e chi vende dice no adesso comando io quindi spacca spacca
+25:22 giù e poi dopo quello di nuovo risale c'è una guerra dove non c'è un equilibrio cioè anzi c'è
+25:30 troppo equilibrio fa che compre chi vende che si schiaffeggi una vicenda e viene a fare un
+25:34 disegno brutto in quel caso lì bisogna evitare diciamo di tridare in quel momento lì di scalping
+25:39 a un minuto in questo caso ma ad ogni grafica così quindi anche nel daily come faccio a vedere qua
+25:44 nel daily questo disegno molto bello che fa capire che sta dominando chi sta comprando sta dominando
+25:51 che non disegno molto bello vedi la 10 perfezione sta tenendo bello sembra disegnato no disegnato
+25:59 proprio bene perfettamente ok quindi qua praticamente chi sta comprando sta dominando
+26:03 sta facendo un disegno bello sta facendo quel che gli pare quando vediamo i disegni brutti
+26:08 e semplicemente si evita ok dei momenti in cui c'è questa lotta estrema che si schiaffeggi una
+26:14 vicenda tutti questi spike e cose abbastanza assurdi quando dite ma è questo veramente
+26:18 assurdo quando è assurdo vuol dire che appunto sta sta c'è una lotta intensa fra chi compra chi
+26:27 vende e vengono fuori dei disegni brutti. A proposito di disegni andiamo a spiegare anche
+26:32 un attimo cosa sono queste candelle anzi prima di passare a questo vediamo di interagire perché
+26:37 poi avevo detto prima di partire che avrei fatto parlare ma sono già non vedo minuti
+26:44 comunque tanti e non ho ancora fatto parlare allora non vedo più chi doveva parlare giustamente
+26:51 è scappato non ti vedo più ma siete in tanti qua chi vedo sono le faccine scusa scusa mi buoni
+27:06 è andato via è andato via scritto grande grande fantastico perfetto brava allora chi
+27:11 vuole fare fare due domande su questa cosa qua chiunque va benissimo ottimo
+27:24 allora vi faccio vedere cosa vedo io questo è il discord diciamo quindi qua sono tutte le persone
+27:32 che sono in linea adesso. Ciao bule! Allora non ti vedo ho una domanda volendo sì assolutamente
+27:42 perfetto tolgo qua cosa cosa intendi per disegno bello cioè a parte il fatto che non ci sono salti
+27:51 di prezzo quindi vedi le candelle che si si susseguono una all'altra ma tipo nel daily di
+27:59 cos'era alpaca quindi prima no era c98 e poi hai fatto vedere un daily che hai detto che era
+28:10 eccolo questo spettacolare che hai detto cosa intendi con spettacolare? Sì allora nel senso
+28:16 che se lo vedo io non vedo cose belle se no una mezza. Hai ragione hai ragione è relativo sì
+28:25 allora questo è spettacolare perché perché è una delle delle conformazioni su cui lavoro che mi
+28:30 piace lavorare è questa appunto della tazzina di caffè no quindi in questo praticamente la tazza
+28:36 e questo è il manico ok perché è bello cos'è di bello la tazzina col manico allora praticamente
+28:41 cos'è che per fare intanto c'è la salita bella robusta no con candelle grosse lunghe
+28:52 grosse no perché non sono sempre grossi uguali però belle lunghe e poi dopo c'è lo scarico che va
+28:59 a formare poi la tazza diciamo e cosa è successo qua praticamente non ha fatto grossi spike quindi
+29:09 dopo è iniziato a fare candelline quindi ha mantenuto il livello il minimo l'ha mantenuto
+29:12 senza nessun problema ha fatto questo attraversamento di candelline quindi ha scaricato e
+29:16 i compratori non hanno mai fatto sporcare quindi comando totale e ha fatto lateralizzare poi dopo
+29:24 nuova nuova spike ok e da questo spike di nuovo hanno lasciato scaricare mai fatto sporcare la
+29:32 10 pulitissima e poi dopo si va di nuovo a salire per questo questo tipo di conformazione mi piace
+29:41 perché ti dà appunto lo spike grosso iniziale poi ti dà lo scarico quindi toglie tutti gli
+29:46 scettici tutti quelli che uno già guadagnato da qua o comunque che non erano interessati sono
+29:50 tutti nati via c'è stato il comando totale perché non ha fatto spike ok quando non c'è il comando
+29:55 fa tipo spike lunghi sporchi ok fa sporcare il grafico quindi fa delle robe lunghissime qua
+30:00 anche rialzo fa delle cose molto lunghe molto brutte cioè quando c'è il comando c'è la possibilità
+30:07 di poter fare vedi queste candelline piccole senza appunto allungarsi troppo poi dopo di nuovo
+30:15 detto basta fine è andato a fare questo bel rialzo poi detto ok riposiamo un attimino,
+30:19 tiene perfettamente quindi se qua avessi visto poi dopo questa candella che arriva poi di nuovo
+30:26 fino qua e poi dopo chiudeva quindi vedevo delle ombre lunghissime era brutto vuol dire
+30:32 che chi comprava si è si è lasciato ha lasciato la possibilità ai venditori di poter bucare delle
+30:40 resistenze importanti ok e quindi il compratore i compratori non hanno potuto fermare sul sull'emma
+30:48 10 o sull'emma 5 e quindi troverai dei spike lunghi poi dopo di nuovo ricomprano tornavano
+30:52 su quello è brutto ok quindi quando c'è qualcosa di disordinato io lo considero qualcosa di brutto
+31:00 ok poi finito questo periodo adesso c'è di nuovo la carica ok oggi eravamo a un passo a un passo
+31:08 da questo questo livello che è il 2 è il livello dove si è fermato il corpo di queste due giorni
+31:14 quindi era un supporto enorme fatto nel book c'era supporto molto grande gigantesco e
+31:21 e di fatti eravamo a un passo da se si rompeva quel livello lì infatti è da tenere d'occhio
+31:29 per i prossimi giorni alla rottura di 2 che c'è veramente un muro vediamo se lo andiamo a vedere
+31:35 allora i meditori
+31:39 ecco qua vedi qua comunque guarda le quantità quindi 46.000 36.000 qua questo è già un muro
+31:49 190 è un muro è già da 200 mila dollari guardiamo a 2 900 mila dollari 200 mila dollari
+31:57 300 mila dollari 281 cioè guarda che per arrivare fino a qua è immenso cosa cosa c'è dopo niente
+32:03 cioè niente in confronto insomma che questo è quello che succede quando ci sono i muri che si
+32:09 mettono ora ottimo domanda e così faccio vedere questa cosa qua perché quando si rompe un muro
+32:15 grosso quindi quando arriviamo a 2 c'è possibilità che dopo schizzi su perché chi è quel cretino
+32:23 che vende a 201 cioè vorrei andare a parlare con questo cretino che ha messo a vendita a 201
+32:29 perché non ha nessun senso perché se tu hai fretta di vendere prima hai un muro davanti hai
+32:35 tutte queste quantità su questo siamo dei milioni di euro sono almeno 2 milioni di euro fino qua
+32:40 e ovviamente oggi non ce l'ha fatto ha provato è arrivato al massimo era 9.7 9.7 9 ma io ero qua
+32:49 che guardavo ero lì pronti volo l'acquisto pronto a 2 e però niente non non ci è arrivato
+32:57 fra l'altro in questo caso lo andavo a comprare subito proprio perché il disegno del daily era
+33:06 talmente bello che comunque l'avrei comprato subito se tornava indietro non avrei venduto e
+33:11 poi eventualmente l'avrei ricomprato il secondo la seconda volta quindi sarà entrato con metà size
+33:16 la prima e con doppia size la seconda perché c'è il vuoto perché chi ha chi vuole vendere non
+33:24 può vendere con 2 milioni di euro davanti ma si deve mettere ancora più basso come prezzo e questo
+33:30 fa sì che il muro ha il valore più alto quindi ha quasi 900 mila dollari e mano a mano a scendere
+33:37 a questi muri enormi questi son muri questi son muri giganteschi cioè già questo da 200 mila un
+33:41 muro grande vedi sui numeri di mezzo ci sono sempre 200 mila 200 mila qua ce l'hai ad ogni
+33:48 livello 95 96 97 98 99 2 invece qua ce l'hai ogni 05 e poi dopo troviamo un altro il prossimo
+34:03 dopo il supporto dopo e la resistenza dopo 2.2 che ce n'è un milione di euro quindi dopo c'è un
+34:09 10 per cento in cui va beh a un 5 per cento c'è questo ma di solito quando va via questi c'è
+34:15 proprio rischio che faccia l'esplosione cioè può anche farti un 30 per cento può farti qualsiasi
+34:20 cosa magari ti fa il 2 per cento poi torna indietro lì c'è il discorso delle finte però comunque
+34:26 hai il vuoto quindi lo spike rotto questo lo fa poi bisogna essere dura però niente quello
+34:36 discorso tornando in prima del disegno bello per fare un disegno bello devi avere la persona
+34:42 che sta comprando o che sta vendendo che sta comandando ok quindi bello per me è semplicemente
+34:47 quando mantiene le medie mobili e non sporca cosa se ti interrompo le posso chiedere una
+34:55 cosa su quello che hai detto fantastico sì assolutamente vai e a proposito del muro ma
+35:01 perché ovviamente chi c'è qualcuno lì che vuole vendere a 2 e subito dopo c'è qualcuno che vuole
+35:09 vendere a 201 per uno che vende a 2 c'è un altro che compra a 2 giusto ma allora perché chi compra
+35:18 aspetta di arrivare a 2 non compra 1.99 o 1.8 sì allora in pratica se io voglio comprare quindi
+35:28 se io voglio semplicemente comprare qua tu compra dove ti pare e qua non hai problemi ok quindi qua
+35:35 lo puoi comprare 1.90 adesso quanto sta facendo 1.70 qua cioè insomma se vuoi comprare puoi
+35:41 comprare anche qua però dopo tu li devi vendere cioè se tu li vuoi vendere con un guadagno devi
+35:47 sperare che poi dopo quindi se tu compri a 1.85 compri questo livello qua e dopo tu li devi
+35:52 poter sperare di poter vendere con un guadagno quindi di quanto può salire questo per far sì
+35:58 che io poi possa vendere con un guadagno allora io vedo che se compri qua poi hai il prossimo
+36:03 livello grosso e a 1.9 bene mi va bene questo o è troppo poco se troppo poco dico ok già qua
+36:13 faccio un po' di difficoltà ma dopo cosa c'è dopo c'è delle quantità disumane quindi io dovrei
+36:19 accodarmi a tutti questi per poter vendere quindi uno dovrebbe capire che è difficoltosa questa
+36:25 cosa perché c'è uno spoporzione cioè io dovrei quindi quindi adesso finisco un attimo
+36:34 quindi allora io quindi io dovrei quindi tu devi semplicemente ragionare del fatto che se
+36:40 io compro qua quanto mi va bene che salga prima di poter vendere e per poter vendere io potrò
+36:49 vendere con facilità o no quindi se io compro anche qua sotto ridosso a 1.9 7 ma dove vendo
+36:56 cioè vendo a 1.9 9 mi devo accadare qua allora conviene conviene comprare sul dove finisce
+37:06 diciamo le vendite le vendite è come se finissero qua una volta finito di vendere dopo tu fai
+37:14 appunto per quello io tenderei a comprare non so adesso lì il prezzo mercato dice 1.72 io che
+37:22 voglio comprare voglio spendere meno possibile e compro 1.72 perché devo arrivare a due perché
+37:28 se tu compri a 1.72 e tu devi comunque sperare che vada a non so cioè se tu ti va bene comprare
+37:35 1.72 e vuoi vendere a 1.80 ok può essere una strategia insomma nel senso compri qua ok invece
+37:44 se tu dici compro qua perché tanto andrà là è un discorso che è difficile che vada qua cioè
+37:50 potrebbe anche non andarci proprio perché è tali ci sono talmente tanti venditori che è difficile
+37:56 poterci arrivare quindi è semplicemente il discorso è quanta è facile poter far sì che il prezzo
+38:02 possa salire è facile o difficile come faccio a capire se è facile dipende dalle quantità di
+38:08 vendite quindi se io vedo che posso comprare adesso senza problemi 30 20 che non so 40 mila
+38:16 dollari e dopo non ho delle grosse resistenze quindi anche se mi metto a 1.79 posso anche
+38:25 avere delle possibilità di poterle vendere mi va bene come gain e ragionamento si può anche fare
+38:30 ma se tu vuoi farci un non so lo vuoi comprare perché ci vuoi fare un 20% tu devi andare a
+38:36 vedere il 20% sopra cosa c'è vedo che qua c'è questa roba qua e non dice ok allora mi è abbastanza
+38:43 assurdo comprare adesso se tu vuoi se tu puoi vendere sopra i due poi se tutti a contente
+38:48 di comprare 1.74 e lo vuoi vendere 1.80 allora il discorso cambia ma se tu lo vuoi vendere sopra
+38:54 i due perché vuoi che questo ti faccia ti faccia più di un 15% quindi tu vuoi comprare
+39:01 vuoi avere un 15% di gain ti conviene aspettare perché una volta che se riesci a arrivare a questo
+39:07 2 perché non è facile infatti oggi oggi ci sono stati un momento di volume pazzesco per cercare
+39:12 di arrivarci non ci è arrivato non si è riuscito a arrivare infatti dopo il prezzo è sceso è tornato
+39:17 qua nel disegno è tornato qua diciamo è tornato di nuovo dentro alla resistenza e quindi è
+39:26 semplicemente questo il discorso è sempre sempre questo dosarci cioè se se tu arrivi al punto di
+39:33 vedere che dopo ci sono pochi venditori è facile pensare che il titolo possa salire se tu quando
+39:39 tu compri vedi che ci sono tanti venditori allora tutti dei dopo ti devi accodare a quei venditori
+39:45 non so se questo è una motivazione che ti riesce che diciamo ragionevole ecco
+39:53 e adesso più chiaro grazie
+39:55 ciao bullo, ho anche una domanda se è possibile
+39:59 sì
+39:59 io praticamente vi segno sul grafico una resistenza guardando il book no?
+40:08 i rossi ad esempio vedo che c'è una grossa quantitativo e mi segno la resistenza ma a volte
+40:15 mi capita che pur rompendo la resistenza mi torna giù
+40:19 eh sì
+40:20 questo sbaglio qualcosa devo leggere meglio forse magari spugge
+40:26 sì brava brava brava vi spiego questo meccanismo allora qua stiamo parlando di un momento statico
+40:32 cioè stiamo parlando di quello che c'è adesso in questo momento qua ok per esempio questi qua
+40:39 questi 100 mila dollari a 1.8 adesso ci sono ma non è detto che quando ci arrivi ci possono anche
+40:45 andare via ok oppure questi 100 mila possono essere 500 mila ok quindi io praticamente posso
+40:52 essere uno che ha comprato 500 mila dollari di questo titolo qua ok e io ne metto 100 mila qua
+40:59 ma io devo vendere 500 mila ovviamente non li metto per non spaventare gli altri e per non
+41:05 far sì che questo non so questa da 75 mi si metta davanti ok perché se mi metto qua con 500 mila
+41:11 divento una resistenza molto importante divento molto più importante rispetto a una resistenza
+41:16 da 100 mila e quindi è più difficile che una persona che compra 1.77 dica vabbè sì dai tanto
+41:22 è facile superare l'1.80 se c'è 500 mila dice aspetta un attimo non compra 1.77 aspetto che vada
+41:29 via dai 500 mila magari ne vanno via 400 mila che rimangono 100 mila le compro e poi dopo dopo
+41:36 qualche possibilità in più che possa salire il prezzo ok quindi si faccia vedere i 500 mila
+41:40 posso spaventare i compratori e soprattutto posso far sì che i venditori mi si mettono a un prezzo
+41:46 inferiore quindi sotto quindi io farò ancora più fatica a vendere quei 100 quei 500 mila quindi
+41:53 cosa succede io da venditore di quantità grosse ho diverse strategie senza entrare nel discorso
+42:00 iceberg ok che adesso c'è finalmente anche sulle cripto ma senza entrare in quel discorso lì io
+42:07 posso semplicemente fare così faccio vedere 100 mila quando qualcuno me lo compra quindi se il
+42:13 prezzo arriva ai miei 100 mila e compro nei miei 100 mila fa il prezzo lo schizzo su quindi
+42:20 fanno lo spike su io dopo rimetto altri 100 mila poi poi dopo aspetto che di nuovo in manzano
+42:30 questo va di nuovo su e metto gli altri 100 mila allora dove è probabile che questa cosa
+42:42 possa succedere meno nei momenti in cui entrano tanti volumi cosa sono i volumi i volumi sono
+42:49 tante persone che comprono ok quindi se io l'acquisto la faccio a 1.9 che è un punto nel
+42:57 mezzo al niente torniamo a un minuto spettacolo spettacolo torniamo qua allora qua è un punto
+43:10 in mezzo al niente no per esempio perché non è nemmeno i minimi di giornata nei massimi di giornata
+43:15 ok quindi se qua è un mezzo al niente siamo invece di 1.74 fossimo a 1 dove era l'esempio
+43:23 a 1.8 ecco siamo in mezzo al niente è difficile che ci sia un aumento di volume di volumi tali
+43:34 quindi sono tanti comparatori da potermi mangiare i 100 mila ed eventualmente altri 100 mila che
+43:39 se invece è un punto strategico quindi un punto dove probabilmente entreranno tanti
+43:47 i comparatori quindi la strategia la mentalità è pensare sempre dove è un punto dove anche
+43:55 altre persone entreranno a comprare o vendere questo ovviamente non è un ragionamento da neofita
+44:00 però può essere momenti in cui mi va a fare una testata diverse volte una resistenza oppure
+44:09 stanno a fare i massimi di giornata per esempio se stanno se 1.8 coincide con i massimi di giornata
+44:15 che ha fatto sei ore prima e sei ore dopo mi ci sta di nuovo avvicinando a quel a quel prezzo
+44:22 lì è probabile che quando arrivi lì i volumi possono aumentare perché perché se io sono
+44:28 andato short a quel livello lì io lo stop allo short da qualche parte dovevo mettere ed è
+44:33 probabilmente lo metterò come ultima tappa la metto se va a fare nuovi massimi quindi
+44:39 cosa succede che se io alla seconda volta che ci vado o alla terza volta che vado in questo in
+44:45 questo punto se lo vado a rompere è probabile che entreranno non solo comparatori ma anche
+44:50 quelli che andranno a chiudere short perché la loro ultima chiamata insomma è dove molte
+44:55 altre persone hanno messo lo stop allo short e quindi i volumi lì aumenteranno molto quindi
+45:03 anche quando c'è la finta quindi c'è questo che dimostra 100.000 ma in realtà sono 500.000 anche
+45:09 se quando va su ne mette altri 100.000 i volumi sono aumentati che questo va a schizzare su e quindi
+45:14 questo dopo il suo 100.000 in più non li vedi neanche ok quindi in quei momenti lì è più
+45:20 probabile che ci siano dei rialzi che poi vanno a fare effettivamente un rialzo di prezzo che ci va
+45:25 a soddisfare e che fa veramente salire il prezzo in altri momenti invece quelle che
+45:30 sono le resistenze possono essere farlo occhi perché semplicemente è difficilmente è difficile
+45:37 avere in quel momento a quel prezzo un aumento di compratori e quindi semplicemente se uno ne
+45:46 aveva tanti da vendere quando lo rimette poi spaventa tutti poi di nuovo scende per questo
+45:51 che io non comprendo tantissimo cerco di farlo in momenti in cui secondo me ci possono essere
+45:57 i trigger cioè possa scattare i meccanismi tali per cui anche altre persone possono comprare ma
+46:06 soprattutto dove anche possono scattare chi è short quindi chi è contro trend e che debba chiudere
+46:14 perché se no va imperita comunque deve chiudere le perdite e quindi si sommano i compratori quindi
+46:19 se i compratori e venditori sono più o meno pari quando stanno facendo un prezzo in quel momento
+46:25 lì ci sarà uno squilibrio fra compratori perché non saranno solo i compratori ma arriva se sono
+46:32 di nuovo i massimi di giornata arrivano agli alert delle altre persone arriveranno tutte le ordine
+46:36 condizionate di persone che dicono ok quando va a fare i massimo da comprare anch'io tutti gli short
+46:40 che si vanno a chiudere c'è un aumento c'è un momento interessante non solo per me ma per tante
+46:45 altre persone e in quel momento lì ci sarà un aumento di volume e in quel momento lì chi
+46:50 deve vendere quantità grosse può approfittare ma è anche momento in cui anche se quantità grosse
+46:57 non vanno a creare il tappo cioè non vanno a creare quel fatto che sale e poi riscende perché
+47:03 i volumi sono talmente alte di chi sta comprando che semplicemente ti schiaffeggio e va avanti ok
+47:07 se invece lo faccio in un momento in cui non è un momento interessante anche per altre persone
+47:12 è probabile che non faccia quello che deve fare e ho capito cosa ha detto quindi la strategia
+47:25 da pensare non è semplice pensare non bisogna solo pensare per me quello è un punto che per
+47:31 me è interessante bisogna cercare di pensare un punto che è interessante anche per altri ma
+47:35 soprattutto anche per chi è contro trend cioè se tu fossi short se tu stai pensando a comprare
+47:42 tu anche ragionare ma se io fossi short dov'è l'ultimo punto dove dico devo assolutamente uscire
+47:48 dov'è qua bene in quel punto lì io provo ad entrare perché in quel punto lì chi è nato short
+47:56 deve chiudere e quindi da lì si sommano quindi chi è short diventa il mio alleato e dopo c'è la
+48:03 possibilità di poter avere tanti volumi che fa sì che quella resistenza possa essere anche se
+48:10 finta può essere sconfitta lo stesso chiaro grande cioè giovanni mi sa che vuole parlare
+48:19 giusto? posso farti una domanda? sì certo io ho problemi nel raggruppare il book praticamente
+48:31 quando mi trovo un token che è 0,60 e 48 io quando vedo quattro cifre dopo la virgola il
+48:40 book è velocissimo lo raggruppo con due solo cifre dopo la virgola però poi diventa troppo
+48:47 troppo difficile capire se il petto slaveo scende mi trovo male a capire perché magari
+48:54 in un minuto non arriva a quelle cifre sì sì sì sì brava brava brava ti spiego perché è fondamentale
+49:00 allora questa funzione del raggruppamento per me è un sogno questo per me è un sogno che diventa
+49:08 realtà allora per quanto riguarda piazza fari non c'è assolutamente bisogno fa talmente pochi
+49:13 scambi che l'importante è avere almeno un venti livelli e siamo a posto ok quello è quello ce l'ho
+49:17 per quanto riguarda il nasda che invece gli americani sono talmente assurdi che hanno un
+49:23 book che ha i volumi se loro hanno i volumi di che vedete su suba inas però invece di
+49:29 avere un book raggruppato hanno un book che è l'esatto opposto cioè tu vedi il prezzo quindi
+49:37 lo stesso livello 1 75 su più livelli quindi come se vedessi 1 75 qua qua qua qua qua qua
+49:44 perché fanno vedere più fonti quindi l'1 75 su più fonti diversi e quindi hai che non so i primi
+49:50 4 livelli con lo stesso prezzo però da fonti diverse e poi dopo il prezzo dopo quindi con
+49:57 gli stessi volumi quindi se quando è così non si capisce niente con loro si capisce ancora meno
+50:04 perché è allo stesso prezzo più livello è una cosa assurda infatti io odio il nasdaq da quando
+50:08 sto usando da quando sto usando binance che ha questo book incredibilmente fantastico il nasdaq
+50:14 lo sto diando non riesco a chiudere non trai dare il nasdaq perché comunque è un mercato fantastico
+50:20 però al book che fa veramente schifo e invece qua abbiamo la possibilità di raggruppare proprio
+50:25 perché dove ci sono tanti volumi è fondamentale e vi faccio capire come si raggruppa ok adesso
+50:30 l'ho messo al minimo quindi questo è questo è il book dei venditori a nudo quindi qua esattamente
+50:39 tutto quello che c'è nel book a qualsiasi prezzo le mercate azionarie ci sono dei limiti non puoi
+50:45 mettere qualsiasi prezzo con tutti una virgola con dei decimali così lunghi c'è già una selezione
+50:52 per parte loro perché comunque soprattutto quando è una pazza affari si cerca di raggruppare un
+50:58 po' i prezzi invece qua i volumi sono talmente alti che permettono delle virgole pazzesche però
+51:04 questo è fantastico in realtà perché permette di far scattare in maniera perfetta gli stop limit
+51:10 eccetera con questo meccanismo vi spiego anche perché spesso vedete che i vostri stop limit
+51:16 non vanno a segno ok invece vi spiego come bisogna fare allora quindi quando è così quindi a nudo
+51:22 non si capisce niente le quantità vedi sono infimissime 37 dollari 138 dollari 44 dollari
+51:29 cioè sono cifre che non hanno nessun senso se devi comprarmi 20.000 dollari cioè qua vai su di
+51:34 tantissimo che poi in realtà come prezzo è pochissimo perché sono son decimilesimi cioè
+51:39 incredibile decimilesimi quindi è talmente inutile che non ha se il book fosse così io alzare i
+51:46 bandi a rabbia anche neanche guarderei il book ok infatti delle due è meglio avere il book inutile
+51:51 di fineco che fa vedere fa vedere il mercato americano con una linea sola però è una linea
+51:59 raggruppata alla fine alla fine è meglio una linea sola raggruppata piuttosto che quelli degli
+52:05 americani aver 5 livelli assurdo comunque qua siamo sull'inutilità quindi con il book con
+52:15 l'apertura massima è inutile non serve a niente non si capisce niente è completamente inutile
+52:19 anche per le quantità non rende conto quindi raggruppiamo una volta vedi anche succede siamo
+52:24 ancora ai mille delle cifre assurde non ha ancora senso comunque vediamo le cifre ok
+52:29 vediamo cifre 200 dollari 147 dollari ancora piccole ok ma soprattutto soprattutto
+52:38 aspetta chiudete l'audio se no c'è l'eco ok grande allora stavo dicendo mi perdo subito
+52:55 ecco che comunque anche in questo caso voi dovete sempre pensare che se voi comprate qua e va su di
+53:04 due tre livelli voi dovete già guadagnarci invece qua è talmente poco raggruppato che non
+53:10 guadagnereste niente quindi non ha nessun senso vedere che voi comprate con 5 6 livelli non
+53:16 guadagno non state guadagnando niente cioè non si può capire quindi si va ancora più avanti
+53:20 qua iniziamo già a vedere delle cifre che ci possono interessare e cerchiamo di capire
+53:29 qua se troppo raggruppato o meno ok ovviamente adesso abbiamo preso un titolo che ecco sta
+53:38 facendo più 12 quindi dai un po di movimento c'è e andiamo a capire quindi se noi comprassimo
+53:44 10.000 e 10.000 dollari 10.000 vediamo la cifra e qua vediamo 10.000 dollari sono 5 6.000 ecco
+53:59 6.000 6.000 c98 quindi 6.000 e qua sono 7.000 sono 12.000 ok quindi quindi facciamo che compriamo
+54:10 questi 7.000 e sono 12.000 dollari cosa significa che se da 173 a 174 guadagniamo
+54:22 allora vediamo un attimo allora se 12.000 guadagniamo 70 dollari sì e quindi sai già
+54:40 che in quel movimento di 1 allora andiamo a raggrupparlo ancora ecco ok quindi sai che da
+54:47 73 a 74 vai guadagnare quei 70 dollari a riuphana 75 sono altri 70 dollari è così dicendo ok
+54:54 quindi qua l'abbiamo raggruppato al massimo che 0 1 e qua riesci a vedere già dei livelli
+54:59 grandi quindi vedi 6.000 30.000 20.000 dollari 26.000 dollari dipende voi quanto voi volete
+55:07 diciamo avere la precisione di voler entrare allora quando questo mi sta facendo il più 30%
+55:14 sta facendo dei movimenti enormi mi tocca stare nel maggior raggruppamento perché questi quei
+55:19 famosi 70 dollari quindi a 73 74 si andranno a muovere molto velocemente ok per arrivare a
+55:27 guadagnare 700 dollari dovrà arrivare da 173 a 183 ok quindi voi sapete già che tutta questa
+55:33 distanza qua io vado a guadagnare a 700 dollari ok questo è un movimento che ovviamente è un
+55:43 movimento grande è un 5% sì più o meno un po' di più quindi se voi state se state su un
+55:53 qualcosa che sta si sta muovendo dell'1% è inutile vedere un 5% in a su quindi vai a togliere il
+56:00 raggruppamento vai ad abbassare il raggruppamento adesso vedrai che da 173 a 174 quindi quei famosi
+56:12 70 dollari di guadagno gli vai a vedere li vai a vedere su 10 livelli diversi ok quindi quando
+56:21 io vado a operare per fare diciamo dipende dalle quantità che vuoi fare però io di solito sto
+56:30 quando vado a vedere i livelli sto qua quindi in questo caso è il massimo ma di solito basta
+56:36 stare qua però ognuno fa il caso proprio quindi io qua vado a vedere i livelli perché così posso
+56:42 vedere quindi 173 183 questo è uno spostamento dove io guadagnerai 700 dollari vado a vedere
+56:51 in mezzo cosa c'è la resistenza grande è 1 e 8 e qua lo riesco a vedere subito velocemente nel
+56:57 book ok quindi ho abbastanza campo libero comunque fino a 73 quindi sono comunque 150 300 350 dollari
+57:04 e arrivo già qua ok e quindi vedo che nel book non c'è non c'è niente di che ok vado ad anticipare
+57:11 il muro di qua quindi non è niente male come acquisto ok che nel book mi dice che non ho problemi
+57:18 poi per andare a fare scattare il trigger quindi per esempio io voglio far scattare 174 vado a
+57:25 capire esattamente dove far scattare l'acquisto perché da qua sembrerebbe a 174 ma se noi andiamo
+57:32 a vedere e noi andiamo a vedere così ecco andiamo a vedere 174 vedi ah perfetto a 174
+57:43 in realtà non era il muro il muro era 1736 ok quindi vedete qua il muro si vede dove io
+57:52 dovevo acquistare è 1736 ma se io ce l'ho raggruppato così mi sembra 174 quindi se io vado a mettere
+58:00 l'acquisto a 174 in realtà non mi viene fillato il muro era qua qua c'è il vuoto e quindi quando
+58:11 vado a comprare scattando qua c'è qualcun altro che qua c'è il vuoto mi va fillato alla fine se
+58:16 io vi si messo compra 174 fino a 1743 e ho 15 mila dollari da comprare non compro niente ok
+58:26 dovrei mettere almeno scatta 174 e compro fino a 175 ok qua c'è la mia quantità e qua ho possibilità
+58:34 c'è qualcuno che mi può dirse è chiaro questo meccanismo o se devo semplificarlo
+58:41 in quel caso in quel caso ti fa una media del prezzo man mano che sale il prezzo d'acquisto
+58:51 sarà la media di quello che tu hai comprato sì però tenete sempre il caso che allora
+58:56 si stava comprando 100 dollari non ve ne può fregare di meno ma se state comprando 20.000 dollari
+59:01 in questo caso 15.000 li va a prendere da qua e questi altri li va a fillare qua e dopo ti fa
+59:09 la media quindi dopo quando vai a vedere a che prezzo l'hai acquistato non è 175 ma 174 7 8 insomma
+59:15 perché ti fa la media di tutto e ti va a spazzolare e vai spazzolare tutto questo però
+59:20 può anche essere che non è detto che... aspetta che faccio un fermo immagine nuovo
+59:32 facciamo un fermo immagine così
+59:37 ok quel è l'altro problema allora noi abbiamo fatto scattare 174 ok 174 che è qua c'è 1600 dollari
+59:54 con quindi scatta l'acquisto quando arriva 174 e va a fillare fino a 175 che ce n'è 15.000 quindi
+60:02 ok non ho nessun problema mi vendrà eseguito sicuramente invece la risposta è no non sicuramente
+60:08 non sicuramente perché perché se c'è qualcuno quindi a me scatta a 174 e ne compro 15.000 ma se
+60:17 uno prima di me ha messo che deve scattare a 1739 quindi prima di me e vuole comprare 50.000 dollari
+60:29 fino a 176 cosa succederà che quando arriva qua scatta compra tutto anche qua compra tutto
+60:42 anche questi 15.000 e va su va su fin quando non riempie tutta la sua quota e a me scatterà ma
+60:48 scatterà che io compro niente perché io sto ancora il sistema sta ancora comprando i 50.000
+60:55 di prima di della persona di prima che ha creato il vuoto e il mio acquisto si fermerà 175 mentre
+61:04 quel di prima sta ancora sprazzolando tuttazioni fino a 176 io mi ritrovo qua fermo come un pollo
+61:11 senza aver fillato niente perché ho pensato che questa fosse certamente un livello dove altri
+61:17 non ha questo era livello dove anche altri non avrebbero fatto scattare l'acquisto e quindi
+61:26 ho fatto ho avuto fiducia che potessi comprare poi in realtà su questo facendo scattare qua ma
+61:31 ci ha pensato uno prima per questo io ogni volta chi si scomprezza per entrare quando voglio
+61:36 avere la certezza o compro su un muro grande che ovviamente non è questo se sto trattando 20.000
+61:44 dollari ovviamente questo per me non può essere un muro grande ma sarà 100.000 quindi io
+61:48 praticamente posso fare scattare qua con acquisto se l'acquisto è se qua c'è 100.000 dollari fino
+61:55 qua allora ho più certezza che possa essere fillato nel caso questo invece io se voglio
+62:01 avere la certezza devo per forza aumentare il prezzo quindi metterlo 176 e poi andrò a vedere
+62:05 cosa c'è 176 quindi devo allargare lo spazio per fare arrivare l'intero acquisto quindi
+62:12 io non avrò mai la certezza di quando io compro che possa essere eseguito tutto perché qualcuno
+62:20 può farlo prima di me e chi lo fa prima di me può essere enorme può essere gigantesco che
+62:25 spazzola tutto al nasdaq purtroppo questo succede spessissimo dei muri giganteschi enormi questa
+62:32 cosa non è ancora successo su binance ma al nasdaq succede veramente perché qui c'è nel binance
+62:40 è fantastico perché ti incentiva ti fa spendere meno se tu metti l'ordine nel book ok mettere
+62:46 l'ordine nel book significa che i venditori e i compritori hanno un vantaggio di entrare nel
+62:50 book invece su nasdaq o anche piazza faricettra non ha non c'è nessun vantaggio tu compri che tu
+62:55 compri al meglio o compri mettendo nel book ti costa uguale quindi in realtà lo trovi meno
+63:01 quindi trovi questi grandi acquisti giganteschi che non entro nel book perché su binance addirittura
+63:06 se tu sei molto grande addirittura spendi 0 0 se tu metti la tua quantità nel book quindi mettere
+63:15 la quantità nel book significa semplicemente che il tuo acquisto non viene completamente fillato
+63:19 quindi io potrei tranquillamente non ti può sembrare non inserito nel book ma io se compro
+63:25 200 mila dollari faccio scattare a 174 e faccio arrivare a 175 a voglia se rimane nel book e io
+63:35 ho speso niente e sono apposto su nasdaq veramente vedi dei salti pazzeschi cioè quando lavori su
+63:41 roba che fanno il più 100% più 200% più 150% che succede anche qua su binance però quella
+63:49 differenza che quando lavori sui percentuali molto grandi e tu vedi un muro gigantesco lo vedi nel
+63:55 book quindi quello è il tuo stop cioè ciao ma sai che ci possono essere dei buchi del 5 del 10%
+64:03 a me è successo di essere sopra in guadagno di 2000 dollari e di mettere lo stop dove io sarei
+64:10 in guadagno di 2000 dollari e di essere fillato dove io ho guadagnato niente dove sono andato a
+64:15 zero cioè capito cioè ti fanno delle robe ovviamente devono essere dei movimenti grandi
+64:22 quindi stanno parlando di titoli che stanno muovendo del 100% 150% ma la stessa operazione
+64:27 io se metto uno stop su su una cripto che sta facendo c'è più 150% e lo stop è da un livello
+64:33 dove io sono sto guadagnando 500 usdt se finisco a quella chiusura mi dà sempre la chiusura lì o
+64:40 poco sotto cioè posso perdere 10 20 30 dollari basta ma non dei buchi da migliaia di dollari
+64:48 cioè una roba assurda proprio perché qua c'è l'incentivo di inserire nel book quindi il book
+64:52 è estremamente pieno qua e quindi questo è un grosso vantaggio dei fatti che mi hanno fatto
+64:58 innamorare di binance comunque quando per tornare a prima quindi se vuoi avere la certezza di entrare
+65:05 tu devi mettere che scatta prima di un muro ok quindi se 1.75 quasi fossero 100 mila pezzi
+65:12 fallo scattare almeno a 1.749 ok poi state a decidere se il grafico è stato che è andato
+65:22 solo sempre su e mi va a toccare dopo che ha fatto un più 5% senza mai riposarsi cioè io non vado
+65:29 a comprare solo perché c'è questa resistenza qua a quel punto lì è quasi meglio andare short e lo
+65:35 usi come base ok ma se prima c'è una laterizzazione c'è una laterizzazione prima e poi dopo mi va
+65:44 lì e io devo per forza entrare dentro quel livello lì perché dopo quel livello il book è scarico
+65:48 allora devo farlo scattare prima di arrivare al pezzo grosso e poi metto la possibilità di salire
+65:54 dopo quindi metterò un acquisto a 1.749 fino a 1.76 ok e così avrò più possibilità e su binance
+66:03 è veramente difficile non farti fillare se segui queste cose ok se non ti fai fillare su binance
+66:08 vuol dire che veramente avete sbagliato i rapporti invece al nasdaq purtroppo c'è un dei buchi
+66:14 spaventosi si crema poi uno spread che veramente ridicolo una cosa che non ha senso e niente penso
+66:23 di avere risposto. Bulo posso chiederti una cosa sono raffo avrei due curiosità vai alla grande
+66:35 allora innanzitutto vorrei tornando al diciamo prima la domanda mi è venuta quando abbiamo
+66:43 visto il daily di c98 parlavi ovviamente dei muri del muro che c'era a due dollari eccetera
+66:49 ovviamente potrebbe rientrare anche nell'analisi del daily l'analisi del
+66:55 book per capire qual è il miglior momento per fare scalping ok e l'altra domanda era quando
+67:01 i muri si muovono sul book cosa sta succedendo sono dei pot? non ho capito la seconda domanda
+67:07 quando vediamo dei muri sul book che si spostano che si muovono. Ah sì sì sì brava brava brava
+67:15 allora parto da qua allora tutto quello che voi vedete nel book che fermo lo tenete in
+67:22 considerazione quindi se voi osservate il book prima di comprare osservate sempre il book vedete
+67:28 cosa sta succedendo ok e se vedete dei prezzi che entro ed escono semplicemente non li dovete
+67:36 calcolare ok perché sono finti semplicemente sono lì che ci stanno muovendo basta ok così
+67:42 c'è qualcuno che si diverte allora fai conto che io quando a piazza Fari inserisco un ordine lo
+67:49 tolgo lo rimetto lo tolgo lo rimetto a me addirittura mi telefonano cioè non ci posso
+67:55 credere mi telefonano sul cellulare e mi chiedono perché lo sto facendo cioè non ci posso credere
+67:59 però in Italia funziona questa roba qua è pazzesco se c'è una sospensione in asta io devo vedere la
+68:05 profondità del book devo inserire degli ordini per capire la profondità a me dopo mi telefonano
+68:10 mi chiedono perché l'ho fatto cioè incredibile mondo veramente io spero un giorno se mai questo
+68:16 questo questo questo gruppo questa family diventasse veramente enorme che qualcuno
+68:24 prima o poi insomma mi venga a bussare la porta per chiedere qualcosa le regole che ci sono
+68:31 a piazza Fari sono ridicole se mancano i volumi è proprio perché andere andere regole che
+68:36 veramente non ha senso che a me mi deve chiamare a casa la banca per chiedere perché inserisco un
+68:41 ordine in un book cioè non ha senso comunque e quindi comunque chi invece lo fa qua semplicemente
+68:47 sta cercando di movimentare un po il book ok quindi cosa succede che lui magari che torniamo
+68:52 al book doppio ecco quindi può essere semplicemente che vuole fare spostare in avanti i livelli quindi
+68:59 se io voglio far salire il prezzo voglio aiutare voglio fare schiacciare il prezzo quindi far sì
+69:06 che il prezzo possa salire cosa salire cosa faccio metto che non so 100 mila dollari a 172 che se un
+69:14 arriva e dice cavolo ho visto qua allora vado a comprarlo vado a mettere un prezzo davanti ok e
+69:19 tende a schiazzare poi dopo se il prezzo scende lui clicca desce ok quindi questo è importante da
+69:25 vedere perché potrebbe farti pensare che i compratori sono tanti in realtà quelli sono
+69:31 finti quindi prima di comprare sempre meglio osservare un attimo per capire quelli che entro
+69:35 ne escono semplicemente come se non ci fossero non contano niente io delle volte li utilizzo
+69:42 perché se io delle quantità grosse e vedo che c'è qualcuno che fa quel giochino lì siamo già
+69:48 alla chiusa del nasa che sta parlando da tantissima quando quando mi perdo subito allora
+69:59 ah sì quando voglio comprare delle quantità grandi e non ci sono non ci sono i livelli e
+70:09 ci sono queste che entro ne escono io li utilizzo per comprarli tanto io so che sono finti ma io ho
+70:14 bisogno di liquidità quindi se c'è uno che entra non so a 177 con non so 30000 dollari io devo
+70:21 comprare 30000 dollari ma qua c'è solo 5000 e qua c'è 5000 quindi farei fatica non riuscirei
+70:26 invece il book di chi compra è bello pieno cosa faccio appena entra clicko lo compro me lo mangio
+70:32 dopo lui si trova in una brutta situazione però comunque io lo sfrutto in quel senso
+70:36 lì sapendo che tanto si muove quindi è finto io cerco se ho bisogno di liquidità io lo vado
+70:42 sfruttare ma non credo comunque che sia il vostro problema o il problema di un neofita però
+70:51 semplicemente quando voi vedete chi entra che se il livello si muove non tenetelo non
+70:58 conta niente insomma quindi fate finta di niente invece la prima domanda spetta se me lo puoi
+71:02 ripetere perché non ce la posso fare in realtà strizza un po l'occhio all'analisi del daily cioè
+71:09 tu dicevi per esempio sulla resistenza di questo grafico a due dollari servono per romperla quindi
+71:17 un buon momento per lo scalping se ho capito bene sì allora io ogni volta prima di operare cosa
+71:25 faccio prima cosa guardo il buco ovviamente non per capire un po come siamo messi se vedo dei
+71:29 livelli già nel buco che poi guardo il grafico a un minuto per vedere se il livello corrisponde
+71:39 bella questa un bel rialzo siamo sopra 223 quindi in questo caso appena aperto adesso
+71:45 che vediamo cosa succede cosa cosa c'è vedo livello a 1.7 ma una sette lontanissima non
+71:50 conta niente il buco è troppo raggruppato così troppo poco allora andiamo a vedere i livelli
+71:57 ecco qua vedo 176 un pezzo grande anche qua sta schizzando il primo livello è 1.8 però io
+72:08 devo capire dove sta la guerra cioè allora qua sto capendo che sta salendo tanto che ha rotto
+72:14 la 223 non c'è una conformazione tale per cui io qua non potrei fare nessun tipo di ingresso per
+72:21 quelle che sono le mie tecniche l'unico ingresso era questa rottura qua e quindi qua non farei
+72:27 nulla dovrei solo andare a vedere che cosa sta succedendo per farlo devo andare a vedere gli
+72:32 altri time frame quindi vado a vedere il daily il daily siamo un po' lontani un po' da tutto
+72:38 dove diventa interessante diventa sicuramente interessante se noi fossimo vicino qua i massimi
+72:46 ok ovviamente io dopo andrei a vedere il book vi farai vedere quella cosa di prima vedrai che
+72:52 c'è un macello di ordine a 2 quindi se io fossi subito qua a 1.9 e 4 così almeno che il mio
+73:01 ingresso a 1.9 e 4 è vendere a 1.9 e 6 ok ma se io invece voglio farci delle percentuali
+73:08 desisterei proprio perché nel book vado a vedere che a 2 c'è questa cosa disumana quindi io eviterei
+73:17 ma metterei l'alert che poi quello che c'ho mi sa che è a 1.9 e 8 per andare a vedere poi
+73:28 cosa succede perché tenete conto che oggi c'è già stato andiamo a vedere oggi un minuto
+73:34 ecco qua è quando c'è stata la guerra mezzogiorno circa ecco per esempio se adesso comunque mi nasce
+73:43 su dritto per dritto c'è chi se ne frega ne so cosa che ci deve fare comunque delle conformazioni
+73:48 allora se me lo fa a 1.9 e 6 trovo già un altro livello che ha fatto della resistenza quindi qua
+73:53 mi può essere un livello interessante potete entrare ma non ci deve arrivare a dritto per
+73:57 dritto mi deve fare quella un'allaterizzazione ma lo stesso può essere un momento in cui ci
+74:02 sono quei falsi breakout ok perché non siamo in un momento in cui uno dice qua per forza
+74:07 devo andare a chiudere gli stop qua devo devo cioè non è a chissà che livello ok sono dei
+74:13 livelli intermedi il livello interessante per esempio qua nel daily quando poi è andato a fare
+74:20 questo movimento grande stamattina mi sono trovato a questo livello quando andato a fare
+74:28 questi nuovi massimi dopo c'è stato lo spike perché comunque c'è stato chiusura anche di
+74:33 altre cose c'è stato un momento abbastanza topico poi da qua si vedeva già il 2 che era strappieno
+74:38 ovviamente dopo ha fatto scendere eccetera qua ha fatto capire ha fatto vedere un po i muscoli
+74:43 cerca di andare ma era veramente troppo grande quindi io per esempio qua io semplicemente su
+74:49 io non farò più niente fino a quando non mi arriva l'alert che è 198 quindi qua magari fra un mese
+74:55 mi busserà mi suonerà a dire a 198 vado a vedere ci sarà ancora questa mega resistenza 2 vado a
+75:04 vedere il daily per ricordarmi perché ho messo l'alert quindi ok il daily perché qua dopo mi
+75:11 va sarebbe la prima volta col corpo quindi il corpo è la candela la parte grossa superiore
+75:21 a 2 quindi quando vado a spaccare 2 se si va a spaccare 2 vi trovate per la prima volta col
+75:28 corpo sopra e vi trovate in una situazione dopo tanto tempo di laterizzazione eccetera di insomma
+75:38 è un momento dove tante persone avranno alert come ho messo io tante persone dovranno per forza
+75:43 chiudere gli stop se ce li hanno a 2 perché insomma si arriva fino a 2 devi per forza chiudere
+75:49 salute e poi e altra cosa nel daily diventa molto interessante perché qua dopo si va chissà dove
+76:00 ok teniamo conto che abbiamo un'ombra addirittura 3 quindi insomma può andare a fare chissà che
+76:06 follia e quindi quando andiamo a ogni volta che andiamo a aprire un titolo andiamo a aprire il
+76:13 book poi andiamo a vedere o prima il daily o comunque un minuto se non andate a vedere cosa
+76:19 sta succedendo però prima di operare quindi anche se vedete prima un minuto e vedete anche una
+76:23 bellissima conformazione che non sono laterizzazione di 20 minuti che va a battere sempre allo stesso
+76:28 punto magari per 10 minuti nata a battere sempre a 1 7 no 7 no 7 novi come mai vai a vedere il
+76:34 book e vedi una bella resistenza pure c'è un bel iceberg insomma c'è un qualcosa un tappo bene
+76:40 vado a vedere nel daily se addirittura anche nel daily mi fa capire che rotto quel tappo c'è
+76:45 spazio quindi ha un senso anche nel daily allora vincolso ma le possibilità di avere delle finte
+76:54 diventa sempre minore non è mai una certezza ogni ingresso non sarà mai una certezza ma noi
+77:01 possiamo cercare di diminuire quei momenti voti andando ad aver conferme su più piani
+77:09 quindi se abbiamo una conferma sul daily se l'abbiamo a un minuto magari ce l'abbiamo anche
+77:13 su un altro time frame a 5 daily è interessante ma il book è interessante ma è da capire perché
+77:20 comunque cioè se tu ti arriva non so a 1 9 5 per la prima volta oggi quando è arrivato 1 9 5 per
+77:27 la prima volta ci voleva un pazzo che comprasse 1 9 5 che è arrivato 1 9 5 per la prima volta e
+77:35 vede tutto questo casino verso i due è assurdo perlomeno devi aspettare che si avvicini al 2
+77:43 insomma poi io personalmente è la prima volta è difficile che vado ad entrare in questa cosa qua
+77:51 però se già la prima volta mi va a mangiare tutto quindi non metterei uno stop limit metterei
+77:56 un prezzo limite quindi metterei 2 0 1 prezzo limite e manualmente se vedo che iniziano a
+78:06 comprare qua quindi 800 mi va a 500 300 vedo 200 già se vedo 200 compro anche se è la prima
+78:12 volta ma lo faccio manualmente e vedo subito che se non lo spacca io subito devo vendere
+78:19 qualsiasi prezzo perdendo qualsiasi cosa cioè so già che se sto comprando che va per la prima
+78:26 volta su un supporto così se non lo spacca o se se lo spacca e torno subito indietro devo
+78:30 immediatamente vendere in perdita perdo quel che c'è da perdere ma devo vendere subito senza
+78:37 pensarsi perché dopo ciao questo ritorna giù e chissà se ci torna o quando ci torna bene facciamo
+78:44 così un'ultima domanda perché sono già le 10 quindi io almeno è un'ora e mezzo un'ora e venti
+78:52 che sta parlando sì vai ciao allora la prima che mi sono segnata è questa mi puoi far vedere
+79:03 lo screen che hai fatto il primo 50.000 che faccio per esempio non so se ti ricordi ho selato
+79:12 sì sì non l'ho salvato ho fatto solo supponiamo che io voglio comprare 50.000 dollari
+79:21 ok e vorrei capire per quale motivo nel vero rosso per quel motivo non non lo riesco a comprare
+79:32 quell'ora io trovassi non so 24.000 più 10.000 più 3000 e così via non fa somma secondo te
+79:41 allora aspetta faccio faccio di nuovo un freeze così capiamo allora mettiamo qua ok allora
+79:57 cioè tu dici siamo a 183 ci sono questi 37.000 ok io voglio comprare 50 ok quei 37 più 52 che
+80:11 sopra non fa somma sì però però aumenta il prezzo ma soprattutto bisogna vedere se qualcuno sta
+80:19 pensando la stessa cosa tua e magari c'è qualcuno con non 50.000 ma con 200.000 e che ti anticipa
+80:27 e quindi quindi tu magari sei messo uno stop limite a 1.829 quindi prima di questo livello
+80:37 non hai la certezza di poterlo prendere perché magari c'è uno che l'ha messo prima e non ha
+80:42 messo 50.000 ha messo 200.000 quindi lui quindi andrà direttamente qua fino qua e tu invece
+80:49 hai fatto scattare 1.830 per comprare a 1.840 ma quello prima di te ha già smottato qua sei
+80:58 già 1.850 quindi tu rimani con niente quindi non hai comprato niente perché uno un tick prima
+81:03 di te un pellesimo prima di te ha fatto scattare una cosa molto più grande di quello che hai fatto
+81:07 tu e è andato su di livello quindi ha spazzolato tutto ha tolto ha comprato questo ha comprato
+81:13 questo ha diritto è andato a comprare a diritto fino qua sopra che tu ti trovi con niente
+81:17 quindi secondo il tuo raggiungimento e dovrei vedere prima di piazzarmi dovrei vedere se c'è
+81:27 qualcuno più grosso di me no allora tu non lo vedi perché se c'è perché come lui non vede te
+81:33 tu non vedi lui nel senso che tu non sei nel buco vedi solo quelli che sono il book tu quindi
+81:38 per avere la certezza di poter comprare quei 50.000 devi arrivare ad un livello molto più
+81:46 grosso quindi semplicemente se tu vuoi avere la certezza che ho 1.830 devi per forza comprare
+81:51 tu mi tu fai scattare a 1.829 quindi prima di 1.830 ma con con lo stop limit che arriva a 1.850
+82:02 dove c'è un prezzo un pezzo grande così tu hai la certezza ok ma se te invece non sei però
+82:08 disposto a andare a fare la super che qua c'è una resistenza tu vuoi solo comprare eventualmente
+82:14 a questo livello qua e allora tu dovresti scendere allo scatto di prezzo che mi dovresti fare fare
+82:21 un 1.825 per esempio fino a 1.835 però sai che stai rischiando e non è detto che tu possa
+82:29 essere fillato perché qualcuno può aver pensato la stessa cosa ma con un pezzo più grosso e quindi
+82:33 ti ti batte diciamo in quella cosa per questo che se hai per forza se vuoi per forza quel livello
+82:41 entrare devi devi comunque mettere un margine più alto quindi per forza andare a mettere un
+82:48 prezzo limite più alto e anche magari andando su un supporto e oppure vai direttamente al mercato
+82:54 dove quando arriva lì comunque anche se qualcuno spazzolotto prima di te tu andrai comunque riuscirai
+83:00 a comprare qualsiasi prezzo quindi anche se uno prima di te compra 300 mila dollari quindi va a
+83:05 mangiare tutto questo tu comunque a 1.86 lo vai a comprare quindi sta a te capire se puoi rischiare
+83:12 di comprare 1.86 o no per questo io per esempio su nasdaq che qua i buchi insomma succedono poco
+83:18 comunque i buchi sono veramente piccoli ma su nasdaq sono dei buchi enormi anche su dei muri
+83:22 giganteschi io per forza devo mettere che compra con un prezzo limite perché io potrei trovarmi a
+83:29 far scattare quindi questo per esempio è la resistenza invece di 200 mila è 2 milioni quindi
+83:34 è gigantesca no io neanche neanche devo farlo scattare a 1.85 devo farlo scattare a 1.83 ma
+83:41 devo anche dirgli che al massimo spendo 1.9 perché può essere che scattando a 1.3 mi va a mangiare
+83:49 tutto e arriva addirittura a 1.95 quindi mi posso trovare che io devo dire io mi trovo a
+83:55 comprare scatta a 1.83 ma compro a 1.95 e quindi vado a vedere il prezzo in cui ho comprato e
+84:02 magari sto già perdendo perché da 1.95 mi sono subito tornato indietro 1.9 che io pensavo di
+84:07 aver comprato 1.83 ma in realtà ho comprato a 1.95 e quindi sono nella merda e quindi su nasdaq
+84:13 devi per forza mettere dei prezzi stretti ma spesso succede che non sei fillato perché c'è gente che
+84:18 arriva con delle quantità disumane non ha nessun incentivo di metterlo nel book di farlo vedere e
+84:23 spazzola tutto qua sono meno meno diciamo così meno spietati e quindi devi avere un po' di margine
+84:32 però ti assicuro che quello che succede sul nasdaq è follia totale e questo è comunque prenderai le
+84:40 misure piano piano c'è a forza di non avere ordini fillati la volta dopo lo aumenti e basta
+84:47 insomma comunque in questo caso allora il 80% delle volte se tu vedi una quantità già come questa
+84:54 quindi una quantità insomma già intorno ai 50 mila dollari poi tutto proporzionato perché stiamo
+85:00 parlando di bitcoin le quantità in dollari sono molto più grandi quindi è tutto proporzionato
+85:05 però se tu vedi un livello quindi facciamo le proporzioni questo è un livello 200 mila dollari
+85:12 questo è quindi un quarto si è un po meno di un quarto e con le proporzioni quando c'è una
+85:22 quantità più o meno un quarto della resistenza bene o male io su quel livello lo dovrei riuscire
+85:27 a comprare non c'è bisogno quindi bene o male un 20 mila dollari a un 8 e 3 facendo scattare
+85:35 1.29 1.8 2.9 dovrà riuscire a essere fillato a 1.8 e 3 entro 1.8 3.5 insomma questo nella
+85:46 normalità delle cose poi ci sono delle eccezioni poi se è un momento in cui stiamo per fare i
+85:52 massimi di giornata che coincidono con anche i massimi la vicino che ne so quindi 1.8 e 5
+86:00 sono i massimi di giornata 1.8 9 sono i massimi del giorno prima allora devi fare molta attenzione
+86:09 perché è un attimo che ti va via tutto ok quindi tu devi vedere se è un momento dove
+86:15 c'ho dei massimi anche di altre cose vicine fate attenzione perché è più facile che poi potreste
+86:22 essere non fillate perché c'è tantissima persone che stanno vedendo la stessa cosa e sanno che
+86:28 comprando qua poi va a schizzare e poi dopo arrivano tutte le chiusure eccetera quindi è
+86:32 probabile che vada a schizzare su dai facciamo l'ultime due domande dai altri due e poi basta
+86:44 sono le 10 e poi mi sa che mi sa che poi faremo degli altri insomma piano piano
+86:50 posso fare una domanda vai ho notato che hai parlato soprattutto di delle book per quanto
+87:03 riguarda le vendite forse perché è più importante per quanto riguarda gli acquisti ma per quanto
+87:09 riguarda vendere è meno importante seguire il book questa era la prima domanda ne avrei delle altre
+87:14 ma magari si è inutile tanto faccio questo no no ho preso solo per esempio in modo da avere
+87:20 poteste vedere grande qua insomma no no è esattamente la stessa cosa sia per quando vedi
+87:27 che quando compri il funzionamento è esattamente la stessa cosa bravo che me l'hai spiegato perché
+87:32 lo dò per scontato ma è uguale non c'è nessuna differenza funziona stesso modo assolutamente
+87:41 le livelli sono le stesse cose ci sono gli stessi riferimenti c'è sempre il discorso panico uguale
+87:49 perché comunque gli stop non ci sei solo per chi è short ma anche per chi è long quindi no no
+87:54 esattamente esattamente la stessa cosa e un'altra domanda dimmi pure potevo capire se visto che
+88:02 siamo costretti a seguire l'andamento del bitcoin quando facciamo trading sulle alt se se ha senso
+88:11 guardare per esempio il book di bitcoin per poi ovviamente regolarsi ok allora il book di bitcoin
+88:19 no direi assolutamente no basta il grafico e allora più liquidità c'è in un in un titolo più
+88:31 diventa diciamo meno devi guardare il book nel senso che su futures per esempio il book va
+88:41 guardato meno e i livelli sono sempre più o meno uguali solo guardare che non ci siano faccio
+88:47 l'esempio perché mi piace parlare con degli esempi quindi torniamo su futures sol sol 4
+88:54 miliardi ok scambia un bel po e vediamo che raggruppamento siamo ok 1000 sol sono 73 mila
+89:08 dollari ok allora io il book in su futures quindi dove sono dove c'è liquidità estrema devi solo
+89:19 guardare che le quantità siano proporzionate ok quindi per esempio il livello è 74 vai a vedere 74
+89:28 cioè se batte se per esempio qua c'è 73 8, non c'è niente se qua sta da 38 che sta tenendo
+89:37 giù quel prezzo da un po vedi sta tenendo qua sta tenendo qua ci fosse 100 mila allora dici oh
+89:42 wow bello allora quello è un ingresso che puoi che puoi fare alla rottura di quello lo puoi
+89:48 che poi io dico la rottura ma in realtà non è la rottura cioè se è già stato testato tante volte
+89:56 quindi qua è stato testato ha tenuto giù qua l'avrebbe rotto quindi non va bene come esempio
+90:03 però non ci fosse nessuno spike rimane giù perché c'è un pezzo gigantesco in realtà io
+90:09 lo devo anticipare quindi a forza di avvicinarsi dopo io lo devo proprio comprare su quel livello
+90:14 non devo farlo dopo perché dopo c'è il vuoto quindi dopo vado fillato o non vado fillato oppure
+90:18 vado andrò a comprare dei prezzi troppo alti non ha più senso quindi semplicemente quando va testato
+90:23 tante volte devi comunque rischiare di comprare su quel livello che poi magari non viene comprato
+90:30 quindi devi comprare quando arriva al livello grosso con il rischio appunto che non lo vada a rompere
+90:37 dopo tu andrai a vendere quindi dopo tu devi sapere a che prezzo sei disposto a perdere quanto
+90:41 sei disposto a perdere perché devi già capire che se non lo va a rompere perché se tu lo compri
+90:46 allorottura dopo spesso c'è il vuoto e quindi dopo non non ha più senso però quello che io
+90:54 direi dove c'è tanto volumi qua devi solo guardare semplicemente se ci sono quantità grosse quasi
+91:02 tutto proporzionate non c'è niente da vedere di interessante e quindi semplicemente non c'è
+91:07 quindi poi comprare e vendere guardando il grafico e guardando le medie mobile il book in questo
+91:14 caso non ti sta stravendo niente il book e invece per quanto riguarda appunto il per quanto riguarda
+91:21 bitcoin il book anche lì devi solo guardare se ci sono i pezzi grandi pezzi grandi significano
+91:27 centinaia vediamo bitcoin io loro gruppo sempre a 10 bitcoin e adesso vedi siamo parlando di
+91:36 10 20 30 40 ecco qua c'è 100 già 100 è qualcosa però quando ce n'è mille ok 500 già questo
+91:46 periodo perché adesso dipende dagli scambi questo periodo 500 già un livello quindi se tu vedi un
+91:51 livello con 500 bitcoin ok allora lì devi un attimino ragionare perché se tu stai ragionando
+91:58 su un qualcosa che deve salire e hai dei tappi un bel tappo con un pezzo da 500 su bitcoin e tu
+92:07 vedi che questo titolo che tu vuoi comprare non è fortissimo ma sta seguendo un po l'andamento
+92:12 di bitcoin allora aspetterei un attimo aspetterei che bitcoin rompesse quello prima di comprare
+92:16 quell'altro titolo se invece tu hai sgamato il titolo cioè hai visto che sta facendo che è più
+92:22 forte di bitcoin allora va bene può anche sfruttare perché se tu vedi che bitcoin ha
+92:29 dei pezzi grossi ciò nonostante rimane fermo perché ha dei pezzi grossi quindi non esce da
+92:34 oltre ma il titolo che stai seguendo tu comunque sta andando sui massimi allora puoi entrare perché
+92:40 comunque il tuo titolo è più forte ma se il tuo titolo è comunque fermo anche il tuo titolo e
+92:47 bitcoin è fermo perché è un pezzo grosso nel book allora ti conviene non fare niente fin quando
+92:51 bitcoin non va a spaccare quel muro però è una cosa che io non faccio io ho il book di bitcoin
+92:58 ci guardo solo quando ci lavoro e basta non lo guardo però il grafico lo guardo sempre quindi
+93:04 quando opero su qualcos'altro il grafico per me è fondamentale mi piace anche guardare anche
+93:09 qualcos'altro di grosso quindi che sia ethereum o bnb eccetera per esempio in questo caso qua
+93:19 ultimamente mi piace ethereum perché graficamente stava salendo e basta e quindi era interessante
+93:27 capire la forza con cui si perché spesso anticipava o posticipava i movimenti e quindi
+93:37 avevo un indizio in più insomma avendo un trend un grafico daily completamente diverso adesso
+93:44 ve lo faccio vedere questo è il daily di bitcoin e ethereum togliamo e se ah no faccio addirittura
+93:56 allora ethereum saliva con questo canale tipico suo, cioè tipico insomma l'aveva già fatto
+94:15 ecco vedi qua aveva la 10 che comandava fino a ieri e quindi mi piaceva perché comunque era
+94:26 cioè ethereum comunque è bello grosso quindi quando si muove muove anche l'indice quindi delle
+94:34 volte mi può anticipare una mossa di bitcoin cioè può succedere che ethereum fa un breakout
+94:39 prima che lo faccia bitcoin quindi era interessante anche avere sotto occhio o il contrario bitcoin
+94:47 ti può anticipare poi una rottura che è su ethereum quindi io opero pochissimo con questo ethereum
+94:52 però è interessante insomma quando vedo delle conformazioni qua non hai problemi diciamo
+95:01 di liquidità anche qua e niente però io principalmente guardo il grafico di bitcoin poi
+95:09 ho bisogno di qualcos'altro guarda anche ethereum un occhio al grafico ci vuole sempre ok l'ultimissima
+95:15 domanda se c'è una domanda spese vai domanda rapidissima proprio io sono clau masco uno
+95:23 dei pazzi che si collega quasi ogni notte per il cambio candela grande ma ogni tanto ti andrebbe
+95:31 di anche solo entrare ad ascoltare le teorie che pubblichiamo che andiamo ad eseguire ma a che ora
+95:40 ma di notte? Sì noi da l'1 circa ci colleghiamo e poi da real terrorist anche fino alle 5. Ma è dura
+95:50 dura quell'ora lì cioè nel senso che ti dico per me sarebbe un sogno cioè ti dico poter operare
+95:56 solo col cambio candela il mio sogno sarebbe avere un orario in cui io opero solo col cambio
+96:02 candela e poi spengo proprio il pc non ci guarderei neanche più dopo però mi rincoglionisco anche
+96:11 abbastanza insomma mi è capitato qualche volta se mi sveglia il cane faccio qualcosa però ultimamente
+96:16 vedo che anche se mi sveglio di notte guardo il cellulare poi dico vabbè dai non ho voglia
+96:22 perché tanto comunque qualcosa dopo c'è no è che dopo io mi rincoglionisco non ho più quelle
+96:29 età che dopo faccio proprio fatica a riprendermi durante il giorno poi io ho delle giornate
+96:33 lunghissime che dopo quando finisco vado in giro andiamo al lago facciamo i giri in bici
+96:38 faccio tante cose ma se dormo poco io sono completamente inutile però una cosa che puoi
+96:44 fare che invece sarebbe molto interessante se tu comunque vedi che ne vengono fuori dei discorsi
+96:49 un po particolari un qualcosa dove magari non riuscite a avere delle risposte ben chiare
+96:53 scriveteli ok potete scrivere dove potete scrivere allora potete scrivere su aspetta vi
+97:01 faccio vedere perché qua potete scrivere qua su quindi sempre su discord dove è lo vi ecco su
+97:09 scalping the bull magari cliccate qua voi se scrivete senza taggarmi non lo vedo subito se mi
+97:20 taggate a me mi arriva con quella notifica e dopo non riesco rispondo valentieri se non è un problema
+97:25 quindi se c'è qualcosa qualche domanda qualche dopo quando ho tempo sotto scalping the bull
+97:29 qua rispondo tranquillamente non c'è nessun problema e così magari sai perché possono
+97:34 iniziarne a fare delle cose dei dubbi magari non dopo il giorno dopo non te li ricordo perché
+97:38 anche te magari dopo hai sonno quindi sul momento te lo puoi scrivere anche a l'una di notte che
+97:43 se ne frega poi io quando ho tempo leggo rispondo molto valentieri che dopo i dubbi erano legati
+97:50 al book che tante volte appunto trovavano questi muri che dopo un attimo scomparivano però dopo
+97:55 live di oggi insomma se vanno via che se ne frega non conta niente se però viene mangiato e
+98:02 ritorna mi raccomando scappate subito cioè se se ha un livello che è importante perché c'è un
+98:11 livello grosso avete anche il riferimento nel grafico e andate a comprare la quel livello
+98:19 li viene distrutto ed è un pezzo grosso fa lo spacchettino e poi subito torna e a quel stesso
+98:24 livello viene di nuovo un pezzo grosso vendete subito non pensateci neanche non non pensate
+98:30 speriamo che dopo ritorno su no vendete basta per le meno soldi possibili possibili perché è
+98:37 stato dimostrato che quel livello li non c'è stata abbastanza forza per poterlo distruggere quindi
+98:45 semplicemente chi sta vendendogli ha talmente tante che non è inutile star lì quindi ogni tanto
+98:51 succede che nel book ad esempio vedi dei mega ordini short e dici buon adesso al mercato vedrai
+98:57 che comincerà a shortare e invece niente schizza completamente long e dici ma perché che non c'erano
+99:04 ordini long allora allora questo succede spessissimo con bitcoin almeno bitcoin è
+99:11 fantastico perché quando quando quando va a fare i breakout su livelli non importanti tu vedi che
+99:19 spesso va a fare lo spike e poi magari torna su e torna al livello del breakout cioè se il breakout
+99:27 è qua questo livello qua ok qua c'è il breakout quindi è ottimo per andare short ok quindi
+99:33 lateralizzato sopra e poi dopo c'è il breakout qua dice a perfetto infatti quando rompe fa fare
+99:39 uno bello spike giù e dice a perfetto bene tu non lo vedi subito perché non ti accontenti perché
+99:44 dici ok adesso inizierà un trend negativo quindi proseguirà invece questo torna su torna su e poi
+99:51 dopo va su e poi addirittura non solo recupera addirittura va in positivo magari ti mi va
+99:56 questo è tipico di bitcoin quando ci sono i breakout in posizioni non particolarmente
+100:03 strategici oppure allora se fateci caso quando fa sta cosa spesso è su momenti topici del daily ok
+100:13 per esempio se ci stiamo avvicinando a non so per esempio in questo caso all'ema 10 ok mi va a fare
+100:22 un mega spike si avvicina all'ema 10 chi sta comandando i compratori che stanno comandando
+100:26 quindi che stanno facendo sì che per tutto questo periodo il titolo rimanesse sopra all'ema 10
+100:33 questi schiaffeggiano e tornano su semplicemente prendono lo schiaffo veloce che non c'è aspetta
+100:40 un attimo bool che c'è qualcuno sotto colore salutemi la signora ragazze
+100:52 qualcuno con l'audio aperto scusate ragazzi non ho giuffo scusate questa è la bull family
+100:58 normale vai tranquilla però quello che vi stavo dicendo che succede spesso quando si è
+101:06 su dei riferimenti del daily ok quindi uno deve stare quindi dovete stare attenti quando sta per
+101:14 rompere l'ema 10 o l'ema 5 o comunque un qualsiasi riferimento dei daily fate attenzione perché ci
+101:20 possono essere quelle finte grossissime che passa da fortemente negativo addirittura torna in
+101:25 positivo proprio perché appunto si è avvicinato troppo a un momento critico e quindi dopo niente
+101:30 torna su e basta quindi voi ovviamente quando fa un break out voi non dovete esitare quando è un
+101:36 break out e fa lo spike e poi torna su voi non dovete pensare va beh tanto torna giù no appena
+101:43 torna su due dovete chiudere perché è un segnale fortissimo di cambio trend ok quindi se capita che
+101:50 voi non siete entrati in questa cosa avete solo osservato poi vedete che addirittura torna su e
+101:54 va in positivo e entrate cioè potete è un ottimo momento per entrare quindi le finte sono sempre
+102:00 ottimi momenti di rientrare quindi se rompe il canale va giù e poi torna su dovete assolutamente
+102:05 chiudere perdita non perdita o anche se avete visto gratin guadagno di non so quanto ma purtroppo
+102:12 torna a zero o addirittura vi tocca anche perdere dei soldi chi se ne frega non state lì a sperare
+102:17 perché è un bruttissimo segnale quindi chiudete basta non pensateci ma e questo lo si vede nel
+102:23 book no no no no no no no no no si vede niente nel book assolutamente no è tutto al meglio è
+102:30 tutto al meglio sono tutti e tutto cache che non vedi quindi non vedi niente non assolutamente
+102:34 magari magari si vede se no non vedi niente ok l'unica cosa che puoi vedere allora fai fatica
+102:42 a vederlo in bitcoin però con titoli meno scambiati vedi che quando fa lo spike arriva
+102:47 un livello e poi arriva un pezzo enorme però su bitcoin è difficilissimo uno da vedere e due
+102:56 spesso non te lo fanno neanche vedere perché comunque operano spesso anche con gli iceberg
+103:02 eccetera poi comunque non io faccio fatica a vederli scambia troppo invece coi titoli che
+103:08 scambiano meno invece tipo ti può capitare arrivano un punto e nel book tu vedi che non
+103:13 c'è niente quindi pensi che posso continuare a scendere poi arriva un pezzo grande ecco quel
+103:16 pezzo grande lì devi chiudere perché poi quello da fiducia a chi compra e da sfiducia a chi sta
+103:23 vendendo e quindi ti tocca in balza ok ok ok ragazzi niente sono le due ore di video posso fare
+103:31 la domanda giuro che è l'ultima e quindi dopo vi chiudo vai grazie comunque vai tranquillo
+103:42 dov'è l'ultima la domanda vai
+103:50 è sparito chi? Bull, Bull mi senti? Sì sì vai dimmi. Ok allora oggi mi è capitato che con
+104:04 matic sotto time frame un minuto ci sono dei livelli dove tu dici ok pochi minuti prima ha
+104:15 fatto un minimo è salito un pochettino sta andando a fare un altro minimo ok imposto come se volesse
+104:25 rompere quel minimo lì per andare in giù pike in su cioè perché mi succede sta roba? E no è
+104:32 sbagliato proprio il ragionamento allora se ha già fatto un minimo e tu vuoi che vada a fare già
+104:42 non è il minimo di giornata non è un minimo così all'interno della giornata quindi già sei a rischio
+104:48 di schiaffi poi ha già fatto un minimo e poi torna su non fa un'altra conformazione cioè
+104:55 tu stai dicendo tipo scalini cioè quindi tipo così tipo qua vado a fare un minimo poi torna
+104:59 su poi andato a fare un altro minuto queste cose qua tipo così o fa una conformazione tipo fa
+105:07 un minimo poi lateralizza un attimo poi va a fare un altro minimo bravissimo tu per esempio dove sei
+105:13 adesso io le due candelle più sopra dove sta la rossa e la prendi benissimo lì io sarei andato
+105:23 short sarei sceso ok però appena mi tocca quella in giù la rompe per un po e poi sta in spacchi in
+105:32 su allora io vi sconsiglio questa cosa cioè di fare degli ingressi short o long così brevi
+105:41 senza diciamo una base cioè senza una conformazione perché tu magari quando sei qua dici cavolo sta
+105:50 continuando a farli sta continuando a farli sta continuando a farli però il problema è che quando
+105:54 comanda tanto una media mobile è un problema perché se quando lo spacca dopo può andare a
+106:01 fare degli spike può fare proprio delle versioni molto veloci per esempio e quando non lo vedi
+106:06 perché però questa candella qua guarda che spai che ha fatto quando ha rotto cioè qua vi fa proprio
+106:12 cagar in mano cioè il è sempre meglio aspettare per esempio se io devo andare nuovo su nuovamente
+106:19 short io l'unico momento in cui avrei potuto pensare di farlo è adesso vedendo questo spike
+106:26 qua non l'avrei fatto ma se non ci fosse questo spike non so se lo vedete qua ha creato una base
+106:33 senza questo spike ecco io qua all'ottura quindi qua dopo va a rotondare sull'ema 10 mi fa capire
+106:42 che sta comandando e la rotura l'avrei potuto fare ma qua non l'avrei fatto perché qua c'è stato
+106:47 questo spike quindi ma sporcato e tornato su non mi è piaciuto anche se qua avrei comunque guadagnato
+106:51 non l'avrei fatto ok non cercate di fare in continuazione lo stesso tipo di operazione
+106:59 cioè aspettate qualcosa di di più di più speciale ok qualcosa di di di con una conformazione un po'
+107:06 più lunga perché è più probabile che potete avere meno finta e più spazio per poter guadagnare
+107:14 se invece cercato ogni volta perché pensate magari continuerà continuerà e aspettate delle
+107:20 piccole conformazioni c'è il rischio che dopo ti ti si inverte un treno un attimo e rimanete fregati
+107:26 invece se c'è la conformazione più lunga è più probabile che la cosa possa durare ed è più facile
+107:33 non prendere gli schiaffi non non cercate di fare troppi eseguiti di voler per forza entrare
+107:38 in mercato cercate essere molto più pazienti e soprattutto di poter selezionare molto di più
+107:44 è fondamentale poter selezionare ok quindi cercare di aspettare un consolidamento un qualcosa che
+107:52 dice ok questo già una conformazione più speciale un po più ricercato un po più
+107:55 più particolari
+108:25 io vi saluto è stato veramente un piacere fare questa diretta e appunto adesso vediamo alla fine
+108:36 non è stato proprio da super neofiti però insomma l'inizio credo di sì dai vediamo
+108:42 fatemi sapere poi nei commenti su youtube comunque è stato sicuramente interessante
+108:49 abbiamo parlato anche di cose un po' tecniche quindi un po' difficile però dai il funzionamento di base
+108:54 forse forse forse nel book c'è qualche dettaglio in più questa volta dai e fatemi sapere in
+109:02 particolare nei commenti se c'è un qualcosa che non vi è ancora chiaro ciao ragazzi iscrivetevi
+109:08 ai due gruppi telegram a discord e ovviamente anche youtube ciao

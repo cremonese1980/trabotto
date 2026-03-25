@@ -1,0 +1,56 @@
+# Low-confidence segments for: 010_Livielli_FINTI_nel_BOOK_Bot_che_spostano_i_Muri_Ordini_Iceberg_Tutorial_per_capire_meglio.mp3
+# Total flagged: 17
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.192)
+  "manipulazione nel book eccetera mi scappa da ridere perché altrimenti"
+
+[0:05-0:10] (confidence: -0.192)
+  "manipolazione significa un qualcosa che noi non possiamo gestire ok?"
+
+[0:10-0:15] (confidence: -0.192)
+  "significa un qualcosa che ci prende in giro un qualcosa che è imprevedibile"
+
+[0:15-0:20] (confidence: -0.192)
+  "quindi io non potrei lavorare da vent'anni se il book fosse manipolato"
+
+[0:20-0:25] (confidence: -0.192)
+  "quindi vi spiego un po' di cose perché ho letto tante fesserie, meglio fesserie"
+
+[3:08-3:11] (confidence: -0.157)
+  "capendo nulla quindi non c'è uno che sta dominando noi abbiamo bisogno di"
+
+[3:11-3:15] (confidence: -0.157)
+  "dominanza e pulizia quindi cosa vedremo nel book?"
+
+[3:15-3:20] (confidence: -0.157)
+  "vedremo i livelli che si gonfiano i livelli che finti i livelli che si aprono"
+
+[3:20-3:26] (confidence: -0.157)
+  "che si chiudono, cioè qua in qualsiasi book al mondo su qualsiasi strumento troverete"
+
+[3:26-3:31] (confidence: -0.157)
+  "nel book livelli dove uno mette una quantità poi lo toglie poi un altro"
+
+[3:31-3:36] (confidence: -0.157)
+  "mette poi si toglie poi l'altro va su e si toglie si rimette si sposta ok?"
+
+[6:21-6:25] (confidence: -0.177)
+  "iceberg devono battere in testa sempre lo stesso livello l'iceberg non permette"
+
+[6:25-6:31] (confidence: -0.177)
+  "che il prezzo lo superi ok? Quindi vedrete sempre 4000 tornerà a zero poi"
+
+[6:31-6:35] (confidence: -0.177)
+  "tornerà 4000 in continuazione senza essere superato quello è un iceberg"
+
+[6:35-6:40] (confidence: -0.177)
+  "quindi vedete solo la punta ma graficamente vedrete che il lato"
+
+[6:40-6:45] (confidence: -0.177)
+  "superiore non supera mai quella roba lì quel livello quello è un iceberg non dite"
+
+[6:45-6:49] (confidence: -0.177)
+  "mai che è un iceberg quando vedete che il prezzo sta scendendo o sta sellendo"
+

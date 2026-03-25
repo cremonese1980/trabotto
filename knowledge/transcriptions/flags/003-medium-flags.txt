@@ -1,0 +1,113 @@
+# Low-confidence segments for: 003_EMA_for_Dummies_Come_usare_le_EMA_per_seguire_il_trend_e_fare_Trading_Scalping.mp3
+# Total flagged: 36
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.411)
+  "Ciao a te, sei tu su SkypingtheBull. Video, finalmente il video con mia moglie, saluta."
+
+[0:06-0:14] (confidence: -0.411)
+  "Ciao. Ok, questa è mia moglie. Su l'EMA per i playlist per Neofiti, ok? Tra l'altro useremo"
+
+[0:14-0:22] (confidence: -0.411)
+  "delle, così, delle, cerco di spiegare l'EMA così, in questo modo qua. Cos'è questo modo?"
+
+[0:22-0:28] (confidence: -0.411)
+  "Come fosse la scena di un delitto. Come mai? Perché il 90% delle donne, fra cui ovviamente"
+
+[0:54-1:00] (confidence: -0.236)
+  "in descrizione. E niente, questo è importantissimo, un importantissimo video, sono due scene del"
+
+[1:00-1:07] (confidence: -0.236)
+  "delitto, dove cercherò di spiegare con questa cosa l'EMA. Te hai mai sentito parlare dell'EMA?"
+
+[1:07-1:14] (confidence: -0.236)
+  "Sì. Sì? No, il termine. Ah, il termine? Sì. Te hai sentito che noi parlavamo di EMA, che io parlo di..."
+
+[1:14-1:18] (confidence: -0.236)
+  "Ok, mia moglie non sa nulla, non ha mai fatto tre, ha mai fatto un eseguito in vita tua? Mai. Ok, quindi"
+
+[1:18-1:22] (confidence: -0.236)
+  "perfetto, per cercare di capire. Fra l'altro, nell'altro video, cioè nell'unico video che abbiamo"
+
+[5:18-5:24] (confidence: -0.189)
+  "prezzo nell'arco del time frame, il time frame in questo caso un'ora, quindi ogni candela mi fa vedere"
+
+[5:24-5:31] (confidence: -0.189)
+  "dal minimo al massimo il movimento che ha fatto in quell'ora. Quindi se vendeva borse, in quell'ora"
+
+[5:31-5:41] (confidence: -0.189)
+  "lì ne ha venduto massimo che non so di 100, un minimo di 0, qua era 0, qua era 100 e si è fermato a 50."
+
+[8:12-8:17] (confidence: -0.206)
+  "arrivato la tecnica BAD, te BAD l'hai sentito parlare mille volte, giusto? Ok, questo sarebbe"
+
+[8:17-8:22] (confidence: -0.206)
+  "una conformazione, quindi una tecnica, si chiama BAD SPENSA, all'esplosione, quindi alla rupture"
+
+[8:22-8:28] (confidence: -0.206)
+  "di questo ci possiamo aspettare un'esplosione e c'è stato, ok? Però noi vogliamo capire anche con"
+
+[8:28-8:36] (confidence: -0.206)
+  "che forza e soprattutto quando va a riposare se va a toccare le EMA, così capiamo, come in questo"
+
+[8:36-8:41] (confidence: -0.206)
+  "caso qua, stiamo cercando di capire se è stanco per poi andare a scendere fortamente o semplicemente"
+
+[12:15-12:21] (confidence: -0.247)
+  "su dove ha toccato questa linea gialla. Che EMA è la linea gialla? Ognuno mette il colore che voglio,"
+
+[12:21-12:31] (confidence: -0.247)
+  "però io metto l'EMA gialla, è l'EMA 10. Ok, qui c'è il 5, il rosso, il 10 giallo, la 200 è l'azzurro,"
+
+[12:31-12:39] (confidence: -0.247)
+  "la 60 è l'azzurro, ah sì, e la 223 è il viola. Bordeaux, quel che è, sì. Poi ognuno fa come"
+
+[12:39-12:44] (confidence: -0.247)
+  "gli pare ma nella bull family cerchiamo tutti i diversi colori in modo che colpo d'occhio capiamo"
+
+[13:09-13:14] (confidence: -0.24)
+  "come anche a 203. Però ho capito il ragionamento. Qua per esempio quando poi ha rotto e qua ha fatto"
+
+[13:14-13:19] (confidence: -0.24)
+  "vedi, bad, c'è scritto bad, sai che queste scritte qua non ci sono? Le abbiamo creati noi"
+
+[13:19-13:24] (confidence: -0.24)
+  "grazie ai scienziati pazzi, il lavoro dei scienziati pazzi fra le cose che fanno e anche avere"
+
+[13:24-13:30] (confidence: -0.24)
+  "delle indicazioni, quindi tu che stai studiando per esempio la tecnica bad, lo vai a ritrovare"
+
+[13:30-13:35] (confidence: -0.24)
+  "direttamente nel grafico e ti aiuta a capire che qua ci può essere una conformazione, infatti qua"
+
+[17:13-17:21] (confidence: -0.236)
+  "qui abbiamo il pistole, quindi l'indizio è quanti proiettili ha ancora in canna? Le sta finendo,"
+
+[17:21-17:27] (confidence: -0.236)
+  "come facciamo a capire che sta finendo? Perché avevamo l'EMA 10, abbiamo una certa EMA,"
+
+[17:27-17:33] (confidence: -0.236)
+  "un qualsiasi EMA, prima abbiamo visto che era la 60, poi è diventata la 10, sta finendo e quindi il"
+
+[17:33-17:37] (confidence: -0.236)
+  "trend ci aspettiamo il caldo giù. Fin dove? Fino alla 60, che questo dovrebbe essere il supporto."
+
+[17:37-17:41] (confidence: -0.236)
+  "In questo caso è nato tutto dritto per dritto ancora di più. Poi vedremo che qua sta spontando"
+
+[23:24-23:28] (confidence: -0.176)
+  "è la forza. Quindi non stiamo parlando di un prezzo che è sempre uguale. In questo caso prima"
+
+[23:28-23:35] (confidence: -0.176)
+  "era 105, poi sceso a 102, poi 101, poi è andato addirittura sotto 100. Cioè l'EMA quando scende,"
+
+[23:35-23:40] (confidence: -0.176)
+  "scende di prezzo. Ma lui come se l'è subito? Sempre questi 100 borse. Prima cercava di vendere"
+
+[23:40-23:46] (confidence: -0.176)
+  "a 100, ma nessuno riusciva a comprarli a tutti. Quindi è sceso a 99, poi sceso a 98, poi 97,"
+
+[23:46-23:52] (confidence: -0.176)
+  "poi sceso a 95. A un certo punto lì ha trovato tutte le persone per comprare le sue borse che"
+

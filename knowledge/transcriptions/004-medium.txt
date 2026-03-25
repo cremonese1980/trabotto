@@ -1,0 +1,284 @@
+0:00 ciao tra i desi siete su skype in the bull questo è un video dove vi spiego
+0:04 Bybit a 360 gradi noi praticamente col fatto che con Binance abbiamo avuto i
+0:09 problemi poi è da tanto tempo che dall'italia non si può usare futures
+0:14 quindi non possiamo andare short e abbiamo avuto la possibilità abbiamo
+0:18 dovuto diciamo spostarci perché comunque ultimamente Binance aveva un po' di
+0:23 problemi un po' di fad eccetera eccetera abbiamo trovato il nostro piano B che è
+0:26 Bybit di cui ci troviamo assolutamente bene soprattutto adesso che sono mesi
+0:30 ormai che ci stiamo operando e appunto possiamo andare long short
+0:35 possiamo usare una minima parte possiamo fare trading anche solo con 10
+0:38 centesimi un po' vi faccio vedere come qua vi spiegherò tutto sul trading e
+0:42 anche il discorso della carta ok che su Binance ci sono dei problemi quindi ci
+0:47 sarà anche il discorso della carta vi spiegherò tutto ho già fatto un video
+0:50 che era su Rumble ma questo è un video diciamo più veloce e specificamente per
+0:59 youtube quindi come funziona Bybit? Allora basta iscriversi ci si può anche
+1:06 iscrivere senza mettere nessun tipo di referral e si può iscrivere anche
+1:13 senza mettere nessun tipo di soldi per i referral se volete i referral basta
+1:17 cliccare sotto il video o comunque nel nostro link 3 che trovate ovunque e qua
+1:22 trovate appunto qua cliccate col mio referral così avete gli sconti nelle
+1:27 commissioni che sono appunto meno rispetto a Binance
+1:35 usando futures sicuramente è molto meno rispetto a Binance spot poi potete
+1:42 cliccare una volta che vi iscrivete tramite questo anche senza mettere soldi
+1:46 poi dopo potete avere vip quindi vip serve per poter spendere ancora meno
+1:50 nelle fee e poi qua ci si può fare la richiesta per attivare la carta quindi
+1:55 trovate sempre come sempre tutto poi qua c'è lo speciale Bybit Tutorial che è
+1:58 quello da più di un'ora che ho fatto e lo trovate qua ok questo è un video che
+2:04 dovrebbe essere un po più breve quindi semplicemente cliccate qua iscrivetevi
+2:09 potete anche non mettere i soldi se volete avere gli sconti che di solito
+2:12 c'è tipo 20 euro 25 dollari scusa da spendere in fee quindi in più oltre che
+2:19 il fatto che spendi molto meno negli fee negli eseguiti diciamo ti danno anche 25
+2:25 dollari da scalare dagli eseguiti quindi all'inizio se avete una size piccola e se
+2:32 state iniziando dovete avere una size piccola così spenderete
+2:36 praticamente niente poi qua c'è anche il discorso che se compri a mercato
+2:42 spendi di più se compri a 0,0 55 se non sei vp1 quindi la base diciamo è 0,0 55
+2:49 se invece compri nel book mettendo nel book spendi molto meno ok quindi stiamo
+2:54 parlando di dei livelli veramente molto bassi quindi in incentiva solitamente se
+2:58 noi andiamo a target quindi se l'ordine viene raggiunto il prezzo che abbiamo
+3:03 già nel book spenderete ancora meno e quindi è molto vantaggioso questa cosa
+3:07 allora primo vantaggio anzi prima vi faccio il set ok allora questo questo
+3:11 cosa serve questo serve prima mettiamo l'ema quindi andiamo su indicatori basta
+3:16 scrivere ema e trovate moving average exponential ok io ne ho già i miei 4 più
+3:25 di default questo non lo puoi cancellare quello che ti mette by bit è questo qua
+3:30 questa linea qua che insomma da solo fastidio non si può cancellare quindi
+3:34 inutile cliccare qua perché dopo rispunta basta mettere hide così non
+3:37 si vede adesso ho aggiunto un altro che questo ecco per modificare basta andare
+3:42 quindi aggiungere indicator scrivere ema clicchi poi vieni qua metti su settings
+3:48 e poi fai il cambiamento quindi metti i nostri colori che sono il rosso ema 5
+3:52 giallo basta avere eccola qua ema 223 se nascondo è uguale se lo rimetto che
+3:59 tanto ce l'ha già ok quindi dopo li cancellano mettete ema 5 10 60 e 223 e
+4:06 questo mettete in nascondi così non si vede e siete posto avete fatto le vostre ema poi dopo qua
+4:11 a display non volete questo che cos'è questo che cos'è questo questo serve se volete mettere
+4:20 una quantità fissa non so qua stato operando con 2000 e vediamo quant'è la quantità qua con
+4:27 10.000 euro hai 5.800 anzi no qua sono tanti 0 quindi un 5 milioni va beh comunque c'è delle
+4:33 quantità vuole una quantità fissa sempre tu metti la quantità fissa e poi qua compra mercato
+4:38 e vende mercato per essere più velocemente senza passare da qua io questo non lo uso quindi
+4:44 semplicemente basta andare qua su display quick trading futures mod ecco qua lo spunti e non c'è
+4:49 qua invece trovi tutte le altre funzioni ok qua se volete vedere la frecchettina buy e sell dove
+4:55 hai fatto le operazioni qua trovate poi il closed pnl se volete avere questi tenete questi
+5:00 indicatori tenete display tutti questi qua spuntate altrimenti è andato a togliere ok
+5:05 siate curiosi poi l'orario l'orario dovete mettere più uno basta andare avanti cercate roma
+5:11 cliccate mettete più uno facile ok così avete l'orario anche preciso preciso quello abbiamo
+5:18 fatto qua lasciate su last trader price e poi dopo vedete che qua c'è novità che non c'è su
+5:23 binance pot appunto qua si parla di founding rate founding rate però c'era su binance perpetuo
+5:28 no sui futures che cos'è praticamente qua lo spiego poi nell'altro video ma quello lo spiego
+5:34 velocemente quando il prezzo si dissocia dal prezzo degli altri exchange bybit ha un solo
+5:41 modo per poter cercare di incentivare il prezzo per ritornare a quello di prima ok quindi
+5:47 si mettiamo che il prezzo qua sta facendo 0017 5 e negli altri exchange sta facendo 0 18 lui per
+5:55 per cercare di invogliare il prezzo a salire praticamente mette il founding rate in negativo
+6:01 io l'ho visto addirittura fino a meno 3% e cosa in cosa succede che il founding rate se è negativo
+6:08 fa sì che se io sono short e scade questo tempo quindi sono short non succede nulla pago il mio
+6:14 fee normale ma se io aspetto che scade questo quindi fra 5 ore e 21 che questo founding rate
+6:21 scade tre volte al giorno alle 2 col cambio candela alle 10 e alle 18 ok ogni 8 ore praticamente se
+6:31 scade quindi se io sono short e arrivo alla scadenza dovrò pagare una fee aggiuntiva del
+6:37 3% in questo caso sarebbe solo anzi in questo caso se fossi short guadagnerai lo 0 21% allo
+6:45 scadere se invece quando appunto c'è un prezzo che è distante dagli altri exchange questo andrà
+6:50 a scendere fino a quando il prezzo non viene macciato quindi quando scadrà dovrò pagare se
+6:56 sono short chi è long quindi ovviamente cosa faccio io che sono short lo andrò a chiudere
+7:00 prima e quindi fa sì che lo devo chiudere uno short devo comprare fa sì che il prezzo poi possa
+7:06 salire e chiudere il gap ok quindi il founding rate esiste serve per normalizzare il prezzo
+7:11 rispetto agli altri exchange può essere in positivo se in positivo ci guadagni allo scadere del tempo
+7:17 short se negativo ci guadagna la scada del tempo se sei long non sfruttatelo però quando c'è un
+7:23 meno 3% non è che se meno 3% non è che se arrivate allo scadere incassate il 3% vendete e avete
+7:31 guadagnato quel 3% ragazzi non funziona così ok perché farà un movimento pari uguale se
+7:36 vi mettete nei panni di chi sta cercando di incassarlo capirete comunque non dovete speculare
+7:41 su questo fin quando non lo avete capito l'ho spiegato anche in diversi video seguite casa
+7:45 magari ve lo spiego meglio che comunque nel video indicato prima lo spiego un po' meglio questo
+7:49 questa cosa esiste una tecnica per poter sfruttare ma non ne parliamo in questo video ok quindi
+7:55 ricordatevi prima di entrare guardate se c'è il founding rate se è basso di solito è 0,01 0,01
+8:03 quando si sposta un po' significa che è un prezzo è leggermente diverso rispetto alle altre exchange
+8:09 quindi può variare ricordatevi questi orari perché questo può incidere su quante fii dovete pagare
+8:14 quindi founding rate l'ho spiegato velocemente proviamo a fare gli ordini gli ordini sono qua
+8:21 quindi c'è limit market e condition quale sono limit quindi voglio entrare long ha un prezzo
+8:26 determinato quindi metto 0,18 metto la quantità quindi qua metto il 10% non so qualsiasi esempio
+8:35 io la mia size è da 2000 euro adesso qua ne ho 4000 ma di solito i guadagni gli sposto anzi poi
+8:42 domani le dovrò spostare comunque qua ti calcolano la percentuale per esempio qua io avendo 4000 leva
+8:50 10 qua io qua ci sono le leva io uso sempre la leva 10 fissa tenete se potete usarla anche voi
+8:57 la va 10 o sono meno con quella leva 10 e conferma e uso sempre isolated significa che se vado in
+9:06 liquidazione perdo semplicemente i soldi che ho investito ok se invece vado in cross margin
+9:15 perdo anche di più di quello che ho investito cosa significa mettiamo il caso che io metto
+9:20 una size investo 1000 e margine 10 questo è la cifra che viene investita la cifra che va dentro
+9:30 il mercato realmente io però se sono a leva 10 vuol dire che di tasca mia ho messo 100 ok ho
+9:35 messo 100 dollari ma posso investire 1000 questo vuol dire leva 10 se vado in se viene liquidato
+9:42 che liquidato ci vado a un 10% quindi vado long scendere 10% vengo liquidato se sono in isolated
+9:50 perdo al massimo quello che ho investito cioè 100 dollari il sottostante ok se invece sono in
+9:55 isolated ti va a mangiare anche quello che sono i soldi oltre quindi non va bene mettete sempre
+9:59 io ho fatto i conti unificati in modo che in automatico ho sempre isolated quindi lo puoi
+10:06 lo puoi scegliere di default se invece non avete il conto unificato ogni volta che aprite un titolo
+10:12 su cui non avete ancora tradato lo modificate e rimarrà isolated per sempre su quel titolo
+10:18 lì quindi subonche la prima volta metterò isolated se dopo ad operire un altro titolo
+10:23 ordi sarà di default sarà in cross margin ma io andrò a modificare e quindi dopo rimarrà per
+10:31 sempre su quella coppia isolated ok quindi fate voi io vi consiglio però di far unificato in
+10:39 modo che poi ve la dà di default ma comunque voi non dovete mai arrivare alla liquidazione perché
+10:44 avete l'obbligo di mettere sempre lo stop loss adesso andiamo a vedere dove ok e come quindi
+10:49 non dovete mai arrivare allo stop loss dopo vi spiego anche una cosa che vi consiglio comunque
+10:54 di non avere mai se usate la margine 10 qualsiasi leva usate dovete avere uno stop loss non più
+11:00 grande della metà della liquidazione quindi se la liquidazione mi va un 10 per cento perché
+11:05 sto usando leva 10 il mio stop non deve mai essere sopra al 5 per cento se uso leva 20 quindi vengo
+11:13 liquidato al 5 per cento il mio stop loss non deve essere mai sopra il 2 e mezzo per cento se uso
+11:18 invece leva 5 vengo liquidato al 20 per cento il mio stop non deve essere mai sopra il 10 per cento
+11:23 ok questo perché perché vi può succedere soprattutto se il funding rate è molto sballato
+11:28 quindi significa che noi stiamo lavorando su un titolo che ha un prezzo sballato rispetto al
+11:32 mercato può succedere che tu vieni liquidato anche se il prezzo che noi vediamo su buy bit non
+11:38 raggiunge effettivamente quel prezzo perché lui si cerca di tutelare e seguete un prezzo di liquidazione
+11:44 su un altro più exchange potrebbe liquidarti anche se nello specifico qua non c'è quindi per
+11:49 essere in sicurezza non essere liquidati mai a caso usate sempre la metà comunque lavorando con x10
+11:58 lo stop non dovrà mai essere comunque del 5 è comunque troppo grande ok quindi però al massimo
+12:03 se proprio fatte non so operazione daily eccetera non mettete lo stop non deve essere più alto
+12:09 della metà ok importantissimo allora facciamo esempio quindi limit cosa significa metto il
+12:15 prezzo qua metto e quanto voglio investire quindi 1000 x10 significa che io prenderà
+12:23 mille cento dollari da mio portafoglio e metto short per esempio e va dentro lì non viene
+12:28 fillato perché il prezzo è inferiore ok quindi non vengo fillato e questo è limit quindi da un
+12:34 voglio andare long voglio comprare solo se 0 17 compro e rimane lì ok limite quindi
+12:39 posso poi comprare anche a mercato usando limite cioè adesso il prezzo è 0 17 81 si metto 0 17 e
+12:48 9 comprerà tutto fino a 0 17 9 quindi io voglio comprare tutto quello che io sto trovando adesso
+12:55 fino al massimo 0 17 e 9 ok e vero comunque fillato fino a 0 17 9 quindi limit può anche
+13:02 essere una via di mezzo fra comprare mercato ma con un tetto e oppure non comprare ma entrare
+13:08 nel book ok quindi per entrare nel book a poi dopo dopo qua c'è visto che sembra del book
+13:13 raggruppamento controllate sempre il gruppamento e cercate di raggrupparlo nel raggruppamento
+13:19 migliore per capire bene i movimenti ok inutile tenerlo a nudo che non si capisce il book poi
+13:24 è molto più veloce rispetto a binance binance si aggiornà ogni vent' ogni quarto di secondo
+13:30 circa e questo proprio live ogni ogni millinesimo di secondo viene comunque aggiornato ok vedete
+13:36 che sono movimenti quindi molto più veloce non tenete la nudo certe coppie come anche in binance
+13:40 hanno un raggruppamento che fa schifo e quindi niente il book diventa abbastanza inutilizzabili
+13:45 altri come in questo caso sono raggruppati bene e va bene ok quindi basta cliccare voglio comprare
+13:50 solo sto prezzo qua vedete lì poi il bello che qua possiamo spostare il prezzo anche se
+13:55 abbiamo messo un limite possiamo abbassarlo quando vogliamo possiamo addirittura comprare
+13:59 se mettiamo un prezzo più alto e lascio non compra ma ti dice di darla conferma questo è
+14:04 utile perché io posso anche aspettare che s'avvicina e quindi dopo comprare l'ultimo
+14:09 secondo che questo è un trucchetto riguardatelo per se non avete capito bene che ve lo spiego
+14:13 questo è un trucchettino poi domani no sabato ho il webinar il live webinar dove che farò live
+14:20 trading live su zoom proprio su bybit e vedrete che vi spiegherò meglio tutti questi concetti
+14:26 tanto avremo 6 7 8 ore di spostazione insieme e vi spiegherò tutte queste cose qua ok andiamo
+14:31 poi vedi vedete si possono spostare dove ti pare e poi cancellare è fantastico market invece
+14:39 compri semplicemente mercato quindi basta scrivere quanto vuoi investire metti compra ti compra
+14:44 sicuramente a tutti i livelli fin quando non viene fillato short uguale quindi se vuoi la
+14:49 certezza usi market conditional invece quello che vi consiglio sempre io fate sempre o
+14:56 ordine condizionato cosa significa che voglio comprare quando il prezzo arriva 0 8 1 5 quindi
+15:02 vado a cliccare quando scrivere il prezzo 0 0 0 1 8 5 quindi quando arriva questo e entra
+15:12 l'ordine e compro fino a quando dico io quindi posso dire 8 6 ok per avere qualche certezza
+15:19 in più quando arriva lì quindi questo è il prezzo in cui scatta e questo è quello che sono
+15:23 disposto a pagare il massimo in cui sono disposto a pagare quindi solo se fate long
+15:27 mettete il prezzo inferiore non verrete fillati ok e comunque dovete lasciare un po di spazio
+15:32 e prima di cliccare by long se vogliono a long o sale short dovete obbligatoriamente se volete
+15:39 far parte a bull family chi verrà beccato a non mettere lo stop loss prima dell'ordine verrà
+15:44 bannato ok questo vi tutela quindi semplicemente si mette questo si calcola ovviamente prima
+15:51 cancello per esempio prima si guarda quindi 0 18 5 se entro e lo stop metto a 0 18 e 3 ok
+15:59 calcoliamo per esempio dopo ovviamente c'è adesso una conformazione metterò qua 0 18 e 3 e lui
+16:05 dice già quanto perderei perderei esattamente l'1% qua ti calcola il 10 ma ti calcola rispetto al
+16:11 cash quindi verso i 100 non verso i 1000 quindi basta togliere uno 0 per questo uso l'x 10
+16:18 perché basta togliere uno 0 capisci quindi ha lo stop dell'1% quindi se leggete 10 vuol
+16:22 dire l'1% togliere uno 0 e ti dice già quanto perderei quindi essendo 1000 la mia size perderei
+16:28 10 dollari questo è il mio stop e poi dopo può anche mettere quanto guadagno quindi il target
+16:32 ok anche qua roi 43% significa che il target lo sto mettendo a un più 4 3% quindi molto facile
+16:40 fare i conti e quanto guadagnerai 43 euro avendo investito 1000 ok qual è il problema di questo
+16:47 di questo che se tocca poi quel prezzo vende poi al mercato non va bene quindi questo vi
+16:52 sconsiglio di usare questo vi vi consiglio di mettere semplicemente lo stop poi questo
+16:59 potete metterlo sia da qua quindi mettete che scatta a pochissimo il target ma in realtà non
+17:06 vengo a questo prezzo scatta e dentro il prezzo limite cui voglio vendere che vediamo 0,00
+17:18 ecco è un 2,7% quindi è 27% quindi è un 2,7% di target e guadagnerai 27 euro ok e così ho
+17:26 lo stop limit quindi lo stop che già indicato qua al 0 18 3 e limite scatta a 18 56 mi metterà
+17:36 nel book l'ordine limite a 0 19 ok conferma e dopo qua posso comprare quindi adesso quando
+17:44 raggiungerà lì mi entrerà in automatico lo stop e anche il target price con un limite prezzo
+17:50 limite così pago meno di fi e vengo filato bene altrimenti si usa l'altra opzione quando tocca
+17:55 vende a mercato quindi verrete filati male ok quindi non fatevi fregare da questa cosa la cosa
+18:01 bella poi posso anche spostarlo attenzione però che se lo sposti il take profit e lo stop loss
+18:07 ricordatevi che sono in un'altra posizione quindi io vi consiglio che se lo spostate di tanto dopo
+18:12 dovrete rifare il almeno rifare lo take profit o stop loss io vi consiglio di fatti di dopo
+18:21 eventualmente lo potete gestire facciamo un esempio di ordine ok metto 10 quindi potete
+18:26 tranquillamente operare con 10 significa che è stato utilizzando un dollaro reali ok e mettiamo
+18:33 che mettiamo un limite e mettiamo limite così compro subito a 18 a 18 così compra subito ok
+18:47 lui ci dice guarda che viene eseguito subito si va bene ok sono stato eseguito poi la cosa bella
+18:53 appena viene eseguito arriva immediatamente l'ordine sul cellulare come notifica immediatamente quindi
+18:58 se vi siete dimenticati qualcosa dentro il cellulare vi avvertirà subito che siete stati
+19:02 filati comodissimo questo una volta che avete fatto questo dovete andare in posizione quindi qua
+19:07 sotto vedete posizione ecco la vostra posizione tempo reale sto perdendo il 2% sulla base quindi
+19:13 praticamente dovete togliere uno 0 quindi lo 0 2% e qua target price lo posso aggiungere dopo quindi
+19:21 aggiungo lo stop loss e aggiungo aggiungo il target price non lo aggiungo invece quindi adesso c'ho
+19:27 lo stop loss vedete adesso lo spostiamo se non vengo filato subito ok adesso c'ho lo stop loss
+19:33 vedete lo puoi spostare ovviamente lo stop loss deve avere un senso deve stare nel punto giusto
+19:38 non dovete dopo mai spostarlo più in basso ma eventualmente in alto ok poi nel live webinar che
+19:44 andranno a fare sabato andrò a spiegare meglio questo concetto poi il target come lo metto vi
+19:48 consiglio di metterlo da qua mettete il prezzo 18.3 ecco poi questo dopo lo potete spostare
+19:54 questo potete spostarvi come vi pare ok così qua ce l'avete potete spostarvi senza nessun problema
+19:58 ok e qua abbiamo lo stop quando vogliamo adesso andiamo a beccarci lo stop qua vedete sono sotto
+20:08 dell'1 e dell'1 e 5 per cento così subito proprio ottimo questo paga un sacco vabbè mettiamolo
+20:20 ancora più vicino così viene eseguito ok eseguito chiuso chiuso l'operazione poi vai su close pnl ti
+20:26 fa vedere quant'hai perso ho perso questo è compreso di tutto è compreso di fi e tutto ho perso lo 0,02 euro
+20:36 cioè 0.02 o venticentesimi ho perso ok fatto un'operazione da 10 dollari ho perso venticentesimi
+20:42 ok perdendo fra l'altro una percentuale grossa l'1 e mezzo per cento una cosa del genere insomma
+20:47 andiamo a un minuto questo pagava un sacco eh sì questa è una candela dell'1 si si è una candela
+20:53 dell'1 per cento solo questo e capite come viene spiegato bene questa operazione di prima invece
+20:58 ho guadagnato 105 dollari vedete tutto qua vedete il prezzo di ingresso il prezzo di uscita e la
+21:06 quantità ok è veramente veramente comodo quindi quando siete nella posizione dovete cliccare qua
+21:11 avete visto come si gestisce e poi dopo il risultato lo vedete qua comodissimo quindi
+21:17 condition abbiamo visto market abbiamo visto limit abbiamo visto vi ho spiegato anche il
+21:22 founding rate vi ho spiegato il book i livelli sì si vedono anche qua ovviamente come nei
+21:28 futures su binance ovviamente i livelli tendono a essere tutti molto molto uguali ok
+21:38 ma comunque nel book riusciamo a vedere quando ci sono dei muri grandi riusciamo comunque a
+21:44 vederli se riusciamo a vedere se ci sono degli iceberg quindi comunque è utilissimo a vederlo
+21:48 soprattutto per vedere il target per vedere i livelli di ingresso uscita eccetera il book
+21:52 è importantissima e soprattutto come in questo caso per vedere anche le quantità quindi quando
+21:57 avete una size grande dovete capire anche quanto potete investire vedete che i livelli comunque
+22:01 non sono molto pieni quindi qua 10.000 per esempio sono già troppi ok quindi è importantissimo
+22:08 guardare il book anche solo per la gestione della size ok veramente veramente molto importante vi
+22:13 ricordo che rispetto a binance spot e bybit perperual quindi quello che usiamo noi ha molto più
+22:24 volumi ok quindi il va quel è il vantaggio abbiamo molto più volumi quindi abbiamo molto
+22:29 meno spread quindi già spendiamo meno di fee e in più essendoci meno spread spendiamo ancora
+22:35 meno che più grande lo spread più è come se spendessimo di più per gli fi ok quindi questo
+22:41 è un ulteriore vantaggio bene poi coi founding rate se venite liquidati non avete spese ulteriori
+22:51 però ragazzi fate attenzione perché se c'è quindi se venite liquidati con un founding rate che è
+22:58 vicino allo 0 quindi 0.01 come è di solito verrete liquidati al più 10 o meno 10 per cento
+23:05 e perdete comunque solo quel pezzo lì se invece il founding rate è sballato può essere che venite
+23:11 liquidati che magari il prezzo era anche non so almeno 7 per cento venite liquidati lo stesso
+23:17 perché sugli altri exchange ha un prezzo medio diverso e quindi venete fillati ma comunque
+23:22 perdete al massimo quello che avete vestito ok per questo comunque fin quando voi non avete uno
+23:28 storico di un pnl positivo quindi fin quando non avete imparato a inutile usare 1000 dollari 10.000
+23:34 dollari dovete usare 10 dollari 50 dollari 100 dollari al massimo per avere lo sconto
+23:41 sulle fi basta depositarla prima volta quindi la prima volta appena fate appena aprite la cosa
+23:48 prima volta che deposita di soldi depositate almeno 100 dollari così avrete questi famosi
+23:54 20 o 25 in base alle promozioni che ci sono da sfruttare nei refera ok quindi depositare
+24:00 anche con la carta se depositate sulla carta 100 aspetta apriamolo qua vedete quando ci
+24:10 ho ecco qua basta cliccare avrete la vostra debit card una carta di debito che funziona
+24:17 benissimo va arrivando a casa quello fisico e se depositate anche lì 100 100 dollari poi dopo
+24:24 avrete vari vari vantaggi l'ultimo post che avevo fatto perché appena bybit mi manda le
+24:31 promozioni io ve le mando c'era la promozione eccolo qua qua c'era una promozione dove avevi
+24:38 10 20 fino a 25 euro di vantaggi ok qua poi c'era scritto tutto comunque vi tengo aggiornati su
+24:44 questo guardatevi scrivetevi alla bull family solo tramite link tree altrimenti finirete nella
+24:49 rete dei truffatori quindi volete far parte della link della bull family non fate le ricerche
+24:54 perché li troverete troverete i truffatori andate direttamente al nostro link tree che
+24:58 trovi ovunque sotto i video ovunque anche su instagram ovunque trovate ok per qua trovate
+25:04 i trade che faccio sempre con il discorso bybit vedete le varie operazioni l'importante è operare
+25:10 sui titoli che hanno delle belle conformazioni molto pulite le em che comandano così riusciamo
+25:15 a prevedere meglio ok ma ve lo spiegherò meglio al webinar poi comunque ve l'ho spiegato già
+25:20 mille volte a casa bull ve l'ho spiegato un po' ovunque e quindi con la carta mi raccomando
+25:27 perché tanti chiedevano ma combina so dei problemi ok siamo spostati su bybit e abbiamo
+25:32 tutto abbiamo fi più bassi abbiamo più liquidità quindi abbiamo meno spread e abbiamo la possibilità
+25:38 di una long short abbiamo anche la possibilità di usare anche meno soldi spoperare anche solo
+25:42 con un dollaro quindi 10 centesimi funziona lo stesso è incredibile e poi l'altra cosa
+25:49 pnl notifica immediata gestione size usare la liquidità a si poi l'altra cosa ovviamente
+26:01 avendo la leva 10 i vantaggi sono che possiamo gestire la nostra liquidità quindi se noi abbiamo
+26:06 stiamo imparando abbiamo una size di 50 non è che se se subaia sono una size di 50 perché
+26:12 sta stavate imparando e sapete che all'inizio stato imparando perderete i soldi che investiti
+26:17 quindi se investite 50 le andrete a perdere e quindi qua non c'è non dovete fare 50 per 10 quindi
+26:23 operato con 5 cento oppure sempre con 50 ma qual è il vantaggio che usando le va 10 la vostra size
+26:28 potete operare su addirittura 10 titoli che ne magari su spot vedevate tre conformazioni che
+26:34 vi piacevano avevate solo quei 50 dollari quindi dovete scegliere poi voi scegliete quale operare
+26:40 quello è partiva in realtà uno degli altri due qua potete tranquillamente mettere il vostro
+26:45 ordine dentro fino addirittura 10 su 10 titoli diversi utilizzando la stessa size perché si
+26:51 te le va 10 ok quindi questo è comodissimo in altro vantaggio oltre a long short quindi
+26:56 qualsiasi cosa accade nel nel che bitcoin vado su che vado su che qualsiasi conformazione se c'è
+27:03 qualcosa che va troppo su aspettate semplicemente una conformazione per andare short non c'avete
+27:08 quella cosa di fomo per dire adesso ho perso la salita se avete perso la salita c'avete poi
+27:13 tutta la discesa che è importante aspettare la conformazione detto questo io direi che cos'altro
+27:21 ci può essere direi nulla comunque scrivetelo nei commenti e se ci sono domande dubbi qua
+27:30 vedete qual è la vostra liquidità c'è anche l'altro l'altro video che dura più di un'ora
+27:36 dove rispondo alle vostre domande che ero su ero live su twitch abbiamo fatto la configurazione
+27:44 avete visto come si fanno gli ordini avete visto come mettere le ma avete visto come inserire il
+27:48 book avete visto il raggruppamento avete visto il founding rate il display l'orario indicatori
+27:55 questi sono i time frame direi che ci siamo qua ci sono gli strumenti di misura per vedere le
+28:04 percentuali queste cose qua qua si mettono da qua di fianco poi per averli qua basta mettere nei
+28:10 preferiti e nei preferiti basta mettere la stellina ok direi che ci siamo dai video
+28:16 abbastanza veloce 28 minuti ho messo tutto iscrivetevi anche a telegram perché quando
+28:22 ci sono le offerte o comunque quando ci sono varie cose io comunque lo scrivo su telegram
+28:27 così avete i link diretti ok lasciate un like se vi è piaciuto se avete delle domande iscrivete
+28:33 nei commenti io sono iscrivetevi su telegram fate la domanda direttamente lì qualcuno vi risponderà ciao

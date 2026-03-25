@@ -1,0 +1,89 @@
+# Low-confidence segments for: 005_Leggere_il_book_di_BYBIT_Tutorial_con_esempi_reali.mp3
+# Total flagged: 28
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:25-0:34] (confidence: -0.194)
+  "diciamo contro binance spot, se fosse bybit spot contro binance spot ci sarebbe più liquidità"
+
+[0:34-0:38] (confidence: -0.194)
+  "su binance, invece stiamo parlando di perpetuo rispetto a spot."
+
+[0:38-0:45] (confidence: -0.194)
+  "Ho preso un caso estremo perché di solito invece nei spot di bybit avremo meno liquidità"
+
+[0:45-0:51] (confidence: -0.194)
+  "ma nei futures ne abbiamo molti di più, ho preso un caso estremo dove invece su bybit"
+
+[1:18-1:25] (confidence: -0.191)
+  "cosa significa essere fillati subito? Significa non avere spread, quindi a parità di fee quindi"
+
+[1:25-1:31] (confidence: -0.191)
+  "se a bybit costa meno della metà rispetto a binance spot, se entro nel book addirittura"
+
+[1:31-1:38] (confidence: -0.191)
+  "costa 5 volte meno ma anche se costasse uguale spenderei meno perché qua entrerei subito"
+
+[1:38-1:42] (confidence: -0.191)
+  "al primo livello, riuscirai a essere eseguito con 10.000, qua con 10.000 non potrai entrare"
+
+[2:09-2:15] (confidence: -0.162)
+  "10.000 qua dovrei scendere di 1 2 3 livelli e trovo 12.000 quindi i miei 10.000 riesco"
+
+[2:15-2:21] (confidence: -0.162)
+  "a vendere qua devo vendere 10.000 devo scendere di 1 2 3 4 5 livelli ok quindi ovviamente"
+
+[2:21-2:30] (confidence: -0.162)
+  "spenderei di più perché devo scendere con più livelli ok in più comunque abbiamo qua"
+
+[2:30-2:36] (confidence: -0.162)
+  "abbiamo la quantità enorme su binance ma praticamente prima non c'è praticamente nulla quindi 14 5"
+
+[3:28-3:36] (confidence: -0.239)
+  "place ok comunque nel link 3 trovate i video che ho fatto su bybit e quindi trovate tutto"
+
+[3:36-3:40] (confidence: -0.239)
+  "però ricordatevi la strada e poi e qua avrete i grafici pulitissimi perfetti quelle che"
+
+[3:40-3:45] (confidence: -0.239)
+  "vogliamo noi in altre modalità invece avremo delle schifezze allora vedete che bella pulizia"
+
+[3:45-3:50] (confidence: -0.239)
+  "precisione ok questo è quello che vogliamo ma per come è possibile avere questa precisione"
+
+[3:50-3:54] (confidence: -0.239)
+  "questa bellezza perché mancava qualcosa nel buco di quasi uno vende delle quantità grosse"
+
+[6:59-7:03] (confidence: -0.133)
+  "andiamo al terzo tocco terza volta che arriva 1.2 facciamo il nostro ingresso e siamo a posto"
+
+[7:03-7:09] (confidence: -0.133)
+  "ok questo è quindi non abbiamo i livelli ma abbiamo la conformazione semafro verde se noi"
+
+[7:09-7:14] (confidence: -0.133)
+  "non vediamo i livelli abbiamo un bel semafro verde per poter operare perché c'è una bellissima"
+
+[7:14-7:19] (confidence: -0.133)
+  "conformazione anche qua sotto abbiamo gli spike sulla 10 ma chi ha chiuso sempre sopra e qua si"
+
+[7:19-7:24] (confidence: -0.133)
+  "è creato il nostro bel bad nel book non c'era niente bene se non c'è niente noi operiamo"
+
+[7:24-7:29] (confidence: -0.168)
+  "direttamente al massimo di questa candela come da manuale facciamo il nostro ingresso bad e"
+
+[7:29-7:34] (confidence: -0.168)
+  "quindi anche se non c'è nulla nel buco riusciamo a fare la nostra operazione ok quindi se c'è"
+
+[7:34-7:38] (confidence: -0.168)
+  "livello dobbiamo aspettare livello se non c'è livello abbiamo semafro verde purché ci sia la"
+
+[7:38-7:43] (confidence: -0.168)
+  "conformazione bella e precisa che ai ragazzi mi raccomando questo è fondamentale anche qua"
+
+[7:43-7:48] (confidence: -0.168)
+  "questo buco di bybiter ha aggruppato bene vediamo tranquillamente un livello gigantesco rispetto"
+
+[7:48-7:53] (confidence: -0.168)
+  "agli altri e quindi questo è un ottimo supporto se c'è da rompere dei massimo oppure è il nostro"
+

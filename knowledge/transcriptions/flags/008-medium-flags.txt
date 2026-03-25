@@ -1,0 +1,176 @@
+# Low-confidence segments for: 008_Scalping_The_Book_Il_segreto_per_avere_un_vantaggio_nel_Trading_TUTORIAL_CON_5_NEOFITI.mp3
+# Total flagged: 57
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:51-1:53] (confidence: -0.551)
+  "parti tu con qualche domanda?"
+
+[1:53-2:05] (confidence: -0.551)
+  "Ok, ok. Buonasera a tutti. Intanto ti ringrazio per tutto il tuo work. Grazie a te."
+
+[2:05-2:15] (confidence: -0.567)
+  "Come dicevo, una scrittura con Steeve, ci sono 15 anni che hai salvato,"
+
+[2:15-2:17] (confidence: -0.567)
+  "ma è la cazzata. A me pure."
+
+[2:17-2:25] (confidence: -0.567)
+  "Sei salvato nel senso che avevi un riferimento,"
+
+[2:25-2:29] (confidence: -0.567)
+  "diciamo, un posto che è la Booth Family, per poter studiare senza..."
+
+[7:06-7:12] (confidence: -0.224)
+  "come si sta muovendo, per quanto paga una candela. Per esempio qua time frame in 5 minuti,"
+
+[7:12-7:22] (confidence: -0.224)
+  "questa candela è un 2.39% solo il corpo di questa candela qua. Quindi qua praticamente questa"
+
+[7:22-7:32] (confidence: -0.224)
+  "candela qua va da 2.975, quindi da qua fino a 3.047. Vedete che non lo vediamo, quindi il"
+
+[12:51-12:59] (confidence: -0.441)
+  "Ok anche gli altri, ah grazie Bull, cerco di mettere fino a posto. Ok grande palm,"
+
+[12:59-13:10] (confidence: -0.441)
+  "vai tranquillo. Quindi questo tipo di ragionamento per cercare di capire come si raggruppa, ok ci"
+
+[13:10-13:21] (confidence: -0.441)
+  "siamo? Si. Ok quindi l'ideale è poter avere per esempio appunto questo caso, il budget"
+
+[14:38-14:44] (confidence: -0.179)
+  "euro noi potremmo entrare da lì potremmo fare scattare il nostro stop e il nostro short fino a"
+
+[14:44-14:53] (confidence: -0.179)
+  "2.899 quindi un pelo un millesimo sotto il livello per poter avere più possibilità di essere eseguito."
+
+[14:53-15:00] (confidence: -0.179)
+  "In questo caso quindi non era tutto su 2.9 ma c'era metà prima e metà sotto quindi in questo caso"
+
+[15:00-15:06] (confidence: -0.179)
+  "vederlo a nudo è molto utile per capire proprio con precisione e calibrare bene dove ci può essere"
+
+[36:04-36:12] (confidence: -0.1)
+  "avviciniamo posso capire se ho uno stop vicino no grazie al book quindi quando arriviamo vicino"
+
+[36:12-36:18] (confidence: -0.1)
+  "qua ovviamente se noi ci arriviamo per uno spike cosa cadrà che nel verde vedremo delle quantità"
+
+[36:18-36:25] (confidence: -0.1)
+  "piccolissime e quindi non non faremo nemmeno l'entrata che se ci arriva in un colpo solo e"
+
+[36:25-36:29] (confidence: -0.1)
+  "qua nel verde vediamo che non ci sono livelli in questo caso qua li stiamo vedendo ma il prezzo"
+
+[36:29-36:35] (confidence: -0.118)
+  "è molto più basso se per caso partisse uno spike e raggiungesse lì livello noi non entriamo perché"
+
+[36:35-36:42] (confidence: -0.118)
+  "vedrete che nel book verde non ci sarà nulla e quindi noi sì potremmo comprare ma poi se quando"
+
+[36:42-36:48] (confidence: -0.118)
+  "mangia questo livello qua arriva un altro pezzo grande dove usciamo? capiamo grazie al book che"
+
+[36:48-36:54] (confidence: -0.118)
+  "non abbiamo possibilità di uscita se non perdendo tanto tanti soldi e quindi non facciamo quell'ingresso"
+
+[36:54-36:59] (confidence: -0.199)
+  "lì nonostante possa essere un livello trigger e nonostante abbiamo visto che il livello che sta"
+
+[36:59-37:06] (confidence: -0.199)
+  "facendo la tappo è questo ok? questa è un'informazione importante cioè ricapitoliamo dal book capiamo"
+
+[37:06-37:14] (confidence: -0.199)
+  "esattamente quel è il livello trigger dal grafico noi vediamo che il livello trigger è 3068 lo vediamo"
+
+[37:14-37:20] (confidence: -0.199)
+  "da qua leggete questo numero qua quando clicco sulla candela vedi 3068 ma dal book capiamo che"
+
+[39:53-40:05] (confidence: -0.211)
+  "un po ok allora aspetta adesso vado a leggere un attimino qua quindi pan vorrei chiedere come"
+
+[40:05-40:10] (confidence: -0.211)
+  "si fa ad evituare un supporto una resistenza usando solo il book e non guardando il grafico"
+
+[40:10-40:14] (confidence: -0.211)
+  "ad esempio in passato ho fatto scalpings su telecom Italia ho notato che dato il costo della"
+
+[40:14-40:20] (confidence: -0.211)
+  "singola azione mi trovavo in base in base ad ogni livello di prezzo quantità di azioni in acquisto"
+
+[40:45-41:10] (confidence: -0.427)
+  "a beccare qualcuno prima del bitcoin bitcoin lo raggruppiamo così a uno così a 10 ok sta"
+
+[41:11-41:21] (confidence: -0.42)
+  "ok sta caricando sta caricando come possibile sta caricando un malissimo ok qua comunque vediamo"
+
+[41:21-41:31] (confidence: -0.42)
+  "vedete livello grande questa bitcoin livello enorme livello enorme ecco stanno via"
+
+[54:01-54:09] (confidence: -0.124)
+  "posso fare non ha bisogno che io aspetto 71 71 e mezzo 70 05 o 70 aspetto semplicemente la"
+
+[54:09-54:14] (confidence: -0.124)
+  "chiusura candela sotto visto che ogni volta che è nato rompere la 60 è sempre tornato sopra se mi"
+
+[54:14-54:21] (confidence: -0.124)
+  "fa una chiusura candela ovviamente se rompe mi fa chiusura candela qua troppo ma se mi rompe mi fa"
+
+[54:21-54:27] (confidence: -0.124)
+  "una chiusura candela qua benissimo io posso già entrare nel book non vedo nessun livello grande"
+
+[54:27-54:33] (confidence: -0.182)
+  "in profondità e semplicemente dopo non mi deve più tornare a chiudere sopra la 60 ok quindi"
+
+[54:33-54:37] (confidence: -0.182)
+  "comunque a qualsiasi time frame con qualsiasi titolo possedere ci dà delle informazioni delle"
+
+[54:37-54:42] (confidence: -0.182)
+  "volte ci dice nulla delle volte ci dice qualcos'altro che ha in questo caso comunque ci ha dato"
+
+[54:42-54:48] (confidence: -0.182)
+  "delle informazioni che è sempre un vantaggio in più se vuosimo sul forex non avremo nessuno di"
+
+[54:48-54:54] (confidence: -0.182)
+  "queste indizioni quindi semplicemente entraremmo magari a chiusura candela sopra anche qua"
+
+[61:51-61:58] (confidence: -0.403)
+  "cose clamorose ok noi cerchiamo di utilizzare quelle cose clamorose ma veramente io quando mi"
+
+[61:58-62:06] (confidence: -0.403)
+  "sta più caricando binance dobbiamo far ste figure qua andiamo"
+
+[68:33-68:40] (confidence: -0.117)
+  "lì quindi il book ci dice il tappo c'è se il tappo c'è e magari più giù aspettiamo che vada via il"
+
+[68:40-68:45] (confidence: -0.117)
+  "tappo se il tappo è leggermente sopra aspettiamo non ha senso comprare prima se il tappo è qua"
+
+[68:45-68:51] (confidence: -0.117)
+  "aspettiamo leggermente dopo e tolto quel tappo lì dopo ci possiamo aspettare l'accelerazione"
+
+[68:51-68:58] (confidence: -0.117)
+  "quindi il book ci dà quel vantaggio lì se invece non c'è nulla niente proviamo il problema per"
+
+[74:28-74:36] (confidence: -0.153)
+  "una conformazione perché noi non è che noi dobbiamo cercare di entrare sui livelli quando"
+
+[74:36-74:42] (confidence: -0.153)
+  "poi ci possiamo aspettare un'accelerazione ok quando è che abbiamo più possibilità che rotto"
+
+[74:42-74:49] (confidence: -0.153)
+  "quel livello che vediamo nel book possa accelerare quando c'è una conformazione quindi prima ci"
+
+[74:49-74:53] (confidence: -0.153)
+  "cerchiamo la conformazione cerchiamo di capire quali sono i livelli trigger perché per esempio"
+
+[79:26-79:32] (confidence: -0.14)
+  "ci sono altri dubbi non vi preoccupate settembre ottobre novembre non lo so si può tranquillamente"
+
+[79:32-79:38] (confidence: -0.14)
+  "rifare ok ragazzi io vi ringrazio di cuore siete stati gentilissimi avete dato la vostra"
+
+[79:38-79:46] (confidence: -0.14)
+  "disponibilità non avete fatto troppo i timidi e niente a presto ciao ragazzi"
+

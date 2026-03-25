@@ -1,0 +1,395 @@
+# Low-confidence segments for: 009_Le_BALENE_chi_sono_E_vero_che_possono_solo_guadagnare_Q_A_sul_BOOK.mp3
+# Total flagged: 130
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.258)
+  "Ciao trader, siete su Skype in the Bull, qua siamo nella Bull Arena, 256 nel pubblico per"
+
+[0:06-0:14] (confidence: -0.258)
+  "la serata in autogestione della Family con come potete leggere qua il titolo è lettura"
+
+[0:14-0:19] (confidence: -0.258)
+  "del book, quindi c'è tanto interesse nel leggere il book, chissà come mai, chissà"
+
+[0:19-0:29] (confidence: -0.258)
+  "perché non ci piace plus 500 che non ha il book e quindi niente, qua vogliamo, l'idea"
+
+[0:48-0:53] (confidence: -0.812)
+  "fatto tutto, detto questo, sigla."
+
+[1:23-1:24] (confidence: -0.447)
+  "Si sentiva?"
+
+[1:24-1:25] (confidence: -0.447)
+  "Sì sì."
+
+[1:25-1:32] (confidence: -0.447)
+  "Ah ok grande, è una figata, poi la sigla nuova poi sarà una bomba ancora di più,"
+
+[1:32-1:40] (confidence: -0.447)
+  "ovviamente non c'è, arriva qualcosa di potente ma Andy non lo sa, quindi non dici lo, lo"
+
+[1:40-1:42] (confidence: -0.447)
+  "deve fare lui, lui non lo sa ancora."
+
+[1:42-1:43] (confidence: -0.447)
+  "Non lo sa ancora?"
+
+[1:43-1:47] (confidence: -0.447)
+  "Mi stavo già preoccupando del tradimento."
+
+[2:40-2:46] (confidence: -0.266)
+  "cerco di spiegare questo esempio che è molto interessante perché se noi quando vediamo"
+
+[2:46-2:57] (confidence: -0.266)
+  "qua, allora il livello era 55.7, facciamo 55.8, possiamo anche fare l'esempio, sì dai,"
+
+[2:57-3:06] (confidence: -0.266)
+  "55.7, allora se a 55.7 che è questo livello qua, quindi sopra la 223, sopra il terzo tocco,"
+
+[3:31-3:40] (confidence: -0.17)
+  "muri davanti, che non è un problema se abbiamo in verde, quindi in denaro, qualcosa di grosso"
+
+[3:40-3:45] (confidence: -0.17)
+  "anche qua, quindi magari prima dell'ortura arriva un bel pezzo grande, magari anche un"
+
+[3:45-3:50] (confidence: -0.17)
+  "30.000, un 40.000 o addirittura un 100.000, allora ci dà coraggio, ci fa capire che vuole"
+
+[3:50-3:54] (confidence: -0.17)
+  "andare comunque tranquillamente, può andare a rompere quei livelli lì, che tanto il denaro"
+
+[3:54-3:59] (confidence: -0.17)
+  "c'è, perché può succedere questo? Perché chi sta comprando in quel momento lì, chi"
+
+[4:27-4:36] (confidence: -0.165)
+  "6 giorni, ci vuole del tempo, ok? Quindi lui può adottare una strategia, anzi sicuramente ha una"
+
+[4:36-4:42] (confidence: -0.165)
+  "strategia e ci sono diverse tecniche. Una tecnica può essere quella che è quella di comprare quando"
+
+[4:42-4:48] (confidence: -0.165)
+  "sta cercando di accumulare, quindi cerca di comprare a un prezzo basso, quindi lui vuole"
+
+[4:48-4:57] (confidence: -0.165)
+  "comprare senza che il prezzo salga perché vuole accumulare, quindi magari dice il 50% o il 30%"
+
+[5:45-5:53] (confidence: -0.139)
+  "entrare mentre lui è in questo tipo di tecnica abbiamo il problema che troviamo il vuoto nel"
+
+[5:53-5:59] (confidence: -0.139)
+  "verde, quindi noi magari possiamo fare l'ingresso, non c'è niente qua che ci appoggia e quindi se"
+
+[5:59-6:03] (confidence: -0.139)
+  "uno vuole uscire con un pezzo grande, quindi uno vuole uscire anche solo con 30.000 USDT,"
+
+[6:03-6:09] (confidence: -0.139)
+  "andrà a vendere a mercato e il prezzo farà quello spike odiosissimo al contrario e ci andrà a rovinare"
+
+[6:09-6:16] (confidence: -0.162)
+  "il book e noi ci troviamo con una perdita. Quindi noi quegli ingressi lì non li facciamo perché chi"
+
+[6:16-6:21] (confidence: -0.162)
+  "sta comprando in quel momento lì non sta comprando perché vuole che salga il prezzo, sta comprando"
+
+[6:21-6:26] (confidence: -0.162)
+  "perché sta accumulando e quindi noi non dobbiamo entrare in quei momenti lì. Poi dopo lui a un"
+
+[6:26-6:34] (confidence: -0.162)
+  "certo punto arriverà al suo 30% target e dopo rimane un 60%, inizia a usare un altro 30% quindi"
+
+[7:00-7:06] (confidence: -0.161)
+  "mette un pezzo da 40.000 e nel frattempo fa comprare gli altri poi dopo si alza un po' il"
+
+[7:06-7:13] (confidence: -0.161)
+  "prezzo mette un altro pezzo magari da 30.000 nel frattempo compra anche qualcosa e così va"
+
+[7:13-7:21] (confidence: -0.161)
+  "avanti fin quando non riesce a finire questo 30% poi rimane un ulteriore 30% quel 30% lì lo usa con"
+
+[7:21-7:25] (confidence: -0.161)
+  "la tecnica del to the moon ok quindi vogliamo far alzare il più possibile perché lui ha già"
+
+[7:25-7:34] (confidence: -0.143)
+  "comprato il 60% di quello che doveva fare del totale del 5% della società o della coppia"
+
+[7:34-7:39] (confidence: -0.143)
+  "gli rimane il 30% con questa tecnica qua lui vuole che questa cosa esploda ok quindi"
+
+[7:39-7:44] (confidence: -0.143)
+  "bene lì farà vedere ancora di più i muscoli quindi farà vedere dei pezzi giganti e andrà a"
+
+[7:44-7:50] (confidence: -0.143)
+  "comprare semplicemente pulendo il book quindi magari compra butta dentro 100.000 ripulisce"
+
+[7:50-7:58] (confidence: -0.124)
+  "arriva fino magari 100.000 qua arriverebbero quasi a 0 5 7 5 forse anche di più e poi dopo"
+
+[7:58-8:03] (confidence: -0.124)
+  "lascia un pezzo bello grosso nel verde così non crolla giù e gli altri si mettono avanti iniziano"
+
+[8:03-8:08] (confidence: -0.124)
+  "a comprare tengono su e così dopo farà per far salire il prezzo più velocemente ok quando noi"
+
+[8:08-8:13] (confidence: -0.124)
+  "vediamo queste cose quindi vediamo quantità nel book e vediamo che fa scatti all'insù queste ci"
+
+[8:13-8:18] (confidence: -0.124)
+  "piacciono questo è l'ingresso queste sono le circostanze che ci piacciono quindi cercheremo"
+
+[8:45-8:51] (confidence: -0.132)
+  "lasciando dei pezzi nel book e mostrandocelo e lui ha l'interesse di far salire come abbiamo"
+
+[8:51-8:56] (confidence: -0.132)
+  "l'interesse noi perché se noi compriamo vogliamo che salga ok lì entriamo e lì operiamo quindi il"
+
+[8:56-9:03] (confidence: -0.132)
+  "bel grafico deve essere anche accompagnato perché il bel grafico è indice di potenza cioè chi sta"
+
+[9:03-9:10] (confidence: -0.132)
+  "comprando in quel momento lì ha potenza ha denaro e riesce a comandare in quel momento lì ok da"
+
+[9:10-9:14] (confidence: -0.132)
+  "lì deve anche vedere deve anche coincidere il book quindi ci deve essere un book bilanciato che"
+
+[9:14-9:19] (confidence: -0.608)
+  "abbia senso altrimenti io lascio stare non so se si è capito questa cosa"
+
+[9:19-9:22] (confidence: -0.608)
+  "bullo da non ti adhia da mdp"
+
+[9:22-9:25] (confidence: -0.608)
+  "no aspetta mi si avete sentito perché stavo parlando per me"
+
+[9:25-9:26] (confidence: -0.608)
+  "ok vado a buttare"
+
+[9:26-9:27] (confidence: -0.608)
+  "si si è chiaro"
+
+[9:27-9:30] (confidence: -0.608)
+  "e cos'è che dicevi di? guardare"
+
+[9:30-9:34] (confidence: -0.608)
+  "mdt che ha un bel supporto sotto no"
+
+[9:34-9:38] (confidence: -0.608)
+  "m m m mdt non c'è in classif"
+
+[9:38-9:39] (confidence: -0.608)
+  "milano domodossola"
+
+[9:39-9:40] (confidence: -0.608)
+  "torino"
+
+[9:40-9:41] (confidence: -0.608)
+  "terrone"
+
+[9:41-9:41] (confidence: -0.608)
+  "terrone"
+
+[10:05-10:12] (confidence: -0.416)
+  "le abbiamo 0 9 1 4 quasi cambia pochissimo sembra di 12 milioni in questo momento qua"
+
+[10:12-10:19] (confidence: -0.416)
+  "abbiamo comunque il denaro è coperto è bello come book perché ci ha giusto questo livello"
+
+[10:19-10:27] (confidence: -0.416)
+  "0 9 14 dove sarebbe? ah è molto in alto è cazzo è la fine lo spike eh sì sì no 0 9"
+
+[10:27-10:34] (confidence: -0.416)
+  "sì sì è lo spike si è 91 39 sì col mio regrupamento è 1 4 e perché"
+
+[13:10-13:16] (confidence: -0.466)
+  "comunque il cioè fa dei movimenti abbastanza pazzesche come il daily di sta roba qua non"
+
+[13:16-13:23] (confidence: -0.466)
+  "è neanche granché quindi un momento così neanche niente di interessante e sopra il"
+
+[13:23-13:29] (confidence: -0.466)
+  "corpo sopra la cimia molto carini questi si da scalping perché se no fa schifo però"
+
+[13:29-13:34] (confidence: -0.466)
+  "si da scalping e finalmente non è male fa delle belle letteralizzazioni però vedi"
+
+[13:34-13:41] (confidence: -0.492)
+  "90 86 no se tu c'è il buco il buco a nudo 90 86 se quella roba lì che potrebbe magari"
+
+[13:41-13:59] (confidence: -0.492)
+  "come 90 al 96 090 91 091 no a 091 c'è 184 mila per sotto al 90 88 sono 16 mila 90 51 ce ne"
+
+[14:51-14:57] (confidence: -0.212)
+  "di azzeramento quando va a rompere all'insù andrà a rompere andrà a fare uno scatto all'insù"
+
+[14:57-15:01] (confidence: -0.212)
+  "quando va rompere in giù andrà a fare lo scatto all'insù ok è proprio come se fosse un azzeramento"
+
+[15:01-15:08] (confidence: -0.212)
+  "di trend queste le due candeline che servivano per poter poi fare il break out in questo caso"
+
+[15:08-15:17] (confidence: -0.212)
+  "non li ha fatte queste qua del 2201 e 22 e 02 ma servivano appunto per poter far sì che si rompesse"
+
+[19:24-19:29] (confidence: -0.204)
+  "semplicemente siamo ai primi passi prima ci concentriamo sull'ema perché so sto iniziando"
+
+[19:29-19:34] (confidence: -0.204)
+  "ok non guardare il book non ti confonda inizia a guardare l'ema poi dopo oppure il contrario"
+
+[19:34-19:39] (confidence: -0.204)
+  "inizia a guardare il book non guardare l'ema viceversa però l'altra cosa l'altra osservazione"
+
+[19:39-19:47] (confidence: -0.204)
+  "che mi veda dire è che effettivamente non fissatevi poi troppo col book nel senso quando siete all'inizio"
+
+[19:47-19:54] (confidence: -0.204)
+  "non dovete pensare non rendetevi la vita così difficile cioè innanzitutto io sono convintissimo"
+
+[20:44-20:48] (confidence: -0.163)
+  "questi livelli qua e quindi è come se in realtà non lo stessi usando lo state usando solo per"
+
+[20:48-20:54] (confidence: -0.163)
+  "l'ingresso ma poi non vedete nello stop e ne vedete il target e quindi un problema e in più"
+
+[20:54-20:59] (confidence: -0.163)
+  "si muove tantissimo non ci capita una mazza quindi piuttosto tenetelo molto raggruppato all'inizio"
+
+[20:59-21:05] (confidence: -0.163)
+  "adesso nel video quando andate a vedere lo capirete quindi piuttosto per esempio su dusk piuttosto"
+
+[21:05-21:13] (confidence: -0.163)
+  "tenete 0,01 quindi molto raggruppato quindi ogni livello è 0 5 5 0 5 6 0 5 7 quindi all'inizio si"
+
+[21:40-21:45] (confidence: -0.172)
+  "c'è meno spazio per un movimento di basso in questo caso qua però andiamo a vedere poi graficamente"
+
+[21:45-21:50] (confidence: -0.172)
+  "in realtà adesso sta preparando short insomma sta preparando un livello per andare per andare"
+
+[21:50-21:57] (confidence: -0.172)
+  "di basso l'altra domanda che mi fanno spesso è appunto proprio questo come mai come in questo"
+
+[21:57-22:05] (confidence: -0.172)
+  "caso qua quindi fatto un raggruppamento su dusk a 0,01 quindi quasi raggruppato del tutto e"
+
+[23:02-23:08] (confidence: -0.13)
+  "prezzo non scenda velocemente o non salga velocemente ma vada di traverso e vada a fare le conformazioni"
+
+[23:08-23:14] (confidence: -0.13)
+  "che poi servono per andare a rompere quei pezzi grossi è come se fosse un tappo noi cerchiamo la"
+
+[23:14-23:21] (confidence: -0.13)
+  "conformazione tappo che fermi il prezzo perché i pezzi grossi nel book servono per fermare ma"
+
+[23:21-23:27] (confidence: -0.13)
+  "a un certo punto a forza di andare di traverso quindi farla conformazione trovarà la forza per"
+
+[23:27-23:33] (confidence: -0.122)
+  "rompere quel livello e poi dopo andrà a accelerare ok quindi noi cerchiamo queste cose e quindi il"
+
+[23:33-23:39] (confidence: -0.122)
+  "ragionamento è di un neofita è come mai è così pieno il verde eppure scende perché siamo vicino"
+
+[23:39-23:44] (confidence: -0.122)
+  "conformazione di discesa questo fa sì che il prezzo non lo vado a sfondare perché stanno coprendo"
+
+[23:44-23:50] (confidence: -0.122)
+  "quel prezzo lì si spera che da lì possa fare una conformazione e da lì dopo possiamo fare il"
+
+[23:50-23:54] (confidence: -0.122)
+  "nostro ingresso di rottura di quella conformazione quindi andare a rompere quel livello che ci"
+
+[25:07-25:16] (confidence: -0.418)
+  "che avevamo dato noi ovviamente la è allargata grande maestra è bello perché stavo ascoltando"
+
+[25:16-25:24] (confidence: -0.418)
+  "pensando fosse la domanda invece sono dicendo che la sposti ma dai svegliati bulls svegliati"
+
+[25:24-25:34] (confidence: -0.418)
+  "comunque mentre ero in macchina che stavo rientrando ascoltavo c'era nado che stava"
+
+[26:23-26:29] (confidence: -0.205)
+  "non si usa il balene la parola balene proprio una roba del cripto ma soprattutto qua veramente nel"
+
+[26:29-26:36] (confidence: -0.205)
+  "cripto ci si trovano delle cose che non stanno né in cielo né in terra queste cose che le balene non"
+
+[26:36-26:42] (confidence: -0.205)
+  "vogliono fare scendere il prezzo e le balene perché perché solo le balene guadagnano giusto"
+
+[26:42-26:47] (confidence: -0.205)
+  "aspetta facciamo questa quindi le balene ci guadagna le basta vero non esistono le balene che possono"
+
+[27:12-27:18] (confidence: -0.19)
+  "certo punto dovrà vendere ma chi vende non è che vende a me o vende a te cioè la balena venda"
+
+[27:18-27:24] (confidence: -0.19)
+  "un'altra balena se non c'è un'altra balena che compra quando lui vende non riesce a vendere"
+
+[27:24-27:31] (confidence: -0.19)
+  "semplicemente cioè se prima avete capito ci vogliono cinque giorni per vendere per comprare il 5% di"
+
+[27:31-27:37] (confidence: -0.19)
+  "una società ci vogliono cinque giorni non 5 minuti ci vogliono cinque giorni e mentre tu stai"
+
+[27:37-27:41] (confidence: -0.173)
+  "comprando vendendo dei pezzi ci vogliono ci vogliono altre balene ma poi un'altra cosa"
+
+[27:41-27:45] (confidence: -0.173)
+  "quello che voi chiamate balene in realtà cosa sono sono edge found ok sono fondi sono edge"
+
+[27:45-27:51] (confidence: -0.173)
+  "found cioè chi sono i fondi chi sono gli edge found sono persone che raggruppano i soldi raccolgono"
+
+[27:51-28:02] (confidence: -0.173)
+  "soldi dagli altri no e poi li investono loro quanti edge found all'anno muoiano una marea"
+
+[31:41-31:45] (confidence: -0.417)
+  "qualcuno parlerà in maniera sbagliata di balena verrà eliminato da family che dopo questo"
+
+[31:45-31:52] (confidence: -0.417)
+  "che si mette in miniatura e quando io sento che la balena non può perdere soldi veramente vi"
+
+[31:52-31:56] (confidence: -0.417)
+  "devo spellere immediatamente perché non è possibile ovviamente qualcuno che pubblicava il"
+
+[31:56-32:04] (confidence: -0.417)
+  "whale alert di di di non serve a un cazzo quella cosa c'è proprio un canale twitter che pubblica"
+
+[32:04-32:07] (confidence: -0.417)
+  "ogni volta che qualcuno compra un pezzo grande ma sti cazzi ma chi se ne frega vuol dire che"
+
+[34:25-34:32] (confidence: -0.603)
+  "non record e se io non ricordo quando siamo"
+
+[34:32-34:40] (confidence: -0.603)
+  "non interessa al buco sì sì sì però non so comunque sì effettivamente però dobbiamo"
+
+[34:40-34:48] (confidence: -0.603)
+  "fare questa cosa di ecco fare fare fare salire tutti questi personaggi e che si"
+
+[38:23-38:29] (confidence: -0.186)
+  "le persone sul quassù in alto ed è fantastico cioè una volta che adesso le prime due tre puntate"
+
+[38:29-38:36] (confidence: -0.186)
+  "magari vi prendete un po un po la mano poi dopo verrà fuori che ci sono una decina di persone che"
+
+[38:36-38:45] (confidence: -0.186)
+  "riescono a gestire meglio la platea e dopo fra di voi capito e così e vorrei fare questa cosa con"
+
+[38:45-38:52] (confidence: -0.186)
+  "più tematiche ok diverse dove in autogestione vi confrontate fra di voi e poi dopo semplicemente"
+
+[39:19-39:25] (confidence: -0.276)
+  "i video durano troppo e poi dopo rimango qua e quindi termino e quindi avete già capito com'è"
+
+[39:25-39:31] (confidence: -0.276)
+  "iscrivete comunque youtube questo video per poter essere caricato di nuovo dovrà fare solo"
+
+[39:31-39:40] (confidence: -0.276)
+  "2500 like quindi quindi mi piace mi piace mi piace guardiù mi dovete mettere mi piace dai"
+
+[39:40-39:45] (confidence: -0.276)
+  "con con 300 like mi fate capire che la cosa mi interessa quindi dai 300 ci arriviamo piazza"
+

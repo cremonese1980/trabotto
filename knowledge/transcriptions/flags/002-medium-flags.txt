@@ -1,0 +1,146 @@
+# Low-confidence segments for: 002_LEGGERE_IL_BOOK_FOR_DUMMIES_Ho_provato_ad_insegnare_a_mia_moglie_Pullman_di_Cinesi.mp3
+# Total flagged: 47
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:08] (confidence: -0.479)
+  "Ciao Traders, siete su Skype in the Bull. Vediamo se oggi riesco a insegnare ad una persona"
+
+[0:08-0:11] (confidence: -0.479)
+  "cosa è il book e come funziona. Sigla!"
+
+[1:45-1:50] (confidence: -0.217)
+  "passione però è brava in altre cose no? Lei per esempio è molto brava nel campo immobiliare,"
+
+[1:50-1:58] (confidence: -0.217)
+  "no? Lei veramente sa indicare cifre, zone, sa qualsiasi cosa nel campo immobiliare, quindi"
+
+[1:58-2:03] (confidence: -0.217)
+  "voglio fare con lei un esempio, lei non sa niente di quello che vi sto per chiedere adesso e ho"
+
+[2:03-2:14] (confidence: -0.217)
+  "fatto uno screenshot di questo book, adesso mi sposto di qua, qua, guarda questo book qua,"
+
+[8:25-8:36] (confidence: -0.201)
+  "comprare, però devo fare la proposta, ho bisogno di cash, cosa fai? All'inizio era 4.79 e provo a"
+
+[8:36-8:48] (confidence: -0.201)
+  "scendere di un po'. Cioè quanto, che prezzo? A metà tra la mia valutazione e quella dell'agenzia."
+
+[8:48-8:53] (confidence: -0.201)
+  "Quindi scenderesti a 4.74 più o meno? Sì, più o meno, si è a metà. Ok, ti metti qua, hai ancora"
+
+[8:53-8:58] (confidence: -0.221)
+  "altre cinque case davanti, ti metteresti qua, bene. Passa un'altra settimana, nessuno ci telefona,"
+
+[8:58-9:04] (confidence: -0.221)
+  "e queste altre case davanti nessuno li ha vendute, quindi si rimane ancora qua, ed è passata ancora"
+
+[9:04-9:12] (confidence: -0.221)
+  "un'altra settimana, che fai? Scendo. Scendi? A che prezzo? 4.69. 4.69, bene, ti metti 4.69,"
+
+[9:12-9:22] (confidence: -0.221)
+  "4.69 e sei la prima nella fila, quindi il primo acquirente che ha fretta, perché dall'altra"
+
+[10:11-10:20] (confidence: -0.222)
+  "cosa che tu volevi vendere la casa a 4.68, ma lui è disposto a comprarti solo una piccola"
+
+[10:20-10:24] (confidence: -0.222)
+  "camera della casa, non tutta la casa, ok? Ti vuol comprare solo il garage, scusa facciamo"
+
+[10:24-10:29] (confidence: -0.222)
+  "così, ti vuol comprare solo il garage, vedi che questa cifra è molto bassa. Ah ok, quindi"
+
+[10:29-10:34] (confidence: -0.222)
+  "è un bluff? No, non è un bluff, è uno che ti dice sì io voglio comprare ma adesso posso"
+
+[10:34-10:39] (confidence: -0.222)
+  "comprarti solo il garage, ok? Tu dici eh vabbè io invece ho fretta. Se tu non hai fretta"
+
+[10:39-10:43] (confidence: -0.264)
+  "ti puoi anche dire ok intanto compro il garage, poi quando arrivi a comprare tutto"
+
+[10:43-10:48] (confidence: -0.264)
+  "e va via, ok? Invece a un certo punto dici no è niente è solo il garage, allora cosa"
+
+[10:48-10:51] (confidence: -0.264)
+  "devi fare? Devi abbassare e trovarne un altro, quindi devi abbassare ancora perché così"
+
+[10:51-10:58] (confidence: -0.264)
+  "invece di avere un compratore ne hai due, ok? Perché un compratore è disposto a comprare"
+
+[10:58-11:05] (confidence: -0.264)
+  "il garage, ecco e qua si assomma, qua assommi il garage con anche la cucina, ok? E quindi"
+
+[12:22-12:29] (confidence: -0.186)
+  "una roba fra chi compra e chi vende. Quindi andiamo un attimo a vedere in tempo reale."
+
+[12:29-12:38] (confidence: -0.186)
+  "Qui ci sono le proposte di chi sta vendendo, chi è più lontano e chi ha meno fretta di"
+
+[12:38-12:45] (confidence: -0.186)
+  "vendere, chi è più vicino e chi ha più fretta di vendere, chi è in verde e chi ha voglia"
+
+[12:45-12:49] (confidence: -0.186)
+  "di acquistare subito e chi ha voglia di acquistare solo a un certo prezzo quindi disposto ad"
+
+[14:12-14:16] (confidence: -0.303)
+  "subito a comprare il primo, il secondo, il terzo, il quale, i venditori sono sempre quelli"
+
+[14:16-14:24] (confidence: -0.303)
+  "perché non è che sono aumentate le case, sono rimaste quelle e quindi, e quindi, c'è"
+
+[14:24-14:31] (confidence: -0.303)
+  "mia figlia che ha fatto la pipina nel vasino e voleva portarci il vasino davanti al computer,"
+
+[14:31-14:35] (confidence: -0.303)
+  "bravo. Tempo reale. Ok comunque hai capito il meccanismo è questo, si dopo ti interrogo"
+
+[14:35-14:39] (confidence: -0.303)
+  "anche te, meccanismo quindi è questo quindi è arrivato il pullman di cinesi e ha detto"
+
+[14:39-14:43] (confidence: -0.148)
+  "bene vogliamo tutti comprare la via perché vogliamo avere la seconda casa lì perché"
+
+[14:43-14:47] (confidence: -0.148)
+  "c'è il mare eccetera, in quel momento lì comprono ma prendono allo sprovvista i venditori"
+
+[14:47-14:57] (confidence: -0.148)
+  "quindi non c'erano altri venditori ma il prezzo salendo velocemente, vendendo velocemente"
+
+[14:57-15:06] (confidence: -0.148)
+  "e vendendo velocemente cosa succede? Che i venditori quindi si organizzano per poi invogliare"
+
+[15:07-15:11] (confidence: -0.273)
+  "tutti i cinesi comprono, il prezzo sale a un certo punto gira voce che il prezzo in quella"
+
+[15:11-15:15] (confidence: -0.273)
+  "via lì è aumentato allora arriva un dice ah sai che c'è aspetta che vendo anch'io"
+
+[15:15-15:19] (confidence: -0.273)
+  "quindi il prezzo nel frattempo i compratori sale poi a un certo punto arrivano e dicono"
+
+[15:19-15:26] (confidence: -0.273)
+  "ah no aspetta aspetta non ero disposto a vendere a 4.80 ma a 5.4 sì, a 4, qua il prezzo se"
+
+[15:26-15:31] (confidence: -0.273)
+  "guardi il grafico era a 4 e dice no io non vendo a 4 non me ferrà niente, a un certo"
+
+[15:31-15:35] (confidence: -0.273)
+  "punto arriva la voce dice oh ragazzi c'è bisogno di, qua vogliono tutti comprare la"
+
+[16:57-17:01] (confidence: -0.19)
+  "di cinesi sapendo che erano dei compratori tu dicevi aspettate un attimo cinesi io intanto"
+
+[17:01-17:05] (confidence: -0.19)
+  "compro tutto qua e poi faccio fare a voi tutti il resto e dopo io la casa che ho comprato"
+
+[17:05-17:12] (confidence: -0.19)
+  "qua te lo rivendo dopo ok quindi se tu segui l'ema che sono le medie mobili cosa significa"
+
+[17:12-17:20] (confidence: -0.19)
+  "che tu vedi arrivare il pullman dei cinesi tu compri fai comprare a tutta la via i cinesi"
+
+[17:20-17:25] (confidence: -0.19)
+  "e dopo quando non hanno ancora non hanno più casa da comprare arrivi tu dici sai che"
+
