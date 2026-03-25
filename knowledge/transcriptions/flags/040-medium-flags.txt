@@ -1,0 +1,47 @@
+# Low-confidence segments for: 040_Piu_facile_fare_TRADING_sul_FOREX_NASDAQ_o_sulle_CRYPTOVALUTE_Muri_nel_BOOK_come_fare.mp3
+# Total flagged: 14
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:28-0:34] (confidence: -0.246)
+  "se fallisce perdete 20 dollari ragazzi, non capisco perché il problema è che tutte"
+
+[0:34-0:38] (confidence: -0.246)
+  "queste altre cose devono avere un capitale più grande e so che li andrete a perdere"
+
+[0:38-0:42] (confidence: -0.246)
+  "perché non sapete fare trading, quindi non usate andare a fare forex o altre cose qua,"
+
+[0:42-0:47] (confidence: -0.246)
+  "imparate le tecniche su Binance e dopo quando imparate le tecniche funziona per qualsiasi"
+
+[0:47-0:54] (confidence: -0.246)
+  "cosa, non c'è bisogno ok? E così non buttate soldi e anche se fallisce avete perso 50 dollari,"
+
+[3:11-3:17] (confidence: -0.205)
+  "vedere tutto ma a noi no e quindi ovviamente abbiamo un book un po' più falsificato, quindi"
+
+[3:17-3:23] (confidence: -0.205)
+  "è più difficile? Certo che è più difficile, quindi è più difficile sia il forex che il nasdaq"
+
+[3:23-3:29] (confidence: -0.205)
+  "che comunque in generale il mondo azionario è più difficile ok? Il top è il nasdaq, ti dico io"
+
+[3:29-3:34] (confidence: -0.205)
+  "mondo crypto io arriverai anche a operare solo su mondo crypto, io già ho abbandonato il nasdaq"
+
+[3:34-3:40] (confidence: -0.205)
+  "per fare le crypto proprio perché è fantastico ok? Abbiamo un book fantastico e cz cioè binance"
+
+[5:48-5:55] (confidence: -0.147)
+  "sta tenendo su il prezzo ok il prezzo rimane su grazie a questo quindi se tu devi comprare non è"
+
+[5:55-6:02] (confidence: -0.147)
+  "che ti metti sotto ok perché non verrà eseguito ti metti sopra quindi i muri cosa succede quando"
+
+[6:02-6:08] (confidence: -0.147)
+  "ci sono i muri grandi? Che chi deve comprare sposta da sotto e si mette sopra quindi fa alzare il"
+
+[6:08-6:17] (confidence: -0.147)
+  "prezzo ok quindi io nei miei trade che ho fatto questo weekend io praticamente facciamo così"
+

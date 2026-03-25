@@ -1,0 +1,95 @@
+# Low-confidence segments for: 036_TUTTO_CROLLA_COME_SI_GUADAGNA_ANDANDO_LONG.mp3
+# Total flagged: 30
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:18] (confidence: -0.391)
+  "ed eccoci qua ciao a tutti e siete su Skype in the Bull siamo live però su Twitch video"
+
+[0:18-0:22] (confidence: -0.391)
+  "nuovo in diretta mi piace un sacco ho fatto partire la nuova sigla, quella è la nuova"
+
+[0:22-0:27] (confidence: -0.391)
+  "sigla, a tardi su Twitch vi spiegherò anche perché abbiamo messo le ruote quadrate che"
+
+[0:27-0:33] (confidence: -0.232)
+  "è il top di gamma, Panda con le ruote quadrate è veramente il top di gamma, ma vi voglio"
+
+[0:33-0:37] (confidence: -0.232)
+  "parlare di una cosa importante perché adesso sta crollando tutto, quando crolla tutto cosa"
+
+[0:37-0:44] (confidence: -0.232)
+  "succede? La gente che guarda il telegiornale inizia a preoccuparsi e i bufatori arrivano"
+
+[0:44-0:47] (confidence: -0.232)
+  "tutti addosso, inizia a dire ma come fai? C'è persone normali, non quelle che sono"
+
+[0:47-0:51] (confidence: -0.232)
+  "all'interno della famiglia, persone che non sanno nulla di trading, dentro il telegiornale"
+
+[0:51-0:56] (confidence: -0.232)
+  "con tutto che crolla, Naza, piazzafari, il mondo cripto, tutto crolla e si preoccupano"
+
+[0:56-1:02] (confidence: -0.262)
+  "per me, incredibile, i parenti mi chiamano, una cosa incredibile, e dico ma come fai?"
+
+[1:02-1:06] (confidence: -0.262)
+  "Tutto a posto? Tutto bene? Certo, tutto bene, allora cosa ho fatto oggi? Oggi ho postato,"
+
+[1:06-1:11] (confidence: -0.262)
+  "oggi è una giornata, dimostriamo che oggi è una giornata, un'altra giornata di crolli,"
+
+[1:11-1:18] (confidence: -0.262)
+  "vedete qua questo è il Nasdaq quindi sta crollando pesantissimamente, terzo giorno di seguito di"
+
+[1:18-1:27] (confidence: -0.219)
+  "crolli pesanti, tre giorni fa meno 4,43, ieri meno 1,5 oggi adesso meno 3,43 quindi crolli"
+
+[1:27-1:33] (confidence: -0.219)
+  "pesantissimi, stiamo parlando di Standard & Poor, sta crollando in questo momento qua,"
+
+[1:33-1:38] (confidence: -0.219)
+  "sta facendo meno 2 metri, insomma tutto sta crollando, vedete tutto sta crollando e andiamo"
+
+[1:38-1:43] (confidence: -0.219)
+  "a vedere anche il mondo cripto, quindi andiamo su bitcoin, bitcoin non sarà crollando, se"
+
+[4:56-5:03] (confidence: -0.275)
+  "che sta crollando da giorni, come è possibile? Perché non esiste un qualcosa che crolla e basta,"
+
+[5:03-5:08] (confidence: -0.275)
+  "voi vedete qua il Daly e dà è crollato e basta, no non esiste una cosa che crolla e basta, sono sempre"
+
+[5:08-5:13] (confidence: -0.275)
+  "i rimbalzi, sempre non esiste una cosa che va su giù e basta, non è che c'è qualcosa che va giù"
+
+[5:13-5:18] (confidence: -0.275)
+  "che la gente normale, vi faccio il disegno, la gente normale pensa che quando una cosa crolla"
+
+[5:18-5:24] (confidence: -0.275)
+  "questo è il grafico così ok? E le candele sono tutte qua, tutte qua in mezzo, tutte così,"
+
+[7:10-7:16] (confidence: -0.236)
+  "conformazione contraria ok? Qua addirittura dobbiamo ancora fare su GMT un cambio di trend,"
+
+[7:16-7:21] (confidence: -0.236)
+  "questo è time frame un minuto, adesso sta preparando per andare a fare una conformazione"
+
+[7:21-7:27] (confidence: -0.236)
+  "di cambio di trend, se lo farà e qua dopo si potrà guadagnare con qualcosa che sta scendendo ok?"
+
+[7:27-7:34] (confidence: -0.236)
+  "Può fare tutto, ape, andiamo a vedere ape, ape uguale, guardate quanto è crollato ape, andiamo a vedere il"
+
+[8:02-8:07] (confidence: -0.244)
+  "capire che tranquillamente non c'è bisogno di andare short, tranquillamente si può guadagnare"
+
+[8:07-8:13] (confidence: -0.244)
+  "andando long con qualcosa che crolla, vedi il mercato qua crolla, tutti i rossi fa tutto schifo,"
+
+[8:13-8:21] (confidence: -0.244)
+  "ogni tanto c'è qualcosa di cocos più 12, c'è qualcosa che sale, ecco, tutti i peggiori,"
+
+[8:21-8:26] (confidence: -0.244)
+  "dopo in classifica abbiamo un più 28, un più 13, un più 5, quindi poi siamo tranquillamente comunque"
+

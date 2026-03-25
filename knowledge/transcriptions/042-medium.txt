@@ -1,0 +1,324 @@
+0:00 Ciao a tutti, siete su Skype in the Bull, qua vedrete la mia capocchia, ma vedrete anche
+0:09 Aleabra e Fabri, ok?
+0:11 Ciao, buonasera a tutti.
+0:13 I nostri esperti in materia di fiscalità, ok?
+0:16 Quindi un saluto a voi e tranquilli ragazzi, poi prenderò un'altra webcam da mettere
+0:22 qua per quando mi si deve davanti, adesso piano piano, piano piano, si fa tutto.
+0:26 Allora, questo finalmente video andrà su YouTube, così rimane su YouTube e ci sono
+0:32 delle novità, ok?
+0:33 Giusto?
+0:34 Ci sono delle novità, cerchiamo di capire il discorso fiscalità, perché è il momento,
+0:39 questo è il momento insomma in cui ci si organizza.
+0:43 Esatto, cominciamo la campagna dichiarativa del 2023, 730, quindi modello 730, modello
+0:52 reddity 2023 e quindi sostanzialmente tratteremo circa la tassazione delle criptovalute, quindi
+1:00 daremo delle indicazioni operative e poi naturalmente rimaremo a disposizione dando anche qualche
+1:06 aggiornamento su quello che sono state proprio le recentissime novità fiscali, c'è anche
+1:13 Ale, quindi anche tu Ale dopo parteciperai anche ovviamente a questo incontro, ci modellerai
+1:19 insieme a Bull e basta e cominciamo pure direi.
+1:22 Quando vedete gli slide ditelo perché tanto io ce li ho qua sotto, così li faccio vedere
+1:28 direttamente io.
+1:29 Allora, facciamo bene, allora cominciamo già con la prima, allora di cosa trattiamo?
+1:34 Trattiamo delle novità fiscali introdotte delle leggi di bilancio dell'anno scorso,
+1:38 quindi parleremo sostanzialmente della tassazione delle plus valenze, del monitoraggio fiscale,
+1:44 questo è un aspetto fondamentale, poi parleremo anche della emersione delle attività cripto,
+1:50 il famoso condono, assieme all'affrancamento e poi trarremmo delle conclusioni nel mezzo,
+1:58 dovremo anche pensare che appunto la legge di bilancio ha profondamente innovato la tassazione
+2:06 delle criptovalute rispetto a quello che era il regime precedente e quindi faremo anche
+2:10 qualche considerazione in merito a come comportarci con le dichiarazioni dei redditi.
+2:16 Ottimo.
+2:17 Bene, allora procediamo con la prima slide, allora adesso qui illustro sostanzialmente
+2:25 quella che è la nuova normativa, la nuova normativa sulla tassazione delle plus valenze
+2:33 realizzate attraverso lo scambio di criptovalute, abbiamo 2000 euro di franchigia, che consiste
+2:42 sostanzialmente nel limite entro il quale non è necessario fare nessuna dichiarazione
+2:49 dei redditi e anzi se ne viene esentati, superato tale limite invece bisogna tassare tutta la
+2:56 plus valenza, compresi anche i 2000 che fanno parte della franchigia, lo faccio presente.
+3:01 Sì, certo, bravo. Non solo la parte sopra, non il 2001, ma anche superati i 2000 si
+3:08 tassa i 2000 più l'1.
+3:11 Precisamente, esattamente. Ecco, rispetto a prima c'è fondamentale cash out, il concetto
+3:19 di cash out, cioè la realizzazione concreta della tassazione, in poche parole, se la criptovaluta
+3:29 viene scambiata e si ottiene un'altra criptovaluta, questo non dà luogo a imposizione e quindi
+3:36 sostanzialmente la tassazione avviene solo condizionatamente al cash out oppure, un'altra
+3:42 condizione fondamentale, pagamento di beni e servizi attraverso moneta cripto. Quindi
+3:47 vedete una monetizzazione anche della cripto, quindi un cash out di fatto, anche se non
+3:54 un cash out sostanziale. Quindi, cash out come lo realizzo? Lo realizzo con le monete
+4:00 fiat, l'euro, il dollaro, lo yen, il franco, il svizzero, la sterlina. Non faccio cash
+4:08 out con tutto ciò che è criptovaluta, pnb, usdt. Importante anche certificare, e questo
+4:16 ce lo dovrà dire l'agenzia delle entrate, dopo vediamo anche perché, se i usdt, che
+4:22 è una stablecoin, deve essere considerata una criptovaluta oppure un qualcosa di diverso
+4:27 dalla criptovaluta. Nel quel caso, a quel punto dovremmo fare delle altre considerazioni.
+4:32 In questo momento, usdt è criptovaluta, dunque niente tassazione. Stiamo parlando della normativa
+4:39 che parte dal 1 gennaio 2023. Io adesso ti blocco un attimo così, ti riprendi e ti faccio
+4:48 una domanda, giusto per essere chiari perché sicuramente le avremo, quindi cerco di vantaggiarmi.
+4:56 Ma se nel caso io pagassi quindi con Binance Card e usdt, sto facendo un cash out in questo
+5:04 caso? Ovviamente sì, perché in questo caso io sto comprando bene servizio. Avendo comprato
+5:12 un bene servizio, è come avessi monetizzato, come avessi tradotto in moneta fiat la mia criptovaluta.
+5:19 L'evento che mi fa passare dalla criptovaluta alla moneta fiat è in materia imponibile,
+5:26 quindi sostanzialmente me lo dà, perché ho comprato un bene servizio anche se in cripto,
+5:32 cioè non devo necessariamente trasformare la cripto in soldi e poi in soldi comprare
+5:37 il servizio. Se io il servizio lo compro direttamente con la cripto è come avessi fatto
+5:43 questi due passaggi in un colpo solo, quindi la tasso. Questa è molto importante, grazie della
+5:50 precisità. Quindi la slide successiva, quindi quella pagina 4, abbiamo la tassazione appunto che si
+6:02 verifica con le plus e le minus, anche i redditi da detenzione delle criptovalute sono tassati,
+6:08 quindi qualsiasi reddito che riceviate, penso allo staking, penso all'air drop o a quant'altro si
+6:16 possa realizzare dalle criptovalute, tutto è societato a tassazione. Superati i 2.000 euro,
+6:22 procedo al pagamento dell'imposta sostitutiva che è del 26%. Se non lo supero, nulla, non
+6:31 dichiaro, non pago tasse, quindi finché rimango sotto i 2.000 sono sostanzialmente. Quindi 1.950,
+6:38 niente tasse. Su base anno ovviamente, quindi aspetto a guardare tutto l'anno del 1 gennaio
+6:45 al 31 dicembre, faccio i conteggi e poi vedo se ho superato questa famosa soglia. Anche qui però
+6:57 ti anticipo, perché abbiamo comunque le slide, però cerco di anticiparti, perché so che qualsiasi
+7:06 utente che arriva a questo livello, la domanda se la pone, ma quindi l'RW lo devo fare lo stesso
+7:12 oppure se io non arrivo a 2.000 non lo devo fare? Ovviamente l'RW lo devo fare lo stesso. Quindi
+7:22 monitoraggio fiscale sempre... Sono due aspetti distinti che vanno, e vedremo anche più tardi,
+7:29 anche con le slide che presentiamo dopo, vanno tutte e due fatte e hanno due finalità diverse.
+7:37 La prima è quella di dichiarare la tassazione, la seconda quella del monitoraggio fiscale,
+7:42 capire, far capire allo stato dove sono andati i miei soldi che ho lecitamente guadagnato e che
+7:48 quindi anche mio interesse è far capire dove siano andati, proprio per evitare quando un giorno
+7:53 torneranno a casa di dover dimostrare con prove molto difficili, sono in grado comunque con il
+8:03 monitoraggio fiscale di dimostrare anche quelli erano i soldi che avevano portato fuori e che
+8:07 adesso riporto dentro con cash out o con qualsiasi altra modalità che io decido di intraprendere da
+8:13 qualsiasi exchange o anche da un ledger per capirci. Quindi dimostro in questa maniera
+8:20 all'agenzia dell'entrante la dinamica degli stessi soldi che prima escono e poi entrano sempre con il
+8:28 quadro RW. Ok, quindi sempre con la legge di bilancio per agevolare un po' il mettersi a
+8:42 posto dei vari contribuenti che in passato non hanno fatto RW o non hanno fatto RT quindi non
+8:49 hanno dichiarato le eventuali plusvalenze che avessero realizzato ebbene è previsto comunque
+8:56 un condono al primo gennaio del 2023 e aveva termine diciamo così ultimo il 30 giugno ma
+9:04 di recente è stato spostato al 30 settembre quindi abbiamo più tempo per poter fare che cosa? Fare
+9:10 ad esempio la regolarizzazione dell'RW che non avessimo fatto negli anni precedenti. Io in questa
+9:16 maniera con questo tipo di condono riesco a regolarizzare la mia posizione in termini di
+9:22 monitoraggio fiscale. Se ho invece realizzato plusvalenze riesco anche a fare questo, riesco
+9:27 anche a dichiarare oltre all'aspetto del monitoraggio riesco anche a dichiarare una
+9:36 plusvalenza che io abbia realizzato in passato e che non abbia per qualche motivo dichiarato.
+9:41 In questa maniera con questo condono riesco a mettermi in pari e a evitare accertamenti o altre
+9:49 dinamiche poco piacevoli che possono accadermi. Va tenuto conto che ovviamente fino al primo gennaio
+9:58 del 2023 la normativa era diversa e quindi prendeva in considerazione la famosa soglia
+10:05 di 50.645 euro che dovevano essere superati per almeno sette giorni lavorativi, senza di quello
+10:11 non avevamo tassazione. Quindi se io sono in grado di dimostrare che non ho mai superato questa
+10:18 soglia per i sette giorni consecutivi posso anche andare tranquillo e quindi posso non aver dichiarato.
+10:23 Nel caso io invece non avessi dichiarato pur essendosi verificata questa ipotesi devo prendere
+10:32 in seria considerazione il fatto di condonare le mie entrate che abbia fatto o realizzato con
+10:38 un cash out improvvido e dove l'agenzia delle entrate o in domani vedendo un ammontare piuttosto
+10:44 cospicuo venuto nei mie disponibilità e non dichiarato. C'era mente può rendermene conto
+10:50 invece con questo condono. Riuscirei a bloccare questo tipo di accertamento ma ero aver una specie
+10:56 di scudo se così possiamo dire. E cosa deve fare per aderire al condono? Deve sostanzialmente presentare
+11:06 una domanda entro il 30 di settembre pagando un 3,5% di termini di tassazione e uno 0,5 per la
+11:15 regolazione del monitoraggio fiscale quindi un 4% per anno di maturazione della prosparenza.
+11:24 Abbiamo una buona possibilità per poter regolarizzare la posizione sia in termini
+11:34 dichiarativi sia in termini monitoraggio fiscale. Se uno non ha quelli dichiarativi perché non ha
+11:39 grossi importi comunque si riesce a mettere a posto con l'RW e quindi riesce a dimostrare
+11:45 agenzia delle entrate che qui i soldi che fa rientrare per state che abbia 10-15.000 euro che
+11:51 comunque sono una bella sommetta se li fa rientrare tutto in un colpo e non ha fatto
+11:55 all'RW chiaramente l'agenzia delle entrate si domanda da dove vengono quei soldi. Se io non
+12:00 riesco a dimostrarlo chiaramente mi dà una presunzione di imponibilità che io non riesco
+12:06 in nessun modo a smontare. Con l'RW invece con la regolarizzazione dell'RW invece questa
+12:13 problematica la regolarizzo pagandolo 0.5% perché metto a posto solo l'aspetto RW monitoraggio
+12:21 fiscale. Ok che slottiamo? E' liscio, liscio come non. Ricordami sempre il numero dello slide
+12:29 così riesco a stati dietro. Ma stiamo alla 7 allora la 7 dove riappiloghiamo la normativa che
+12:34 era in vigore fino al 31-12 2022 esatto e che rappresenta quello che andiamo a dichiarare in
+12:42 questo momento cioè in questo momento andiamo a dichiarare che siamo nel 2023 andiamo a dichiarare
+12:47 i redditi fino al 31-12 2022 e quindi quella normativa lì la normativa appunto che prevede
+12:54 il famoso superamento dei sette giorni con la giacenza media comunque superiore ai 5645 euro
+13:03 scusate il primo 465 che chiaramente è un errore è stato scambiato al secolo 4 ma naturalmente
+13:13 oggi come oggi quando andiamo a fare la dichiarazione di redditi che in scadenza in questi mesi
+13:19 andiamo a ragionare su questa normativa quella che vi abbiamo illustrato invece prima quella
+13:24 famosa di 2000 euro in termini di franchigia la appliceremo con l'unico dell'anno prossimo
+13:29 quindi con l'unico che faremo nell'anno 2024 per l'anno 2023 che è quello che stiamo appunto
+13:36 facendo. Bene possiamo allora quindi passare all'ottava slide fissiamo il discorso permane
+13:45 obbligo del monitoraggio fiscale quadro RW quadro RT abbiamo tassazione della prosvalenza
+13:53 questi due obblighi ci sono prima c'erano ci sono e ci saranno questi saranno sempre inalterati
+14:00 per quest'anno la scadenza di questi due quadri RW e RT è al 30 novembre 2023 lo possono fare
+14:10 anche chi ha fatto il sette e trenta che non trova il quadro RW e RT ma trova un mudello redditi
+14:18 aggiuntivo appunto pensato proprio per chi non presenta la dichiarazione dei redditi attraverso
+14:24 il modello redditi ma lo fa attraverso il sette e trenta quindi per tutti abbiamo la scadenza al
+14:32 30 novembre costituita appunto da questi due quadri che sono uno per la tassazione l'altro
+14:39 per il monitoraggio fiscale due obblighi separati che vanno ambi e due rispettati sul limite del
+14:46 RW non si è mai espressa l'agenzia dell'entrata e quindi non c'è quello che potrebbe essere un
+14:53 esonero come ad esempio per i conti correnti all'estero che a varie soglie 5000 15000 a seconda
+15:00 che stiamo parlando di giacenza medio di saldo per la criptovaluta non c'è questo esonero quindi
+15:07 io oggi come oggi devo considerare che se ho le criptovalute l'RW lo devo fare comunque anche se
+15:14 ho un euro di criptovaluta ok ok io sono una persona che però non so fare queste cose io non
+15:23 ho mai io ho sempre dato tutto al commercialista e adesso che vado dal commercialista però mi dice
+15:28 non lo so fare nemmeno io bellissimo allora mi dici come mi dici come posso istruire il
+15:38 mio commercialista per poter fare questa per poter prendere almeno questi numeri questi valori
+15:47 per poterlo fare
+15:49 esatto al centesimo abbia almeno un'idea precisa di quella che è stata la movimentazione dei vari
+16:15 fondi all'interno delle criptovalute io posso averne versati posso averli tenuti posso averli
+16:21 prelevati e quindi è chiaro che la storia la devo anche poi documentare all'agenzia dalle
+16:27 entrate e naturalmente trascrivere nei quadri che abbiamo alla slide 10 e 11 e quindi abbiamo la
+16:35 slide 10 che rappresenta l'rt e ovviamente si parla della tassazione quindi qui vanno introdotte
+16:43 nella sezione seconda le plusvalenze ma nel caso in cui io non abbia prodotto plusvalenze perché
+16:49 sotto il famoso limite dei 51 mila euro però devo fare slide numero 11 l'r w quindi devo compilare
+16:57 valore iniziale valore finale di queste criptovalute che ho in conto e poi naturalmente devo rendere
+17:05 conto di tutte le criptovalute che posseggono su ledger su exchange su intermediari che non
+17:13 siano italiani se invece ho l'intermediario italiano che mi ha la criptovaluta attenzione
+17:20 che ci pensa lui che ormai non c'è più nessuno però insomma nel caso in cui ci sono ancora
+17:25 alcuni piedi se c'è qualcuno che ce l'ha ovviamente è intermediario e quindi lo può fare per mio
+17:33 conto e quindi assolve il problema. Io allora ti faccio un'altra domanda che ti hanno fatto
+17:43 al meeting di Verona e credo possa servire per qualcun'altra persona ma se nel caso io ho dei
+17:53 soldi su fx quindi parliamo di un exchange estero che però ha avuto questa vicenda di
+18:04 bancarotta e avevo 1000 usdt. Come mi devo comportare quindi valore iniziale valore finale
+18:13 lo devo mettere metto lo stesso secondo te come mi devo comportare? A quel punto lì se la somma
+18:22 ce l'ho ancora virtualmente da qualche parte perché il curatore non me l'ha ancora liquidata
+18:28 ad esempio facciamo finita che il curatore abbia la bravura di liquidarmi tutto l'importo che ho
+18:37 voi capite che io prudenzialmente metterei comunque in carico anche la criptovaluta che in
+18:43 questo momento è giacente sul defunto fx proprio perché un indomani sarò in grado di dimostrare
+18:53 che se il curatore mi dà dei soldi non li ho azzerati ma sono quelli che mi restituisce
+18:59 dei curtati della falcidia fallimentare quindi in questo senso io considererei come se qui i
+19:06 soldi in linea di massima io li avessi ancora in carico è chiaro che sarà questione di molta
+19:15 fortuna averne anche una sola parte però oggi come oggi il comportamento che farei sarebbe quello
+19:20 di dettagliare esattamente quelle che erano le mie giacenze e determinarle in un'ottica attenzione
+19:28 di monitoraggio fiscale perché è quello che io sto facendo quindi io azzerassi tutto e poi il
+19:35 curatore per dire mi dai mille euro che dicevi faccio fatica a conciliare o meglio diciamo a
+19:43 costruire un quadro congruo della situazione appunto nel caso in cui il curatore mi desse dei
+19:49 soldi no e quindi farei fatica in questo senso a giustificarli se li avessi completamente azzerati
+19:55 ecco che invece facendo il monitoraggio fiscale mantenendo comunque il valore nominale avrebbe
+20:01 un senso o di mercato avrebbe comunque un senso appunto costituito che l'eventuale falcidia
+20:07 sarebbe anche dimostrata da quello che il curatore mi liquida perché mi dirà che ne so ti
+20:12 liquido il 20 il 30 il 50 per cento delle tue somme che avevi all'epoca e a quel punto lì quando si
+20:18 chiude la procedura fallimentare allora a quel punto lì tutto si riconcilia e la perdita a quel
+20:23 punto diventerà una perdita attenzione patrimoniale quindi sarà molto importante anche capire l'agenzia
+20:29 dell'entrata non lo spiega negli ultimi circolari ma sarà molto importante capire che fine fanno le
+20:35 perdite patrimoniali che lo ricordo non sono perditi di trading. Bull realizza gli utili le
+20:41 perdite di trading no perché fa trading di criptovaluta ma se io il fu faguru che mi toglie
+20:50 la criptovaluta io faccio fatica a dire che quella era una perdita di trading perché in realtà questo
+20:57 ladro mi ha truffato mi ha portato via la mia valuta ma io col trading non c'azzecco nulla ok
+21:03 non sono in grado di dire che è una vera minusvalenza quella non è proprio non è trading è perdita
+21:09 patrimoniale furto o qualsiasi altra cosa per fare un esempio giusto per capire stiamo parlando di
+21:16 tipo hyperverse no stiamo facendo ok quindi se veniamo scammati non viene considerato una
+21:23 minima valenza oggi come oggi no farò un quesito all'agenzia delle entrate per capire che natura
+21:30 dare a questo tipo di perdite no ma quasi certamente l'agenzia delle entrate mi dirà non
+21:35 rientrano nelle perdite di natura finanziaria perché le perdite di natura finanziaria comunque
+21:40 sono correlate a uno scambio di criptovaluta lì non c'è uno scambio c'è un prelevo fine punto e
+21:45 basta ecco chiamiamolo prelevo per darne un termine che non offenda nessuno no perché
+21:51 prelevo forzoso non lo so chiamiamolo così ok quindi ecco che è molto importante far
+21:58 capire questo lo scam non è perdita deducibile perfetto effettivamente sia purtroppo effettivo
+22:06 e scotti anche indubbiamente magari sulla pelle di qualche povero sfortunato trader
+22:11 ok bene possiamo anche proseguire con le slide successive punto all'attenzione per la 14
+22:27 ma nella 11 facciamo un piccolo esempio come dovremmo compilarlo allora qui dovremmo
+22:36 sostanzialmente compilare il titolo di possesso e quindi dovremmo compilare le tabelle perché
+22:45 sono varie le causali nel campo numero uno e quindi dovremmo indicare l'uno mi pare sia
+22:52 la proprietà poi ci sono altri codici ma diciamo l'uno è sicuramente quello più usato non dovremmo
+22:57 indicare il codice stato estero perché non c'è uno stato nella criptovaluta che detenga no quindi
+23:04 non ho l'obbligo di individuare il numero 4 la quota di possesso il 100% e poi ecco cominci
+23:12 alla valorizzazione in termini di valore iniziale che sarà il carico di cui io ho fatto i bonifici
+23:18 non so i movimenti che ho fatto per caricare l'exchange faccio un esempio con l'exchange ma
+23:26 potrebbe essere io ho mandato 1000 euro sul mio conto qua scriverò 1000 ci posso mettere esattamente
+23:33 mentre il valore finale è quello che si trova a fine periodo no quindi in questo caso il valore
+23:39 che trovo finale a fine periodo mi dovrà coincidere con quelle che erano le mie effettive somme
+23:45 aspetta allora il 6 cosa bisogna fare nella 6 bisogna fare qualcosa nella 6 indico il criterio
+23:51 di il che posso indicare il criterio con il quale valorizzò che può essere quello di mercato quello
+23:56 storico ok quindi qui ci metto un codice iniziale per esempio ho mandato 1000 euro quindi ho il 1000
+24:02 oppure il 1 gennaio avevo bitcoin valeva 24.000 e avevo tot fai il calcolo e vedi quanto esce insomma
+24:12 diciamo che comunque il criterio di determinazione del valore può essere diverso perché io posso
+24:17 scegliere di caricare un valore di mercato oppure posso scegliere di fare un valore nominale o uno
+24:22 storico quindi sono vari a seconda del metodo che utilizzo che mi che mi rappresenta quella
+24:29 che è l'informazione che ho a disposizione determino a mia volta il valore iniziale ok
+24:36 io sceglierei il nominale naturalmente soprattutto per l'iniziale no mentre il finale lo trascinerei
+24:43 invece il valore di mercato perché in linea di massima il valore finale sarà coincidente
+24:50 in linea di massima con quello che erano le mie giocenze a fine dell'anno e questo è molto
+24:55 calcoliamo sempre in dollari giusto no no no no in euro naturalmente in euro perché siamo in
+25:01 Italia e ragioniamo sempre in euro quindi dobbiamo fare il cambio e quindi procedere con la
+25:06 valorizzazione a quella data ecco quindi capite che è importantissimo avere in mano tutta la
+25:12 documentazione che attesti come ho calcolato questi valori che come vedete è tutt'altro che è semplice
+25:19 no perché la parola è facile poi dopo quando ci si mette bisogna avere tutti i documenti sennò
+25:24 altrimenti si va in forte difficoltà infine bisogna barrare la casellina 20 solo monitoraggio
+25:31 questa è un'altra cosa molto importante e sennò altrimenti mi fa pagare l'IVAFE la via e l'IVAFE
+25:38 quindi mi fa pagare delle tasse che non sono dovute almeno al 31-12-2022 per le criptovalute
+25:46 come da esplicita raccomandazione dell'agenzia delle entrate. Perfetto ottimo ok. Poi allora
+25:54 dove andiamo? Allora siamo sul 14 esatto allora sulla 14 dove la regolarizzazione dell'RW mi dà
+26:04 solo la regolarizzazione sulla mancanza che non ho presentato l'RW però se io naturalmente ho
+26:12 conseguito queste somme che ho poi investito in criptovalute ma le ho conseguite con mezzi
+26:20 non leciti è evidente che questa regolarizzazione non mi copre. Cosa voglio dire? Voglio dire che se
+26:27 io spaccio abitualmente droga e prendo i soldi e li metto in criptovaluta e non ho fatto nessuna
+26:33 denuncia parte sarà difficile che li denunci. Il concetto è che comunque la regolarizzazione
+26:41 dà effetti solo sui redditi e non ovviamente su come sono stati conseguiti questi redditi
+26:48 ok perché quello è un altro paio di maniche cioè se io ho i soldi che investo in criptovalute li
+26:54 ho conseguiti con le dichiarazioni con il mio lavoro e quant'altro benissimo nessun problema
+26:59 ma se io naturalmente la fonte dei miei redditi è illecita non c'è sanatoria che mi venga ok
+27:09 perché questa sanatoria mi copre solamente dal fatto che mi sono dimenticato di fare il monitoraggio
+27:16 fiscale ok perché importante perché attenzione tutto questo discorso del monitoraggio fiscale
+27:25 la slide numero 16 andiamo con scadenze molto lunghe nel tempo nel senso che l'agenzia
+27:32 delle entrate per il periodo di imposta 2022 cioè quello che in dichiarazione ha tempo fino
+27:38 al 31-12-2028 per controllare la mia posizione quindi in più se non l'ho presentato la dichiarazione
+27:47 è messa altri due anni ancora quindi per capirci io non presento la dichiarazione dei redditi quest'anno
+27:53 non presento l'rw dovendolo fare nessun problema l'agenzia delle entrate ha tempo fino al 31 dicembre
+28:02 2030 quindi ha otto anni per controllare la mia posizione ecco perché raccomando di mettersi tutti
+28:11 in regola perché il tempo è veramente tanto per l'agenzia delle entrate per procedere agli
+28:18 accertamenti quindi potete ben capire che adesso nel 31-12-2022 scaderebbe se ho presentato la
+28:28 dichiarazione scaderebbe il periodo di imposta addirittura 2016 ma se non l'ho fatto scadrà
+28:34 al 2024 perché perché 31-12-2022 più due anni perché ho messo la dichiarazione d'accordo?
+28:40 Certo. Ecco perché è interessante questa sanatoria che è stata introdotta con la legge di bilancio
+28:49 del 2022 quindi possiamo anche procedere appunto all'aggiornamento la slide 18 l'aggiornamento è
+29:02 quello che appunto queste condoni sulle criptovalute abbiamo tre mesi in più di tempo quindi possiamo
+29:12 andare dal 30 giugno al 30 settembre possiamo metterci in regola per questo aspetto e secondo
+29:19 aggiornamento quello del quello della slide 19 è la consultazione pubblica della bozza di circolare
+29:28 che è stata fatta proprio per normare le criptovalute ossia trovate sul sito dell'agenzia
+29:37 dell'entrate circa 100 pagine di pdf che vi spiegano come l'agenzia dell'entrate vede le
+29:46 criptovalute e a questo punto completa anche il quadro di diciamo normazione cioè l'agenzia
+29:53 dell'entrate non si limita semplicemente a dire questa è la norma va ve la spiega e vi dice quali
+29:59 sono i requisiti per la tassazione oppure i requisiti per la non tassazione lì trovate questa
+30:05 bozza di circolare che non è ancora definitiva perché bisogna integrarla con le osservazioni
+30:14 che io ad esempio ne ho due o tre da fare e che vanno inviate all'agenzia entro il 30 giugno poi
+30:19 quindi son mese di settembre sarà emanata la circolare definitiva nella quale verranno
+30:26 diciamo presi come diciamo riferimenti tutte le i paragrafi che sono lì indicati e quindi
+30:34 uno sa come comportarsi anche da un certo punto di vista delle istruzioni allargate come le
+30:40 chiamo le circolari e quindi non c'è più la scusa di dire io non sapevo come fare non avevo
+30:46 capito ma non c'ero ma non sapevo ignoranze aliasis non excusa no quindi adesso proprio
+30:54 l'agenzia si sta mettendo in pari anche in senso normativo. Bene allora io ti faccio una domanda
+31:06 tu già mi hai risposto che era quella di Ipero per tutti questi puffa guru che cercano hanno
+31:12 cercato e hanno raccimolato milioni di euro portandosi lì a casa e uno pensa sempre ma la
+31:19 menosvalenza abbiamo fatto capire che non è proprio così semplice ma io ho un'altra domanda
+31:25 ok io sono uno scalpe effetto operazioni su Binance come faccio a dimostrare alla delle
+31:36 mie operazioni come faccio caro Fabrizio? Sostanzialmente anche la circolare dice
+31:42 da documenti che vengono emessi dal intermediario. Oggi cosa emette Binance? Emette effettivamente
+31:50 dei documenti che siano sotto forma di file excel ad esempio o screenshot anche penso anche
+31:58 gli screenshot per quanto è possibile fare quindi devo cercare di tutelarmi creandomi
+32:04 documentando il più possibile la mia posizione per quanto difficile possa essere e strapolandola
+32:12 dai server di Binance in questo caso. Cercherò poi una serie di programmi ne esistono svariati
+32:20 per tradurre poi il file csv o il file excel che viene prodotto dei server di Binance in
+32:26 una formula più diciamo così in una formula sotto forma di fruibile che mi dica il livello
+32:35 della mia plusvalenza che abbia realizzato nel corso dell'anno e durante l'anno naturalmente
+32:41 in modo che io sappia anche come regolarmi come transazione perché se io ho fatto migliaia
+32:45 di operazioni o sono stato così bravo da notarmi ciascuna operazione oppure sono costretto
+32:51 necessariamente a ricorrere a qualche foglio elettronico che i server appunto di Binance
+32:55 mi permettono di scaricare e quindi sono in grado anche di aggiornare e documentare questo
+33:01 è l'aspetto principale la mia posizione con i funzionari dell'agenzia da netrate
+33:06 nel caso in cui appunto mi richiedano come ho fatto a determinare imponibile fiscale
+33:13 o del perché non abbia utilizzato oppure perché non abbia superato i famosi 2000 euro
+33:18 e quindi non abbia provveduto a compilare il quadro RT perché ad esempio ho realizzato
+33:24 una plusvalenza inferiore non posso slimitarmi a dire ho realizzato una plusvalenza inferiore
+33:28 appunto e basta devo anche produrgli un qualche documento un qualche certificato chiamatelo
+33:35 come volete del quale risulti questo tipo di ma Binance tax ci dà una mano in questa
+33:44 cosa qua lo avete visto io non ho ancora visto non l'ho ancora visto so che l'hanno fatto
+33:48 dovrebbe essere dovrebbe essere abbastanza congruente con questo secondo me sono già
+33:54 abbastanza interessanti e qui fai il csv che vengono prodotti però la logica di Binance
+34:01 sicuramente è quella che dici tu Bull nel senso che dovrebbe proprio servire a darmi un documento
+34:07 che mi venga utile in sede fiscale per capire quanto ho guadagnato nell'anno 2021 22 23 o quant'altro
+34:15 insomma no e quindi a utilizzarlo per la dichiarazione dei redditi che oggi deve
+34:20 avvenire per forza per il tramite della dichiarazione volontaria e non può avvenire con quella del
+34:26 regime amministrato o gestito che solleverebbe indubbiamente il contribuente da un onere
+34:33 abbastanza complesso ecco diciamo così da assolvere. Ok andiamo avanti. Io non ho più
+34:42 io non ho più domande, è stato precisissimo, ho cercato in tutti i modi di metterti bastoni
+34:48 tra le ruote non chissono riusci, c'è cato. Ho cercato di fare, in 30 minuti penso che ci
+34:55 siamo possiamo anche. No c'era la slide 20 che fa troppo ridere ho perso i miei soldi grazie a un
+35:02 fufo guru scappato a Dubai posso scalare delle plussivalenze che ho realizzato? No perché non
+35:10 è una minivalenza ma una perda patrimoniale. Ok, l'abbiamo riassunto prima e quindi chiaramente
+35:16 ad oggi l'agenzia dell'entrata non riconosce appunto come perdita di trading il fatto che
+35:23 il fufo guru di turno sia scappato coi soldi. No, però lì ho un furto appunto. Direi che così
+35:30 mi ha fatto l'aggiornamento questo video andrà direttamente su youtube invece l'altra volta
+35:35 ho messo su rumble quindi dopo andrà nel link 3 lo vado a pubblicare domani mattina. Io signori
+35:42 vi ringrazio se siamo a posto abbiamo qualche altra domanda qualche altra proprietà? No,
+35:48 non ce l'ho fatta peccato. Lasciamo le mail perché se no lo scrivono ogni volta nel. Allora
+35:58 guarda no su questo rispondo io allora basta andare nella sezione discord bullmercialista
+36:05 quindi abbiamo proprio una stanza bullmercialista noi nel server discord di bull. Ottimo. Dove
+36:11 troverete la mail di fabrizio per le domande più generiche rispondo sempre io cerco di rispondere
+36:19 quanto più possibile ci sono troverete non solo tutti i video vecchi troverete anche i video di
+36:24 rumble e un'assistenza ve l'ho detto per le cose abbastanza semplici troverete me. Cioè
+36:33 da la la z quindi basta andare su discord nella stanza bull commercialista un sogno un sogno
+36:46 quindi vi ringrazio di cuore per questo tempo che dedicando alla family la bull family è questo
+36:54 cioè questa è la mentalità insomma ognuno fa quel passettino se può aiutare aiuta e così
+36:59 diventiamo una family altrimenti ognuno è insomma nel suo quadrato rimane lì invece noi ci
+37:07 esponiamo espagnano e noi ci espandiamo proprio per il fatto che ognuno cerca di mettere del
+37:13 suo e fantastico riusciamo così andare sempre avanti va bene ragazzi allora io vi ringrazio
+37:19 ci aggiorniamo a presto e niente buon weekend buon anzi buon weekend oggi che giorno oggi
+37:26 domani io parto quindi sembra che sia venerdì invece niente va bene dai buona vacanza buona
+37:33 giornata ciao a tutti ciao

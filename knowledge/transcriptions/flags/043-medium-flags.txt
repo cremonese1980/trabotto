@@ -1,0 +1,188 @@
+# Low-confidence segments for: 043_Criptovalute_Nasdaq_Forex_Piazza_Affari_dove_conviene_fare_Trading.mp3
+# Total flagged: 61
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:26-0:32] (confidence: -0.269)
+  "E qua adesso vedete appunto il crypto che è di qua, poi il mercato azionario, piazza"
+
+[0:32-0:36] (confidence: -0.269)
+  "affari nello specifico e quindi quel è il vantaggio."
+
+[0:36-0:40] (confidence: -0.269)
+  "Allora, l'invantaggio sicuramente del mondo crypto, quindi partiamo dal mondo crypto, è"
+
+[0:40-0:41] (confidence: -0.269)
+  "il book."
+
+[0:41-0:44] (confidence: -0.269)
+  "Il book è il miglior book mai visto nella storia."
+
+[0:44-0:47] (confidence: -0.269)
+  "Tra l'altro, su Binance è anche raggruppabile ed è quello."
+
+[0:47-0:53] (confidence: -0.269)
+  "Raggruppabile significa che possono decidere quanto deve raggruppare il prezzo, sia nudo"
+
+[1:21-1:24] (confidence: -0.311)
+  "mangiati anche lentamente o qualche."
+
+[1:24-1:28] (confidence: -0.311)
+  "Invece nel mondo azionario questa cosa è quasi impossibile."
+
+[1:28-1:34] (confidence: -0.311)
+  "Dipende sui titoli più sottili, sì, sui titoli che vengono scambiati poco, sì, sui"
+
+[1:34-1:40] (confidence: -0.311)
+  "titoli invece più liquidi, tu vedi che per esempio questo milione in vendita, questo"
+
+[1:40-1:45] (confidence: -0.311)
+  "è in teatro San Paolo, ha 2.4, 2 praticamente quando ci arriva, quando si avvicina, quando"
+
+[1:45-1:49] (confidence: -0.311)
+  "arriva a 2.95 si mangiarà tutto il livello senza vederlo mangiare lentamente."
+
+[2:18-2:23] (confidence: -0.196)
+  "Quello è l'altro vantaggio che puoi operare anche solo con 20 dollari pagando pochissimo"
+
+[2:23-2:30] (confidence: -0.196)
+  "di fee, quindi stiamo parlando di 0,075 se stiamo parlando di Binance e se paghi le fee"
+
+[2:30-2:32] (confidence: -0.196)
+  "in BNB, quindi veramente pochissimo."
+
+[2:32-2:35] (confidence: -0.196)
+  "Quindi anche operare con 20 dollari ti costa pochissimo."
+
+[2:35-2:40] (confidence: -0.196)
+  "Mercato azionale invece purtroppo tutto questo non si può fare, costa un sacco, addirittura"
+
+[2:40-2:46] (confidence: -0.196)
+  "alcuni ti fanno pagare 10 euro di eseguito, quindi se opri con 100 euro devi pagare 10"
+
+[2:46-2:51] (confidence: -0.317)
+  "euro di eseguito, quindi il 10% non ha nessun senso, quindi devi comunque avere una certa"
+
+[2:51-2:52] (confidence: -0.317)
+  "quantità."
+
+[2:52-2:59] (confidence: -0.317)
+  "Poi c'è il discorso Interactive Broker dove si può pagare poco, devi poi fare dichiarazione"
+
+[2:59-3:05] (confidence: -0.317)
+  "dei Reino di Cappi da Genlo, devi pagare tu, devi raccogliere i dati tu, insomma una cosa"
+
+[3:05-3:09] (confidence: -0.317)
+  "necessaria se è mercato azionale, posso far gestire direttamente dalla mia banca, raccogliere"
+
+[3:09-3:11] (confidence: -0.317)
+  "tutti i dati e si paghi in automatico."
+
+[3:11-3:15] (confidence: -0.317)
+  "Però Interactive Broker ti dà poi la possibilità di poter parare con pochi soldi."
+
+[3:16-3:20] (confidence: -0.267)
+  "Per il fatto che ha delle fee che costano poco, quindi è l'unica alternativa."
+
+[3:20-3:25] (confidence: -0.267)
+  "Però il book non è democratico come quello crypto, quindi assolutamente consiglio a chi"
+
+[3:25-3:32] (confidence: -0.267)
+  "vuole iniziare di operare sul mondo crypto usando Binance, gli altri hanno dei book onor"
+
+[3:32-3:36] (confidence: -0.267)
+  "aggruppabili o comunque hanno scambi nettamente inferiori, quindi hanno questa sfiga."
+
+[3:36-3:41] (confidence: -0.267)
+  "Io perché in questo momento non sto operando su Binance?"
+
+[3:41-3:47] (confidence: -0.252)
+  "Perché comunque dipende dalle orarie, quindi io adesso mia figlia non sta andando a scuola,"
+
+[3:47-3:54] (confidence: -0.252)
+  "vacanza, a casa, le scuole sono chiuse e quindi mi sto svegliando più tardi, mi sveglio"
+
+[3:54-4:01] (confidence: -0.252)
+  "più o meno verso le 8, 8.15 e quando mi sveglio le 7.15 devo aprire tutte queste cose, devo"
+
+[4:01-4:07] (confidence: -0.252)
+  "controllare i grafici di chiusura e laterizzazione, quindi in solito controllo i grafici a daily,"
+
+[5:21-5:28] (confidence: -0.211)
+  "solo sul Nasdaq che apre alle 3.30 e poi farmi il cambio candela e dopo libero tutta la mattina,"
+
+[5:28-5:32] (confidence: -0.211)
+  "insomma eccetera, quindi dipende un po' dagli orari che cosa voglio fare, poi ovvio che se c'è la"
+
+[5:32-5:36] (confidence: -0.211)
+  "bimba che si sveglia per andare a scuola alle 7 mi conviene comunque stare su mercati diversi,"
+
+[5:36-5:42] (confidence: -0.211)
+  "quindi magari mi posso gestire diciamo in maniera diversa, quindi il vantaggio del mondo crypto,"
+
+[5:42-5:50] (confidence: -0.211)
+  "book, fee bassissime per cifre basse, invece il contro è che se per esempio operare con 50 mila euro,"
+
+[6:42-6:49] (confidence: -0.232)
+  "io ho questo vantaggio qua anche il nasdaq se mi metto a fare tante operazioni anche lì andrei"
+
+[6:49-6:55] (confidence: -0.232)
+  "a spendere sui 3 dollari all'inizio costava tanto poi dopo insomma se diventa il lavoro principale"
+
+[6:55-6:59] (confidence: -0.232)
+  "diventa il nasdaq dopo si abbassa in torno ai 3 dollari ma qualsiasi cifra, quindi questo è un"
+
+[6:59-7:04] (confidence: -0.232)
+  "grosso vantaggio quindi il nasdaq sicuramente è più completo rispetto a piazza affari assolutamente"
+
+[8:24-8:32] (confidence: -0.197)
+  "sono raggruppabili non si può scendere di questo raggruppamento invece nel mondo crypto può"
+
+[8:32-8:40] (confidence: -0.197)
+  "arrivare al millesimo ok quindi hai bisogno di raggrupparlo e rispetto a nasdaq anche nasdaq"
+
+[8:40-8:45] (confidence: -0.197)
+  "io con webull quando opero su nasdaq uso webull che è un abbonamento che costa poco mi ricordo"
+
+[8:45-8:50] (confidence: -0.197)
+  "sia tipo 3 euro al mese e li riesce a avere un book infinito riesce a raggrupparlo addirittura"
+
+[10:35-10:39] (confidence: -0.182)
+  "andate a vedere il video che ho fatto sul book per me è un vantaggio troppo grande ma ovvio che"
+
+[10:39-10:45] (confidence: -0.182)
+  "se domani non ci fosse non ci fosse il mondo crypto non ci fosse il mondo azionario ci fosse"
+
+[10:45-10:53] (confidence: -0.182)
+  "solo il so ci fosse solo il forex e operare sul forex tenendo i grafici più puliti possibili vi"
+
+[10:53-11:00] (confidence: -0.182)
+  "consiglio di operare non sotto time frame un'ora e niente non userai il book quindi non avrei più"
+
+[11:00-11:08] (confidence: -0.176)
+  "quel tipo di vantaggio che mi può aiutare tantissimo sarebbe utile per i falsi break out"
+
+[11:08-11:12] (confidence: -0.176)
+  "eccetera quando hai il book spesso se vedi dei livelli troppo grandi eccetera neanche fai l'ingresso"
+
+[11:12-11:17] (confidence: -0.176)
+  "o ti prepari per andare short quindi hai un vantaggio in meno quindi il forex lo tengo per ultimo"
+
+[11:17-11:26] (confidence: -0.176)
+  "anche gli indici operare sugli indici su qualsiasi altra cosa che non ha il book lo tengo per ultimo"
+
+[12:47-12:54] (confidence: -0.243)
+  "ma c'è lo 0 1 fallo 1 per cento se tu operi su bitcoin con leva 10 è come se tu stessi facendo"
+
+[12:54-12:59] (confidence: -0.243)
+  "la stessa cosa hai lo stesso rischio stesso un desimo rischio che è uno su bitcoin sta lavorando"
+
+[12:59-13:05] (confidence: -0.243)
+  "leva 10 ma si muove 10 volte meno con l'altro non stai usando la leva ma si muove 10 volte di più"
+
+[13:05-13:13] (confidence: -0.243)
+  "ok quindi mondo forex si si muove ancora meno userai una leva ancora più alta ma è come se"
+
+[15:25-15:31] (confidence: -0.2)
+  "like se vi è piaciuto scrivete nei commenti se non avete capito qualcosa e iscrivete al canale ciao"
+

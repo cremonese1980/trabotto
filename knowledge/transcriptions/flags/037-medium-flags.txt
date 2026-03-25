@@ -1,0 +1,80 @@
+# Low-confidence segments for: 037_+7243_USDT_SU_LUNA_CHE_CROLLA_-94%_Ecco_come_ho_fatto_Analisi_Tecnica_dei_trade.mp3
+# Total flagged: 25
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.475)
+  "Ciao a tutti, voi siete su Scapino Bull. Allora andiamo ad analizzare questa giornata di"
+
+[0:05-0:09] (confidence: -0.475)
+  "Mega Crawly dove sono andato solo long. Vediamo di capire se si può guadagnare"
+
+[0:09-0:17] (confidence: -0.475)
+  "andando solo long con dei super mega hype crawly. Si, là."
+
+[2:40-2:45] (confidence: -0.401)
+  "come si fa a guadagnare dando solo long senza niente. Questo video di ieri Panico Paura e"
+
+[2:45-2:54] (confidence: -0.401)
+  "stamattina. Bene prima operazione questo qua. Luna quindi le 10.10. Primo rimbalzino. Time frame"
+
+[2:54-3:04] (confidence: -0.401)
+  "a un minuto. Sembra 30 ma è un minuto. Qua lo vedete qua. E niente questo era un bad,"
+
+[5:18-5:24] (confidence: -0.33)
+  "superano il massimo. Ho fatto un ingresso, solo problema 10. La candela dopo, quindi praticamente"
+
+[5:24-5:38] (confidence: -0.33)
+  "in un minuto e pochi secondi balzo del 17.92%. Questo è il 17.92% vedete? Comprato con 10.000"
+
+[5:38-5:51] (confidence: -0.284)
+  "ha venduto 11.800 più 1.776 USDT in poco più di un minuto. Questo è un BAD bellissimo. Ovviamente"
+
+[5:51-5:55] (confidence: -0.284)
+  "per immaginare questa candela quant'era folla. Disceso, ho dovuto aspettare le candelline per"
+
+[5:55-6:01] (confidence: -0.284)
+  "scaricarle perché non puoi lavorare con queste candelle così enormi. Rischi di prendere rischia"
+
+[6:01-6:05] (confidence: -0.284)
+  "fiammormi quindi aspettate che si rilasso un attimo. Candelline che comunque queste già"
+
+[6:05-6:11] (confidence: -0.31)
+  "sono candelle grandi. Livello BAD almeno due candele sotto quindi non importa ovviamente le due"
+
+[6:11-6:17] (confidence: -0.31)
+  "candele che siano rosse, non importa. Importante che non superano lo spike. Ingresso stop limit e"
+
+[6:17-6:23] (confidence: -0.31)
+  "chiusura subito dopo. 17.92% questo è per un BAD, è il mio record, mai fatto un BAD che"
+
+[6:23-6:29] (confidence: -0.31)
+  "mi desse 17.92 però qua è tutto sballato. Quanto stava facendo l'una? Meno 94% quindi qua ho guadagnato"
+
+[6:29-6:38] (confidence: -0.237)
+  "di 17 quasi 18% in un minuto con qualcosa che fa meno 94%. Lo state capendo questo? Ricordatevelo"
+
+[6:38-6:43] (confidence: -0.237)
+  "ok? Quando avete i vicini di casa che non capisce nulla di mercati azionari spiegate di questo con"
+
+[6:43-6:48] (confidence: -0.237)
+  "un titolo che dice come fate guadagnare tutto è crollato nessuno sta guadagnando. Ragazzi questo"
+
+[6:48-6:53] (confidence: -0.237)
+  "non siamo parlando di short, siamo parlando di dare long a meno 94%. Aspetta la conformazione e si fa"
+
+[6:53-7:01] (confidence: -0.304)
+  "con il mio nuovo record per i BAD. Qua invece, bellissimo questo qua lo vedete, time frame 30"
+
+[7:01-7:08] (confidence: -0.304)
+  "minuti che è andato a testare la 5, la 5 com'andava, qua ha fatto poi un mega rimbalzo,"
+
+[7:08-7:13] (confidence: -0.304)
+  "cioè questa è una candela che questa candela è arrivata quasi 8 e poi è sceso a time frame 30"
+
+[7:13-7:17] (confidence: -0.304)
+  "minuti, è sceso di tantissimi, è andata quasi 8, è sceso a 3.2 dove poi ho fatto l'ingresso ma"
+
+[7:17-7:22] (confidence: -0.304)
+  "l'ho comprato sul supporto dell'EMA 5 a time frame 30 minuti. Guardiamolo meglio a un minuto,"
+

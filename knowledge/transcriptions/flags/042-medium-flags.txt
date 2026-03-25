@@ -1,0 +1,41 @@
+# Low-confidence segments for: 042_Tasse_Criptovalute_2023_Quante_tasse_devo_pagare_e_come_Quadro_RW.mp3
+# Total flagged: 12
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:54-4:00] (confidence: -0.221)
+  "un cash out sostanziale. Quindi, cash out come lo realizzo? Lo realizzo con le monete"
+
+[4:00-4:08] (confidence: -0.221)
+  "fiat, l'euro, il dollaro, lo yen, il franco, il svizzero, la sterlina. Non faccio cash"
+
+[4:08-4:16] (confidence: -0.221)
+  "out con tutto ciò che è criptovaluta, pnb, usdt. Importante anche certificare, e questo"
+
+[4:16-4:22] (confidence: -0.221)
+  "ce lo dovrà dire l'agenzia delle entrate, dopo vediamo anche perché, se i usdt, che"
+
+[4:22-4:27] (confidence: -0.153)
+  "è una stablecoin, deve essere considerata una criptovaluta oppure un qualcosa di diverso"
+
+[4:27-4:32] (confidence: -0.153)
+  "dalla criptovaluta. Nel quel caso, a quel punto dovremmo fare delle altre considerazioni."
+
+[4:32-4:39] (confidence: -0.153)
+  "In questo momento, usdt è criptovaluta, dunque niente tassazione. Stiamo parlando della normativa"
+
+[4:39-4:48] (confidence: -0.153)
+  "che parte dal 1 gennaio 2023. Io adesso ti blocco un attimo così, ti riprendi e ti faccio"
+
+[16:15-16:21] (confidence: -0.111)
+  "fondi all'interno delle criptovalute io posso averne versati posso averli tenuti posso averli"
+
+[16:21-16:27] (confidence: -0.111)
+  "prelevati e quindi è chiaro che la storia la devo anche poi documentare all'agenzia dalle"
+
+[16:27-16:35] (confidence: -0.111)
+  "entrate e naturalmente trascrivere nei quadri che abbiamo alla slide 10 e 11 e quindi abbiamo la"
+
+[16:35-16:43] (confidence: -0.111)
+  "slide 10 che rappresenta l'rt e ovviamente si parla della tassazione quindi qui vanno introdotte"
+

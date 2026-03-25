@@ -1,0 +1,179 @@
+# Low-confidence segments for: 045_Trading_in_Vacanza_e_possibile_Setup_da_viaggio_e_pagare_con_le_Cripto.mp3
+# Total flagged: 58
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:27-0:32] (confidence: -0.268)
+  "liberare dai mercati ma i mercati sono sempre con me perché è la mia passione. Ma comunque"
+
+[0:32-0:39] (confidence: -0.268)
+  "a voi può servire non tanto se siete pazzi come me che siete trading centrici, ma per"
+
+[0:39-0:45] (confidence: -0.268)
+  "un fatto di lavorate e avete poco tempo, come si fa a gestire questa cosa? Allora ricordiamo,"
+
+[0:45-0:51] (confidence: -0.268)
+  "anzi qua faccio delle due secondi del video, veramente incredibile, siamo in Italia, non"
+
+[1:40-1:47] (confidence: -0.221)
+  "fare comunque, ok? Vi faccio capire un po' di cose, quindi non tutti hanno tutti i miei"
+
+[1:47-1:54] (confidence: -0.221)
+  "monitor, no? Questo è il mio setup, ho 7 monitor, 4, 5, 6, 7 monitor, quando sono in"
+
+[1:54-1:59] (confidence: -0.221)
+  "giro ho un altro tipo di setup, poi vi faccio vedere la fine, anche quello perché avete"
+
+[1:59-2:03] (confidence: -0.221)
+  "chiesto ma col camper come fai con la tua setup da viaggio? Ve lo faccio vedere, ve"
+
+[2:03-2:08] (confidence: -0.221)
+  "lo spiego un po' meglio, quindi non tutti possono avere tutti questi monitor, come si"
+
+[2:08-2:12] (confidence: -0.408)
+  "fa? Si può fare sia dal cellulare, come io ho fatto in questa vacanza, non ho usato"
+
+[2:12-2:18] (confidence: -0.408)
+  "nemmeno una volta il computer, ma si può fare con il cellulare perché siamo ad un"
+
+[2:18-2:25] (confidence: -0.408)
+  "livello decisamente più avanzato, che è il Mefineco, che è stato brano, questo è un"
+
+[2:25-2:33] (confidence: -0.408)
+  "problema di Bybit, e poi spostare in maniera molto semplice con il cellulare, ma il segreto"
+
+[3:25-3:31] (confidence: -0.169)
+  "abbassare e se devo alzare lo stop loss, se devo abbassare magari o allontanare il target"
+
+[3:31-3:37] (confidence: -0.169)
+  "price, insomma faccio un giro veloce perché appunto lavorando, e qua il segreto, con"
+
+[3:37-3:42] (confidence: -0.169)
+  "i time frame grandi c'è anche la possibilità di poter integrare anche le vacanze, anche"
+
+[3:42-3:48] (confidence: -0.169)
+  "stare con la famiglia senza essere pesante, ricordatevi? Il mondo non gira attorno questa"
+
+[3:48-3:52] (confidence: -0.169)
+  "cosa che può essere la vostra passione, può essere il vostro lavoro, bisogna anche sapere"
+
+[3:52-3:59] (confidence: -0.265)
+  "gestire e mediare con la famiglia o con gli amici o con quel che è. Però qua tranquillamente"
+
+[3:59-4:03] (confidence: -0.265)
+  "è un negozio, ti auto forno un attimo il cellulare e questo è il grande vantaggio,"
+
+[4:03-4:08] (confidence: -0.265)
+  "il cellulare ce l'abbiamo comunque dietro, e controlli e guardi un attimo la situazione,"
+
+[4:08-4:15] (confidence: -0.265)
+  "non avevo solo quello, poi faccio anche capire, ecco qua sono sull'autobus addirittura, questo"
+
+[4:15-4:21] (confidence: -0.265)
+  "appunto che dicevo ho fatto un giro col camper, itinerante veramente incredibile, ho scoperto"
+
+[7:32-7:39] (confidence: -0.247)
+  "capita mi sono comunque portato a casa a 376 dollari, il target iniziale era a 1000,"
+
+[7:39-7:44] (confidence: -0.247)
+  "poi qua in realtà l'avevo alzato a 1500, ma comunque va bene. L'importante è sempre"
+
+[7:44-7:49] (confidence: -0.247)
+  "appunto capire che era un daily pazzesco questo qua, si va verso un tempo, quindi qua ha fatto"
+
+[7:49-7:57] (confidence: -0.247)
+  "il secondo tocco fintato, l'atterizzazione finta della 10 riassorbito, qua praticamente"
+
+[7:57-8:01] (confidence: -0.247)
+  "insomma non dico che è un calcio di rigore però i terzi tocchi daily con gli ultimi"
+
+[11:32-11:38] (confidence: -0.193)
+  "riavvicinare, quindi magari già diventa uno stop dello 0,5%, una volta che vi fa un'accelerazione lo"
+
+[11:38-11:43] (confidence: -0.193)
+  "spostiamo a zero e siamo a posto, ok? Dopo mal che vada succede come quello che è successo a me,"
+
+[11:43-11:49] (confidence: -0.193)
+  "che ho da prendermi lo stop, ma io dopo ho sempre alzato, l'ho alzato sempre di più, ok? Quindi qua"
+
+[11:49-11:53] (confidence: -0.193)
+  "dopo lo stop l'ho sempre alzato sempre di più, sono partito con lo stop dell'1%, poi l'ho alzato"
+
+[11:53-12:00] (confidence: -0.193)
+  "sempre di più, sempre di più, alla fine è stato filato male, ma comunque è portato a casa di 374, 76 euro,"
+
+[12:49-12:55] (confidence: -0.206)
+  "esattamente lo stesso, questi per esempio magari un po' meno, questo magari un po' meno perché"
+
+[12:55-13:01] (confidence: -0.206)
+  "abbiamo un incrocio e abbiamo l'EMA in testa, quindi anche se abbiamo un'allaterizzazione,"
+
+[13:01-13:06] (confidence: -0.206)
+  "sta arrivando un'allaterizzazione a livello importante, questo non lo calcolerei, perché"
+
+[13:06-13:12] (confidence: -0.206)
+  "abbiamo l'EMA troppo vicino, invece negli altri esempi avete visto abbiamo l'EMA più distante,"
+
+[13:12-13:18] (confidence: -0.206)
+  "quindi qua mi permette di poter andare a target prima dell'EMA, ma ovviamente il top di gamma era"
+
+[15:53-15:59] (confidence: -0.239)
+  "livelli ovviamente ci mettete più tempo ma comunque mettete lì e guardate sempre dall'applicazione, scrollate"
+
+[15:59-16:05] (confidence: -0.239)
+  "la classifica, scrollate, trovate, finché non trovate una conformazione, ma deve esserci un daily"
+
+[16:05-16:13] (confidence: -0.239)
+  "estremamente convincente, altrimenti non ne vale la pena, quindi ricapitolando, non vi serve per forza"
+
+[16:13-16:19] (confidence: -0.239)
+  "il bull web eccetera, potete tranquillamente mettervi lì, guardate la classifica, guardate migliori, peggiori,"
+
+[18:08-18:13] (confidence: -0.202)
+  "fillati quando non entrate, ma noi della Boof Family siamo più furbi perché lo stop lo inseriamo"
+
+[18:13-18:19] (confidence: -0.202)
+  "prima, quindi cerchiamo un livello, cerchiamo un livello, quindi qua magari cerchiamo il livello"
+
+[18:19-18:24] (confidence: -0.202)
+  "di rottura stralavorato che romperebbe la 60 che poi quando ci ritornerebbe romperebbe anche la 10,"
+
+[18:24-18:33] (confidence: -0.202)
+  "e noi inseriamo già prima uno stop loss di quello che può essere sensato, adesso beer paga"
+
+[18:33-18:37] (confidence: -0.172)
+  "particolarmente tanto, ma possiamo mettere il nostro stop all'1% già prima, quindi se noi siamo"
+
+[18:37-18:46] (confidence: -0.172)
+  "in giro con la montagna, veniamo fillati e purtroppo, niente dopo, purtroppo fa il sputino e torna indietro,"
+
+[18:46-18:51] (confidence: -0.172)
+  "io dopo quattro ore riprende, perché in quella zona lì della montagna e prende dopo quattro ore"
+
+[18:51-18:56] (confidence: -0.172)
+  "quando è finito il giro, vado a vedere, magari ha fatto il suo sputino e poi va a meno 15,"
+
+[18:56-19:02] (confidence: -0.172)
+  "ma io me ne sto fregando perché comunque ho perso l'1% e basta, ok? Tanto noi lo inseriamo prima,"
+
+[24:51-24:55] (confidence: -0.163)
+  "in piscina anche state facendo shopping anche se state facendo l'aperitivo anche se state pagando"
+
+[24:55-25:02] (confidence: -0.163)
+  "al supermercato o chissà dove state facendo il vostro pagamento anche in quel momento lì se hai"
+
+[25:02-25:08] (confidence: -0.163)
+  "lo stop loss non c'è nessun problema perché lo stop loss poi partirà quindi non c'è nessun problema"
+
+[25:08-25:15] (confidence: -0.163)
+  "lo stop loss anche se state pagando mentre siete un negozio non c'è nessun problema verrà preso"
+
+[25:15-25:20] (confidence: -0.163)
+  "e verrete fillati ok questa è la grandissima fortuna del mondo della criptovaluta non esiste"
+
+[30:05-30:11] (confidence: -0.201)
+  "mettete un like iscrivetevi al canale se avete domande mettetele punto nei commenti che poi"
+
+[30:11-30:15] (confidence: -0.201)
+  "lo andiamo a analizzare insieme a casa bull o in chat ciao a tutti"
+

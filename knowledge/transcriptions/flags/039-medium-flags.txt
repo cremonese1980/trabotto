@@ -1,0 +1,101 @@
+# Low-confidence segments for: 039_Come_usare_lo_STOP_LOSS_sfruttando_la_MATEMATICA_E_LA_PSICOLOGIA_Tutorial.mp3
+# Total flagged: 32
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:45-1:50] (confidence: -0.196)
+  "nell'oldare quindi non va bene quindi prendiamo questo esempio qua ok? questo è l'esempio molto"
+
+[1:50-1:57] (confidence: -0.196)
+  "bello di bitcoin che aveva il suo bad nel daily bellissimo dove ha fatto la sua rottura e poi"
+
+[1:57-2:01] (confidence: -0.196)
+  "chiuso sotto chiudendo sotto quindi chiudendo dentro i bad noi sappiamo che appunto non ha"
+
+[2:01-2:06] (confidence: -0.196)
+  "funzionato bisogna appare... bisogna uscire quindi bisogna uscire massimo con la chiusura a candela"
+
+[2:06-2:12] (confidence: -0.196)
+  "qua quindi anche se che se questo sia un daily che sia time frame 30 minuti che sia a 5 minuti a"
+
+[18:13-18:22] (confidence: -0.213)
+  "usciamo di nuovo ok no mettiamoci contro la matematica non ha senso che non ha proprio"
+
+[18:22-18:31] (confidence: -0.213)
+  "senso fare far sta cosa quindi cerchiamo di capire io per primo ho dovuto lottare contro"
+
+[18:31-18:35] (confidence: -0.213)
+  "la psicologia questo è quando iniziavo eccetera che prendevo gli schiaffoni e andavo poi a correre"
+
+[18:35-18:41] (confidence: -0.213)
+  "andavo a fare sport andavo a fare tutte queste cose perché non era possibile che io facevo quelle"
+
+[24:40-24:49] (confidence: -0.46)
+  "compro metto lo stop a un 1% fine ok fine discorso proprio non mette pensieri ok"
+
+[24:49-24:57] (confidence: -0.46)
+  "poi c'è un'amanda terzo tocco se al superamento del livello fa uno sputo tuoi indietro"
+
+[30:32-30:38] (confidence: -0.152)
+  "calcolate che da un momento che voi entrate a questo livello qua calcolate all'inizio una"
+
+[30:38-30:42] (confidence: -0.152)
+  "zona di perdita ovviamente perché insomma può esserci che lo spike vi vada a prendere quindi"
+
+[30:42-30:48] (confidence: -0.152)
+  "calcolate all'inizio come in questa casa non so un 1% lo 0 5% dovete vedere in base alla candela"
+
+[30:48-30:53] (confidence: -0.152)
+  "gli date la possibilità di poter partire se vedete che inizia a essere debole inserite il"
+
+[30:53-31:01] (confidence: -0.279)
+  "vostro stop limit e siete a posto ok basta poi andate a vedere le sfumature del bad nello"
+
+[31:01-31:05] (confidence: -0.279)
+  "specifico ma soprattutto andate a vedere le tecniche di trading e capite che c'è sempre"
+
+[31:05-31:12] (confidence: -0.279)
+  "un livello dove deve partire se quel livello li poi dopo non parte tutto scera ok non fatevi"
+
+[31:12-31:19] (confidence: -0.279)
+  "fregare deve partire andiamo avanti con altre domande c'è la bupali sempre di stop è davvero"
+
+[35:15-35:22] (confidence: -0.137)
+  "veloci c'è tutto ok trovate qualsiasi cosa io ci ho messo 5 anni prima di diventare un professionista"
+
+[35:22-35:28] (confidence: -0.137)
+  "ok per diventare un dottore un chirurgo non è che basta un anno di video su youtube ok sono"
+
+[35:28-35:33] (confidence: -0.137)
+  "mestieri difficili questi non dovete aver fretta perché tanto è gratis studiate tempo perso fate"
+
+[35:33-35:38] (confidence: -0.137)
+  "queste cose qua ma c'è bisogno di è un mestiere difficile c'è bisogno di allenarvi di allenamento"
+
+[35:38-35:45] (confidence: -0.137)
+  "per questo vi dico di non entrare non iniziare con 10.000 ma iniziare con 50 quando con 50"
+
+[36:32-36:40] (confidence: -0.165)
+  "a vedere tutte le tecniche ogni tecnica ha un livello dove deve partire ok ogni tecnica"
+
+[36:40-36:47] (confidence: -0.165)
+  "ha un livello dove da lì ci aspettiamo che parta ok se non lo fa dovete uscire subito"
+
+[36:47-36:53] (confidence: -0.165)
+  "abituatevi a fare questo capirete che vanno bene anche tre stop di seguito ma perderete pochissimo"
+
+[36:53-36:59] (confidence: -0.165)
+  "delle volte 0 delle volte addirittura qualcosina in positivo delle volte perderete lo 0 5 per cento"
+
+[39:13-39:19] (confidence: -0.141)
+  "questi tanto li trovate gratis ce n'è anche in biblioteca ricardo ogni mese li va a giornare"
+
+[39:19-39:26] (confidence: -0.141)
+  "ce n'è migliaia a forza di guardare dopo dite io quando parlo di perfezione perché perché"
+
+[39:26-39:31] (confidence: -0.141)
+  "così deve essere deve essere qualcosa di bello pulito e funziona quando funziona sappiamo tutti"
+
+[39:31-39:38] (confidence: -0.141)
+  "com'è ok sappiamo tutti com'è quando funziona bene ok li siamo tutti bravi facciamo un bad rompe"
+
