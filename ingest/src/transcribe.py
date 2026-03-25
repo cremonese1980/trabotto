@@ -34,7 +34,7 @@ from pathlib import Path
 # Confidence threshold for flagging segments.
 # Whisper avg_logprob: closer to 0 = more confident, very negative = less confident.
 # -0.7 is a reasonable threshold; adjust based on results.
-FLAG_THRESHOLD = -0.7
+FLAG_THRESHOLD = -0.4
 
 # Whisper model. "medium" is best for Italian without a beefy GPU.
 # Use "large" if you have a good GPU (RTX 3060+).
@@ -60,6 +60,8 @@ def download_audio(url: str, output_dir: Path) -> list[Path]:
         "--output", template,
         "--restrict-filenames",       # safe filenames (no special chars)
         "--no-overwrites",
+        "--cookies-from-browser", "chrome",
+        "--remote-components", "ejs:github",
         url
     ]
 

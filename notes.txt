@@ -41,3 +41,18 @@ python ingest/src/transcribe.py "https://www.youtube.com/watch?v=FTar9aXmBYs" --
 ## video 3
 python ingest/src/transcribe.py "https://www.youtube.com/watch?v=bEpWpvtJWDg" --model medium
 
+
+
+______________________________________
+CODEX PROMPT
+
+Read the file knowledge/gpt-transcription-prompt.md — it contains the extraction rules and YAML format you must follow strictly. Ignore the "Instructions for Gabriele" section at the top — follow only the SYSTEM PROMPT section.
+
+Then, for each X-medium.txt file in both knowledge/transcriptions/neofiti and  knowledge/transcriptions/tecniche-di-trading (sorted by filename):
+1. Read the transcription
+2. Ignore X-medium-flags.txt
+2. Extract trading rules following the format and rules in gpt-transcription-prompt.md
+3. Save the output as knowledge/rules/neofiti{same_filename_without_extension}.yml or knowledge/rules/tecniche-di-trading{same_filename_without_extension}.yml accordingly
+
+Process all files in order. Output ONLY valid YAML per the format spec. No commentary.
+
