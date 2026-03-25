@@ -1,0 +1,146 @@
+video:
+  id: YT_BULL_TECNICHE_001
+  series: tecniche
+  title: "Terzo Tocco Plus / Plus Plus su timeframe 30 minuti"
+  video_index: 1
+  duration_minutes: 27
+
+entities:
+  - id: BULL_T_001
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    source:
+      timecode: "00:46-00:59"
+    conditions:
+      - timeframe == 30m
+      - setup_name == TERZO_TOCCO
+    action:
+      - allow_setup_evaluation
+      - reject_if_timeframe_below_30m
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Bull definisce il 30 minuti come timeframe minimo per questa conformazione."
+    notes: "Regola strutturale della tecnica, non opzionale."
+
+  - id: BULL_T_002
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    source:
+      timecode: "02:39-05:14"
+    conditions:
+      - first_touch_occurs_on_previous_day == true
+      - current_price_approaches_same_level_for_third_touch == true
+    action:
+      - classify_setup_as_TERZO_TOCCO_PLUS
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Il 'Plus' richiede almeno un tocco del giorno precedente sul livello."
+    notes: "Bull suggerisce uso della vista H24 per individuare meglio il primo tocco di ieri."
+
+  - id: BULL_T_003
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    source:
+      timecode: "05:59-07:11"
+    conditions:
+      - setup_is_terzo_tocco_plus == true
+      - level_is_all_time_high_or_all_time_low == true
+    action:
+      - classify_setup_as_TERZO_TOCCO_PLUS_PLUS
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "L'all time high/low aggiunge un trigger ulteriore e aumenta il potenziale di accelerazione."
+    notes: "Versione a maggiore intensità del setup."
+
+  - id: BULL_T_004
+    entity_type: TRADE_EXECUTION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    source:
+      timecode: "08:56-09:11"
+    conditions:
+      - price_touches_or_exceeds_trigger_level_by_one_tick == true
+    action:
+      - open_position_on_breakout
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Per Bull il trigger è attivo appena il livello viene superato anche di un tick."
+    notes: "Serve segnare il livello con precisione millimetrica."
+
+  - id: BULL_T_005
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    source:
+      timecode: "11:37-12:34"
+    conditions:
+      - trigger_level_broken == true
+      - immediate_expansion_absent == true
+    action:
+      - exit_position_without_waiting_ema10_30m
+      - if_price_closes_below_ema10_5m_then_force_exit
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Se il livello trigger non produce subito accelerazione, Bull considera il pattern anomalo e va chiuso presto."
+    notes: "L'uscita rapida protegge dal fake breakout, frequente quando la spinta iniziale manca."
+
+  - id: BULL_T_006
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "13:39-14:07"
+    conditions:
+      - entry_candle_range_pct >= 5
+    action:
+      - reduce_position_size_by_50pct_or_more
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Bull adatta la size alla distanza stop, riducendo l'esposizione quando la candela è ampia."
+    notes: "Gestione rischio proporzionale alla volatilità della candela di ingresso."
+
+  - id: BULL_T_007
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    source:
+      timecode: "14:55-15:27"
+    conditions:
+      - breakout_candle_30m_closed == true
+    action:
+      - close_position_by_end_of_first_30m_candle
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Bull preferisce monetizzare entro la prima candela da 30 minuti dopo la rottura."
+    notes: "La probabilità che la seconda 30m estenda con stessa forza è descritta come non maggioritaria."
+
+  - id: BULL_T_CTX_001
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "01:05-01:19"
+    statement: "Per i neofiti Bull consiglia di iniziare da questa tecnica prima di setup più complessi."
+    rationale: "Ha struttura replicabile e criteri chiari di selezione."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 1
+  core_message: "Il video formalizza il Terzo Tocco Plus su 30m: primo tocco nel giorno precedente, trigger netto del livello e gestione molto disciplinata dell'uscita se l'espansione non parte subito. La versione Plus Plus aggiunge all time high/low come ulteriore trigger."

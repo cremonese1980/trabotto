@@ -1,0 +1,123 @@
+video:
+  id: YT_BULL_NEOFITI_002
+  series: principianti
+  title: "Cos'è il book: domanda/offerta spiegata con analogia immobiliare"
+  video_index: 2
+  duration_minutes: 18
+
+entities:
+  - id: BULL_P_001
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    source:
+      timecode: "12:29-12:58"
+    conditions:
+      - ask_side_sorted_by_price_ascending == true
+      - bid_side_sorted_by_price_descending == true
+    action:
+      - identify_nearest_ask_as_high_urgency_seller
+      - identify_nearest_bid_as_high_urgency_buyer
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull usa il book per distinguere urgenza di chi vende e di chi compra in base alla distanza dal prezzo corrente."
+    notes: "La lettura è microstrutturale e vale in tempo reale su qualsiasi mercato con order book."
+
+  - id: BULL_P_002
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "12:54-13:04"
+    conditions:
+      - execution_priority == IMMEDIATE
+      - side == BUY
+    action:
+      - cross_spread_and_execute_at_ask
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Per comprare subito bisogna colpire i venditori in ask, accettando prezzi più alti."
+    notes: "Regola simmetrica: per vendere subito si colpisce il bid."
+
+  - id: BULL_P_003
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "12:54-13:04"
+    conditions:
+      - execution_priority == IMMEDIATE
+      - side == SELL
+    action:
+      - cross_spread_and_execute_at_bid
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Per vendere subito bisogna accettare le proposte dei compratori sul lato bid."
+    notes: "L'urgenza influenza il prezzo di esecuzione."
+
+  - id: BULL_P_004
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    source:
+      timecode: "13:35-15:59"
+    conditions:
+      - aggressive_buy_market_orders_increase == true
+      - available_ask_liquidity_near_price_is_thin == true
+    action:
+      - expect_fast_up_move
+      - monitor_for_later_ask_replenishment_and_reversal
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull collega spike rialzista a forte pressione d'acquisto e successivo calo quando arrivano nuovi venditori."
+    notes: "Dinamica tipica di espansione e riassorbimento nel book."
+
+  - id: BULL_P_005
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "16:47-17:31"
+    conditions:
+      - ema_trend_alignment == BULLISH
+      - momentum_buyers_detected == true
+    action:
+      - join_trend_long
+      - exit_into_late_buying_pressure
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull propone di seguire il flusso dei compratori quando il trend è già avviato."
+    notes: "È una regola di trend-following legata a lettura combinata di EMA e ordine aggressivo."
+
+  - id: BULL_P_CTX_001
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "00:45-01:35"
+    statement: "Il video ha scopo didattico base: capire il book prima di fare analisi tecnica avanzata."
+    rationale: "Costruisce fondamenta concettuali per i principianti."
+
+  - id: BULL_P_CTX_002
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "16:10-16:35"
+    statement: "La spiegazione è un esperimento educativo per rendere la playlist neofiti più accessibile."
+    rationale: "Aiuta i nuovi utenti a ridurre il gap iniziale di comprensione."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Il video traduce il funzionamento del book in logica domanda/offerta: urgenza e quantità sui due lati determinano esecuzione e movimento del prezzo. L'obiettivo è insegnare a leggere bid/ask e spread in modo operativo elementare."

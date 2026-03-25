@@ -1,0 +1,149 @@
+video:
+  id: YT_BULL_NEOFITI_001
+  series: principianti
+  title: "Come iniziare nel trading: disciplina, book e gestione del rischio"
+  video_index: 1
+  duration_minutes: 15
+
+entities:
+  - id: BULL_P_001
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    source:
+      timecode: "01:32-02:41"
+    conditions:
+      - order_book_grouping_level >= 1
+      - order_book_level_notional_usd >= 100000
+      - order_book_level_persistence_seconds >= 5
+    action:
+      - classify_level_as_support_or_resistance_based_on_side
+      - monitor_price_reaction_at_level_before_entry
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull spiega che i livelli grossi e persistenti nel book sono zone operative da osservare prima di tradare."
+    notes: "Valutare anche se il muro si rigenera dopo essere stato colpito. Livelli che spariscono subito sono meno affidabili."
+
+  - id: BULL_P_002
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    source:
+      timecode: "02:46-03:22"
+    conditions:
+      - resistance_level_marked == true
+      - price_retests_marked_level == true
+    action:
+      - simulate_breakout_entry_at_marked_level
+      - validate_if_breakout_holds_or_fails
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull propone di tracciare livelli e testare la reazione del prezzo per costruire lettura operativa senza rischio."
+    notes: "Regola usata come esercizio di addestramento prima dell'operatività reale."
+
+  - id: BULL_P_003
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    source:
+      timecode: "09:43-10:30"
+    conditions:
+      - leverage <= 10
+      - margin_type == ISOLATED
+      - position_notional_usd <= 10
+    action:
+      - open_small_test_position
+      - cap_max_loss_to_position_margin_only
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull impone leva bassa, margine isolato e size minima per limitare la perdita monetaria durante l'apprendimento."
+    notes: "L'esempio operativo è account piccolo con uso parziale del capitale disponibile."
+
+  - id: BULL_P_004
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    source:
+      timecode: "09:43-10:30"
+    conditions:
+      - leverage == 10
+      - price_move_against_position_pct >= 10
+    action:
+      - close_position_due_to_hard_stop
+    stop_loss: "hard_stop_pct: 10"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Con leva 10 Bull usa la regola pratica del -10% come hard stop sulla singola operazione didattica."
+    notes: "Il rischio è definito sul margine della posizione, non sull'intero saldo account."
+
+  - id: BULL_P_005
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    source:
+      timecode: "06:33-06:58"
+    conditions:
+      - price_breaks_below_ema60 == true
+      - ema60_role_changes_to_resistance == true
+    action:
+      - evaluate_short_setup_toward_ema223
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Bull descrive la perdita di supporto della EMA60 come segnale per cercare short verso il supporto successivo."
+    notes: "La logica è basata su cambio ruolo supporto/resistenza delle medie mobili."
+
+  - id: BULL_P_CTX_001
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "00:13-00:41"
+    statement: "Per diventare trader servono anni di pratica, non pochi video."
+    rationale: "Imposta aspettative realistiche e riduce comportamento impulsivo."
+
+  - id: BULL_P_CTX_002
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "03:45-04:03"
+    statement: "L'osservazione del mercato va fatta per molte ore e per mesi, non in sessioni brevi."
+    rationale: "Bull collega la crescita operativa all'esposizione ripetuta al flusso di mercato."
+
+  - id: BULL_P_CTX_003
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "04:08-04:26"
+    statement: "Evitare di iniziare con capitali alti perché i principianti tendono a perdere rapidamente."
+    rationale: "Riduce il danno economico nella fase iniziale di apprendimento."
+
+  - id: BULL_P_CTX_004
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "05:42-06:16"
+    statement: "L'approccio corretto è fare trading con metodo e regole, non con mentalità da scommessa."
+    rationale: "Separa il processo professionale dal comportamento casuale che porta a perdite."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 4
+  core_message: "Il video imposta le basi per neofiti: osservazione disciplinata di book e prezzo, uso di livelli, e soprattutto controllo del rischio con size ridotta, leva massima 10 e margine isolato. Il focus è imparare il mestiere prima di cercare performance."
+
+transcription_flags:
+  - timecode: "06:33-06:39"
+    original_text: "questa è l'M60"
+    issue: "M60 interpretato come EMA60; verificare l'indicatore esatto usato da Bull."

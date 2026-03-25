@@ -1,0 +1,127 @@
+video:
+  id: YT_BULL_TECNICHE_002
+  series: tecniche
+  title: "Tecnica della candelina: ingresso chiaro e stop stretto"
+  video_index: 2
+  duration_minutes: 18
+
+entities:
+  - id: BULL_T_001
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    source:
+      timecode: "01:32-01:48"
+    conditions:
+      - timeframe >= 5m
+    action:
+      - reject_entries_on_1m_for_beginners
+    applicability:
+      timeframes: [5m, 1h, 1d]
+      market_regime: []
+    rationale: "Bull impone timeframe minimo 5 minuti per ridurre finte rispetto all'1 minuto."
+    notes: "L'1m è citato solo come livello avanzato, non base operativa iniziale."
+
+  - id: BULL_T_002
+    entity_type: TRADE_EXECUTION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    source:
+      timecode: "02:47-03:02"
+    conditions:
+      - candle_type == SMALL_CANDLE
+      - breakout_of_small_candle_high == true
+    action:
+      - enter_at_small_candle_high
+    applicability:
+      timeframes: [5m]
+      market_regime: []
+    rationale: "La candelina fornisce livello di attivazione oggettivo per l'ingresso."
+    notes: "Bull la usa come regola base trasversale alle conformazioni."
+
+  - id: BULL_T_003
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    source:
+      timecode: "02:47-03:18"
+    conditions:
+      - position_opened_on_candelina == true
+      - price_reaches_small_candle_low == true
+    action:
+      - close_position_immediately
+    applicability:
+      timeframes: [5m]
+      market_regime: []
+    rationale: "Il minimo della candelina è lo stop tecnico: se toccato, l'ipotesi è invalidata."
+    notes: "Bull accetta anche stop presi da spike: il livello non dovrebbe essere rotto."
+
+  - id: BULL_T_004
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    source:
+      timecode: "05:29-06:02"
+    conditions:
+      - candelina_stop_distance_pct > 2
+    action:
+      - reduce_position_size_by_50pct
+    applicability:
+      timeframes: [5m]
+      market_regime: []
+    rationale: "Se lo stop è ampio Bull riduce la size per mantenere rischio percentuale gestibile."
+    notes: "Regola di position sizing legata alla dimensione della candela."
+
+  - id: BULL_T_005
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    source:
+      timecode: "10:22-10:33"
+    conditions:
+      - candle_5m_closed_after_entry == true
+      - unrealized_pnl_pct > 0
+    action:
+      - move_stop_to_break_even
+    applicability:
+      timeframes: [5m]
+      market_regime: []
+    rationale: "Bull vuole azzerare rapidamente il rischio quando il movimento parte."
+    notes: "La regola è ripetuta su più esempi del video."
+
+  - id: BULL_T_006
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    source:
+      timecode: "11:38-11:55"
+    conditions:
+      - small_candle_near_ema10 == true
+      - directional_context_confirmed == true
+    action:
+      - prioritize_entry_on_breakout_direction
+    applicability:
+      timeframes: [5m, 1h, 1d]
+      market_regime: []
+    rationale: "Bull usa la candelina vicino alle EMA come segnale di ripartenza del lato dominante."
+    notes: "Applicata sia long sia short nei vari esempi."
+
+  - id: BULL_T_CTX_001
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "00:31-01:12"
+    statement: "La candelina è proposta come tecnica-base per diventare profittevoli con una gestione stop semplice."
+    rationale: "Riduce confusione decisionale e standardizza il processo iniziale."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 1
+  core_message: "Il video codifica una regola operativa minima: entrare solo su candelina, stop sul suo minimo/massimo opposto, timeframe minimo 5m e riduzione size quando lo stop è troppo ampio. La priorità è preservare capitale con stop chiari e ripetibili."

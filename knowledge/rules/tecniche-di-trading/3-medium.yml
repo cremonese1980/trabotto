@@ -1,0 +1,136 @@
+video:
+  id: YT_BULL_TECNICHE_003
+  series: tecniche
+  title: "Tecnica del daily: breakout e rimbalzi su EMA 5/10/60"
+  video_index: 3
+  duration_minutes: 25
+
+entities:
+  - id: BULL_T_001
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    source:
+      timecode: "01:41-03:39"
+    conditions:
+      - timeframe == 1d
+    action:
+      - perform_setup_selection_only_on_daily_chart
+    applicability:
+      timeframes: [1d]
+      market_regime: []
+    rationale: "Bull definisce la tecnica come daily-based e separata dal trading intraday su book."
+    notes: "Il book è dichiarato poco rilevante in questo approccio."
+
+  - id: BULL_T_002
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    source:
+      timecode: "05:23-06:19"
+    conditions:
+      - price_near_period_high == true
+      - price_above_ema5 == true
+      - price_above_ema10 == true
+      - trend_above_ema60 == true
+    action:
+      - allow_long_entry_for_high_breakout_continuation
+    applicability:
+      timeframes: [1d]
+      market_regime: [BULLISH, SIDEWAYS]
+    rationale: "Bull cerca asset in trend daily che stanno preparando rottura dei massimi di periodo."
+    notes: "Setup di continuazione con struttura rialzista intatta."
+
+  - id: BULL_T_003
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    source:
+      timecode: "06:26-07:33"
+    conditions:
+      - long_entry_at_or_near_breakout == true
+      - daily_close_below_ema10 == true
+    action:
+      - close_long_position
+    applicability:
+      timeframes: [1d]
+      market_regime: []
+    rationale: "Bull usa la chiusura sotto EMA10 daily come segnale di uscita quando l'ingresso è su breakout/rialzo esteso."
+    notes: "Per ingressi più profondi vicino EMA60 considera stop più ampio."
+
+  - id: BULL_T_004
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "09:29-09:56"
+    conditions:
+      - prior_uptrend_exists == true
+      - retracement_reaches_ema10 == true
+    action:
+      - attempt_long_on_ema10_touch
+      - if_daily_close_below_ema10_then_exit
+    applicability:
+      timeframes: [1d]
+      market_regime: [BULLISH, SIDEWAYS]
+    rationale: "Il ritracciamento su EMA10 è trattato come zona di rimbalzo con stop tecnico vicino."
+    notes: "Bull preferisce ingressi vicini alle medie per rapporto rischio/rendimento migliore."
+
+  - id: BULL_T_005
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    source:
+      timecode: "13:36-14:13"
+    conditions:
+      - prior_uptrend_exists == true
+      - first_pullback_touches_ema5_only == true
+    action:
+      - skip_entry_on_first_pullback
+      - wait_for_direct_touch_of_ema10_or_ema60
+    applicability:
+      timeframes: [1d]
+      market_regime: []
+    rationale: "Bull suggerisce di evitare acquisti quando il ritraccio si ferma solo su EMA5 dopo forte salita."
+    notes: "Preferenza per ingresso su EMA10/EMA60 più pulito."
+
+  - id: BULL_T_006
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    source:
+      timecode: "23:28-24:11"
+    conditions:
+      - bitcoin_daily_regime in [SIDEWAYS, BULLISH]
+    action:
+      - enable_daily_long_strategy_on_altcoins
+    applicability:
+      timeframes: [1d]
+      market_regime: [SIDEWAYS, BULLISH]
+    rationale: "Bull usa BTC come indice: la tecnica long daily è favorita quando BTC non è in trend ribassista."
+    notes: "Se BTC entra in regime negativo, richiede maggiore selettività e cautela."
+
+  - id: BULL_T_CTX_001
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    source:
+      timecode: "00:50-01:30"
+    statement: "La tecnica daily è pensata anche per chi ha poco tempo operativo durante la giornata."
+    rationale: "Riduce il carico di monitoraggio continuo rispetto allo scalping puro."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 1
+  core_message: "Bull presenta una strategia daily su crypto basata su trend, breakout e ritracciamenti su EMA 10/60 con stop su chiusura candela daily. La condizione macro è il comportamento di Bitcoin, usato come indice di regime per attivare o rendere più prudente il metodo."
+
+transcription_flags:
+  - timecode: "02:35-03:14"
+    original_text: "contratazione continua"
+    issue: "Probabile 'contrattazione continua'; il senso operativo è corretto ma conviene verifica lessicale."
