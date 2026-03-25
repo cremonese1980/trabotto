@@ -1,0 +1,326 @@
+# Low-confidence segments for: 048_Stanchezza_di_Candela_Come_funziona_Tutorial.mp3
+# Total flagged: 107
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.34)
+  "Ciao Traders siamo su Skyping the Bull, puntata speciale, parliamo della stanchezza di Candela"
+
+[0:06-0:15] (confidence: -0.34)
+  "ma siamo live qui al Trading Expo di Verona e non c'è la webcam perché ovviamente mi"
+
+[0:15-0:25] (confidence: -0.34)
+  "sono dimenticato ma siamo in una decina, salutate ragazzi, non stavo scherzando ci sono realmente."
+
+[0:45-0:54] (confidence: -0.285)
+  "Lucchino che parlava ieri sera se non sbaglio, ieri? Nella arena? In arena diceva appunto che"
+
+[0:54-1:00] (confidence: -0.285)
+  "bull dice un sacco di cagate e spiegava che è difficilissimo da spiegare proprio il concetto"
+
+[1:00-1:05] (confidence: -0.285)
+  "della stanchezza proprio perché è un qualcosa che impari con l'esperienza quindi partiamo da questo"
+
+[1:05-1:13] (confidence: -0.285)
+  "concetto anche per questo che è stato, non ho mai fatto un video dedicato a questa cosa ma c'è"
+
+[2:25-2:35] (confidence: -0.226)
+  "per esempio ust quello di quello di luna non voglio positamente imparare a memoria che cos'è"
+
+[2:35-2:39] (confidence: -0.226)
+  "proprio talmente mi sta sulle palle e come a piazza affari per esempio in tesa san paolo in tesa"
+
+[2:39-2:44] (confidence: -0.226)
+  "san paolo per me veramente è pazza anche se lo vedo fare più 10% no più 10 ci lavoro ma se lo"
+
+[2:44-2:48] (confidence: -0.226)
+  "vedo fare che non so più 2 più 3% neanche ci guardo perché fa dei movimenti che fa veramente"
+
+[2:48-2:53] (confidence: -0.226)
+  "schifo ha un carattere di merda quindi anche nella vita ci sono delle persone con cui non"
+
+[3:47-3:54] (confidence: -0.15)
+  "grandissimo vantaggio il modo migliore per capire la stanchezza di una candela in realtà è questo"
+
+[3:54-4:01] (confidence: -0.15)
+  "qua per esempio quindi questo per esempio è un bad operazione reale che ho fatto ha fatto la"
+
+[4:01-4:08] (confidence: -0.15)
+  "suscita io ho fatto l'ingresso alla rottura qua ci ho guadagnato nonostante comunque appunto ha"
+
+[4:08-4:13] (confidence: -0.15)
+  "fatto comunque chiusura candela verde sopra di pochissimo non ho tenuto semplicemente perché"
+
+[4:13-4:18] (confidence: -0.136)
+  "nel book io qua vedevo che ricaricavano i livelli ok quindi quando arrivi a un certo livello arriva"
+
+[4:18-4:25] (confidence: -0.136)
+  "un certo prezzo per esempio qua 0715 la rotto se poi dopo torno dei pezzi grossi a quel livello"
+
+[4:25-4:30] (confidence: -0.136)
+  "lì mi fa capire che non ce la fa insomma ogni volta che va su quel livello mangia il livello"
+
+[4:30-4:36] (confidence: -0.136)
+  "rinseriscono di nuovo in vendita allo stesso prezzo un altro livello grande mi fa capire che"
+
+[4:36-4:42] (confidence: -0.136)
+  "da lì non ci si va ok quindi lì la stanchezza la capisco dal book cioè capisco che il book ogni"
+
+[5:35-5:42] (confidence: -0.185)
+  "un terzo tocco sui massimi quel che è se rompe fa la tua candela comunque chiude candela poi"
+
+[5:42-5:47] (confidence: -0.185)
+  "di nuovo dentro quel livello lì che sono dei livelli molto importanti trigger fanno capire che"
+
+[5:47-5:52] (confidence: -0.185)
+  "lì è stanco lì c'è pesantezza non vuole non c'è stato l'esplosione di cui noi cerchiamo ed"
+
+[5:52-5:57] (confidence: -0.185)
+  "ha bisogno sheer senza aspettare l'ema perché tanto ha dimostrato di essere stanco poi sì"
+
+[5:57-6:03] (confidence: -0.185)
+  "ci sono dei casi dove è una percentuale non grande anche solo il 20% delle volte fa un"
+
+[6:29-6:33] (confidence: -0.167)
+  "eventualmente possiamo valutare di entrare su un altro bad più in alto perché lì dopo ci"
+
+[6:33-6:37] (confidence: -0.167)
+  "possiamo aspettare di nuovo nuovi livelli trigger che poi ci fanno fare quella spinta che aspettiamo"
+
+[6:37-6:44] (confidence: -0.167)
+  "quindi da un momento che però questa cosa della stanchezza diciamo della pesantezza nel book lo"
+
+[6:44-6:49] (confidence: -0.167)
+  "vedi appunto venendo il book invece io voglio farvi degli esempi di stanchezza di candela"
+
+[6:49-6:54] (confidence: -0.167)
+  "guardando semplicemente la candela ok cercando di capire quella che è la proporzione della candela"
+
+[8:51-8:55] (confidence: -0.196)
+  "proporzione quindi la bella candela verde chiuda addirittura sui massimi un'altra seconda candela"
+
+[8:55-9:00] (confidence: -0.196)
+  "più piccola ma chiude sui massimi la seconda candela fa un massimo torna dietro questo è"
+
+[9:00-9:06] (confidence: -0.196)
+  "chiaramente una stanchezza ok ha già fatto quello che doveva fare ci accontentiamo non c'è bisogno"
+
+[9:06-9:10] (confidence: -0.196)
+  "di aspettare l'ema e poi dopo appunto a dimostrare che questa era una stanchezza ok eventualmente"
+
+[9:10-9:15] (confidence: -0.196)
+  "uscendo qua fatto due candele di riposo tornando sui massimi avremmo avuto il nostro bad"
+
+[9:41-9:47] (confidence: -0.233)
+  "di riposare bene noi ci riusciamo eventualmente aspettiamo un'altra conformazione ok e poi"
+
+[9:47-9:55] (confidence: -0.233)
+  "così infatti dopo andato dentro anche senza anche senza spike io avrei chiuso proprio perché"
+
+[9:55-9:59] (confidence: -0.233)
+  "andava a fare sempre un discorso di un conno di bellissimo farlo live perché abbiamo delle"
+
+[9:59-10:04] (confidence: -0.233)
+  "domande il corpo delle candele era sempre più piccolo quindi se anche se questo non avesse"
+
+[10:04-10:09] (confidence: -0.233)
+  "fatto questo spike giustamente quindi allarghiamo anche senza spike avesse fatto solo questo"
+
+[10:09-10:14] (confidence: -0.183)
+  "movimento e ci fa capire che qua comunque basta cioè è come se stai facendo uno sprint no i primi"
+
+[10:14-10:19] (confidence: -0.183)
+  "venti metri vai forte poi inizia a allentare e l'ultima parte ovviamente hai meno energia rispetto"
+
+[10:19-10:23] (confidence: -0.183)
+  "all'inizio e qua fa capire che c'è meno energia semplicemente e te ne vai hai già fatto il suo"
+
+[10:23-10:29] (confidence: -0.183)
+  "movimento questo è un break out proporzionalmente è una proporzione diciamo come grandezza partendo"
+
+[10:29-10:34] (confidence: -0.183)
+  "da questa candela a qua è comunque una proporzione che ci può stare in questo break out ci accontentiamo"
+
+[10:59-11:05] (confidence: -0.156)
+  "secondi sono cioè la chiusura candela è un ha un significato importante perché quando chiude"
+
+[11:05-11:10] (confidence: -0.156)
+  "da lì ci fa capire se da quel momento in poi quella candela può avere senso oppure no per"
+
+[11:10-11:16] (confidence: -0.156)
+  "un altro tipo di conformazione o anche come in questo caso per la stanchezza fino all'ultimo"
+
+[11:16-11:20] (confidence: -0.156)
+  "quindi anche gli ultimi 10 secondi può esserci l'accelerazione e può tornare sui massimi questo"
+
+[11:20-11:25] (confidence: -0.156)
+  "accade accade spesso perché soprattutto quando va a fare le finte quindi va a fare per esempio la"
+
+[11:25-11:31] (confidence: -0.2)
+  "finta sull'ema 10 guardate questa candela qua questa poteva essere una finta gli ultimi 10 secondi"
+
+[11:31-11:37] (confidence: -0.2)
+  "ci fa capire effettivamente se qua ci sono i soldi se questo va a farla finta no se è così che mancano"
+
+[11:37-11:43] (confidence: -0.2)
+  "15 secondi dagli ultimi 10 inizia a vicinarsi e poi fa la chiusura candela gli ultimi due secondi"
+
+[11:43-11:47] (confidence: -0.2)
+  "proprio a 0 e ci fa capire che chi aveva i soldi poi le ha tirati fuori ok e quindi da lì dopo"
+
+[11:47-11:52] (confidence: -0.2)
+  "siamo a capire che potrebbe andare a fare il suo rimbalzo che è quella la finta quindi è vero"
+
+[12:16-12:22] (confidence: -0.308)
+  "ma già così io me ne esco aspetta posto aspettare gli ultimi secondi ma me ne esco"
+
+[12:22-12:31] (confidence: -0.308)
+  "perché dico ho già fatto altamente probabilmente altamente probabilmente che dopo se gli ultimi"
+
+[12:31-12:37] (confidence: -0.308)
+  "secondi se questi ultimi secondi mi avrebbe chiuso a chiandela piena è grande più o meno"
+
+[12:37-12:43] (confidence: -0.308)
+  "come questa avrei potuto avrei potuto anche tenere poi ovvio io guardo anche il book io"
+
+[12:43-12:47] (confidence: -0.172)
+  "qua sto cercando di dire senza guardare il book quindi senza gli esempi chiari del book"
+
+[12:47-12:51] (confidence: -0.172)
+  "che lì ovviamente ti dà l'aiuto in più semplicemente guardando la candela quindi sì"
+
+[12:51-12:55] (confidence: -0.172)
+  "avrei potuto aspettare gli ultimi secondi se questo avesse accelerato e fatto una candela"
+
+[12:55-13:00] (confidence: -0.172)
+  "anche similare a questa va bene aspettiamo alla prossima probabilmente mettiamo il caso"
+
+[13:00-13:05] (confidence: -0.172)
+  "avesse fatto una candela grande come questa alla prossima appena fa dei nuovi massimi"
+
+[13:05-13:10] (confidence: -0.172)
+  "sarà uscito proprio perché comunque basta insomma è comunque non sta più accelerando"
+
+[13:10-13:14] (confidence: -0.148)
+  "non sta più facendo delle candele più grandi allora c'è un altro esempio che invece vi"
+
+[13:14-13:24] (confidence: -0.148)
+  "voglio fare capire che probabilmente non ho ecco qua prima o meno è un esempio molto"
+
+[13:24-13:29] (confidence: -0.148)
+  "simile e qua gli ultimi secondi comunque ha fatto chiusura a candela piena allora possiamo"
+
+[13:29-13:32] (confidence: -0.148)
+  "aspettare candela piena aspettiamo quello dopo ha fatto i nuovi massimi poi ha chiuso"
+
+[13:32-13:37] (confidence: -0.148)
+  "questo poi addirittura un hammer abbiamo capito che stanco e dopo è sceso ma vi voglio"
+
+[13:37-13:44] (confidence: -0.252)
+  "fare un disegno so che vi piace tantissimo quando disegno qua però sto migliorando grazie"
+
+[13:44-13:52] (confidence: -0.252)
+  "vostri suggerimenti allora ci sono delle volte che va a fare dei massimi ok fanno tutte le"
+
+[13:52-14:01] (confidence: -0.252)
+  "candele dei massimi e fanno le candele relativamente piccole ok poi esplode tocca dei livelli importanti"
+
+[14:29-14:35] (confidence: -0.189)
+  "di uscire in quella candela perché questo è stato un punto dove ha toccato un livello trigger"
+
+[14:35-14:40] (confidence: -0.189)
+  "ha fatto poi l'esplosione perché qui qualcuno ha dovuto chiudere dei pezzi a mercato diciamo"
+
+[14:40-14:47] (confidence: -0.189)
+  "e ha fatto sì che ci fosse questa candela grande è difficile che poi dopo ci possa essere un'altra"
+
+[14:47-14:52] (confidence: -0.189)
+  "candela ancora più grande ok può succedere anche qua magari il 20 per cento delle volte possiamo"
+
+[14:52-14:57] (confidence: -0.189)
+  "addirittura avere ancora nei periodi di fomo addirittura quando abbiamo ancora un ancora un po"
+
+[17:12-17:17] (confidence: -0.228)
+  "dopo ne abbiamo appena salvati e un sacco abbiamo visto quello per esempio che ha fatto il più 4000"
+
+[17:17-17:22] (confidence: -0.228)
+  "percento poi dopo ha chiuso la candela a zero il giorno dopo era da di nuovo a zero si è mangiato"
+
+[17:22-17:26] (confidence: -0.228)
+  "tutto il più 4000 percento ragazzi state capendo che siamo in un momento molto difficile molto"
+
+[17:26-17:31] (confidence: -0.228)
+  "particolare quindi purtroppo adesso possiamo avere tante possibilità in cui abbiamo queste"
+
+[17:31-17:37] (confidence: -0.228)
+  "queste bellissime candelle rosse short ma viene dovuto uscire ok questo non è che da qua possiamo"
+
+[17:37-17:42] (confidence: -0.228)
+  "aspettarci poi due candelline poi torna di nuovo to the moon ok toglietevelo dalla testa"
+
+[18:08-18:14] (confidence: -0.181)
+  "di cui vi parlavo prima quindi precedentemente andiamo a vedere se le ha già fatte se noi andiamo"
+
+[18:14-18:21] (confidence: -0.181)
+  "a vedere level e vediamo se tiro fuori l'esempio si dai ve lo faccio vedere perché l'ho salvato"
+
+[18:21-18:31] (confidence: -0.181)
+  "prima allora settembre stanchezza candela no mercato di merda ecco qua pensate che c'è la cartella"
+
+[19:48-19:54] (confidence: -0.144)
+  "il carattere prima di qualcuno anche se qua dovesse andare a fare una bella conformazione"
+
+[19:54-19:59] (confidence: -0.144)
+  "dobbiamo stare attenti perché queste candele possono arrivare ok lo sappiamo già da prima"
+
+[19:59-20:05] (confidence: -0.144)
+  "quindi abbiamo qualche altra domanda su questo della stanchezza in generale comunque adesso qua"
+
+[20:05-20:11] (confidence: -0.144)
+  "siamo al meeting quindi non facciamo il video lungo cerchiamo scrivetelo nei commenti i dubbi"
+
+[20:11-20:16] (confidence: -0.144)
+  "perché poi dopo andremo a fare sicuramente una sfumatura che raccolgo tutte le domande che ci"
+
+[20:16-20:23] (confidence: -0.115)
+  "sono sotto e poi andiamo a fare una sfumatura anche perché un conto è la stanchezza di candela"
+
+[20:23-20:28] (confidence: -0.115)
+  "in questo tipo di mercato dove siamo adesso un conto è la stanchezza di candela quando siamo in"
+
+[20:28-20:32] (confidence: -0.115)
+  "un mercato più sereno o addirittura in bull market ok noi dobbiamo noi da trader dobbiamo"
+
+[20:32-20:37] (confidence: -0.115)
+  "sempre cercare di adattarci ad ogni situazione e state notando chi fa trading in questo momento"
+
+[20:37-20:42] (confidence: -0.115)
+  "qua che il mercato è completamente diverso e le possibilità di guadagnare sono molto più"
+
+[21:36-21:41] (confidence: -0.162)
+  "decidere a lema li facciamo ci trovare pronti coi soldi che non dobbiamo recuperare ok e da"
+
+[21:41-21:48] (confidence: -0.162)
+  "lì dopo ovviamente le conformazioni migliori ci aiuteranno e anche lì cerchiamo di sfruttare"
+
+[21:48-21:54] (confidence: -0.162)
+  "questa cosa del della stanchezza di candela proprio perché capire anche senza guardare il"
+
+[21:54-21:58] (confidence: -0.162)
+  "book cerchiamo di capire quando ci possiamo accontentare quando no e che tipo di candela"
+
+[21:58-22:03] (confidence: -0.162)
+  "dobbiamo aspettarci ok perché le candele in sé hanno un significato quindi scrivete le"
+
+[22:03-22:08] (confidence: -0.234)
+  "domande io raccoglierò le domande sotto per poi andare a fare la sfumatura adesso vi faccio"
+
+[22:08-22:15] (confidence: -0.234)
+  "salutare dai ragazzi qua dietro quindi con un saluto salutate e niente iscrivetevi a youtube"
+
+[22:15-22:20] (confidence: -0.234)
+  "due canali telegram twitch discord chi ne ha anzi ci abbiamo anche tiktok instagram"
+
+[22:20-22:24] (confidence: -0.234)
+  "o qualsiasi cosa e lunedì torno con casa bull ciao a tutti"
+

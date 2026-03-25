@@ -1,0 +1,748 @@
+0:00 Ciao trader, siamo su Skype in the Bull, puntata incredibile di Friday Candle Night, facciamo
+0:07 vedere la locandina, ecco la Friday Candle Night, prima abbiamo fatto il serial trader,
+0:13 spettacolare, per questo siamo già in 270, avevamo già il pubblico caldissimo per la
+0:18 puntata molto interessante di prima, che andrò a pubblicare, e adesso c'è il Friday Candle
+0:23 Night, qua c'è scritto ore 23, perché di solito è alle ore 23, ma stasera ci sono
+0:28 io nella prima oretta, o qualcosa di più, vediamo, per parlare del cambio candela,
+0:35 ok, appunto siamo in anticipo, quindi il cambio candela nel periodo invernale è all'una,
+0:41 non alle due, invece il periodo estivo è alle due, quindi è un orario anche un po'
+0:44 più umano, più o meno, e cerchiamo di capire le strategie e come poter sfruttare questa
+0:52 cosa. Qua sul palco abbiamo Dag che ha già fatto diverse serate di Friday Candle Night
+0:58 con grande divertimento fra l'altro, perché vedevo col bullbot la musica, insomma, tutte
+1:05 cose interessante, ovviamente abbiamo tolto non il bullbot, il music bot che mette la
+1:11 musica, perché sennò il video avrebbe dei problemi su youtube, però sì, era molto interessante
+1:20 questa cosa. Ci avevamo anche Nicola che lui è, diciamo, forse il più esperto, non sa te
+1:28 da tanto che fai il cambio candela, proprio dagli inizi diciamo? Lo facevamo dall'estate
+1:33 scorsa. A inizio eravate solo voi, eri tu, Terry e qualcun altro, sì, pochi altri. Perché
+1:41 te Dag, in realtà, da quant'è che sei nella fam? Te li hai conosciuti dopo, no? Nicola
+1:45 e Terry? Allora sì, diciamo io da agosto ero in feria, sì sì, in agosto. Ok, ok,
+1:54 quindi è arrivato leggermente dopo però, insomma, grande sintonia, quindi molto interessante.
+2:00 Allora, vista che loro fanno il cambio candela fanno anche spesso, chi più chi meno, e molti
+2:05 quando il pubblico sono comunque interessati, cerchiamo di capire che cos'è. Allora, innanzitutto,
+2:12 subito schermo. Ok, e adesso sono su Kp3r che sicuramente è uno da tenere d'occhio.
+2:23 Come facciamo a capire cosa tenere d'occhio per il cambio candela? Perché la difficoltà
+2:30 del cambio candela, una delle tante difficoltà, è avere sott'occhio quelli che probabilmente,
+2:38 o più probabilmente, o che probabilmente potrebbero partire. Ok, questa è la parte,
+2:44 una delle cose più difficili, giusto Nicola, perché il problema è, arrivi lì e non puoi
+2:51 avere 150.000 monitor e devi riuscire ad avere sott'occhio e già pronto per poter operare
+2:57 su quelli che potrebbero partire subito, perché altrimenti partono gli altri e tu rimani a
+3:01 guardare questi che non partono e rimani lì con niente in mano. Per quello che mi è venuto
+3:07 in mente questa configurazione che dopo spiegherò. Ecco, bravo, perfetto, perfetto. Quindi ci
+3:14 basiamo sulle esperienze di tutti. Quindi andiamo a vedere, ecco qua sono su Kp3r,
+3:21 perché secondo me Kp3r potrebbe essere uno che può fare il movimento nonostante in questo
+3:28 momento qua, quindi mi piace tantissimo come esempio, non lo andremo a vedere in classifica.
+3:33 Questo è un più 3,69%, andiamo a vedere la classifica in questo momento qua,
+3:38 sposto sull'altro monitor, ecco la classifica adesso che c'è su Binance è un misero DCR a più
+3:47 25% poi c'è Rose, Dodge, Farm, eccetera, dopo li andiamo a vedere, andiamo a spulciare, però non
+3:52 c'è giustamente Kp3r perché Kp3r sta facendo più 3,73 e allora perché potrebbe partire col
+3:59 cambio candela perché c'è un daily interessante, c'è un daily che sono tre giorni, quattro giorni
+4:07 in cui vediamo che sta facendo candele verdi, l'EMA 5 che comanda tranquillamente senza
+4:14 essere, senza grossi problemi, ma siamo adesso, ci troviamo a un passo dai massimi di due giorni
+4:21 fa, il massimo di ieri abbiamo già superato, abbiamo i massimi due giorni fa molto vicini che fra
+4:25 l'altro è un livello dove se tracciamo una linea, spostalo a questo, tracciamo una linea
+4:34 sopra i massimi di due giorni fa, chiusura candela sopra quel massimo lì è la chiusura candela più
+4:41 alta di sempre da quando c'è su USDT, ricordiamo che Kp3r nasce su Boost quindi ha uno storico
+4:52 però comunque è un livello molto importante questo, quindi questo potrebbe essere estremamente
+4:57 triggerabile o triggerato, quindi è un qualcosa che se raggiunto quel livello potrebbe accelerare e
+5:04 quando potrebbe fare questa cosa qua? Potrebbe farlo prima del cambio candela, adesso sono le ore
+5:08 22.17, nel caso in cui non lo facesse prima potrebbe farlo proprio col cambio candela,
+5:14 quindi potrebbe raggiungere questi punti dove poi andrebbe ad accelerare e quindi dal più 3% che
+5:19 vediamo adesso potrebbe andare a fare molto altro, quindi già da qua capiamo che è importante
+5:25 comunque sempre andare a vedere il daily, allora prima quindi Nicola e Dag prima di andare a vedere
+5:32 la classifica che vediamo qua su Binance e poi dopo parliamo anche di cosa andare a vedere sul
+5:38 bullbot, voi cos'è quello che stavi per dire Nicola sulla tecnica? Tu hai già tirato fuori un
+5:47 qualcosa di? La tecnica era nel senso perché noi siamo sempre 4, 5, 6, eravamo sempre 4, 5, 6 a
+5:59 fare scarpin però io ne guardavo una, tutti guardavano la stessa e ci perdavamo sempre qualcosa,
+6:05 allora mi è venuto in venti a guardare lo stesso dopo un casino. Esatto, esatto, allora ho detto ma
+6:11 siamo in tanti, facciamo cambio candela in tanti perché non prendere ognuno una coin anche se
+6:18 quella sera non fa niente tanto fa niente l'acqua si controlla ognuno uno diciamo il referente di
+6:24 quella coin e poi se c'è una conformazione buona lo si dice e si va a vedere si può fare il trade
+6:30 però comunque sempre guardando la tua che hai la referenza su quella coin. Questo mi piace perché
+6:37 è un gioco di squadra e qua con la bulla arena o comunque in generale su discord quindi se siete
+6:45 solo nella bulla arena oppure siete in un canale vocale quindi ricordiamoci se siete qua nella
+6:52 bulla arena potete parlare, alzate la mano per invece poter scrivere qualcosa velocemente c'è
+6:59 proprio la stanza che si chiama chat per live ok quindi lì dopo uno quando trae da tiene aperto la
+7:07 stanza chat per live se qualcuno è sul palco vede qualcosa interessante lo può scrivere lì ok
+7:11 questo è per quando ci avviciniamo al cambio candela per poter fare un gioco di squadra quindi
+7:15 partiamo dal ragionamento teorico e poi dopo e dopo partiamo con le strategie di squadra e cerchiamo
+7:26 di di fare questo quindi faremo poi salire più persone sopra, vabbè poi dopo questo lo andrete
+7:33 a gestire poi più avanti però prima che io vada via cerchiamo di gestire anche le squadre di
+7:39 cercare di capire un po come poterlo fare perché questo è molto interessante e semplifica molto poi
+7:43 noi essendo una squadra con tante persone effettivamente se abbiamo la possibilità di
+7:48 poter avere più coppie che vengono controllate da più persone ci facilita molto perché il problema
+7:58 è proprio quello dobbiamo dobbiamo avere gli occhi su quello che sta partendo e non su qualcos'altro
+8:04 che qualcosa di io per esempio le volte che lo fai io non ho fatto tantissime volte cambio candela
+8:08 proprio perché io se no sono distrutto il giorno dopo però è probabilmente il momento più esplosivo
+8:14 della giornata e questo proprio perché quando quando viene il passaggio di candela è come se
+8:21 tutto fosse di nuovo a zero quindi se qualcosa parte e inizia a andare a ribasso c'è un'accelerazione
+8:26 se qualcosa parte e inizia a rialzo ci potrebbe essere l'accelerazione a rialzo ma questo perché
+8:32 si ha paura di non poterlo comprare cioè che se non entri subito di dove lo puoi
+8:38 comprare un prezzo molto più alto perché dopo ti tocca fare tutto il movimento cioè tipo come
+8:42 quando ci svegliamo noi la mattina spesso ci troviamo quelli che hanno fatto tutto il
+8:46 costo di movimento andiamo a vedere magari qualcosa fa il più 30 andiamo a vedere ha fatto
+8:50 tutto il movimento magari da l'una fino alle tre e quindi c'è questa questa paura di non riuscire ad
+8:58 entrare e fa accelerare ovviamente faccele rara anche ribasso perché dopo si ha paura che dopo
+9:03 il titolo che magari ha fatto più 30 col cambio candela inizia a scendere poi scende pesantemente
+9:09 verso l'ema 5 quindi questo lo andrò a dimostrare adesso mentre andiamo a selezionare però il perché
+9:17 è così infiammato questa cosa è proprio perché si è come se partisse tutto da zero i vari trend e
+9:24 quando parte il trend si ha paura poi di di non poter entrare e dover poi entrare dopo quando il
+9:30 movimento è già stato fatto ok quindi c'è tutta questa cosa di dove per forza mostrata devi per
+9:35 forza mostrare le carte quindi se vuoi entrare su quel titolo lì o lo tiri fuori subito se no
+9:39 c'è poco da fare quindi andiamo a vedere abbiamo visto ovviamente l'esempio cambio schermo devo
+9:47 ricordare ok cambio schermo quindi torniamo a vedere i grafici quindi adesso io sono con
+9:52 binance web quindi sul sito diciamo di binance io clicco sempre su trading e poi base perché
+10:03 mi dà la classifica che ti fa vedere i migliori e peggiori molto importante proprio perché appunto
+10:12 così puoi andare a vedere intanto cosa c'è di che si è mosso oggi e nel cambio candela potrebbero
+10:17 proseguire o no quindi vediamo allora innanzitutto vediamo il primo in classifica che è sposto
+10:24 un attimo meglio lo schermo ecco così si legge tutto sì allora andiamo su dcr quindi
+10:34 primi classifica più 26 per cento comunque già da questa classifica una classifica un po così
+10:39 un po un po non da crypto anche se ultimamente si è un po calmato il mercato quindi però ieri
+10:46 avevamo anche oggi quel pazzo di glmr che ha fatto dei movimenti pazzeschi per adesso si è raffreddato
+10:54 e siamo un più set però insomma ieri ha fatto dei movimenti veramente pazzeschi e allora dcr daily
+11:03 quindi prima cosa andiamo a vedere i daily ecco il daily andiamo a vedere subito cadde i problemi
+11:09 andiamo individuare che è nato fare il breakout della 60 poi ha fatto l'accelerazione aveva fatto
+11:17 la stessa cosa il questo è molto interessante perché ha fatto la stessa cosa il 19 dicembre
+11:24 quindi ha fatto una mega candela ha rotto la 60 nato addirittura vicino a 223 poi tornato
+11:31 giù ha chiuso candela il cambio candela quindi praticamente l'ha fatto tutto in rosso e è nato
+11:36 di nuovo sulla 10 ok quindi in quel caso lì c'è stato appunto quello che è l'accelerazione ha
+11:42 ribasso poi non so se l'ha fatto esattamente col cambio candela c'è qualche spike a rialzo
+11:46 quindi probabilmente l'ha fatto subito però il il capire se questo può essere un cavallo pazzo o no
+11:53 nel cambio candela lo guardiamo dal daily allora questo ha il problema che ha poi la 60 lì quindi
+11:59 è da tener d'occhio vediamo da qua a l'una dove dove poi va a chiudere e poi da lì possiamo capire
+12:07 ovviamente un momento di forte resistenza è comunque la 60 quindi ci dobbiamo ricordare
+12:13 stiamo parlando di quota 80 andiamo a vedere poi con altri time frame quindi time frame a 30 minuti
+12:20 ecco bellissimo time frame a 30 minuti in questo momento qua è andato a riposare sulla m10 molto
+12:28 bello questo quindi nel time frame a 30 minuti in realtà sta andando semplicemente a riposare
+12:34 sulla 10 ma potrebbe tornare su se dovrebbe vedere 5 minuti messa bellissimo sulla 223 molto
+12:42 bello 5 minuti ancora meglio è bello questo titolo comunque è un minuto invece stiamo per
+12:49 fare l'anti incrocio questo è un se questa sarà una tecnica che grazie al nostro carissimo corrado
+12:56 non so se c'è comunque che mi ha segnato questa cosa effettivamente è molto interessante quando
+13:01 quando fa l'anti incrocio cioè quando invece di far l'incrocio che è un movimento molto importante
+13:08 per la discesa ma non fa far l'incrocio oppure come in questo caso qua va a sfondare quando
+13:15 fa l'incrocio questo è un segnale molto bullish quindi da da tener d'occhio e andiamo a vedere
+13:21 altre cose quindi questo sicuramente è uno in cui lo possiamo tener d'occhio per cambio candela è un
+13:25 papabile non solo fare attenzione sulla 60 ma comunque c'è tanto spazio allora seconda classifica
+13:31 eros però vediamo delle settimanale ok ma non siamo sui massimi lo sapevate voi che eravamo
+13:40 sui massimi con rose a th se se ok informati io no eh sì wow ok qua lo rose sicuramente
+13:52 teniamolo d'occhio andiamo a dire come perché stiamo facendo nuovi massimi adesso e massimi
+13:58 direttamente direi sì sì sì sì sì questo mi ero sfuggito completamente molto interessante
+14:06 ok questo ok nel daily questo assolutamente perché è interessante fra l'altro perché ieri
+14:10 ha riposato quindi oggi al superamento della del massimi di ieri era un livello fantastico
+14:16 questo qua 0 5 3 7 bellissimo pensa te vabbè ok questo sicuramente a tener d'occhio per il
+14:26 cambio candela assolutamente perché i migliori in assoluto da dare maggiori priorità sono
+14:33 quelle che hanno il daily con maggior potenziale qual è la classifica dei t delle delle priorità
+14:40 sul daily sicuramente chi è va in all time i cioè una situazione più bullish di chi è in all time
+14:48 i non esiste che quello è il massimo proprio del potenziale di poter accelerare di poter
+14:54 far follia di poter fare movimenti più assurdi oltre mai quindi priorità massima quindi asterisco
+15:01 su rose non importa neanche darlo a vedere adesso un minuto ma questo assolutamente da
+15:07 tenere d'occhio poi cava a un minuto stiamo facendo la bellissima conformazione ecco spike
+15:14 in diretta e molto carino a cava fra l'altro è stata tutta tutt'oggi che la stamattina che viene
+15:21 segnalato da bull bot perché comunque andava a fare una conformazione daily di rottura molto
+15:28 interessante io non ci ho lavorato stamattina perché comunque pagava poco però effettivamente
+15:33 il daily era era interessante adesso però che aumentato di percentuale siamo a un 15%
+15:38 le candele iniziano a largarsi quindi interessante e questo ha tanto spazio sopra ok quindi molto
+15:45 interessante come dei non abbiamo la 60 come abbiamo visto invece prima con il dcr abbiamo
+15:49 nulla quindi anche questo interessante per dopo non dobbiamo avere adesso andremo a vedere
+15:56 sicuramente dei daily che invece possiamo scartare prima o comunque mettere un alert più specifico
+16:01 quindi anche questo cava ci mettiamo un asterisco quindi interessante doge o ecco doge invece
+16:10 possiamo tranquillamente magari evitare perché adesso sta tornando verso la 60 e è andato a
+16:17 sporcare la 223 sappiamo già che l'ha fatto col tweet di Elon Musk stamattina quindi questo
+16:23 è un movimento assolutamente così a caso dovuto a un tweet quindi non è un movimento di conformazione
+16:31 è un movimento di follia quindi non non è calcolato diciamo arriva da 4 candela di seguito
+16:38 ecco questo è uno di quelli che io invece seguirei meno se avesse fatto invece quel movimento non
+16:45 dovuto a un tweet quindi praticamente ad una candela io credo che quello quello lì se non
+16:50 sbaglio l'ha fatto in una due candele stamattina non so se qualcuno di voi l'ha seguito col tweet
+16:55 ha fatto una roba con una candela o 2 e se non l'avesse fatto con una con con un tweet quindi
+17:04 con tre candele era già un pochino più interessante ma avendo fatto con un tweet questo è poco
+17:08 interessante ok e ha già corso abbastanza quindi questa io doge non non lo starei neanche a guardare
+17:15 vediamo magari a time frame 30 minuti se c'è un livello per poter mettere un alert ecco perfetto
+17:20 abbiamo se voi mettete doge time frame 30 minuti il livello dove potrebbe esserci interessante
+17:26 è 02 quindi possiamo tranquillamente mettere un alert a 1 9 8 1 9 8 1 si mette un alert non
+17:35 c'è bisogno di caricarlo graficamente quindi d'occupare spazio semplicemente lo teniamo
+17:41 lì così se arriva quello all'orto lì nel cambio candela allora possiamo capire che
+17:46 potrebbe fare qualcosa altrimenti lasciamo stare non c'è bisogno di occupare uno schermo
+17:51 se avete sentito l'alerta siamo già posto state capendo poi il ragionamento no che che si fa
+17:57 del del daily no e soprattutto ho paura che non vi stavate sentendo quindi mi stavo belanciando
+18:08 prima prima di andare avanti con questa cosa del daily c'è qualche domanda cerchiamo di fare
+18:17 un passo alla volta non vorrei annoiarvi troppo con parlare di di dire perché è come se fosse
+18:23 analisi tecniche se c'è qualche domanda sul fatto del perché faccio questo tipo di analisi o
+18:28 qualcosa altrimenti vado avanti così andiamo a scremare ok vado avanti importante che se per
+18:37 caso non mi sentite non so neanche cosa potreste fare per dirmelo perché magari uno di voi mi
+18:43 sbatte fuori te dec dovreste riuscire anche anche nicola anche terri dovreste riuscire a sbattermi
+18:49 fuori no si si si ok ok mandiamo giù dai ok mi mandate giù così capisco che in frattempo
+18:56 siamo a 280 in ascolto fantastici allora quindi doge abbiamo già spiegato andiamo avanti andiamo
+19:02 su any ecco una domanda su cava esempio che adesso siamo a 546 io vedo che all'inizio di
+19:13 dicembre ha fatto quelli spike a 5 al massimo diciamo 5 57 ecco se io faccio un cambio candela
+19:22 qua che vado sui massimi su questo è che lì ci saranno tante resistenze dato che c'è non
+19:28 so il 2 dicembre il 26 novembre lì c'è tutto ci sono 4 5 candela candela che hanno fatto i
+19:36 massimi lì e poi è ritornato giù secco non ci saranno delle resistenze grosse essendo però
+19:44 no no se fossero vicine sì e sono queste sono lontane e fa e facevano parte di un altro tipo
+19:52 di conformazione cioè la discesa con l'incrocio quindi non erano shimana ma comunque era poi
+19:58 una conformazione che doveva lottare contro l'incrocio praticamente quello che sta facendo
+20:02 bitcoin adesso nel daily quindi la situazione veramente opposta invece adesso sta lottando
+20:06 l'esatto contrario cioè ha proprio il cielo aperto e ha a favore l'incrocio quindi è veramente
+20:12 l'esatto opposto le resistenze sicuramente però ci saranno adesso non questo poi è un passaggio
+20:18 che andremo a far dopo per andare a vedere eventualmente livelli però guardiamoci già
+20:23 adesso ci siamo già siamo su cava nel book per adesso è tutto bello bello liquido tutto bello
+20:28 tranquillo nessun livello ho fatto ho fatto a raggruppamento 0 1 per vedere la profondità
+20:34 ed è tutto praticamente abbastanza omogeneo abbiamo solo il 6.5 ma è talmente il 20 per cento 22
+20:42 per cento in là ok quindi quindi per adesso il book non c'è per dire se ci fosse a 5 50 c'è
+20:49 qualcosa da 200.000 5 4 680.000 5 3 260 c'è tutto abbastanza proporzionato sono comunque
+21:00 dei livelli ma non abbiamo il 500.000 ok non abbiamo il milione quello particolarmente grande
+21:06 anche solo a 6 magari a 6 io a naso mi potevo aspettare un 500.000 un milione invece non c'è
+21:14 capito sono livelli più o meno uguali quindi questo tranquillo sotto questo l'ipra adesso
+21:19 non c'è nulla ok per adesso kp3 r ha fatto uno spike interessante poi e n ok e invece anche
+21:31 qua stiamo lottando di oggi ha fatto nuovi volte ai mai ho lavorato stamattina sono arrivato purtroppo
+21:35 il ritardo di quel 15 minuti dove ha fatto la conformazione spettacolare stamattina di
+21:44 breakout sono andato tardi e va bene comunque l'ha portato poi a fare i nuovi massimi storici
+21:49 quindi anche questo nonostante noi siamo distanti dai massimi perché va beh relativamente comunque
+21:55 ha fatto 34 61 come massimo che è il massimo l'oltemma e adesso è a 30 71 quindi comunque c'è
+22:02 12 13 per cento di differenza però teniamo l'occhio teniamo l'occhio vediamo se c'è un livello a 30
+22:11 minuti interessante si allora il bad è comunque un bad allora questo 31 e 5 questo livello che
+22:28 noi lo vediamo come una candela rossa però è una candela che ha rotto questo delle 21 si delle
+22:35 21 ha fatto lo spike sopra alema 10 mentre le altre candele non l'hanno fatto quindi
+22:41 quello è un livello col 30 minuti che andrebbe fare non c'è un bad bruttissimo proprio però
+22:49 comunque è un livello dove da lì possiamo partire e stiamo parlando di 31 e 6 quindi un alert a 31 e
+22:56 5 qua lo si potrebbe mettere quindi non importerebbe seguirlo per il cambio candela ma si potrebbe
+23:01 mettere un alert quindi anche un 31 e 45 ecco 31 e 4 anche teniamo un alert non c'è bisogno di
+23:10 tenere il grafico e poi ci avverte vediamo sì quello quello è un livello ok se fosse più vicino
+23:22 invece ai massimi questo lo seguirei proprio appena fa il cambio candela quindi da qua l'una
+23:26 si può vedere perché potrebbe già suonarsi l'alert e quindi dopo si va a vedere questa cosa
+23:31 qua poi ci fermiamo al più 10 per cento e facciamo l'ultimo il burger il burger che questo fra l'altro
+23:39 eh allora è interessante perché appunto ha fatto la rottura delle ma 10 e poi ha fatto l'accelerazione
+23:50 quindi è quello che deve fare rottura ma 10 dopo che le ma 10 comande in maniera molto precisa
+23:55 fra l'altro fino a due giorni fa comandava perfettamente le ma 5 oggi se uno avesse avuto
+24:04 questo tipo di conformazione sotto gli occhi prima di rottura delle ma 10 quello era un punto
+24:09 estremamente trigger per entrare molto molto molto interessante e dopo vi faccio vedere il
+24:17 daily di bnx così vi faccio capire un qualcosa di simile ma deve ancora rompere e quindi burger
+24:25 quindi qua effettivamente ha fatto finemente la rottura è tornato indietro siamo fortunati perché
+24:32 questo potrebbe essere interessante sì praticamente la fiammata la fatta smettiamo time frame 30 minuti
+24:37 vedrete che in 30 minuti ha fatto tutto il movimento ed è già sceso quindi ha fatto una
+24:41 fiammata molto pesante che era quello dell'ortura delle ma 10 nel daily e adesso sta riposando
+24:46 quindi questo assolutamente lo teniamo d'occhio perché sta lateralizzando time frame 30 minuti
+24:52 quindi molto molto molto interessante il livello di breakout potenziale è il 3.7 quindi interessante
+25:00 è il 2.7 scusa il 2.7 perché andiamo a superare i corpi di questi di queste candele a 30 minuti
+25:09 quindi interessante quindi un alert lo possiamo mettere in caso in cui dovesse raggiungerlo già
+25:16 prima del cambio candela un 2.65 abbiamo un po di tempo per il 2.7 insomma questo è interessante
+25:23 questo anche questo è una è una di quelle che potremmo tenere d'occhio per il cambio candela
+25:26 allora guardiamo invece che non c'è in classifica ma c'è bnx e questo appunto lo so tramite i daily
+25:34 dei bull bot dei giorni scorsi ok questo è uno che quindi bnx non è in classifica sta facendo più
+25:45 1 e mezzo per cento era stato segnalato ieri nel bull bot perché aveva superato i massimi degli ultimi
+25:51 giorni con quella candela rossa di ieri è andato a testare la 10 guardate che perfezione in cui
+25:56 le ma 10 sta tenendo sotto non è andato a fare i nuovi minimi l'importante era quello allora se
+26:03 noi andiamo a toccare le ma 10 quindi stiamo parlando del livello di 38 abbiamo poi i massimi
+26:10 di ieri che sono il 39 e poi da lì abbiamo il trigger super mega galattico che è appunto
+26:18 rottura ma 10 e rottura di massimi di ieri quindi questo è quello che potrebbe fare lo spike che
+26:23 abbiamo appena visto su burger quindi questo è uno che può impazzire col cambio candela o dopo
+26:28 il cambio candela ovviamente adesso siamo distanti perché comunque stiamo parlando di un 30 qua
+26:34 cioè deve salire ancora però un alert qua anche solo vediamo vedere con 30 minuti fantastico
+26:44 sì sì fai 30 minuti allora vediamo l'uscita l'uscita della 223 l'uscita di questo paralelo
+26:54 fra 60 223 interessante questo dai io direi a 30 34 e 5 tenetelo d'occhio anche con cambio
+27:06 candela già questo potrebbe fare qualcosa di importante perché se non abbiamo un crollo
+27:10 di bitcoin ma qualcosa di stabile e questo inizia a dare gas abbiamo a nostro favore
+27:15 quel meccanismo lì nel daily quindi torniamo a vedere il daily avremo quel meccanismo lì
+27:22 di andare a superare le ma 10 e i massimi di ieri e questo c'ha le ma 10 che comanda da un secolo
+27:30 praticamente a un daily super mega compresso incredibile quindi un alert questo alert qua
+27:37 ovviamente potrebbe non capitare assolutamente nulla oggi ma potrebbe capitare nei prossimi
+27:41 giorni sperando che capiti quando sia svegli perché questo è uno di quelli che può fare
+27:47 quel movimento che ha fatto burger ok burger lo rifaccio vedere nel daily burger vedete che
+27:53 comunque la 10 comanda da molto meno tempo e comunque gli ha fatto fare quell'esplosione
+27:57 mega galattica figuriamoci cosa può far bnx quindi attenzione a questi io amo queste
+28:03 queste rotture delle ma 10 nel daily sono fantastici fateci l'occhio quando vi capita
+28:08 di vederli tenete le d'occhio tenete sempre un alert sperando poi che faccia una rottura
+28:12 quando siete svegli ok bene detto questo andiamo a vedere l'ultimi fra i peggiori quindi nella
+28:18 classifica andiamo a mettere i peggiori speravo di vedere qualcosa a meno 50 invece c'è un
+28:22 misero meno 7 di hai ok hai ha fatto la rottura delle ma 10 ha fatto il suo bello spike e oggi
+28:32 sta già tornando indietro sta tornando di nuovo sotto però vedete quando si fa una
+28:35 rottura delle ma 10 che comanda c'è sempre uno spike ok più o meno grande questo è
+28:40 uno spike piccolo ma stiamo vedendo la percentuale stiamo parlando di comunque da 9 a 2 è andato
+28:45 a 16 comunque insomma è un bel movimento è un bel movimento quindi niente di particolarmente
+28:52 interessante nei peggiori non c'è niente vediamo a tribe no tribe invece sì allora
+29:02 guardate daily tribe perché è interessante questo dopo andiamo a vedere nei segnali bull
+29:05 bot così capiamo cosa andiamo a vedere questo può essere un segnale di pesca quindi noi
+29:11 abbiamo un movimento del del che giorno è questo qua 27% si insomma tre giorni fa c'è stato il
+29:24 candelone verde che ha rotto la lemma 60 la candella di riposo poi un'altra mega candela
+29:31 oggi candella di riposo che non è andato a toccare la lemma 5 questo assolutamente se mi va
+29:41 verso candela quindi il superamento di 1 22 che è il livello del del corpo dei degli ultimi
+29:51 due giorni ok quindi 1.22 questo è un momento in cui questo esplode quindi potrebbe succedere
+29:59 non difficilmente accadrà col cambio candela quindi questo magari è qualcosa di più avanti
+30:03 però lo stiamo analizzando un alert qua a 1 e 18 me lo vado a mettere anch'io
+30:12 allora questo me lo vado a mettere subito
+30:16 allora stiamo parlando di
+30:21 tribe
+30:26 crea viso allora
+30:32 stiamo parlando del livello 1 e 18 sì
+30:45 allora 1.17 e 9 ok
+30:53 ok questo magari non lo fa però teniamolo d'occhio perché ha già scaricato ha fatto
+31:00 su riposino il caso in cui dovesse arrivare lì vuol dire che qua vuole esplodere quindi
+31:07 teniamolo d'occhio altamente improbabile che lo posso fare oggi col cambio candela
+31:11 vediamo 30 minuti
+31:13 sta riposando bello bello bellissimo in realtà 1 e 14
+31:21 1 e 14 è un bel livello avrebbe la 60 in testa quindi rompendolo a 1 e 15 siamo sopra
+31:31 ma perché 1 e 18 questo non l'ho capito
+31:36 1 e 14 e l'1 e 15 no si è detto 18 perché sono già a mezzo flippato che per me adesso
+31:43 è come se fossero le 3 del mattino quindi l'1 e 14 diciamo è un livello che va a superare
+31:51 tutte le candelline della lateralizzazione ok quindi livello pulito sarebbe 1 e 13 e
+31:57 5 diciamo però mettiamo un po' di spazio è 1 e 14 1 e 14 ci troviamo però già subito
+32:02 in testa la 60 1 e 15 siamo sopra quindi dall'1 e 14 1 e 15 se c'è una conformazione
+32:10 questo è interessante 30 minuti questo è interessante perché potrebbe fare appunto
+32:16 l'uscita shimano che poi ci porta a fare nuovi massi attenzione questo questo potrebbe essere
+32:22 un pazzo si tribe interessante quindi anche qua abbiamo il l'1 e 18 di prima che è quello che
+32:28 ha tu chiedevi l'1 e 18 quello del che ho cerito prima come alert ok quello è per il daily
+32:35 perché è 1 e 18 perché è a metà strada ok allora mettiamo il daily no no l'1 e 18 perché
+32:41 il livello il livello è col passaggio in verde quindi siamo andando in 1 e 22 quindi è molto
+32:49 più in alto che il corpo della candela di quei due giorni li arriva a 1 a 22 il 18 perché io
+32:56 voglio l'alert che mi arriva prima ok perché la conformazione perché io non voglio il dritto
+33:02 per dritto io voglio la conformazione la conformazione lo potrebbe fare a 1 e 15 che va
+33:08 alla rottura della 60 che abbiamo visto prima potrebbe farlo a 1 16 117 lo potrebbe fare a 1
+33:16 18 quindi lo voglio saperlo prima che vado poi rompere ok quindi l'alert voglio che mi
+33:22 raggiunga prima per quello senza aver mai senza neanche aver guardato il book perché se guardiamo
+33:28 il book e niente è compresso adesso poi basta sì quindi questo è a questo livello che sta
+33:43 facendo fare le queste candeline dentro lo shimano col time frame 30 minuti lo vediamo
+33:50 tranquillamente nel book è bellissimo quindi l'1 e 14 c'è campo libero hai visto il book
+33:57 guardate il book raggruppato a 0,01 siamo su tribe andateci tutti questo è molto interessante
+34:03 livello fantastico coincide poi coinciderebbe con la rottura di questa laterizzazione che sta
+34:11 facendo di candeline a time frame 30 minuti quindi rotto l'1 e 14 avrebbe campo libero per rompere
+34:17 poi la 60 e poi dopo avrebbe campo libero per poter uscire da questa laterizzazione molto
+34:25 interessante le laterizzazione con candeline time frame 30 minuti sono una bomba ragazzi una
+34:30 bomba e qua abbiamo un setup molto chiaro nel book quindi interessante un alert a sto punto
+34:36 lo andiamo a vedere un po più chiaramente dov'è questo livello esattamente allora abbassiamo il
+34:43 ecco il livello finisce a 1,1 13 e 7 quindi un alert a 1 e 13 a sto punto è proprio quello
+34:52 preciso quello potrebbe essere un'accelerazione anche per il cambio candela quindi 1 e 13 è un
+35:00 alerto ancora più immirato bello molto bello questo sì se io facessi cambio candela sì sì
+35:07 sicuramente un alert a 1 e 13 interessante bene andiamo a vedere che informazioni ci può dare
+35:20 allora prima cosa pesca pesca i segnali pesca escono di sera abbiamo rose e rose
+35:33 rimettiamo questo di qua che riesco a farlo meglio con le pagine web rose ovviamente
+35:39 era quello che avevamo già visto prima
+35:48 questa è tribe ok bellissimo questo perché non abbiamo ancora il segnale diciamo della
+35:58 pesca di oggi o comunque non non ancora segnato niente ma abbiamo quello di ieri e rosa avete
+36:04 visto ha fatto i segnali di pesca ieri che andava su lema 5 e oggi guardate cosa ha fatto c'è
+36:10 bellissimo sto segnale aspetta lo faccio vedere poi nel video rose 21 e 16 di ieri la candelina
+36:19 rossa e poi quella di pesca cioè che è nato poi a pescare nato su lema 5 nel daily e poi oggi
+36:26 grande accelerazione di nuovo sui massimi pazzesco oggi invece non ce l'abbiamo quindi se avessimo
+36:32 avuto qualche segnale da tener d'occhio proprio per questo quindi pesca fantastica andiamo a vedere
+36:36 saldi i saldi ci da a ch a ch è uno nuovo quindi ovviamente ce lo segnala anche questa di ieri
+36:56 quindi non abbiamo ancora le aggiornamenti da bulbota su questo
+37:00 dopo qua ok andiamo a vedere il daily questa bomba andiamo a vedere il daily
+37:09 allora andiamo a vedere lrc
+37:15 l scusa l t c
+37:20 ok qua ci siamo
+37:25 l t c è finalmente interessante come daily molto interessante tra l'altro sta già facendo il
+37:38 movimento l t c ha praticamente quindi la candela di break out delle ma 10 che comandava nel daily
+37:46 ieri ha riposato e oggi ovviamente il trigger ideale era il superamento del livello quindi 142
+37:52 adesso all'accelerazione andiamo a vedere time frame wow time frame 30 minuti potente
+37:58 anche questo abbiamo trovato un altro che potrebbe salire in modo interessante sta pagando poco
+38:07 adesso questo è un titolo che paga poco ancora le proporzioni piccole
+38:11 si paga poco però questo quindi non so non so se sprecare però comunque tenetelo d'occhio
+38:20 con un time frame a 30 minuti comunque è interessante quindi poi si potrebbe lasciar correre
+38:24 andiamo a vedere un'altra cosa al kp3r abbiamo già analizzato poi c'è one lo sappiamo però mi
+38:33 sa che paga poco one andiamo a vedere no ma insomma siamo a volta immagina eh sì sì sì siamo vicini
+38:52 a quel 38 sì interessante vediamo no pensavo che pagasse poco ma comunque si siamo vicini
+39:04 38 quasi amore 30 si era proprio sfiorato vediamo 30 minuti quando è che c'è andato a poco fa
+39:12 anche questo bisogna tenerlo d'occhio lo sta pagando poco quindi però adesso per tornare
+39:18 sui massimi a movimento anche abbastanza grosso non lo so qua
+39:23 qua io penserei più che altro a tenerlo nel caso in cui si avvicinasse lì all'altime quindi magari
+39:31 insomma a tipo 37 2 un alert ma se no non lo considererei sì dai un alert a 37 2 così
+39:41 ci si prepara per rompere i massimi di oggi perché poi sono la rottura verso gli altime
+39:48 nel book ci sarà il macello li vediamo a 38 cosa c'è nel book e sì vabbè aspetta sono troppo
+39:59 raggruppato vediamolo così e sì è bello baricato 38 quindi quindi a questo punto conviene aspettare
+40:10 già quel livello li e vedere perché secondo me c'è il rischio che quel 38 li ci mette un bel po'
+40:15 per rompere quindi non stiamo parlando sicuramente del cambio candela però da tenerlo d'occhio al
+40:20 livello quindi magari anche il 37 2 un bel alert magari nei prossimi giorni domani mani mattina
+40:26 potrebbe potrebbero aggiungerlo e eventualmente vi vi dice qualcosa ah mi sono dimenticato di il
+40:33 cavallo pazzi comunque di oggi anche se adesso risulta una percentuale bassa ma glmr assolutamente
+40:39 uno da guardare e vengono a dire glmr ok
+40:50 allora il daily ovviamente non ha molto se no il daily già già quattro giorni sono già passato
+40:59 quattro giorni pazzesco è niente interessante interessante poi fa dei movimenti pazzeschi
+41:05 cioè qua è tutto sproporzionato praticamente ogni movimento che fa è incredibile qua mi
+41:10 raccomando entrare solo quando e se vedete delle delle conformazioni belle per esempio
+41:15 questo bad qua spettacolare pensate il 13 e 5 e 13 55 to 13 54 questo era un bel bad
+41:24 bellissimo tenetelo d'occhio se questo è da tener d'occhio questo lo metterei nei grafici
+41:31 nei sei allora un minimo di discriminatura quindi nel dele abbiamo fatto cosa c'era anche
+41:38 le tc cava dodged dodged ben già visto link ma stiamo già parlando di qualche giorno fa quindi
+41:46 non non c'è granchè col daily e niente allora ovviamente ovviamente tenere discorso bomba anche
+41:56 se bomba nel cambio candela ha dei problemi cioè funziona per quanto riguarda appunto il
+42:02 segnale bomba e invece per quanto riguarda il segnale 3% ai massimi di ieri ovviamente
+42:10 non funziona in inizio l'abbiamo fatto disattivare perché suonerebbe su tutti appena fa il movimento
+42:15 quindi non funziona diciamo non ha senso da guardarlo comunque poi parte da più tardi e poi
+42:26 abbiamo il secondo tocco ecco quello sì quello molto interessante quindi tenere aperto io terrei
+42:32 aperto il discorso del segnale bomba per vedere il segnale bomba in sé in caso in cui ci fosse
+42:38 qualcosa di nuovo che parte lo sappiamo ma però senza farci troppo distrarre perché dovremmo già
+42:44 avere una strategia già nostra ma interessante invece più interessante è il secondo tocco il
+42:51 doppio tocco perché potrebbe essere qualcosa di già strutturato quindi noi dopo andremmo ad
+42:57 aprire il il grafico con un qualcosa di già strutturato per un break out ok perché potrebbe
+43:04 essere molto più di un secondo tocco potrebbe già essere un terzo tocco qualcosa di più importante
+43:08 insomma è un qualcosa che ha già fatto un massimo ci sta tornando magari è già ci ha già tornato una
+43:13 volta magari già la seconda terza insomma quel che è quindi il mio canale preferito è questo per
+43:18 questo ho fatto mettere diciamo in questa stanza tre conformazioni completamente diverse ma sono
+43:23 le tre che io mi piace avere sempre sotto da guardare che lo faccio vedere anche nel video
+43:28 quindi praticamente io tengo aperto questa stanza qua poi farò un video solo su come io utilizzo
+43:36 bull bot insomma però qua c'è la stanza con bomba i max quindi i max di ieri quindi quando ci
+43:44 avviciniamo ai massimi della candela daily di ieri e in più il doppio tocco quindi per il cambio
+43:49 candela è interessante il doppio tocco e segnal e bomba quindi interessante tenerlo sotto e detto
+43:58 ciò detto ciò finiamo semplicemente con l'analisi di bitcoin che è il nostro potenziometro fondamentale
+44:08 fondamentale per capire cosa possiamo avere da qua a pochi minuti ok allora qua sto prendo
+44:20 io c'ho io ce l'ho con io lo guardo bitcoin tramite perpetuo ma comunque i livelli sono più o meno
+44:25 gli stessi cambia di poco ce l'ho semplicemente perché così rimane sempre l'insomma non visto
+44:33 che non ci faccio trading così non devo non devo occupare uno spazio per questo allora
+44:39 sto vedendo innanzitutto lo spike che sta facendo time frame io bitcoin e ethereum e bnb ce li ho
+44:46 sempre nei miei grafici degli indici diciamo e li vedo con time frame a 5 minuti e stanno andando
+44:52 su stanno andando su bene allora nel daily quindi bitcoin daily mettetevi sul bitcoin daily in
+44:57 questo momento qua stiamo battendo in testa lema 10 quindi possibili breakout molto bullish qua
+45:04 se noi rompiamo lema 10 e comunque facciamo cambio candela e ricordiamo manca poi due ore
+45:11 non manca tantissimo già chiusura candela così già è carino non è male chiusura candela con
+45:17 bitcoin chiusura candela sopra le ma 10 è molto potente quindi assolutamente interessante
+45:27 e cosa non vogliamo vedere non vogliamo vedere un'accelerazione a ribasso di bitcoin prima del
+45:33 cambio candela cioè una chiusura per esempio sotto lema 5 questo non lo vogliamo vedere sarebbe
+45:39 molto brutto quindi quota sotto 43 non lo vogliamo vedere che adesso c'è a 40 450 insomma sopra e
+45:49 sotto 43 quindi chiusura sotto lema 5 sarebbe brutto molto quindi vediamo dipende tanto no
+45:58 avete notato anche voi che comunque col cambio candela se poi bitcoin anche lui soffre del
+46:02 cambio candela quindi parte con accelerazioni o sopra o sotto possono crearci dei problemi poi
+46:08 con quello che stia lavorando detto ciò se non ci sono domande oppure chiediamo qualcosa a voi
+46:13 due dopo passiamo direttamente a la strategia di ingresso perché accadono dei movimenti
+46:19 particolari subito col cambio candela e vi spiego quali sono le mie due strategie preferite se c'è
+46:25 qualche domanda al salto e la manina magari parliamo di quello che abbiamo parlato adesso
+46:30 cambio un attimino mi vuole aggiungerti dot guarda dot daily me l'ha mandato malies mi sembra
+46:41 mi sembra bello dei li per fatti interessante 30 minuti pure allora guardiamo dot hai detto dot
+46:58 ah sì sì sì sì grande mais e sì questo perché interessante perché ieri ha riposato
+47:04 oggi è proprio a quel livello trigger quindi in questo momento qua è proprio al livello trigger
+47:09 il massimi che ha fatto prima credo che quando è che la fatte a sì due minuti fa un minuto fa
+47:16 ecco quello è il livello trigger quindi bisogna sperare che qua faccio un livello o faccio una
+47:22 conformazione perché qua c'è il livello trigger che poi può portare dopo abbiamo spazio fino
+47:28 alla 223 il problema è che qua stiamo andando in un incrocio in un incrocio contro quindi
+47:37 in teoria dovrebbe essere una resistenza molto potente ma comunque abbiamo spazio
+47:40 10 per cento tranquilli proprio non un 10 però quasi ma soprattutto nel caso che
+47:46 vi conto come che vi tu anche bitcoin sta facendo l'incrocio in giù però siamo molto
+47:53 distanti siamo più distanti diciamo però effettivamente se ci assomiglia tanto qual è
+47:57 allora vi spiego subito se per caso sia dot che che bitcoin che comunque bitcoin è più distante
+48:05 però comunque in generale qualsiasi cosa voi vedete che sta per fare l'incrocio ma si va a
+48:10 rompere la candela dell'incrocio è un segnale super bullish è un segnale di forza incredibile
+48:19 bitcoin non so se possa far sta cosa qua però comunque dot invece comunque ovviamente se
+48:28 ce se adesso fa una conformazione di breakout lateralizzano attimo cioè take profit sicuramente
+48:34 sotto 30 non andrei a scommettere che vada a rompere quel 30 però nel caso in cui lo
+48:40 dovesse fare veramente veramente estremamente bullish però ricordiamoci in testa abbiamo
+48:44 quella roba lì comunque la conformazione questa del daily soprattutto di queste ultime tre candele
+48:48 che si si trovano sopra le ma 10 e soprattutto sopra la candela rossa di ieri che è andata a
+48:55 scaricare questa è una conformazione bellissima del di ottima segnalazione e niente qua non mi
+49:00 vuol fare la conformazione di riposo sta già partendo perché quello è lì va e quindi sì
+49:08 l'ingresso qua era questo qua sotto il 27 il 27 27 insomma o 27 3 proprio perché aveva fatto
+49:16 un minimo di conformazione aveva toccato la 62 volte aveva fatto le candeline anche solo il
+49:22 bad questo qua 27 25 quell'ingresso lì adesso siamo in un momento un po di trigger nel daily
+49:30 questo è un momento di breakout praticamente quindi bisogna sperare che riposi un attimo
+49:35 molto interessante come questo bravo bella bella cosa c'è anche qualcos'altro che c'era nella
+49:42 stanza aspettate che torno nella chat ecco chat per live al cix andiamo a vedere
+49:51 al cix
+49:56 andiamo a vedere dei dei questo scambia pochissimo c'è interessante anche questo
+50:08 era interessante stamattina alla rottura stesso ragionamento la rostura la rottura dei corpi
+50:15 quindi stiamo parlando di 311 6 312 to 312 era interessante perché rompeva i due corpi
+50:26 soprattutto rompeva il corpo del rosso di ieri quindi li poteva ci potevamo aspettare comunque
+50:32 abbiamo il trigger dei massimi di ieri che siamo praticamente lì e subito dopo i massimi di due
+50:39 giorni fa che è 340 quindi interessante anche quel livello lì vediamo se c'è già una conformazione
+50:45 adesso sta riposando che è interessante sì questo potrebbe fare un movimento 5 minuti niente di che
+50:53 30 minuti niente di che per adesso come graficamente fa schifo sta scambiando
+50:59 praticamente niente fa abbastanza schifo però comunque nel daily interessante ha un alert
+51:05 si può tranquillamente mettere che livello è una 28 dai massimi di oggi quindi la rottura del 330
+51:19 vediamo nel book se c'è qualche livello ma c'è chi te ne vuole io potrei proprio entrare
+51:31 scambio veramente poco comunque si è 3 3 ma non c'è proprio niente il 325 325
+51:42 dove adesso e niente ragazzi io questa cosa questo questo buco non potrei tenere in considerazione
+51:53 abbiamo anche nier sui massimi storici io lo voglio far cancellare dal mondo crypto che
+52:05 veramente fa veramente schia il book premio più schifoso dell'anno il daily però si è continua a
+52:11 andare continua a andare e siamo che è volte mai questo poi e si si si è voltai mai
+52:20 e si dei dei li è bellissimo questo è fosse un titolo normale sarebbe da seguire però ha
+52:30 veramente un book che fa schifo perché me non piace perché per esempio vedete questi livelli
+52:34 belli grandi anche a 20.2 no c'è tanta roba magari ci lo raggiunge lo distrugge e poi dopo
+52:43 torna indietro che quando fanno questi movimenti qua io appena quando vedo una volta che mi fa
+52:48 sta roba qua io proprio lo elimino chi sta lavorando in quel momento lì così si diverte
+52:56 a mettere i muri enormi se le fa mangiare poi ne metto di nuovo quindi vuol dire che proprio
+53:00 e poi continua a salire mi ricordo luna ai tempi poi dopo luna sembra se è diventato anche bello
+53:06 nel book ma è stato un periodo che faceva veramente schifo io non mi sono fatto la
+53:09 salita perché era inguardabile questo pure poi voi fate come vi pare io questo manco neanche
+53:17 a pagamento non andrei a tradare mi rifiuto e poi magari appunto non è sempre così cioè
+53:26 nel senso da un certo punto chi stava facendo quel tipo di lavoro smette perché finisce il
+53:33 suo ingresso finisce di vendere finisce diciamo il suo percorso e dopo comandano altri e quindi
+53:41 il carattere diciamo si può modificare però per adesso chi c'è mi è abbastanza antipatico quindi
+53:47 niente ok direi che come analisi comunque è stato abbastanza fatta bene abbiamo fatto già
+53:54 abbastanza cose da qua però andrei a parlare di cosa cosa aspettarci come tecnica ok se c'è
+54:04 qualche domanda così nel frattempo bevo un attimo c'è anche eddi eddi magari vuol
+54:14 fare una domanda andiamolo su eddi sei quello di prima giusto?
+54:21 allora volevo farti una generazione bnb bnb ok ce l'ho già
+54:31 che fra l'altro è in atto la tecnica bnb esatto
+54:38 io fra l'altro non ho considerato perché bitcoin era troppo in una zona di pericolo
+54:45 ma avrebbe funzionato quanti giorni fa cos'era era era quanti giorni fa c'è stato?
+54:53 mi sembra l'undici sai l'undici?
+54:57 l'undici oppure dodici
+55:02 non mi ha aggiornato il grafico ok adesso si
+55:04 vedrete nella registrazione che io stavo mostrando il daily di nir
+55:20 ok bnb ecco adesso ci siamo e l'undici coincide ok si perfetta si si si infatti
+55:31 eravamo in momento di minimo e con la notizia bitcoin bnb era proprio accelerato forte col
+55:38 tweet quindi proprio quello della tecnica effettivamente è già salito tanto e io non
+55:44 ho partecipato non ho fatto neanche un trade in questa cosa qua semplicemente perché
+55:47 bitcoin era troppo in una situazione così un po' l'undici cos'era?
+55:54 era una situazione così in cui non mi fidavo però effettivamente sta funzionando e fra
+56:00 l'altro messo molto bene quindi se bitcoin comunque continua così senza darci delle
+56:06 chiusure troppo strane effettivamente qua a bnb deve fare sul lavoro fra l'altro era
+56:12 bello proprio perché era sceso tanto finalmente perché tutte le altre volte ricordiamoci
+56:17 c'è stato anche delle volte che finiva un ICO e appena neanche il tempo di scaricare
+56:24 li facevano partire un altro ICO e quindi il prezzo non aveva mai tempo di scaricare
+56:28 era brutto invece questa volta ho avuto tempo di scaricare come quindi se bitcoin non si
+56:33 fosse trovato in un momento dove ci potessero essere dei fresh crash era veramente interessante
+56:42 da fare veramente interessante per quanto riguarda lo scalping non ha senso perché
+56:47 comunque fa dei movimenti che non pagano ma con la tecnica bnb che c'è da tenere molto
+56:53 interessante fra l'altro sta facendo anche questo questo conformazione bellissima di
+56:58 rottura a tre quindi dopo una candela di riposo va rompere quindi veramente interessante e
+57:04 ha spazio fino alla 60 5 16 poi volevo farti un'altra domanda mi senti? Si, si, benissimo
+57:16 mi senti te? Si, si, si, e volevo farti cosa intendi con paga poco. È un discorso di proporzioni
+57:26 cioè fa un movimento che si muove poco ok noi vediamo lo stesso grafico questo caso qua magari
+57:35 può fare il movimento che arriva a 500 da 489 e sembra un movimento grande ma in realtà
+57:43 percentualmente è poco invece nei titoli abbiamo visto prima lo stesso tipo di movimento ci porta
+57:48 a 3 4 volte di più il movimento e quindi una percentuale 3 4 volte maggiore quindi in questo
+57:55 senso qua paga poco nel senso che con lo stesso movimento grafico qua ci dà poco percentuale in
+58:02 un'altra conformazione ci dà molto di più quindi paga di più e questo paga meno non so se mi sono
+58:08 spiegato più o meno dai. Si è un discorso di proporzioni se tu prendi righello guarda lo
+58:15 faccio cambio schermo faccio un esempio pratico andiamo su trading andiamo su kkp3r sul daily
+58:30 anzi ci vorrebbe una conformazione simile così era uno di quelli di prima che abbiamo
+58:40 guardato con una conformazione simile
+58:42 e poi anche lì avremo delle percentuali un po allora vediamo velocemente
+59:03 .bnb e ecco qua rose ok facciamo un esempio con rose che è interessante allora rose che tanto
+59:17 è da caricare quindi qua sono di qua chi tolgo tolgo sicuramente doge tolgo doge dei miei metto
+59:26 rose che c'è qua allora la conformazione sempre a tre candele ok rottura del corpo e il breakout
+59:43 qua stiamo parlando solo il movimento che ha fatto adesso e stanno già parlando di un 11% ok
+59:52 prendiamo bnb invece bnb qua carica il grafico
+60:02 ok vedo il righello rottura del corpo anche se fa una candela enorme stiamo parlando del 4%
+60:16 ma deve fare una candela enorme per fare 4% bnb invece lì con una candela
+60:22 diciamo graficamente sembra simile ma ha fatto ha fatto più del doppio questo è quindi quindi
+60:33 con la stessa conformazione lo stesso movimento grafico uno fa il percentuale più del più del
+60:40 doppio quindi io andrò a selezionare un titolo che mi fa lo stesso movimento ma che mi darà una
+60:48 percentuale più grande è semplicemente un discorso di proporzioni per questo che io cerco di lavorare
+60:55 sempre con quelli che si muovono tanto perché facendo lo stesso movimento hai un gain percentualmente
+61:02 vabbè vedrai edi se si fai caso con queste cose usi il righello usando il righello te la
+61:14 cogi subito anche l'alert su burger a 2.65 dato adesso
+61:24 lo che sì sì sì l'abbiamo messo prima
+61:30 ecco
+61:38 non era male dai è contento però non ha fatto nessuna conformazione no no no
+61:55 però era un livello a 30 minuti e la conformazione 30 minuti è nato a rompere
+62:02 il livello dei corpi si però è partito che siamo troppo troppo su
+62:06 a 5 minuti ecco no a 5 minuti c'era la conformazione la conformazione a 2.6
+62:15 potrà fare del candelino sulla 60 che è come è stato l'ammer candelino su 60 ha rotto a ribasso
+62:22 e quindi non c'era da entrare ma si va a ritornare sopra al livello dell'ammer lì c'è l'ingresso
+62:29 quindi 2.6 sta impazzendo bello bello
+62:33 comunque teniamolo perché questo
+62:38 ecco va a finire che arriva il cambio candela che è già sulla 60 e quindi dopo comunque tener
+62:46 d'occhio partenza super sprint fra l'altro vedo un candelone anche di di shiba
+62:52 candelone di shiba ultimamente analizziamo un attimo shiba perché ultimamente sta facendo
+62:58 l'altro io stavo spiegando senza farlo vedere nel video quindi il livello di burger a 30 minuti
+63:09 era questo livello qua 2.6 7 ma se andavamo a 5 minuti avevamo questo martello che poi
+63:19 ha rotto sotto ma come ho spiegato nel video se poi torna sopra il livello del martello
+63:23 quindi la natalizzazione di candeline è un ottimo ingresso perché ha fatto la finta ha scaricato
+63:29 se torna subito è proprio potente e shiba guardiamo shiba perché ultimamente sta facendo
+63:36 da quando è uscito sta cosa del videogioco che fra l'altro sembra graficamente figo e ha fatto
+63:44 qualcosina anche qua conformazione a tre candeline sono tutti uguali conformazione a tre candeline
+63:52 e niente fra l'altro poi ci abbiamo anche la 60 sopra comunque se va a rompere i massimi di
+64:03 ieri che comunque massimi di giornata quindi dai se torna massimi di giornata può essere
+64:08 interessante massimi di giornata e non è male perché secondo me è 30 ma no questo è 30 minuti
+64:14 a 30 minuti è un bellissimo livello è 0 0 0 3 2 5 bellissimo livello e sì un alerta 3 2 1
+64:23 tenetelo molto bello questo è questa è una bellissima conformazione a 30 minuti molto
+64:29 interessante eppure nel daily a rompere quanto spazio avrebbe fino alla 60 fino a 34 erotti
+64:38 sì dai c'è qualcosa che poi potrebbe anche appunto potrebbe anche andare a rompere la 60 quindi
+64:47 candela rossa di riposo l'ha già fatto è interessante dai bel livello a 30 minuti comunque
+64:53 anche anche il livello che sta facendo adesso rompendo lo spike del 31 e 66 è interessante
+65:02 non manca tanto è un altro a tener d'occhio comunque book book bellissimo tra l'altro
+65:11 no è possibile davvero no no no no no okay no non lo faccio
+65:16 sì sì e book bello e shiba non possono poteranno mai andare d'accordo e ok e andiamo a parlare
+65:27 invece di che strategie ci dobbiamo aspettare ok prima prima che vi posso svinire so se state
+65:34 sentendo la voce che piano piano si sta abbassando è morendo in diretta allora
+65:40 e torniamo qua fra di voi come schermata vediamo se ho vediamo se riesco a trovare
+65:50 qualche file
+65:54 allora
+66:01 eccolo qua questo cos'è
+66:11 sì dai ho un esempio
+66:14 ho un esempio non è
+66:18 sì dai bello ok strano che non solo uno devo
+66:26 trovare degli altri vediamo
+66:29 dovevo collezionare comunque ragionamento è questo
+66:34 faccio vedere con questo esempio
+66:36 allora mettiamo qua allora praticamente cosa succede col cambio candela allora ci
+66:47 può essere ci possono essere diverse situazioni una situazione è quella di
+66:53 un'accelerazione prima del cambio candela quindi c'è il rush c'è il panico di non
+67:00 di non non entrare in tempo su qualcosa dopo come candela che posso scoppiare
+67:06 quindi cosa succede ci può essere una salita grossa prima del cambio candela
+67:09 in quel caso lì io sconsiglio altamente l'ingresso
+67:15 ok consiglio di sfruttarlo prima del cambio candela ma di non considerarlo
+67:19 dopo se non dopo un crollo ma io ho visto che ci sono delle
+67:28 configurazioni dove corrono prima del cambio candela fanno fino a mezz'oretta
+67:34 prima circa un quarto d'ora prima poi fanno una candela fanno un quarto d'ora
+67:38 mezz'ora di riposo quindi della talizzazione o comunque vanno a toccare
+67:42 lema 10 o comunque meglio ancora se va su lema 60 comunque la terraria zonate
+67:47 quindi si riposa un attimo ecco questi se vanno poi a salire sopra
+67:51 perché questo è uno degli esempi che c'ho era su bat tempo fa non mi ricordo
+67:56 quando che solito far questa operazione qua era salito tantissimo prima del
+68:02 cambio candela poi ha lateralizzato ha fatto come un doppio manico e poi
+68:08 proprio col cambio candela quindi il minuto prima del cambio candela
+68:15 il minuto del cambio candela è andato a fare candela rossa poi ha chiuso a
+68:19 emmer quindi poi in verde e la candela dopo ha rotto i massimi di questa
+68:23 laterizzazione poi è scoppiato ok quindi se vedete qualcosa che verso il
+68:30 quindi andate a vedere nei grafici eccetera se vedete qualcosa che sta
+68:33 accelerando molto forte è ottimo da tenere d'occhio se nell'ultimi 15 minuti
+68:39 10 minuti o mezz'ora comunque fanno un riposo una laterizzazione fanno una
+68:44 base da tenere d'occhio perché se questo va a rompere quella base quindi va a
+68:48 fare i massimi nuovi questo è una bomba non succede spessissimo ma comunque
+68:54 succede ok quindi tenete d'occhio tenete presente che questo può succedere
+68:58 l'altra situazione che invece succede più spesso è semplicemente di avere una
+69:03 qualsiasi conformazione su uno di questi titoli che abbiamo analizzato ha una
+69:08 conformazione di riposo quindi una semplicemente tipo so guardiamo
+69:14 sciva abbiamo rosla è quello che ci abbiamo aperto qua spetta questo lo chiudo
+69:21 cambiamo schermo diamo su rose vediamo se troviamo una conformazione da fare
+69:27 esempio
+69:31 ros mettiamo a un minuto ok adesso per esempio abbiamo lo shimano
+69:37 mettiamo che noi arriviamo rose fra l'altro uno che può andare sui massimi
+69:42 storia quindi è uno in cui guarderemo la mettiamo se ne ha uno shimano adesso
+69:45 c'è il cambio candela in questo momento qua noi non dobbiamo fare nessun tipo
+69:49 di ingresso se non all'uscita dello shimano che doveva comunque tener conto
+69:53 della conformazione l'unico altro ingresso che vi posso
+69:57 consigliare prima di un arroturo di shimano è che sperando che appena fa il
+70:01 cambio candela questo possa scendere quindi esca dallo shimano fa candela
+70:04 rossa va da giù quindi va va inizia il panico a ribasso scarica tutti gli
+70:11 scettici se poi torna su quindi guardate rose dovesse tornare su siamo ancora
+70:17 dentro lo shimano ma torna al livello anche questo un 0 5 6 6 insomma torna su
+70:25 a questo livello quindi andava a rompere lo shimano quindi va sotto fa la finta
+70:30 torna su torna quel livello già lì è un ingresso perché questo qual è
+70:34 ragionamento dietro quindi siamo dentro uno shimano io solitamente non farei
+70:38 questo tipo di di operazione ma col un cambio candela lo consiglio perché
+70:44 ricordiamoci che appena c'è il cambio candela se prende una direzione tende a
+70:48 esserci il panico per quella direzione lì quindi noi dobbiamo sperare che faccia
+70:52 sempre al col cambio candela la discesa così si scaricano tutti quelli che hanno
+70:59 paura che quel titolo possa accelerare di basso sono magari in gain hanno pure
+71:04 di perdere il gain e quindi vanno vanno vanno a chiudere
+71:07 ok perché hanno pure che possa andare a accelerare fortemente di basso se poi
+71:11 dopo questo non fa l'accelerazione è a ribasso che porta non so a lema 5 o
+71:16 chissà dove ma torna poi su al livello di una configurazione possibile in
+71:23 questo caso qua vediamo queste queste candele che ci sono prima
+71:27 quindi troviamo questo esempio adesso 1 2 3 4 candele prima c'è questo livello a
+71:33 0 5 6 6 se supera quel livello lì vuol dire semplicemente che ne ha per ne ha
+71:40 veramente tante ok e ha già scaricato tutti gli scettici quindi qua possiamo
+71:44 fare già il nostro ingresso che non consiglierei di fare se non fossimo in
+71:48 un cambio candela ma essendo in un cambio candela con una candela di scarico che
+71:53 è andato a rompere lo shimano quindi ci dimostra ci ha dimostrato che appunto è
+71:58 stato debolezza ma torna su e li dimostra che volcomandare lì possiamo
+72:01 già fare il nostro ingresso ok in questo caso sta prendendo shimano
+72:05 andiamo a vedere qualcos'altro quindi un altro su cui lavoreremo è dcr time frame
+72:11 un minuto questo è un altro bel esempio ok per adesso c'è il grafico più brutto
+72:16 del mondo a un minuto fa veramente schifo vi confermate che mi sentite
+72:20 vero? Sì sentiamo, sì sì ok time frame a un minuto fa veramente schifo io osceno
+72:26 però cosa ci potremmo aspettare? due cose il massimo sarebbe che adesso
+72:32 scendesse rompesse la 223 quindi fa il solito discorso di scaricare aver paura
+72:38 creare il panico e quindi vada a fare il rosso già se dovesse tornare a 75 qua
+72:44 potremmo pensare di fare l'ingresso perché questo perché appunto è andato
+72:47 scaricare, è andato a fare una rottura di di panico e una rottura di farci capire che
+72:53 vuol scendere ok la rottura della 223 qua è un segnale di cambio trend è un
+72:57 segnale di debolezza estrema se poi da qua fa una finta e torna su
+73:01 fa capire semplicemente che ne ha e quindi usiamo questo ingresso non c'è
+73:06 bisogno di aspettare il 76.5 basta semplicemente questo livello qua che è
+73:12 75 ok che sarebbe 74 e 9 ma andiamo al numero pari 75
+73:19 facciamo un altro esempio kp3 3r andiamo a time frame a un minuto
+73:27 ecco sono tutti uguali praticamente anche qua abbiamo il livello anche qua
+73:33 il massimo sarebbe sempre cambio candela e va scaricare se va se va scaricare e
+73:40 poi torna su al livello di prima possiamo già entrare ovviamente a questo punto
+73:44 abbiamo comunque la 60 lì vicino aspettiamo la rottura da 60 quindi 1644
+73:51 e lì c'è abbiamo il nostro ingresso sempre se fa lo scarico se non fa lo
+73:55 scarico io vi sconsiglio di entrare quindi se adesso fa cambio candela e parte
+73:59 subito vi sconsiglio sconsiglio io vi consiglio di entrare se dovesse partire
+74:05 e andare subito eventualmente aspetti una conformazione bella ecco fa quello che
+74:09 sta cambio candela come fosse successo adesso ok questa candelone verde così non
+74:14 si fa nessun tipo di ingresso si aspetta sperando che questo non vada più su di
+74:19 così ecco questo sarebbe un livello sarebbe una coppa il manico con la coppa
+74:26 al contrario quindi prima il manico poi la coppa sperando che possa riposare al
+74:30 meno una candela poi si fa l'ingresso ok se parte dritto per dritto io vi
+74:34 sconsiglio di fare quelli ingresse lì almeno uno scarico prima o almeno un minimo
+74:40 di conformazione altrimenti rischiate di perché cosa succede quello che v'ho
+74:44 spiegato fino adesso al contrario cioè che quando fa il cambio candela spero
+74:48 nel rosso che vada in negativo e poi dopo torna su ecco lo può fare l'esatto
+74:54 contrario cosa sarebbe esatto contrario che
+74:57 parta come adesso subito in verde e poi dopo mi fa l'accelerazione di basso
+75:03 rosso ok sono entrate quelli che avevano por di non poter entrare ma in realtà
+75:07 voleva scendere quindi dopo ci troviamo delle candellone gigantesche al
+75:11 contrario questo io ve lo sconsiglio sempre quindi candele verdi subito no
+75:16 l'unico ingresso con candele verde subito è se va a fare una allora
+75:28 spaccano all'atterizzazione bravo bravo arriva alla arriva al cambio candela
+75:34 con all'atterizzazione non dico un hammer perfetto ma una
+75:38 laterizzazione se lo va a spaccare subito al primo minuto o anche il minuto
+75:44 prima del cambio candela o anche il minuto stesso lì potete entrare
+75:47 l'unica l'unico eccezione che vi consiglio di entrare
+75:51 bravo nicola del resto non fatevi fregare da queste cose se poi dopo va
+75:56 all'infinito e vi mangiate le mani è meglio così ma statisticamente non ve
+76:01 lo consiglio perché rischiate di prendere schiaffi pazzesche
+76:05 ecco invece se adesso voi andate a creare dei gruppi sapete che cosa potete
+76:10 cercare ok quindi se trovate qualcosa che sta accelerando prima di chiusura
+76:15 candela dovete segnalarlo molto importante e aspettare eventualmente che
+76:20 possa fare un riposo prima del cambio candela dovete segnalare un
+76:28 all'atterizzazione prima del cambio candela molto interessante perché se
+76:31 la massa rompe quello è estremamente un trigger quindi si potrebbe addirittura
+76:36 comunque c'è la stanza per poterlo segnalare questo è molto interessante
+76:40 e poi dopo anche segnalare quelli che col cambio candela partono in rosso e noi
+76:46 notiamo che dopo stanno iniziando a tornare al su ok quindi se noi abbiamo
+76:50 come prima una rottura che va in negativo va a rompere la 223 quindi un
+76:58 segnale estremamente debole ma poi vediamo che sta salendo verso la 223
+77:02 quindi potrebbe andare a rompere ragazzi questo è da segnalare perché questo è
+77:05 un altro jolly in cui potremo entrare quindi abbiamo questo tipo di
+77:09 conformazione poi non so nicola se tu e deg o terry avete qualche conformazione
+77:17 ideale a cui vi piace a voi piace sfruttare con cambio candela io sono su
+77:23 questo la lateralizzazione sicuramente quella più sicura se si può dire sicura
+77:37 e beh quello è il top perché comunque hai praticamente il riposo prima di un
+77:41 grande cambio di trend cioè il cambio di trend più grosso che c'è è il cambio di
+77:47 candela e se tu sei ad un azzeramento quindi non c'è nessun trend perché è
+77:52 una lateralizzazione dal momento che decide la direzione e se per noi è long
+77:57 è il top perché hai il trigger naturale che avrebbe già cioè quello di rompere
+78:03 la lateralizzazione e già lì è un trigger dove dovresti entrare normalmente con
+78:08 l'effetto turbo del cambio candela che è quello dove c'è il panico dove c'è il
+78:11 movimento diciamo veramente più potente la giornata quindi non è semplice da
+78:19 trovare ma comunque è quello che dà più sicurezza però anche lì guardate in
+78:24 quanti siete cioè se creato comunque un gruppo con tanti occhi che guardate
+78:28 diverse cose sapete già le conformazioni da segnalare innanzitutto no
+78:34 si va comunque individuare quindi già mezz'ora prima quindi magari da
+78:39 mezzanotte e mezzo si possono già andare a fare questa ricerca sulle
+78:43 lateralizzazioni è già molto interessante soprattutto se lo troviamo in questi
+78:49 titoli in cui abbiamo analizzato che possono avere dei trigger importanti
+78:53 quindi questo è ottimo e ragazzi allora io sto per per impazzire e
+79:03 ti lasciamo qualche domanda no no qualche domanda prima e poi dopo voi potete
+79:08 dopo che così finisca anche il video perché è un'ora e venti e se voi voi dopo
+79:15 questa cosa qua potreste iniziare a cercare in qualche modo magari fare
+79:18 l'altata di mano di chi vuole fare cambio candela e poi vi dividete in
+79:22 squadre per o in squadre per quello che si può guardare oppure semplicemente vi
+79:29 organizzate in modo di conformazioni oppure comunque tanto usate la stanza la
+79:34 chat per live per chi vede le lateralizzazioni soprattutto da
+79:37 mezzanotte e mezzo in poi o chi vede qualche titolo che sta accelerando di
+79:42 quelli che non abbiamo parlato o insomma qualcosa del genere si può andare ad
+79:46 analizzare insieme poi vedi tu vedete voi nicola deg e terry eccetera fare
+79:50 salire altre persone vedete di organizzare organizzare una squadra
+79:54 avete un palco avete tante persone di disposizione e cercate di fare
+79:59 esperienza perché queste sono cose che appunto stiamo facendo solo noi non è
+80:03 che c'è l'esperienza di lavoro di squadra per il cambio candela però è un
+80:07 grande è un grande strumento se si riesce a lavorare insieme quindi se
+80:11 riuscite a organizzarvi più più poi avete esperienza meglio è più si riesce a
+80:16 sfruttare questo questo meccanismo ciao ciao ciao bule ti faccio i miei
+80:24 complimenti da tanto che ti seguo è la prima volta che ci incontriamo
+80:30 segnalare ftt che ha un bel daily che sta vicinando la 223
+80:39 sarebbe uscire da uno shimano daily in ftt
+80:49 tra l'altro dovrebbe anche una tazza due tazze manico si trova si trova tra la
+80:56 60 di tre dovrebbe andare a rompere e si qua avremmo avremo spazio avremo spazio
+81:04 però a vedere con adesso se c'è qualche conformazione adesso abbiamo 30 minuti
+81:09 che sempre rialzo a candelline ma interessante perché adesso lui
+81:14 dovrebbe trovare la resistenza questa 223 quindi i massimi di oggi sono
+81:19 precisamente sotto dovrebbe trovare questa resistenza quindi dovrebbe
+81:22 lateralizzare questo potrebbe essere uno che lateralizza da qua al cambio candela
+81:27 ha già fatto diciamo a 30 minuti sta iniziando a fare a 5 minuti si si se
+81:32 non va a superare questo questo allema 23 nel daily quindi questo 44 e 7
+81:37 rimane come supporto molto interessante bella segnazione sì sì sì questo
+81:43 potrebbe essere che col cambio candela va a rompere la 223 interessante tenetelo
+81:48 d'occhio tenetelo d'occhio ragazzi io vi saluto e pubblicherò il video non
+81:57 domani ma dopo domani che domani dovrai pubblicare quello sulla psicologia
+82:01 domenica magari pubblico questo qua lunedì poi quello del
+82:07 bullando però voglio che poi dopo mi raccontate
+82:13 cosa è successo stasera problematiche non problematiche con la squadra cosa si
+82:19 è tristi a fare non e poi vediamo che di riparlarne e vedere un attimino cosa si
+82:24 è capito cosa cosa che non ha funzionato vediamo di capire un po sta cosa che mi
+82:30 piacerebbe poter sviluppare questo progetto il più possibile va bene bene
+82:34 bene bene bene bene bene ok niente iscrivete a youtube e due canali
+82:42 telegram a discord likeate se vi piace questa cosa qua così magari facciamo la
+82:47 seconda anche la seconda puntata su un cosa non è andato vediamo di migliorare
+82:51 questa cosa questo questo progetto e commentate ciao ragazzi

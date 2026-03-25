@@ -1,0 +1,176 @@
+0:00 Ciao a tutti e adesso vi parlo della tecnica del Viagra.
+0:30 C'è grande fomo intorno alla tecnica del Viagra. Sono veramente emozionato di
+0:47 presentarmi questa tecnica perché è una tecnica che mi piace tantissimo ma che
+0:52 ho potuto sfruttare poco proprio perché non accade spesso, adesso vi spiegherò il
+0:56 perché e ma grazie alla grandissima invenzione che abbiamo solo noi quella
+1:03 del bullbot che ha tutto spot si riesce a utilizzare spesso e capirete che bomba
+1:12 che è incredibile quindi praticamente è difficilissimo da... poi ve lo spiego il
+1:18 perché. Allora partiamo dal perché, intanto si
+1:21 ve lo faccio vedere nel uptrend quindi prendiamo questo esempio. Il Viagra è un supertrend che
+1:33 è talmente citato che non riposa mai, quindi riesce a stare in un trend in un supertrend
+1:41 praticamente sopra Alema 10 per tantissime candele, quindi siamo riusciti a trovare una
+1:47 formula per il bullbot che non è un bot, è il bullbot che ha tutto spot e con questa formula
+1:58 faccio che conti tantissime candele dove non va a rompere l'A, vede tutto sto passato qua,
+2:04 non va mai a rompere l'Ama 10 e quindi è come se fosse in così super eccitato,
+2:12 è in super eccitazione e noi quando andiamo a lavorare in tutto questo periodo qua noi non
+2:18 facciamo niente, qua c'è il bot che conta per noi, conta fino a quando arriva un certo punto
+2:23 dove arriva il segnale per far capire che il titolo è super eccitato e noi dopo apriremo perché,
+2:29 cosa c'è di bello in questo? Che quando c'è l'Ama 10 che comanda per tanto ma in generale
+2:36 qualsiasi Ema che comanda per tanto tempo allorottura c'è il cambio di trend, ok? Quindi
+2:41 sfruttiamo questo però ci vuole la formula che va a individuare un numero che abbia senso,
+2:48 cioè che abbia un rapporto poi di cambio trend raro, se è raro significa che è più probabile
+2:55 che possa poi andare a fare questo cambio trend che è quello che vogliamo noi, ok? Nell'ecitazione
+3:02 diciamo a rialzo allorottura si va short, poi qua vi faccio capire in realtà come si può sfruttare
+3:10 anche per andare long e a ribasso, faccio vedere, a ribasso è uguale, comanda alla 10 quando si
+3:23 rompe c'è il cambio trend, ok? Quindi questa è una cosa molto difficile perché se avete imparato
+3:29 la tecnica dello schiaffo, la tecnica dello schiaffo appunto che quando va a fare, aspetta
+3:38 andiamo a vedere un bel disceso, ok? La tecnica dello schiaffo quando va sotto la 10 e poi risale
+3:46 su viene schiaffeggiato e poi torna giù, ok? Schiaffeggiato e poi torna giù. E quando troviamo
+3:52 invece dei casi dove non avviene questo, quindi anche qua la chiusura candela è sempre sotto, ok?
+3:58 Qua vedete che è leggermente sopra ma abbiamo l'algoritmo che ci riesce a capire se è una chiusura
+4:06 sopra che ha senso meno, ok? Questi sono chiusure che non hanno senso e quindi va a contare da quando
+4:12 ci sono le chiusure che hanno senso o no. Quando per le tecniche dello schiaffo c'è sempre dopo
+4:17 x candele il tentativo di andare sopra, fa una bella candela verde e poi viene schiaffeggiato a
+4:23 scendere, ok? Questa tecnica dello schiaffo. Quando non accade mai, andiamo a vedere anche altre
+4:28 situazioni più pulite, ecco, quando non accade mai non è normale. Vuol dire che proprio c'è dominanza
+4:35 estrema, in questo caso è un'ecitazione ribassa quindi è un downtrend, l'ecitazione è l'ecitazione,
+4:42 il comando totale delle EMA10. L'EMA10 è in comando per perfezione, si fa neanche avvicinare in questo
+4:47 caso qua. Questo è il dominio totale, significa che ha talmente tante da vendere che riesce a fare
+4:52 questo disegno bellissimo, pulito e soprattutto non fa respirare con la fuoriuscita della 10 che
+4:57 invece è molto normale, molto comune. Difatti da lì nasce la tecnica dello schiaffo. Questa cosa
+5:02 invece non è normale, non capita spesso, soprattutto così lungo e difatti io facevo
+5:06 molto fatica a trovare queste conformazioni, veramente era una cosa molto rara. Invece il
+5:13 Gratte Bull Botta che fa tutto spot, quindi siamo a centinaia e centinaia di coppie, ce li segnala e
+5:18 quando ci sono noi semplicemente, cosa facciamo? Seguiamo all'oratura, la chiusura sopra si entra,
+5:23 fine, facile. Vi faccio vedere prima un esempio, comunque avete capito no, il discorso del Viagra
+5:31 perché appunto il mercato è troppo eccitato, sia a rialzo che di basso c'è proprio grande
+5:36 ecitazione del trend. Trend comanda e niente, c'è poco da fare. Quindi ovviamente è più semplice
+5:45 capire l'effetto Viagra quando va a rialzo, quando rialzo c'è l'effetto proprio Viagra facile facile,
+5:53 da lì mi venuto in mente e poi bello era anche avere il segnale blu, avremmo anche il segnale
+5:59 blu, quindi fare capire come siamo organizzati bene. Però questa è una cosa molto seria ragazzi,
+6:03 vi piacerà da matti e solo questo vale l'intero abbonamento del bull bot, solo questa trend,
+6:13 capirete quanto vi piace, chiedetelo a Stefano e Matt che sono impazziti. Comunque vi faccio vedere
+6:19 un esempio, ok? Qua siamo superpe, quindi qua ho fatto una registrazione, ero già dentro,
+6:25 è bello questa perché questo è quello che di solito non succede, quindi vi è piaciuto come
+6:32 esempio perché è un qualcosa che di solito succede poche volte ma comunque dovete tenere
+6:35 in considerazione. Ok? Allora, ovviamente, potendo scegliere, scegliamo il bot che ci ne
+6:41 presenta diverse, scegliamo quello sempre più preciso, ok? Questo è molto preciso, quindi
+6:46 domigno assoluto dei venditori, fantastico. Quindi qua è per andare long, quindi quando scende,
+6:51 noi spettiamo il segnale per andare long, ok? Quando sale, spettiamo il segnale per andare short,
+6:55 poi vi spiego anche in quel caso come si può andare comunque long. Niente, aspettato, eccetera.
+7:01 Qua non ha fatto il breakout, fate, non sono entrato, ha lateralizzato, ok? Questo di solito
+7:05 non lo fa, quindi io in realtà aspettavo questa candela che mi andasse semplicemente più in alto,
+7:11 quindi più o meno qua e sarei entrato, ma non l'ho fatto, è stato schiaffeggiato e ha proseguito
+7:16 continuato. Sono entrato più o meno qua, infatti siamo al 53, qua 55, quindi più o meno, questo qua
+7:22 è l'ingresso, ok? Poi dopo non ha fatto comunque, quindi candela, chiusura, sopra, bene, è l'ingresso,
+7:28 ok? L'ingresso è candela, verde, chiusura, sopra. Non conviene aspettare troppo perché poi rischia di
+7:35 spesso fa proprio la super candela grande, che è il nostro guadagno, no? Può già essere il nostro
+7:41 guadagno, quindi dovete fare attenzione. Io qua avevo delle certezze perché aveva già fatto una
+7:45 piccola chiusura sopra, una candela a zero, quindi già questo si poteva già fare l'ingresso,
+7:51 io comunque l'ho fatto qua aspettando che salisse. Poi dopo è sceso, ok? È sceso, ma chi se ne frega,
+7:56 tanto lo stop è sul muro che c'è sotto. Allora, l'ultimo stop in assoluto deve essere per forza il
+8:02 minimo che ha fatto qua, ok? Quindi 18.4, bello perché è comunque vicino. Però dipende un po'
+8:09 se ci sono altri livelli qua li mettiamo, ok? Meno male che non l'avevo messo perché comunque
+8:13 qua c'è stato uno spike insignificante che però me avrebbe eventualmente preso una chiusura, ok?
+8:18 Comunque qua c'era il muro a 14.8 quindi era ottimo per fare l'uscita, che coincideva comunque
+8:27 con il minimo che ha fatto qua, ok? Non comprate sui minimi, non dobbiamo sperimentare il minimo,
+8:33 non ci interessa perché qua può andare avanti all'infinito. Dobbiamo andare quando c'è chiusura
+8:37 sopra, ok? Volendo si poteva già fare questo ingresso qua, lo stop era sempre lo stesso,
+8:43 ok? Però cos'è la cosa difficile? Quedi, questa volta l'ha atterrizato tanto, quindi c'era ancora
+8:47 tantissima forza di vendita. Vedrete negli altri esempi che questo non succede mai o quasi,
+8:52 però comunque vi piace come esempio. Poi a un certo punto quindi stop qua non ha fatto, poi ha fatto
+8:57 la sua candela di rottura e poi mi ha dato subito a target, che il mio target però era molto vicino,
+9:03 infatti qua ci ha guadagnato poco e vi spiego il perché. Ecco, è andato poi a chiudere,
+9:11 sembrava fermo, ok. Ecco, poi lo ho, infatti lo avevo, ce l'avevo, poi dopo l'ho spostato,
+9:25 l'ho messo un po' più in alto, ecco e me l'ha preso, ok. È un guainettino da 174, però dopo
+9:34 un'allaterizzazione del genere io mi fido poco e quindi l'ho chiuso, ok? Cioè praticamente questo
+9:39 deve andare a fare subito il movimento, quindi al mio ingresso potuto subito fare il breakout,
+9:42 allora avrei potuto tenere di più. Visto che ha fatto questa allaterizzazione non mi è piaciuta,
+9:47 quindi l'ho chiuso subito, insomma dai l'ho spostato un attimo più in su, ma dopo ho chiuso, ok? L'ho
+9:52 chiuso comunque prima di questi muri e spot è fantastico perché questi sono muri chiarissimi,
+9:57 ok? Poi comunque ho proseguito e quindi questo è un caso raro. Andiamo a vedere gli altri esempi
+10:03 che ho fotografato praticamente stamattina, quindi con tutti i segnali, perché i segnali ce li ho
+10:09 già da una settimana più o meno, forse anche di più. Allora, vedi di solito avviene questa cosa
+10:18 qua. Allora questo è un altro caso un po' particolare, dove comunque il segnale non è
+10:24 arrivato qua, il segnale è arrivato più o meno qua, quindi dopo c'è stato tempo. Qua si poteva
+10:30 fare il primo ingresso, si poteva fare già qua, già questo si poteva fare, se non si fa qua perché
+10:34 si aspetta la candela un po' più in alto si può fare tranquillamente con questa, quindi si faceva
+10:38 più o meno qua. Se per caso qua non fai l'ingresso, che andava già bene fare l'ingresso,
+10:43 se non si fosse fatto qua l'ingresso con la candela rossa basta tornare a questo massimo,
+10:49 che già si entra, ok? Puoi già mettere uno stop limit in questo caso. E bisogna fare attenzione
+10:54 che spesso si fa una candela molto grande, quindi questa poteva essere questa candela molto grande,
+10:58 quindi comunque poi dopo qua il trend è proseguito tanto, ok? Poi esce eventualmente
+11:03 la 10. Io cerco di accontentarmi, io difficilmente riesco a arrivare fino a qua in fondo. In questo
+11:09 caso se avrei la rottura sarei uscito tipo qua più o meno. Ok? Poi voi vedete voi, dopo prendete la
+11:15 mano perché dopo qua è andato all'infinito, perché questo può essere poi un cambio di trend,
+11:19 quindi può durare veramente tanto. Andiamo a vedere altri esempi, ok? Un guale, stessa cosa,
+11:24 chiusura qua non l'ha fatta, ecco per un pelo non l'ha fatta, la chiusura dopo sopra, quindi qua
+11:30 si può mettere uno stop limit appena sei qua e poi già comprare, ok? Anche qua, qua il segnale è
+11:37 arrivato più o meno a questo livello qua. E niente, una volta che ti rompe la media mobile
+11:45 nelle vicinanze, dopo prendi stop profit e sei a posto. Ovviamente quando parte, giusto,
+11:51 parliamo di stop, allora a inizio, prima che parte, il tuo stop deve essere il minimo fatto
+11:57 precedentemente, ok? Dal momento che fa lo spike, lo stop è sotto l'ingresso che tu hai fatto,
+12:05 quindi se tu sei entrato in questa candela, mettiamo qua, ingresso giusto, comunque era qua,
+12:09 lo stop deve essere sotto questa candela, ok? Quindi immediatamente spostare lo stop da qua,
+12:16 dal minimo, che poi guardate dov'è la resistenza grande, quindi intorno al minimo, una volta che
+12:23 fa lo spike, subito lo stop è all'inizio candela, ok? Subito e poi dopo è seguito il trend. Io cerco
+12:29 di andare a target, la rottura della media grande. Questa è l'erezione, quindi andando verso in su,
+12:38 non in giù, quindi questa era per il short, stessa cosa, quando rompe candela chiusa si
+12:44 va short, ok? Questo caso ha dimostrato molta debolezza, quindi se per caso noi vogliamo
+12:49 seguire un trend realzista, quindi un segnale a realz, noi dobbiamo guardare questa cosa qua,
+12:57 dobbiamo vedere dove c'è poca debolezza nella rottura, perché quando rompe è normale che
+13:01 invece vada molto giù e vada comunque almeno a testare la 60, no? Questo è il nostro target minimo.
+13:08 Quando non lo fa e quindi dimostra tanta potenza, semplicemente qua traccia la linea,
+13:15 qua c'era lo stop, ok? Che probabilmente era quasi a zero, quindi comunque più o meno era a zero,
+13:22 ma se eravamo short, nel caso questo era il nostro ingresso long, perché vuol dire che veramente è
+13:28 potente, quindi se con il segnale di agra non riesce poi a shortare vuol dire che è fortissimo,
+13:36 ok? Quindi si può tenere dopo per andare long. Qua, quindi l'altro short, qua sono tutte chiusure
+13:46 sopra, ok? Qua vediamo che comunque rientra nei parametri del nostro algoritmo, per il bull bot,
+13:52 e niente. Quando arriva, chiusura sopra, qua non c'è stato quindi non si entra, chiusura sopra,
+13:58 ok? Quindi fate attenzione, visto che fa subito lo spiccone, ok? In questo caso noi avremmo dovuto
+14:09 mettere lo stop sotto l'ingresso di questo e qua forse l'avrebbe preso, forse no, quindi se non
+14:15 avessimo venduto qua sarebbe andato lo stop a zero, però comunque va messo, ok? Ma il che vada,
+14:21 questo è un'eccezione, se l'ha preso, cioè se è andato a toccare qua sotto, qua non si vede bene,
+14:26 ma probabilmente sì, comunque andava stop a zero, ok? Prendete l'abitudine, non calcolate che su
+14:35 10 volte difficilmente fa questo, ma comunque se lo fa voi tenete lo stop a zero, ok? Sulla
+14:39 candela che fa lo spike grande, quindi qua non sarebbe stato un errore aver preso lo stop.
+14:45 Tessa cosa, chiusura sopra, poi qua è durato poco, ma comunque ha fatto il suo, per esempio qua
+14:57 non ha andato a fare il target, ah no, questo era l'esempio che vi voglio vedere, quello di non fare,
+15:02 e vi spiego anche il perché. Allora, a differenza degli altri, questo è andato poi a fare degli
+15:06 spike di panico e poi ha fatto subito le candele verdi grosse, ok? Quindi, in questo caso comunque
+15:14 c'era la possibilità di fare comunque il gain rispettando le regole, ok? Comunque lo stop sulla
+15:20 candela verde sopra era comunque più in alto, quindi qua si poteva guadagnare, ma io vi sconsiglio
+15:25 questo, andiamo a vedere la differenza sugli altri. Sugli altri le candele fanno sempre una specie
+15:30 di resistenza prima, riposano prima, cioè fanno delle candelline, non fanno tipo candela da
+15:38 breakout prima, ok? Invece quando vedete che fa candele di breakout, quindi candele grosse
+15:45 verdi e poi fa la rottura, io ve lo sconsiglio perché queste candele dovrebbero essere il nostro
+15:52 guadagno, quindi dovrebbero essere quelli che fa dopo con la rottura, quindi soprattutto di seguito
+15:58 evitate perché sennò voi dovete pensare che faccia candele verdi grandi all'infinito, non lo fa,
+16:03 le probabilità sono basse, quindi evitate. Quindi qua avrebbe dovuto fare cosa, va bene una candela
+16:08 verde, andare sulla resistenza, fare almeno una candellina di riposo e poi dopo partire, allora
+16:14 potete entrare. Quando fa queste partenze grosse non lo fate perché queste candele deve fare a
+16:20 tuo favore dopo. Queste sono chiusure di panico che vanno fatte con il nostro guadagno, se lo fa
+16:25 prima semplicemente evitate, ok? Sì, ok, siete andati comunque in guadagno ma avrei evitato,
+16:31 cioè evitate, questo è un ingresso che io non avrei fatto. Ecco, questo invece è proprio bello,
+16:39 quelli che io preferisco, quindi bella pulizia, mai sporcato, è andato a testare, la rossa di
+16:46 riposo, chiusura e poi spiccone gigante. Questo è l'ideale perché sapete che io amo, poi fra
+16:51 l'altro chiusura, addirittura battuto sia la 60 da 223 io amo questa cosa qua e in un minuto
+16:56 hai chiuso tua operazione, hai fatto un bel gain, ok? Questo è per me l'ideale, ok? Questo è
+17:03 proprio l'ideale ed è quello dell'effetto viagra che dà più soddisfazione. Bene, allora,
+17:10 adesso lo chiudo qua, quindi video molto veloce, va, insomma sono poi 17 minuti,
+17:18 eventualmente in base alle domande vedo di fare la versione number 2, ok? Il secondo
+17:27 video con le vostre, diciamo, con quello che non avete capito, però in realtà è molto semplice,
+17:31 la difficoltà sta nel avere il segnale e noi abbiamo il bullbot perché io appunto,
+17:37 purtroppo, questa è veramente una cosa piuttosto rara e quindi avendo il bullbot e soprattutto un
+17:46 mercato così grande, perché la piazza affari non è che poi ti arriverebbero pochissimi segnali,
+17:50 ma il mercato di Binance è enorme, per questo è importante avere un mercato gigante e quindi
+17:55 questi segnali ne arrivano un sacco in una giornata e quindi è fantastico, quindi se
+17:59 vi specializzate in questo ragazzi fidatevi, basterà solo questo, studiatelo, ristudiatelo,
+18:04 fateci caso, prima osservate, mettete solo la linea all'inizio, non metteteci anche i soldi,
+18:08 non c'è bisogno, osservate, mettete la linea, tanto c'è il bullbot che ve le segnala, ok?
+18:12 Fra l'altro dalle ore 19 in poi, adesso appena carico il video,
+18:16 partiranno anche i segnali, quindi già in diretta dalle ore 19 ci sarà il segnale del Viagra,
+18:25 ok? Quindi allenatevi prima, fateci l'occhio, se riuscite a capirlo,
+18:31 fidatevi che basterà anche solo questa tecnica, solo questo varrà l'abbonamento.
+18:35 Poi fatemi sapere quindi per i dubbi nei commenti, iscrivetevi a youtube,
+18:39 ai due canali telegram e a discord. Ciao!

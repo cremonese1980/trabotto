@@ -1,0 +1,326 @@
+# Low-confidence segments for: 040_LIVE_TRADING_con_doppio_BOOK_e_ZERO_Fee_in_BUSD_Ecco_come_funziona.mp3
+# Total flagged: 107
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:02] (confidence: -0.247)
+  "Ciao trader, siete su Scopinabull."
+
+[0:02-0:07] (confidence: -0.247)
+  "Allora questa è un'analisi di un live trade, però come vedete c'è già qualcosa di strano,"
+
+[0:07-0:11] (confidence: -0.247)
+  "ho il doppio book, quindi vi spiegherò praticamente come è andato il trade, ma nel frattempo"
+
+[0:11-0:16] (confidence: -0.247)
+  "vi spiego come usare il doppio book, il perché sto usando il doppio book, ma soprattutto"
+
+[0:16-0:20] (confidence: -0.247)
+  "come sfruttare boost con questa nuova modalità."
+
+[0:20-0:26] (confidence: -0.247)
+  "Ho scoperto una cosa molto molto molto interessante che ci fa risparmiare, è un metodo molto"
+
+[1:46-1:49] (confidence: -0.207)
+  "a quello che è il book per eccellenza, quello con più volumi, ok?"
+
+[1:49-1:50] (confidence: -0.207)
+  "E accade su Binance."
+
+[1:50-1:56] (confidence: -0.207)
+  "Se un giorno FTX o qualcun altro avrà più volumi di Binance, noi ci sposteremo lì."
+
+[1:56-2:01] (confidence: -0.207)
+  "Ma per adesso c'è la Binance e quindi comanda Binance, quindi noi stiamo qua."
+
+[2:01-2:04] (confidence: -0.207)
+  "Con questo tipo di ragionamento, cosa accade?"
+
+[2:04-2:09] (confidence: -0.207)
+  "Che anche se voi lavorate su Futures, dove il book fa veramente schifo, vi conviene sempre"
+
+[2:09-2:12] (confidence: -0.207)
+  "comunque avere il book di Binance in spot aperto."
+
+[2:12-2:16] (confidence: -0.207)
+  "Quindi anche se usate, non so, Bybit, usate FTX, qualche è, volete saper realmente quel"
+
+[2:43-2:44] (confidence: -0.213)
+  "vi serve, ok?"
+
+[2:44-2:46] (confidence: -0.213)
+  "E capirete quant'è importante."
+
+[2:46-2:48] (confidence: -0.213)
+  "Detto ciò, potete operare su qualsiasi altra cosa."
+
+[2:48-2:54] (confidence: -0.213)
+  "Quindi potete avere il book di Binance senza dover avere soldi su Binance, non c'è bisogno"
+
+[2:54-2:57] (confidence: -0.213)
+  "di aver soldi su Binance o pagare un abbonamento per avere il book di spot."
+
+[2:57-3:00] (confidence: -0.213)
+  "Spot è tutto l'intero mercato, ok?"
+
+[3:00-3:02] (confidence: -0.213)
+  "Quindi avete qualsiasi cosa che hai quotato."
+
+[3:02-3:04] (confidence: -0.213)
+  "E poi dopo operare con quel che volete."
+
+[3:04-3:06] (confidence: -0.213)
+  "In questo caso ho fatto lo stesso ragionamento."
+
+[3:06-3:11] (confidence: -0.213)
+  "Sono sempre su Binance, ma qua potreste essere su qualsiasi altra cosa, sia su Futures che"
+
+[3:11-3:12] (confidence: -0.317)
+  "su un'altra piattaforma."
+
+[3:12-3:17] (confidence: -0.317)
+  "E qua avete il vostro book che vedrete che è diverso, ok?"
+
+[3:17-3:22] (confidence: -0.317)
+  "Sia per volumi, guardate qua, qua ci sono gli stessi livelli, anzi sono un po' diversi,"
+
+[3:22-3:24] (confidence: -0.317)
+  "vedi 7.3 qua 7.4, ma soprattutto le quantità, ok?"
+
+[3:24-3:32] (confidence: -0.317)
+  "Questo è 253 boost, quindi 253 dollari."
+
+[3:32-3:34] (confidence: -0.317)
+  "Qua invece ci sono 5000, guardate la differenza."
+
+[3:34-3:39] (confidence: -0.317)
+  "Quattro, qua abbiamo 5000 e qua abbiamo 800 dollari."
+
+[4:33-4:36] (confidence: -0.24)
+  "solo 800 dollari, e qua ne avrei 300."
+
+[4:36-4:41] (confidence: -0.24)
+  "Eppure io qua riuscirei a comprare 10.000 e qua invece non riuscirei a comprare 10.000."
+
+[4:41-4:44] (confidence: -0.24)
+  "Andiamo a vedere perché, ve lo spiego piano piano, ok?"
+
+[4:44-4:47] (confidence: -0.24)
+  "Un pezzo alla volta, capirete quel che ho scoperto."
+
+[4:47-4:52] (confidence: -0.24)
+  "Quindi, in pratica qua sono andato a comprare, ok?"
+
+[4:52-4:53] (confidence: -0.24)
+  "Subito."
+
+[4:53-4:59] (confidence: -0.24)
+  "Qua avevo messo 4.55, vedete che io qua ho 1.000 più 300, quindi 10.000, qua non dovrebbe"
+
+[5:00-5:02] (confidence: -0.323)
+  "rimanere 8.000 e 5, ok?"
+
+[5:02-5:05] (confidence: -0.323)
+  "8.6 e 50 dovrebbe rimanere."
+
+[5:05-5:11] (confidence: -0.323)
+  "Se fossi qua invece, che qua c'era il livello a 5 e 4, comunque non avrei avuto l'eseguito"
+
+[5:11-5:12] (confidence: -0.323)
+  "intero, ok?"
+
+[5:12-5:13] (confidence: -0.323)
+  "Ma cosa accade?"
+
+[5:13-5:15] (confidence: -0.323)
+  "Vediamo se io riesco a averlo eseguito."
+
+[5:15-5:18] (confidence: -0.323)
+  "Mettiamo play così va in tempo reale."
+
+[5:18-5:19] (confidence: -0.323)
+  "Cliccato."
+
+[5:19-5:22] (confidence: -0.323)
+  "Metto pausa."
+
+[5:22-5:26] (confidence: -0.323)
+  "Guarda che roba."
+
+[5:26-5:29] (confidence: -0.323)
+  "Io ho l'eseguito subito."
+
+[5:56-6:02] (confidence: -0.311)
+  "Massimo che voglio spendere, quindi è un compra limite, è 0.455."
+
+[6:02-6:04] (confidence: -0.311)
+  "0.455 io ho 1.000 più 340.2."
+
+[6:04-6:06] (confidence: -0.311)
+  "Eppure, guarda cosa succede."
+
+[6:06-6:08] (confidence: -0.311)
+  "Appena, non rimane neanche nel book."
+
+[6:08-6:10] (confidence: -0.311)
+  "Appena clicco ho subito l'eseguito."
+
+[6:10-6:11] (confidence: -0.311)
+  "Vedete?"
+
+[6:11-6:13] (confidence: -0.311)
+  "Non rimane neanche la linea qua."
+
+[6:13-6:15] (confidence: -0.311)
+  "Vengo subito eseguito."
+
+[6:15-6:16] (confidence: -0.311)
+  "Vedi?"
+
+[6:16-6:17] (confidence: -0.311)
+  "Ce l'ho già immediatamente."
+
+[6:17-6:18] (confidence: -0.311)
+  "E qua rimane ancora."
+
+[6:18-6:21] (confidence: -0.311)
+  "Pazzesco questo, eh?"
+
+[11:46-11:48] (confidence: -0.164)
+  "compra mercato va a distruggere il book perché non c'è niente."
+
+[11:48-11:53] (confidence: -0.164)
+  "Dice qua se uno compra mercato lo va a distruggere almeno perché ci sono i livelli grandi, ma"
+
+[11:53-11:56] (confidence: -0.164)
+  "se noi usiamo il limite abbiamo un vantaggio enorme."
+
+[11:56-12:02] (confidence: -0.164)
+  "Ho tolto nel frattempo che è arrivato qua, visto che ha fatto lo spike, poi io volevo"
+
+[12:02-12:06] (confidence: -0.164)
+  "essere eseguito nel caso in cui avesse fatto un altro spike, senza conformazione diciamo,"
+
+[12:06-12:07] (confidence: -0.164)
+  "no?"
+
+[12:07-12:09] (confidence: -0.164)
+  "Invece adesso sta salendo piano piano, quindi sta facendo una conformazione, allora a me"
+
+[12:09-12:12] (confidence: -0.164)
+  "non mi va più bene vendere a questo prezzo qua, posso pensare di poter vendere più"
+
+[12:12-12:13] (confidence: -0.164)
+  "in alto."
+
+[12:14-12:19] (confidence: -0.35)
+  "I livelli non ce ne è, cioè giusto il 0747, quindi o mi metto sotto prima di questo o"
+
+[12:19-12:25] (confidence: -0.35)
+  "se no se si rompe questo dopo qua c'è il vuoto, quindi cerco di vadaignare qualcosa"
+
+[12:25-12:26] (confidence: -0.35)
+  "di più."
+
+[12:26-12:32] (confidence: -0.35)
+  "Pratempo torna giù, abbiamo le MA10 che comanda ovviamente e adesso quello che era"
+
+[12:32-12:36] (confidence: -0.35)
+  "la resistenza, la 60, diventa il supporto, ok?"
+
+[12:36-12:39] (confidence: -0.35)
+  "Quindi quello è quello che dobbiamo guardare."
+
+[13:08-13:13] (confidence: -0.204)
+  "10.000 a... ecco, in questo momento qua ci sono 200 dollari, qua ci sono 4.000, ma se"
+
+[13:13-13:16] (confidence: -0.204)
+  "io adesso entrassi con 10.000 io avrei l'eseguito."
+
+[13:16-13:22] (confidence: -0.204)
+  "Qua non ce l'avrei, riuscirei a comprare solo 4.000 e rimarrebbero 6.000, invece qua"
+
+[13:22-13:29] (confidence: -0.204)
+  "riesco ad avere l'eseguito totale di 10.000, perché non sale come prezzo rispetto a qua,"
+
+[13:29-13:36] (confidence: -0.204)
+  "perché lì c'è appunto la vendita, quindi può salire come spike ma dopo verrebbe normalizzato"
+
+[13:59-14:01] (confidence: -0.262)
+  "se non lo distrugge io devo poter vendere."
+
+[14:01-14:14] (confidence: -0.262)
+  "Sto avvicinando, adesso andiamo a concentrarci, ecco, in un colpo."
+
+[14:14-14:20] (confidence: -0.262)
+  "Guardate, qua praticamente non c'è nulla, qua invece abbiamo i livelli, 7.1, guardate"
+
+[14:20-14:21] (confidence: -0.262)
+  "che succede."
+
+[14:21-14:23] (confidence: -0.262)
+  "Ho mangiato tutto in un colpo, vedete?"
+
+[14:50-14:55] (confidence: -0.179)
+  "qua e poi con la rotellina vai su o giù e questo si alza, dei tick che ti servono, ok?"
+
+[14:55-14:58] (confidence: -0.179)
+  "Fantastico questa funzione, ricordatevelo."
+
+[14:58-15:04] (confidence: -0.179)
+  "Ecco, io vado, guardate, quando arriva qua che distrugge il livello, qua non ci sarebbe"
+
+[15:04-15:14] (confidence: -0.179)
+  "nulla nel book, io metto 0.72, non c'è nulla, ci sono 349 dollari, io ne ho 9.360, qua"
+
+[15:14-15:19] (confidence: -0.179)
+  "invece avrei 200, quindi non avrei niente, guardate che succede, io adesso vendo, tac,"
+
+[16:06-16:11] (confidence: -0.229)
+  "io, nessuno al mondo ha mai usato l'Lema 60, guardate la precisione, io l'ho scelto"
+
+[16:11-16:18] (confidence: -0.229)
+  "proprio per questo, una volta che si rompe, è entrata ok, fra l'altro con la tecnica"
+
+[16:18-16:20] (confidence: -0.229)
+  "del anti-incrocio, ok?"
+
+[16:20-16:25] (confidence: -0.229)
+  "Trovate tutti questi video nella playlist delle tecniche dove poi troverete anche questo,"
+
+[16:25-16:30] (confidence: -0.229)
+  "gratis senza pubblicità, l'unico che fa una roba del genere, chissà perché, e niente,"
+
+[16:57-17:05] (confidence: -0.165)
+  "limit, quindi fate operazioni stop limit o oco, dovete fare attenzione con boost perché"
+
+[17:05-17:10] (confidence: -0.165)
+  "come vi dicevo ci possono essere spike senza senso, perché mancano i livelli, ok?"
+
+[17:10-17:15] (confidence: -0.165)
+  "Quindi voi potreste arrivare a uno stop senza che in realtà su USDT sia accaduto, infatti"
+
+[17:15-17:20] (confidence: -0.165)
+  "io tutta questa operazione qua l'ho fatto manualmente, quindi prima di poter sfruttare"
+
+[17:20-17:25] (confidence: -0.165)
+  "questa cosa qua dovete essere bravi a entrare e uscire manualmente."
+
+[18:18-18:25] (confidence: -0.243)
+  "propri quindi riuscite a entrare uscire chiudere in perdita manualmente con stop limit."
+
+[18:25-18:31] (confidence: -0.243)
+  "Ragazzi qua avete fee gratis e potete usare size grandi ovviamente dopo dovete essere"
+
+[18:31-18:35] (confidence: -0.243)
+  "profitevere quindi dopo che avete esperienza che siete capaci però dovete capire che c'è"
+
+[18:35-18:41] (confidence: -0.243)
+  "questo meccanismo fantastico fee gratis e fra l'altro viene eseguito meglio che con"
+
+[18:41-18:43] (confidence: -0.243)
+  "boost che con USDT."
+
+[18:43-18:48] (confidence: -0.243)
+  "Io non ho bisogno di usare l'iceberg, ok?"
+

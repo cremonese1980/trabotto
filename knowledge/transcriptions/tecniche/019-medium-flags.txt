@@ -1,0 +1,215 @@
+# Low-confidence segments for: 019_LO_SCHIAFFO_TECNICA_DI_TRADING_TUTORIAL_Ecco_come_funziona.mp3
+# Total flagged: 70
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.549)
+  "Ciao tra i del sito su scappi da bull finalmente che c'è grande fomo la tecnica dello schiaffo"
+
+[0:07-0:08] (confidence: -0.549)
+  "sigla"
+
+[0:58-1:04] (confidence: -0.171)
+  "la logica non è stato chiarissimo visto e alcuni hanno capito altri un po meno però"
+
+[1:04-1:12] (confidence: -0.171)
+  "la logica è questa grande salita quindi una bella salita e non si va short sulla rottura"
+
+[1:12-1:20] (confidence: -0.171)
+  "della della ma 10 ma si aspetta che chi ha fatto short qua dai massimi sia in guadagno"
+
+[1:20-1:25] (confidence: -0.171)
+  "e che abbia il panico di non chiudere in tempo prima che torna a fare i nuovi massimi quindi"
+
+[1:25-1:31] (confidence: -0.164)
+  "si crea uno spike di rottura molto veloce camminare in bella candela verde sopra lema"
+
+[1:31-1:39] (confidence: -0.164)
+  "10 e 5 ok quindi torna sopra perché oltre a avere gli stop in gain che chiudono ci sono"
+
+[1:39-1:43] (confidence: -0.164)
+  "anche quelli che vogliono comprare perché pensano che possono andare a fare nuovi massimi"
+
+[1:43-1:47] (confidence: -0.164)
+  "e quindi si crea una bella candela verde non aspettiamo la bella candela verde e poi valutiamo"
+
+[1:47-1:51] (confidence: -0.164)
+  "il primo segno di debolezza e andiamo short perché questo short ci può portare nuovi"
+
+[1:51-1:58] (confidence: -0.185)
+  "minimi o comunque la rottura almeno di questa base bene ho tre esempi live veri con real"
+
+[1:58-2:07] (confidence: -0.185)
+  "cash quindi qua ingresso molto in ritardo ingresso ideale era tornando qua sotto ok"
+
+[2:07-2:14] (confidence: -0.185)
+  "quindi prima candela diciamo debole dopo la rottura si va short quindi andava già qua"
+
+[2:14-2:26] (confidence: -0.216)
+  "sono in ritardo ma va bene andiamo avanti vado a inserire lo stop la bellezza di questa"
+
+[2:26-2:30] (confidence: -0.216)
+  "tecnica che lo stop è assolutamente vicino si può fare vi consiglio di farlo così in"
+
+[2:30-2:39] (confidence: -0.216)
+  "macchina quindi inserendo bene quindi cosa è successo perché l'ho messo qua e non qua"
+
+[2:39-2:43] (confidence: -0.216)
+  "perché io sono entrato già sono entrato in ritardo perché l'ingresso ideale era a questo"
+
+[3:32-3:43] (confidence: -0.279)
+  "anche succede della rossa ancora debolezza qua sono pronto al mercato e il mio target"
+
+[3:43-4:00] (confidence: -0.279)
+  "10 38 10 40 10 38 mega supporto più sotto a un certo punto ecco vedo lo spike che raggiunge"
+
+[4:00-4:04] (confidence: -0.147)
+  "il mio prezzo io non l'avevo ancora inserito perché magari mi potrei fare uno spike bello"
+
+[4:04-4:13] (confidence: -0.147)
+  "lungo però dico ok ha raggiunto il mio target limite chiudo ok capito il meccanismo quindi"
+
+[4:13-4:20] (confidence: -0.147)
+  "tendenzialmente lo metto lo stop ma è il target ma un po più distante perché potrebbe fare uno"
+
+[4:20-4:26] (confidence: -0.147)
+  "spike che va a superare questo se ci arriva poi tendenzialmente va oltre tengo comunque"
+
+[4:26-4:32] (confidence: -0.244)
+  "posizione quando mi arriva ecco ha fatto lo spike io ho visto che non ha fatto uno spike fino a qua"
+
+[4:32-4:41] (confidence: -0.244)
+  "ok l'ha fatto appena appena al mio livello chiudo e sono a posto tenuto per pochissimo ok poi ma"
+
+[4:41-4:47] (confidence: -0.244)
+  "giore ragione ero entrato comunque troppo troppo in ritardo la prima debolezza devo subito in short"
+
+[4:47-4:54] (confidence: -0.244)
+  "comunque operazione numero uno ne ha operazione numero due qua sono già dentro ok quindi candela"
+
+[6:45-6:50] (confidence: -0.173)
+  "sono enormi ok quindi è bastato un piccolissimo movimento per fare tanto gain e l'ero già posto"
+
+[6:50-6:56] (confidence: -0.173)
+  "quindi chiudo e tolgo il disturbo ecco qua andiamo a creare una bella candela verde queste sono le"
+
+[6:56-7:02] (confidence: -0.173)
+  "belle candelle che mi piacciono che vanno rompere vedi dominio della della 10 pertanto non è mai"
+
+[7:02-7:06] (confidence: -0.173)
+  "riuscito a rompere qua c'è una bella rottura bella candela verde queste con le condizioni"
+
+[7:06-7:12] (confidence: -0.173)
+  "ideali aspettiamo di vedere 43 secondi sono passati 17 secondi vediamo di capire la debolezza"
+
+[8:07-8:12] (confidence: -0.161)
+  "che fra l'altro è un bel pezzo grande ma non è enorme questo è sempre stato un bel pezzo grande"
+
+[8:12-8:16] (confidence: -0.161)
+  "mi sarei messo davanti è un pezzo più grande rispetto agli altri ma non è un supporto gigantesco"
+
+[8:16-8:23] (confidence: -0.161)
+  "ok quindi eccolo quindi cosa è successo studiamo questo attentamente perché questo è molto"
+
+[8:23-8:29] (confidence: -0.161)
+  "importante quindi la rottura quindi lo scarico di chi ha guadagnato short e chi ha paura di non"
+
+[8:29-8:34] (confidence: -0.161)
+  "entrare in tempo perché dopo faremo i massimi quindi si crea verde ancora verde quindi in realtà"
+
+[10:15-10:21] (confidence: -0.177)
+  "quindi stiamo parlando di stop ridicoli vedi l'ho rimesso adesso sono a posto quindi non mi"
+
+[10:21-10:31] (confidence: -0.177)
+  "deve andare lassù mi deve dimostrare debolezza andiamo avanti quindi sto rischiando niente quindi"
+
+[10:31-10:38] (confidence: -0.177)
+  "in questo momento me ne sto fregando ok cosa succede adesso mi ha fatto uno spike sotto alla"
+
+[10:38-10:43] (confidence: -0.177)
+  "candela prima quindi mi sta dimostrando che ho ragione quindi lo stop che avevo messo inizialmente"
+
+[11:09-11:18] (confidence: -0.18)
+  "candela e quindi dico che mi accontento mi va bene sono già sopra di 118 140 non lo chiudo"
+
+[11:18-11:24] (confidence: -0.18)
+  "per un pelo quindi io sono pronto mercato in qualsiasi momento chiudo mercato mi raccomando"
+
+[11:24-11:31] (confidence: -0.18)
+  "dovesse andare adesso io lo stop qua ma dovesse andare in positivo devo assolutamente chiudere"
+
+[11:31-11:38] (confidence: -0.18)
+  "dopo che dimostra la debolezza non deve tornare positivo quindi lo stop è comunque in gain"
+
+[13:29-13:36] (confidence: -0.139)
+  "vi va riuscite a osservarlo una decina di volte e vi va a vostro favore capite i punti forti i"
+
+[13:36-13:41] (confidence: -0.139)
+  "punti deboli poi dopo provate con pochi soldi provate ok con calma senza fretta poi adesso"
+
+[13:41-13:46] (confidence: -0.139)
+  "mi dite se avete capito se non faccio la versione numero 2 come al solito quindi interagiamo ma"
+
+[13:46-13:52] (confidence: -0.139)
+  "osservate imparate ad osservare è una cosa bellissima sai perché è gratis osservazione è una cosa"
+
+[13:53-14:01] (confidence: -0.196)
+  "tutto tutto nel nel trading osservando per i fatti miei avete la fortuna di poter avere qualcuno che"
+
+[14:01-14:09] (confidence: -0.196)
+  "vi sta mostrando qualcosa che funziona che ha testato che utilizza e quindi avete un passaggio"
+
+[14:09-14:14] (confidence: -0.196)
+  "in meno non dovete sperimentare per capire se funziona già funziona dover solo capire se voi"
+
+[14:14-14:20] (confidence: -0.196)
+  "riuscite a capirlo e metterlo in pratica ok quindi mettiti con calma osservate nel frattempo che"
+
+[15:12-15:18] (confidence: -0.175)
+  "qua è uno dei tanti commenti bellissimi che mi fate in ogni video c'è sempre un mondo da"
+
+[15:18-15:24] (confidence: -0.175)
+  "imparare grazie ok quindi una persona scrive questa cosa ti ringrazio mille ringrazio tutti"
+
+[15:24-15:29] (confidence: -0.175)
+  "cerco sempre di rispondere sempre e questo scalping the bull con la mia stessa foto con la scritta"
+
+[15:29-15:34] (confidence: -0.175)
+  "in maiuscola invece di minuscola youtube troppo permette questo scrive grazie per il tuo commento"
+
+[15:34-15:39] (confidence: -0.175)
+  "non dimenticare di premere pulsante iscriverti quindi ti fa capire quasi no che se io io che"
+
+[16:34-16:38] (confidence: -0.185)
+  "continuamente qua oltre a essere una scuola di trading vogliamo cercare di essere una scuola"
+
+[16:38-16:46] (confidence: -0.185)
+  "anti scam quindi chi è più abituato a queste cose se io non ci sono ancora arrivato a cancellare"
+
+[16:46-16:51] (confidence: -0.185)
+  "tutto scrivete sotto questo è un coglione pure scrivete attenzione truffa insomma scrivetelo per"
+
+[16:51-16:56] (confidence: -0.185)
+  "gli altri che magari non sono avezzi in questa cosa dopo appena arrivo io e cancello tutto e lo"
+
+[16:56-17:02] (confidence: -0.185)
+  "blocco però essendo un bot o pure un coglioncello di serie tempo di rifare un altro un altro profilo"
+
+[17:28-17:32] (confidence: -0.178)
+  "magari voi andate a credere a questa cosa e regalate soldi come al solito al sistema"
+
+[17:32-17:37] (confidence: -0.178)
+  "oppure regalato i soldi ai truffatori non si fa quindi visto che noi siamo la famiglia ci aiutiamo"
+
+[17:37-17:45] (confidence: -0.178)
+  "chi capisce al volo che questa è una truffa scrivetelo nei commenti è un truffatore non"
+
+[17:45-17:52] (confidence: -0.178)
+  "cascateci ok appena arrivo io cancello tutto poi raccomando solo io sono evidenziato quindi ogni"
+
+[17:52-17:57] (confidence: -0.178)
+  "canale youtube ha un proprietario il proprietario è evidenziato fatta apposta per far sì che capite"
+
+[18:22-18:27] (confidence: -0.279)
+  "configurazione shimano poi spiegherò tutto nei video ciao ragazzi e a presto"
+

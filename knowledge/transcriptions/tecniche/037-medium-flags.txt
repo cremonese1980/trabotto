@@ -1,0 +1,122 @@
+# Low-confidence segments for: 037_Anti_Incrocio_ema_60_223_Tecnica_di_Trading_Tutorial.mp3
+# Total flagged: 39
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:50-0:57] (confidence: -0.22)
+  "e soprattutto va ad incrociare, c'è una tecnica da sapere utilizzare perché quando"
+
+[0:57-1:02] (confidence: -0.22)
+  "io faccio quei rimbalzi fantastici, vedo che vi piacciono un sacco i trade che faccio,"
+
+[1:02-1:09] (confidence: -0.22)
+  "quelli con time frame 30 minuti, che vi faccio vedere, per esempio oggi su Telegram, oggi"
+
+[1:09-1:17] (confidence: -0.22)
+  "ho fatto questa unica operazione su Binance e io l'ho fatto più su, ok?"
+
+[1:46-1:53] (confidence: -0.172)
+  "dove non dobbiamo mai essere long, ma appunto dobbiamo cercare di capire quando poter entrare"
+
+[1:53-1:57] (confidence: -0.172)
+  "per poi fare quel rimbalzo delle ma 10 e sì, spesso il momento migliore è l'anti-incrocio."
+
+[1:57-2:03] (confidence: -0.172)
+  "Quindi quando noi siamo sotto la 223 è il momento perfetto per andare short, non per"
+
+[2:03-2:06] (confidence: -0.172)
+  "stare long, per nessun motivo dovete stare long, ok?"
+
+[2:06-2:11] (confidence: -0.172)
+  "Ma se noi vediamo che prepara un setup per poi fare l'anti-incrocio, cioè che fa la"
+
+[3:58-4:02] (confidence: -0.21)
+  "Quindi qua i volumi aumentano, vanno a distruggere dei livelli perché si sommano due forze, ok?"
+
+[4:02-4:08] (confidence: -0.21)
+  "Quindi naturalmente, quindi in modo naturale, quando il prezzo è sotto la 223, la 60 che"
+
+[4:08-4:14] (confidence: -0.21)
+  "è più veloce rispetto alla 223 scende più velocemente e andrà in modo, la cosa più"
+
+[4:14-4:19] (confidence: -0.21)
+  "logica che possa cadere è l'incrocio e poi dopo va a scendere, ok?"
+
+[4:19-4:20] (confidence: -0.21)
+  "E porta giù il prezzo."
+
+[4:20-4:27] (confidence: -0.21)
+  "Invece ci può essere una finta, quindi se in questo caso che fa la rottura, quindi"
+
+[4:56-5:00] (confidence: -0.192)
+  "che è molto più forte di chi sta vendendo perché ha assorbito la doppia forza di chi"
+
+[5:00-5:06] (confidence: -0.192)
+  "vende, ha capito che proprio non, questo ci fa dimostrare che i pullman di cinesi sono"
+
+[5:06-5:10] (confidence: -0.192)
+  "molto di più di quelli dei venditori, quindi i compratori qua sono molto più grandi e"
+
+[5:10-5:14] (confidence: -0.192)
+  "qua li stiamo sgamando, quindi da un momento che fa l'antiincrocio abbiamo capito che"
+
+[5:14-5:19] (confidence: -0.192)
+  "stiamo sgamando in più se è la prima volta che va, torniamo all'esempio di oggi, se"
+
+[5:19-5:24] (confidence: -0.192)
+  "poi è la prima volta al time frame 30 minuti che va a testare la 10 quindi qua va a testare,"
+
+[14:27-14:35] (confidence: -0.219)
+  "l'anti-incrocio che ci aiuta, qua ho fatto il mio ingresso, ovviamente sfruttando il discorso"
+
+[14:35-14:41] (confidence: -0.219)
+  "del bad, qua in questo caso siamo sotto la 60, lo stopper, chiusura candela sotto l'ema 223 e poi"
+
+[14:41-14:46] (confidence: -0.219)
+  "dopo una volta fatta l'ortura puntando sull'anti-incrocio tu dopo hai quello che vuoi,"
+
+[14:46-14:49] (confidence: -0.219)
+  "quindi in questo caso dopo c'era la 10 che comandava, comunque è andato su tanto, io ho"
+
+[14:49-14:55] (confidence: -0.219)
+  "fatto il 3-25 ma qua c'era l'ancora, bisognava guardare poi time frame più grandi per capire"
+
+[14:55-15:00] (confidence: -0.153)
+  "se qua era il caso di tenero o no, comunque ragazzi iniziate a contentare perché già un 3%"
+
+[15:00-15:06] (confidence: -0.153)
+  "dovreste riuscire a chiudere la giornata con questa cifra qua, comunque ricordiamoci l'ideale di"
+
+[15:06-15:12] (confidence: -0.153)
+  "qualsiasi rottura quindi del Viagra o dell'anti-incrocio o comunque di qualsiasi o anche quando andiamo a"
+
+[15:12-15:17] (confidence: -0.153)
+  "fare un terzo tocco cercate un bad allungato, questa è la conformazione sogno per poter entrare,"
+
+[15:17-15:22] (confidence: -0.153)
+  "quello con meno rischi e che ti dà più possibilità di riuscita, andiamo avanti,"
+
+[17:11-17:19] (confidence: -0.112)
+  "o quando c'è un muro che è affidabile oppure no lasciate stare queste cose qua entrate con i bad ok"
+
+[17:19-17:26] (confidence: -0.112)
+  "i terzi tocchi e i bad entrate con quelli lì così rischiate meno ok e non c'è bisogno nel bad"
+
+[17:26-17:31] (confidence: -0.112)
+  "spesso non c'è neanche un livello grosso nel book da rompere ok è semplicemente un livello visivo"
+
+[17:31-17:36] (confidence: -0.112)
+  "l'importante è capire che non ci siano livelli grossi nel book perché se c'è la rottura del"
+
+[19:50-19:57] (confidence: -0.13)
+  "faccio corto così poi dopo andate a scrivere nei commenti cosa non avete capito così vedrò"
+
+[19:57-20:01] (confidence: -0.13)
+  "di fare magari la risposta alle domande poi dopo continuo comunque qua su twitch ok quindi"
+
+[20:01-20:07] (confidence: -0.13)
+  "concludo il video di youtube rimango su twitch iscrivetevi a youtube due canali telegram su"
+
+[20:07-20:16] (confidence: -0.13)
+  "discord e anche qua su twitch che il lunedì e il giovedì c'è casa bull e niente ciao chiudo"
+

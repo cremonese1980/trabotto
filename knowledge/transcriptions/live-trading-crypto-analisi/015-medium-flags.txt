@@ -1,0 +1,32 @@
+# Low-confidence segments for: 015_LIVE_TRADING_SHORT_A_GO_GO_Bitcoin_Etc_Axs_Analisi_completa.mp3
+# Total flagged: 9
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.571)
+  "Ciao traders, siete su Scapin'the Bull. Video analisi di 4 trade dei giorni scorsi."
+
+[0:30-0:55] (confidence: -0.425)
+  "Allora, andiamo subito al soldo. 4 live trading da analizzare. Qua siamo su bitcoin,"
+
+[0:55-1:05] (confidence: -0.324)
+  "perpetuo, quindi siamo su futures ovviamente, e qua siamo short. Quindi, andiamo a prendere qua."
+
+[1:05-1:13] (confidence: -0.324)
+  "Allora, ovviamente sono già dentro. Sono entrato qua, adesso andiamo a vedere dove è l'ingresso."
+
+[12:06-12:11] (confidence: -0.169)
+  "andare a fare i minimi avrei tenuto ok? Questo è un passaggio che ho fatto tanto non so se"
+
+[12:11-12:16] (confidence: -0.169)
+  "voi vi state iniziando a fare questo ragionamento cioè di tenere comunque sempre un occhio su bitcoin"
+
+[12:16-12:20] (confidence: -0.169)
+  "poi io quando ho operazioni multiple dove c'è anche bitcoin mi tengo direttamente qua bitcoin"
+
+[12:20-12:25] (confidence: -0.169)
+  "e gli altri li guardo col grafico in piccolo in alto ma quello che comanda bitcoin cioè il"
+
+[12:25-12:31] (confidence: -0.169)
+  "mio potenziometro è bitcoin ok? è un passaggio forse anche un po difficile questo ma poi vi farò"
+

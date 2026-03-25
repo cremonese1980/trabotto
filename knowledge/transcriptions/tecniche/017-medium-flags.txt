@@ -1,0 +1,128 @@
+# Low-confidence segments for: 017_TECNICA_DI_TRADING_INCROCIO_EMA_60_CON_L_EMA_223_Ecco_come_funziona.mp3
+# Total flagged: 41
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:54-1:04] (confidence: -0.261)
+  "la 10, la 60 e la 223. Spesso mi dite, bisogna mettermici d'accordo tutti con"
+
+[1:04-1:08] (confidence: -0.261)
+  "gli stessi colori ma non c'è bisogno anche perché in teoria dovresti sapere riconoscere"
+
+[1:08-1:16] (confidence: -0.261)
+  "senza avere il colore diverso. Quindi praticamente più aumento il numero più la linea orizzontale,"
+
+[1:17-1:25] (confidence: -0.192)
+  "perché più aumento il numero più la media mobile è lenta. Quindi la linea media mobile"
+
+[1:25-1:32] (confidence: -0.192)
+  "più reattiva sarà la 5, quella un po' meno la 10, quella più lenta è la 60 e la lentissima,"
+
+[1:32-1:38] (confidence: -0.192)
+  "quindi quasi orizzontale, è la 223. Quindi anche se i colori fossero uguali si deve"
+
+[1:38-1:44] (confidence: -0.192)
+  "saper riconoscere immediatamente. Poi come nasce fuori questa nuova tecnica? Nasce dal"
+
+[1:44-1:51] (confidence: -0.267)
+  "fatto che appunto con il crypto ho modificato la 50 che uso nei mercati azionari che non"
+
+[1:51-1:59] (confidence: -0.267)
+  "mi piaceva, sporcava e ho fatto i test e vedevo che la 60 invece mi fa fare le conformazioni,"
+
+[1:59-2:03] (confidence: -0.267)
+  "mi fa da supporto, da resistenza nelle conformazioni e quindi ho detto wow, fantastico, allora"
+
+[2:03-2:10] (confidence: -0.267)
+  "la 60 perfetto infatti mi piaceva tanto anche voi. E poi dopo ho testato la 200, non mi piaceva"
+
+[5:31-5:37] (confidence: -0.169)
+  "l'orario di pranzo, dalle 11 e mezzo a mezzogiorno cerco sempre un segnale short se appunto non"
+
+[5:37-5:44] (confidence: -0.169)
+  "siamo ai minimi da tre ore altrimenti è il contrario, cioè se è dalle 9 che scende"
+
+[5:44-5:48] (confidence: -0.169)
+  "arriviamo verso mezzogiorno ecco io cerco qualcosa per salire quindi cerco un segnale"
+
+[5:48-5:55] (confidence: -0.169)
+  "forte e stiamo parlando appunto di un incrocio con la 223, ovviamente non serve solo con"
+
+[5:55-6:01] (confidence: -0.169)
+  "bitcoin però voi potete sfruttare l'incrocio che fa bitcoin per poi andare short con gli"
+
+[6:27-6:33] (confidence: -0.161)
+  "dire dopo invece no, noi dobbiamo calcolare che poi spaccando scenderà e porterà giù"
+
+[6:33-6:37] (confidence: -0.161)
+  "la 60 che scenderà più velocemente della 223 proprio per quello che vi dicevo prima,"
+
+[6:37-6:41] (confidence: -0.161)
+  "è una media mobile più veloce quindi scenderà più in fretta e andrà a incrociare, quando"
+
+[6:41-6:45] (confidence: -0.161)
+  "c'è l'incrocio poi hai più possibilità che questo possa continuare, quindi è un"
+
+[6:45-6:51] (confidence: -0.161)
+  "rafforzativo, quando vi ho spiegato tante volte, quando andate a fare qualsiasi operazione"
+
+[6:51-6:57] (confidence: -0.165)
+  "se funziona, se è un breakout per esempio non solo in time frame a un minuto ma anche"
+
+[6:57-7:01] (confidence: -0.165)
+  "con altri time frame è un rafforzativo quindi è più probabile che non faccia la finta"
+
+[7:01-7:06] (confidence: -0.165)
+  "ok, questa è la stessa cosa però siamo in time frame a un minuto senza andare a vedere"
+
+[7:06-7:14] (confidence: -0.165)
+  "altri time frame, l'incrocio vuol dire che praticamente è uno short con un doppio rafforzativo"
+
+[7:14-7:19] (confidence: -0.165)
+  "ok, ha un doppio segnale, quindi un segnale short perché va a rompere la 223 ma va a"
+
+[7:46-7:53] (confidence: -0.239)
+  "e lì c'è l'incrocio si va long ok, questo mi piace, allora vediamo tanto il risultato"
+
+[7:53-7:58] (confidence: -0.239)
+  "di oggi quindi questa era la conformazione che vi stavo facendo vedere e questa è nkn"
+
+[7:58-8:04] (confidence: -0.239)
+  "che come potete vedere quando sono partito qua questo stava già incrociando ok, io sono"
+
+[8:04-8:08] (confidence: -0.239)
+  "entrato qua che proprio c'era già stava già quasi toccando ok e sono andato short vedi,"
+
+[8:08-8:12] (confidence: -0.239)
+  "non sono andato short qua, non sono andato short qua ma ovviamente alla terza, al terzo"
+
+[11:17-11:23] (confidence: -0.188)
+  "però voi semplicemente sapete che c'è questo fate i vostri test senza soldi fateci l'occhio"
+
+[11:23-11:30] (confidence: -0.188)
+  "quando dite effettivamente sono due tre giorni che guardandoci ha funzionato allora poi provi"
+
+[11:30-11:34] (confidence: -0.188)
+  "provi con pochi soldi poi dopo vedete se vi trate bene avete già una tecnica vi basta aver"
+
+[11:34-11:40] (confidence: -0.188)
+  "una tecnica per essere soddisfatti quindi se poi per caso con tutte le tecniche che vi sto"
+
+[12:56-13:04] (confidence: -0.234)
+  "ok quando fa delle cose su e giù di mezzo eccetera no lasciate stare ok poi cercato di"
+
+[13:04-13:10] (confidence: -0.234)
+  "farlo con dei titoli che si muovono tanto perché se lo fate con un titolo che si muove del 3% cioè"
+
+[13:10-13:15] (confidence: -0.234)
+  "l'incrocio ci va niente poco fa le candelline che vi sembrano uguali ma sono delle candelline che"
+
+[13:15-13:19] (confidence: -0.234)
+  "non vi dà un'assolvazione ok invece se lo faccio qualcosa che si muove tanto quando fa un incrocio"
+
+[13:19-13:24] (confidence: -0.234)
+  "fa il movimento vi è contentato come ho fatto io oggi alla fine ha fatto un movimento piccolo"
+
+[14:18-14:27] (confidence: -0.268)
+  "canale iscrivetevi a tutta la bull family quindi anche due gruppi telegram a discord e niente ciao ragazzi"
+

@@ -1,0 +1,65 @@
+# Low-confidence segments for: 051_MOLLA_RIMBALZI_EMA_60_223_Tecnica_di_Trading_con_segnale_Bull_Bot_Tutorial.mp3
+# Total flagged: 20
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[6:48-6:54] (confidence: -0.132)
+  "abbiamo comunque l'uscita dello shimano quindi la molla che cos'è? È la compressione fra"
+
+[6:54-7:01] (confidence: -0.132)
+  "l'EMA 60 e l'EMA 10 quindi è l'uscita dello shimano che è la compressione sempre fra"
+
+[7:03-7:10] (confidence: -0.132)
+  "l'EMA 60 e 223 quindi qua uscilla ma l'ideale è appunto avere l'EMA 60 che fa da resistenza"
+
+[7:11-7:17] (confidence: -0.132)
+  "e l'EMA 10 che fa da supporto e che ci va poi a buttare fuori e dopo l'EMA 10 va a incrociare"
+
+[12:15-12:23] (confidence: -0.541)
+  "Qualcos'altro? Oh AXA, ecco qua andiamo a vedere 17 e 27"
+
+[13:14-13:26] (confidence: -0.126)
+  "Se è solo uno spike come in questo caso, c'è una cosa veloce basta ok? Altrimenti se vediamo che mancano 10-15 secondi e siamo vicini al livello qua dobbiamo comunque uscire ok?"
+
+[13:26-13:33] (confidence: -0.126)
+  "Non bisogna aspettare poi il vero livello trigger tanto comunque paga poco quindi perderete poco eventualmente si aspetta un'altra conformazione ok?"
+
+[13:33-13:49] (confidence: -0.2)
+  "In questo caso per esempio adesso sta lavorando un doppio bad per uscire dallo shimano ok? Quindi dopo qua magari va a farla molla, se qua avesse continuato avrebbe fatto molla quindi vedi che tutti si legano"
+
+[13:49-14:04] (confidence: -0.159)
+  "molla, ingresso bad, molla a time frame 5 minuti per uscire quindi comunque anche con i rimbalzi possiamo avere questo tipo di segnalazione di sicuro ti accende un faro su un qualcosa su un titolo da seguire"
+
+[14:04-14:17] (confidence: -0.145)
+  "per poter fare eventualmente l'uscita dallo shimano o il rimbalzo dalla 223 fino alla 60 o il primo rimbalzo che va a fare quando tocca per la prima volta le ma 60 ok?"
+
+[14:17-14:44] (confidence: -0.217)
+  "Poi tendenzialmente andiamo a fare quei rimbalzi lì, andiamo a vedere se c'è qualcos'altro, band, band abbiamo visto prima, cocos per esempio, andiamo a vedere cocos 16 e 37, 16 e 37, 16 e 37, qua non ha fatto la conformazione l'ha fatto dopo, l'ha fatto dopo,"
+
+[14:44-14:57] (confidence: -0.138)
+  "conformazione qua sotto la 60 torna a fare la rottura sia della 60 che della 10 e poi va a fare il suo rimbalzo ok? Quindi comunque il segnale arriva sempre prima, poi cerchiamo di trovare una conformazione ok?"
+
+[14:57-15:11] (confidence: -0.125)
+  "Poi ha fatto delle candele sotto, qua è bello come uscita perché va a rompere sia la 60 che la 10 e poi questo ha andato a fare la sua accelerazione ok? E poi adesso comunque sta andando a fare una bella conformazione per andare addirittura a tornare sui massimi ok?"
+
+[15:11-15:34] (confidence: -0.174)
+  "Quindi comunque è un segnale che quando arriva è ottimo perché possiamo aspettarci un rimbalzo ok? Ovviamente bisogna sempre aspettare una conformazione. Importante che vediamo, vedete, che è la prima volta che va a toccare la 60, questa è la prima volta che va a toccare la 60, e band l'abbiamo già visto ok?"
+
+[15:34-15:58] (confidence: -0.149)
+  "Band è ancora lì, l'importante è capire il ragionamento ok? Quindi questi sono per andare a fare i rimbalzi e aspettiamo la conformazione. Poi se avete le domande voi andatelo scrivere nei commenti e poi eventualmente ne parliamo a casa bull o andiamo a fare la seconda versione ok? Credo che sia stato molto chiaro."
+
+[15:58-16:20] (confidence: -0.14)
+  "Quindi l'ideale è sempre quando va appunto abbastanza dritto e più dritto sulla EMA ok? Ecco in questo caso c'era già stato affatto il suo rimbalzo e in questo caso magari andiamo a vedere però è più pericoloso che vada sulla 60. Dobbiamo aspettare che poi dopo vada a rompere anche il livello precedente perché ha già sfogato, vedete, ha già fatto il suo rimbalzo."
+
+[16:20-16:38] (confidence: -0.167)
+  "Quando ci va invece per la prima volta è meglio, vedete, prima volta è meglio. Che anche qua prima volta è meglio se abbiamo una lavorazione molto vicina, questa per esempio se ha già avvicinato, ha già fatto un primo rimbalzo e sta andando per la seconda volta è già un po' più pericoloso ok?"
+
+[16:38-16:53] (confidence: -0.152)
+  "Magari andiamo per il secondo tocco. Però insomma segnala dei titoli che hanno fatto già la loro bella salita e stanno andando a riposare sulle EMA principali quindi andiamo per baccarli i rimbalzi, ovviamente cerchiamo di trovare la conformazione."
+
+[16:53-17:08] (confidence: -0.18)
+  "Ovvio dopo lo puoi spostare per avere i micro ingressi a time frame 1 minuto che è questa 5 e magari bacchiamo un BAD TO THE MOON a time frame 1 minuto e abbiamo il vantaggio poi di avere poi i target a time frame 5 min."
+
+[17:08-17:20] (confidence: -0.206)
+  "Perché l'EMA 60 è a time frame, se siamo sulla 203, andare a rimbalzare sulla 60 è a time frame 5 min. Ovviamente paga di più che il time frame 1 min. Ok? Quindi video veloce, vi ho spiegato molto velocemente."
+

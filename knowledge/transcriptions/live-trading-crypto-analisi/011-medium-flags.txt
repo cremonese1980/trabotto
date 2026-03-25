@@ -1,0 +1,188 @@
+# Low-confidence segments for: 011_LIVE_TRADING_SU_BINANCE_SPOT_SOLO_LONG_ANCHE_CON_UN_MERCATO_CHE_CROLLA_COME_OGGI.mp3
+# Total flagged: 61
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:30-0:59] (confidence: -0.482)
+  "eccoci qua sul nostro slpusdt senza perpetuo"
+
+[1:00-1:12] (confidence: -0.172)
+  "niente più perpetuo niente più futurus in italia il nostro futurus è spot quindi niente è un"
+
+[1:12-1:22] (confidence: -0.172)
+  "dramma assolutamente no sì è vero si può andare in marginazione anche su spot ma fa schifo non è"
+
+[1:22-1:28] (confidence: -0.172)
+  "così diretto come su futurus quindi io lo sconsiglio e soprattutto chi se ne frega di"
+
+[1:28-1:35] (confidence: -0.192)
+  "andare short quando possiamo andare long e tanto abbiamo il bull bot che ci seleziona abbiamo"
+
+[1:35-1:42] (confidence: -0.192)
+  "tanta tanta scelta se va giù avete visto oggi ho dimostrato che non ci sia nessun problema i"
+
+[1:42-1:50] (confidence: -0.192)
+  "rimbalzi ci sono sempre anche quando qualcosa crolla il rimbalzo c'è sempre e quindi quella"
+
+[1:50-1:56] (confidence: -0.192)
+  "è il problema allora poi farò il video adesso faccio vedere dei trade poi farò il video dove"
+
+[1:56-2:03] (confidence: -0.188)
+  "faccio vedere tutte le funzioni di spot ok i pro e conto perché c'è anche delle cose che fanno"
+
+[2:03-2:11] (confidence: -0.188)
+  "schifo non esiste il portale perfetto non esiste e quindi sono delle cose fantastiche qua c'è anche"
+
+[2:11-2:16] (confidence: -0.188)
+  "delle cose che fanno schifo e noi dobbiamo saper operare in qualsiasi condizione vuoi essere un"
+
+[2:16-2:25] (confidence: -0.188)
+  "trader bene non devi non devi poter operare solo se c'è il mercato perfetto con il portale perfetto"
+
+[4:12-4:19] (confidence: -0.18)
+  "fantastico lo vediamo subito ok vediamo subito i rapporti denaro 99 38 questi sono 1000 dollari"
+
+[4:19-4:28] (confidence: -0.18)
+  "spettacolare che succede succede che ha testato la 60 la 60 e soprattutto la 223 che ha tenuto"
+
+[4:28-4:34] (confidence: -0.18)
+  "benissimo ha fatto la finta ok quindi quando fa la finta si può comprare e ha fatto la finta"
+
+[4:34-4:42] (confidence: -0.18)
+  "di rompere poi è rimasto su ha ritestato spettacolare senza bucare è tornato su questa è una bella"
+
+[5:37-5:44] (confidence: -0.208)
+  "a preparare l'ordine nel frattempo quindi è iniziato a schizzare su è già su questo muro"
+
+[5:44-5:54] (confidence: -0.208)
+  "sta attestando per la prima volta questo muro qua 802 0,08 120 scusa che 50 mila poi non abbiamo"
+
+[5:54-6:02] (confidence: -0.208)
+  "granché e poi questo è il vero muro è il massimo di giornata no massimo di giornata è questo qua"
+
+[6:49-6:57] (confidence: -0.133)
+  "tac ripulito tutto fino quasi al target ok nel frattempo il 200 e 828 dove non c'era quasi"
+
+[6:57-7:04] (confidence: -0.133)
+  "niente hanno riempito quindi diventa pesante questo è il termine che utilizzo diventa pesante"
+
+[7:04-7:10] (confidence: -0.133)
+  "si appesantisce il titolo perché si carica di venditori ok qua non si sta caricando di"
+
+[7:10-7:16] (confidence: -0.133)
+  "compratori sono cifre sproporzionate rispetto a qua ok quindi io non ho ancora messo in vendita"
+
+[7:16-7:22] (confidence: -0.233)
+  "perché è voluto vedere se toccasse per capire se poi doveva fare perché quando fa i salti che"
+
+[7:22-7:28] (confidence: -0.233)
+  "ci sono che c'è il panico questi muri possono andare via col niente ok adesso con spot capirete"
+
+[7:28-7:32] (confidence: -0.233)
+  "dovete dare dei trader contro coglioni adesso perché imparerete a usare veramente il book"
+
+[7:32-7:42] (confidence: -0.233)
+  "finalmente poi vediamo che fa quindi ha fatto si sta riavvicinando riprova non ce la fa ok"
+
+[8:30-8:40] (confidence: -0.176)
+  "che non è non è salito di tanto vediamo se riesco a tornare un po indietro ok"
+
+[8:40-8:47] (confidence: -0.176)
+  "poi uno si è tolto appena mi sono messo io si è tolto uno quindi si è alleggerito però c'è questo"
+
+[8:47-8:54] (confidence: -0.176)
+  "muro molto brutto ok appena poi mi raccordo che comunque quello un po bruttino vado a cancellare"
+
+[8:54-8:59] (confidence: -0.176)
+  "mi ordine perché comunque non è andato e la candela sta sgonfiando quindi la candela deve"
+
+[20:49-20:59] (confidence: -0.279)
+  "coppia nuova ok andò giù ha testato ha testato ha creato un livello l'ingresso era 7 perché a"
+
+[20:59-21:05] (confidence: -0.279)
+  "7 c'era il muro fatto l'ingresso sono andato un po sopra disposto a pagare le 7.01 ordine condizionate"
+
+[21:05-21:12] (confidence: -0.279)
+  "riuscite e sono entrato ovviamente qua quasi cambia molto poco 80 milioni poca roba quindi"
+
+[21:12-21:18] (confidence: -0.279)
+  "le quantità nel book vedete sono cifre molto più basse però denaro molto più pieno abbastanza"
+
+[23:49-23:58] (confidence: -0.24)
+  "bull bot che ha adesso tutto spot ovviamente ha anche futures non è che non c'è più sol o bnb o"
+
+[23:58-24:06] (confidence: -0.24)
+  "i grandi certo che ci sono è normale che ci sono ok quindi questo scemenza non esiste poi mi continuate"
+
+[24:06-24:15] (confidence: -0.24)
+  "a chiedere nonostante l'abbiamo spiegato 20 volte perché non vai su su alt ftx o quelle altre cose"
+
+[24:16-24:22] (confidence: -0.217)
+  "allora guardate un book e vedete le liquidità quindi se non capite il perché io non posso andare"
+
+[24:22-24:30] (confidence: -0.217)
+  "in quei mercati non capite il perché e come funziona un book ok? Molti di voi avete scritto"
+
+[24:30-24:39] (confidence: -0.217)
+  "i professionisti sono su ftx ma io non ci posso andare perché già operando con 20 mila se non"
+
+[24:39-24:45] (confidence: -0.217)
+  "opere con i top 10 non puoi fare niente ditemelo voi chi sono questi professionisti quindi dove"
+
+[26:34-26:40] (confidence: -0.285)
+  "molto facile ok io ho fatto tanti video poi andate a vedere anche di cripto dove si vede"
+
+[26:40-26:46] (confidence: -0.285)
+  "tutta l'operazione l'entrata e l'uscita pure qua non ho fatto però ho fatto vedere anche"
+
+[26:46-26:55] (confidence: -0.285)
+  "qua compra adesso di fatto uno stop limit però metti 7 a 7 deve scattare quindi a che prezzo"
+
+[26:55-27:02] (confidence: -0.285)
+  "deve scattare dove è il livello e a 7 adesso non c'è più a 7 quanto volete comprare"
+
+[27:50-28:01] (confidence: -0.144)
+  "spettacolare semplice senza nessun problema ok bene non so cos'altro dire dirai basta sono già"
+
+[28:01-28:06] (confidence: -0.144)
+  "28 minuti già tantissimo incredibile e niente dai ce la possiamo fare dovete sempre cercare"
+
+[28:06-28:12] (confidence: -0.144)
+  "di essere positivi e di prendere il meglio c'è sempre qualcosa che fa schifo dovete cercare di"
+
+[28:12-28:17] (confidence: -0.144)
+  "prendere il meglio di quel che avete quindi se non siete profitevoli lasciate stare futuras"
+
+[29:33-29:40] (confidence: -0.313)
+  "cosa li sale a posto alla fine dai avete accumulato non è un problema questa cosa qua ma che"
+
+[29:40-29:46] (confidence: -0.313)
+  "avete aspettate di prenderla paga aggiungete altri 50 euro 100 euro dollari e siete apposta"
+
+[29:46-29:53] (confidence: -0.313)
+  "lì qui invece su quel altro liquidazione cioè io stato liquidato io pure io stato liquidato su"
+
+[29:53-30:00] (confidence: -0.313)
+  "future il giorno del mega crescione l'ho pubblicato e se non se fossi stato su spot non sarei stato"
+
+[30:00-30:03] (confidence: -0.313)
+  "liquidato quel giorno con lo stesso operazione in cui sono stato liquidato avrei guadagnato un"
+
+[30:54-31:01] (confidence: -0.183)
+  "tecnica dei trading che si chiamerà appunto viagra va segnale blu scuro e poi stiamo lavorando"
+
+[31:01-31:08] (confidence: -0.183)
+  "su un'altra cosa cioè sulla pesca notturna quindi dalle ore 20 stiamo facendo faremo dei test"
+
+[31:08-31:19] (confidence: -0.183)
+  "dalle ore 20 ogni sera usciranno gli alert su la pesca notturna quindi le coppie che possono"
+
+[31:19-31:25] (confidence: -0.158)
+  "andare bene per fare la pesca notturna ragazzi ve ne rendete conto di cosa stiamo facendo e ieri"
+
+[31:25-31:35] (confidence: -0.158)
+  "due giorni fa ho detto voglio riposare vabbè comunque stiamo andando avanti adesso riposerò"
+
+[31:35-31:47] (confidence: -0.158)
+  "proprio avanti domani farò il video sul cambio shimano va bene così siete a posto dai iscrivetevi"
+

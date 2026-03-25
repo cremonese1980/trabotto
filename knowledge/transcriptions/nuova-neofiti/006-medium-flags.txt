@@ -1,0 +1,209 @@
+# Low-confidence segments for: 006_lo_SHORT_SELLING_come_funziona_Corso_di_Trading_Online.mp3
+# Total flagged: 68
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.275)
+  "Ciao a te, adesso siamo su Skype in the Bull, nuovo video per la playlist per Neofiti, short"
+
+[0:06-0:09] (confidence: -0.275)
+  "selling, quindi vi spiegherò finalmente cos'è lo short selling."
+
+[0:09-0:11] (confidence: -0.275)
+  "Sai cos'è lo short selling?"
+
+[0:11-0:16] (confidence: -0.275)
+  "Esattamente, a tantissime persone non capiscono, non escono proprio a capire, nonostante la"
+
+[0:16-0:18] (confidence: -0.275)
+  "mia spiegazione, cos'è lo short selling."
+
+[0:18-0:22] (confidence: -0.275)
+  "Quindi attenzione, speriamo che tu non possa capire come loro, ok?"
+
+[0:22-0:25] (confidence: -0.275)
+  "Perché se tu purtroppo capisci subito, quelli che non lo capiscono la prima volta che lo"
+
+[0:25-0:27] (confidence: -0.275)
+  "spiego rimarranno a bocca asciutta."
+
+[3:34-3:38] (confidence: -0.258)
+  "Allora, io ero in un ristorante cinese a Bologna, che io ho vissuto tanti anni in Bologna,"
+
+[3:38-3:45] (confidence: -0.258)
+  "e ero lì seduto e arrivato un Pullman dove sono scesi, perché c'erano solo Cinesi,"
+
+[3:45-3:52] (confidence: -0.258)
+  "questi sono entrati in questo ristorante cinese, avevano tutti il cash nella loro moneta cinese"
+
+[3:52-3:56] (confidence: -0.258)
+  "e volevano cambiare in euro, quindi arrivavano, scambiavano, e comunque è arrivato questo Pullman dei Cinesi."
+
+[3:56-4:01] (confidence: -0.258)
+  "Quindi, alle miei mente, quando immagino persone col cash, immagino i Cinesi, no?"
+
+[6:18-6:30] (confidence: -0.133)
+  "Come capiamo che stanno uscendo nel negozio? Perché l'EMA 10 che teneva, ha tenuto perfettamente, tenuto, tenuto, tenuto, tenuto, rotto quel livello, non tiene più."
+
+[6:30-6:38] (confidence: -0.133)
+  "Pullman ha finito i soldi, il Cammin continua ad arrivare con le scarpe in vendita, quindi il prezzo crolla, fin dove? LEMA sotto."
+
+[6:38-6:45] (confidence: -0.133)
+  "Questo ti fa spiegare un po', hai capito questa cosa? Ci possiamo credere che ci hai capito? Ok."
+
+[7:43-7:57] (confidence: -0.203)
+  "Esattamente, dove tutti questo lo capiscono. Io compro una scarpa a 100, arriva il pullman di cinese, quindi arrivano tanti compratori, non ci sono più scarpe, io con la scarpa la posso vendere a un prezzo molto più alto."
+
+[7:57-8:12] (confidence: -0.275)
+  "Da 100 lo vendo a 120 ho guadagnato il 20%, cioè 20 euro. Questo è il long. Mi ho comprato, il prezzo è salito. Tutti lo restano a capire subito. Tu l'hai capito subito questo? Ok, ci guardiamo, scrivete nei commenti se non lo succedete."
+
+[8:12-8:26] (confidence: -0.132)
+  "Bene, lo short è l'esatto opposto. Ci guadagniamo a ribasso e questo ragazzi è stato per me l'evoluzione che ha fatto sì che io potessi avere fiducia abbastanza per poter diventare trader."
+
+[8:26-8:35] (confidence: -0.132)
+  "Perché se dovevo mentalmente pensare a guadagnare solo a rialzo, io dicevo, eh ma se dopo quando tutto scende, non c'è mai quando tutto scende."
+
+[8:35-8:48] (confidence: -0.154)
+  "Però insomma ho avuto molto più fiducia di essere capace di essere un trader quando ho capito e quando c'era finalmente lo strumento, perché in Europa, in Italia non è che c'è da sempre, anche se sono più di 20 anni che faccio questo mestiere, non c'è da sempre."
+
+[8:48-8:59] (confidence: -0.123)
+  "Da quando è arrivato, da lì ho iniziato, uno mi sono affascinato ed è bellissimo sapere che tu puoi guadagnare i soldi quando gli altri stanno bestemmiando o comunque sono disperati, insomma a fare virgolette."
+
+[8:59-9:10] (confidence: -0.123)
+  "Ma in più non devo più guardare solo quelle conformazioni, le conformazioni come fossero i disegni nei grafici per capire quando comprare, per vendere a prezzo più alto, ma posso fare anche l'esatto contrario."
+
+[9:10-9:17] (confidence: -0.134)
+  "Quindi quello mi ha creato meno ansia, mi ha creato meno stress e mi ha fatto capire che ho il doppio delle possibilità di poter trovare delle conformazioni."
+
+[9:17-9:26] (confidence: -0.134)
+  "È stato veramente un passaggio importante e fra l'altro se posso scegliere per andare solo long o solo short, io preferisco short."
+
+[9:26-9:38] (confidence: -0.134)
+  "Per fortuna non devo scegliere fra long e short, in senso che io aspetto solo la conformazione, ma se un giorno mi dicessero ragazzo mio puoi andare o solo long o solo short, io ringrazio perché mi ha dato del ragazzo,"
+
+[10:22-10:47] (confidence: -0.157)
+  "Il prezzo alzerà, quindi lo compro e lo vendo ai cinesi a un prezzo più alto. Questo è long. Short è l'esatto posto dove io vedo che i cinesi stanno finendo i soldi, quindi il prezzo non salirà più, quindi dico non ho più scarpe, loro non hanno più soldi, io chiedo a loro se mi vendono una scarpa."
+
+[10:47-11:08] (confidence: -0.15)
+  "Io così mi ritrovo con loro con una scarpa venduta a 120 e dico tanto poi non c'è un altro cinese che lo voglio ricomprare. Lui me la vende a 120, non c'è più cinese, quindi il prezzo scenderà e il primo che entra dirà ok io non lo compro più a 120, lo compro a 100."
+
+[11:08-11:33] (confidence: -0.343)
+  "Lui dice che si, benissimo, io te lo compro a 100, io te lo vendo a 100. Lui lo compro a 120, io ho questa scarpa a 120, lo do a lui che me lo dà che lo vuole comprare a 100, la differenza è di 20, l'operazione è apposta, cioè diventa come se io avessi comprato a 120 e l'ho rivenduto a 120."
+
+[11:33-11:47] (confidence: -0.194)
+  "Ok sembra assurdo, ok sembra assurdo, sentiamo cosa dice lui ok perché finalmente immagini di poter vendere qualcosa che non possiedi ancora, quindi quella scarpa che non possiedi, sperando che il suo prezzo crolli."
+
+[11:47-12:10] (confidence: -0.214)
+  "Ok quindi quella scarpa era a 120, speriamo che crolli bene, come faccio a guadagnarci? Se posso guadagnarci solo a rialzo? No, ci puoi guadagnare in basso. Per poi ricomprarlo a meno a intascare la differenza, sembra un paradosso vero? Eppure è il cuore dello short selling o vendita allo scoperto, allo scoperto perché tu non hai comprato prima, hai prima venduto e poi comprato."
+
+[12:10-12:30] (confidence: -0.136)
+  "Normalmente compri a 120, vendi a 120, io invece ho prima venduto, mi ho venduto a 120 perché pensavo che scendesse, ho comprato a 100, ho guadagnato sempre quel 20. Ok? Ho speso 120, ho ricomprato a 100, la differenza è 20, quello è il mio guadagno."
+
+[12:47-13:01] (confidence: -0.158)
+  "1. L'idea di base è scommettere al ribasso, io odio questa parola, odio quando si parla di trading di scommettere, ragazzi non è una scommessa per quello che esistono le tecniche."
+
+[13:01-13:26] (confidence: -0.155)
+  "2. Però si pensa che il trend possa andare negativo, cioè scendere. Normalmente quando investi segui la regola, compra a poco, vendi a tanto, compri la scarpa a 100, vendi a 120, arrivi cinesi arrivare, il prezzo sa che sale, questo è normalmente compra a poco, vendi a tanto, compra a 100, vendi a 120. Ok? E questo è quello che capiscono tutti."
+
+[13:56-14:12] (confidence: -0.158)
+  "sta comprando l'ultima scarpa a 120 e non c'è più un altro pullman di cinesi, eppure continui ad arrivare i camion a portare le scarpe, tu sai che ci saranno troppe scarpe, quindi il prezzo scenderà."
+
+[14:33-14:51] (confidence: -0.34)
+  "Bene, benissimo ragazzi, non sta capendo come voi, quindi andiamo avanti a 2. Mi sa che questo appuntato durerà 4 giorni ragazzi. Passaggio della magia, il passaggio della magia. Bello come è, perché la magia è finalmente questa cosa che nessuno riesce a capire."
+
+[15:07-15:22] (confidence: -0.187)
+  "Come di solito, lo compri e lo rivendi, no? Vai su eBay, compri a 100, vai su eBay, lo rivendi a 120, ok? Siamo tutti capaci. Qua devi fare una cosa diversa. Interviene il tuo broker, cioè la piattaforma che usi per fare trading."
+
+[15:22-15:41] (confidence: -0.129)
+  "Ok, mettiamo che sia il caso di Bybit, mettiamo che sia il caso di qualsiasi altra banca. Loro perché lo fanno? Perché la piattaforma ci guadagna più scambi si fanno. Il negoziante ci guadagna più scarpa e vende, giusto? Con più margine, no?"
+
+[15:41-15:58] (confidence: -0.16)
+  "Per incentivare ad avere ancora più scambi, quindi ancora fanno più soldi loro perché quando tu compri e tu vendi devi pagare una fee, dicono, hanno fatto in modo di dire ok, noi ti possiamo anche dare una cosa che non abbiamo ancora?"
+
+[15:58-16:17] (confidence: -0.195)
+  "L'importante è che tu riesci a chiudere l'operazione all'interno della giornata. Quindi io vado a prendere una scarpa che ha già comprato un mio cliente che c'è la sua a casa sua e lui dice, sì, sì, a me va bene, dammi questo tanto tu mi dai un po' una fee."
+
+[16:17-16:29] (confidence: -0.184)
+  "Quindi chi ha già la scarpa dice ok, io a Bybit ti do questa scarpa, lo tocciono io a casa mia, però se trovi qualcuno che vuole andare short gli lo presti, basta che a fine giornata la scarpa mi ritorna a casa."
+
+[16:29-16:54] (confidence: -0.158)
+  "Lui si ritrova con la sua scarpa nuova, non l'ha utilizzata, semplicemente è stato fatto uno scambio di passaggi, uno scambio dove qualcuno magari ci ha guadagnato. Quindi quella scarpa a 120 dice ok, Bybit me lo dà a 120, tanto io so che adesso il problema di cinesi è finito, il prezzo è scendere a 100, trovarò un altro in cui lo può comprare a 100 e io mi do, io ho guadagnato la differenza e la scarpa poi torna in mano di nuovo al cassettista in caso suo."
+
+[16:54-17:08] (confidence: -0.264)
+  "In modo che dopo ci possono essere molto più scambi così, non devo solo scambiare per andare a lo, posso scambiare anche short, quindi ci sono molto più volumi, molto più scambi, ci guadagnano tutti, i trader possono lavorare di più e le exchange ci guadagnano più perché ci sono più scambi."
+
+[17:08-17:23] (confidence: -0.131)
+  "E ci guadagnano tutti perché poi nel book che andremo a fare c'è più lucridità, quindi io posso avere una size più grande, invece di avere una size da 5000 posso averlo da 10.000 oppure invece di 10.000 posso averlo a 20.000. Più scambi ci sono più io posso entrare e uscire facilmente dal mercato."
+
+[17:48-18:02] (confidence: -0.171)
+  "1. Il prestito. Chiedi al tuo broker di prestarti un'azione di una società, chiamiamola azienda X, che oggi vale 100. Oh vedi, ottimo che ha preso. Quindi per noi X è la scarpa che vale 100."
+
+[18:02-18:20] (confidence: -0.113)
+  "2. La vendita. Vendi immediatamente quell'azione sul mercato. Ora hai 100 euro in contanti, ma hai un debito. Devi istituire un'azione all'originale proprietario. Quindi quella scarpa deve tornare al proprietario."
+
+[18:20-18:42] (confidence: -0.194)
+  "3. L'attesa. Il prezzo scende come speravi. Tu hai visto che era l'ultima vendita, quindi stava rompendo le ma 10. Per esempio di prima le ma 10 che teneva sul prezzo stava rompendo. L'ultimo cinese con i soldi se ne sta andando. Quindi da lì il prezzo pensi che possa scendere."
+
+[18:42-19:09] (confidence: -0.165)
+  "4. Dopo una settimana, bruttissimo questo esempio, deve essere in giornata. Dopo massimo una giornata, l'azione dell'azienda X vale solo 70. Quindi scende nel 30%. La riconsegna, ricompri l'azione a 70 e la restituisci al broker. Il tuo guadagno? I 100 euro incassati all'inizio o meno i 70 spesi per ricomprarlo? 30 euro di profitto al netto di commissione e interessi."
+
+[19:09-19:26] (confidence: -0.221)
+  "Significa che tu hai comprato a 70 e venduto a 100. Ma hai fatto al contrario. Prima hai venduto e poi hai ricomprato. E la banca dice che non me ne frega niente se prima hai venduto e poi hai comprato. L'importante è che alla fine tu mi ridai quello che hai preso in prestito."
+
+[19:26-19:53] (confidence: -0.141)
+  "Se c'è differenza a tuo favore, quindi a tuo favore se vai short il prezzo scende, la differenza te lo intaschi tu. Io mi intasco solo la fee e il guadagno te lo intaschi tu. Questo è lo short selling. Quindi è l'esatto contrario di andare long. Esattamente il contrario. Quindi non compri prima ma prima vedi. Non vedi dopo ma dopo compri. La differenza è il tuo guadagno."
+
+[19:53-20:07] (confidence: -0.199)
+  "Il prezzo in cui tu clicchi vendi, dove tu cliccheresti compri clicchi vendi, quel prezzo lì è il prezzo dove se continua a salire perdi soldi, se inizia a scendere guadagni. Questo è semplicemente."
+
+[20:07-20:30] (confidence: -0.199)
+  "Quindi se tu pensi poter guadagnare una cosa che scenderà non clicchi compra compri clicchi vendi quindi dopo quando andremo a fare come comprare come vendere se vuoi che scenda tu prima non clicchi non devi cliccare compra perché se clicchi prima compra il prezzo deve salire. Tu clicca per primo vendi e poi scende clicca compra. Tu non hai più niente ma hai la differenza prezzo."
+
+[20:30-20:43] (confidence: -0.321)
+  "In taschi se invece pensi che sale prima clicca compra e poi clicca vendi se il prezzo sale la differenza è tua. Proprio a 100 vendi a 120 guadagno a 20 vendi prima a 120 compre a 100 guadagno sempre a 20."
+
+[20:59-21:15] (confidence: -0.172)
+  "Pensa a un tuo amico che ha l'ultimo modello di smartphone che oggi vale 1000 ti fai prestare il telefono lo vedi subito ad un estraneo per 1000. Sei convinto che tra un mese uscirà il modello nuovo e quello vecchio scenderà di prezzo. Questo mi piace come esempio."
+
+[21:15-21:26] (confidence: -0.221)
+  "Oggi Gemini stai lavorando proprio bene bravo infatti un mese dopo lo stesso telefono costa 600 questo lo capiamo tutti. Vabbè che è uscito un modello nuovo il prezzo dell'usato scende."
+
+[21:50-22:08] (confidence: -0.283)
+  "Lo compri a 600 lo ridai tuo amico che riottiene su telefono intatto e tu ti tieni 400 differenza. Attenzione rischi sono alti. Questa forse la parte che dice la cagata vediamo mentre nell'investimento classico il rischio massimo a perdere quello che ha investito."
+
+[22:08-22:26] (confidence: -0.224)
+  "L'azione va a zero quindi se tu hai comprato una scarpa a 100 il massimo che puoi perdere è 100 perché al massimo che può scendere a zero. Non può esistere che la scarpa lo vende qualcuno che lo paghi addirittura sarà che al massimo lo dai gratis."
+
+[22:26-22:31] (confidence: -0.224)
+  "La scarpa gratis lo trovi per forza non andrà sotto zero il prezzo."
+
+[22:31-22:50] (confidence: -0.308)
+  "Tu compri una scarpa in un negozio ok? A un certo punto lo vorresti vendere a 120 ma non viene mai più nessuno in quel negozio. Quello fallisce. Non entra più nessuno. Tu ti dà questa scarpa che non ti serve perché è un 48 di piede. Non te la farebbe niente. Non hai nessun parente a cui non sai che cacchio fare."
+
+[22:50-23:01] (confidence: -0.31)
+  "Bene vai che vada, vai nel mercato di paese e dici ragazzi questa scarpa è nuova te lo regalo gratis prezzo zero. Lo troverai uno che lo vuole a zero. Ok perfetto."
+
+[23:21-23:32] (confidence: -0.307)
+  "Perché se tu entri con 100 dollari ma che vada perdi quei 100 dollari se non sei in marginazione. Vi abbiamo parlato di marginazione ancora esatto. Quindi questa è la differenza."
+
+[23:32-23:48] (confidence: -0.339)
+  "La differenza però noi se questo esempio vale se tu non stai usando la marginazione quindi sei in spot hai 100 euro sul conto di bybit hai speso 100 euro per andare a lungo il massimo che puoi perdere purtroppo bitcoin che non se l'hai comprato 60.000 va a zero hai perso i 200 dollari basta."
+
+[23:48-24:12] (confidence: -0.203)
+  "Il problema se vende lo scoperto 100 e l'azione invece di scendere sale a 200 500 o 1000. Capito la differenza cioè. Tu hai comprato a 100. E va a 200. I 200 che tu hai messo come investimento già non esistono più. Quindi verrai liquidato in automatico perché proprio."
+
+[24:12-24:24] (confidence: -0.218)
+  "I 200 già non esistono più perché già stato raddoppiato è salito è salito di 100 nel senso inverso hai perso già tutti i suoi soldi ti deve essere chiuso ma se tu non lo chiudi tecnicamente."
+
+[24:24-24:34] (confidence: -0.417)
+  "Può anche andare da 200 a 500 quindi se resti sotto di tanto se sti sotto di 400 può andare a 1000 se sei sotto di 900."
+
+[24:34-24:44] (confidence: -0.419)
+  "Può dargli infinito che se tu cobris bitcoin a 60.000 e va a 600.000 e tu sei short non è che hai perso solo quello che hai investito."
+
+[25:00-25:10] (confidence: -0.265)
+  "Tu hai 100 hai investito 100 quindi senza leva senza niente se vai short e va a 0 hai perso semplicemente 100 se invece se vai long e va a 0 hai perso semplicemente 100 ma se tu vai short quindi da 100 tu vuoi che vada a 70."
+
+[25:10-25:16] (confidence: -0.265)
+  "Ma invece di 70 va a 1000 tu avrai un debito altissimo avrai un debito di 900 dollari."
+

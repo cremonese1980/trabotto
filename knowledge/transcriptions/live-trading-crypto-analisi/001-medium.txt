@@ -1,0 +1,92 @@
+0:00 Ciao a tutti, adesso siete su Sculpey the Bull, questo è un video live fatto su Bybit,
+0:06 l'ultimo video di un live, di un'analisi di un trade fatto ha raggiunto i 1000 like
+0:13 e quindi questo è il nuovo video, se volete un altro ancora ricordatevi i 1000 like, ok?
+0:18 e questo è il primo su Bybit, così nel frattempo vi spiego e vedete un attimino come funziona,
+0:23 è veramente una figata.
+0:24 Faccio partire, ci sono dei pezzi poi accelerati, vedete il book normalmente non va così
+0:29 così, sta andando 4 volte più veloce, però così si riesce a vedere tutto il trade.
+0:34 Vi faccio capire, nel frattempo qua sono già appena entrato nel trade, ok?
+0:38 Questo è time frame, un minuto, quindi sono entrato nella candela prima ed è un bellissimo
+0:41 breakout, ok?
+0:42 E qua vedete un buy and sell che mi ha fatto perdere 6 dollari, poi vedrete, ma in realtà
+0:49 stavo testando, stavo testando proprio l'ingresso e l'uscita, infatti è a caso.
+0:54 E niente, dopo ho fatto l'ingresso con lo stop limit e sono stato fillato, dopo ho iniziato
+0:59 la registrazione, ho messo subito uno stop lontano che non c'entra diciamo col trade
+1:03 perché tanto basta chiudere la candela all'interno di quello che è il breakout che devo chiudere
+1:10 e basta cliccare questo bottone qua per chiudere, questo per fare l'inversione, invece questa
+1:15 la X è per chiudere l'operazione, ma mi tengo uno stop per sicurezza, non so mai che
+1:20 sia uno spike lungo o qualcosa, ce l'ho lì.
+1:22 Allora size, piccolissima size, vedrete, 2000 dollari, quindi 200 dollari leva 10,
+1:29 perché questo, voi vedrete più avanti, questa è un'operazione che in realtà voleva ottenere
+1:33 più tempo, tanto avevo il founding rate a favore, quindi alla scadenza del founding
+1:38 rate ci guadagnavo lo 0,08%, essendo negativo se sei long ci guadagni mancava mezz'ora,
+1:45 ma soprattutto perché aveva, eccolo qua, questo è time frame un'ora, questo è time
+1:50 frame un'ora, aveva appena fatto una candela di azzeramento e quindi ho fatto il mio ingresso
+1:55 aveva un livello daily, puntavo a fare il livello daily di rottura, quindi di fare
+1:59 una percentuale molto lunga e quindi ho detto entro con una size piccola, ho il founding
+2:04 rate a favore, quindi più lo tengo più ci guadagno e poi lascio correre, ok?
+2:08 Qua fa vedere, realize pnl, che cos'è, è praticamente le fee che sto pagando, quindi
+2:13 su 2000 sto pagando un dollaro di fee, però va a scalare, quindi se lo avessi tenuto
+2:19 ogni 8 ore, ne mancavano 29 minuti, vado a guadagnare lo 0,08% che va a scalare di
+2:27 questa percentuale qua, dunque fee su, dai, bits sono veramente basse, e poi qua invece
+2:33 sto andando a mettere il mio target, vedete basta cliccare, qua c'è target price e lo
+2:38 stop, lo stop c'è già e il target price vado a mettere proprio al massimo, vedete?
+2:44 E' bello perché fa già vedere quanto guadagneresti, 280 visto, molto comodo questo, fantastico,
+2:50 questo mancava su Binance, noi che ho fatto che non potevamo operare sui perpetui, sui
+2:56 futures e quindi niente, qua c'è il trade ovviamente, adesso vedete ho già spostato
+3:01 lo stop sopra lo 0, ok?
+3:03 L'ho già spostato ovviamente, avendo fatto questo candellone e l'ho già spostato sopra,
+3:08 però comunque vediamo se tenga comunque la 10, però questo serve per sicurezza, per
+3:12 garantia, ok?
+3:13 Accade uno spike a caso, se va a testare la 10 non vengo fillato, quindi io cerco di evitarlo,
+3:20 quindi faccio le chiusure manuali, invece se arriva uno spike gigantesco io qua vengo
+3:25 tutelato, quindi qua comunque vedete la quantità, che è 268, il valore, quindi quando tenete
+3:33 position, quando siete aperti io tengo sempre questo, fa vedere quant'è il totale, sono
+3:36 2 mila dollari, il prezzo di ingresso, il prezzo che sta facendo, il prezzo di liquidazione,
+3:41 ma io non ve l'ho mai liquidato, perché uso sempre target price e voi avete l'obbligo
+3:46 di inserire il stop loss prima di entrare con il trade, lo faccio anch'io, tenetelo
+3:53 anche un po' distante in modo che potete comunque gestirvi, però serve solo semplicemente
+3:56 per avere una garanzia, uno di non andare mai all'inquilazione e due deve avere un
+4:01 senso, vedete questo l'ho alzato ancora di più, quindi adesso la 10 deve tenere,
+4:07 time frame un minuto, deve tenere la 10, ok? Se mi va sotto la 10 vado a chiudere, io chiudo
+4:14 i manuali, basta cliccare qua si chiude a mercato e si va a chiudere senza nessun problema,
+4:19 e qua invece tengo lo stop comunque un po' più all'alzato in modo che si possa fare
+4:24 uno spike improvviso, poi torna su, non ci sono problemi, quindi in questo caso qua comunque
+4:31 andrei sempre a guadagnarci perché il mio stop loss è sopra il livello di ingresso,
+4:35 il livello di ingresso è questo. Il target price, vedete, è lontanissimo, è 8.49, io
+4:40 proprio per questo sono entrato con poco, perché volevo proprio lasciarlo, aveva un
+4:43 daily pazzesco, ho potuto fare l'ingresso con una candela di azzeramento, vedete come
+4:49 è candela di azzeramento, time frame un minuto, è in allaterizzazione, ok? La rottura, tengo,
+4:54 ecco qua sta accelerando, non ho ancora andato verso target, vedi il guadagno qua era già
+4:59 142, vado ad abbassare un po' quello che è il mio target, anzi volevo metterlo addirittura
+5:06 a 9, quindi vado a, scusa, ad alzarlo, e niente, sono stato fillato, vado a tornare indietro
+5:13 un attimo, un attimo, torno indietro, ah no, penso che ho tornato all'inizio, molto
+5:19 no good, eccolo qua, allora io volevo alzare, vedi 8.49, questo era il mio target, che
+5:29 lo vedete, che era già inserito qua, 8.49, già inserito, poi aspetto un attimo che lo
+5:34 vado ad alzare ancora di più verso 9, quindi volevo metterlo in realtà a 8.95, una cosa
+5:39 del genere, quindi clicco, vedete qua, per modificare, una volta che l'avete inserito
+5:44 basta cliccare qua, si va a modificare, viene fuori la mascherina, e da 8.49 volevo andare
+5:50 a 8.95, una cosa del genere, bastava cliccare qua e modificarlo, invece ho provato, con
+5:57 quello io ho perso tempo, guardate sotto, questo è il livello del prezzo, nel frattempo
+6:01 mi va a prendere, mi va a prendere, me lo va a prendere, un attimo, ancora ha preso,
+6:08 eccolo lì, vedete, qua arriva il target, target price, io qua sto pistolando, che sto
+6:15 perdendo tempo, no già, comunque meglio così, alla fine, cioè meglio così no, perché
+6:19 poi dopo ho andato a fare dei livelli pazzeschi, però insomma, va bene, sono stato, ecco, vedete,
+6:24 sono stato fillato a quel 8.45, vedete, 8.45, qua 190, stavo pagando 190, va a salire
+6:33 220, 249, e poi dopo vado al target, ok? E niente, va bene, e comunque, vedete, ecco,
+6:41 questa è questa operazione qua, che era in realtà solo un test di prova di ingresso,
+6:46 6 dollari, e poi dopo ho fatto, questa è l'operazione, questo fino all'arrivo, quindi
+6:54 mi sono regolato, diciamo, con la size, perché in realtà volevo tenerlo di più, infatti
+6:58 dopo ho andato a fare veramente dei livelli pazzeschi, però niente, mi sono ingolosito,
+7:03 era salito tantissimo, e quindi quando mi fa delle candele così grosse mi ingolosiscono,
+7:07 e niente, ho venduto 277, però con solamente 2.000 dollari, 200 cash, alleva 10, quindi
+7:15 una percentuale veramente molto grande. Per qualsiasi cosa volete sapere come usare Bybit,
+7:26 eccetera, facile, basta andare sotto il video, o troverete il link del nostro link 3, lo
+7:32 trovate ovunque anche sul sito, sui miei post, su telegram, trovate ovunque, cliccate qua,
+7:37 trovate tutto, vedi, speciale Bybit tutorial, tutto quello che c'è da sapere, cliccate
+7:41 lì e trovate tutto, ma trovate anche tutti i link della Bull Family, non fatevi fregare
+7:46 facendo le ricerche, perché siamo pieni di cloni truffatori, volete essere protetti
+7:51 dalla Bull Family, l'unico modo è entrare in quelli ufficiali qua, ok, per i piani off,
+7:55 tutti i social, tutte le domande, tutte le cose, prima dateci un'occhiata, perché c'è
+7:59 il mondo qua, la biblioteca, c'è tutto, tutto, tutto, tutto, tutto. 1000 like per il prossimo
+8:04 video, ciao!

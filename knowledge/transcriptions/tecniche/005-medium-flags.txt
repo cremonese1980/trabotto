@@ -1,0 +1,419 @@
+# Low-confidence segments for: 005_TECNICA_DEL_DAILY_3_USANDO_I_SEGNALI_DEL_BULL_BOT_TUTORIAL.mp3
+# Total flagged: 138
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:03] (confidence: -0.724)
+  "Ciao a tutti e benvenuti su Sculpting the Bull."
+
+[0:03-0:06] (confidence: -0.724)
+  "Tecnica del Daily 3, sigla."
+
+[0:06-0:09] (confidence: -0.651)
+  "Eccolo alla Sculpting the Bull."
+
+[0:37-0:45] (confidence: -0.286)
+  "E' il video più visto sul canale, che ha superato abbondantamente 10.000 views."
+
+[0:45-0:48] (confidence: -0.286)
+  "Poi anche la seconda sta andando verso i 10.000."
+
+[0:48-0:55] (confidence: -0.286)
+  "Quindi si capisce che è il più potente e che interessa anche più a voi."
+
+[0:55-1:00] (confidence: -0.286)
+  "Perché lo si può utilizzare anche se lavorate, eccetera eccetera."
+
+[1:01-1:04] (confidence: -0.133)
+  "Però, appunto, adesso abbiamo una grande novità."
+
+[1:04-1:09] (confidence: -0.133)
+  "Cioè, abbiamo finalmente il Bullbot che ci dà i segnali Daily."
+
+[1:09-1:11] (confidence: -0.133)
+  "Incredibili, fra l'altro."
+
+[1:11-1:13] (confidence: -0.133)
+  "Spettacolari."
+
+[1:13-1:18] (confidence: -0.133)
+  "E quindi adesso, tecnica del Daily 3, io aspettavo appunto questo momento."
+
+[1:18-1:23] (confidence: -0.133)
+  "Che ci fosse appunto finalmente i segnali per tutti Daily."
+
+[1:23-1:28] (confidence: -0.133)
+  "E così vediamo di organizzarci e sfruttare al massimo questa tecnica."
+
+[4:44-4:46] (confidence: -0.142)
+  "Quindi per i più intelligenti che avranno studiato con la playlist gratuita."
+
+[4:46-4:48] (confidence: -0.142)
+  "Che fa vedere come leggere il book."
+
+[4:48-4:50] (confidence: -0.142)
+  "Eccetera, eccetera, eccetera."
+
+[4:50-4:52] (confidence: -0.142)
+  "Farete ingressi molto più intelligenti."
+
+[4:52-4:54] (confidence: -0.142)
+  "E cosa serve fare un ingresso più intelligente?"
+
+[4:54-4:56] (confidence: -0.142)
+  "Quindi l'ingresso più intelligente è guardare comunque il book."
+
+[4:56-4:58] (confidence: -0.142)
+  "E guardare sempre una conformazione."
+
+[4:58-5:00] (confidence: -0.142)
+  "Anche se si lavora sul daily."
+
+[5:00-5:02] (confidence: -0.142)
+  "Perché?"
+
+[5:02-5:04] (confidence: -0.142)
+  "Perché così avete una percentuale di riuscita altissima."
+
+[5:04-5:06] (confidence: -0.142)
+  "Ok?"
+
+[5:06-5:08] (confidence: -0.142)
+  "È importante."
+
+[5:08-5:10] (confidence: -0.142)
+  "Perché?"
+
+[5:10-5:12] (confidence: -0.142)
+  "Perché così avete una percentuale di riuscita altissima."
+
+[12:14-12:16] (confidence: -0.226)
+  "quindi a un discorso di notte, aspettare"
+
+[12:16-12:18] (confidence: -0.226)
+  "la chiusura, si rischia di rompere"
+
+[12:18-12:20] (confidence: -0.226)
+  "e andare sotto"
+
+[12:20-12:22] (confidence: -0.226)
+  "e lo stop troppo distante, poi non volete vendere"
+
+[12:22-12:24] (confidence: -0.226)
+  "e si attendere nella cacca. Quindi io vi"
+
+[12:24-12:26] (confidence: -0.226)
+  "consiglio"
+
+[12:26-12:28] (confidence: -0.226)
+  "di usare al massimo"
+
+[12:28-12:30] (confidence: -0.226)
+  "30 minuti"
+
+[12:30-12:32] (confidence: -0.226)
+  "223."
+
+[12:32-12:34] (confidence: -0.226)
+  "Poi ragazzi cercate di accontentarvi anche"
+
+[12:34-12:36] (confidence: -0.226)
+  "io leggo di cose incredibili"
+
+[12:36-12:38] (confidence: -0.226)
+  "c'è il più 100% e poi volete ancora"
+
+[12:38-12:40] (confidence: -0.226)
+  "tenere perché pensate che vada a chissà dove."
+
+[12:40-12:42] (confidence: -0.226)
+  "Ragazzi andate su"
+
+[14:34-14:36] (confidence: -0.12)
+  "223 è una linea spezzata"
+
+[14:36-14:38] (confidence: -0.12)
+  "perché 223 prende 223 candele"
+
+[14:38-14:40] (confidence: -0.12)
+  "prima di iniziare a fare un tratto"
+
+[14:40-14:42] (confidence: -0.12)
+  "quindi"
+
+[14:42-14:44] (confidence: -0.12)
+  "capiamo che è un titolo abbastanza nuovo"
+
+[14:44-14:46] (confidence: -0.12)
+  "perché sono passati 223 giorni"
+
+[14:46-14:48] (confidence: -0.12)
+  "per arrivare al primo pezzo"
+
+[14:48-14:50] (confidence: -0.12)
+  "della 223"
+
+[14:50-14:52] (confidence: -0.12)
+  "che ha fatto subito da resistenza"
+
+[14:52-14:54] (confidence: -0.12)
+  "fantastica 223"
+
+[14:54-14:56] (confidence: -0.12)
+  "bucato tornato indietro schiaffeggiato pesantemente"
+
+[14:56-14:58] (confidence: -0.12)
+  "ieri, bucato tornato indietro"
+
+[14:58-15:00] (confidence: -0.12)
+  "non per niente pesantemente"
+
+[15:00-15:02] (confidence: -0.12)
+  "è appena rotto"
+
+[18:18-18:20] (confidence: -0.15)
+  "come fare un ingresso, poi"
+
+[18:20-18:22] (confidence: -0.15)
+  "più bello è l'ingresso"
+
+[18:22-18:24] (confidence: -0.15)
+  "in realtà questo era un bello ingresso"
+
+[18:24-18:26] (confidence: -0.15)
+  "però vogliamo fare la tazza del caffè, vogliamo"
+
+[18:26-18:28] (confidence: -0.15)
+  "fare il terzo tocco, ok? Questo era il"
+
+[18:28-18:30] (confidence: -0.15)
+  "secondo segnale, secondo segnale è arrivato di notte"
+
+[18:30-18:32] (confidence: -0.15)
+  "e il secondo segnale"
+
+[18:32-18:34] (confidence: -0.15)
+  "ci è arrivato per dire"
+
+[18:34-18:36] (confidence: -0.15)
+  "ancora sta per rompere"
+
+[18:36-18:38] (confidence: -0.15)
+  "quindi bullbot ci ha avvertito"
+
+[18:38-18:40] (confidence: -0.15)
+  "due volte, questo ingresso qua e ci ha"
+
+[18:40-18:42] (confidence: -0.15)
+  "avvertito questo ingresso qua"
+
+[18:44-18:46] (confidence: -0.15)
+  "poi adesso è rotto quindi non ci avverto più"
+
+[23:26-23:28] (confidence: -0.158)
+  "il bello del bullbot qual è?"
+
+[23:28-23:30] (confidence: -0.158)
+  "non avete l'ansia di dire"
+
+[23:30-23:32] (confidence: -0.158)
+  "se io chiudo ed esco da questo trade"
+
+[23:32-23:34] (confidence: -0.158)
+  "poi quando trovo un'altra possibilità"
+
+[23:34-23:36] (confidence: -0.158)
+  "questo è il problema"
+
+[23:36-23:38] (confidence: -0.158)
+  "che normalmente si ha"
+
+[23:38-23:40] (confidence: -0.158)
+  "col bullbot non c'è più"
+
+[23:40-23:42] (confidence: -0.158)
+  "anzi dovete essere contenti di chiudere"
+
+[23:42-23:44] (confidence: -0.158)
+  "a contentarvi subito"
+
+[23:44-23:46] (confidence: -0.158)
+  "e dire wow, ho guadagnato un 10%"
+
+[23:46-23:48] (confidence: -0.158)
+  "un 15, un 20"
+
+[23:48-23:50] (confidence: -0.158)
+  "wow non dico come ha fatto Andy oggi"
+
+[23:50-23:52] (confidence: -0.158)
+  "che ha fatto il 40"
+
+[23:52-23:54] (confidence: -0.158)
+  "vabbè plus ultra"
+
+[23:54-23:56] (confidence: -0.133)
+  "e c'è chi"
+
+[23:56-23:58] (confidence: -0.133)
+  "gli dice magari"
+
+[23:58-24:00] (confidence: -0.133)
+  "no, potevi uscire solo con la parte"
+
+[24:00-24:02] (confidence: -0.133)
+  "ragazzi, soldi in tasca e bullbot"
+
+[24:02-24:04] (confidence: -0.133)
+  "guardate bullbot, prendete"
+
+[24:04-24:06] (confidence: -0.133)
+  "una nuova conformazione"
+
+[24:06-24:08] (confidence: -0.133)
+  "qua già vi fa vedere se c'è la possibilità di conformazione"
+
+[24:08-24:10] (confidence: -0.133)
+  "INJ, vedi?"
+
+[24:10-24:12] (confidence: -0.133)
+  "c'è già la conformazione, andiamo a vedere"
+
+[24:12-24:14] (confidence: -0.133)
+  "INJ, tutti i giorni"
+
+[24:14-24:16] (confidence: -0.133)
+  "qua ci sono"
+
+[24:16-24:18] (confidence: -0.133)
+  "tutti i giorni ragazzi ci sono qua"
+
+[24:18-24:20] (confidence: -0.133)
+  "che cosa volete di più?"
+
+[24:20-24:22] (confidence: -0.133)
+  "voi potete andare a lavorare"
+
+[24:22-24:24] (confidence: -0.163)
+  "la conformazione"
+
+[24:24-24:26] (confidence: -0.163)
+  "INJ ha già fatto il suo"
+
+[24:26-24:28] (confidence: -0.163)
+  "aspetta andiamo a vedere"
+
+[24:28-24:30] (confidence: -0.163)
+  "ecco"
+
+[24:30-24:32] (confidence: -0.163)
+  "guardate, bellissimo questo"
+
+[24:34-24:36] (confidence: -0.163)
+  "ok, sta per andare"
+
+[24:36-24:38] (confidence: -0.163)
+  "a fare questa rottura"
+
+[24:38-24:40] (confidence: -0.163)
+  "lui ci ha già segnalato"
+
+[24:40-24:42] (confidence: -0.163)
+  "adesso qua in realtà è molto esteso"
+
+[24:42-24:44] (confidence: -0.163)
+  "cioè, stiamo parlando di un 10"
+
+[24:44-24:46] (confidence: -0.163)
+  "un 30% già da questa base"
+
+[24:46-24:48] (confidence: -0.163)
+  "è un po' sporca dai, non è proprio il massimo"
+
+[24:48-24:50] (confidence: -0.163)
+  "non è proprio il massimo"
+
+[29:32-29:34] (confidence: -0.122)
+  "per esempio"
+
+[29:34-29:36] (confidence: -0.122)
+  "non mi fido di tenere le cose"
+
+[29:36-29:38] (confidence: -0.122)
+  "perché bitcoin, per esempio, ieri"
+
+[29:38-29:40] (confidence: -0.122)
+  "era messo di merda, infatti avevo detto nell'ultima descrizione"
+
+[29:40-29:42] (confidence: -0.122)
+  "che bitcoin aveva il rischio che andasse a rompere"
+
+[29:42-29:44] (confidence: -0.122)
+  "questi minimi"
+
+[29:44-29:46] (confidence: -0.122)
+  "l'ha fatto, non ha fatto gli spike di panico"
+
+[29:46-29:48] (confidence: -0.122)
+  "per andare a rompere qua"
+
+[29:48-29:50] (confidence: -0.122)
+  "ma avrebbe potuto farlo"
+
+[29:50-29:52] (confidence: -0.122)
+  "quindi io cosa ho fatto ieri? non ho fatto nessun'operazione"
+
+[29:52-29:54] (confidence: -0.122)
+  "ho aspettato che finissero questi momenti"
+
+[29:54-29:56] (confidence: -0.122)
+  "di, questo momento di"
+
+[29:56-29:58] (confidence: -0.122)
+  "rush del"
+
+[29:58-30:00] (confidence: -0.122)
+  "crollo e poi sono entrato su qualcosa di sicuro"
+
+[30:56-30:58] (confidence: -0.102)
+  "perché rischia di fare strappi a rialzo"
+
+[30:58-31:00] (confidence: -0.102)
+  "quando bitcoin rischia"
+
+[31:00-31:02] (confidence: -0.102)
+  "di fare strappi a ribasso sto molto attento"
+
+[31:02-31:04] (confidence: -0.102)
+  "perché magari faccio un bellissimo ingresso"
+
+[31:04-31:06] (confidence: -0.102)
+  "e poi mi va subito uno solo stop"
+
+[31:06-31:08] (confidence: -0.102)
+  "che è time frame 30 minuti"
+
+[31:08-31:10] (confidence: -0.102)
+  "da 223, in questo caso"
+
+[31:10-31:12] (confidence: -0.102)
+  "è bruttissimo, come ho fatto un bellissimo ingresso"
+
+[31:12-31:14] (confidence: -0.102)
+  "quindi vi andrò a salutare"
+
+[31:14-31:16] (confidence: -0.102)
+  "però capito l'importanza"
+
+[31:16-31:18] (confidence: -0.102)
+  "di andare a vedere il daily?"
+
+[31:18-31:20] (confidence: -0.102)
+  "l'importanza del daily"
+
+[31:20-31:22] (confidence: -0.102)
+  "di bitcoin"
+
+[31:22-31:24] (confidence: -0.102)
+  "quindi"
+

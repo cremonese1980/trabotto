@@ -1,0 +1,191 @@
+# Low-confidence segments for: 029_INCROCIO_EMA_60_223_Segnale_Emersione_Saldi_del_BULL_BOT_Tecnica_di_Trading.mp3
+# Total flagged: 62
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.579)
+  "Ciao a tutti e benvenuti su Scapin'the Bull, abbiamo finalmente l'incrocio 60-223, sigla!"
+
+[0:06-0:35] (confidence: -0.238)
+  "Eccoci qua su Discord e qua abbiamo il segnale bull bot che in tanti aspettavano"
+
+[0:35-0:40] (confidence: -0.195)
+  "e che finalmente abbiamo messo appunto con tre time frame diversi, stiamo parlando adesso qua"
+
+[0:40-0:46] (confidence: -0.195)
+  "vedete la scritta beta channel dove noi andiamo a testare ma quando uscirà questo video vedrete"
+
+[0:46-0:53] (confidence: -0.195)
+  "proprio il canale con scritto emersione incrocio 60-223 per gli scintiati pazzi questo segnale"
+
+[0:53-0:59] (confidence: -0.195)
+  "si chiama emersione per voi che conoscete già diciamo c'è già il video tutorial su"
+
+[0:59-1:06] (confidence: -0.179)
+  "l'incrocio 60-223 ma questo è il segnale specifico solo per questo allora c'è anche"
+
+[1:06-1:15] (confidence: -0.179)
+  "il Shimano che porta ad un movimento all'interno della 60-223 che poi porta può portare un"
+
+[1:15-1:21] (confidence: -0.179)
+  "incrocio come magari no infatti quel quello l'abbiamo fatto nel periodo in cui si andava"
+
+[1:21-1:26] (confidence: -0.179)
+  "anche short ma noi non ci interessa più andare short ma anche nel caso questo è un segnale"
+
+[1:52-2:00] (confidence: -0.175)
+  "quindi l'incrocio 60-223 ma anche di saldi perché la tecnica è simile ok quindi ci"
+
+[2:00-2:07] (confidence: -0.175)
+  "sono ci saranno due stanze diverse saldi che c'è già voi non lo vedete ma c'è già diciamo"
+
+[2:07-2:13] (confidence: -0.175)
+  "la stanza e poi appena pubblicano il video ci sarà anche la stanza 60-223 emersione"
+
+[2:13-2:18] (confidence: -0.175)
+  "andiamo a vedere allora ad esempio adesso è arrivato quindi si legge che cos'è quindi"
+
+[2:18-2:23] (confidence: -0.205)
+  "ltc l'orario e il time frame e l'incrocio lo sappiamo già quindi questo è il segnale"
+
+[2:23-2:32] (confidence: -0.205)
+  "che c'è quindi time frame 5 minuti poi abbiamo il mitico 30 minuti e poi ovviamente abbiamo"
+
+[2:32-2:37] (confidence: -0.205)
+  "quello a un minuto quindi 30 minuti poi anche quello a un minuto in base al mercato la conformazione"
+
+[2:37-2:43] (confidence: -0.205)
+  "è più facile trovare quello a 5 minuti 5 minuti o 30 minuti o un minuto in base al"
+
+[2:43-2:48] (confidence: -0.2)
+  "mercato comunque in questo momento qua abbiamo uno 5 minuti arrivato fuori adesso andiamo a"
+
+[2:48-3:03] (confidence: -0.2)
+  "vedere questo è ltc quindi facciamo qualche ricerca ltc il time frame era a 5 minuti e"
+
+[3:03-3:11] (confidence: -0.2)
+  "difatti qua ce l'abbiamo apriamo il grafico abbiamo una lunghissima discesa perché ovviamente"
+
+[5:57-6:01] (confidence: -0.174)
+  "perché il segnale di bond è time frame a 5 minuti quindi apriamo il grafico col time frame"
+
+[6:01-6:07] (confidence: -0.174)
+  "giusto e andiamo a vedere che succede quindi già testa 223 e qua ha fatto comunque un bel cambio"
+
+[6:07-6:13] (confidence: -0.174)
+  "trend è sceso non di poco e adesso vediamo se lo va a rompere ok sarebbe comunque il secondo tocco"
+
+[6:13-6:19] (confidence: -0.174)
+  "da 223 vediamo io aspetto sempre quello che ti dicevo prima quindi all'atterizzazione prima"
+
+[6:19-6:25] (confidence: -0.174)
+  "di andare a rompere in modo che quando andiamo a rompere poi va a portare su la 60 in quel caso"
+
+[6:49-6:57] (confidence: -0.15)
+  "30 se siamo a time frame 5 minuti ogni 5 minuti che passa in automatico la 60 si alzerà ok quindi"
+
+[6:57-7:04] (confidence: -0.15)
+  "se fa lo spike arriva qua e io calcolo già che questo andrà a alzarsi ok quindi io dopo calcolo"
+
+[7:04-7:09] (confidence: -0.15)
+  "che quando può andare a toccare per me ha già fatto la conformazione ed esco poi se da lì mi va"
+
+[7:09-7:14] (confidence: -0.15)
+  "a fare un'altra conformazione me lo fai in alto quindi scende lateralizza e mi fa la conformazione"
+
+[7:59-8:09] (confidence: -0.19)
+  "ecco bello anche questo bellissima discesa con la 60 che comanda ha rotto la 60 e da qua vi faccio"
+
+[8:09-8:14] (confidence: -0.19)
+  "questo per esempio vi farò capire l'importanza del segnale invece saldi ok perché questo mentre"
+
+[8:14-8:20] (confidence: -0.19)
+  "arriva con un segnale quando si sta avvicinando per andare a farlo in crocio quindi sta facendo"
+
+[8:20-8:23] (confidence: -0.19)
+  "la conformazione dove qua se lateralizza questo in automatico si avvicinerà per andare a farlo in"
+
+[8:23-8:29] (confidence: -0.133)
+  "crocio quindi se non va se non va a rompere la 223 ma lateralizza quindi a questo punto va a fare"
+
+[8:29-8:34] (confidence: -0.133)
+  "uno shimano quindi a questo punto andrebbe bene anche un segnale shimano più avanti se lo va a"
+
+[8:34-8:39] (confidence: -0.133)
+  "fare non è detto che lo faccia ma nel caso in cui lateralizza dopo noi possiamo uscire lo sfruttiamo"
+
+[8:39-8:44] (confidence: -0.133)
+  "invece con il segnale saldi noi lo andiamo a beccare prima lo becchiamo non perché sta per"
+
+[8:44-8:48] (confidence: -0.133)
+  "andare a fare l'incrocio ma semplicemente perché sta corrollando qualcosa di tantissimo quindi"
+
+[8:48-8:53] (confidence: -0.133)
+  "eventualmente noi possiamo entrare con questo tipo di conformazione di rottura della 60 che comanda"
+
+[9:17-9:24] (confidence: -0.237)
+  "frame a 30 minuti ok qua vediamo il bull bot aveva indicato alle 10 33 torniamo indietro quindi"
+
+[9:24-9:31] (confidence: -0.237)
+  "10 30 quindi era ancora qua sotto ok qua ovviamente ogni ogni candela che fa in più va verso l'incrocio"
+
+[9:31-9:37] (confidence: -0.237)
+  "quindi cos'è successo col time frame a 30 minuti quindi qua indicava che sarebbe andato a incrociare"
+
+[9:37-9:43] (confidence: -0.237)
+  "io ho salto a vederlo e aveva una conformazione di lateralizzazione spettacolare ok il livello"
+
+[9:43-9:48] (confidence: -0.141)
+  "era questo qua più in alto ma poi dopo lateralizzato più sotto quindi ho cercato il livello dove poi"
+
+[9:48-9:53] (confidence: -0.141)
+  "c'era qualcosa nel book ho sfruttato il break out e poi dopo andato a fare l'incrocio fatto l'incrocio"
+
+[9:53-9:57] (confidence: -0.141)
+  "io ho venduto quindi ho venduto immediatamente praticamente poi dopo se avesse fatto un altro"
+
+[9:57-10:01] (confidence: -0.141)
+  "tipo di lateralizzazione avrei sfruttato poi dopo quello che è il movimento più grosso che è il"
+
+[10:01-10:11] (confidence: -0.141)
+  "movimento dopo di dell'incrocio avvenuto quindi guardate sempre una conformazione ok dovete sempre"
+
+[13:18-13:24] (confidence: -0.182)
+  "trovato un livello ok questo è un livello se va a lateralizzare ancora andremo a vicinarsi"
+
+[13:24-13:29] (confidence: -0.182)
+  "con la 60 scenderà giù poi dopo noi possiamo peccare l'ingresso con un livello quindi la"
+
+[13:29-13:34] (confidence: -0.182)
+  "lateralizzazione cercate sempre la lateralizzazione perché così abbiamo lo stop vicino è come se"
+
+[13:34-13:39] (confidence: -0.182)
+  "caricasse la molla quindi carica poi troviamo una una resistenza che sarà la 60 quindi qua"
+
+[13:39-13:45] (confidence: -0.182)
+  "romperebbe la lateralizzazione e la 60 porterebbe dentro lo shimano quindi dentro allora alla"
+
+[17:27-17:35] (confidence: -0.203)
+  "il bull bot è tutto spot come già sapete quindi tutto il mercato per intero anche se usate altre"
+
+[17:35-17:41] (confidence: -0.203)
+  "piattaforme non binance comunque noi abbiamo tutto il mercato poi qualche piattaforma può avere meno"
+
+[17:41-17:46] (confidence: -0.203)
+  "coppie ma comunque quelli principali ce li ha può anche potete anche può capitare che avete anche"
+
+[17:46-17:51] (confidence: -0.203)
+  "qualcosa in più ma comunque bene o male è tutto il mercato siamo centinaia e centinaia di coppie"
+
+[18:15-18:25] (confidence: -0.211)
+  "di dal primo gennaio che saranno 60 dollari per tutto il 60 sono 50 euro per 6 mesi ecco"
+
+[18:25-18:32] (confidence: -0.211)
+  "e quello sarà l'abbonamento per avere tutta la zona dei bull bot ok quindi stanno parlando di"
+
+[18:32-18:39] (confidence: -0.211)
+  "poco più di un caffè insomma un caffè a settimana invece dicembre costerà un po' meno sono 5 euro"
+
+[18:39-18:45] (confidence: -0.211)
+  "per tutto il mese che lo stiamo testando abbiamo il bull bot e uscirà il video adesso nei prossimi"
+

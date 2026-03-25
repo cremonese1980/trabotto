@@ -1,0 +1,74 @@
+# Low-confidence segments for: 003_Come_gestire_un_Trade_in_PERDITA_Live_Trading_analisi_completa_con_15000_cash_HO_PERSO_SOLDI.mp3
+# Total flagged: 23
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:25-0:31] (confidence: -0.284)
+  "Quindi vediamo di capire come gestire una perdita e semplicemente cosa è quando uscire."
+
+[0:31-0:34] (confidence: -0.284)
+  "Così quando vi accade qualcosa di simile sapete quando uscire e quando no."
+
+[0:34-0:40] (confidence: -0.284)
+  "E soprattutto se avete visto poi i miei trades di ieri, poi la fine dopo questo trade qua,"
+
+[0:40-0:44] (confidence: -0.284)
+  "dopo ho fatto una bellissima operazione da quasi 500 USDT."
+
+[0:44-0:47] (confidence: -0.284)
+  "Quindi è importante uscire, aspettare un'altra conformazione e via."
+
+[0:47-0:52] (confidence: -0.284)
+  "Quindi dura pochi minuti, 6-7 minuti, guardiamolo senza aumentare."
+
+[2:20-2:21] (confidence: -0.22)
+  "Sono già preparato."
+
+[2:21-2:24] (confidence: -0.22)
+  "Poi appunto, qua potete andare a rivederlo al rilentatore, quando fate il passaggio potete"
+
+[2:24-2:27] (confidence: -0.22)
+  "vedervi tutto, il bello dei video, potete fare quel che volete."
+
+[2:27-2:34] (confidence: -0.22)
+  "Quindi ho preparato 82.000, ho già messo l'iceberg, vedete 20.000 iceberg, quindi è un quarto"
+
+[2:34-2:42] (confidence: -0.22)
+  "praticamente, quindi su 15.000 si vedrà un quarto nel book, in caso in cui dovessi vendere."
+
+[2:42-2:49] (confidence: -0.22)
+  "Adesso sta facendo la stessa cosa, quindi ha testato, fatto il mio ingresso, poi ha ritestato,"
+
+[3:16-3:20] (confidence: -0.251)
+  "Non c'era niente, ne di qua e di là, quindi mi sono basato sulla pulizia dell'ema, anche"
+
+[3:20-3:25] (confidence: -0.251)
+  "questo passaggio fondamentale per me, ho fatto capire che l'ema 10 teneva sotto il prezzo,"
+
+[3:25-3:30] (confidence: -0.251)
+  "quindi alla rottura poi ho fatto questo qua, poi l'ema 60, quindi ragionamento per capire"
+
+[3:30-3:31] (confidence: -0.251)
+  "la pulizia, l'ho capita da lì."
+
+[3:31-3:38] (confidence: -0.251)
+  "Niente, non è andato a rompere, adesso stanno di nuovo a ritestare, ma qua abbiamo comunque"
+
+[3:38-3:44] (confidence: -0.251)
+  "un momento, abbiamo sia l'ema 10 che la 60, vediamo, abbiamo comunque il 18.2, questo"
+
+[8:33-8:40] (confidence: -0.432)
+  "tutto compreso ho perso 82, ok? Poi avete visto, dopo quando ho raggiunto qua, ha accelerato,"
+
+[8:40-8:45] (confidence: -0.432)
+  "proprio perché a questo momento trigger, questo è stato stato ottimo per andare short, ok?"
+
+[8:45-8:52] (confidence: -0.432)
+  "Quindi niente, questi sono i ragionamenti da fare, poi ovviamente al webinar del 3 settembre,"
+
+[8:52-8:56] (confidence: -0.432)
+  "appunto faremo tutti questi ragionamenti live, ok? Importantissimo, quindi mille like se"
+
+[8:56-9:01] (confidence: -0.432)
+  "vi piace godere delle operazioni, ok? E poi vi ringrazio per avermi fatto questo video,"
+

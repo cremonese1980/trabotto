@@ -1,0 +1,53 @@
+# Low-confidence segments for: 039_TECNICA_DI_TRADING_Finta_EMA_10_Time_Frame_30_Minuti_Segnale_Bull_Bot_Tutorial.mp3
+# Total flagged: 16
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:09] (confidence: -0.336)
+  "Ciao Traders, siete su Skype in a Bull, abbiamo un nuovo segnale su Discord, segnale fantastico,"
+
+[0:09-0:13] (confidence: -0.336)
+  "l'ultimo meeting l'ho fatto praticamente solo su questo time frame 30, questa è la"
+
+[0:13-0:20] (confidence: -0.336)
+  "finta sull'EMA 10, mi chiamo Emma 10 time frame 30, appunto trovate su Discord, lo trovate"
+
+[0:20-0:25] (confidence: -0.336)
+  "anche in Bull Favorites, perché ovviamente è uno dei miei favoriti, invece qua lo trovate"
+
+[0:25-0:32] (confidence: -0.262)
+  "singolarmente, così avete la notifica singola solo per questa cosa qua, ok? Allora non è"
+
+[0:32-0:37] (confidence: -0.262)
+  "qualsiasi volta, ovviamente non è ogni volta che va a toccare l'EMA 10, ma è con la mia,"
+
+[0:37-0:43] (confidence: -0.262)
+  "praticamente il bull bot è il mio cervello codificato, quindi quando piace a me che va a"
+
+[0:43-0:51] (confidence: -0.262)
+  "toccare l'EMA 10 arriverà il segnale, ok? Quindi da una discesa importante. Andiamo a vedere,"
+
+[2:41-2:45] (confidence: -0.201)
+  "ovviamente con l'anti incrocio, quindi la 60 non va a incrociare, quindi potete andare a vedere"
+
+[2:45-2:53] (confidence: -0.201)
+  "tranquillamente il video dell'anti incrocio, e che nel rimbalzo è praticamente fondamentale,"
+
+[2:53-2:58] (confidence: -0.201)
+  "è quasi impossibile che ci sia l'incrocio, è quasi sempre un anti incrocio, quindi noi andiamo"
+
+[2:58-3:06] (confidence: -0.201)
+  "a sgammare l'anti incrocio così, e poi dopo fa il rimbalzo, a time frame 30 minuti risulterà così,"
+
+[8:01-8:09] (confidence: -0.305)
+  "vi andrò a rispondere, iscrivetevi a youtube, a due canali telegram, a twitch e ovviamente"
+
+[8:09-8:15] (confidence: -0.305)
+  "garden and discord, ok? qua se non sapete come bonarvi, come fare a avere i bullbot,"
+
+[8:15-8:19] (confidence: -0.305)
+  "c'è la stanza adatta, ok? quando non siete questa stanza comunque visibile a tutti, anche chi non ha"
+
+[8:19-8:24] (confidence: -0.305)
+  "fatto lo buonamento, cliccate e c'è scritto tutto, ok? molto facile, ciao ragazzi!"
+

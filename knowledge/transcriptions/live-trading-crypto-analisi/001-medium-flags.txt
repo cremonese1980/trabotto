@@ -1,0 +1,74 @@
+# Low-confidence segments for: 001_Gestione_di_un_Trade_su_Bybit_+277_usdt_+13%_Stop_Loss_Take_Profit.mp3
+# Total flagged: 23
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:55-1:59] (confidence: -0.236)
+  "aveva un livello daily, puntavo a fare il livello daily di rottura, quindi di fare"
+
+[1:59-2:04] (confidence: -0.236)
+  "una percentuale molto lunga e quindi ho detto entro con una size piccola, ho il founding"
+
+[2:04-2:08] (confidence: -0.236)
+  "rate a favore, quindi più lo tengo più ci guadagno e poi lascio correre, ok?"
+
+[2:08-2:13] (confidence: -0.236)
+  "Qua fa vedere, realize pnl, che cos'è, è praticamente le fee che sto pagando, quindi"
+
+[2:13-2:19] (confidence: -0.236)
+  "su 2000 sto pagando un dollaro di fee, però va a scalare, quindi se lo avessi tenuto"
+
+[2:19-2:27] (confidence: -0.257)
+  "ogni 8 ore, ne mancavano 29 minuti, vado a guadagnare lo 0,08% che va a scalare di"
+
+[2:27-2:33] (confidence: -0.257)
+  "questa percentuale qua, dunque fee su, dai, bits sono veramente basse, e poi qua invece"
+
+[2:33-2:38] (confidence: -0.257)
+  "sto andando a mettere il mio target, vedete basta cliccare, qua c'è target price e lo"
+
+[2:38-2:44] (confidence: -0.257)
+  "stop, lo stop c'è già e il target price vado a mettere proprio al massimo, vedete?"
+
+[3:36-3:41] (confidence: -0.218)
+  "2 mila dollari, il prezzo di ingresso, il prezzo che sta facendo, il prezzo di liquidazione,"
+
+[3:41-3:46] (confidence: -0.218)
+  "ma io non ve l'ho mai liquidato, perché uso sempre target price e voi avete l'obbligo"
+
+[3:46-3:53] (confidence: -0.218)
+  "di inserire il stop loss prima di entrare con il trade, lo faccio anch'io, tenetelo"
+
+[3:53-3:56] (confidence: -0.218)
+  "anche un po' distante in modo che potete comunque gestirvi, però serve solo semplicemente"
+
+[3:56-4:01] (confidence: -0.218)
+  "per avere una garanzia, uno di non andare mai all'inquilazione e due deve avere un"
+
+[4:01-4:07] (confidence: -0.237)
+  "senso, vedete questo l'ho alzato ancora di più, quindi adesso la 10 deve tenere,"
+
+[4:07-4:14] (confidence: -0.237)
+  "time frame un minuto, deve tenere la 10, ok? Se mi va sotto la 10 vado a chiudere, io chiudo"
+
+[4:14-4:19] (confidence: -0.237)
+  "i manuali, basta cliccare qua si chiude a mercato e si va a chiudere senza nessun problema,"
+
+[4:19-4:24] (confidence: -0.237)
+  "e qua invece tengo lo stop comunque un po' più all'alzato in modo che si possa fare"
+
+[4:24-4:31] (confidence: -0.237)
+  "uno spike improvviso, poi torna su, non ci sono problemi, quindi in questo caso qua comunque"
+
+[4:59-5:06] (confidence: -0.283)
+  "142, vado ad abbassare un po' quello che è il mio target, anzi volevo metterlo addirittura"
+
+[5:06-5:13] (confidence: -0.283)
+  "a 9, quindi vado a, scusa, ad alzarlo, e niente, sono stato fillato, vado a tornare indietro"
+
+[5:13-5:19] (confidence: -0.283)
+  "un attimo, un attimo, torno indietro, ah no, penso che ho tornato all'inizio, molto"
+
+[5:19-5:28] (confidence: -0.283)
+  "no good, eccolo qua, allora io volevo alzare, vedi 8.49, questo era il mio target, che"
+

@@ -1,0 +1,59 @@
+# Low-confidence segments for: 006_Tecnica_del_DAILY_CON_STOP_A_ZERO_Tecnica_di_Trading_Tutorial.mp3
+# Total flagged: 18
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.466)
+  "Ciao, Tade, siete su Scabinebull. Oggi facciamo il Daily con Stop a zero. Sigla."
+
+[0:19-0:23] (confidence: -0.466)
+  "Allora questa è una tecnica molto importante perché il Daily ovviamente è quello che guardo sempre"
+
+[0:23-0:26] (confidence: -0.466)
+  "come prima cosa, quindi parto subito dal Daily"
+
+[0:27-0:32] (confidence: -0.296)
+  "anche con qualsiasi segnale del bullbot eccetera, guardo sempre il Daily per capire che movimenti"
+
+[0:32-0:36] (confidence: -0.296)
+  "può fare in grande e poi dopo vado a cercare una conformazione con i time frame più bassi,"
+
+[0:36-0:43] (confidence: -0.296)
+  "1 ora 30 minuti, 5 minuti, 1 minuto, ok? Oggi ho fatto l'operazione su Dodge che andremo a vedere e"
+
+[0:44-0:46] (confidence: -0.296)
+  "ieri a casa Bull avevo spiegato che"
+
+[0:47-0:54] (confidence: -0.296)
+  "Dodge stava facendo una possibile conformazione di tracime nel Daily, ok? Prima cima,"
+
+[6:47-6:53] (confidence: -0.452)
+  "ok quindi andiamo dove c'è gli ho gli esempi sono qua desktop"
+
+[6:55-6:57] (confidence: -0.452)
+  "e se lo trovo subito"
+
+[7:00-7:02] (confidence: -0.452)
+  "ecco"
+
+[7:10-7:16] (confidence: -0.452)
+  "Dov'è dov'è dov'è dov'è dov'è ecco daily stop 0 qua quindi andiamo a vedere questi esempi"
+
+[11:38-11:44] (confidence: -0.255)
+  "Deve fare la rottura in caso in cui poi va a fare comunque la chiusura sotto dovete uscire ok"
+
+[11:45-11:52] (confidence: -0.255)
+  "Devo uscire eventualmente rientrate rientrate dove allo spike che ha fatto dopo ok e da lì è uguale da lì poi dopo deve ripartire"
+
+[11:52-11:54] (confidence: -0.255)
+  "quindi dopo ha fatto quello che doveva fare"
+
+[11:55-11:57] (confidence: -0.255)
+  "Quindi adesso vi faccio gli esempi di quelli che"
+
+[11:58-12:02] (confidence: -0.255)
+  "appunto non doveva fare quindi che poteva ripartire che appunto andavamo in stop quindi in questo caso"
+
+[12:03-12:05] (confidence: -0.255)
+  "se qua non fosse partito e fosse chiuso sotto"
+

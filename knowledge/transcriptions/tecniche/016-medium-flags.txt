@@ -1,0 +1,152 @@
+# Low-confidence segments for: 016_LA_TECNICA_DELLA_PESCA_NOTTURNA_PARTE_2_I_RISULTATI_DEL_GIORNO_DOPO.mp3
+# Total flagged: 49
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:30-0:58] (confidence: -0.382)
+  "Allora ho fatto il video, appunto ieri prima ne ero letto sulla pesca notturna, andate a vedere prima di vedere questa."
+
+[0:58-1:07] (confidence: -0.222)
+  "E che parlavamo di True, di inserire True, che ho inserito ma che non ha preso. Perché questo è il daily di True."
+
+[1:07-1:14] (confidence: -0.222)
+  "Parlavamo di, perché quando abbiamo fatto il video eravamo già sulla 5, quindi ho detto vabbè che pesca è se non si deve muovere."
+
+[1:14-1:19] (confidence: -0.222)
+  "Quindi non volevo già comprare e andare a letto, quindi ho detto proviamo più in basso a una via di mezzo."
+
+[1:19-1:23] (confidence: -0.222)
+  "In realtà era proprio il minimo quando abbiamo fatto il video e dopo ho già rimbalzato."
+
+[1:23-1:28] (confidence: -0.161)
+  "Quindi True non è entrata nella rete, anzi andiamo a vedere su Spot cosa è successo."
+
+[1:28-1:33] (confidence: -0.161)
+  "Su Spot avevo fatto questi quattro, quindi Dodge, Shiba, Fizz e True."
+
+[1:33-1:42] (confidence: -0.161)
+  "E mi ha preso solo Shiba, ok? Questi no, Dodge, ah e anche Dodge, si, Dodge non me l'ha preso di là."
+
+[1:42-1:48] (confidence: -0.161)
+  "Qua è una quota minima perché l'avevo messa anche su Futures, quindi mi ha preso questi due qua."
+
+[1:48-1:56] (confidence: -0.205)
+  "Quindi andiamo a vedere, Dodge 0.321, anzi si l'ho messa anche su Futures, che però non mi ha preso Futures perché l'ho messo ancora più in basso."
+
+[1:56-2:01] (confidence: -0.205)
+  "Adesso vedremo perché. Shiba invece l'ho messo qua, questi due no. Quindi andiamo a vedere Shiba e Dodge."
+
+[2:01-2:11] (confidence: -0.205)
+  "E allora, True no, Dodge si. Dodge l'avevo messo, già guardate Dodge, a quel prezzo l'avevo messo."
+
+[2:11-2:23] (confidence: -0.221)
+  "2.3.1, 2.3.1 e qua. Quindi quasi ai minimi, ho fatto un po' uno spike che è arrivato quasi a 2.3."
+
+[2:23-2:33] (confidence: -0.221)
+  "E qua è entrato, praticamente ai minimi, adesso sta andando su. Però con una quantità minima perché l'avevo fatta anche su Futures, che però non mi aveva preso."
+
+[2:33-2:42] (confidence: -0.268)
+  "Quindi, a questo punto l'avevo messo a 0.23.01, invece l'avevo messo a 1. L'avevo messo un po' più in basso perché per un pelo non me l'ha preso."
+
+[2:42-2:53] (confidence: -0.268)
+  "Quindi possiamo cancellare il Pesce non preso. Invece Shiba me l'ha preso bene. Shiba vediamo su Spot che prezzo l'avevo messo."
+
+[2:53-3:09] (confidence: -0.276)
+  "Adesso Shiba 7.1.1. Non contiamo i 0 perché sono impazzitato. Quindi Shiba 7.1.1. Guarda che roba. C'è uno spike sotto, c'è questo spike sotto, ma il 7.1.1 è qua."
+
+[3:09-3:19] (confidence: -0.268)
+  "Spettacolare. Allora andiamo a vedere il Daily perché l'ho messo lì. Daily, bellissimo perché ha fatto Candela Super Verde."
+
+[3:19-3:28] (confidence: -0.268)
+  "E poi ieri era andato su fino a qua, addirittura 8.8. Ieri, quindi in Arlette, ho visto che stava facendo una mega Candela Roscoe."
+
+[3:28-3:35] (confidence: -0.16)
+  "Vediamo se va a testare la 5. Però era già sceso talmente tanto che io ho detto vabbè, mettiamolo più o meno qua."
+
+[3:35-3:46] (confidence: -0.16)
+  "Me l'ha preso. Poi guardate, vedi il calcol che vi dicevo, perché se io lo mettevo troppo sotto, quando fa il cambio Candela e sale, porta su la linea."
+
+[3:46-3:54] (confidence: -0.16)
+  "Quindi la Pesca non va mai fatta sulla linea che tu vedi quando c'è questa Candela perché già il giorno dopo che sposta Candela la linea si alza."
+
+[3:54-4:02] (confidence: -0.231)
+  "E in più se tu devi prendere un ribalzo, adesso sta andando su tutto. E niente, allora calcoliamo anche quanto sto guadagnando."
+
+[4:02-4:12] (confidence: -0.231)
+  "Quindi, visto che su Spot non state capendo, poi farò un video apposito. Allora, un giorno... non me la dà."
+
+[4:12-4:26] (confidence: -0.357)
+  "Eccolo, facciamola. 0071. Chi ora me l'ha preso? Ah, ma questo è l'orario in cui l'hai inserito, quindi non ti dà."
+
+[4:26-4:45] (confidence: -0.161)
+  "Comunque, allora, ne ho presi un miliardo di un milione qualche, insomma, enormità, da 711. Quindi ogni volta che va su di 1, quindi va da 711 a 721, guadagno 114 USDT."
+
+[4:45-5:07] (confidence: -0.156)
+  "Quindi se va a 0, 7, 3, 1, quindi va su di 2, sarà questo per 2, quindi 228. Va su così, facile. Quindi da 711 a 721, senza calcolatrice, guadagnerò 114 euro."
+
+[5:07-5:19] (confidence: -0.208)
+  "E da lì i multipli. Quindi io so sempre ad occhio quanto sto guadagnando. Invece qua ho preso una cifra bassa. Vedi, qua ho preso 8000, qua ho preso 2700. Quindi sto guadagnando poco su Doge."
+
+[5:19-5:34] (confidence: -0.173)
+  "E niente, bene, qua è andata bene. Andiamo a vedere invece su Futures. In Futures invece ne avevo messi un sacco. Avevo messo ETH, GTC, DOT, XRP e DOGE. Non mi ha preso solo DOGE."
+
+[5:34-5:44] (confidence: -0.336)
+  "Per un pelo fra l'altro. Per un pelo non me l'ha preso, ho preso tutte quantità abbastanza grosse. Ehm..."
+
+[5:44-6:03] (confidence: -0.451)
+  "Quindi andiamo a vedere. Ehm... ETH, allora iniziamo con... Shiba 9, ecco, invece di Shiba mettiamo ETH. ETH."
+
+[6:03-6:22] (confidence: -0.285)
+  "Ecco, è giusto, sì. ETH. Ok, anche qua ho detto andiamo a vedere se prende la 5. Qua l'avevo messo ETH. Prezzo d'ingresso 2,9,10."
+
+[6:22-6:42] (confidence: -0.25)
+  "Spettacolare. Allora andiamo a vedere esattamente al minuto 2,9,10 e qua, sta linea qua. Vedi? Ho preso proprio per un pezzetto. Notto giù, poi resta sempre su, sempre su."
+
+[6:42-6:59] (confidence: -0.202)
+  "E adesso sempre su e siamo a più 270. Adesso poi andiamo a vedere appunto Bitcoin che cosa sta facendo. Bitcoin è andato a testare anche lui da 5, quindi a un minuto così vedo se chiudere o no, come siamo messi."
+
+[6:59-7:11] (confidence: -0.259)
+  "Ha fatto la bella discesa e adesso siamo sopra. Ok, ho appena fatto i massimi. Hm... Se mi va a fare altri massimi io vado a chiudere direi tutto."
+
+[7:11-7:28] (confidence: -0.178)
+  "Altrimenti sotto l'incrocio vado a chiudere tutto. Adesso vediamo. Andiamo a vedere GTC. GTC è quello in cui stiamo guadagnando di più in questo momento qua. Ha fatto il sorpasso 600 perché ha già fatto lo spike. Bellissimo. Andiamo a vedere il daily."
+
+[7:28-7:51] (confidence: -0.286)
+  "Ah, Tyrion, perché non mi fa vedere l'ingresso? Perché non sarà quello giusto. Andiamo a vedere ETH. Ecco, questa qua con la stellina. Ce ne è talmente tanta, incredibile. Quanti volumi che ha Binance, veramente fa paura. Eccolo. Fantastica."
+
+[7:51-8:03] (confidence: -0.277)
+  "Fantastico. Qua va a vedere proprio... Calcolato bene. Saper leggere i grafici veramente ti dà un vantaggio incredibile. GTC. Nel daily. Ah, spettacolo. Guarda che ti fa vedere nel daily dove è stato preso. Guarda che bello."
+
+[8:04-8:16] (confidence: -0.277)
+  "Era già sulla 5, non so se l'ho letto. Andiamo a vedere se vado a toccare la 10 che è il supporto. Fantastico. Qua lo potrà anche tenere come daily. Ovviamente non ce la farò mai. Perché appena vedo il gain io chiudo. Però insomma bellissimo come daily."
+
+[8:16-8:29] (confidence: -0.271)
+  "Dot. Guarda che perfezione. Fantastico. Andiamo a vedere nel daily com'è. Bello con... Ecco, vedi, esattamente sulla 10. Non te l'ho letto che eravamo già sulla 5, e dopo andiamo alla 10. Fantastico."
+
+[8:29-8:42] (confidence: -0.304)
+  "Dot. Spettacolare. E XRP."
+
+[8:42-8:56] (confidence: -0.305)
+  "XRP. Togliamo questa linea. Andiamo a mettere via. XRP ero già sulla 5, ho fatto una via di mezzo, l'ho preso. Andiamo a vedere un minuto. Ha già fatto il passaggio in verde. Molto bello questa. Ecco qua."
+
+[8:56-9:10] (confidence: -0.214)
+  "Qua ho andato più sotto, quindi potevo comprare ancora meglio, ma comunque andò bene. Non mi posso lamentare. Ok, adesso vediamo cosa fa Bitcoin. Quindi questa era solo per farvi capire il discorso della pesca. Quindi qua si riesce a vedere il discorso."
+
+[9:10-9:34] (confidence: -0.193)
+  "Quindi è tutto sul daily, ok? Bisogna saper leggere il daily. Quindi qua. Chi comanda? La 10. Bene. Sono letto che era già sulla 5. La 5 poteva essere un attimo acquisto, ma visto che devo fare la pesca 81, devo far lavorare il titolo 2 punti su un qualcosa che va a fare uno spike a ribasso. Quindi ho puntato sulla 10. Quindi ci sono stato. Ho fatto una via di mezzo. Mi sento già sopra, ok?"
+
+[9:34-9:59] (confidence: -0.268)
+  "Gtc, spettacolare. Stessa cosa sulla 10. Sono letto che era sulla 5. Lo proviamo. Ha preso. Fantastico. Eth che te lo dico a fare. Spettacolare. Bene. Questa è diciamo la parte 2. La parte 2 della pesca notturna, ok? Molto interessante. Questa è una bella pescata stanotte."
+
+[9:59-10:14] (confidence: -0.119)
+  "Fatemi saperne i commenti se avete iniziato, se vi piace e se avete altri dubbi, ok? Però qua questa tecnica per dominare questa tecnica dovete dominare la lettura del daily che non state diciamo sfruttando al massimo."
+
+[10:14-10:26] (confidence: -0.156)
+  "Anche per fare trading a un minuto dovete individuare i livelli nel daily altrimenti vi è beccata delle gran finte, ok? Ve l'ho già spiegato tante volte. Ve lo spiegherò altre mille fino a quando non capite questa cosa, ok?"
+
+[10:26-10:40] (confidence: -0.2)
+  "Così evitate a prendersi alti schiaffoni. Bene. Piuttosto non fate niente, ok? Se non ci sono le entrate che il daily vi indica, i minimi massimi supporti e resistenze, piuttosto non fate niente, ok? Guardate, basta e aprendete."
+
+[10:40-11:00] (confidence: -0.212)
+  "Ciao ragazzi, iscrivetevi ai due gruppi Telegram, a YouTube, che stanno crescendo bene. Lasciate un commento, un like su YouTube, che sono contento. E su Discord, sull'operativa, che ve lo dico a fare. E tutte le altre stanze tematiche, che sono una bomba. Ciao ragazzi."
+

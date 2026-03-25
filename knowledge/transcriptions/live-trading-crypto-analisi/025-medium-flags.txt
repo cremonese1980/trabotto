@@ -1,0 +1,71 @@
+# Low-confidence segments for: 025_Come_tradare_un_IPO_o_ICO_guardando_solo_il_book.mp3
+# Total flagged: 22
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:22-1:24] (confidence: -0.171)
+  "E' uno spettacolo praticamente."
+
+[1:24-1:28] (confidence: -0.171)
+  "Ti dai il countdown di quanto manca all'inizio."
+
+[1:28-1:31] (confidence: -0.171)
+  "In America non c'è nessun orario, niente."
+
+[1:31-1:34] (confidence: -0.171)
+  "Tu devi spettare lì anche ore fin quando non apre."
+
+[1:34-1:36] (confidence: -0.171)
+  "Apre così improvvisamente."
+
+[1:36-1:42] (confidence: -0.171)
+  "In Italia funziona in maniera diversa, nel senso che poi le cose vengono in esso speso"
+
+[1:42-1:45] (confidence: -0.171)
+  "e ogni 5 minuti riprova."
+
+[1:45-1:49] (confidence: -0.171)
+  "Quindi, però devi stare lì sempre ogni volta, aspettare 5 minuti, 5 minuti fin quando non apre."
+
+[4:25-4:27] (confidence: -0.16)
+  "Qua ci sono le quantità grosse."
+
+[4:27-4:28] (confidence: -0.16)
+  "Vedi?"
+
+[4:28-4:31] (confidence: -0.16)
+  "129.000 dollari, 147.000 dollari."
+
+[4:31-4:37] (confidence: -0.16)
+  "Questo è il numero di azioni, le chiamo azioni anche se siamo nel mondo cripto, comunque,"
+
+[4:37-4:38] (confidence: -0.16)
+  "il numero di azioni 147.000."
+
+[4:38-4:41] (confidence: -0.16)
+  "Quindi questo è grosso, però ancora più grosso è qua, quasi 300.000 dollari."
+
+[4:41-4:42] (confidence: -0.16)
+  "Ok?"
+
+[4:42-4:43] (confidence: -0.16)
+  "Questo pezzo qua."
+
+[4:43-4:45] (confidence: -0.16)
+  "Io cerco questi qua grossi."
+
+[4:45-4:47] (confidence: -0.16)
+  "Si devono scaricare prima di poter entrare."
+
+[4:47-4:48] (confidence: -0.16)
+  "Ok?"
+
+[4:48-4:49] (confidence: -0.16)
+  "E quindi cerco di mettere un prezzo."
+
+[4:49-4:51] (confidence: -0.16)
+  "Quindi qua l'ho visto 0.36."
+
+[13:47-13:50] (confidence: -0.703)
+  "Vi ho prescritto nei commenti. Ciao, tarifes."
+

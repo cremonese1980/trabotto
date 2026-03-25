@@ -1,0 +1,119 @@
+# Low-confidence segments for: 042_Rottura_EMA_10_DAILY_Segnale_del_BULL_BOT_Ecco_come_funziona.mp3
+# Total flagged: 38
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.475)
+  "ciao a tutti, adesso siete su Scabin the Bull, nuovo segnale del bullbot con la rottura"
+
+[0:05-0:07] (confidence: -0.475)
+  "dell'EMA10 nel daily, sigla"
+
+[0:07-0:27] (confidence: -0.475)
+  "dunque da domenica quindi da ieri abbiamo attivato già la stanza a tutti della rottura"
+
+[0:27-0:33] (confidence: -0.319)
+  "dell'EMA10 nel daily, lo trovate nelle stanze del bullbot, lo ho già spiegato a casa bull"
+
+[0:33-0:41] (confidence: -0.319)
+  "a grossolinea, ma andiamo a vedere, tra l'altro ho appena chiuso un'operazione su l'una, prese"
+
+[0:41-0:46] (confidence: -0.319)
+  "proprio dal bullbot, quindi dopo lo andiamo ad analizzare insieme, anzi lo guardiamo qua,"
+
+[0:46-0:50] (confidence: -0.319)
+  "quindi vedete ci sono già i segnali perché attivo già ieri, noi ce l'avamo nella versione"
+
+[0:50-0:55] (confidence: -0.319)
+  "beta, qua in beta channel, questa è la prima versione, quindi per adesso non vedete nessuna"
+
+[0:55-1:01] (confidence: -0.218)
+  "v, poi dopo ci sarà v1 v2 v3, ci sono tante versioni, questa versione qua ci sono anche,"
+
+[1:01-1:09] (confidence: -0.218)
+  "ti dà il daily anche in caso di spike che va prima a rompere ma fa la chiusura sotto,"
+
+[1:09-1:14] (confidence: -0.218)
+  "quindi se fa lo spike sopra l'EMA10 nel daily e poi torna indietro, ti dà comunque il segnale"
+
+[1:14-1:21] (confidence: -0.218)
+  "quando si sta avvicinando, poi la versione invece, la versione 2 invece sarà solo quelli puliti,"
+
+[3:07-3:13] (confidence: -0.179)
+  "che nel daily, se poi andiamo a superare le ma 10 e soprattutto se fa poi chiusura daily"
+
+[3:13-3:18] (confidence: -0.179)
+  "sopra le ma 10, potremo avere tanto spazio, fra l'altro appunto dopo avremo un bad, quindi"
+
+[3:18-3:25] (confidence: -0.179)
+  "magari fa chiusura sopra le ma 10, chiude qua, ottimo da tenere perché poi dopo avremo il trigger,"
+
+[3:25-3:29] (confidence: -0.179)
+  "magari per il giorno dopo, come siamo abituati che per la fine fa tutto in un movimento solo,"
+
+[3:29-3:35] (confidence: -0.179)
+  "e quindi questo è un segnale, quindi ottimo per andare a fare l'analisi tecnica per andare a trovare"
+
+[3:36-3:40] (confidence: -0.218)
+  "questo era quello di bitcoin, infatti io avevo fatto anche un post l'altro giorno,"
+
+[3:40-3:43] (confidence: -0.218)
+  "poi perché era già stato segnalato, ha fatto la fine e ha tornato indietro, quindi adesso"
+
+[3:43-3:48] (confidence: -0.218)
+  "potrebbe essere sempre buono, anche se i mercati azionari non sono molto d'accordo perché hanno"
+
+[3:48-3:53] (confidence: -0.218)
+  "già fatto un rimbalzo grande, ma andremo ad analizzarlo a casa bull stasera, poi farò il"
+
+[3:53-3:58] (confidence: -0.218)
+  "video di analisi tecnica. Luna, questo è il segnale che io ho letto stamattina, andiamolo a vedere,"
+
+[3:58-4:06] (confidence: -0.264)
+  "mi sono svegliato subito e ho visto, appunto, Luna che era tanto tempo che non ci operavo più,"
+
+[4:06-4:11] (confidence: -0.264)
+  "ormai neanche pagava più, perché faceva tutte le candelline, e vedete stamattina doveva ancora"
+
+[4:11-4:19] (confidence: -0.264)
+  "fare le 4.25, doveva ancora fare la rottura, poi dopo io ho spostato time frame 30 minuti,"
+
+[4:19-4:24] (confidence: -0.264)
+  "ho aspettato una conformazione time frame 30 minuti, quindi quando mi sono svegliato stamattina"
+
+[4:51-4:55] (confidence: -0.254)
+  "l'ingresso, dopo la fin de ho fatto a capire che le mia 10 com'andava, questa time frame 30 minuti,"
+
+[4:55-5:04] (confidence: -0.254)
+  "e poi andiamo avanti, questo è come funziona nel daily, quindi in pratica il, questi qua non"
+
+[5:04-5:08] (confidence: -0.254)
+  "c'entravano, ecco il 2.15, questo è il mio ingresso che coincida più o meno anche con la rottura"
+
+[5:08-5:13] (confidence: -0.254)
+  "della 10 e poi ho portato, ho fatto fino a 2.46, poi ho notto addirittura che ho fatto un altro 10 per cento,"
+
+[5:13-5:19] (confidence: -0.254)
+  "e il segnale stamattina appunto era questo, ok? Comunque il segnale è fantastico proprio perché"
+
+[5:45-5:51] (confidence: -0.252)
+  "crolli tantissime operazioni, tra cui appunto anche bitcoin, quindi tantissime coppie, per cui"
+
+[5:51-5:56] (confidence: -0.252)
+  "anche bitcoin sono sotto le ma 10 da tanto tempo e quindi la rottura diventa molto interessante, ok?"
+
+[5:56-6:04] (confidence: -0.252)
+  "Cosù dovete fare attenzione, quando fa la rottura voi vi spostate ai 30 minuti,"
+
+[6:04-6:09] (confidence: -0.252)
+  "aspettate la conformazione, poi andate a un minuto e guardate, se fa la finta e quindi fa 9 massima"
+
+[6:09-6:13] (confidence: -0.252)
+  "poi torna indietro e ragazzi dovete uscire, ok? Perché come avete visto da bitcoin ieri,"
+
+[7:39-7:44] (confidence: -0.433)
+  "altre conformazioni, iscriviti a youtube, due canali telegram, a discord, twitch,"
+
+[7:44-7:48] (confidence: -0.433)
+  "stasera a casa bull ore 19 e 30 ciao"
+

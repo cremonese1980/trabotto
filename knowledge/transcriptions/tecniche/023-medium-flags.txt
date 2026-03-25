@@ -1,0 +1,128 @@
+# Low-confidence segments for: 023_50_sfumature_di_BUD_Bud_Spencer_Bud_to_the_moon_Candeline_Buddino_TECNICA_DI_TRADING.mp3
+# Total flagged: 41
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:48-1:53] (confidence: -0.225)
+  "partire poi non ti fanno i massimi invece ero entrato qua che ha fatto il riposo l'ingresso"
+
+[1:53-1:57] (confidence: -0.225)
+  "ideale invece era questo baddino qua piccolissimo quindi candelline piccole quindi questo potrebbe"
+
+[1:57-2:03] (confidence: -0.225)
+  "essere un martello la rottura quindi volendo si poteva fare la rottura del martello però"
+
+[2:03-2:07] (confidence: -0.225)
+  "insomma dopo ha fatto un baddino due candelle di riposo e poi la ripartenza ok stiamo comunque"
+
+[2:07-2:13] (confidence: -0.225)
+  "parlando di un tazzo toco quindi un bad quindi bisogna capire l'insieme delle cose ok però"
+
+[3:05-3:10] (confidence: -0.157)
+  "è un qualcosa che rompe la 10 ok quindi andate a vedere comunque il primo video del bad ok il"
+
+[3:10-3:17] (confidence: -0.157)
+  "bad spencer parla del bad classico cioè dopo un massimo scende poi rompe la 10 fa due candela"
+
+[3:17-3:22] (confidence: -0.157)
+  "di riposo poi parte ok invece io questo in questo video qua vi parlo di tutte le varianti quindi"
+
+[3:22-3:27] (confidence: -0.157)
+  "questo è un qualcosa che non ha niente che fare con quel bad lì perché non ha rotto nessuna ema"
+
+[3:27-3:34] (confidence: -0.157)
+  "questa candela qua ok però la struttura è quella cioè se questa ema fosse stata qua avesse rotto"
+
+[9:21-9:30] (confidence: -0.186)
+  "più alto quindi candelle verdi punto più alto quindi si fa candelle verde candella rossa e poi"
+
+[9:30-9:35] (confidence: -0.186)
+  "fare un altro massimo non è quello lì il livello del bad ok deve essere tutti verdi quindi questo"
+
+[9:35-9:39] (confidence: -0.186)
+  "è come fosse una candella unica quindi tutto fomo fino al punto più alto poi si deve fare almeno"
+
+[9:39-9:47] (confidence: -0.186)
+  "4 candelle di riposo 1 2 3 4 poi si fa l'ingresso a questa rottura e via ok qua mi ha chiamato"
+
+[9:47-9:52] (confidence: -0.193)
+  "candellino a questa un bad to the moon quindi un bad strutturato quindi un livello alto almeno"
+
+[9:52-9:58] (confidence: -0.193)
+  "4 candelle candelline e quindi diventa un bad to the moon qual è la differenza che più fa"
+
+[9:58-10:04] (confidence: -0.193)
+  "candelline più possiamo tenerlo più è probabile che possa fare percentuali alti ok rispetto a un"
+
+[10:04-10:11] (confidence: -0.193)
+  "solo due candelle di riposo lì magari dover contentarci prima un 4 almeno un 4 candelle di"
+
+[10:11-10:15] (confidence: -0.193)
+  "riposo possiamo lasciar correre bellissimo quando andiamo a fare il secondo terzo tocco quindi un"
+
+[11:09-11:14] (confidence: -0.188)
+  "di quel livello già c'è lo stop ok se non ci sono livelli dobbiamo fare chiusura candela"
+
+[11:14-11:19] (confidence: -0.188)
+  "dipende come si ha messo in questo caso era evidente chiusura candela sotto alla 10 perché"
+
+[11:19-11:25] (confidence: -0.188)
+  "stava già comandando altrimenti se non c'è nessuna ema nelle vicinanze semplicemente andiamo a"
+
+[11:25-11:31] (confidence: -0.188)
+  "prendere un livello che sia di nuovo dentro al bad ok ma deve essere vicino e mettete uno stop"
+
+[11:31-11:36] (confidence: -0.188)
+  "limite basta dovete uscire ok deve accelerare una volta che l'ha fatto questo caso qua comunque"
+
+[15:25-15:31] (confidence: -0.21)
+  "tra l'altro questo sarebbe stato anche invalidato però si poteva fare ok quindi quello che vi voglio"
+
+[15:31-15:41] (confidence: -0.21)
+  "far capire è la struttura che ragazzi la struttura è importantissima qua sono candelline ok la"
+
+[15:41-15:47] (confidence: -0.21)
+  "struttura significa un livello massima quindi deve essere candelle dei movimenti più grandi"
+
+[15:47-15:52] (confidence: -0.21)
+  "rispetto alle altre candelle fa un massimo in questo caso qua il livello lo vedremo questo è"
+
+[16:48-16:55] (confidence: -0.457)
+  "punto in dubbio di un livello che il 6 il 6 c'era un livello in vetto prima quindi il 5 9 18 5 9"
+
+[16:55-17:05] (confidence: -0.457)
+  "avanti vedi il 6 un livello grande in vetto prima del 6 venduto ok poi il to the moon deve"
+
+[17:05-17:11] (confidence: -0.457)
+  "andare to the moon quindi avrei potuto lasciare però comunque sono contentato di questi 220"
+
+[17:37-17:45] (confidence: -0.301)
+  "che come se facessero una candela lunga di panico c'è un livello 2 di riposo perché qua queste"
+
+[17:45-17:49] (confidence: -0.301)
+  "candelle qua stati fatti per la fomo che hai gente che sta salendo sta salendo dove entrare"
+
+[17:49-17:53] (confidence: -0.301)
+  "devono entrare che stop deve chiudere perché comunque la cosa sta continuando a salire qua"
+
+[17:53-17:57] (confidence: -0.301)
+  "devo entrare devo entrare bene finisce quando finisce la fomo con persone che come stanno"
+
+[17:57-18:01] (confidence: -0.301)
+  "comprando a mercato fa un livello e poi dopo deve andare a riposare deve andare a fare nuovi"
+
+[18:01-18:05] (confidence: -0.301)
+  "minimi se invece torno su quel livello livello che ci sta arrivando col cash sta arrivando col"
+
+[19:17-19:24] (confidence: -0.176)
+  "perché ha questa logica facile ok un video anche abbastanza corto vi ho spiegato anche"
+
+[19:24-19:29] (confidence: -0.176)
+  "la differenza col viagra quindi il viagra deve andare a testare la 10 prima di fare la ruotura"
+
+[19:29-19:36] (confidence: -0.176)
+  "e invece questa è una cannella verde che poi quello che che ci fa il massimo per poi fare il"
+
+[19:36-19:42] (confidence: -0.176)
+  "bad ok scrivete nei commenti se non avete capito una mazza o se c'è qualche altra sfumatura e"
+

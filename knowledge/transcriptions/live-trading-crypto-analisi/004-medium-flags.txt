@@ -1,0 +1,236 @@
+# Low-confidence segments for: 004_Live_Trading_su_SANTOS_con_la_Tecnica_di_Trading_FINTA_EMA_10_TF_30_MINUTI_+268_Busd.mp3
+# Total flagged: 77
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.266)
+  "ciao a tutti e benvenuti su scappi in the bull e avete raggiunto i 600 like nell'ultimo"
+
+[0:05-0:11] (confidence: -0.266)
+  "video di analisi di un trade e quindi questo è il video nuovo ho fatto la"
+
+[0:11-0:17] (confidence: -0.266)
+  "registrazione subito dopo che avete raggiunto 600 like di santos con la finta"
+
+[0:17-0:21] (confidence: -0.266)
+  "su lemma 10 a time frame 30 minuti quindi la prima registrazione che faccio di"
+
+[0:21-0:26] (confidence: -0.266)
+  "un'operazione con riferimento a time frame 30 minuti"
+
+[0:52-0:56] (confidence: -0.441)
+  "metto come sottofondo le nostre tre canzoncine e ne faccio un'analisi"
+
+[0:56-1:03] (confidence: -0.441)
+  "così lascio scorrere più tempo di solito andavo a velocizzare di tanto"
+
+[1:03-1:07] (confidence: -0.441)
+  "invece così lascio andare poi ogni tanto faccio il commento"
+
+[1:09-1:17] (confidence: -0.441)
+  "quindi faccio partire, allora questo è santos, io ovviamente sto lavorando in boost"
+
+[2:48-3:09] (confidence: -0.406)
+  "io sono dentro con un ordine iceberg ok? questo lo vedete ancora ho già una parte eseguita"
+
+[3:09-3:13] (confidence: -0.406)
+  "ma vedete che non c'è niente"
+
+[3:18-3:32] (confidence: -0.517)
+  "qua si sta caricando quindi dovrai riuscire ad averle eseguita"
+
+[3:32-3:35] (confidence: -0.517)
+  "qua ti scende e qui li sono tornando"
+
+[3:35-3:41] (confidence: -0.517)
+  "ok ho l'eseguito quindi sono dentro"
+
+[3:59-4:04] (confidence: -0.472)
+  "ecco metto stop, ecco appena ho messo stop sono andato indietro"
+
+[4:04-4:09] (confidence: -0.472)
+  "va"
+
+[4:09-4:20] (confidence: -0.472)
+  "allora vedete? è già rimbalzato è andato a toccare proprio questo time frame 30 minuti"
+
+[4:20-4:27] (confidence: -0.472)
+  "è andato proprio a toccare le MA10 ok? le MA10 è dove ha toccato il punto più basso dove noi andiamo a"
+
+[5:20-5:29] (confidence: -0.162)
+  "dentro se va a toccare di nuovo le MA10 e quindi questo sarebbe poi dopo che l'ha già fatto sarebbe"
+
+[5:29-5:32] (confidence: -0.162)
+  "poi la conformazione short una bellissima conformazione short quindi noi non dobbiamo"
+
+[5:32-5:37] (confidence: -0.162)
+  "essere long quindi il mio stop deve essere massimo a questo punto questo spike qua a questo livello"
+
+[5:37-5:44] (confidence: -0.162)
+  "anche perché adesso che è già tornato su se dovesse tornare giù le MA60 andrebbe veramente vicino a"
+
+[5:44-5:49] (confidence: -0.162)
+  "farlo in croce quindi sarebbe un segnale estremamente negativo ok quindi questo che fra l'altro vedete"
+
+[6:33-6:49] (confidence: -0.743)
+  "e frattempo io sto facendo altre cose in tanto vedete che ha però altri file che sto facendo"
+
+[6:49-6:49] (confidence: -0.743)
+  "post"
+
+[7:31-7:36] (confidence: -0.562)
+  "a vedere il video del doppio book che lo spiego molto bene il concetto"
+
+[7:36-8:03] (confidence: -0.524)
+  "vi volevo mettere video raw come facevo perché raw quindi senza audio però abbiamo le tre canzoni"
+
+[8:03-8:06] (confidence: -0.488)
+  "nostra family senza problemi di diritti"
+
+[8:06-8:11] (confidence: -0.488)
+  "quindi frattempo ascolto e poi in tanto faccio un'analisi"
+
+[8:11-8:16] (confidence: -0.488)
+  "ci sono i miei file che apro quando devo fare i post in questo momento stavo postando i nuovi"
+
+[8:16-8:20] (confidence: -0.488)
+  "i nuovi programmi entri il file in sesso della bulla arena di twitch"
+
+[9:00-9:05] (confidence: -0.249)
+  "tenere il prezzo sopra e farà sì che appunto andrà a schizzare quindi prima qua ha tenuto"
+
+[9:05-9:09] (confidence: -0.249)
+  "benissimo quando è stato rosso dove accelerare poi a iniziare a fare la conformazione per andare"
+
+[9:09-9:14] (confidence: -0.249)
+  "sempre più basso invece è tornato subito sopra quindi qua abbiamo sgamato che ha fatto la finta"
+
+[9:14-9:23] (confidence: -0.249)
+  "in questo caso però ci deve continuare a tenere ok? quindi il suo lavoro della 223 è tenere il"
+
+[9:23-9:31] (confidence: -0.252)
+  "prezzo sopra o stop dove uno ha panico è sempre questo livello qua questo è il livello dove uno"
+
+[9:31-9:37] (confidence: -0.252)
+  "avrà il panico e se io devo andare short dove siano short il momento in cui c'è proprio il trigger"
+
+[9:37-9:43] (confidence: -0.252)
+  "quindi panico entrare da qua quindi da qua in poi io non posso stare dentro e per questo è che questo"
+
+[9:43-9:51] (confidence: -0.252)
+  "diventa il mio stop ok? in punto trigger short è per forza il tuo ultimo stop da long la 223 che funziona"
+
+[11:35-11:36] (confidence: -4.935)
+  "safely"
+
+[11:40-11:55] (confidence: -4.935)
+  "ok"
+
+[11:55-12:15] (confidence: -0.399)
+  "ok quindi aveva fatto la rottura poi tornati indietro ha rifatto la rottura"
+
+[12:15-12:19] (confidence: -0.399)
+  "tornati indietro ha ritornato indietro ma comunque non c'è problemi"
+
+[12:44-12:49] (confidence: -0.195)
+  "rompere la 223 ma comunque vada a vedere la tecnica lo shimano finché il prezzo rimane dentro non"
+
+[12:49-12:54] (confidence: -0.195)
+  "c'è nessun problema e poi dopo adesso sta facendo finalmente la rottura e la chiusura candela sopra"
+
+[12:54-12:59] (confidence: -0.195)
+  "e quindi accelerazione adesso mi deve andare a target ok adesso il mio stop una volta che fa"
+
+[12:59-13:06] (confidence: -0.195)
+  "chiusura candela sopra non è più questo lo stop ma lo stop è innanzitutto il più distante"
+
+[13:06-13:12] (confidence: -0.195)
+  "il stop più distante è la 223 quindi già se qua mi va a chiudere candela sotto la 223 devo già"
+
+[13:12-13:20] (confidence: -0.118)
+  "uscire ok ma in teoria in base al book già la chiusura candela sotto la 60 è un problema ok"
+
+[13:20-13:25] (confidence: -0.118)
+  "perché una volta che finalmente fa chiusura candela poi mi deve accelerare quindi così abbiamo"
+
+[13:25-13:29] (confidence: -0.118)
+  "lo stop addirittura in positivo ok ecco una volta che mi fa questo tipo di candela non mi"
+
+[13:29-13:34] (confidence: -0.118)
+  "deve più fare chiusura candela sotto la 60 lo può andare a ritestare anche ma non deve chiudere"
+
+[13:34-13:43] (confidence: -0.173)
+  "la candela sotto quello segnale estremamente negativo ok quindi mi raccomando ogni candela"
+
+[13:43-13:48] (confidence: -0.173)
+  "dopo deve dimostrarti qualcosa quindi se qua accelera e poi dopo torna e mi chiude dentro di"
+
+[13:48-13:52] (confidence: -0.173)
+  "nuovo lo shimano quindi mi chiude sotto la 60 ragazzi dovete uscire non c'è bisogno di aspettare"
+
+[13:52-13:57] (confidence: -0.173)
+  "la 223 non c'è bisogno di aspettare qua dovete comunque uscire ok in questo caso chiuderete"
+
+[13:57-14:03] (confidence: -0.307)
+  "quindi lo stop va comunque positivo ho fatto malissimo il montaggio c'è un pezzo vuoto"
+
+[14:03-14:12] (confidence: -0.307)
+  "montanissimo eccoci qua quindi tenuto aperto per capire quella percentuale quindi 2.6 vediamo"
+
+[14:12-14:17] (confidence: -0.307)
+  "se ci arriva ce l'ho già nel book lo vedete qua qua vedete un iceberg ok io ho i 10.000"
+
+[14:17-14:24] (confidence: -0.307)
+  "lo vediamo vedere e ovviamente in iceberg vedete solo la quantità minima comunque quel che comanda"
+
+[14:41-14:55] (confidence: -0.555)
+  "già delle quantità nel book principale ecco che non avevamo assaggiato qua"
+
+[14:55-15:05] (confidence: -0.475)
+  "eccolo 41 per cento quindi qua ha fatto sì che un assaggio interessante"
+
+[15:05-15:19] (confidence: -0.475)
+  "il mio size è 10.600 41 per cento e 41.400 è già stato eseguito in questo spike"
+
+[16:24-16:31] (confidence: -0.453)
+  "questa non è l'italia che è l'italia è stato un posto bellissimo dovete permetterci di sporcare"
+
+[16:31-16:36] (confidence: -0.453)
+  "questo fatto fate schifo fate schifo fate veramente schifo"
+
+[16:36-16:51] (confidence: -0.453)
+  "55.45 mi sta toccando questo si rigenera sempre fin quando non arriva al 100 per cento ok?"
+
+[17:15-17:23] (confidence: -0.308)
+  "conta meno usare l'iceberg ma comunque io voglio sempre utilizzarlo ecco io sono al 55.45 per cento"
+
+[17:23-17:31] (confidence: -0.308)
+  "eseguito e adesso mi sta facendo uno spike molto brutto per adesso comunque non esco tanto è l'ema"
+
+[17:31-17:44] (confidence: -0.308)
+  "10 che comanda ecco e torno su chiusura candela sotto la 10 dovevo comunque uscire ok? perché se"
+
+[18:05-18:16] (confidence: -0.298)
+  "rigenerato, qualcuno mi si mette davanti poi scappa ecco qua ha fatto un'altra mega finta"
+
+[18:16-18:22] (confidence: -0.298)
+  "teniamo indietro guardiamo sta finta guardate che roba però l'importante che cos'è? la chiusura"
+
+[18:22-18:33] (confidence: -0.298)
+  "candela ok? chiusura candela il restante 40% 39% dovevo uscire ok? quindi chiusura candela"
+
+[18:54-19:02] (confidence: -0.308)
+  "ve lo spiego bene questo concetto ok 61% adesso dovremo riuscire finalmente ad arrivarci vediamo"
+
+[19:02-19:12] (confidence: -0.308)
+  "avete visto due bellissimi spike, erano due tinte, è un problema, chiusura candela si chiude si esce"
+
+[19:12-19:19] (confidence: -0.308)
+  "ma lo stop era comunque sempre in positivo questo era il mio zero ok? man mano che lavora nel trend"
+
+[19:40-19:53] (confidence: -0.453)
+  "manualmente come faccio io ce la diamo un attimo ecco questa volta dovremmo riuscirci ancora no"
+
+[22:41-22:50] (confidence: -0.305)
+  "al canale youtube ai due canali telegram a twitch a instagram discord ciao"
+

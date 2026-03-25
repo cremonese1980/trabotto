@@ -1,0 +1,140 @@
+# Low-confidence segments for: 035_TERZO_TOCCO_ema_60_Time_frame_5_e_30_minuti_Tecnica_di_Trading_con_segnale_Bull_Bot.mp3
+# Total flagged: 45
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.44)
+  "Ciao trader, siete su Scalping the Bull, tecnica di trading con il bull bot, questa volta abbiamo"
+
+[0:07-0:15] (confidence: -0.44)
+  "il terzo tocco dell'EMA 60, sigla!"
+
+[0:15-0:25] (confidence: -0.44)
+  "Vi piacerà veramente un sacco questo segnale."
+
+[0:25-0:32] (confidence: -0.245)
+  "Allora che cos'è? Adesso c'è la stanza vuota, però quando vedrete il video vedrete"
+
+[0:32-0:38] (confidence: -0.245)
+  "questa stanza con i primi segnali ed è il terzo tocco dell'EMA 60."
+
+[0:38-0:39] (confidence: -0.245)
+  "Cosa significa?"
+
+[0:39-0:43] (confidence: -0.245)
+  "Allora io adesso ce li ho in beta ma voi dopo li vedrete da là."
+
+[0:43-0:47] (confidence: -0.245)
+  "Non fateci caso che qua vedete anche un segnale muro, ma questa è una cosa più evoluta che"
+
+[0:47-0:48] (confidence: -0.245)
+  "arriverà più avanti."
+
+[0:49-0:55] (confidence: -0.274)
+  "Anzi questa è appunto il terzo tocco con time frame 5 minuti e time frame 30 minuti."
+
+[0:55-1:01] (confidence: -0.274)
+  "Quindi potete già immaginare, qua ho già porto l'ultimo segnale, potete già immaginare"
+
+[1:01-1:02] (confidence: -0.274)
+  "di cosa si tratta."
+
+[1:02-1:10] (confidence: -0.274)
+  "Quindi 17.42, vi fate il segnale su porto, 42, ecco qua, e qua praticamente ci indica"
+
+[1:10-1:15] (confidence: -0.274)
+  "quando abbiamo delle candele che vanno a testare l'EMA 60 con il time frame 5 minuti"
+
+[1:15-1:16] (confidence: -0.274)
+  "e 30 minuti."
+
+[1:16-1:18] (confidence: -0.274)
+  "In questo caso è un 5 minuti."
+
+[1:44-1:47] (confidence: -0.408)
+  "minuto, abbiamo la rottura della 223, quindi è un super segnale."
+
+[1:47-1:50] (confidence: -0.408)
+  "In questo caso è la terrisazione, quindi bellissimo."
+
+[1:50-1:51] (confidence: -0.408)
+  "Andiamo a vedere altri esempi."
+
+[1:51-1:57] (confidence: -0.408)
+  "Quindi il viola, quindi al P3 30 minuti, 15 e 34."
+
+[1:57-2:01] (confidence: -0.408)
+  "Andiamo a vedere come e perché è arrivato questo segnale."
+
+[2:01-2:05] (confidence: -0.408)
+  "Quindi 34, bar non ci interessa adesso."
+
+[2:05-2:11] (confidence: -0.408)
+  "Quindi al P3 30 minuti, ai 34."
+
+[2:11-2:16] (confidence: -0.284)
+  "Quindi quando è partito da qua, quindi è andato a fare la rottura, perché qua aveva"
+
+[2:16-2:20] (confidence: -0.284)
+  "già toccato più volte, qua è andato a ritoccare e poi è andato a fare il suo movimento."
+
+[2:20-2:22] (confidence: -0.284)
+  "Ok, quindi è interessante."
+
+[2:22-2:24] (confidence: -0.284)
+  "Andiamo a vedere, ok, cosa ha fatto."
+
+[2:24-2:28] (confidence: -0.284)
+  "Quindi alle 15 è 29, sempre time frame 30 minuti."
+
+[2:28-2:35] (confidence: -0.284)
+  "Ovviamente basta calcare, potete avere il vostro trading view e se l'avete già impostato,"
+
+[2:35-2:38] (confidence: -0.284)
+  "anche gratuitamente, senza niente, vedrete già direttamente il grafico, potete mettere"
+
+[2:38-2:39] (confidence: -0.284)
+  "l'alerto, è fantastico."
+
+[2:40-2:43] (confidence: -0.355)
+  "Quindi è 29, time frame 30 minuti."
+
+[2:43-2:49] (confidence: -0.355)
+  "Anche qua, vi rivelate, è stato più volte la 60, è andato a rompere e poi è partito."
+
+[2:49-2:52] (confidence: -0.355)
+  "Quindi questo è un ottimo segnale anche qua."
+
+[2:52-2:53] (confidence: -0.355)
+  "Andiamo più avanti."
+
+[2:53-3:00] (confidence: -0.355)
+  "Time frame, questo è tu, anzi, non tu, T, fantastico T, time frame 5 minuti, questo"
+
+[3:00-3:03] (confidence: -0.355)
+  "è nuovo, praticamente ha unito due coppie."
+
+[3:03-3:07] (confidence: -0.355)
+  "L'orario, vediamo, così andiamo a vedere cosa ha fatto."
+
+[3:36-3:39] (confidence: -0.263)
+  "una resistenza, perché poi quando rompe va a accelerare, anche questo è notevole."
+
+[3:39-3:46] (confidence: -0.263)
+  "Andiamo a vedere, ok, sempre un 5 minuti, molto, veramente molto interessante questo"
+
+[3:46-3:47] (confidence: -0.263)
+  "segnale."
+
+[3:47-3:53] (confidence: -0.263)
+  "Andiamo a vedere i minutaggi, i minuti, quindi alle 15 e 18 era arrivato il segnale, 15 e"
+
+[3:53-3:56] (confidence: -0.263)
+  "18, qua."
+
+[3:56-4:01] (confidence: -0.263)
+  "Quindi aveva già rotto, vedi, già testato più volte, qua aveva già rotto, toccato un'altra"
+
+[4:01-4:06] (confidence: -0.263)
+  "volta e poi anche qua è salito, molto interessante, perché poi andava a rompere dalla 220,"
+

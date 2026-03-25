@@ -1,0 +1,32 @@
+# Low-confidence segments for: 007_Cos_e_un_punto_Trigger_nel_Trading_Corso_di_Trading_Online.mp3
+# Total flagged: 9
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[12:24-12:30] (confidence: -0.169)
+  "deve esplodere perché significa che effettivamente quello che vendeva quei 50 milioni ha finito i"
+
+[12:30-12:36] (confidence: -0.169)
+  "soldi significa che chi vuole andare long lì a fretta di entrare e significa anche che chi"
+
+[12:36-12:42] (confidence: -0.169)
+  "voleva andare short a fretta di chiudere quindi deve comprare anche lui e quindi abbiamo un'esplosione"
+
+[12:42-12:46] (confidence: -0.169)
+  "cioè tanti cinesi tutti una volta che entrano col cache vogliono comprare le scarpe che purtroppo"
+
+[12:46-12:53] (confidence: -0.169)
+  "sono finiti esplosione io sono stato target l'altro è nato molto più su quasi il doppio di quello che"
+
+[24:19-24:23] (confidence: -0.631)
+  "potete tornare a rivedere molto probabilmente capirete qualcosa in più ok?"
+
+[24:23-24:23] (confidence: -0.631)
+  "Ok?"
+
+[24:23-24:24] (confidence: -0.631)
+  "Ti d'accordo?"
+
+[24:24-24:27] (confidence: -0.631)
+  "Ok, va bene, ciao, scrivetevi in viaggio con un like, alla prossima"
+

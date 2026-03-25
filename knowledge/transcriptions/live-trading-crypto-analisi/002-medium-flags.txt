@@ -1,0 +1,140 @@
+# Low-confidence segments for: 002_LIVE_Trading_dove_ho_perso_SOLDI_e_un_Trade_in_guadagno_con_ANALISI_Completa.mp3
+# Total flagged: 45
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:52-1:03] (confidence: -0.166)
+  "Allora, questa è la prima con la perdita, vi racconto un attimino la storia perché appunto è arrivato un segnale bomba dal bullbot, è stato a vedere subito il daily, dopo andiamo a vedere."
+
+[1:03-1:15] (confidence: -0.166)
+  "Il daily mi è piaciuto tantissimo, questo è il secondo tocco, questo è il secondo tocco, giustamente il diritto per diritto secondo tocco no, ma c'era almeno una candela rossa, quindi almeno una candela di riposo."
+
+[1:37-1:39] (confidence: -0.485)
+  "Andiamo a vedere che succede."
+
+[1:40-1:51] (confidence: -0.276)
+  "D'altra parte abbiamo un doppio book, usdt comanda, vedete la condizione che mi deve avere un presto muro, mi è piaciuto anche il fatto che avesse un bel muro subito qua."
+
+[1:51-2:03] (confidence: -0.276)
+  "25.000 euro, 25.000 dollari invece è un boost poca roba ma siamo abituati e metto che appunto un ordine, quando ci avviciniamo si vede che ne ha mangiato,"
+
+[2:17-2:29] (confidence: -0.21)
+  "qua ha toccato, vai siamo entrati, 47.01, ho comprato quindi non 0.01, 47.01 per la certezza di averlo, poi è andato su, vedi è spacato anche il livello successivo in boost quindi ottimo,"
+
+[2:29-2:40] (confidence: -0.21)
+  "è in cvp, c'era anche un bel muro a 47.30 ma l'ha spacato immediatamente, qua sta andando su ottimo, qua invece ne ha sta tornando a 0 ma va bene, mancano ancora 3 secondi, va bene,"
+
+[2:40-2:54] (confidence: -0.257)
+  "l'importante è che vada su, ok perfetto, qua ha accelerato, non ho fatto in tempo a mettere 048 ma soprattutto io pensavo, se guardate il daily veramente, che potesse fare molto di più, addirittura arrivare a tipo 0.50 quindi non ho appuntato a questo,"
+
+[2:54-3:07] (confidence: -0.135)
+  "ecco qua molto male, qua stoppiamolo un attimo, ritorniamo indietro e guardiamolo, che questo non deve fare, qua è andato subito a fare questo massimo, come potete vedere,"
+
+[3:07-3:19] (confidence: -0.135)
+  "qua avevamo due livelli piccolini, cioè medi, qua era coperto bene anche in boost, quindi il target poteva essere il 748 ma il daily mi faceva pensare che potesse fare comunque un'altra candela così,"
+
+[3:19-3:32] (confidence: -0.198)
+  "io puntavo su un di questi candeli qua, quindi sulle proporzioni, quindi arrivare a ridosso del 49, del 50 ma andava bene anche un 49 ma andava bene, vedete qua abbiamo dei livelli più grandi in boost,"
+
+[3:32-3:57] (confidence: -0.263)
+  "quindi fanno molto più da tappo se sono più grandi in boost che i USDT, quindi come grandezza poteva arrivare addirittura fino ai 50 ma vedo sto tappo qua quindi diciamo il mio target poteva essere un 87, però comunque va subito a 8, mettiamo play, 48 in un flash, non ho avuto neanche il tempo, cioè due livelli stanno già dentro,"
+
+[3:57-4:10] (confidence: -0.143)
+  "poi dopo guardate cosa fa, qua ho i 9000 che mi fanno un po' da stop, qua c'è un 12000, va giù e mangia tutto, quindi questo è un bruttissimo segnale, quindi ovviamente mi preparo subito per poter uscire,"
+
+[4:10-4:20] (confidence: -0.208)
+  "e aspetto perché abbiamo ancora 40 secondi quindi siamo agli inizi ci potrebbe anche stare, aspettiamo sta riprendendo, ok va bene quindi no problem,"
+
+[4:20-4:30] (confidence: -0.137)
+  "invece iniziamo, l'importante è che quando andiamo verso la fine della candela, qua deve iniziare a accelerare, qua deve iniziare a accelerare, non entrano pezzi grossi,"
+
+[6:08-6:11] (confidence: -0.229)
+  "essendo il secondo tocco lo faccio ma devo stare molto attento, ok?"
+
+[6:11-6:21] (confidence: -0.229)
+  "appena questa seconda candela mostra debolezza, quindi debolezza di candela abbiamo visto che appunto non stava caricando in denaro nei due book,"
+
+[7:03-7:19] (confidence: -0.191)
+  "questo è il massimo in boost, in WestDT in realtà il massimo era questo, andiamo a vedere, ecco qua c'è l'operazione in CVP, vedete che praticamente ho comprato e venduto lo stesso prezzo, ecco sono entrato,"
+
+[7:19-7:37] (confidence: -0.08)
+  "qua ci abbiamo dei muri, vado a piazzare l'ordine al prezzo in cui l'ho comprato, 11, 14, sta andando verso i massimi che ha fatto in boost, ma in realtà questi sono già massimi nuovi in WestDT, abbiamo dei livelli più grandi in boost,"
+
+[7:37-7:54] (confidence: -0.166)
+  "quindi in pratica non c'è nulla in acquisto, quindi ovviamente io sto in allerta, deve spaccare assolutamente questo livello qua, assolutamente deve spaccare questo livello, ancora un po' di tempo, ok ha spaccato,"
+
+[7:54-8:18] (confidence: -0.173)
+  "adesso alla fine, perfetto, quindi almeno lì mi ha mostrato appunto che ci fosse qualcosa, anche qua deve accelerare, rompere questi massimi, qua non c'è ancora nulla, ok da qua deve partire, da qua deve accelerare,"
+
+[8:18-8:39] (confidence: -0.141)
+  "ecco queste sono le candele che ci aspettiamo, livello che vediamo 11, 40, più grande poi in boost, quindi va bene 11, 40, 39, vedi mi metto prima in iceberg così non mi si vede, il livello poi viene tolto, si avvicina, mancano ancora 23 secondi, va bene questa è una candela del 22-30%,"
+
+[8:39-8:58] (confidence: -0.154)
+  "non mi ha ancora neanche sfiorato ma non mi ha preso, quindi mi vado a preparare per togliermi, non mi tolgo ancora perché sono ancora in alto ma vado a prepararmi per essere tolto, ovviamente questa candela se va dopo al mio ingresso devo uscire, ok?"
+
+[8:58-9:16] (confidence: -0.177)
+  "vedi qua ci sono, ingresso qua non c'è praticamente niente, c'è questo 6000 in boost ma niente di preoccupante, abbiamo praticamente niente in denaro, fa abbastanza schifo, quindi comunque devo fare attenzione, però ho il mio prezzo coperto, lo stop ce l'ho,"
+
+[9:50-10:12] (confidence: -0.229)
+  "andiamo a scendere, l'importante è che comunque rimanga su,"
+
+[10:12-10:37] (confidence: -0.178)
+  "qua vediamo abbiamo il livello sempre 11.40, sta accelerando, ricambia il prezzo, metto un prezzo più in alto perché da un momento che ha riposato rompe, se fosse andato a rompere questo 11.40 ha spazio, vedete qua poi non c'è niente, fino al mio livello in iceberg, vedete che non mi si vede,"
+
+[10:37-11:03] (confidence: -0.2)
+  "mi si vede poco, ecco ha rotto, ha rotto in boost, non ha ancora rotto in usdt, aspettiamo, ancora 13 secondi, ok siamo andati, bene, mi sta toccando, 17% eseguito, sono in iceberg, 43% mi si vede niente ancora, 67%, dai, già buono, già sono un ottimo livello,"
+
+[11:03-11:25] (confidence: -0.124)
+  "73%, perfetto, ho scaricato la maggioranza, 74% in pratica, adesso otteniamolo perché accade una cosa interessante, vedete metto la manina sul cancellare l'ordine per scaricare l'ultima parte nel caso,"
+
+[11:25-11:29] (confidence: -0.325)
+  "allora qua accade qualcosa di molto interessante,"
+
+[12:15-12:32] (confidence: -0.236)
+  "nel frattempo è tornato un livello da 11.4, in acquisto non c'è granché, avete conto che tutti questi ordini qua io riesco a vendere pezzi grandi, comunque mi sono già scaricato al 73%, quindi mi rimane poco,"
+
+[12:32-12:51] (confidence: -0.177)
+  "cancello, avete visto, ho cancellato l'ordine perché si sta vicinando alle ma 10, non deve chiudere sotto ma vedete che è praticamente vicino allo zero, quindi anche se mi desce chiudere sotto ho lo zero vicino, vediamo, mi fido del, vedete, 11 e 1 c'è comunque dei livelli, quindi lo stop ce l'ho,"
+
+[12:51-13:08] (confidence: -0.148)
+  "coperto, vedete come coperto sia in USDT che in boost, quindi lo stop sono a posto, poi comunque ho già scaricato i prezzi quindi me ne sto fregando abbastanza, però insomma è importante capire, se non avessi chiuso comunque sarei comunque coperto,"
+
+[13:08-13:29] (confidence: -0.116)
+  "se non avessi chiuso diciamo il 74% al mio target, vediamo qua che succede, vedete comunque lo spike sotto l'ha fatto, ha chiuso sopra, comunque era vicino al mio zero, avete visto sul mio zero invece il book era coperto bene,"
+
+[13:29-13:54] (confidence: -0.229)
+  "qui acceleriamo, ecco qua, no, qua lo guardiamo che succede, ecco qua torna di nuovo sulle ma 10 che nel frattempo si è alzato, qua vedo comunque i livelli, ecco qua no good, nel frattempo vi devo gli alert,"
+
+[13:54-14:17] (confidence: -0.19)
+  "gli piazzaffari, ecco qua sono vicino allo zero, ok, gli diamo ancora il minuto per farla finta, vediamo un attimo, ok verso la fine si sta alzando, si sta allontanando subito lo spike, quello spike mi ha quasi toccato lo zero, ok, io lì devo uscire,"
+
+[14:17-14:33] (confidence: -0.144)
+  "per adesso mi sto fidando, c'è comunque entrato un bel livello per il mio stop, vedete i bei livelli qua sono entrati, quindi dico non ha senso uscire anche con chiusura candela sotto perché avete visto il mio stop a zero è coperto bene, soprattutto in boost, ok,"
+
+[14:55-15:25] (confidence: -0.18)
+  "ecco, in questo caso non deve più tornare, adesso che ho accelerato, a questo livello qua, non importa aspettarlo a zero, già col fatto che ho fatto l'accelerazione, anche se ho fatto metà candela di rimbalzo non deve più andare a superare il corpo di quello precedente, ok, sarei uscito, avrei coperto anche i fi, invece qua sta accelerando, no problem, senza niente nel buco, io comunque adesso ho una size piccola, quindi non mi interessa, comunque in boost vengo fillato facile, quindi"
+
+[16:46-17:03] (confidence: -0.117)
+  "rotto questo livello vedo che c'è subito un livello a 45, 45 era dove ero io prima, vediamo se rompe al secondo tocco, se accelerà bene altrimenti devo uscire, quindi sta per mangiarsi l'11.40,"
+
+[17:03-17:29] (confidence: -0.179)
+  "vediamo 34 secondi ancora, sempre guardare quanti secondi mancano alla fine, che a un minuto sembra poco, ma per me un minuto è anche tantissimo, cioè tanto, guardate sono ancora 20 secondi, ho voglia, ho voglia a ragionare, riflettere, spostare, capire, un minuto si fanno tantissime cose, 10 secondi,"
+
+[17:29-17:44] (confidence: -0.178)
+  "dice adesso, ha finito il livello, ha mangiato il livello, perfetto, allora adesso c'è, questo era un ingresso che avevo fatto nel frattempo su un titolo a piazza affari,"
+
+[18:13-18:37] (confidence: -0.203)
+  "Qua invece, interessante perché sono riuscito a fare, allora, ecco, questo è il daily, daily che è comunque interessante come l'altro che abbiamo visto, e niente, aspetta che lo mettiamo, far vedere i risultati, ecco qua, quindi dei 15.000 che ho comprato,"
+
+[18:37-19:05] (confidence: -0.214)
+  "di 15.000, ecco, si dovrebbe vedere più avanti, vediamo se si vede meglio, ah perché fa vedere solo gli eseguiti, non quelli parziali, comunque sono entrato con 15.000, la parte rimanente erano i 4.000 qualcosa, non si vede, ah beh, l'ho pubblicato, aspetta che lo apriamo su telegram, apriamolo su telegram, così, ecco qua telegram,"
+
+[19:05-19:27] (confidence: -0.143)
+  "fra l'altro ho postato il meeting, il bull trading expo, allora questo era il, eccolo qua, vedete, ecco, questo è quello annullato, quindi 11.6002 più 4.100 è la mia vendita, ho comprato 15.346,"
+
+[19:27-19:55] (confidence: -0.165)
+  "ecco, qua ci ho guadagnato i 439 boost, quasi un 3%, ok, quasi un 3% totali, vedete, bene ragazzi, 1000 like, mi raccomando, iscrivetevi al canale, due canali telegram, twitch, discord, addirittura tiktok, niente, lunedì casa bull, vi spiego del, vi spiego appunto del bull trading expo,"
+
+[19:55-20:05] (confidence: -0.192)
+  "bull trading expo, si farà a Verona, non a Milano, 16-17-18 dicembre, me ne parlo lunedì, ciao."
+

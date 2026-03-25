@@ -1,0 +1,488 @@
+# Low-confidence segments for: 033_CAMBIO_CANDELA_DAILY_Tecnica_di_Trading_Tutorial_LIVE_su_Discord.mp3
+# Total flagged: 161
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.209)
+  "Ciao trader, siamo su Skype in the Bull, puntata incredibile di Friday Candle Night, facciamo"
+
+[0:07-0:13] (confidence: -0.209)
+  "vedere la locandina, ecco la Friday Candle Night, prima abbiamo fatto il serial trader,"
+
+[0:13-0:18] (confidence: -0.209)
+  "spettacolare, per questo siamo già in 270, avevamo già il pubblico caldissimo per la"
+
+[0:18-0:23] (confidence: -0.209)
+  "puntata molto interessante di prima, che andrò a pubblicare, e adesso c'è il Friday Candle"
+
+[0:23-0:28] (confidence: -0.209)
+  "Night, qua c'è scritto ore 23, perché di solito è alle ore 23, ma stasera ci sono"
+
+[0:28-0:35] (confidence: -0.252)
+  "io nella prima oretta, o qualcosa di più, vediamo, per parlare del cambio candela,"
+
+[0:35-0:41] (confidence: -0.252)
+  "ok, appunto siamo in anticipo, quindi il cambio candela nel periodo invernale è all'una,"
+
+[0:41-0:44] (confidence: -0.252)
+  "non alle due, invece il periodo estivo è alle due, quindi è un orario anche un po'"
+
+[0:44-0:52] (confidence: -0.252)
+  "più umano, più o meno, e cerchiamo di capire le strategie e come poter sfruttare questa"
+
+[0:52-0:58] (confidence: -0.277)
+  "cosa. Qua sul palco abbiamo Dag che ha già fatto diverse serate di Friday Candle Night"
+
+[0:58-1:05] (confidence: -0.277)
+  "con grande divertimento fra l'altro, perché vedevo col bullbot la musica, insomma, tutte"
+
+[1:05-1:11] (confidence: -0.277)
+  "cose interessante, ovviamente abbiamo tolto non il bullbot, il music bot che mette la"
+
+[1:11-1:20] (confidence: -0.277)
+  "musica, perché sennò il video avrebbe dei problemi su youtube, però sì, era molto interessante"
+
+[1:45-1:54] (confidence: -0.275)
+  "e Terry? Allora sì, diciamo io da agosto ero in feria, sì sì, in agosto. Ok, ok,"
+
+[1:54-2:00] (confidence: -0.275)
+  "quindi è arrivato leggermente dopo però, insomma, grande sintonia, quindi molto interessante."
+
+[2:00-2:05] (confidence: -0.275)
+  "Allora, vista che loro fanno il cambio candela fanno anche spesso, chi più chi meno, e molti"
+
+[2:05-2:12] (confidence: -0.275)
+  "quando il pubblico sono comunque interessati, cerchiamo di capire che cos'è. Allora, innanzitutto,"
+
+[2:12-2:23] (confidence: -0.2)
+  "subito schermo. Ok, e adesso sono su Kp3r che sicuramente è uno da tenere d'occhio."
+
+[2:23-2:30] (confidence: -0.2)
+  "Come facciamo a capire cosa tenere d'occhio per il cambio candela? Perché la difficoltà"
+
+[2:30-2:38] (confidence: -0.2)
+  "del cambio candela, una delle tante difficoltà, è avere sott'occhio quelli che probabilmente,"
+
+[2:38-2:44] (confidence: -0.151)
+  "o più probabilmente, o che probabilmente potrebbero partire. Ok, questa è la parte,"
+
+[2:44-2:51] (confidence: -0.151)
+  "una delle cose più difficili, giusto Nicola, perché il problema è, arrivi lì e non puoi"
+
+[2:51-2:57] (confidence: -0.151)
+  "avere 150.000 monitor e devi riuscire ad avere sott'occhio e già pronto per poter operare"
+
+[2:57-3:01] (confidence: -0.151)
+  "su quelli che potrebbero partire subito, perché altrimenti partono gli altri e tu rimani a"
+
+[3:01-3:07] (confidence: -0.151)
+  "guardare questi che non partono e rimani lì con niente in mano. Per quello che mi è venuto"
+
+[3:59-4:07] (confidence: -0.21)
+  "cambio candela perché c'è un daily interessante, c'è un daily che sono tre giorni, quattro giorni"
+
+[4:07-4:14] (confidence: -0.21)
+  "in cui vediamo che sta facendo candele verdi, l'EMA 5 che comanda tranquillamente senza"
+
+[4:14-4:21] (confidence: -0.21)
+  "essere, senza grossi problemi, ma siamo adesso, ci troviamo a un passo dai massimi di due giorni"
+
+[4:21-4:25] (confidence: -0.21)
+  "fa, il massimo di ieri abbiamo già superato, abbiamo i massimi due giorni fa molto vicini che fra"
+
+[4:52-4:57] (confidence: -0.189)
+  "però comunque è un livello molto importante questo, quindi questo potrebbe essere estremamente"
+
+[4:57-5:04] (confidence: -0.189)
+  "triggerabile o triggerato, quindi è un qualcosa che se raggiunto quel livello potrebbe accelerare e"
+
+[5:04-5:08] (confidence: -0.189)
+  "quando potrebbe fare questa cosa qua? Potrebbe farlo prima del cambio candela, adesso sono le ore"
+
+[5:08-5:14] (confidence: -0.189)
+  "22.17, nel caso in cui non lo facesse prima potrebbe farlo proprio col cambio candela,"
+
+[5:14-5:19] (confidence: -0.189)
+  "quindi potrebbe raggiungere questi punti dove poi andrebbe ad accelerare e quindi dal più 3% che"
+
+[6:37-6:45] (confidence: -0.224)
+  "è un gioco di squadra e qua con la bulla arena o comunque in generale su discord quindi se siete"
+
+[6:45-6:52] (confidence: -0.224)
+  "solo nella bulla arena oppure siete in un canale vocale quindi ricordiamoci se siete qua nella"
+
+[6:52-6:59] (confidence: -0.224)
+  "bulla arena potete parlare, alzate la mano per invece poter scrivere qualcosa velocemente c'è"
+
+[6:59-7:07] (confidence: -0.224)
+  "proprio la stanza che si chiama chat per live ok quindi lì dopo uno quando trae da tiene aperto la"
+
+[7:33-7:39] (confidence: -0.174)
+  "a gestire poi più avanti però prima che io vada via cerchiamo di gestire anche le squadre di"
+
+[7:39-7:43] (confidence: -0.174)
+  "cercare di capire un po come poterlo fare perché questo è molto interessante e semplifica molto poi"
+
+[7:43-7:48] (confidence: -0.174)
+  "noi essendo una squadra con tante persone effettivamente se abbiamo la possibilità di"
+
+[7:48-7:58] (confidence: -0.174)
+  "poter avere più coppie che vengono controllate da più persone ci facilita molto perché il problema"
+
+[10:03-10:12] (confidence: -0.251)
+  "mi dà la classifica che ti fa vedere i migliori e peggiori molto importante proprio perché appunto"
+
+[10:12-10:17] (confidence: -0.251)
+  "così puoi andare a vedere intanto cosa c'è di che si è mosso oggi e nel cambio candela potrebbero"
+
+[10:17-10:24] (confidence: -0.251)
+  "proseguire o no quindi vediamo allora innanzitutto vediamo il primo in classifica che è sposto"
+
+[11:17-11:24] (confidence: -0.165)
+  "la stessa cosa il questo è molto interessante perché ha fatto la stessa cosa il 19 dicembre"
+
+[11:24-11:31] (confidence: -0.165)
+  "quindi ha fatto una mega candela ha rotto la 60 nato addirittura vicino a 223 poi tornato"
+
+[11:31-11:36] (confidence: -0.165)
+  "giù ha chiuso candela il cambio candela quindi praticamente l'ha fatto tutto in rosso e è nato"
+
+[11:36-11:42] (confidence: -0.165)
+  "di nuovo sulla 10 ok quindi in quel caso lì c'è stato appunto quello che è l'accelerazione ha"
+
+[13:31-13:40] (confidence: -0.501)
+  "eros però vediamo delle settimanale ok ma non siamo sui massimi lo sapevate voi che eravamo"
+
+[13:40-13:52] (confidence: -0.501)
+  "sui massimi con rose a th se se ok informati io no eh sì wow ok qua lo rose sicuramente"
+
+[13:52-13:58] (confidence: -0.501)
+  "teniamolo d'occhio andiamo a dire come perché stiamo facendo nuovi massimi adesso e massimi"
+
+[24:17-24:25] (confidence: -0.219)
+  "daily di bnx così vi faccio capire un qualcosa di simile ma deve ancora rompere e quindi burger"
+
+[24:25-24:32] (confidence: -0.219)
+  "quindi qua effettivamente ha fatto finemente la rottura è tornato indietro siamo fortunati perché"
+
+[24:32-24:37] (confidence: -0.219)
+  "questo potrebbe essere interessante sì praticamente la fiammata la fatta smettiamo time frame 30 minuti"
+
+[24:37-24:41] (confidence: -0.219)
+  "vedrete che in 30 minuti ha fatto tutto il movimento ed è già sceso quindi ha fatto una"
+
+[25:34-25:45] (confidence: -0.195)
+  "dei bull bot dei giorni scorsi ok questo è uno che quindi bnx non è in classifica sta facendo più"
+
+[25:45-25:51] (confidence: -0.195)
+  "1 e mezzo per cento era stato segnalato ieri nel bull bot perché aveva superato i massimi degli ultimi"
+
+[25:51-25:56] (confidence: -0.195)
+  "giorni con quella candela rossa di ieri è andato a testare la 10 guardate che perfezione in cui"
+
+[30:03-30:12] (confidence: -0.327)
+  "però lo stiamo analizzando un alert qua a 1 e 18 me lo vado a mettere anch'io"
+
+[30:12-30:16] (confidence: -0.327)
+  "allora questo me lo vado a mettere subito"
+
+[30:16-30:21] (confidence: -0.327)
+  "allora stiamo parlando di"
+
+[30:21-30:26] (confidence: -0.327)
+  "tribe"
+
+[30:26-30:32] (confidence: -0.544)
+  "crea viso allora"
+
+[30:32-30:45] (confidence: -0.544)
+  "stiamo parlando del livello 1 e 18 sì"
+
+[31:11-31:13] (confidence: -0.417)
+  "vediamo 30 minuti"
+
+[31:13-31:21] (confidence: -0.417)
+  "sta riposando bello bello bellissimo in realtà 1 e 14"
+
+[31:21-31:31] (confidence: -0.417)
+  "1 e 14 è un bel livello avrebbe la 60 in testa quindi rompendolo a 1 e 15 siamo sopra"
+
+[31:31-31:35] (confidence: -0.417)
+  "ma perché 1 e 18 questo non l'ho capito"
+
+[36:56-37:00] (confidence: -0.455)
+  "quindi non abbiamo ancora le aggiornamenti da bulbota su questo"
+
+[37:00-37:09] (confidence: -0.628)
+  "dopo qua ok andiamo a vedere il daily questa bomba andiamo a vedere il daily"
+
+[37:09-37:15] (confidence: -0.628)
+  "allora andiamo a vedere lrc"
+
+[37:15-37:20] (confidence: -0.628)
+  "l scusa l t c"
+
+[37:20-37:25] (confidence: -0.628)
+  "ok qua ci siamo"
+
+[38:33-38:52] (confidence: -0.582)
+  "sa che paga poco one andiamo a vedere no ma insomma siamo a volta immagina eh sì sì sì siamo vicini"
+
+[39:18-39:23] (confidence: -0.297)
+  "sui massimi a movimento anche abbastanza grosso non lo so qua"
+
+[39:23-39:31] (confidence: -0.297)
+  "qua io penserei più che altro a tenerlo nel caso in cui si avvicinasse lì all'altime quindi magari"
+
+[39:31-39:41] (confidence: -0.297)
+  "insomma a tipo 37 2 un alert ma se no non lo considererei sì dai un alert a 37 2 così"
+
+[39:41-39:48] (confidence: -0.297)
+  "ci si prepara per rompere i massimi di oggi perché poi sono la rottura verso gli altime"
+
+[40:39-40:50] (confidence: -0.447)
+  "uno da guardare e vengono a dire glmr ok"
+
+[40:50-40:59] (confidence: -0.447)
+  "allora il daily ovviamente non ha molto se no il daily già già quattro giorni sono già passato"
+
+[40:59-41:05] (confidence: -0.447)
+  "quattro giorni pazzesco è niente interessante interessante poi fa dei movimenti pazzeschi"
+
+[42:51-42:57] (confidence: -0.168)
+  "doppio tocco perché potrebbe essere qualcosa di già strutturato quindi noi dopo andremmo ad"
+
+[42:57-43:04] (confidence: -0.168)
+  "aprire il il grafico con un qualcosa di già strutturato per un break out ok perché potrebbe"
+
+[43:04-43:08] (confidence: -0.168)
+  "essere molto più di un secondo tocco potrebbe già essere un terzo tocco qualcosa di più importante"
+
+[43:08-43:13] (confidence: -0.168)
+  "insomma è un qualcosa che ha già fatto un massimo ci sta tornando magari è già ci ha già tornato una"
+
+[43:13-43:18] (confidence: -0.168)
+  "volta magari già la seconda terza insomma quel che è quindi il mio canale preferito è questo per"
+
+[51:05-51:19] (confidence: -0.467)
+  "si può tranquillamente mettere che livello è una 28 dai massimi di oggi quindi la rottura del 330"
+
+[51:19-51:31] (confidence: -0.467)
+  "vediamo nel book se c'è qualche livello ma c'è chi te ne vuole io potrei proprio entrare"
+
+[51:31-51:42] (confidence: -0.527)
+  "scambio veramente poco comunque si è 3 3 ma non c'è proprio niente il 325 325"
+
+[51:42-51:53] (confidence: -0.527)
+  "dove adesso e niente ragazzi io questa cosa questo questo buco non potrei tenere in considerazione"
+
+[52:11-52:20] (confidence: -0.564)
+  "andare continua a andare e siamo che è volte mai questo poi e si si si è voltai mai"
+
+[52:20-52:30] (confidence: -0.564)
+  "e si dei dei li è bellissimo questo è fosse un titolo normale sarebbe da seguire però ha"
+
+[52:30-52:34] (confidence: -0.564)
+  "veramente un book che fa schifo perché me non piace perché per esempio vedete questi livelli"
+
+[54:14-54:21] (confidence: -0.449)
+  "fare una domanda andiamolo su eddi sei quello di prima giusto?"
+
+[54:21-54:31] (confidence: -0.449)
+  "allora volevo farti una generazione bnb bnb ok ce l'ho già"
+
+[54:31-54:38] (confidence: -0.449)
+  "che fra l'altro è in atto la tecnica bnb esatto"
+
+[56:53-56:58] (confidence: -0.369)
+  "interessante fra l'altro sta facendo anche questo questo conformazione bellissima di"
+
+[56:58-57:04] (confidence: -0.369)
+  "rottura a tre quindi dopo una candela di riposo va rompere quindi veramente interessante e"
+
+[57:04-57:16] (confidence: -0.369)
+  "ha spazio fino alla 60 5 16 poi volevo farti un'altra domanda mi senti? Si, si, benissimo"
+
+[58:30-58:40] (confidence: -0.419)
+  "anzi ci vorrebbe una conformazione simile così era uno di quelli di prima che abbiamo"
+
+[58:40-58:42] (confidence: -0.419)
+  "guardato con una conformazione simile"
+
+[58:42-59:03] (confidence: -0.725)
+  "e poi anche lì avremo delle percentuali un po allora vediamo velocemente"
+
+[59:03-59:17] (confidence: -0.517)
+  ".bnb e ecco qua rose ok facciamo un esempio con rose che è interessante allora rose che tanto"
+
+[59:43-59:52] (confidence: -0.428)
+  "qua stiamo parlando solo il movimento che ha fatto adesso e stanno già parlando di un 11% ok"
+
+[61:02-61:14] (confidence: -0.529)
+  "vabbè vedrai edi se si fai caso con queste cose usi il righello usando il righello te la"
+
+[61:14-61:24] (confidence: -0.621)
+  "cogi subito anche l'alert su burger a 2.65 dato adesso"
+
+[61:24-61:30] (confidence: -0.821)
+  "lo che sì sì sì l'abbiamo messo prima"
+
+[61:30-61:38] (confidence: -0.821)
+  "ecco"
+
+[61:38-61:55] (confidence: -0.712)
+  "non era male dai è contento però non ha fatto nessuna conformazione no no no"
+
+[65:11-65:16] (confidence: -0.623)
+  "no è possibile davvero no no no no no okay no non lo faccio"
+
+[65:16-65:27] (confidence: -0.623)
+  "sì sì e book bello e shiba non possono poteranno mai andare d'accordo e ok e andiamo a parlare"
+
+[65:27-65:34] (confidence: -0.623)
+  "invece di che strategie ci dobbiamo aspettare ok prima prima che vi posso svinire so se state"
+
+[65:34-65:40] (confidence: -0.623)
+  "sentendo la voce che piano piano si sta abbassando è morendo in diretta allora"
+
+[65:40-65:50] (confidence: -0.479)
+  "e torniamo qua fra di voi come schermata vediamo se ho vediamo se riesco a trovare"
+
+[65:50-65:54] (confidence: -0.479)
+  "qualche file"
+
+[65:54-66:01] (confidence: -0.479)
+  "allora"
+
+[66:01-66:07] (confidence: -0.479)
+  "eccolo qua questo cos'è"
+
+[66:11-66:14] (confidence: -0.531)
+  "sì dai ho un esempio"
+
+[66:14-66:18] (confidence: -0.531)
+  "ho un esempio non è"
+
+[66:18-66:26] (confidence: -0.531)
+  "sì dai bello ok strano che non solo uno devo"
+
+[66:26-66:29] (confidence: -0.531)
+  "trovare degli altri vediamo"
+
+[66:29-66:34] (confidence: -0.531)
+  "dovevo collezionare comunque ragionamento è questo"
+
+[66:34-66:36] (confidence: -0.531)
+  "faccio vedere con questo esempio"
+
+[67:34-67:38] (confidence: -0.302)
+  "prima circa un quarto d'ora prima poi fanno una candela fanno un quarto d'ora"
+
+[67:38-67:42] (confidence: -0.302)
+  "mezz'ora di riposo quindi della talizzazione o comunque vanno a toccare"
+
+[67:42-67:47] (confidence: -0.302)
+  "lema 10 o comunque meglio ancora se va su lema 60 comunque la terraria zonate"
+
+[67:47-67:51] (confidence: -0.302)
+  "quindi si riposa un attimo ecco questi se vanno poi a salire sopra"
+
+[67:51-67:56] (confidence: -0.302)
+  "perché questo è uno degli esempi che c'ho era su bat tempo fa non mi ricordo"
+
+[67:56-68:02] (confidence: -0.302)
+  "quando che solito far questa operazione qua era salito tantissimo prima del"
+
+[68:30-68:33] (confidence: -0.173)
+  "quindi andate a vedere nei grafici eccetera se vedete qualcosa che sta"
+
+[68:33-68:39] (confidence: -0.173)
+  "accelerando molto forte è ottimo da tenere d'occhio se nell'ultimi 15 minuti"
+
+[68:39-68:44] (confidence: -0.173)
+  "10 minuti o mezz'ora comunque fanno un riposo una laterizzazione fanno una"
+
+[68:44-68:48] (confidence: -0.173)
+  "base da tenere d'occhio perché se questo va a rompere quella base quindi va a"
+
+[68:48-68:54] (confidence: -0.173)
+  "fare i massimi nuovi questo è una bomba non succede spessissimo ma comunque"
+
+[75:44-75:47] (confidence: -0.149)
+  "prima del cambio candela o anche il minuto stesso lì potete entrare"
+
+[75:47-75:51] (confidence: -0.149)
+  "l'unica l'unico eccezione che vi consiglio di entrare"
+
+[75:51-75:56] (confidence: -0.149)
+  "bravo nicola del resto non fatevi fregare da queste cose se poi dopo va"
+
+[75:56-76:01] (confidence: -0.149)
+  "all'infinito e vi mangiate le mani è meglio così ma statisticamente non ve"
+
+[76:01-76:05] (confidence: -0.149)
+  "lo consiglio perché rischiate di prendere schiaffi pazzesche"
+
+[76:05-76:10] (confidence: -0.149)
+  "ecco invece se adesso voi andate a creare dei gruppi sapete che cosa potete"
+
+[76:10-76:15] (confidence: -0.215)
+  "cercare ok quindi se trovate qualcosa che sta accelerando prima di chiusura"
+
+[76:15-76:20] (confidence: -0.215)
+  "candela dovete segnalarlo molto importante e aspettare eventualmente che"
+
+[76:20-76:28] (confidence: -0.215)
+  "possa fare un riposo prima del cambio candela dovete segnalare un"
+
+[76:28-76:31] (confidence: -0.215)
+  "all'atterizzazione prima del cambio candela molto interessante perché se"
+
+[76:31-76:36] (confidence: -0.215)
+  "la massa rompe quello è estremamente un trigger quindi si potrebbe addirittura"
+
+[76:36-76:40] (confidence: -0.215)
+  "comunque c'è la stanza per poterlo segnalare questo è molto interessante"
+
+[78:28-78:34] (confidence: -0.12)
+  "diverse cose sapete già le conformazioni da segnalare innanzitutto no"
+
+[78:34-78:39] (confidence: -0.12)
+  "si va comunque individuare quindi già mezz'ora prima quindi magari da"
+
+[78:39-78:43] (confidence: -0.12)
+  "mezzanotte e mezzo si possono già andare a fare questa ricerca sulle"
+
+[78:43-78:49] (confidence: -0.12)
+  "lateralizzazioni è già molto interessante soprattutto se lo troviamo in questi"
+
+[78:49-78:53] (confidence: -0.12)
+  "titoli in cui abbiamo analizzato che possono avere dei trigger importanti"
+
+[80:39-80:45] (confidence: -0.438)
+  "sarebbe uscire da uno shimano daily in ftt"
+
+[80:49-80:56] (confidence: -0.438)
+  "tra l'altro dovrebbe anche una tazza due tazze manico si trova si trova tra la"
+
+[80:56-81:04] (confidence: -0.438)
+  "60 di tre dovrebbe andare a rompere e si qua avremmo avremo spazio avremo spazio"
+
+[81:04-81:09] (confidence: -0.438)
+  "però a vedere con adesso se c'è qualche conformazione adesso abbiamo 30 minuti"
+
+[82:01-82:07] (confidence: -0.237)
+  "domenica magari pubblico questo qua lunedì poi quello del"
+
+[82:07-82:13] (confidence: -0.237)
+  "bullando però voglio che poi dopo mi raccontate"
+
+[82:13-82:19] (confidence: -0.237)
+  "cosa è successo stasera problematiche non problematiche con la squadra cosa si"
+
+[82:19-82:24] (confidence: -0.237)
+  "è tristi a fare non e poi vediamo che di riparlarne e vedere un attimino cosa si"
+
+[82:24-82:30] (confidence: -0.237)
+  "è capito cosa cosa che non ha funzionato vediamo di capire un po sta cosa che mi"
+

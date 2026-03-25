@@ -1,0 +1,77 @@
+# Low-confidence segments for: 019_LIVE_TRADING_Short_BTC_con_supporto_da_100_Milioni_di_dollari_+_Long_ETH_e_Long_BTC.mp3
+# Total flagged: 24
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.354)
+  "ciao traders, siete su scopinable. Live trading su bitcoin, questo l'ho postato"
+
+[0:06-0:13] (confidence: -0.354)
+  "ieri sul gruppo telegram dove indicavo questo mega supporto"
+
+[0:13-0:19] (confidence: -0.354)
+  "veramente gigante, adesso nel video sta già mangiando, io sono già dentro"
+
+[0:19-0:24] (confidence: -0.354)
+  "vi spiego poi perché sono entrato prima di un supporto così gigante"
+
+[1:17-1:20] (confidence: -0.2)
+  "vi spiego perché è esatto contrario di quello che potete pensare, giustamente"
+
+[1:20-1:23] (confidence: -0.2)
+  "vedete questo che possa appunto funzionare da supporto, quindi si avvicina,"
+
+[1:23-1:28] (confidence: -0.2)
+  "rimbalza e poi va su, invece non funziona così perché anzitutto bisogna vedere il"
+
+[1:28-1:37] (confidence: -0.2)
+  "grafico, quindi qua si è già avvicinato tanto, allora era da usare come"
+
+[1:37-1:41] (confidence: -0.2)
+  "supporto quando ci arriva in velocità, ok, quando vedete per esempio, quando"
+
+[1:41-1:45] (confidence: -0.2)
+  "vedete qualcosa che sta cadendo molto velocemente, tipo questo ma anche di"
+
+[2:10-2:17] (confidence: -0.198)
+  "supporto per andare a long, ok, però vediamo una cosa che qua aveva già testato,"
+
+[2:17-2:22] (confidence: -0.198)
+  "ma hai visto che non ha testato, nel senso che non è andato sul 45000, rimane a"
+
+[2:22-2:27] (confidence: -0.198)
+  "distanza perché difficilmente ci si avvicina, fa fatica avvicinarsi a qualcosa di"
+
+[2:27-2:32] (confidence: -0.198)
+  "così grande, perché mettetevi nei panni di chi sta comprando, quindi se tu adesso vuoi"
+
+[2:32-2:35] (confidence: -0.198)
+  "comprare non ti metterai mai sotto, come fai a metterti sotto perché prima devi"
+
+[2:35-2:40] (confidence: -0.198)
+  "finire tutto questo, ti metti sopra, ti metti sopra anche di abbastanza perché"
+
+[11:49-11:57] (confidence: -0.2)
+  "a un minuto ma ho guardato anche, ok, sì, qua sono già bello avanti, qua c'è il mio ingresso a un minuto,"
+
+[11:57-12:04] (confidence: -0.2)
+  "ok, fatti i massimi, scende, riteste, se fossi stato sveglio avrei potuto provare qualcosa qua,"
+
+[12:04-12:12] (confidence: -0.2)
+  "poi torno su, ma la mia convinzione che sarebbe salito arriva dal time frame non a un minuto ma"
+
+[12:35-12:41] (confidence: -0.2)
+  "l'ho segnalato e la cosa bella è che non ha fatto solo uno spike, io mi sono svegliato che"
+
+[12:41-12:46] (confidence: -0.2)
+  "aveva già lateralizzato in 30 minuti, quindi questo è fantastico, questo praticamente va"
+
+[12:46-12:51] (confidence: -0.2)
+  "colpo sicuro, quando vedete una roba così, sopra 30 minuti, dopo tanto tempo che sta sotto,"
+
+[12:51-12:58] (confidence: -0.2)
+  "questa è la 60 però nel time frame a 30 minuti, dopo tanto tempo che ci sta sotto, va sopra e"
+
+[12:58-13:04] (confidence: -0.2)
+  "lateralizza, cioè è un sogno, quindi io proprio vado colpo sicuro, per questo se mi fossi svegliato"
+

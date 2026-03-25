@@ -1,0 +1,80 @@
+# Low-confidence segments for: 026_Live_Trading_ita_Bitcoin_Short_2_volte_e_Long_Hot_Binance_Futures.mp3
+# Total flagged: 25
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:18-0:31] (confidence: -0.278)
+  "della stessa salita e un long su hot. Quindi qua partiamo da, questa è bitcoin, questa è la"
+
+[0:31-0:42] (confidence: -0.278)
+  "configurazione quindi forti rialzi dopo si vedrà meglio il grafico, lateralizzazione e la rottura"
+
+[0:42-0:54] (confidence: -0.329)
+  "ok? Qua ho già la posizione aperta dopo la vado a modificare, andiamo a vedere, ok? Qua vado a"
+
+[0:54-1:02] (confidence: -0.329)
+  "modificare così già si può vedere il pnl, ok? Sono dentro con un bitcoin, ecco allora appena ha aperto"
+
+[1:29-1:40] (confidence: -0.341)
+  "sempre di mettere non prezzo di riferimento 54,16, vedi? meno 22, 2 sti diti clicca e a posto ok?"
+
+[1:40-1:47] (confidence: -0.341)
+  "Quindi in pratica si va a chiudere automaticamente questo dove io ho venduto, dovesse andare appena"
+
+[1:47-1:51] (confidence: -0.341)
+  "va sopra mi chiude, ok? Quindi non ho nessun pensiero anche perché può succedere tranquillamente"
+
+[1:51-1:58] (confidence: -0.187)
+  "che va giù e poi dopo rimbalza e al volo proprio e quindi io non voglio sapere niente, lo faccio"
+
+[1:58-2:07] (confidence: -0.187)
+  "manualmente quindi un altro grosso vantaggio di Futures quindi appunto qua siamo in Futures è"
+
+[2:07-2:15] (confidence: -0.187)
+  "proprio l'inserimento veloce non vincolato dello stop, non vincolato cosa significa? Che io posso"
+
+[2:15-2:21] (confidence: -0.187)
+  "quello stop lì rimane non devo cancellarlo per poi andare a vendere che invece con stop se tu"
+
+[2:45-2:52] (confidence: -0.143)
+  "anche molto di più proprio perché comunque stiamo continuando in un trend fortemente realista"
+
+[2:52-2:58] (confidence: -0.143)
+  "dal minimo di un giorno e mezzo fa quindi oggi vi ho avvertito che poteva esserci qualche crollo"
+
+[2:58-3:05] (confidence: -0.143)
+  "qualche tracciamento non c'è stato c'è stato solo qualche qualche sciacquata così ma il dubbio"
+
+[3:05-3:11] (confidence: -0.143)
+  "era proprio questo perché ha fatto un minimo molto basso e ha recuperato in pochissimo tempo"
+
+[11:44-11:52] (confidence: -0.158)
+  "niente che succede allora inizia andare giù vado a vedere bitcoin bitcoin sta scendendo questo pure"
+
+[11:52-11:58] (confidence: -0.158)
+  "quindi vado un attimo in panico nel senso che vado a cancellare l'ordine ok quindi questo non"
+
+[11:58-12:04] (confidence: -0.158)
+  "mi piace vado a cancellare perché probabilmente vado mercato a chiudere bitcoin sta andando giù"
+
+[12:04-12:10] (confidence: -0.158)
+  "vedi bitcoin ha fatto la seconda candela questa è solo la prima candela mi fa capire che forte"
+
+[12:35-12:46] (confidence: -0.182)
+  "la 5 bitcoin è sotto la 10 quindi è più debole hot mi fa vedere di essere molto hot quindi bitcoin"
+
+[12:46-12:52] (confidence: -0.182)
+  "torna sopra la 10 hot va a far nuovi massimi io avevo cancellato quindi il mio seguito vecchio"
+
+[12:52-12:55] (confidence: -0.182)
+  "sarebbe notte seguito ma l'ho cancellato perché perché se tornava sui massimi mi doveva portare"
+
+[12:55-13:00] (confidence: -0.182)
+  "sul prezzo e quindi adesso me l'ho più disposto a spendere così ma dovevo guadagnarci di più"
+
+[14:05-14:11] (confidence: -0.494)
+  "troverà interessante fatemi sapere nei commenti e se c'è qualcosa che avete capito"
+
+[14:11-14:23] (confidence: -0.494)
+  "sicuramente sempre nei commenti scrivetemi al canale e a telegram ecco mi viene la telegram ciao ragazzi"
+

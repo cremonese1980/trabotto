@@ -1,0 +1,92 @@
+# Low-confidence segments for: 010_TECNICA_DI_TRADING_Time_Frame_30_minuti_EMA_60_Lo_spartiacque_del_trend.mp3
+# Total flagged: 29
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:21-0:30] (confidence: -0.167)
+  "quando vedete che una cosa crolla dovete andare a vedere quando va a rimbalzare gli"
+
+[0:30-0:35] (confidence: -0.167)
+  "altri time frame, time frame più lenti per andare a capire le resistenze e al contrario"
+
+[0:35-0:42] (confidence: -0.167)
+  "eventualmente i supporti. E vi indico come limite massimo diciamo di rimbalzo il 30 minuti,"
+
+[0:42-0:48] (confidence: -0.167)
+  "il time frame a 30 minuti. Allora profittiamo visto che c'è proprio l'occasione per andare"
+
+[0:48-0:54] (confidence: -0.318)
+  "a vedere finalmente questo 30 minuti perché è così importante. L'EMA a 60 sul time frame"
+
+[0:54-1:03] (confidence: -0.318)
+  "a 30 minuti. Allora questo è ieri, poi ha iniziato, ha fatto questo minimo più o meno"
+
+[1:03-1:13] (confidence: -0.318)
+  "qua che ore erano, verso le 5, 4 e mezzo a 5 e poi dopo è andato sempre su. E vi dicevo"
+
+[1:13-1:19] (confidence: -0.214)
+  "attenzione ai rimbalzi perché ti può sembrare che sia un cambio di trend, quindi che in"
+
+[1:19-1:26] (confidence: -0.214)
+  "pratica da lì è toccato il minimo e dopo andiamo a chissà dove. Invece bisogna proprio"
+
+[1:26-1:33] (confidence: -0.214)
+  "guardare con time frame a 30 minuti l'EMA a 60 per capire se fa da resistenza o no,"
+
+[1:33-1:37] (confidence: -0.214)
+  "perché spesso lo fa. In questo caso l'ha sporcato, qua stiamo parlando di bitcoin, quindi"
+
+[1:37-1:45] (confidence: -0.273)
+  "andato oltre, non ha fatto da tappo, ha comunque alla fine ha avuto la meglio la 60 e poi è"
+
+[1:45-1:51] (confidence: -0.273)
+  "andato giù e infatti stamattina. Però infatti stamattina ho già fatto uno short su ETH,"
+
+[1:51-1:55] (confidence: -0.273)
+  "a proposito di ETH. Infatti prima cosa ho guardato, ho visto il daily, aspetta andiamo a vedere"
+
+[1:55-2:00] (confidence: -0.273)
+  "il daily di bitcoin, prima cosa che ho fatto stamattina, sono svegliato, ho visto questa"
+
+[2:00-2:06] (confidence: -0.273)
+  "candela di ieri, chiusura candela con hammer, un grandissimo recupero. Allora è importante"
+
+[3:32-3:41] (confidence: -0.221)
+  "a 30 minuti, quindi c'era sia una configurazione short che long. Long bastava entrare qua"
+
+[3:41-3:51] (confidence: -0.221)
+  "e short invece sono entrato esattamente dove c'è questa linea. E poi dopo ho chiuso qua"
+
+[3:51-4:05] (confidence: -0.273)
+  "giù ai 10. Adesso, quindi, è uguale. Quindi se mi va a ritestare i minimi, già addirittura"
+
+[4:05-4:13] (confidence: -0.273)
+  "qua si può iniziare con un nuovo short. Altrimenti segnando di nuovo a testare qua, possiamo"
+
+[4:13-4:19] (confidence: -0.273)
+  "avere spazio e magari mi fa una configurazione non di botto, ma mi va a far vedere che c'è"
+
+[4:19-4:24] (confidence: -0.248)
+  "una resistenza e poi dopo lo va a rompere, possiamo andare long. E abbiamo spazio, con"
+
+[4:24-4:30] (confidence: -0.248)
+  "il 30 minuti abbiamo tanto spazio perché possiamo arrivare dai 24 alle 36, si può"
+
+[4:30-4:38] (confidence: -0.248)
+  "arrivare a 2005. Quindi da 2004 alle 36 c'è spazio fino a 2005 rimanendo sempre in un"
+
+[4:38-4:44] (confidence: -0.248)
+  "trend negativo. Finché siamo sotto l'EMA 60 del time frame a 30 minuti siamo in negativo."
+
+[5:08-5:15] (confidence: -0.288)
+  "candela. Quindi è una roba molto lenta. E ha tantissima importanza. Infatti, me lo avete"
+
+[5:16-5:22] (confidence: -0.288)
+  "chiesto, ma come che citi sempre il time frame a 30 minuti? Proprio perché ha una importanza"
+
+[5:22-5:28] (confidence: -0.288)
+  "fondamentale nei cambi di trend. E puoi andare a vedere i rimbalzi fin dove al massimo possono"
+
+[5:28-5:35] (confidence: -0.288)
+  "arrivare. Poi, in questo caso di perfezione. Guardate la perfezione di questa linea. La"
+

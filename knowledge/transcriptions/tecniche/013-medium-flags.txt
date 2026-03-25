@@ -1,0 +1,59 @@
+# Low-confidence segments for: 013_TECNICA_DI_TRADING_EMA_223_Ecco_perche_mi_piace.mp3
+# Total flagged: 18
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.52)
+  "Ciao traders, siete su Scapin'theBull. Oggi parliamo dell'EMA 223. Sigla!"
+
+[0:54-1:00] (confidence: -0.187)
+  "viene fuori dall'EMA 200, ovviamente, no? Che si usa nei mercati finanziari non solo."
+
+[1:00-1:10] (confidence: -0.187)
+  "Io uso appunto sui mercati finanziari la 5, la 10, la 50 e basta. Però in tantissimi"
+
+[1:10-1:16] (confidence: -0.187)
+  "uso ancora la 200. Adesso vi spiego anche perché io non l'ho mai usato, perché non è un qualcosa"
+
+[1:16-1:23] (confidence: -0.187)
+  "che ho mai cercato di usare. E poi, niente, sulle cripto invece 5, 10 e la 60 al posto la 50,"
+
+[5:02-5:07] (confidence: -0.233)
+  "nessuno, vedrai che si è andato a ricercare se lo sta usando qualcuno è solo perché ha visto i miei"
+
+[5:07-5:11] (confidence: -0.233)
+  "video, non lo usa nessuno. Allora tutti sono fissati che devono usare quello che leggono,"
+
+[5:11-5:15] (confidence: -0.233)
+  "quindi se leggono in un libro che tutti usano quelle medie li, devi usare. Invece quel fatto"
+
+[5:15-5:22] (confidence: -0.233)
+  "che io non ho letto i libri non sono influenzabile e poi sono una testa dura, quindi io vado avanti."
+
+[5:22-5:28] (confidence: -0.233)
+  "Cioè se vedo il ragionamento, tipo la 5-10 mercati azionari perfezione, mercato cripto perfezione,"
+
+[14:05-14:10] (confidence: -0.171)
+  "una bomba, vedrete, quando vi spiegherò le regole e cosa cercare, anche chi non ha esperienza di"
+
+[14:10-14:17] (confidence: -0.171)
+  "trading riuscirà ad aiutare a far parte di questa stalla operativa, ok? fidatevi, il video sarà"
+
+[14:17-14:24] (confidence: -0.171)
+  "fatto oriente bene, e io ho già visto fra l'altro, uomini e donne del gruppo che non hanno esperienza"
+
+[14:24-14:30] (confidence: -0.171)
+  "di trading tirar fuori delle segnalazioni pazzesche, forse a loro insaputa, ma comunque delle robe"
+
+[14:30-14:36] (confidence: -0.227)
+  "pazzesche, quindi questa stalla operativa sarà una bomba ragazzi, e sono veramente molto contento,"
+
+[14:36-14:44] (confidence: -0.227)
+  "non credevo tanto nel discorso comunità perché quando vai nei gruppi, quando vi fai due risate,"
+
+[14:44-14:51] (confidence: -0.227)
+  "vado nei gruppi di borsa, di cripto, eccetera, e fa ridere, cioè, sono cose ridicole proprio,"
+
+[14:51-14:58] (confidence: -0.227)
+  "cioè, strafottenza, spam, cretini che dicono qualsiasi minchiata che vi passa per la testa,"
+

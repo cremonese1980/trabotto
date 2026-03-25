@@ -1,0 +1,158 @@
+# Low-confidence segments for: 010_Trading_usando_TF_30_min_su_DYDX_e_COTI_grazie_ai_segnali_BULL_BOT_SUPER_TRICKS_PER_SPOT.mp3
+# Total flagged: 51
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.509)
+  "Ciao trader, state su Scalper in the Bull. Analisi tecnica di due trade grazie al bullbot,"
+
+[0:07-0:16] (confidence: -0.509)
+  "quindi tutto spot sul bullbot e qualche trick per spot. Sigla!"
+
+[0:30-0:59] (confidence: -0.245)
+  "Allora, qua siamo su spot ovviamente, il mitico spot. Volevo definire bene il discorso"
+
+[0:59-1:04] (confidence: -0.193)
+  "che il bullbot ha tutto spot e quindi molti vanno detto, tantissimi mi avete detto e quindi"
+
+[1:04-1:10] (confidence: -0.193)
+  "quelli che erano su futurus non ci sono? Allora, non esiste qualcosa su futurus che non sia su spot."
+
+[1:10-1:19] (confidence: -0.193)
+  "Spot è l'intero mercato, tutto il mercato. Futurus prendeva quelli più liquidi, quindi con i volumi"
+
+[1:19-1:27] (confidence: -0.193)
+  "più alti e li trasformava in futurus o futures perpetui, ok? Quindi ovviamente deve esserci"
+
+[1:27-1:34] (confidence: -0.194)
+  "su spot. Se non ci fosse su spot non potrebbe mai esserci su futurus, ok? Quindi avendo preso"
+
+[1:34-1:40] (confidence: -0.194)
+  "tutto spot c'è tutto, qualsiasi cosa, futurus compreso, futurus è solo una piccola parte di spot,"
+
+[1:40-1:44] (confidence: -0.194)
+  "ok? Chiaro questo? Se no scrivetelo nei commenti che ve lo rispego venti volte, non c'è nessun"
+
+[1:44-1:52] (confidence: -0.194)
+  "problema. Sono qua per questo. Allora, quindi siamo in spot, allora io ormai sono mentalità che"
+
+[1:53-1:59] (confidence: -0.307)
+  "ok? Quindi cosa ho fatto? Subito ho comprato bnb, ovviamente non volendo holdare ho comprato"
+
+[1:59-2:06] (confidence: -0.307)
+  "quantità piccole, ovviamente è tutto relativo, io ho comprato 200 usdt e così può anche corollare,"
+
+[2:06-2:13] (confidence: -0.307)
+  "non mi affera niente, comunque speriamo di no, però così ho il 25% di sconto, quindi non più"
+
+[2:13-2:23] (confidence: -0.206)
+  "0.1 ma 0.075 è una bella differenza e in più, e se io non ho usato il mio referral, ma se no avrei"
+
+[2:23-2:28] (confidence: -0.206)
+  "avuto un ulteriore risconto, voi avendo lo usato o quello di qualcun altro avete un ulteriore risconto"
+
+[2:28-2:35] (confidence: -0.206)
+  "anche su quello, quindi comunque ricordatevi che fees sono top anche su spot e quindi questo ho"
+
+[2:35-2:40] (confidence: -0.206)
+  "fatto. Poi cosa ho fatto? Ho imparato qualche trick, ok? Più tardi ve lo faccio vedere. Prima vi"
+
+[3:32-3:41] (confidence: -0.154)
+  "livello era all'interno dello shimano, ma avendo avuto questo livello che era sempre lo stesso,"
+
+[3:41-3:46] (confidence: -0.154)
+  "ok? C'era un livello pari, quindi bellissimo, ho sfruttato quello per anticipare il break out,"
+
+[3:46-3:52] (confidence: -0.154)
+  "quindi semplicemente ho messo un ordine condizionato, ok? Uno stop limit, facile,"
+
+[3:52-3:56] (confidence: -0.154)
+  "metti il prezzo in cui deve scattare e poi il prezzo massimo che sei disposto,"
+
+[5:14-5:21] (confidence: -0.31)
+  "Questo è Koti, Koti ho comprato a 0,55 quindi questo livello giallo ho venduto,"
+
+[5:21-5:32] (confidence: -0.31)
+  "ho appena tornato in bicicletta, quindi ho comprato 9.963 euro, venduto Koti a 10.426,"
+
+[5:32-5:39] (confidence: -0.31)
+  "guadagno è 463, con SDT, ok? Durante il giro in bici, spettacolare. Poi cosa ho fatto? Ho guardato"
+
+[6:35-6:42] (confidence: -0.167)
+  "su spot si può usare. Perché non si può usare con futures? Perché con futures ti viene liquidato,"
+
+[6:42-6:48] (confidence: -0.167)
+  "soprattutto se usi l'eve del 10 o del 20 o superiori, non se ne parla proprio, ma stando"
+
+[6:48-6:54] (confidence: -0.167)
+  "in modalità spot, ormai tanto mi fido del trend, io so leggere benissimi grafici e imparerete anche"
+
+[6:54-6:58] (confidence: -0.167)
+  "voi a leggere benissimi grafici, fatto quello, inserite, andate a fare un giro e poi quando"
+
+[6:58-7:03] (confidence: -0.167)
+  "tornate guardate, ovviamente lo stop ci deve essere, dovete individuare livelli molto forti,"
+
+[7:55-8:00] (confidence: -0.249)
+  "cose magiche, ok? Voi dovete essere curiosi, sperimentare, guardare, ci è scritto scorciatoia,"
+
+[8:00-8:04] (confidence: -0.249)
+  "pensa, chissà cosa vuole dire scorciatoia, andiamo a vedere, scorciatoia significa facendo le cose"
+
+[8:04-8:11] (confidence: -0.249)
+  "molto veloce, quindi rendiamo spot intelligente, compra con un click, interessante no? Comprare con"
+
+[8:11-8:19] (confidence: -0.249)
+  "un click, bene, ho scritto importo fisso, ho selezionato importo fisso, quanto? 10.000, ok? Con F2,"
+
+[9:06-9:13] (confidence: -0.165)
+  "metto a stavettere 25, facile no? 21 è qua, 25 è qua, cosa significa? Che abbiamo fretta,"
+
+[9:13-9:18] (confidence: -0.165)
+  "clicchi F2, in automatico ti mette il tuo porto, ovviamente può essere 50 euro, 100 euro,"
+
+[9:18-9:24] (confidence: -0.165)
+  "e in automatico ti fa il calcolo su questo livello, quindi se metti 25 ti mette il quinto livello,"
+
+[9:24-9:28] (confidence: -0.165)
+  "quindi siete sicuri che potete riuscire a comprare velocemente, che figata è, dopo lo andiamo a"
+
+[9:28-9:35] (confidence: -0.165)
+  "provare, e poi ho fatto questo per comprare, per vendi cosa ho messo? Percentuale 100%, perché?"
+
+[10:03-10:07] (confidence: -0.249)
+  "scorciatoia è bellissima, molto intelligente, quindi vendi con un click, quindi percentuale 100%,"
+
+[10:07-10:18] (confidence: -0.249)
+  "quindi siete sicuri. Prezzo, compra 2, ok? Comprà 2, cosa significa? Mi va al secondo livello,"
+
+[10:18-10:24] (confidence: -0.249)
+  "quindi vendi con un click, mi va a compra 2, quindi va qua, 056, quindi io cliccando in"
+
+[10:24-10:30] (confidence: -0.249)
+  "automatico lì e poi vado su vendi, a posto, ok? Adesso andiamo a vedere, avete capito? Facile,"
+
+[11:21-11:28] (confidence: -0.218)
+  "quindi andiamo su qualcosa che ho, cioè io ho bnb, andiamo su spazio e cosa fa? Vedi? Mi prende in"
+
+[11:28-11:36] (confidence: -0.218)
+  "automatico i 100 usdt, quindi tutto quello che ho di bnb e mi le mette in vendita al 100%, non è una"
+
+[11:36-11:43] (confidence: -0.218)
+  "figata? Mettiamo che io avesse voluto comprare, avesse voluto comprare, mettiamo un prezzo alto a"
+
+[12:28-12:34] (confidence: -0.182)
+  "in automatico mi va là, hai visto che velocità? Quindi io ero in compra, gli ho comprati,"
+
+[12:34-12:39] (confidence: -0.182)
+  "velocemente voglio vendere, spazio, tutto quello che ho in vendita, velocissima sta cosa qua,"
+
+[12:39-12:46] (confidence: -0.182)
+  "che figata, che figata, spot number one. Bene, allenatevi, usate i tasti che volete,"
+
+[12:46-12:51] (confidence: -0.182)
+  "allenatevi ma questa è una bomba, molto interessante, ok? Continuerò con queste"
+
+[12:51-12:56] (confidence: -0.182)
+  "pilloline, quindi questo è un video molto veloce, però continuerò con queste pilloline,"
+

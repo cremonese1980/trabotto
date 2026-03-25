@@ -1,0 +1,134 @@
+# Low-confidence segments for: 030_La_Tecnica_del_CAVALLO_PAZZO_e_avere_tanta_PAZIENZA_Tutorial_ps_Tanti_Auguri.mp3
+# Total flagged: 43
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:28] (confidence: -0.69)
+  "Ciao trader siete su Skype in the Bull buon Natale a tutti."
+
+[0:28-0:35] (confidence: -0.317)
+  "25 dicembre e questa era la locandina che ho messo su Telegram dove io sarei questo il"
+
+[0:35-0:44] (confidence: -0.317)
+  "Babbo Bull Natale con tutte le richieste delle shitcoin, il to the moon, il buy the dip eccetera"
+
+[0:44-0:50] (confidence: -0.317)
+  "eccetera dove tutti i giorni non hanno a spiegare che non si usa la tecnica del buy the dip,"
+
+[0:50-0:57] (confidence: -0.317)
+  "non si comprano le cose a caso, non esiste il to the moon, bisogna sempre seguire le regole,"
+
+[2:14-2:21] (confidence: -0.142)
+  "tecniche quando li usiamo con dei titoli che si stanno muovendo poco non ci contentiamo, non"
+
+[2:21-2:26] (confidence: -0.142)
+  "vendiamo subito ed è più facile quindi chiudere in perdita o comunque iniziare a holdare perché vedo"
+
+[2:26-2:31] (confidence: -0.142)
+  "che chi non riesce a chiudere le posizioni poi dopo spera e quando uno spera inizia a holdare e non va"
+
+[2:31-2:36] (confidence: -0.142)
+  "assolutamente bene ok? Se vogliamo fare un mestiere non bisogna holdare e non bisogna sperare. Invece"
+
+[2:36-2:41] (confidence: -0.142)
+  "quando c'è qualcosa che si muove tanto aspetti la conformazione, un terzo tocco, un quarto tocco,"
+
+[6:12-6:16] (confidence: -0.197)
+  "generali che ci sono nella Wolf Family ma quando lavoriamo su qualcosa che appunto è impazzito"
+
+[6:16-6:22] (confidence: -0.197)
+  "che comunque fa dei movimenti grandi è più facile fare trading perché semplicemente è più"
+
+[6:22-6:26] (confidence: -0.197)
+  "facile fare a contentarsi e è più facile che possa fare i breakout che vogliamo noi o i movimenti"
+
+[6:26-6:30] (confidence: -0.197)
+  "che noi vogliamo quindi noi quando facciamo l'entrata vogliamo fare i movimenti se lavoriamo su qualcosa"
+
+[6:30-6:37] (confidence: -0.197)
+  "che fa il più 10% quando fa un breakout se fa l'1% graficamente sembra enorme ma in realtà non ci"
+
+[7:25-7:33] (confidence: -0.173)
+  "non ti darà mai questa soddisfazione quindi è importante aspettare con calma quelle giornate"
+
+[7:33-7:40] (confidence: -0.173)
+  "in cui non c'è niente o ci sono dei movimenti piccoli non buttiamo soldi facciamo altro non c'è"
+
+[7:40-7:45] (confidence: -0.173)
+  "bisogno di fare trading tutti i giorni ok non c'è bisogno infatti questo sarebbe più che altro più"
+
+[7:45-7:49] (confidence: -0.173)
+  "che la tecnica del cavallo pazzo sarebbe la tecnica di chi è più paziente quindi quando"
+
+[7:50-7:55] (confidence: -0.275)
+  "per esempio questo io ieri non volevo lavorare ieri sono svegliato non mi era"
+
+[7:55-7:58] (confidence: -0.275)
+  "anche accorto che non ho visto il calendario il piazzafare era chiuso quindi ho detto ok non"
+
+[7:58-8:06] (confidence: -0.275)
+  "faccio niente invece sono stato bravo fino alle ore 21 e 22 dove poi è scoppiato occhi poi cosa"
+
+[8:06-8:11] (confidence: -0.275)
+  "fai? hai avuto per forza a fare delle operazioni candela di riposo ingresso poi vado a strappare"
+
+[8:11-8:15] (confidence: -0.275)
+  "poi ho chiuso subito perché comunque ero un lettamente ritardo poi è andato molto più"
+
+[8:40-8:47] (confidence: -0.188)
+  "il panico poi questo colpo bello questo bel 6% ovviamente era come quello di stamattina invece"
+
+[8:47-8:54] (confidence: -0.188)
+  "di avere la rotura del 223 questa ha fatto la rotura della 60 terzo tocco 1 2 3 via terzo"
+
+[8:54-8:59] (confidence: -0.188)
+  "ovviamente parte fantastico qua sono addirittura sono riuscito ad entrare prima che andasse a rompere"
+
+[8:59-9:03] (confidence: -0.188)
+  "il livello perché andava verso il terzo la terza rotura grazie alle candeline piccole ho fatto"
+
+[9:03-9:09] (confidence: -0.188)
+  "l'ingresso e poi guarda ho fatto un 6% fossimo su un titolo che era più 10 non avrebbe fatto"
+
+[12:11-12:17] (confidence: -0.191)
+  "subito sono tre candele daily allo stesso livello se è un giorno morto questa candela qua del daily"
+
+[12:17-12:21] (confidence: -0.191)
+  "potrebbe andare a fare uno stacco molto grande ok? qua quindi possiamo andare a lavorare su qualcosa"
+
+[12:21-12:27] (confidence: -0.191)
+  "che non sta facendo un movimento grande ma che lo potrebbe fare perché stiamo andando sul daily"
+
+[12:27-12:33] (confidence: -0.191)
+  "guardate iota, guardate che spettacolo qua un livello già tre candele piccole una volta che qua strappa"
+
+[12:33-12:39] (confidence: -0.191)
+  "se troviamo un livello al time frame un minuto che coincide con i massimi del giorno prima o comunque"
+
+[14:00-14:09] (confidence: -0.124)
+  "studiare ok? promettetemelo ok? nel 2022 vi voglio voglio che sfruttate questo mindset quando"
+
+[14:09-14:12] (confidence: -0.124)
+  "c'è il cavallo pazzo lavorate quando non c'è andate a cercare nei daily qualcosa che lo potrebbe"
+
+[14:12-14:19] (confidence: -0.124)
+  "diventare o riposate e o riposate riposate studiando quindi ripassate i video ripassate"
+
+[14:19-14:24] (confidence: -0.124)
+  "tutte le tecniche così quando c'è il cavallo pazzo si guadagna e si mette da parte i soldi ok?"
+
+[15:14-15:24] (confidence: -0.159)
+  "2022 fra l'altro il 31 alle ore 20 farò il discorso alla family ok? per capire quello che"
+
+[15:24-15:31] (confidence: -0.159)
+  "sarà quello che saranno gli obiettivi del 2022 poi dopo faremo un'assemblea generale dove voteremo"
+
+[15:31-15:38] (confidence: -0.159)
+  "tutti sulla direzione e su nuove idee ma il 31 parlerò io e vi spiegherò quello che io vorrei"
+
+[15:38-15:44] (confidence: -0.159)
+  "fare quella è la direzione in cui vorrei che questa famiglia andasse e poi dopo fare un'assembly"
+
+[15:44-15:47] (confidence: -0.439)
+  "a dove ci confronteremo ciao"
+

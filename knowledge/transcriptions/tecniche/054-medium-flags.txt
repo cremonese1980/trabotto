@@ -1,0 +1,203 @@
+# Low-confidence segments for: 054_TECNICA_DI_TRADING_VIAGRA_Le_Sfumature_per_ingressi_Short_Long_Tutorial.mp3
+# Total flagged: 66
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:04] (confidence: -0.244)
+  "Ciao Traders, siete su Skyping the Bull, vedete che ci sono io, ma c'è anche Paolo, adesso"
+
+[0:04-0:05] (confidence: -0.244)
+  "vi saluta."
+
+[0:05-0:06] (confidence: -0.244)
+  "Ciao Traders."
+
+[0:06-0:09] (confidence: -0.244)
+  "Che ho trovato in un parco."
+
+[0:09-0:16] (confidence: -0.244)
+  "Niente, no, era uno della famiglia conosciuta nell'ultimo meeting, che mi aiuterà per spiegarvi"
+
+[0:16-0:18] (confidence: -0.244)
+  "le 50 sfumature di Viagra."
+
+[0:18-0:25] (confidence: -0.244)
+  "In realtà andremo nello specifico nel mio ingresso preferito del Viagra, sia long che"
+
+[0:25-0:29] (confidence: -0.244)
+  "short, perché sapete che comunque mercatazionario Forex si può andare anche short, anche mondo"
+
+[2:18-2:23] (confidence: -0.237)
+  "viagra, cosa che puoi citare il Viagra e cos'è eccita nel mercato, il mercato noi"
+
+[2:23-2:29] (confidence: -0.237)
+  "usando l'EMA abbiamo l'EMA che continua a salire o continua a scendere sotto una certa"
+
+[2:29-2:36] (confidence: -0.237)
+  "EMA e diventa Viagra, si muove seguendo quella linea lì, quella media mobile e quindi ci"
+
+[2:36-2:41] (confidence: -0.237)
+  "fa da supporto, quindi praticamente anche senza guardare il book noi stiamo capendo"
+
+[2:41-2:45] (confidence: -0.237)
+  "che c'è un qualcosa, quindi questo funziona, perché so già come lo chiedete, per qualsiasi"
+
+[2:46-2:50] (confidence: -0.262)
+  "al mercato, qualsiasi cosa, anche le banane al mercato, qualsiasi Forex, Indici, Piazza"
+
+[2:50-2:56] (confidence: -0.262)
+  "Affari, Nasdaq, qualsiasi cosa, Cripto, qualsiasi cosa, sempre tutto uguale, quindi abbiamo"
+
+[2:56-3:00] (confidence: -0.262)
+  "le nostre EMA, abbiamo la pulizia, quindi qua sta comandando, quindi qua è uno che"
+
+[3:00-3:06] (confidence: -0.262)
+  "è, è semplicemente uno che ha tantissimo da vendere, tantissimo e quindi cosa fa?"
+
+[3:06-3:12] (confidence: -0.262)
+  "Per avere più volumi, quindi riuscire a vendere più possibile, lui vi fa giocare sotto una"
+
+[6:22-6:25] (confidence: -0.281)
+  "quindi, il massimo che si poteva pensare era l'ingresso da qua a là, da lì bisogna"
+
+[6:25-6:30] (confidence: -0.281)
+  "lavorare sulle proporzioni e capire se questo paga abbastanza per poter farci entrare, se"
+
+[6:30-6:36] (confidence: -0.281)
+  "questo si stava operando in spot nel mondo cripto e questo è lo 0-2% non comiene, ok?"
+
+[6:36-6:41] (confidence: -0.281)
+  "Stiamo parlando invece del 2% da qua a qua, ottimo perché già ci possiamo uscire, non"
+
+[6:41-6:45] (confidence: -0.281)
+  "so, di 1.5 e va bene, se stiamo operando con le leve ovviamente cerchiamo di capire le"
+
+[6:45-6:49] (confidence: -0.281)
+  "proporzioni perché con le leve anche uno 0-1% può andare bene se siamo a leva 10, è"
+
+[7:37-7:43] (confidence: -0.171)
+  "un viagra che comanda da quando era leva 60, è andato giù, ha fatto il suo livello,"
+
+[7:43-7:47] (confidence: -0.171)
+  "questo era il livello trigger, ha chiuso poi sotto ma dopo avevamo il supporto, ok?"
+
+[7:47-7:53] (confidence: -0.171)
+  "Quindi attenzione, dipende da dove rompe, qua potevamo già vedere un ingresso di anticipo,"
+
+[7:53-7:57] (confidence: -0.171)
+  "qua potevamo già vedere l'ingresso di anticipo, questo era il livello trigger, questo era"
+
+[7:57-8:01] (confidence: -0.171)
+  "il livello di anticipo, da questo ingresso qua bastava semplicemente, vedete che poi"
+
+[8:01-8:07] (confidence: -0.236)
+  "era praticamente leva 10, quindi dopo non aspettiamo che chiuda sotto questo livello"
+
+[8:07-8:11] (confidence: -0.236)
+  "ma abbiamo leva 10 che è leggermente sotto, quindi quello dopo quello che deve comandare,"
+
+[8:11-8:14] (confidence: -0.236)
+  "quindi una volta che facciamo una rottura della 10 quello che deve comandare dopo leva"
+
+[8:14-8:16] (confidence: -0.236)
+  "10, quindi non deve assolutamente chiudere sotto."
+
+[8:16-8:22] (confidence: -0.236)
+  "Da qua ovviamente se parliamo di antiincrocio e vediamo che si sta vicineando alla leva"
+
+[8:22-8:28] (confidence: -0.236)
+  "200 e alla leva 60 possiamo capire che qua ci può essere un ottimo antiincrocio, andate"
+
+[8:54-8:59] (confidence: -0.251)
+  "Questo caso qua abbiamo avuto candela di rottura, una candela di riposo, livello trigger,"
+
+[8:59-9:02] (confidence: -0.251)
+  "non deve più chiudere a quel livello lì ma dopo diventa leva 10, quindi anche se è"
+
+[9:02-9:07] (confidence: -0.251)
+  "più in alto, anche qua, se chiudeva qua sotto dobbiamo uscire anche se eravamo in gain,"
+
+[9:07-9:10] (confidence: -0.251)
+  "si usciva anche dopo mettere stop a zero, non ha nessun senso lo stop a zero."
+
+[9:10-9:12] (confidence: -0.251)
+  "Leva 10 dopo diventa quello."
+
+[9:12-9:16] (confidence: -0.251)
+  "Abbiamo voluto fare l'antiincrocio, sì, quindi o leva 10 diventa il nostro stop, l'antiincrocio"
+
+[9:16-9:17] (confidence: -0.251)
+  "va a nostro favore, si chiude."
+
+[9:17-9:21] (confidence: -0.251)
+  "Cari una volta che fa lo spike sopra l'antiincrocio siamo a posto."
+
+[11:37-11:42] (confidence: -0.263)
+  "però il suo target naturale era qua, poi fra l'altro io magari mi aspettavo che candida"
+
+[11:42-11:47] (confidence: -0.263)
+  "di riposo, poi qua mi vada a spaccare, se qua mi vada a spaccare pesante magari dico"
+
+[11:47-11:52] (confidence: -0.263)
+  "ok, all'EMA 50 ci vuole andare, non andavo magari fino qua, però magari fino qua il"
+
+[11:52-11:57] (confidence: -0.263)
+  "mio target poteva essere ancora più basso, vedendo che faceva fatica a scendere, sono"
+
+[11:57-12:03] (confidence: -0.263)
+  "tentato, però stesso discorso, quindi andare short con l'EMA 5 in comando, a me piace"
+
+[12:59-13:03] (confidence: -0.219)
+  "bitcoin che è andato a crollare, bellissimo adesso, sta facendo un bel livello per andare"
+
+[13:03-13:09] (confidence: -0.219)
+  "a rompere la 10, candela di riposo, adesso dovrebbe andare a fare nuovi minimi, vediamo,"
+
+[13:09-13:13] (confidence: -0.219)
+  "bello anche se va a fare una finta, quindi va a fare nuovi minimi, fa la finta, chiude"
+
+[13:13-13:16] (confidence: -0.219)
+  "sopra, questo è ottimo perché dentro un bud è invalidato, possiamo fare il nostro"
+
+[13:16-13:23] (confidence: -0.219)
+  "ingresso anticipato del Viagra, ok? Edu invece, questo è un bellissimo Viagra, dove non c'è"
+
+[13:23-13:27] (confidence: -0.219)
+  "nessun ingresso, ok? Qua è stato un ottimo ingresso, avevamo spazio fino a direttura"
+
+[13:27-13:31] (confidence: -0.225)
+  "all'ENA Daily, questa è una bellissima laterizzazione dove potevamo avere il nostro"
+
+[13:31-13:36] (confidence: -0.225)
+  "ingresso, questo è un bellissimo livello di laterizzazione, rottura della 10 e avevamo"
+
+[13:36-13:46] (confidence: -0.225)
+  "spazio, quindi qua pagava, e come se pagava? Solo qua al 4%, quindi ottimo, qua pagava,"
+
+[13:46-13:52] (confidence: -0.225)
+  "ma non ha mai rotto, ok? Poi potevamo avere un anticipo con un altro rottura della 10,"
+
+[13:52-13:57] (confidence: -0.225)
+  "col cambio colore, qua poteva avere un leggero anticipo, ma non l'ha mai rotto e niente,"
+
+[15:47-15:52] (confidence: -0.169)
+  "assolutamente quando va a fare l'incrocio, quando ha già incrociato, quindi o facciamo l'antiincrocio,"
+
+[15:52-15:59] (confidence: -0.169)
+  "ma quando si avvicina che ha già fatto l'incrocio, quella volta lì, la prima volta che fa l'incrocio,"
+
+[15:59-16:06] (confidence: -0.169)
+  "lasciate stare, quella è la finta top per under short, ok? Quindi attenzione, quindi ha fatto un"
+
+[16:06-16:15] (confidence: -0.169)
+  "lungo rialzo, ha rotto lema 60 e la 200, è andato sotto, fa il primo rimbalzo, dopo che ha fatto"
+
+[17:09-17:17] (confidence: -0.227)
+  "non lo è lasciate stare, buttate via solo fi, ok? Posto? Ok, grazie Paolo, grazie a voi,"
+
+[17:17-17:20] (confidence: -0.227)
+  "iscrivetevi al canale, mettete il like, iscrivetevi nei commenti, poi ne possiamo"
+
+[17:20-17:24] (confidence: -0.227)
+  "parlare a casa Bullo, ne possiamo parlare in un prossimo video. Ciao a tutti!"
+

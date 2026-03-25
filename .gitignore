@@ -4,6 +4,8 @@ env.example
 *.session
 *.session-journal
 
+whisper-env
+
 target/
 !**/src/main/**/target/
 !**/src/test/**/target/

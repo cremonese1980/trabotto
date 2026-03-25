@@ -1,0 +1,38 @@
+# Low-confidence segments for: 007_Live_Trading_+4.22%_+328_usdt_in_meno_di_2_minuti_su_QUICK_BINANCE_Analisi_nei_dettagli.mp3
+# Total flagged: 11
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.59)
+  "Ciao a tutti e benvenuti su Sculpting Bull. Raggiunti 500 like quindi prossimo video di"
+
+[0:05-0:09] (confidence: -0.59)
+  "live trading su Quick Con Analysing. Sigla."
+
+[2:42-2:45] (confidence: -0.691)
+  "quindi"
+
+[2:47-2:55] (confidence: -0.691)
+  "ha già fatto l'eseguito quindi dobbiamo rallentare ecco"
+
+[4:16-4:23] (confidence: -0.192)
+  "fatto ok? Quindi questa candela deve per forza attenzione per forza deve chiudere"
+
+[4:23-4:27] (confidence: -0.192)
+  "sopra alla 10 ok? In realtà dovrebbe proprio accelerare ma l'importante è che"
+
+[4:27-4:33] (confidence: -0.192)
+  "chiuda sopra la 10 ok? Perché qua l'ha rotto adesso questo deve accelerare"
+
+[4:34-4:40] (confidence: -0.192)
+  "quindi se va sotto comunque stanno entrando dei pezzi qua non c'è"
+
+[4:40-4:45] (confidence: -0.192)
+  "praticamente niente ok? Se va sotto l'importante è che non mi faccia"
+
+[11:16-11:22] (confidence: -0.323)
+  "di discorso di fine anno che sarà molto particolare quindi seguitelo iscrivetevi"
+
+[11:22-11:29] (confidence: -0.323)
+  "a youtube i due gruppi telegram e il fantastico mitico discord ciao"
+
