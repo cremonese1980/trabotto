@@ -1,0 +1,40 @@
+# Setup (una volta)
+cd ~/dev
+python3 -m venv whisper-env
+source whisper-env/bin/activate
+pip install openai-whisper yt-dlp
+
+
+source ~/dev/whisper-env/bin/activate
+cd ~/dev/trabotto
+python ingest/src/transcribe.py "URL" --model large
+
+
+
+Playlist NEOFITI
+https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
+python ingest/src/transcribe.py "https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY" --model medium
+
+video 1
+"https://www.youtube.com/watch?v=dEAtbzyaLcM&list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY&index=1"
+python ingest/src/transcribe.py "https://www.youtube.com/watch?v=dEAtbzyaLcM" --model medium
+CUDA_VISIBLE_DEVICES=-1 python ingest/src/transcribe.py "https://www.youtube.com/watch?v=dEAtbzyaLcM" --model large
+
+video 2
+https://www.youtube.com/watch?v=rVLZk680Uas&list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY&index=2
+python ingest/src/transcribe.py "https://www.youtube.com/watch?v=rVLZk680Uas" --model medium
+
+
+Playlist Tecniche di tranding
+https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
+
+video 1
+https://www.youtube.com/watch?v=Ad-s9vWQ53U&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=1
+https://www.youtube.com/watch?v=Ad-s9vWQ53U
+
+video 2
+https://www.youtube.com/watch?v=FTar9aXmBYs&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=2
+
+video 3
+https://www.youtube.com/watch?v=bEpWpvtJWDg&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=3
+

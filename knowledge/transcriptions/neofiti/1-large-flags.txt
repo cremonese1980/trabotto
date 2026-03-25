@@ -1,0 +1,35 @@
+# Low-confidence segments for: 0_E_FACILE_FARE_TRADING_Posso_guadagnare_fini_da_subito_Posso_lasciare_subito_il_mio_lavoro.mp3
+# Total flagged: 10
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:53-1:54] (confidence: -4.001)
+  "sono delle numeri grossi che non sono dei numeri grossi che non sono delle numeri grossi che"
+
+[1:54-2:00] (confidence: -4.001)
+  "ci dois per approcciare un po le contestazioni partecipati a questo cosa che vedete quale"
+
+[2:00-2:04] (confidence: -4.001)
+  "potrebbe non esistere questa cosa 서울 rapporti ti Vallahi stata occupato di"
+
+[2:04-2:11] (confidence: -4.001)
+  "l'immagine di valutazione imper Soft"
+
+[2:11-2:16] (confidence: -4.001)
+  "Sì e se punto comunque probabilmente stiamo cercando giusto l' counties"
+
+[2:16-2:21] (confidence: -4.001)
+  "poi quando viene presa da un subito per per docenti tra ma bene e ti demavola"
+
+[2:21-2:22] (confidence: -4.001)
+  "un sempre riportare la zosta fa un'attualità del vue 2 ci parla di cosa"
+
+[2:22-2:23] (confidence: -4.001)
+  "se farei un video se sarei un video non prendi una pista�ie"
+
+[2:23-2:23] (confidence: -4.001)
+  "un esempio ed eat echi veramente rock editor e così su è stato una sigla mamma piazza"
+
+[2:23-2:23] (confidence: -4.001)
+  "si spingono tutte queste fra le e anche chanone terre le regole poi si dipende la rè forza monica"
+
