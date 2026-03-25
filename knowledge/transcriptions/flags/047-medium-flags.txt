@@ -1,0 +1,137 @@
+# Low-confidence segments for: 047_Trading_usando_BITCOIN_come_indice_Tutorial.mp3
+# Total flagged: 44
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:26-0:31] (confidence: -0.232)
+  "guardare bitcoin, quando non è importante guardare bitcoin. Ah, poi l'altra cosa, bitcoin per noi è"
+
+[0:31-0:36] (confidence: -0.232)
+  "l'indice perché come capitalizzazione è molto più grosso di tutti gli altri, quindi usiamo quello"
+
+[0:36-0:42] (confidence: -0.232)
+  "come indice. Questo stesso ragionamento vale sui mercati azionari o sul foresco, o il che è. Io sui"
+
+[0:42-0:49] (confidence: -0.232)
+  "mercati azionari guardo sempre il nasdaq e quindi quelle stesse cose che sto dicendo di bitcoin,"
+
+[0:49-0:54] (confidence: -0.232)
+  "faccio lo stesso ragionamento guardando il nasdaq per quanto riguarda il mondo azionario."
+
+[1:19-1:25] (confidence: -0.227)
+  "minuti che era un viagra, l'operazione poi è stata questa qua, no è stata questa qua, eccolo qua,"
+
+[1:25-1:31] (confidence: -0.227)
+  "era un viagra, questa era il time frame 5 minuti e 30 era quello che avete visto prima. Ho fatto la"
+
+[1:31-1:36] (confidence: -0.227)
+  "candeletta piccola sui nuovi massimi, lo stop era 18 dollari, era lo spike più in alto e poi sono"
+
+[1:36-1:42] (confidence: -0.227)
+  "stato target. Però come era messo bitcoin perché c'è da fare un ragionamento? Allora andiamo a"
+
+[1:42-1:49] (confidence: -0.198)
+  "vedere l'orario. Allora quando bitcoin, innanzitutto perché il bull web ha solo tre linee quindi"
+
+[1:49-1:59] (confidence: -0.198)
+  "a orizzontali? Ha i massimi di ieri, lo zero daily quindi a che livello apre la candela nuova"
+
+[1:59-2:07] (confidence: -0.198)
+  "daily e i minimi di ieri perché sono i tre momenti trigger. Ecco bitcoin bisogna guardare"
+
+[2:07-2:13] (confidence: -0.159)
+  "quando è vicino a questi tre momenti trigger perché può fare degli scatti, ok? Può fare degli"
+
+[2:13-2:19] (confidence: -0.159)
+  "scatti importanti, vedete? Gli scatti importanti che possono rovinare quello che stiamo facendo noi"
+
+[2:19-2:26] (confidence: -0.159)
+  "se siamo contro questo trend, ok? Quindi è importantissimo sapere e vedere sempre cosa"
+
+[2:26-2:32] (confidence: -0.159)
+  "sta facendo bitcoin in questi tre livelli. Per esempio questa candela che ha fatto la rottura,"
+
+[6:54-7:01] (confidence: -0.134)
+  "guardate quando ok? Fate attenzione ai trade che state per fare quando bitcoin è vicino a questi"
+
+[7:01-7:08] (confidence: -0.134)
+  "tre livelli ok? E controllate se ci sono delle conformazioni a maggior ragione ok? Quindi questo"
+
+[7:08-7:15] (confidence: -0.134)
+  "già se bitcoin invece è in mezzo è in mezzo oppure in mezzo qua che non sta facendo niente e voi"
+
+[7:15-7:20] (confidence: -0.134)
+  "vedete qualcosa che va contro trend in quel caso lì ok? Cioè voi vedete qualcosa che sta andando"
+
+[7:20-7:27] (confidence: -0.204)
+  "sui massimi quindi un terzo tocco massimo e bitcoin è in mezzo qua quindi lontano dai massimi"
+
+[7:27-7:33] (confidence: -0.204)
+  "di giornata dai massimi di ieri lontano dal cambio colore dei li ottimo voi fate la vostra operazione"
+
+[7:33-7:38] (confidence: -0.204)
+  "avete semmafro verde ok? Perché questo lo cui è stato operando sta andando a fare i massimi bitcoin"
+
+[7:38-7:45] (confidence: -0.204)
+  "invece si trova in mezzo al nulla senza un livello trigger nelle vicinanze contro la direzione in cui"
+
+[10:20-10:27] (confidence: -0.162)
+  "sfruttare lo short quindi se vedo una conformazione di un probabile accelerazione short magari non"
+
+[10:27-10:33] (confidence: -0.162)
+  "vado a cercare il long ma vado a cercare i short così c'ho avantaggio ok? Vediamo se in questo"
+
+[10:33-10:38] (confidence: -0.162)
+  "momento qua in gli ultimi abbiamo qualcosa che invece ci può piacere come livello short ecco"
+
+[10:38-10:44] (confidence: -0.162)
+  "per esempio abbiamo questo livello qua che è un po bruttino perché qua era più basso ma se fosse"
+
+[10:44-10:47] (confidence: -0.162)
+  "stato un livello pari avevamo un terzo tocco short ecco questo sarebbe stato il nostro vantaggio che"
+
+[10:47-10:52] (confidence: -0.158)
+  "ci portava a fare i minimi di giornata quindi questo mi interessa perché bitcoin può fare quel"
+
+[10:52-10:57] (confidence: -0.158)
+  "terzo tocco short quindi dalla prossima candela nuova e questo soprattutto se mi va a triggarare"
+
+[10:57-11:03] (confidence: -0.158)
+  "il terzo tocco short bene qualsiasi mafro verde perché posso avere una conformazione che può"
+
+[11:03-11:09] (confidence: -0.158)
+  "andare short di bitcoin e una conformazione in questo momento che potrebbe anticipare quello short su"
+
+[11:09-11:15] (confidence: -0.158)
+  "bitcoin ok? Quindi molto interessante ecco qua per esempio ottimo livello su boots abbiamo livello"
+
+[11:40-11:46] (confidence: -0.156)
+  "ok questo più questo quindi so che bitcoin è vero potrebbe andare a fare questo livello short"
+
+[11:46-11:51] (confidence: -0.156)
+  "e questo mi sta già facendo il lavoro short che è short da praticamente un livello di due giorni"
+
+[11:51-11:57] (confidence: -0.156)
+  "se andiamo a vedere il daily questo è un livello bellissimo eccolo qua vedete faccio vedere in"
+
+[11:57-12:03] (confidence: -0.156)
+  "grande è un terzo tocco short daily quindi meraviglioso questo ok? Quindi il ragionamento"
+
+[12:03-12:10] (confidence: -0.262)
+  "che dovete fare questo primo video io lo voglio finire qua perché vado a leggere poi i commenti"
+
+[12:10-12:18] (confidence: -0.262)
+  "e se ci sono dei dubbi che è qua cercate di semplificare il più possibile semafro verde"
+
+[12:18-12:28] (confidence: -0.262)
+  "semafroso se ci sono dubbi vado a fare la parte 2 ok? ma intanto avete capito controllate questi"
+
+[12:28-12:33] (confidence: -0.16)
+  "livelli assolutamente massimi e minimi di ieri più anche il cambi colore e si sta facendo la"
+
+[12:33-12:39] (confidence: -0.16)
+  "conformazione a 30 minuti di una certa direzione dove potrebbe fare un'accelerazione noi dobbiamo"
+
+[12:39-12:44] (confidence: -0.16)
+  "sfruttare quella cosa lì ok? Fatemi sapere nei commenti ciao"
+

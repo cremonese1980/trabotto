@@ -1,0 +1,14 @@
+# Low-confidence segments for: 046_Gestione_STOP_LOSS_e_target_su_una_candela_Hammer_Live_Trade.mp3
+# Total flagged: 3
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:08-3:14] (confidence: -0.408)
+  "perché già il massimo di questa candela è trigger per il long quindi posso abbassarlo"
+
+[3:14-3:21] (confidence: -0.408)
+  "ancora di più ma perché inizialmente chiudere con le fee o avere anche un minimo di guadagno"
+
+[3:21-3:27] (confidence: -0.408)
+  "anche se vado in stop quindi zero stress no? quando apri così che stress hai"
+

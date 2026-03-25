@@ -1,0 +1,56 @@
+# Low-confidence segments for: 035_Take_Profit_Come_si_calcola_Rimbalzo_calcio_di_Rigore_Tutorial_completo_con_esempi_chiari.mp3
+# Total flagged: 17
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[5:22-5:24] (confidence: -0.419)
+  "perché"
+
+[5:27-5:33] (confidence: -0.419)
+  "c'è un bellissimo disegno da bloccare in chat"
+
+[5:35-5:41] (confidence: -0.419)
+  "e va bene allora e quindi praticamente ci basiamo sempre su quelle che sono"
+
+[5:41-5:46] (confidence: -0.419)
+  "andiamo a vedere andiamo a vedere GMT invece GMT cosa va fatto? Ha fatto una"
+
+[5:46-5:51] (confidence: -0.419)
+  "bellissima conformazione a 30 minuti questa è 30 questa è la lateritazione a 30"
+
+[8:37-8:40] (confidence: -0.456)
+  "allora vediamo di banna eccolo qua"
+
+[8:40-8:49] (confidence: -0.456)
+  "hai già bannato perfetto ok già bannato"
+
+[8:49-8:58] (confidence: -0.456)
+  "andrebbe poi cancellato ma"
+
+[14:29-14:43] (confidence: -0.518)
+  "ma che felpa hai addosso verde oro colori dello figo io amo il verde amore verde un po'"
+
+[14:43-14:51] (confidence: -0.518)
+  "tamaro forse però lei stare in casa per fare il treningo è un po' distrutto ma perché per la felpa"
+
+[23:27-23:33] (confidence: -0.33)
+  "parte vedo che molto più veloce ma vieni anche che ha bisogno sapere tirare bravo però questo è"
+
+[23:33-23:37] (confidence: -0.33)
+  "intanto cercate di capire cos'è un calcio di rigore questo è un calcio di rigore quindi intanto"
+
+[23:37-23:42] (confidence: -0.33)
+  "sapete che cosa è un calcio di rigore ovviamente non capita sempre in calci dei rigori non capita"
+
+[23:42-23:46] (confidence: -0.33)
+  "sempre quando ci sono bisogna uno sapere quando può essere un calcio di rigore e due quando"
+
+[23:46-23:56] (confidence: -0.135)
+  "poterli sfruttare poi l'altra cosa ragazzi se questo 685 mentre si avvicina si sposta"
+
+[23:56-24:03] (confidence: -0.135)
+  "indovinate scrivetelo nei commenti indovinate che cosa significa che cosa significa questi"
+
+[24:03-24:15] (confidence: -0.135)
+  "muri qua cioè sono validi o non sono validi ovviamente qualsiasi cosa che si muove ok"
+

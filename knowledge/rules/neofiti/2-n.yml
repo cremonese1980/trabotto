@@ -1,0 +1,51 @@
+video:
+  id: YT_BULL_PRINCIPIANTI_002
+  series: principianti
+  title: "Cos'è il book: domanda/offerta, prezzo e urgenza di acquisto o vendita"
+  video_index: 2
+  duration_minutes: 18
+
+entities:
+  - id: BULL_P_02_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    tags: [book, trigger, breakout]
+    source:
+      timecode: "12:29-13:09"
+    conditions:
+      - best_ask_price - best_bid_price > 0
+      - book_imbalance_changes_rapidly == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il movimento nasce da variazioni rapide tra proposte in acquisto e vendita sul book."
+    notes: "Regola usabile come filtro di microstruttura prima di valutare ingressi."
+
+  - id: BULL_P_02_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "12:15-12:58"
+    statement: "Il book rappresenta in tempo reale chi vende con urgenza e chi compra con urgenza."
+    rationale: "Aiuta il neofita a leggere correttamente la logica domanda/offerta."
+
+  - id: BULL_P_02_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, trend, beginner]
+    source:
+      timecode: "17:05-17:31"
+    statement: "Seguire la direzione dominante e le EMA consente di allinearsi al flusso del mercato."
+    rationale: "È un principio operativo generale ma senza soglie specifiche automatizzabili nel video."
+
+summary:
+  total_machine_executable: 1
+  total_context_only: 2
+  core_message: "Il video è didattico sul funzionamento del book: spiega come urgenza e quantità facciano muovere il prezzo. Le regole operative sono limitate e orientate al monitoraggio della liquidità."

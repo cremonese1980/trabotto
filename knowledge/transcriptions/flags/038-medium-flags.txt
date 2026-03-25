@@ -1,0 +1,95 @@
+# Low-confidence segments for: 038_DOVE_SONO_I_SOLDI_Check_List_prima_di_fare_un_Trade_per_evitare_le_finte.mp3
+# Total flagged: 30
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:53-0:58] (confidence: -0.225)
+  "quindi facciamo senza. Andiamo in classifica, vediamo che c'è un auto, c'è un autobus,"
+
+[0:58-1:03] (confidence: -0.225)
+  "allora c'è auto, ok? C'è un top in classifica, andiamo a vedere che succede. Prima cosa,"
+
+[1:03-1:10] (confidence: -0.225)
+  "quindi checklist, prima cosa mettiamo daily, perché dobbiamo capire in che situazione è,"
+
+[1:10-1:16] (confidence: -0.225)
+  "cioè cosa è successo, noi ci ha appena svegliato e non sappiamo nulla, ok? Cos'è successo qua?"
+
+[1:16-1:23] (confidence: -0.225)
+  "Togliamo eventualmente riferimenti, bene, allora abbiamo fatto un mega candelone mentre dormivamo,"
+
+[1:46-1:54] (confidence: -0.213)
+  "E innanzitutto, già da qua, capiamo che se troviamo una conformazione, non siamo distanti"
+
+[1:54-2:00] (confidence: -0.213)
+  "da Lema, quindi se fosse già qua su, vi direi ragazzi, già qua lasciate stare, perché siamo"
+
+[2:00-2:03] (confidence: -0.213)
+  "distanti da Lema, invece qua siamo vicini a Lema, quindi se troviamo una conformazione,"
+
+[2:03-2:09] (confidence: -0.213)
+  "effettivamente può essere interessante entrare. A un'ora vediamo che l'ha appena fatto il retest,"
+
+[2:09-2:14] (confidence: -0.213)
+  "fra l'altro l'ha sporcato e ha tornato su, quindi sta dimostrando che Lema 10 sta tenendo,"
+
+[4:19-4:25] (confidence: -0.15)
+  "prima volta sulla 10, la seconda volta sulla 10, quindi siamo molto molto in avanti, quindi no good,"
+
+[4:25-4:30] (confidence: -0.15)
+  "quindi non mi sta piacendo, 5 minuti, quindi se noi troviamo la conformazione a 5 minuti o 1 minuto"
+
+[4:30-4:38] (confidence: -0.15)
+  "non mi sta piacendo perché siamo distanti e ha già fatto, una volta ha toccato la 10, due volte"
+
+[4:38-4:42] (confidence: -0.15)
+  "ha già fatto rimbalzo, questa sarebbe la terza e non ce ne può fregare, perché la terza in realtà"
+
+[4:42-4:48] (confidence: -0.15)
+  "è un segnale per andare short, ok, la terza rottura della 10 è un segnale per andare poi short, quindi"
+
+[7:02-7:08] (confidence: -0.164)
+  "nuova, vediamo dov'è sperando che scenda e poi dopo andiamo a risistemarci, quindi qua ci può"
+
+[7:08-7:13] (confidence: -0.164)
+  "interessare come terzo tocco perché nel daily avremmo ancora spazio per un rimbalzo, non siamo"
+
+[7:13-7:19] (confidence: -0.164)
+  "così distante da 10 però non abbiamo la conformazione ma nel caso in cui scendesse anche"
+
+[7:19-7:27] (confidence: -0.164)
+  "senza toccarla a 10 e poi tornasse su potrebbe interessarci, bene andiamo avanti, state capendo?"
+
+[7:27-7:31] (confidence: -0.164)
+  "Poi dopo un'altra cosa, quindi ogni volta voi dovete sempre avere delle conferme con"
+
+[7:31-7:41] (confidence: -0.383)
+  "altri time frame, se sì dovete salutare qualcuno, salutare? Ok, a me ha portato i bupazzi, ok grazie"
+
+[7:41-7:50] (confidence: -0.383)
+  "grazie, mi ha distrutto tutto e mi ha portato i bupazzi, perfetto perfetto, ha portato il leone"
+
+[7:50-7:59] (confidence: -0.383)
+  "grazie mille, senza distruggere la webcam, ok perfetto questo è Hans, come mai Hans? Andiamo a dire Hans?"
+
+[9:43-9:50] (confidence: -0.212)
+  "e come siete messi con gli altri time frame, tanto, ha capito? Avete tante coppie, non è che esistono"
+
+[9:50-9:56] (confidence: -0.212)
+  "solo 3 cose, dovete per forza entrare, è la conformazione che vi deve convincere, non il"
+
+[9:56-10:03] (confidence: -0.212)
+  "contrario, se volete entrare tutti i costi prenderete solo schiaffi, no good, e cercate,"
+
+[10:03-10:10] (confidence: -0.212)
+  "cercate di fare ingressi quando non siete distanti dall'ema, ok? Cercate i time frame più grandi,"
+
+[10:40-10:50] (confidence: -0.428)
+  "Questo è interessante, questo qua niente male, andiamo a vedere il daily dent, bello dent, attenzione"
+
+[10:50-10:54] (confidence: -0.428)
+  "perché va già roto la 10, sotto giù abbiamo il livello trigger, prossimo livello trigger,"
+
+[15:04-15:05] (confidence: -0.744)
+  "più ne ha? Va beh, insomma, quel che è!"
+

@@ -1,0 +1,569 @@
+# Low-confidence segments for: 041_La_Mente_di_un_Trader_da_+20_anni_Chi_e_Scalping_The_Bull_Claudio_Paselli.mp3
+# Total flagged: 188
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:46-0:58] (confidence: -0.321)
+  "Anche se posti mi trader dicevano che era fotomontaggio, allora facevi video, com'è nel VNL, sarà AI, sarà intelligenza artificiale."
+
+[0:58-1:07] (confidence: -0.321)
+  "Va bene, però quello che vi interessa non è far capire come si partecipano a reality, come si può fare, ma nemmeno il perché, poi in realtà ve lo spiegherò."
+
+[6:14-6:23] (confidence: -0.29)
+  "ma è da quanto volete approfondire e capire, questo parallelismo poi vi farà capire meglio quando noi andiamo a selezionare i titoli,"
+
+[6:23-6:30] (confidence: -0.29)
+  "quando voi volete capire perché un titolo è salito e perché non è salito, dove era il punto preciso,"
+
+[6:30-6:36] (confidence: -0.29)
+  "perché avevate dovuto cercare un bug in quel punto lì e non mezz'ora prima, perché?"
+
+[17:48-17:51] (confidence: -0.504)
+  "un applauso anche al suo marito, c'è qua,"
+
+[17:51-18:14] (confidence: -0.504)
+  "le mie moglie sono andate via spero, si è andata via, allora la strategia era questa,"
+
+[20:29-20:39] (confidence: -0.258)
+  "pubblico con 400 persone, andavamo tutti insieme con i conduttori, eccetera, io lì avevo la possibilità quindi,"
+
+[20:39-20:46] (confidence: -0.258)
+  "l'unico momento in cui avevo possibilità di ascoltare i parevi da fuori, perché il pubblico non è un pubblico pagato,"
+
+[20:46-20:54] (confidence: -0.258)
+  "è un pubblico che fa e dice, ride quando vuole, fa l'applauso quando vuole e si comporta come le pare, perché non te li ascolta,"
+
+[20:54-21:01] (confidence: -0.188)
+  "quindi quando presentavano le ragazze e parlavano le ragazze, non è che guardasse il vestito della ragazza o guardasse,"
+
+[21:01-21:06] (confidence: -0.188)
+  "ah che bella, come è truccata bene, guarda che bel sorriso, guarda che belle gambe che c'è quello lì,"
+
+[21:06-21:13] (confidence: -0.188)
+  "io ascoltavo il pubblico per cercare di capire quando parlavano le ragazze come reagivano,"
+
+[21:13-21:19] (confidence: -0.188)
+  "se reagivano bene, se applaudivano, se quelle lì non accadavano pare, cioè cercavo di capire questa cosa qua,"
+
+[26:45-26:51] (confidence: -0.189)
+  "una scelta basata su un comportamento razionale. Infatti quello che tu hai descritto non è altro"
+
+[26:51-26:57] (confidence: -0.189)
+  "alla fine che è una strategia per prendere le decisioni, quindi tu hai deciso tramite una"
+
+[26:57-27:05] (confidence: -0.189)
+  "analisi accurata quali sono tutte le fonti di informazioni che secondo te sono in qualche modo"
+
+[27:05-27:13] (confidence: -0.189)
+  "autorevoli e possono guidare la scelta di un determinato comportamento diretto a uno scopo,"
+
+[29:31-29:38] (confidence: -0.493)
+  "lucidità, ma operiamo di impulso, come lo dice, è fantastica, grazie mille su questa cosa qua."
+
+[29:38-29:40] (confidence: -0.493)
+  "Grazie a te. Allora,"
+
+[29:40-29:52] (confidence: -0.493)
+  "fantastico, gammela, stasera puntatona. Allora ne facciamo però, mi interessavo,"
+
+[30:19-30:28] (confidence: -0.456)
+  "con un run, dopo ve lo leggo, e fate, magari avete 10.000 euro, fate gli ingressi, mi vanno bene,"
+
+[30:28-30:34] (confidence: -0.456)
+  "10.000 diventano 14, 15, vi gasate, fate un'altra operazione, beccate qualcosa che fa lontanai,"
+
+[30:34-30:39] (confidence: -0.456)
+  "raddoppiate, cioè se entrate in un momento e dite oh caro, scherzare le persone, questa è la verità,"
+
+[30:39-30:45] (confidence: -0.456)
+  "fantastico, raddoppiato in pochissimo tempo, solitamente di caso, lasci il lavoro, perché qua"
+
+[32:11-32:18] (confidence: -0.333)
+  "dentro la playlist dei nofiti, io ci sono, ci sto guardando ma voi potete sapere chi sono, infatti"
+
+[32:18-32:23] (confidence: -0.333)
+  "io sono sempre stato richiesto scritto da Facebook e altre parti, dove ho trovato? Nella playlist per"
+
+[32:23-32:29] (confidence: -0.333)
+  "gli offiti e non potete immaginare la soddisfazione che mi hanno trovato così. Qui Claudio Paselli,"
+
+[32:29-32:34] (confidence: -0.333)
+  "di cui non mi intendo, cioè chi se ne frega che si chiamo Claudio Paselli, importa che il bando"
+
+[32:34-32:39] (confidence: -0.333)
+  "funzioni, importa che il terzo tocco, importa che mi rimane il sogno sul conto, importa capire"
+
+[33:34-33:39] (confidence: -0.388)
+  "in cui io andavo riccione pagando, io dopo andavo riccione, c'era Albertino,"
+
+[33:39-33:43] (confidence: -0.388)
+  "chi conosce Albertino da DJ? Quando mi vedeva mi diceva Claudio, non mi diceva Bulba che era"
+
+[33:43-33:51] (confidence: -0.388)
+  "una ragazza, mi diceva Claudio, vieni qua, vieni qua Albertino, a me, vieni qua, stai con me,"
+
+[33:51-33:57] (confidence: -0.388)
+  "Albertino, a me, e andavo in giro e la gente mi diceva, eh, calma che dico, fai una foto,"
+
+[36:58-37:03] (confidence: -0.381)
+  "non è che perché sei chissà chi, ti affeziona perché vedi che la persona è mia, basta,"
+
+[37:03-37:09] (confidence: -0.381)
+  "e quindi le persone qua erano così meravigliate perché comunque io ero contento, ero tranquillo,"
+
+[37:09-37:15] (confidence: -0.381)
+  "parlavo con chiunque e anche io cercavo di capire, capire perché."
+
+[37:15-37:24] (confidence: -0.381)
+  "A parte che io mi sono creata un profilo Instagram soltanto per scrivere un messaggio a Mario"
+
+[37:24-37:31] (confidence: -0.531)
+  "perché non mi hai risposto."
+
+[37:31-37:38] (confidence: -0.531)
+  "Allora, aspetta, apri e scrivilo da valentisi, da quando c'è la pool family, io prima avevo"
+
+[37:38-37:45] (confidence: -0.531)
+  "detto una cosa, su Instagram, quando qualcuno mi scrive lo devo bloccare, io ho dei problemi,"
+
+[37:45-37:52] (confidence: -0.531)
+  "no, questo è per scalping the pool, i miei social di Claudio Baselli io non li sto usando,"
+
+[38:43-38:48] (confidence: -0.288)
+  "erano 20 iscritti, la faccio rispondere a tutti, poi quando sono migliaia ragazzi"
+
+[38:48-38:52] (confidence: -0.288)
+  "li hanno dovuti tagliare, faccio il possibile, ho dovuto selezionare, per questo è che poi"
+
+[38:52-38:55] (confidence: -0.288)
+  "mi sono tornato a fare."
+
+[38:55-39:00] (confidence: -0.288)
+  "Anzi insomma penso che sia molto faticoso e pesante stare a presto comunque tutta questa"
+
+[39:00-39:04] (confidence: -0.288)
+  "vita social, quindi credo benissimo. Volevo dire su questa cosa della filosofia"
+
+[39:04-39:09] (confidence: -0.288)
+  "vita, che tu dici, non montatevi la testa, anche un'altra cosa che a parte che questo"
+
+[40:28-40:35] (confidence: -0.218)
+  "da tanti anni e comunque ho la mentalità che ha retto televisione, ha retto mille"
+
+[40:35-40:40] (confidence: -0.218)
+  "altre strontate, mille altre cose importanti, ho retto tante situazioni difficili nella"
+
+[40:40-40:49] (confidence: -0.218)
+  "vita e questa la sto gestendo, ma ve lo sconsiglio altamente ragazzi, poi ogni tanto volete,"
+
+[40:49-40:54] (confidence: -0.218)
+  "però se vi fissate che volete pubblicare tutti i giorni le tre forze del trading, restate"
+
+[40:54-40:59] (confidence: -0.261)
+  "contro quello che vi sto cercando di insegnare, ok? Questo è praticamente il mio, vogliete"
+
+[40:59-41:08] (confidence: -0.261)
+  "vedere che quando io posto sono trent'anni che ho dentro di rabbia perché mi devo vergognare"
+
+[41:08-41:19] (confidence: -0.261)
+  "il mio mestiere, e quindi lo sfogo così, lo sfogo facendo il trading. Allora vi faccio"
+
+[41:19-41:24] (confidence: -0.384)
+  "un'altra cosa, questo perché questa è follia, questa è follia, quindi io la stessa persona"
+
+[41:24-41:30] (confidence: -0.384)
+  "di Campagna che faceva la fila della discoteca ad un certo punto mi fanno un articolo perché"
+
+[41:30-41:36] (confidence: -0.384)
+  "mi sa degna, Claudio Paselli in turno ai locali della Movida, ragazzi ma vi vedete"
+
+[41:36-41:50] (confidence: -0.404)
+  "che è una testa a Luca, hai i tempi eh, io mi portavano in giro per, io pagavo per"
+
+[41:50-41:53] (confidence: -0.404)
+  "andare in vacanza, qua mi portavano in giro per i locali che avevano pure, poi dicevano"
+
+[41:53-41:57] (confidence: -0.404)
+  "che ero un DJ, ma perché dicevano che ero un DJ? Non perché magari fosse stato un DJ,"
+
+[41:57-42:02] (confidence: -0.404)
+  "ma anche io, è un lavoro estremamente difficile, se qualcuno pensa che fare il DJ è qualcosa"
+
+[42:02-42:07] (confidence: -0.315)
+  "di facile, come tutti i mestieri è difficilissimo, semplicemente quando esci da una reality,"
+
+[42:07-42:13] (confidence: -0.315)
+  "se fai il giro dei locali, quando arrivi su, Claudio Paselli, da che cartella prega la"
+
+[42:13-42:19] (confidence: -0.315)
+  "genesis di carcer? Quindi io mi vergognavo di questa cosa qua, se mi volevano, chiamami"
+
+[42:19-42:24] (confidence: -0.315)
+  "piuttosto da un locale, mi fatevi andare in un tavolo eccetera, sto lì, mi diverto,"
+
+[42:24-42:29] (confidence: -0.315)
+  "poi chi vuole venire a fare una foto, non lo so, ok, ma presentarmi, ma di che cosa?"
+
+[45:02-45:09] (confidence: -0.568)
+  "in 2007, tempo di uscire, mi intervistano e dico che anche l'Urfai è lo scalper, e"
+
+[45:09-45:16] (confidence: -0.568)
+  "quindi vi vedrete. E il giovane scalper esperto di speculazioni mercati finanziari, quindi"
+
+[45:19-45:24] (confidence: -0.568)
+  "è vergognoso che devessero scrivere queste cose qua. Ma non troppo. Le date combinano"
+
+[45:24-45:31] (confidence: -0.568)
+  "perché nel 2008 poi gli scalper non ci sono più. Ma l'avvio è un po' più grande,"
+
+[48:12-48:19] (confidence: -0.476)
+  "ha fatto il, entrava il suo fidanzato al Grande Fratello, è entrato grazie a lei, lei diceva,"
+
+[48:19-48:23] (confidence: -0.476)
+  "perché lei diceva no vedrai che ti prendono, vai a fare i promili, no, non mi prendono"
+
+[48:23-48:28] (confidence: -0.476)
+  "mai, no, va, ci faccio, io ero in un'altra del balle che è andato, l'hanno preso, e quindi"
+
+[48:28-48:34] (confidence: -0.476)
+  "aveva il debito, aveva il debito con lei, lei in appolo ha scritto a Corona, Corona sapete"
+
+[48:34-48:39] (confidence: -0.476)
+  "cosa gli ha detto? Niente, non aveva mai risposto, giustamente non l'ha capito, quindi ha detto"
+
+[50:23-50:27] (confidence: -0.249)
+  "di fare i gemini di tutti i personaggi che voleri, e ho invitato lei, abbiamo litigato"
+
+[50:27-50:33] (confidence: -0.249)
+  "in pista, proprio sul fatto che lei dopo si è montata la testa, perché ha avuto desibilità,"
+
+[50:33-50:37] (confidence: -0.249)
+  "si è montata la testa, mi ha mandato a cagare, io non vedevo l'ora in realtà, però lei"
+
+[50:37-50:42] (confidence: -0.249)
+  "non lo sapeva, e quindi ho organizzato questa litigata, fra virgolette, all'interno della"
+
+[50:42-50:47] (confidence: -0.249)
+  "pista di The Club, dove poi è uscito questo articolo dove abbiamo litigato, ma io l'ho"
+
+[54:52-54:57] (confidence: -0.253)
+  "tra i posti che giravo, mi è andato a girare le città finanziarie, ovviamente siamo trader,"
+
+[54:57-55:02] (confidence: -0.253)
+  "simbolicamente, quindi non possono andare a visitare le città, non tutti i posti, come"
+
+[55:02-55:07] (confidence: -0.253)
+  "Piazza Fari, è l'unico posto al mondo dove avresti di avere un toro davanti o anche un"
+
+[55:07-55:13] (confidence: -0.253)
+  "morso, già il dito medio, avete visto comunque il video, ci siamo prati davanti, ha il dito"
+
+[55:13-55:19] (confidence: -0.253)
+  "medio, molti posti come la Mosca non hanno nulla, che comunque è meglio di un dito medio,"
+
+[55:46-55:52] (confidence: -0.43)
+  "in prima vacanza forma intera, perfetto organizzo io secondo voi, ci ha portato a forma intera,"
+
+[55:52-55:56] (confidence: -0.43)
+  "forma intera, io chiedo, forma intera, cosa mi ha portato a forma intera, allora è detto"
+
+[55:56-56:03] (confidence: -0.43)
+  "bene, dove andiamo? Mosca, Shangai, perché sono due capitali diversiari, questo è Shangai,"
+
+[56:03-56:09] (confidence: -0.43)
+  "toro fighissimo, Shangai ragazzi città top di gamba, di cui mia moglie si vergognava di"
+
+[56:09-56:14] (confidence: -0.43)
+  "dire ai suoi amici che andava in Cina, perché mi dì in Cina, diceva no, che posto di Cina"
+
+[56:39-56:49] (confidence: -0.264)
+  "e poi via, però viaggiare è una cosa che in parallelo per andare a sfruttare il massimo"
+
+[56:49-56:54] (confidence: -0.264)
+  "quello che è la mia passione, la conoscenza umana, andavo a vedere i posti nel mondo,"
+
+[56:54-57:00] (confidence: -0.264)
+  "se potete, avete la possibilità, viaggiare, poi passi in Europa, Europa è un posto fantastico,"
+
+[57:00-57:06] (confidence: -0.264)
+  "basta fare un'ora di aereo, siete già in una realtà completamente diversa, aprite la"
+
+[60:56-61:01] (confidence: -0.453)
+  "Niente, vanno invitato, quando finito i ganni, la redazione fa, vanno invitato i DJ, ci"
+
+[61:01-61:07] (confidence: -0.453)
+  "vuole andare, cosa? Cosa? Aspetta, dobbiamo avere anche un'altra foto qua."
+
+[61:10-61:15] (confidence: -0.453)
+  "No, non ce l'ho, va be', comunque vanno intervistati, incredibile, perché a miei mi"
+
+[61:15-61:19] (confidence: -0.453)
+  "seguivano, hanno seguito quel programma lì, ma proprio un po' altro che io ascoltavo,"
+
+[61:19-61:23] (confidence: -0.453)
+  "che proprio mi sta piaceva, vanno chiamato lì, però sono andato anche con mia mamma,"
+
+[62:19-62:25] (confidence: -0.278)
+  "ho fatto il mio task alter, parte da una bastonata nella vita clamorosa, il giorno"
+
+[62:25-62:32] (confidence: -0.278)
+  "del mio 18° compleanno, che è un momento che non ti dimenticherai mai, pensate che"
+
+[62:32-62:38] (confidence: -0.278)
+  "schifo che quel giorno lì a calcio, che era anche un momento molto importante nella vita,"
+
+[62:38-62:45] (confidence: -0.278)
+  "ma comunque, a calcio, il giorno del 18° compleanno a calcio, mi spacco la vite, la"
+
+[68:01-68:04] (confidence: -0.415)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[68:31-68:38] (confidence: -0.394)
+  "Questo è un drop, guardate che roba è questo."
+
+[68:44-68:52] (confidence: -0.394)
+  "Qua è un salto a 60 km orario, poi vedrete cosa significa prenderlo sotto, questo è il"
+
+[68:52-68:59] (confidence: -0.421)
+  "salto a 60 km orario, questo è il river gap, 8 metri, più un salto là sotto."
+
+[68:59-69:07] (confidence: -0.421)
+  "Quando andrò bene ce ne venghi, quando andrò male adesso vi faccio vedere, però vi spiegherò"
+
+[69:07-69:14] (confidence: -0.421)
+  "come è iniziato questo, perché sembra tutto facile, questo è il salto a 60 km orario,"
+
+[69:21-69:28] (confidence: -0.692)
+  "Poi è uno dei primi crash che ho fatto, la ganeopita, è un saltino, un maschio, un maschio"
+
+[69:28-69:35] (confidence: -0.686)
+  "mi sento respirare un po'. Ragazzi il mio primo, la ganeopita, la ganeopita, la ganeopita"
+
+[69:35-69:42] (confidence: -0.848)
+  "e' una ganeopita, mi sento respirare un po', ragazzi il mio primo, le ganeopita, gli alberi"
+
+[69:49-69:56] (confidence: -0.848)
+  "che ho preso non potete immaginare, è un qualcosa di incredibile. Io quando andavo"
+
+[69:56-70:03] (confidence: -0.848)
+  "a fare il mio primo crash, mi sono sentito iniziarlo, mi sono sentito iniziarlo, mi sono"
+
+[70:03-70:10] (confidence: -0.637)
+  "sentito iniziarlo, e' un qualcosa di incredibile. Io quando ho visto i primi video di Sculpting"
+
+[70:10-70:17] (confidence: -0.637)
+  "the Bull, quando ho visto i primi video di La nemicycletta, ho detto che è figata, questo"
+
+[70:24-70:29] (confidence: -0.637)
+  "sport mi sa troppo del renedico, voglio farlo anch'io, in tanto no? Vedi video, sembra"
+
+[70:56-71:00] (confidence: -0.313)
+  "nel primo video, vado a testarlo, vado a provare, cado subito, e vedi, capisco subito,"
+
+[71:00-71:07] (confidence: -0.313)
+  "il primo schiaffo che non è facile, che forse non è proprio così semplice, vado avanti,"
+
+[71:07-71:13] (confidence: -0.313)
+  "vado avanti, provo, testo, alberi, compro tutte le protezioni possibili, immaginabili,"
+
+[71:13-71:17] (confidence: -0.313)
+  "alberi, infinita di alberi, neviglio, neviglio ovviamente, perché mettevo solo i salti,"
+
+[71:17-71:22] (confidence: -0.313)
+  "mettevo anche quando andavo l'aldro, quando vedo il masso, quando avevo la traversata,"
+
+[71:22-71:31] (confidence: -0.428)
+  "e mi sono sempre detto prendo tutte le protezioni possibili, immaginabili, io ero l'unico della"
+
+[71:31-71:38] (confidence: -0.428)
+  "mia compagnia di Downhiller dovevo tutto, se sembrava una moto la crosma, anche il collo,"
+
+[71:38-71:44] (confidence: -0.428)
+  "protezione, qualsiasi cosa dentro, poi qualsiasi cosa, non ho più, in tanti mesi mi stacco"
+
+[71:44-71:52] (confidence: -0.372)
+  "l'ossa, alza manina e devo vanno a nare, quindi avevo tutto, qualsiasi cosa, ciò nonostante,"
+
+[71:52-71:57] (confidence: -0.372)
+  "quella era proprio la mia pista preferita in Austria, il mio salto preferito, si chiama"
+
+[71:57-72:04] (confidence: -0.372)
+  "la Spitzhahn, è a casa Voluto, quello era l'ultimo giorno, perché io ovviamente avevo"
+
+[72:04-72:08] (confidence: -0.372)
+  "io l'attrezzatura per fare i video di queste cose qua, l'ultimo giorno erano gli altri"
+
+[76:39-76:44] (confidence: -0.384)
+  "fatica, io riesco, mi si apre la mente, riesco a ragionare, riesco a riflettere, riesco a"
+
+[76:44-76:50] (confidence: -0.384)
+  "pensare, e arrivo a concludere le rossolamenti che mi rapportano, e quindi quel punto libero,"
+
+[76:50-76:54] (confidence: -0.384)
+  "un punto zero, non doveva sparire, quindi non so, mi fosse fatto male, io volevo continuare"
+
+[76:54-76:58] (confidence: -0.384)
+  "a dare bicicletta. Apriamo una parentesi su questo, se le dici che."
+
+[76:58-77:07] (confidence: -0.384)
+  "Secondo me è davvero divertente, infatti secondo me sei stato fortunato a avere quel piccolo"
+
+[78:31-78:39] (confidence: -0.179)
+  "un'esperimentazione anche faticosa di altre tecniche nuove. E questo, quindi in due senti, anche questo punto"
+
+[78:39-78:46] (confidence: -0.179)
+  "zero che tu dicevi, è un punto che forse diversi di voi per esempio sperimentano quando camminano, oppure"
+
+[78:46-78:56] (confidence: -0.179)
+  "quando guidano. Spesso le persone riferiscono che quando siamo impegnati dal punto di vista fisico, ma comunque"
+
+[78:56-79:02] (confidence: -0.227)
+  "in attività che non ci fanno vivere emozioni troppo forti, come per esempio il caso della"
+
+[79:02-79:13] (confidence: -0.227)
+  "discema, riusciamo a pensare con lucidità e a ripensare a quello che noi abbiamo vissuto, a dissezionare"
+
+[79:13-79:19] (confidence: -0.227)
+  "la nostra esperienza per cercare di capire quali sono gli elementi che sono andati bene e quali sono andati male."
+
+[79:19-79:31] (confidence: -0.42)
+  "Questa sera vedremo che questo è una capacità centrale che voi come traditore dovete acquisire, perché poi è quello che vi permetterà di sviluppare delle strategie psicologiche"
+
+[79:31-79:40] (confidence: -0.42)
+  "uscite su misura sulle vostre problematiche, che però prima dovrete aver discesionato come immaginano che è quello che inizialmente è fatto."
+
+[80:07-80:26] (confidence: -0.378)
+  "mi stavo andando nella mia comfort zone, ok? Mi stavo andando nella zona dove io so che io posso stare bene, ecco, il mio era questo, adesso per chi è andato in bici, leggendo i cartelli, capirà che questa foto è estrema, probabilmente è più estrema questa dei salti che ho visto prima."
+
+[80:26-80:46] (confidence: -0.272)
+  "Uno perché stava parlando di una bicicletta con dei motazzi, in realtà una bici non è che pesa tantissimo, però sopra c'è scritto hero, questo qua è il percorso dei quattro passi che c'è la valcardena, che si fa sciando, se la ronda, si può fare anche in bicicletta,"
+
+[80:46-81:05] (confidence: -0.392)
+  "anche qua, avevo visto il video, che bello, io conoscevo colazzo nonario perché l'ho fatto sciando, ho detto no ma veramente si può fare in bici? No, io lo devo proprio fare, ho appena iniziato a ripetalare, sono 60, il giro è più corto, sono 60 km per 2500 metri a dislivello, io ho detto lo vado a fare con la Fatbike."
+
+[81:06-81:34] (confidence: -0.242)
+  "Ragazzi, è stata una tragedia, una cosa allucinante, ho preso sotto gamba anche in questo caso incredibilmente la cosa, io sono arrivato, sono quattro passi, l'ultimo passo e ho morto, finito, ragazzi non operarate che finite le gambe, rimanete lì, non vi potete muovere, io sono rimasto morto, finito lì e non c'era niente,"
+
+[81:34-81:35] (confidence: -0.318)
+  "per arrivare, spingere la bicicletta ad un rifugio lì dove speravo che fosse cibiltà, sono passato delle ore, poi ho bussato, mi hanno aperto, mi hanno dato una cioccolata calda, ho riposato un attimo, ho fatto il pezzo fino a quando ho trattato l'asfalto, quindi la strada, perché si può fare anche con la macchina, lì ho trattato per fortuna quattro tedeschi messi come me con la bici da strada, distrutti anche loro, anche loro che hanno preso sotto gamba, mi sono detto che figo, dai andiamo a fare, a chi se ne frega, ma non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai visto, non ho mai"
+
+[82:04-82:10] (confidence: -4.954)
+  "visto,ству estremamente brevi, proprio come Daylan声 che своих capelli, comeheen e"
+
+[82:10-82:16] (confidence: -4.954)
+  "noi庄mandi �"
+
+[82:16-82:24] (confidence: -4.954)
+  "qui sei face di una immigrazione qui in testo, commode Duomo, ce le hai richiude da egli"
+
+[82:24-82:29] (confidence: -4.954)
+  "auguri, da PackelHHHHHH, ogni attimo non èピ Startazio, e il Cifro si è usc trajecto"
+
+[85:31-85:38] (confidence: -0.453)
+  "ragazzi, nella mia categoria sono stato sesto, sesto, con la bici questa qua, aspetto l'alimenti"
+
+[85:38-85:46] (confidence: -0.453)
+  "8,5 kg di bicicletta, l'alzati così, però, ho dito comunque, insisto a continuare a capire"
+
+[85:46-85:50] (confidence: -0.453)
+  "che cosa mi servisse per migliorare, ho arrivato appunto a testare gli alimenti, e arrivi a"
+
+[85:50-85:55] (confidence: -0.453)
+  "un punto dove ho riuscito addirittura, nella mia categoria, a arrivare al sesto di valore"
+
+[85:56-86:07] (confidence: -0.718)
+  "e poi va beh, sapete cos'è questo? Tu lo sai cos'è questo? Il trike, l'ho usato, no va beh,"
+
+[86:07-86:14] (confidence: -0.718)
+  "ho distrutto una mia bici ddc da bmx per fare trike, ogni tanto a sesto, alla fine della"
+
+[86:14-86:18] (confidence: -0.718)
+  "zona in Emilia, alternavo downhill con questo, che avevo travestato sulla strada, chiudevamo"
+
+[86:18-86:25] (confidence: -0.548)
+  "per questa era bellissima, poi tornavi su con la seggiovia, carichiamo questo sulla seggiovia"
+
+[86:25-86:30] (confidence: -0.548)
+  "e ci andiamo su di traverso sulla strada, spettacolare. Vabbè questa è stata comunque"
+
+[86:30-86:40] (confidence: -0.548)
+  "una piccola parezza, anche qua mi schiantavo, che è una bellezza sugli altri. A un certo"
+
+[88:27-88:33] (confidence: -0.176)
+  "dettaglio, è quella cosa lì in più, quindi queste cose qua, essere insieme a voi, poter"
+
+[88:33-88:37] (confidence: -0.176)
+  "rispondere alle vostre domande, per questo è che dopo inizieremo a parlare dei vostri"
+
+[88:37-88:43] (confidence: -0.176)
+  "youtube, delle vostre cose, serve a questo, a tirar fuori gli errori, e l'unico modo"
+
+[88:43-88:50] (confidence: -0.176)
+  "per migliorare questo, tirar fuori gli errori, capirli in fondo per poi poter migliorare,"
+
+[88:50-88:58] (confidence: -0.278)
+  "questo è il modo, concludo con il discorso dei bici, direi che qua ho fatto vedere tutto"
+
+[88:58-89:04] (confidence: -0.278)
+  "e l'ultimo passaggio molto velocemente è quella della ferrata, perché è l'ultima follia che"
+
+[89:04-89:09] (confidence: -0.278)
+  "sto facendo a causa di questi ultimi due video che ho postato."
+
+[89:09-89:17] (confidence: -0.321)
+  "Seguono tre stop loss, quando non c'è l'appoggio, l'appoggio è piccolissimo,"
+
+[89:17-89:28] (confidence: -0.321)
+  "servono un po' strettissimo, quindi da uno, da due, da tre, poi te lo spiego questo dello stop del"
+
+[89:28-89:38] (confidence: -0.658)
+  "del tezzo, e poi te lo spiego, poi dici allora, che cazzo buoni."
+
+[89:38-89:43] (confidence: -0.658)
+  "Infatti, però questo è più fotografato, è incredibile, l'altra parte secondo me non si è capito,"
+
+[89:43-89:47] (confidence: -0.658)
+  "e questo è facile."
+
+[90:32-90:39] (confidence: -0.264)
+  "da Arco, Arco è veramente il centro mondiale di aranticata, centro mondiale, uno dei posti"
+
+[90:39-90:44] (confidence: -0.264)
+  "più importanti al mondo per l'arranticata, quindi qui ho dei negozi, entro e dico, vedi la tettatura"
+
+[90:44-90:50] (confidence: -0.264)
+  "per fare la ferrata, che ci vuole? Prendo la tettatura, caschetto, tutto è in pagatura, perfetto, guardo"
+
+[90:50-90:58] (confidence: -0.264)
+  "i video su youtube, che ci vuole? Io ho fatto delle robe, ho saltato Demetri, ho fatto i drop,"
+
+[90:58-91:12] (confidence: -0.639)
+  "granel, i mezzi, che ritardo, i treni, gli aerei, tutto, a gira di lupe, ho arrivato all'ultimo,"
+
+[91:12-91:25] (confidence: -0.639)
+  "quindi rinizio da capo adesso, che ne stavo dicendo? Comprato, guardo i video su youtube"
+
+[96:17-96:24] (confidence: -0.421)
+  "perché l'Amazon farebbe un telescopio, e io mi sono messo lì,"
+
+[96:24-96:27] (confidence: -0.421)
+  "non nel binocolo, perché nel binocolo tenere i mangolini,"
+
+[96:27-96:30] (confidence: -0.421)
+  "volevo qualcosa fermo che si sarebbe nel telescopio,"
+
+[96:30-96:34] (confidence: -0.421)
+  "mi mettevo lì, di nascosto, a stalker in dalle, questi che salivano,"
+
+[96:34-96:39] (confidence: -0.421)
+  "fino a quando ho capito tutto, cioè io poi, prima che prendevo forza,"
+
+[96:39-96:45] (confidence: -0.421)
+  "cioè io quando vedevo il nonnino che andava su, facile è facile,"
+
+[105:31-105:38] (confidence: -0.473)
+  "Era togliere più tugghi possibile, insomma, è questa cosa della tecnica del telescopio."
+
+[105:38-105:41] (confidence: -0.473)
+  "Spero che mi sia piaciuto."
+

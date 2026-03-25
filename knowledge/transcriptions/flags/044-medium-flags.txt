@@ -1,0 +1,68 @@
+# Low-confidence segments for: 044_Trading_dal_Cellulare_e_Tablet_Si_puo_Tutorial_e_le_novita_di_Bybit.mp3
+# Total flagged: 21
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.21)
+  "Allora come fare trading utilizzando il cellulare poi adesso ci sono degli"
+
+[0:05-0:09] (confidence: -0.21)
+  "aggiornamenti pazzeschi su Bybit quindi andiamo a vedere allora clicchiamo su"
+
+[0:09-0:15] (confidence: -0.21)
+  "un titolo a caso, oggi ho lavorato su questo quindi guardiamo questo qua e quindi"
+
+[0:15-0:19] (confidence: -0.21)
+  "guardiamo il grafico prima cosa possiamo andare a cliccare qua sul pennino andare"
+
+[0:19-0:25] (confidence: -0.21)
+  "a mettere direttamente da qua sapete che su Binance ti fa inclinare"
+
+[0:25-0:28] (confidence: -0.21)
+  "invece possiamo mettere direttamente clicchiamo possiamo cambiare il colore"
+
+[2:21-2:25] (confidence: -0.225)
+  "grafico vediamo una linea se clicchiamo sopra diventa la linea grossa prima cosa"
+
+[2:25-2:30] (confidence: -0.225)
+  "io senza se ecco senza cliccare già si vedeva poco alla linea infatti io"
+
+[2:30-2:33] (confidence: -0.225)
+  "chieste potevo una linea più grossa non me l'hanno fatto più grossa ma basta"
+
+[2:33-2:37] (confidence: -0.225)
+  "cliccare ce l'hai bella grossa come piace a te la cosa bella è che per"
+
+[2:37-2:40] (confidence: -0.225)
+  "esempio lo vuoi spostare vuoi spostare l'ingresso basta far così ti fa vedere"
+
+[2:40-2:46] (confidence: -0.225)
+  "di quanto clicchi ok qua ti dice il prezzo conferma ecco adesso è stato"
+
+[3:10-3:16] (confidence: -0.347)
+  "così faccio vedere anche nelle operazioni niente non mi vuole fillare e"
+
+[3:16-3:20] (confidence: -0.347)
+  "quindi mettiamo facciamo così mettiamo un minuto ecco qua lo vediamo ancora"
+
+[3:20-3:22] (confidence: -0.347)
+  "meglio clicchiamo guardate che la bellezza lo"
+
+[3:22-3:26] (confidence: -0.347)
+  "mettiamo ancora un po più giù e te ci vuole 0 secondi niente continua a dare"
+
+[3:26-3:35] (confidence: -0.347)
+  "giù non mi vuole fillare qua ok sta andando completamente short"
+
+[3:35-3:45] (confidence: -0.437)
+  "non fa niente perché andava già andava già lui non vuole essere eseguito subito"
+
+[3:45-3:52] (confidence: -0.437)
+  "conferma giorde ma i bit riga si va bene ok siamo dentro quindi cliccando ce"
+
+[3:52-4:00] (confidence: -0.437)
+  "l'abbiamo lo abbiamo già lo stop no non ce l'abbiamo perché se allora andiamo"
+
+[4:00-4:04] (confidence: -0.437)
+  "a mettere subito lo stop guarda che bello stop loss a vedere quant'è vedete"
+

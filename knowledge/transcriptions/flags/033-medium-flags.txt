@@ -1,0 +1,80 @@
+# Low-confidence segments for: 033_OPA_Cosa_sono_Come_funzionano_Come_si_fanno_soldi_Tutorial_for_dummies.mp3
+# Total flagged: 25
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[4:39-4:52] (confidence: -0.332)
+  "su telecom italia a 05 a 05 05 05 una cosa ovviamente è passato da 034 a 05 qualcosa ok"
+
+[4:52-4:55] (confidence: -0.332)
+  "erano proposta perché prima"
+
+[5:57-6:01] (confidence: -0.151)
+  "che sarebbe l'opa ma dopo le condizioni non si sono fatte perché si è messo in mezzo il governo"
+
+[6:01-6:08] (confidence: -0.151)
+  "ci voleva l'antitrust e pensavano che il prezzo fosse troppo basso eccetera eccetera quindi niente"
+
+[6:08-6:15] (confidence: -0.151)
+  "infatti poi dopo il prezzo è crollato poi dopo venuto fuori che kkr non ha voluto poi effettivamente"
+
+[6:15-6:22] (confidence: -0.151)
+  "fare l'opa quindi non ha voluto effettivamente comprare tutti le azioni a 05 perché prima"
+
+[6:22-6:26] (confidence: -0.151)
+  "voleva vedere le carti cioè voleva capire effettivamente i debiti voleva capire effettivamente"
+
+[6:51-6:57] (confidence: -0.248)
+  "di spezzatino cioè venderanno certe componenti dei telecom c'è telecom è la società più"
+
+[6:57-7:02] (confidence: -0.248)
+  "grande all'interno ha tantissime società più piccole quindi adesso si sta pensando"
+
+[7:02-7:12] (confidence: -0.248)
+  "di vendere le varie società più piccole però questo è invece su atlantia è successo quello"
+
+[7:12-7:17] (confidence: -0.248)
+  "che è quello che è successo un po anche con tweet tu in twitter quindi cosa è successo con"
+
+[7:17-7:26] (confidence: -0.186)
+  "twitter che andiamo a vedere il daily è venuto fuori che si è voluto che masca ha comprato il"
+
+[7:26-7:36] (confidence: -0.186)
+  "10% e è salito ok però nessuno pensava che poi masca avrebbe voluto poi effettivamente fare"
+
+[7:36-7:41] (confidence: -0.186)
+  "un'opa ok adesso nessuno poi ci crede però comunque in pochi hanno creduto in questa cosa"
+
+[7:41-7:45] (confidence: -0.186)
+  "qua nessuno poteva sapere ha comprato il 10% ma dopo lui ha dichiarato che si fermava lì"
+
+[23:27-23:38] (confidence: -0.287)
+  "immediato non mi interessava tenerlo un secondo in più capito Alan ma tu sei Alan quello degli"
+
+[23:38-23:53] (confidence: -0.287)
+  "schiaffi di Verona no di di di Asiago o sei un altro Alan? Si sono io ok ok hai capito"
+
+[23:53-24:07] (confidence: -0.515)
+  "adesso Alan fammi capire si si sono io io sono di Ostuni, mi chiamo Stefano ma Ostuni non è in"
+
+[24:07-24:21] (confidence: -0.515)
+  "Puglia? Sul tacco no Ostuni? Spettacolo, bevato te. Adoro Ostuni. Spettacolo ok saggezza 76 e non"
+
+[24:42-24:54] (confidence: -0.155)
+  "eseguito 23 e 12 ecco andiamo tutti ad Asiago a menare Alan che non ha capito nulla non ha"
+
+[24:54-24:58] (confidence: -0.155)
+  "capito nulla però capisco che questa roba complicata ok soprattutto per voi che siete"
+
+[24:58-25:08] (confidence: -0.155)
+  "nel mondo crypto perché queste cose non accadono ok comunque chiunque passi per Asiago dia uno"
+
+[25:34-25:44] (confidence: -0.143)
+  "poi dopo il prezzo è sceso ok vedi e poi sceso sono state eseguiti tutti ok il prezzo non sta"
+
+[25:44-25:52] (confidence: -0.143)
+  "fermo dopo si muove e poi dopo funziona normalmente chi compra sotto a chi vende finisce nel book"
+
+[25:52-26:00] (confidence: -0.143)
+  "chi vende sopra il prezzo di chi acquista rimane nel book ok e dopo funziona normalmente come su"
+

@@ -1,0 +1,128 @@
+video:
+  id: YT_BULL_TECNICHE_003
+  series: tecniche
+  title: "Tecnica del Daily: breakout, ritracciamenti su EMA e filtro indice BTC"
+  video_index: 3
+  duration_minutes: 30
+
+entities:
+  - id: BULL_T_03_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, breakout, trend, ema60]
+    source:
+      timecode: "05:23-06:19"
+    conditions:
+      - timeframe == DAILY
+      - trend_above_ema60 == true
+      - price_above_ema5 == true
+      - price_above_ema10 == true
+      - price_near_period_high_breakout == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1d"]
+      market_regime: ["uptrend", "sideways"]
+    rationale: "Nel daily Bull compra asset in trend sopra EMA principali in prossimità di rottura massimi di periodo."
+    notes: "Il book è opzionale in questa tecnica."
+
+  - id: BULL_T_03_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, stop_loss, daily, invalidation]
+    source:
+      timecode: "09:37-09:50"
+    conditions:
+      - position_open == true
+      - daily_candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1d"]
+      market_regime: []
+    rationale: "Sui ritracciamenti daily Bull chiude quando la candela giornaliera chiude sotto EMA10."
+    notes: "La chiusura candela è requisito esplicito, non basta il solo spike intraday."
+
+  - id: BULL_T_03_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [pullback, ema10, daily, continuation]
+    source:
+      timecode: "10:45-11:19"
+    conditions:
+      - prior_strong_upmove == true
+      - price_retraces_to_ema10_daily == true
+      - daily_candle_close_below_ema10 == false
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1d"]
+      market_regime: ["uptrend"]
+    rationale: "Bull usa il pullback su EMA10 come ingresso di continuazione dopo salite forti."
+    notes: "Conferma con tenuta in chiusura sopra EMA10."
+
+  - id: BULL_T_03_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [regime_filter, btc_index, daily, trend]
+    source:
+      timecode: "23:52-24:05"
+    conditions:
+      - btc_daily_trend in [SIDEWAYS, UP]
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["1d"]
+      market_regime: ["crypto"]
+    rationale: "La tecnica daily viene applicata quando BTC (indice di riferimento) non è in trend ribassista."
+    notes: "Se la condizione non è soddisfatta, evitare setup breakout standard."
+
+  - id: BULL_T_03_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [regime_filter, btc_index, risk_management, daily]
+    source:
+      timecode: "24:54-26:31"
+    conditions:
+      - btc_daily_close_below_ema60 == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1d"]
+      market_regime: ["crypto_bearish"]
+    rationale: "Se BTC scende sotto EMA60 daily Bull richiede maggiore cautela e sospensione dei breakout standard."
+    notes: "In quel contesto privilegia operazioni di ritracciamento e gestione stop stretta."
+
+  - id: BULL_T_03_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, daily, spike, risk_management]
+    source:
+      timecode: "21:30-21:38"
+    conditions:
+      - position_open == true
+      - spike_gain_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1d"]
+      market_regime: []
+    rationale: "Bull preferisce monetizzare su spike daily senza attendere il massimo assoluto."
+    notes: "Approccio orientato a rotazione del capitale su nuovi setup."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 0
+  core_message: "La tecnica daily cerca asset in trend con ingresso su breakout o ritracciamento EMA10 e uscita su violazione della struttura. Il filtro di regime su Bitcoin è centrale per decidere se applicare o sospendere il modello standard."
