@@ -30,6 +30,7 @@ python ingest/src/transcribe.py "https://www.youtube.com/watch?v=rVLZk680Uas" --
 
 Playlist Tecniche di tranding
 https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
+python ingest/src/transcribe.py "https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb" --model medium
 
 video 1
 https://www.youtube.com/watch?v=Ad-s9vWQ53U&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=1

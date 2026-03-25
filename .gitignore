@@ -4,6 +4,10 @@ env.example
 *.session
 *.session-journal
 
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
 
 HELP.md
 .gradle
