@@ -1,12 +1,12 @@
 video:
-  id: YT_BULL_PRINCIPIANTI_002
+  id: BULL_YT_n_002
   series: principianti
   title: "Trading per neofiti — episodio 002"
   video_index: 2
   duration_minutes: 19
 
 entities:
-  - id: BULL_P_02_01
+  - id: BULL_YT_n_002_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
@@ -24,7 +24,7 @@ entities:
       market_regime: []
     rationale: "Per neofiti Bull impone leva contenuta e margine isolato per limitare la perdita."
     notes: "Valida simmetricamente anche per setup short."
-  - id: BULL_P_02_CTX_01
+  - id: BULL_YT_n_002_02
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
@@ -33,7 +33,7 @@ entities:
       timecode: "00:00-01:00"
     statement: "Il trading va affrontato come mestiere e non come scommessa."
     rationale: "Riduce comportamenti impulsivi e aspettative irrealistiche."
-  - id: BULL_P_02_CTX_02
+  - id: BULL_YT_n_002_03
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL

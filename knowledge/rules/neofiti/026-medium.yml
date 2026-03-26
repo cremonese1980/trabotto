@@ -1,12 +1,12 @@
 video:
-  id: YT_BULL_PRINCIPIANTI_026
+  id: BULL_YT_n_026
   series: principianti
   title: "Trading per neofiti — episodio 026"
   video_index: 26
   duration_minutes: 29
 
 entities:
-  - id: BULL_P_26_01
+  - id: BULL_YT_n_026_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
@@ -23,7 +23,7 @@ entities:
       market_regime: []
     rationale: "Bull usa EMA60 come filtro direzionale principale per evitare ingressi contro contesto."
     notes: "La condizione va verificata su chiusura candela del timeframe operativo."
-  - id: BULL_P_26_02
+  - id: BULL_YT_n_026_02
     entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: MONITORING
@@ -40,7 +40,7 @@ entities:
       market_regime: []
     rationale: "La rottura di livello è trattata come trigger iniziale da confermare."
     notes: "Bull richiede osservazione della reazione immediata dopo la rottura."
-  - id: BULL_P_26_CTX_01
+  - id: BULL_YT_n_026_03
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
@@ -49,7 +49,7 @@ entities:
       timecode: "00:00-01:00"
     statement: "Il trading va affrontato come mestiere e non come scommessa."
     rationale: "Riduce comportamenti impulsivi e aspettative irrealistiche."
-  - id: BULL_P_26_CTX_02
+  - id: BULL_YT_n_026_04
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL

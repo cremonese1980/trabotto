@@ -1,12 +1,12 @@
 video:
-  id: "YT_BULL_T_013"
+  id: "BULL_YT_ltcra_013"
   series: "tecniche"
   title: "live trading crypto analisi 013"
   video_index: 13
   duration_minutes: 11.0
 entities:
   -
-    id: "BULL_T_13_01"
+    id: "BULL_YT_ltcra_013_01"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "PRE_FILTER"
@@ -27,7 +27,7 @@ entities:
     rationale: "In assenza di setup esplicito il contenuto suggerisce monitoraggio e non ingresso immediato."
     notes: "Regola conservativa per evitare overtrading su indicazioni non strutturate."
   -
-    id: "BULL_T_13_CTX_01"
+    id: "BULL_YT_ltcra_013_02"
     entity_type: "GUIDELINE"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"

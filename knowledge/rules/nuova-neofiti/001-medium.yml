@@ -1,12 +1,12 @@
 video:
-  id: "YT_BULL_P_001"
+  id: "BULL_YT_nn_001"
   series: "principianti"
   title: "nuova neofiti 001"
   video_index: 1
   duration_minutes: 21.22
 entities:
   -
-    id: "BULL_P_01_01"
+    id: "BULL_YT_nn_001_01"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "PRE_FILTER"
@@ -27,7 +27,7 @@ entities:
     rationale: "La posizione del prezzo rispetto a EMA60 viene usata come filtro direzionale iniziale."
     notes: "La regola abilita solo monitoraggio; non definisce ingresso autonomo senza ulteriori trigger."
   -
-    id: "BULL_P_01_02"
+    id: "BULL_YT_nn_001_02"
     entity_type: "SETUP"
     category: "MACHINE_EXECUTABLE"
     scope: "LIQUIDITY_GATE"
@@ -49,7 +49,7 @@ entities:
     rationale: "La presenza di un livello di book molto grande può agire da supporto o resistenza al primo test."
     notes: "Dopo il primo test l affidabilità può ridursi se il livello viene consumato o rimosso."
   -
-    id: "BULL_P_01_03"
+    id: "BULL_YT_nn_001_03"
     entity_type: "INVALIDATION"
     category: "MACHINE_EXECUTABLE"
     scope: "MONITORING"
@@ -71,7 +71,7 @@ entities:
     rationale: "Test multipli dello stesso livello senza nuovo supporto aumentano il rischio di rottura."
     notes: "Dopo assorbimento della liquidità il setup originario è invalidato."
   -
-    id: "BULL_P_01_04"
+    id: "BULL_YT_nn_001_04"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "TRADE_EXECUTION"
@@ -92,7 +92,7 @@ entities:
     rationale: "La leva contenuta riduce la fragilità del trade in scenari volatili."
     notes: "Applicare preferibilmente con margine isolato quando disponibile."
   -
-    id: "BULL_P_01_CTX_01"
+    id: "BULL_YT_nn_001_05"
     entity_type: "GUIDELINE"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"
@@ -104,7 +104,7 @@ entities:
     statement: "Evitare segnali copiati senza comprensione del contesto operativo."
     rationale: "Riduce errori sistematici e dipendenza da fonti esterne non verificabili."
   -
-    id: "BULL_P_01_CTX_02"
+    id: "BULL_YT_nn_001_06"
     entity_type: "WARNING"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"

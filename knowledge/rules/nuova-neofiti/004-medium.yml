@@ -1,12 +1,12 @@
 video:
-  id: "YT_BULL_P_004"
+  id: "BULL_YT_nn_004"
   series: "principianti"
   title: "nuova neofiti 004"
   video_index: 4
   duration_minutes: 21.73
 entities:
   -
-    id: "BULL_P_04_01"
+    id: "BULL_YT_nn_004_01"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "PRE_FILTER"
@@ -28,7 +28,7 @@ entities:
     rationale: "La posizione del prezzo rispetto a EMA60 viene usata come filtro direzionale iniziale."
     notes: "La regola abilita solo monitoraggio; non definisce ingresso autonomo senza ulteriori trigger."
   -
-    id: "BULL_P_04_02"
+    id: "BULL_YT_nn_004_02"
     entity_type: "SETUP"
     category: "MACHINE_EXECUTABLE"
     scope: "LIQUIDITY_GATE"
@@ -50,7 +50,7 @@ entities:
     rationale: "La presenza di un livello di book molto grande può agire da supporto o resistenza al primo test."
     notes: "Dopo il primo test l affidabilità può ridursi se il livello viene consumato o rimosso."
   -
-    id: "BULL_P_04_03"
+    id: "BULL_YT_nn_004_03"
     entity_type: "INVALIDATION"
     category: "MACHINE_EXECUTABLE"
     scope: "MONITORING"
@@ -72,7 +72,7 @@ entities:
     rationale: "Test multipli dello stesso livello senza nuovo supporto aumentano il rischio di rottura."
     notes: "Dopo assorbimento della liquidità il setup originario è invalidato."
   -
-    id: "BULL_P_04_CTX_01"
+    id: "BULL_YT_nn_004_04"
     entity_type: "GUIDELINE"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"

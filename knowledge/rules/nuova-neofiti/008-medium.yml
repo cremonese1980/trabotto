@@ -1,12 +1,12 @@
 video:
-  id: "YT_BULL_P_008"
+  id: "BULL_YT_nn_008"
   series: "principianti"
   title: "nuova neofiti 008"
   video_index: 8
   duration_minutes: 19.67
 entities:
   -
-    id: "BULL_P_08_01"
+    id: "BULL_YT_nn_008_01"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "PRE_FILTER"
@@ -28,7 +28,7 @@ entities:
     rationale: "La posizione del prezzo rispetto a EMA60 viene usata come filtro direzionale iniziale."
     notes: "La regola abilita solo monitoraggio; non definisce ingresso autonomo senza ulteriori trigger."
   -
-    id: "BULL_P_08_02"
+    id: "BULL_YT_nn_008_02"
     entity_type: "INVALIDATION"
     category: "MACHINE_EXECUTABLE"
     scope: "MONITORING"
@@ -50,7 +50,7 @@ entities:
     rationale: "Test multipli dello stesso livello senza nuovo supporto aumentano il rischio di rottura."
     notes: "Dopo assorbimento della liquidità il setup originario è invalidato."
   -
-    id: "BULL_P_08_03"
+    id: "BULL_YT_nn_008_03"
     entity_type: "RULE"
     category: "MACHINE_EXECUTABLE"
     scope: "TRADE_EXECUTION"
@@ -71,7 +71,7 @@ entities:
     rationale: "La leva contenuta riduce la fragilità del trade in scenari volatili."
     notes: "Applicare preferibilmente con margine isolato quando disponibile."
   -
-    id: "BULL_P_08_CTX_01"
+    id: "BULL_YT_nn_008_04"
     entity_type: "GUIDELINE"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"
@@ -83,7 +83,7 @@ entities:
     statement: "Evitare segnali copiati senza comprensione del contesto operativo."
     rationale: "Riduce errori sistematici e dipendenza da fonti esterne non verificabili."
   -
-    id: "BULL_P_08_CTX_02"
+    id: "BULL_YT_nn_008_05"
     entity_type: "WARNING"
     category: "CONTEXT_ONLY"
     scope: "GLOBAL"
