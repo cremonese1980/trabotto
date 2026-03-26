@@ -1,0 +1,70 @@
+video:
+  id: BULL_YT_ltcra_009
+  series: live-trading-crypto-analisi
+  title: "Tre operazioni: due short BTC e un long HOT con stop meccanico"
+  video_index: 9
+  duration_minutes: 14
+
+entities:
+  - id: BULL_YT_ltcra_009_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [btc_index, short, breakout]
+    source:
+      timecode: "00:31-01:20"
+    conditions:
+      - timeframe == "1m"
+      - btc_rally_then_lateralization == true
+      - price_breaks_range_low == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Shorta la rottura della base dopo salita estesa di BTC."
+    notes: "Imposta subito stop via pannello futures."
+
+  - id: BULL_YT_ltcra_009_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, risk_management, trigger]
+    source:
+      timecode: "01:20-01:58"
+    conditions:
+      - position_open == true
+      - last_price >= configured_stop_price
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Lo stop meccanico protegge da rimbalzi rapidi contro posizione."
+    notes: "Vantaggio: stop indipendente da ordini limite di uscita."
+
+  - id: BULL_YT_ltcra_009_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [long, breakout, trigger]
+    source:
+      timecode: "13:08-13:34"
+    conditions:
+      - altcoin_relative_strength_vs_btc == true
+      - price_breaks_local_resistance == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Valuta long solo su coin più forti di BTC nel momento."
+    notes: "Nel video esempio su HOT."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Strategia focalizzata su rotture intraday con stop meccanico immediato."

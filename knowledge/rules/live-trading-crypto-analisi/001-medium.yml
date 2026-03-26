@@ -1,0 +1,80 @@
+video:
+  id: BULL_YT_ltcra_001
+  series: live-trading-crypto-analisi
+  title: "Bybit live long: breakout 1m, filtro EMA10 e gestione target dinamica"
+  video_index: 1
+  duration_minutes: 8
+
+entities:
+  - id: BULL_YT_ltcra_001_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, daily, trigger]
+    source:
+      timecode: "00:38-01:59"
+    conditions:
+      - timeframe == "1m"
+      - hourly_reset_candle_detected == true
+      - price_breaks_intraday_range_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "1h"]
+      market_regime: []
+    rationale: "Entra long quando il breakout minuto è allineato con contesto hourly/daily forte."
+    notes: "Nel video usa ordine stop-limit per attivazione automatica."
+
+  - id: BULL_YT_ltcra_001_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop_loss, risk_management]
+    source:
+      timecode: "04:07-04:24"
+    conditions:
+      - position_open == true
+      - candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La perdita della EMA10 invalida la prosecuzione del breakout."
+    notes: "Accetta spike ma non chiusure sotto EMA10."
+
+  - id: BULL_YT_ltcra_001_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, trigger, scalping]
+    source:
+      timecode: "05:29-06:15"
+    conditions:
+      - position_open == true
+      - price_hits_limit_target == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Chiude sul target limite già piazzato nel book."
+    notes: "Prova a rialzare target, ma se fillato chiude senza inseguire."
+
+  - id: BULL_YT_ltcra_001_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "03:41-03:56"
+    statement: "Inserire sempre uno stop loss prima dell’ingresso evita errori operativi e liquidazioni non controllate."
+    rationale: "Consiglio di processo, non segnale di mercato."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 1
+  core_message: "Breakout gestito con stop progressivo su EMA10 e uscita disciplinata su target o invalidazione."

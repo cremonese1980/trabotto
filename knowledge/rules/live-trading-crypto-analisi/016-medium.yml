@@ -1,0 +1,70 @@
+video:
+  id: BULL_YT_ltcra_016
+  series: live-trading-crypto-analisi
+  title: "Quattro live trade: ingressi short su ETH/alt con filtro struttura e controllo BTC"
+  video_index: 16
+  duration_minutes: 24
+
+entities:
+  - id: BULL_YT_ltcra_016_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [short, ema10, ema60]
+    source:
+      timecode: "01:29-02:30"
+    conditions:
+      - price_below_ema60 == true
+      - ema10_controls_pullbacks == true
+      - zigzag_noise_reduced == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Attende ordine strutturale prima di considerare lo short."
+    notes: "Evita ingresso nel primo zigzag incerto."
+
+  - id: BULL_YT_ltcra_016_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, trigger, breakout]
+    source:
+      timecode: "02:30-03:20"
+    conditions:
+      - retest_fails == true
+      - price_breaks_last_local_low == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Ingresso al breakdown dopo retest debole."
+    notes: "Stop sopra swing immediatamente precedente."
+
+  - id: BULL_YT_ltcra_016_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [btc_index, invalidation, risk_management]
+    source:
+      timecode: "20:40-21:20"
+    conditions:
+      - position_open == true
+      - btc_shows_bullish_reversal_candle == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Se BTC cambia direzione riduce o chiude short correlati."
+    notes: "Regola di regime cross-asset."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Setup short selettivo con forte dipendenza dal regime BTC."

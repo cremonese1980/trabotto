@@ -1,0 +1,61 @@
+video:
+  id: BULL_YT_ltcra_026
+  series: live-trading-crypto-analisi
+  title: "Alice nuovo token: stop-limit breakout e vendita alla seconda candela senza estensione"
+  video_index: 26
+  duration_minutes: 10
+
+entities:
+  - id: BULL_YT_ltcra_026_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, trigger, stop_loss]
+    source:
+      timecode: "00:39-02:07"
+    conditions:
+      - new_listing_extreme_volatility == true
+      - stop_limit_trigger_price == 24.1
+      - max_fill_price == 24.15
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Usa stop-limit per farsi attivare solo sulla rottura del livello deciso."
+    notes: "Gestisce il rischio impostando prezzo massimo pagabile."
+
+  - id: BULL_YT_ltcra_026_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, take_profit, scalping]
+    source:
+      timecode: "04:45-05:15"
+    conditions:
+      - position_open == true
+      - second_breakout_candle_holds_without_pullback == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Preferisce incassare sulla seconda candela di rottura invece di inseguire estensioni."
+    notes: "Obiettivo: vendere presto in contesto iper-volatile."
+
+  - id: BULL_YT_ltcra_026_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "09:30-09:40"
+    statement: "Dopo l’uscita non rientra senza una nuova conformazione tecnica completa."
+    rationale: "Regola comportamentale contro overtrading impulsivo."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 1
+  core_message: "Operatività da listing: ingresso meccanico su trigger e uscita rapida senza greed."
