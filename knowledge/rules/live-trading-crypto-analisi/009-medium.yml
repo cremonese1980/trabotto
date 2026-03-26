@@ -1,0 +1,56 @@
+video:
+  id: "YT_BULL_T_009"
+  series: "tecniche"
+  title: "live trading crypto analisi 009"
+  video_index: 9
+  duration_minutes: 14.18
+entities:
+  -
+    id: "BULL_T_09_01"
+    entity_type: "RULE"
+    category: "MACHINE_EXECUTABLE"
+    scope: "TRADE_EXECUTION"
+    severity: "HARD"
+    tags:
+      - "risk_management"
+      - "leverage"
+      - "margin"
+    source:
+      timecode: "00:40-02:00"
+    conditions:
+      - "leverage <= 10"
+    action:
+      - "CLASSIFY_SETUP"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La leva contenuta riduce la fragilità del trade in scenari volatili."
+    notes: "Applicare preferibilmente con margine isolato quando disponibile."
+  -
+    id: "BULL_T_09_CTX_01"
+    entity_type: "GUIDELINE"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "psychology"
+      - "beginner"
+    source:
+      timecode: "00:00-01:58"
+    statement: "Evitare segnali copiati senza comprensione del contesto operativo."
+    rationale: "Riduce errori sistematici e dipendenza da fonti esterne non verificabili."
+  -
+    id: "BULL_T_09_CTX_02"
+    entity_type: "WARNING"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "risk_management"
+      - "psychology"
+    source:
+      timecode: "01:00-03:00"
+    statement: "L esposizione deve restare compatibile con la tolleranza personale alla perdita."
+    rationale: "Un sizing eccessivo peggiora decisioni e disciplina esecutiva."
+summary:
+  total_machine_executable: 1
+  total_context_only: 2
+  core_message: "Usare filtri oggettivi e gestione del rischio; evitare esecuzioni impulsive prive di conferma tecnica."

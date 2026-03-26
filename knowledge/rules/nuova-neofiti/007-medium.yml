@@ -1,0 +1,122 @@
+video:
+  id: "YT_BULL_P_007"
+  series: "principianti"
+  title: "nuova neofiti 007"
+  video_index: 7
+  duration_minutes: 24.4
+entities:
+  -
+    id: "BULL_P_07_01"
+    entity_type: "RULE"
+    category: "MACHINE_EXECUTABLE"
+    scope: "PRE_FILTER"
+    severity: "SOFT"
+    tags:
+      - "ema"
+      - "trend"
+      - "trigger"
+    source:
+      timecode: "00:00-02:44"
+    conditions:
+      - "price_above_ema60 == true || price_below_ema60 == true"
+    action:
+      - "WAIT"
+    applicability:
+      timeframes:
+        - "daily"
+      market_regime: []
+    rationale: "La posizione del prezzo rispetto a EMA60 viene usata come filtro direzionale iniziale."
+    notes: "La regola abilita solo monitoraggio; non definisce ingresso autonomo senza ulteriori trigger."
+  -
+    id: "BULL_P_07_02"
+    entity_type: "SETUP"
+    category: "MACHINE_EXECUTABLE"
+    scope: "LIQUIDITY_GATE"
+    severity: "SOFT"
+    tags:
+      - "book"
+      - "trigger"
+      - "retest"
+    source:
+      timecode: "05:00-09:10"
+    conditions:
+      - "order_book_large_level_detected == true"
+      - "touch_count(level) == 1"
+    action:
+      - "MONITOR_LEVEL"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La presenza di un livello di book molto grande può agire da supporto o resistenza al primo test."
+    notes: "Dopo il primo test l affidabilità può ridursi se il livello viene consumato o rimosso."
+  -
+    id: "BULL_P_07_03"
+    entity_type: "INVALIDATION"
+    category: "MACHINE_EXECUTABLE"
+    scope: "MONITORING"
+    severity: "HARD"
+    tags:
+      - "terzo_tocco"
+      - "invalidation"
+      - "reversal"
+    source:
+      timecode: "07:30-08:58"
+    conditions:
+      - "touch_count(level) >= 2"
+      - "order_book_large_level_detected == false"
+    action:
+      - "SKIP_TRADE"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Test multipli dello stesso livello senza nuovo supporto aumentano il rischio di rottura."
+    notes: "Dopo assorbimento della liquidità il setup originario è invalidato."
+  -
+    id: "BULL_P_07_04"
+    entity_type: "RULE"
+    category: "MACHINE_EXECUTABLE"
+    scope: "TRADE_EXECUTION"
+    severity: "HARD"
+    tags:
+      - "risk_management"
+      - "leverage"
+      - "margin"
+    source:
+      timecode: "00:40-02:00"
+    conditions:
+      - "leverage <= 10"
+    action:
+      - "CLASSIFY_SETUP"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La leva contenuta riduce la fragilità del trade in scenari volatili."
+    notes: "Applicare preferibilmente con margine isolato quando disponibile."
+  -
+    id: "BULL_P_07_CTX_01"
+    entity_type: "GUIDELINE"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "psychology"
+      - "beginner"
+    source:
+      timecode: "00:00-02:44"
+    statement: "Evitare segnali copiati senza comprensione del contesto operativo."
+    rationale: "Riduce errori sistematici e dipendenza da fonti esterne non verificabili."
+  -
+    id: "BULL_P_07_CTX_02"
+    entity_type: "WARNING"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "risk_management"
+      - "psychology"
+    source:
+      timecode: "01:00-03:00"
+    statement: "L esposizione deve restare compatibile con la tolleranza personale alla perdita."
+    rationale: "Un sizing eccessivo peggiora decisioni e disciplina esecutiva."
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Usare filtri oggettivi e gestione del rischio; evitare esecuzioni impulsive prive di conferma tecnica."

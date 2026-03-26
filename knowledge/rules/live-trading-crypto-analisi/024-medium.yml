@@ -1,0 +1,57 @@
+video:
+  id: "YT_BULL_T_024"
+  series: "tecniche"
+  title: "live trading crypto analisi 024"
+  video_index: 24
+  duration_minutes: 5.05
+entities:
+  -
+    id: "BULL_T_24_01"
+    entity_type: "SETUP"
+    category: "MACHINE_EXECUTABLE"
+    scope: "LIQUIDITY_GATE"
+    severity: "SOFT"
+    tags:
+      - "book"
+      - "trigger"
+      - "retest"
+    source:
+      timecode: "05:00-09:10"
+    conditions:
+      - "order_book_large_level_detected == true"
+      - "touch_count(level) == 1"
+    action:
+      - "MONITOR_LEVEL"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La presenza di un livello di book molto grande può agire da supporto o resistenza al primo test."
+    notes: "Dopo il primo test l affidabilità può ridursi se il livello viene consumato o rimosso."
+  -
+    id: "BULL_T_24_CTX_01"
+    entity_type: "GUIDELINE"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "psychology"
+      - "beginner"
+    source:
+      timecode: "00:00-00:41"
+    statement: "Evitare segnali copiati senza comprensione del contesto operativo."
+    rationale: "Riduce errori sistematici e dipendenza da fonti esterne non verificabili."
+  -
+    id: "BULL_T_24_CTX_02"
+    entity_type: "WARNING"
+    category: "CONTEXT_ONLY"
+    scope: "GLOBAL"
+    tags:
+      - "risk_management"
+      - "psychology"
+    source:
+      timecode: "01:00-03:00"
+    statement: "L esposizione deve restare compatibile con la tolleranza personale alla perdita."
+    rationale: "Un sizing eccessivo peggiora decisioni e disciplina esecutiva."
+summary:
+  total_machine_executable: 1
+  total_context_only: 2
+  core_message: "Usare filtri oggettivi e gestione del rischio; evitare esecuzioni impulsive prive di conferma tecnica."
