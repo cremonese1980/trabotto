@@ -1,0 +1,49 @@
+video:
+  id: YT_BULL_t_004
+  series: tecniche
+  title: "Ciao Traders, siamo su Scuppy in the Bull"
+  video_index: 4
+  duration_minutes: 13
+
+entities:
+  - id: YT_BULL_t_004_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "02:38-02:43"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_004_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "11:42-12:05"
+    conditions:
+      - timeframe_minutes < 30
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 0
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

@@ -1,0 +1,50 @@
+video:
+  id: YT_BULL_t_008
+  series: tecniche
+  title: "ciao traders, siete su Scalping the Bull. Oggi trattiamo come fare a tradeare, quindi fare"
+  video_index: 8
+  duration_minutes: 12
+
+entities:
+  - id: YT_BULL_t_008_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "02:23-02:34"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_008_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "02:39-02:48"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 0
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

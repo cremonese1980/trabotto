@@ -1,0 +1,59 @@
+video:
+  id: YT_BULL_t_028
+  series: tecniche
+  title: "Ciao trader, siete su Scapina Bull"
+  video_index: 28
+  duration_minutes: 20
+
+entities:
+  - id: YT_BULL_t_028_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [leverage, margin, risk_management]
+    source:
+      timecode: "03:20-03:25"
+    conditions:
+      - leverage <= 10
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
+    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
+
+  - id: YT_BULL_t_028_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "06:23-06:26"
+    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
+    rationale: "Riduce overtrading e decisioni impulsive."
+
+  - id: YT_BULL_t_028_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "10:32-10:40"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

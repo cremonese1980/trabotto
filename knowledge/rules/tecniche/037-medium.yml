@@ -1,0 +1,86 @@
+video:
+  id: YT_BULL_t_037
+  series: tecniche
+  title: "Ciao Traderz, siete su Scopio in the Bull e adesso sono live su Twitch, tra 125 live che"
+  video_index: 37
+  duration_minutes: 21
+
+entities:
+  - id: YT_BULL_t_037_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "01:32-01:41"
+    conditions:
+      - timeframe_minutes < 30
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
+
+  - id: YT_BULL_t_037_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "07:38-07:43"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_037_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "07:38-07:43"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+  - id: YT_BULL_t_037_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema60, trend, regime_filter]
+    source:
+      timecode: "14:18-14:27"
+    conditions:
+      - price_below_ema60 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
+    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 0
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

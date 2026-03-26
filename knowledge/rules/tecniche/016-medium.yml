@@ -1,0 +1,49 @@
+video:
+  id: YT_BULL_t_016
+  series: tecniche
+  title: "Ciao Traders, siete su Sculpting the Bull. La pesca notturna, quindi questa è la seconda parte"
+  video_index: 16
+  duration_minutes: 11
+
+entities:
+  - id: YT_BULL_t_016_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "07:11-07:28"
+    conditions:
+      - timeframe_minutes < 30
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
+
+  - id: YT_BULL_t_016_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "08:04-08:16"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 0
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

@@ -1,0 +1,22 @@
+video:
+  id: YT_BULL_t_027
+  series: tecniche
+  title: "Ciao trader, siete su scappina bull"
+  video_index: 27
+  duration_minutes: 14
+
+entities:
+  - id: YT_BULL_t_027_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "00:00-00:02"
+    statement: "Il video è prevalentemente educativo e richiede conferme operative prima dell'esecuzione."
+    rationale: "Manca una sequenza completa e deterministica di condizioni->azione."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
