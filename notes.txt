@@ -10,8 +10,12 @@ pip install openai-whisper yt-dlp
 
 source ~/dev/whisper-env/bin/activate
 cd ~/dev/trabotto
-python ingest/src/transcribe.py "URL" --model large
 
+
+
+
+
+python ingest/src/transcribe.py "URL" --model medium
 
 
 Playlist NEOFITI

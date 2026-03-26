@@ -1,15 +1,5 @@
 TODO
-*   Whisper medium transcriptions playlist Nuova playlist per neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R_yVy8v0NwYyxs2TruxITjO
-*   Whisper medium transcriptions playlist Live trading crypto analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN
-*   Whisper medium transcriptions playlist Live trade con analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM
-*   Whisper medium transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
 
-*   Whisper large transcriptions playlist neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
-*   Whisper large transcriptions playlist tecniche di trading https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
-*   Whisper large transcriptions playlist Nuova playlist per neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R_yVy8v0NwYyxs2TruxITjO
-*   Whisper large transcriptions playlist Live trading crypto analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN
-*   Whisper large transcriptions playlist Live trade con analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM
-*   Whisper large transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
 
 *	Codex for codifing rules from trasnscriptions for tecniche di trading
 *	Codex for codifing rules from trasnscriptions for Nuova playlist per neofiti
@@ -22,11 +12,21 @@ TODO
 
 *	docker-compose.yml
 
+*   Whisper large transcriptions playlist neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
+*   Whisper large transcriptions playlist tecniche di trading https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
+*   Whisper large transcriptions playlist Nuova playlist per neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R_yVy8v0NwYyxs2TruxITjO
+*   Whisper large transcriptions playlist Live trading crypto analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN
+*   Whisper large transcriptions playlist Live trade con analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM
+*   Whisper large transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
 
 DONE
 
 *   Whisper medium transcriptions playlist neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
 *   Whisper medium transcriptions playlist tecniche di trading https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
+*   Whisper medium transcriptions playlist Nuova playlist per neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R_yVy8v0NwYyxs2TruxITjO
+*   Whisper medium transcriptions playlist Live trading crypto analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN
+*   Whisper medium transcriptions playlist Live trade con analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM
+*   Whisper medium transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
 
 *	Codex for codifing rules from trasnscriptions for neofiti
 
