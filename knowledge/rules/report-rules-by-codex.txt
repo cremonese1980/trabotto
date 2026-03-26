@@ -1,0 +1,199 @@
+Live trading crypto analisi
+| File | Esito            | Nota audit                                                                      |
+| ---- | ---------------- | ------------------------------------------------------------------------------- |
+| 001  | ✅ Buono          | Coerente su Bybit breakout + EMA10 + target/stop                                |
+| 002  | ✅ Buono          | Coerente su secondo tocco daily + uscita su mancata accelerazione               |
+| 003  | ✅ Buono          | Coerente con trade in perdita su EMA10/EMA60                                    |
+| 004  | 🟡 Da rifinire   | Tema corretto, ma estrazione un po’ compressa rispetto alla ricchezza del video |
+| 005  | ✅ Buono          | Coerente su muri book + ingresso selettivo                                      |
+| 006  | ✅ Buono          | Coerente su terzo/quarto tocco + stop-limit                                     |
+| 007  | ✅ Buono          | Coerente su setup “perfetto” con EMA60                                          |
+| 008  | 🟡 Da rifinire   | Buon tema Bullbot, ma qualche condizione troppo astratta                        |
+| 009  | ✅ Buono          | Coerente su 2 short BTC + 1 long HOT con stop meccanico                         |
+| 010  | ✅ Buono          | Coerente su spot/shimano/ordini condizionati                                    |
+| 011  | ✅ Buono          | Coerente su panico spot + iceberg + lettura ask/bid                             |
+| 012  | ✅ Corretto       | Placeholder-only gestito bene come WARNING context-only                         |
+| 013  | ✅ Corretto       | Placeholder-only gestito bene come WARNING context-only                         |
+| 014  | ✅ Buono          | Coerente su Fizz breakout + target prudente pre-muro                            |
+| 015  | 🟡 Da rifinire   | Buona direzione, ma alcune condizioni risultano troppo “meta”                   |
+| 016  | 🟠 Critico medio | Diverse condizioni vaghe/non pienamente osservabili                             |
+| 017  | ✅ Buono          | Coerente su massimi decrescenti + stop a zero                                   |
+| 018  | ✅ Buono          | Coerente su BNB short + conferma chiusura candela                               |
+| 019  | ✅ Buono          | Coerente su mega supporto BTC in ottica contrarian                              |
+| 020  | 🟡 Da rifinire   | Tema giusto, ma qualche variabile andrebbe resa più misurabile                  |
+| 021  | 🟡 Da rifinire   | Coerente su listing SHIB, ma c’è una condizione troppo “interna”                |
+| 022  | 🟡 Da rifinire   | Buona logica DOGE short, ma una condizione è formulata in modo generico         |
+| 023  | 🟡 Da rifinire   | Coerente, ma alcune espressioni sono poco machine-strict                        |
+| 024  | ✅ Buono          | Coerente su XRP doppio ingresso + filtro daily                                  |
+| 025  | 🟡 Da rifinire   | Buon impianto ICO/book, ma alcune condizioni restano astratte                   |
+| 026  | ✅ Buono          | Coerente su Alice listing + stop-limit breakout                                 |
+
+_________________________________________
+Tabella audit (neofiti)
+Legenda:
+
+HIGH_REPEAT = alta probabilità di template ripetuto (criticità alta)
+MEDIUM_REPEAT = ripetizione parziale (criticità media)
+LOW_REPEAT = relativamente più specifico/unico (criticità bassa)
+
+file,status,cluster_size,note
+001,HIGH_REPEAT,7,template condiviso con altri file
+002,MEDIUM_REPEAT,4,template condiviso con altri file
+003,HIGH_REPEAT,7,template condiviso con altri file
+004,MEDIUM_REPEAT,4,template condiviso con altri file
+005,MEDIUM_REPEAT,4,template condiviso con altri file
+006,MEDIUM_REPEAT,3,template condiviso con altri file
+007,MEDIUM_REPEAT,4,template condiviso con altri file
+008,HIGH_REPEAT,7,template condiviso con altri file
+009,MEDIUM_REPEAT,4,template condiviso con altri file
+010,LOW_REPEAT,1,struttura relativamente unica
+011,HIGH_REPEAT,12,template condiviso con molti file
+012,HIGH_REPEAT,7,template condiviso con altri file
+013,HIGH_REPEAT,12,template condiviso con molti file
+014,MEDIUM_REPEAT,4,template condiviso con altri file
+015,MEDIUM_REPEAT,4,template condiviso con altri file
+016,HIGH_REPEAT,12,template condiviso con molti file
+017,MEDIUM_REPEAT,4,template condiviso con altri file
+018,MEDIUM_REPEAT,3,template condiviso con altri file
+019,MEDIUM_REPEAT,3,template condiviso con altri file
+020,LOW_REPEAT,1,struttura relativamente unica
+021,HIGH_REPEAT,12,template condiviso con molti file
+022,HIGH_REPEAT,7,template condiviso con altri file
+023,HIGH_REPEAT,12,template condiviso con molti file
+024,HIGH_REPEAT,7,template condiviso con altri file
+025,LOW_REPEAT,1,struttura relativamente unica
+026,HIGH_REPEAT,12,template condiviso con molti file
+027,HIGH_REPEAT,12,template condiviso con molti file
+028,MEDIUM_REPEAT,3,template condiviso con altri file
+029,HIGH_REPEAT,12,template condiviso con molti file
+030,MEDIUM_REPEAT,3,template condiviso con altri file
+031,HIGH_REPEAT,7,template condiviso con altri file
+032,HIGH_REPEAT,12,template condiviso con molti file
+033,MEDIUM_REPEAT,4,template condiviso con altri file
+034,MEDIUM_REPEAT,4,template condiviso con altri file
+035,HIGH_REPEAT,12,template condiviso con molti file
+036,LOW_REPEAT,2,struttura relativamente più unica
+037,HIGH_REPEAT,12,template condiviso con molti file
+038,MEDIUM_REPEAT,3,template condiviso con altri file
+039,MEDIUM_REPEAT,4,template condiviso con altri file
+040,MEDIUM_REPEAT,4,template condiviso con altri file
+041,LOW_REPEAT,2,struttura relativamente più unica
+042,LOW_REPEAT,1,struttura relativamente unica
+043,MEDIUM_REPEAT,4,template condiviso con altri file
+044,MEDIUM_REPEAT,4,template condiviso con altri file
+045,HIGH_REPEAT,12,template condiviso con molti file
+046,MEDIUM_REPEAT,4,template condiviso con altri file
+047,MEDIUM_REPEAT,4,template condiviso con altri file
+
+_________________________________________
+
+Tabella check Tecniche
+Legenda:
+
+LOW_REPEAT = bassa ripetizione strutturale (buono)
+MEDIUM_REPEAT = ripetizione media
+HIGH_REPEAT = ripetizione alta
+
+file,status,cluster_size,note
+001,LOW_REPEAT,1,struttura unica
+002,LOW_REPEAT,1,struttura unica
+003,LOW_REPEAT,1,struttura unica
+004,LOW_REPEAT,1,struttura unica
+005,LOW_REPEAT,1,struttura unica
+006,LOW_REPEAT,1,struttura unica
+007,LOW_REPEAT,1,struttura unica
+008,LOW_REPEAT,1,struttura unica
+009,LOW_REPEAT,1,struttura unica
+010,LOW_REPEAT,1,struttura unica
+011,LOW_REPEAT,1,struttura unica
+012,LOW_REPEAT,1,struttura unica
+013,LOW_REPEAT,1,struttura unica
+014,LOW_REPEAT,1,struttura unica
+015,LOW_REPEAT,1,struttura unica
+016,LOW_REPEAT,1,struttura unica
+017,LOW_REPEAT,1,struttura unica
+018,LOW_REPEAT,1,struttura unica
+019,LOW_REPEAT,1,struttura unica
+020,LOW_REPEAT,1,struttura unica
+021,LOW_REPEAT,1,struttura unica
+022,LOW_REPEAT,1,struttura unica
+023,LOW_REPEAT,1,struttura unica
+024,LOW_REPEAT,1,struttura unica
+025,LOW_REPEAT,1,struttura unica
+026,LOW_REPEAT,1,struttura unica
+027,LOW_REPEAT,1,struttura unica
+028,LOW_REPEAT,1,struttura unica
+029,LOW_REPEAT,1,struttura unica
+030,LOW_REPEAT,1,struttura unica
+031,LOW_REPEAT,1,struttura unica
+032,LOW_REPEAT,1,struttura unica
+033,LOW_REPEAT,1,struttura unica
+034,LOW_REPEAT,1,struttura unica
+035,LOW_REPEAT,1,struttura unica
+036,LOW_REPEAT,1,struttura unica
+037,LOW_REPEAT,1,struttura unica
+038,LOW_REPEAT,1,struttura unica
+039,LOW_REPEAT,1,struttura unica
+040,LOW_REPEAT,1,struttura unica
+041,LOW_REPEAT,1,struttura unica
+042,LOW_REPEAT,1,struttura unica
+044,LOW_REPEAT,1,struttura unica
+045,LOW_REPEAT,1,struttura unica
+046,LOW_REPEAT,1,struttura unica
+047,LOW_REPEAT,1,struttura unica
+048,LOW_REPEAT,1,struttura unica
+049,LOW_REPEAT,1,struttura unica
+050,LOW_REPEAT,1,struttura unica
+051,LOW_REPEAT,1,struttura unica
+052,LOW_REPEAT,1,struttura unica
+053,LOW_REPEAT,1,struttura unica
+054,LOW_REPEAT,1,struttura unica
+055,LOW_REPEAT,1,struttura unica
+
+_________________________________________
+Tabella check (nuova neofiti)
+Legenda:
+
+LOW_REPEAT = bassa ripetizione (buono)
+MEDIUM_REPEAT = ripetizione media
+HIGH_REPEAT = ripetizione alta
+
+file,status,cluster_size,note
+001,LOW_REPEAT,1,struttura unica
+002,LOW_REPEAT,1,struttura unica
+003,LOW_REPEAT,1,struttura unica
+004,LOW_REPEAT,1,struttura unica
+005,LOW_REPEAT,1,struttura unica
+006,LOW_REPEAT,1,struttura unica
+007,LOW_REPEAT,1,struttura unica
+008,LOW_REPEAT,1,struttura unica
+009,LOW_REPEAT,1,struttura unica
+_________________________________________
+
+Tabella check (live-streaming-su-youtube)
+Legenda:
+
+LOW_REPEAT = bassa ripetizione (buono)
+MEDIUM_REPEAT = ripetizione media
+HIGH_REPEAT = ripetizione alta
+
+file,status,cluster_size,note
+003,LOW_REPEAT,1,struttura unica
+004,LOW_REPEAT,1,struttura unica
+005,LOW_REPEAT,1,struttura unica
+_________________________________________
+
+Tabella check (live-trade-con-analisi)
+Legenda:
+
+LOW_REPEAT = bassa ripetizione (buono)
+MEDIUM_REPEAT = ripetizione media
+HIGH_REPEAT = ripetizione alta
+
+file,status,cluster_size,note
+001,LOW_REPEAT,1,struttura unica
+003,LOW_REPEAT,1,struttura unica
+004,LOW_REPEAT,1,struttura unica
+005,LOW_REPEAT,1,struttura unica
+006,LOW_REPEAT,1,struttura unica
+
