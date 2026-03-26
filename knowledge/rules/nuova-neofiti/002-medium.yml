@@ -24,7 +24,7 @@ entities:
     source:
       timecode: "17:44-20:17"
     conditions:
-      - timeframe == "4m"
+      - timeframe == "4h"
       - current_candle_low > previous_candle_low
       - previous_candle_body_size >= large_body_threshold
     action:
