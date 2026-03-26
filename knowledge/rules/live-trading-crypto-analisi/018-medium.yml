@@ -1,0 +1,69 @@
+video:
+  id: BULL_YT_ltcra_018
+  series: live-trading-crypto-analisi
+  title: "BNB short + XRP breakout: conferma su chiusura candela e invalidazione EMA10"
+  video_index: 18
+  duration_minutes: 13
+
+entities:
+  - id: BULL_YT_ltcra_018_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, trigger, candle_pattern]
+    source:
+      timecode: "01:28-02:40"
+    conditions:
+      - new_low_break_occurs == true
+      - bullish_breakout_candle_closes_weak == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Entra short dopo falso breakout e ritorno sotto i minimi."
+    notes: "Decisione presa solo dopo chiusura candela, non intrabar."
+
+  - id: BULL_YT_ltcra_018_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, invalidation, short]
+    source:
+      timecode: "09:07-09:40"
+    conditions:
+      - position_open == true
+      - candle_close_above_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Recupero EMA10 invalida prosecuzione short."
+    notes: "Evita di restare contro trend di breve che cambia."
+
+  - id: BULL_YT_ltcra_018_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [breakout, daily, trigger]
+    source:
+      timecode: "10:40-11:20"
+    conditions:
+      - higher_timeframe_breakout_confirmation == true
+      - double_timeframe_alignment == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Per XRP richiede conferma contemporanea su due timeframe."
+    notes: "Riduce i falsi segnali su breakout veloci."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Conferme su chiusura candela e regole EMA separano ingressi validi da false partenze."

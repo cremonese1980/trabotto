@@ -1,0 +1,61 @@
+video:
+  id: BULL_YT_ltcra_008
+  series: live-trading-crypto-analisi
+  title: "Bullbot bomba: vicinanza ai massimi daily e breakout da lateralizzazione"
+  video_index: 8
+  duration_minutes: 8
+
+entities:
+  - id: BULL_YT_ltcra_008_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, breakout, trigger]
+    source:
+      timecode: "00:37-01:25"
+    conditions:
+      - signal_bomba_active == true
+      - distance_from_prev_day_high_pct <= 3
+      - lateralization_detected == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1m", "1d"]
+      market_regime: []
+    rationale: "Combina segnale bot e contesto di prossimità ai massimi precedenti."
+    notes: "Cerca martello/lateralizzazione prima della rottura."
+
+  - id: BULL_YT_ltcra_008_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, book, scalping]
+    source:
+      timecode: "01:25-02:10"
+    conditions:
+      - price_breaks_range_high == true
+      - book_shows_available_liquidity == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Entra sulla rottura quando il book consente esecuzione pulita."
+    notes: "Evita trade se il book mostra vuoti eccessivi."
+
+  - id: BULL_YT_ltcra_008_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "08:20-08:44"
+    statement: "Usare i replay dei trade accelera l’apprendimento della lettura congiunta grafico-book."
+    rationale: "Suggerimento didattico, non condizione automatica."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 1
+  core_message: "Setup guidato dal bot ma confermato da struttura tecnica e liquidità del book."

@@ -1,0 +1,69 @@
+video:
+  id: BULL_YT_ltcra_017
+  series: live-trading-crypto-analisi
+  title: "Tre sessioni short: massimi decrescenti, breakdown e stop a zero dopo impulso"
+  video_index: 17
+  duration_minutes: 8
+
+entities:
+  - id: BULL_YT_ltcra_017_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [short, candle_pattern, trigger]
+    source:
+      timecode: "00:36-01:08"
+    conditions:
+      - descending_highs_count >= 3
+      - lateralization_detected == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Massimi decrescenti in congestione preparano breakdown short."
+    notes: "Secondo test già tradabile ma terzo test offre più conferma."
+
+  - id: BULL_YT_ltcra_017_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, stop_loss, scalping]
+    source:
+      timecode: "01:20-01:43"
+    conditions:
+      - price_breaks_lateral_base == true
+      - stop_above_recent_high_defined == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Short con stop vicino sopra ultimo massimo utile."
+    notes: "Se EMA60 è stata “sporcata”, usa swing high e non EMA come stop."
+
+  - id: BULL_YT_ltcra_017_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [risk_management, stop_loss, trigger]
+    source:
+      timecode: "01:54-01:58"
+    conditions:
+      - position_open == true
+      - first_downward_strap_completed == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo primo strappo protegge la posizione a zero."
+    notes: "Può essere meccanico o manuale."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Pattern short classico: congestione con massimi calanti, ingresso su break, protezione rapida."

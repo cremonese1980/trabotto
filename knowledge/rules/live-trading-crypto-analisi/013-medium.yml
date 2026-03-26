@@ -1,0 +1,22 @@
+video:
+  id: BULL_YT_ltcra_013
+  series: live-trading-crypto-analisi
+  title: "Trascrizione placeholder Amara: nessun dato estraibile"
+  video_index: 13
+  duration_minutes: 11
+
+entities:
+  - id: BULL_YT_ltcra_013_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "00:30-11:00"
+    statement: "La trascrizione riporta esclusivamente la dicitura “Sottotitoli creati dalla comunità Amara.org”."
+    rationale: "Manca materiale semantico per definire regole di trading."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 1
+  core_message: "File non utilizzabile per rule extraction."

@@ -1,0 +1,69 @@
+video:
+  id: BULL_YT_ltcra_020
+  series: live-trading-crypto-analisi
+  title: "Quattro trade in analisi: short su failed reclaim EMA60 e stop progressivi"
+  video_index: 20
+  duration_minutes: 12
+
+entities:
+  - id: BULL_YT_ltcra_020_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, short, trigger]
+    source:
+      timecode: "00:12-00:54"
+    conditions:
+      - daily_context_extended == true
+      - retest_zone_identified == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1d", "1m"]
+      market_regime: []
+    rationale: "Usa contesto daily esteso per cercare setup short intraday."
+    notes: "Preferisce secondi giorni post-candelona."
+
+  - id: BULL_YT_ltcra_020_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, short, breakout]
+    source:
+      timecode: "10:12-10:31"
+    conditions:
+      - price_pierces_ema60_and_fails_reclaim == true
+      - price_turns_down_again == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Il failed reclaim della 60 è trigger operativo short."
+    notes: "Entry spesso con stop sopra candela di setup."
+
+  - id: BULL_YT_ltcra_020_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, risk_management, scalping]
+    source:
+      timecode: "05:04-05:16"
+    conditions:
+      - position_open == true
+      - new_low_confirmed == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo nuovi minimi avvicina stop per bloccare rischio."
+    notes: "Trailing aggressivo nelle fasi veloci."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Short guidati da failure sulla EMA60 con gestione stop dinamica e prudente."
