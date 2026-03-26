@@ -7,29 +7,29 @@
 ## Tasks
 
 ### 1.1 Domain Model (trabotto-domain)
-- [ ] Generate via Claude Code (CLAUDE_CODE_DOMAIN_INSTRUCTIONS.md)
-- [ ] Signal, RawSignal, Rule, Decision records
-- [ ] SignalSourcePort, ExchangePort, AiAdvisoryPort interfaces
-- [ ] RuleEngine, PolicyEngine interfaces
-- [ ] TradeMonitorAdvice, MonitorAction, BtcSnapshot
-- [ ] ShadowTrade, ShadowTradeOutcome
-- [ ] mvn compile passes with zero dependencies
+- [x] Generate via Codex (CLAUDE_CODE_DOMAIN_INSTRUCTIONS.md)
+- [x] Signal, RawSignal, Rule, Decision records
+- [x] SignalSourcePort, ExchangePort, AiAdvisoryPort interfaces
+- [x] RuleEngine, PolicyEngine interfaces
+- [x] TradeMonitorAdvice, MonitorAction, BtcSnapshot
+- [x] ShadowTrade, ShadowTradeOutcome
+- [x] mvn compile passes with zero dependencies
 
 ### 1.2 Parent POM + Module Structure
-- [ ] Parent POM with Java 21
-- [ ] trabotto-domain module
-- [ ] trabotto-infrastructure module (skeleton)
-- [ ] trabotto-application module (skeleton)
-- [ ] trabotto-boot module (skeleton)
+- [x] Parent POM with Java 21
+- [x] trabotto-domain module
+- [x] trabotto-infrastructure module (skeleton)
+- [x] trabotto-application module (skeleton)
+- [x] trabotto-boot module (skeleton)
 
 ### 1.3 Kafka Setup
-- [ ] Docker Compose: Kafka + Zookeeper
+- [x] Docker Compose: Kafka + Zookeeper
 - [ ] Topic definitions (signals.incoming, decisions.pending, etc.)
 - [ ] SignalConsumer skeleton in trabotto-infrastructure
 - [ ] Basic producer/consumer integration test
 
 ### 1.4 PostgreSQL Setup
-- [ ] Docker Compose: PostgreSQL + pgvector
+- [x] Docker Compose: PostgreSQL + pgvector
 - [ ] Flyway or manual schema for decisions table
 - [ ] Shadow trades table
 - [ ] Basic repository skeleton
@@ -41,7 +41,7 @@
 - [ ] Unit tests with sample Bull rules
 
 ## Definition of Done
-- [ ] `docker-compose up` starts Kafka + PostgreSQL
-- [ ] Domain model compiles clean
+- [x] `docker-compose up` starts Kafka + PostgreSQL
+- [x] Domain model compiles clean
 - [ ] Can publish a test signal to Kafka and consume it
 - [ ] Rule engine evaluates sample rules against sample signals
