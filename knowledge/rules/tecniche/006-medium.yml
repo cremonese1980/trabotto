@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_006
+  series: tecniche
+  title: "Ciao, Tade, siete su Scabinebull. Oggi facciamo il Daily con Stop a zero. Sigla."
+  video_index: 6
+  duration_minutes: 23
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."

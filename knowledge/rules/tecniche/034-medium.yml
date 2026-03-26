@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_034
+  series: tecniche
+  title: "Ciao a tutti, siete su Scarp in a Bull puntata su come utilizzo il bull bot."
+  video_index: 34
+  duration_minutes: 22
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."

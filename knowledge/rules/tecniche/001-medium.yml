@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_001
+  series: tecniche
+  title: "Ciao Trader, siete su Skype in the Bull, video importantissimo sul Terzo Tocco Plus e Terz"
+  video_index: 1
+  duration_minutes: 4
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."

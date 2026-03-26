@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_027
+  series: tecniche
+  title: "Ciao trader, siete su scappina bull."
+  video_index: 27
+  duration_minutes: 14
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."

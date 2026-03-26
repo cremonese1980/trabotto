@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_042
+  series: tecniche
+  title: "ciao a tutti, adesso siete su Scabin the Bull, nuovo segnale del bullbot con la rottura"
+  video_index: 42
+  duration_minutes: 8
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."

@@ -1,0 +1,13 @@
+video:
+  id: YT_BULL_TECNICHE_002
+  series: tecniche
+  title: "ciao a tutti e a tutti, stiamo su scappi in bull, questo è un video molto importante che"
+  video_index: 2
+  duration_minutes: 19
+
+entities: []
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 0
+  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
