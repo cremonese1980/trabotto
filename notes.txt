@@ -10,7 +10,7 @@ pip install openai-whisper yt-dlp
 
 source ~/dev/whisper-env/bin/activate
 cd ~/dev/trabotto
-
+python ingest/src/telegram_listener.py
 
 
 
