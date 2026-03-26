@@ -1,0 +1,159 @@
+video:
+  id: BULL_YT_ltca_001
+  series: live-trade-con-analisi
+  title: "Analisi di quattro live trade: breakout daily RLC e short su Ethereum/EOS"
+  video_index: 1
+  duration_minutes: 13
+
+entities:
+  - id: BULL_YT_ltca_001_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, breakout, trigger, trend]
+    source:
+      timecode: "00:12-01:05"
+    conditions:
+      - timeframe == "1d"
+      - price_breaks_previous_day_high == true
+      - price_retests_previous_day_high_as_support == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1d", "1m"]
+      market_regime: []
+    rationale: "Bull tratta il retest del massimo precedente come base per continuazione long."
+    notes: "Il setup viene poi eseguito sul minuto dopo il filtro direzionale daily."
+
+  - id: BULL_YT_ltca_001_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, trigger, stop_loss, scalping]
+    source:
+      timecode: "01:16-01:35"
+    conditions:
+      - timeframe == "1m"
+      - price_breaks_intraday_spike_high == true
+      - entry_price >= nearby_resistance_level
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "L'ingresso avviene solo alla rottura del picco con conferma sul livello di resistenza vicino."
+    notes: "Bull preferisce entrare leggermente sopra il livello tecnico per evitare false rotture."
+
+  - id: BULL_YT_ltca_001_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, ema5, take_profit, trend]
+    source:
+      timecode: "02:27-03:01"
+    conditions:
+      - position_open == true
+      - strong_conviction_setup == true
+      - candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Con convinzione alta lascia correre fino alla perdita della EMA 10."
+    notes: "Quando la convinzione è bassa esce invece sui primi spike favorevoli."
+
+  - id: BULL_YT_ltca_001_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, short, retest, trigger]
+    source:
+      timecode: "04:04-04:40"
+    conditions:
+      - timeframe == "1m"
+      - price_retests_ema60_multiple_times == true
+      - price_breaks_below_recent_spike_lows == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo test ripetuti della EMA 60 entra short sulla rottura dei minimi locali."
+    notes: "Il pattern viene mostrato su Ethereum con doppio test della EMA 60."
+
+  - id: BULL_YT_ltca_001_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, risk_management, ema60, ema10]
+    source:
+      timecode: "04:52-05:25"
+    conditions:
+      - position_open == true
+      - new_low_printed == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Lo stop parte più largo e viene stretto progressivamente quando il trade va a favore."
+    notes: "Nel caso mostrato lo stop viene portato sopra una candela e sopra EMA 60 per ridurre rischio."
+
+  - id: BULL_YT_ltca_001_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, scalping, trigger, book]
+    source:
+      timecode: "05:58-06:37"
+    conditions:
+      - position_open == true
+      - price_reaches_predefined_limit_target == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Bull imposta take profit limit su livello ideale e chiude quando viene eseguito."
+    notes: "Preferisce il limit anche per ridurre fee quando disponibile."
+
+  - id: BULL_YT_ltca_001_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [invalidation, ema10, stop_loss, short]
+    source:
+      timecode: "10:25-11:16"
+    conditions:
+      - position_open == true
+      - candle_close_above_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Quando il prezzo recupera EMA 10 dopo mancata accelerazione, il setup short è invalidato."
+    notes: "Nel trade EOS lo stop viene colpito con perdita contenuta."
+
+  - id: BULL_YT_ltca_001_08
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management, beginner]
+    source:
+      timecode: "11:22-12:37"
+    statement: "Tagliare le perdite rapidamente spostando lo stop è essenziale per restare profittevoli nel lungo periodo."
+    rationale: "È una regola di disciplina generale e non una condizione algoritmica autonoma."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 1
+  core_message: "Usare filtri su EMA e struttura (breakout/retest) per entrare, poi ridurre il rischio dinamicamente con stop sempre più vicino. La gestione dell'uscita prevale sull'idea iniziale quando il prezzo invalida il setup."

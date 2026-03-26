@@ -1,0 +1,101 @@
+video:
+  id: BULL_YT_ltca_004
+  series: live-trade-con-analisi
+  title: "Live trade in perdita: gestione uscita su falso segnale"
+  video_index: 4
+  duration_minutes: 10
+
+entities:
+  - id: BULL_YT_ltca_004_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema10, trigger, breakout]
+    source:
+      timecode: "00:55-01:35"
+    conditions:
+      - timeframe == "1m"
+      - price_breaks_above_ema60 == true
+      - ema10_and_ema60_below_price == true
+      - retest_holds_above_ema10_and_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "L'ingresso long avviene sulla conferma di doppio supporto EMA 10 + EMA 60."
+    notes: "Bull anticipa il trigger per avere stop più vicino rispetto al breakout tardivo."
+
+  - id: BULL_YT_ltca_004_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema60, invalidation, stop_loss, candle_pattern]
+    source:
+      timecode: "02:07-04:45"
+    conditions:
+      - position_open == true
+      - candle_close_below_ema60 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La chiusura sotto EMA 60 invalida la tesi long anche se prima c'è stata una finta."
+    notes: "Può tollerare spike sotto livello, ma non la chiusura di candela sotto."
+
+  - id: BULL_YT_ltca_004_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, reversal, short, candle_pattern]
+    source:
+      timecode: "04:50-05:03"
+    conditions:
+      - fakeout_recovered_and_retested == true
+      - price_revisits_previous_fakeout_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo la finta riuscita, il ritorno immediato sul livello segnala rischio di inversione short."
+    notes: "Bull lo tratta come livello trigger per short, quindi chiude il long senza attendere."
+
+  - id: BULL_YT_ltca_004_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, stop_loss, trigger, scalping]
+    source:
+      timecode: "07:45-08:33"
+    conditions:
+      - position_open == true
+      - price_near_trigger_level == true
+      - momentum_turns_against_position == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Chiude manualmente appena il prezzo torna nel livello critico per evitare accelerazione avversa."
+    notes: "Nel caso mostrato la perdita finale è contenuta a circa 82 unità incluse fee."
+
+  - id: BULL_YT_ltca_004_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "00:31-00:47"
+    statement: "Dopo una perdita è utile attendere una nuova conformazione valida invece forzare il trade successivo."
+    rationale: "È disciplina operativa generale, non un criterio algoritmico direttamente misurabile."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 1
+  core_message: "Il video mostra come trasformare un setup long inizialmente valido in uscita disciplinata quando la conferma viene meno. La priorità è proteggere capitale con stop vicino e uscita rapida su trigger contrario."

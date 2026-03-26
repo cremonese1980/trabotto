@@ -1,0 +1,101 @@
+video:
+  id: BULL_YT_ltca_005
+  series: live-trade-con-analisi
+  title: "Trade in perdita su EMA 223: quando la finta non parte"
+  video_index: 5
+  duration_minutes: 9
+
+entities:
+  - id: BULL_YT_ltca_005_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, ema10, trigger, reversal]
+    source:
+      timecode: "00:59-01:39"
+    conditions:
+      - timeframe == "1m"
+      - previous_candle_closed_above_ema223 == true
+      - pullback_touches_or_nearly_touches_ema223 == true
+      - ema10_support_holds == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "30m"]
+      market_regime: []
+    rationale: "Bull entra long sulla ripartenza dopo test preciso della EMA 223 con EMA 10 ordinata."
+    notes: "Collega la EMA 223 su 1m alla logica EMA 10 su 30m."
+
+  - id: BULL_YT_ltca_005_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema223, invalidation, candle_pattern, stop_loss]
+    source:
+      timecode: "03:32-04:14"
+    conditions:
+      - position_open == true
+      - candle_below_ema223_persists_until_last_20_seconds == true
+      - no_upward_acceleration_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Se la candela resta debole sotto EMA 223 e non accelera nel finale, la finta è fallita."
+    notes: "Bull usa una finestra temporale operativa: entro gli ultimi 20 secondi deve partire il recupero."
+
+  - id: BULL_YT_ltca_005_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, short, breakout, candle_pattern]
+    source:
+      timecode: "05:03-05:18"
+    conditions:
+      - failed_reclaim_above_ema223 == true
+      - bearish_candle_closes_near_lows == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Quando il reclaim non conferma, il livello diventa trigger short e il long va abbandonato."
+    notes: "La rottura valida dovrebbe invece proiettare verso EMA 60."
+
+  - id: BULL_YT_ltca_005_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, risk_management, stop_loss, scalping]
+    source:
+      timecode: "05:50-06:33"
+    conditions:
+      - exit_signal_active == true
+      - available_liquidity_at_or_above_min_size == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Con segnale di uscita confermato esegue subito a mercato anche con size elevata."
+    notes: "Nel caso mostrato chiude circa 15k notional con slippage contenuto."
+
+  - id: BULL_YT_ltca_005_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "07:18-08:08"
+    statement: "Anche i setup ad alta probabilità possono fallire e vanno gestiti con uscita disciplinata senza esitazioni."
+    rationale: "È una regola di mentalità e processo, non una condizione direttamente computabile."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 1
+  core_message: "Il setup di finta su EMA 223 è valido solo se il recupero accelera entro la chiusura della candela. In assenza di accelerazione si esce subito, preservando capitale e controllo emotivo."

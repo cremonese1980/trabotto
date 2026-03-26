@@ -1,0 +1,181 @@
+video:
+  id: BULL_YT_ltca_003
+  series: live-trade-con-analisi
+  title: "Quattro live trade con gestione stop, target e caso stop a zero"
+  video_index: 3
+  duration_minutes: 25
+
+entities:
+  - id: BULL_YT_ltca_003_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema60, ema10, short, retest]
+    source:
+      timecode: "01:21-03:18"
+    conditions:
+      - timeframe == "1m"
+      - price_below_ema60 == true
+      - ema10_acts_as_resistance == true
+      - support_base_breaks_down == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Bull entra short quando il prezzo conferma debolezza sotto EMA 10/60 dopo zigzag iniziale."
+    notes: "Richiede conferma aggiuntiva se la struttura precedente è sporca."
+
+  - id: BULL_YT_ltca_003_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, invalidation, stop_loss, short]
+    source:
+      timecode: "03:34-04:23"
+    conditions:
+      - position_open == true
+      - candle_close_above_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La chiusura sopra EMA 10 invalida la continuazione short."
+    notes: "Bull mantiene stop iniziale e usa EMA 10 come invalidazione operativa."
+
+  - id: BULL_YT_ltca_003_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, trigger, scalping, candle_pattern]
+    source:
+      timecode: "06:23-08:05"
+    conditions:
+      - position_open == true
+      - predefined_limit_order_active == true
+      - price_spikes_to_limit == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "In presenza di spike veloci usa ordini limite già piazzati per monetizzare."
+    notes: "Quando i nuovi minimi vengono battuti spesso segue spike di rimbalzo."
+
+  - id: BULL_YT_ltca_003_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, lateralizzazione, short, trigger]
+    source:
+      timecode: "09:28-10:37"
+    conditions:
+      - timeframe == "1m"
+      - price_lateralizes_above_ema60 == true
+      - hammer_after_lateralization == true
+      - support_base_breaks_down == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La rottura di base laterale sopra EMA 60 offre ingresso short con stop vicino."
+    notes: "Bull privilegia setup con rischio ridotto grazie a livelli ravvicinati."
+
+  - id: BULL_YT_ltca_003_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, risk_management, short, trigger]
+    source:
+      timecode: "11:14-11:42"
+    conditions:
+      - position_open == true
+      - two_candle_base_forms_against_position == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Quando il prezzo crea base contraria, stringe stop per proteggere profitto già maturato."
+    notes: "Se la base viene rotta al rialzo preferisce uscire senza restituire gain."
+
+  - id: BULL_YT_ltca_003_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, short, retest, trigger]
+    source:
+      timecode: "12:34-13:30"
+    conditions:
+      - price_retests_ema60_as_resistance == true
+      - new_red_candle_after_retest == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo retest netto della EMA 60 considera valido un nuovo ingresso short."
+    notes: "Il setup viene descritto come opportunità con stop molto vicino."
+
+  - id: BULL_YT_ltca_003_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, reversal, trigger, btc_index]
+    source:
+      timecode: "20:44-21:59"
+    conditions:
+      - timeframe == "1m"
+      - prolonged_downtrend == true
+      - price_tests_ema60_repeatedly_in_short_time == true
+      - price_reclaims_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Dopo molteplici test della EMA 60 da sotto, il reclaim rapido è letto come setup long."
+    notes: "Bull segnala che statisticamente la seconda/terza riconquista dopo forte discesa funziona spesso."
+
+  - id: BULL_YT_ltca_003_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, breakeven, risk_management, long]
+    source:
+      timecode: "22:09-23:27"
+    conditions:
+      - position_open == true
+      - price_fails_to_reach_target_spike == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Se il long non accelera verso target, porta stop a prezzo di carico per uscita a zero."
+    notes: "Nel caso mostrato l'uscita a zero diventa lieve perdita solo per fee."
+
+  - id: BULL_YT_ltca_003_09
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "13:51-14:50"
+    statement: "Dopo una chiusura è meglio evitare rientri impulsivi immediati per non trasformare il trade in revenge trading."
+    rationale: "È una regola comportamentale, non direttamente codificabile solo da dati di mercato."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 1
+  core_message: "La strategia combina setup su EMA 60/10 con ingressi su rotture confermate e gestione molto attiva dello stop. Il controllo del rischio (breakeven, uscita su invalidazione) è prioritario rispetto al target massimo teorico."
