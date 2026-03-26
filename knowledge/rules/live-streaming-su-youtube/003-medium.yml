@@ -1,0 +1,107 @@
+video:
+  id: BULL_YT_lssy_003
+  series: tecniche
+  title: "Live Discord Q&A — book, breakout e gestione operativa"
+  video_index: 3
+  duration_minutes: 111
+
+entities:
+  - id: BULL_YT_lssy_003_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [breakout, trigger, scalping]
+    source:
+      timecode: "89:14-90:16"
+    conditions:
+      - breakout_after_lateralization == true
+      - seconds_from_first_breakout_candle_open < 50
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Bull richiede di non chiudere troppo presto il breakout e di osservare lo sfogo iniziale della prima candela."
+    notes: "Dopo i primi 50 secondi valuta uscita immediata, tenuta su EMA5/EMA10 o chiusura candela in base alla forza."
+
+  - id: BULL_YT_lssy_003_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, book, risk_management]
+    source:
+      timecode: "92:53-93:30"
+    conditions:
+      - take_profit_at_round_number == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "I numeri tondi concentrano ordini e riducono la probabilità di esecuzione del take profit."
+    notes: "Bull suggerisce di impostare il take profit leggermente prima del livello tondo per avere priorità in coda."
+
+  - id: BULL_YT_lssy_003_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [breakout, position_sizing, risk_management]
+    source:
+      timecode: "104:15-105:02"
+    conditions:
+      - simultaneous_setups_same_type_count >= 2
+      - setups_highly_correlated == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Aprire più posizioni uguali aumenta complessità di gestione senza migliorare il vantaggio."
+    notes: "Bull preferisce selezionare un solo setup tra quelli simili e concentrare la size su quello scelto."
+
+  - id: BULL_YT_lssy_003_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema5, ema10, trigger, risk_management]
+    source:
+      timecode: "108:59-110:10"
+    conditions:
+      - chart_structure_is_unclear == true
+      - ema5_ema10_whipsaw == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando la conformazione è sporca, forzare ingressi porta tipicamente a perdite evitabili."
+    notes: "Bull propone pausa operativa e nuova valutazione solo dopo tempo; se non migliora, giornata senza trade."
+
+  - id: BULL_YT_lssy_003_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "106:32-107:36"
+    statement: "Meglio accontentarsi e chiudere in profitto parziale piuttosto che aspettare sempre il massimo movimento."
+    rationale: "Riduce frustrazione, ritorni a zero e decisioni emotive nelle fasi finali del trade."
+
+  - id: BULL_YT_lssy_003_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, overtrading, risk_management]
+    source:
+      timecode: "108:59-110:10"
+    statement: "Operare per forza nei giorni senza setup porta a buttare soldi e peggiorare la lucidità decisionale."
+    rationale: "Bull enfatizza che non tradare in certe sessioni è già un risultato positivo di gestione del rischio."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Nella live Bull insiste su selezione severa dei setup, gestione esecuzione su breakout e disciplina nell'evitare trade forzati."
