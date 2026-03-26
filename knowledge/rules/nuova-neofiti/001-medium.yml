@@ -1,0 +1,40 @@
+video:
+  id: BULL_YT_nn_001
+  series: principianti
+  title: "Nuova neofiti 001 — introduzione a trading e scalping"
+  video_index: 1
+  duration_minutes: 21
+
+entities:
+  - id: BULL_YT_nn_001_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology, risk_management]
+    source:
+      timecode: "03:22-03:50"
+    statement: "Si entra solo con regole replicabili e non a caso."
+    rationale: "È un principio metodologico ma non definisce una condizione misurabile completa."
+  - id: BULL_YT_nn_001_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, scalping]
+    source:
+      timecode: "04:18-05:26"
+    statement: "Trading e scalping sono difficili ma non impossibili e richiedono percorso di studio."
+    rationale: "Riduce aspettative di guadagno immediato, senza creare una regola algoritmica."
+  - id: BULL_YT_nn_001_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, risk_management, daily]
+    source:
+      timecode: "10:37-12:17"
+    statement: "Lo scalping punta a chiudere in tempi brevi per ridurre il rischio di eventi esterni."
+    rationale: "È orientamento operativo generale, non una condizione d'ingresso/esecuzione deterministica."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 3
+  core_message: "Video introduttivo: definisce mentalità, differenza tra trading e scalping e approccio disciplinato per neofiti."

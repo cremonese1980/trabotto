@@ -1,0 +1,65 @@
+video:
+  id: BULL_YT_nn_008
+  series: principianti
+  title: "Nuova neofiti 008 — bitcoin come indice di forza relativa"
+  video_index: 8
+  duration_minutes: 19
+
+entities:
+  - id: BULL_YT_nn_008_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, regime_filter, trend]
+    source:
+      timecode: "06:46-07:54"
+    conditions:
+      - asset_return_vs_btc > 0
+      - btc_trend_stabilizing == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Asset più forte di BTC viene classificato come candidato long preferenziale."
+    notes: "Il confronto è di forza relativa sullo stesso timeframe."
+  - id: BULL_YT_nn_008_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, short, regime_filter]
+    source:
+      timecode: "16:23-16:34"
+    conditions:
+      - asset_return_vs_btc < 0
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Asset più debole di BTC viene trattato come miglior candidato short."
+    notes: "Filtro direzionale prima delle tecniche d'ingresso."
+  - id: BULL_YT_nn_008_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, breakout, risk_management]
+    source:
+      timecode: "15:29-15:58"
+    conditions:
+      - btc_near_major_breakdown_trigger == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se BTC è vicino a trigger di crollo, Bull sospende operatività sull'altcoin in attesa conferma."
+    notes: "Regola di prudenza per evitare trascinamento sistemico."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "BTC viene usato come benchmark di regime: si preferiscono long su strumenti più forti e short su strumenti più deboli."

@@ -1,0 +1,66 @@
+video:
+  id: BULL_YT_nn_004
+  series: principianti
+  title: "Nuova neofiti 004 — EMA 5/10/60/223 e logica del terzo tocco"
+  video_index: 4
+  duration_minutes: 21
+
+entities:
+  - id: BULL_YT_nn_004_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, trend, regime_filter]
+    source:
+      timecode: "02:54-03:04"
+    conditions:
+      - price_above_ema60 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "EMA60 viene usata come discriminante direzionale di base."
+    notes: "Nel video è descritta come linea chiave per leggere trend e cambi di direzione."
+  - id: BULL_YT_nn_004_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema10, trend, pullback]
+    source:
+      timecode: "09:58-10:39"
+    conditions:
+      - repeated_touches_of_ema10 >= 2
+      - candle_close_above_ema10 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Finché la chiusura resta sopra EMA10 il trend è considerato in tenuta."
+    notes: "Il setup resta monitorato in attesa di rottura netta."
+  - id: BULL_YT_nn_004_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, breakout, trigger]
+    source:
+      timecode: "11:13-11:42"
+    conditions:
+      - touch_count(level) >= 3
+      - level_precision == high
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il terzo tocco su livello preciso è trattato come probabilità elevata di cedimento."
+    notes: "Regola espressa in termini probabilistici, non deterministici al 100%."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 0
+  core_message: "Le EMA strutturano trend e timing; il terzo tocco viene usato come trigger operativo principale."
