@@ -1,11 +1,7 @@
 TODO
 
+*	Claude Code for rules review
 
-*	Codex for codifing rules from trasnscriptions for tecniche di trading
-*	Codex for codifing rules from trasnscriptions for Nuova playlist per neofiti
-*	Codex for codifing rules from trasnscriptions for Live trading crypto analisi
-*	Codex for codifing rules from trasnscriptions for Live trade con analisi
-*	Codex for codifing rules from trasnscriptions for Live streaming su youtube
 
 *	github actions
 *	github quality check
@@ -20,6 +16,12 @@ TODO
 *   Whisper large transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
 
 DONE
+
+*	Codex for codifing rules from trasnscriptions for tecniche di trading
+*	Codex for codifing rules from trasnscriptions for Nuova playlist per neofiti
+*	Codex for codifing rules from trasnscriptions for Live trading crypto analisi
+*	Codex for codifing rules from trasnscriptions for Live trade con analisi
+*	Codex for codifing rules from trasnscriptions for Live streaming su youtube
 
 *   Whisper medium transcriptions playlist neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
 *   Whisper medium transcriptions playlist tecniche di trading https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
