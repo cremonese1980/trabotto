@@ -1,12 +1,12 @@
 video:
-  id: YT_BULL_PRINCIPIANTI_036
+  id: BULL_YT_n_036
   series: principianti
   title: "Trading per neofiti — episodio 036"
   video_index: 36
   duration_minutes: 9
 
 entities:
-  - id: BULL_P_36_01
+  - id: BULL_YT_n_036_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
@@ -23,7 +23,7 @@ entities:
       market_regime: []
     rationale: "Bull usa EMA60 come filtro direzionale principale per evitare ingressi contro contesto."
     notes: "La condizione va verificata su chiusura candela del timeframe operativo."
-  - id: BULL_P_36_02
+  - id: BULL_YT_n_036_02
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
@@ -41,7 +41,7 @@ entities:
       market_regime: []
     rationale: "Per neofiti Bull impone leva contenuta e margine isolato per limitare la perdita."
     notes: "Valida simmetricamente anche per setup short."
-  - id: BULL_P_36_CTX_01
+  - id: BULL_YT_n_036_03
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
@@ -50,7 +50,7 @@ entities:
       timecode: "00:00-01:00"
     statement: "Il trading va affrontato come mestiere e non come scommessa."
     rationale: "Riduce comportamenti impulsivi e aspettative irrealistiche."
-  - id: BULL_P_36_CTX_02
+  - id: BULL_YT_n_036_04
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL

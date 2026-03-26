@@ -1,12 +1,12 @@
 video:
-  id: YT_BULL_PRINCIPIANTI_020
+  id: BULL_YT_n_020
   series: principianti
   title: "Trading per neofiti — episodio 020"
   video_index: 20
   duration_minutes: 9
 
 entities:
-  - id: BULL_P_20_01
+  - id: BULL_YT_n_020_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
@@ -23,7 +23,7 @@ entities:
       market_regime: []
     rationale: "Bull usa EMA60 come filtro direzionale principale per evitare ingressi contro contesto."
     notes: "La condizione va verificata su chiusura candela del timeframe operativo."
-  - id: BULL_P_20_CTX_01
+  - id: BULL_YT_n_020_02
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
