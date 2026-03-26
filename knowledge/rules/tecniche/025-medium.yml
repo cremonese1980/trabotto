@@ -1,13 +1,50 @@
 video:
-  id: YT_BULL_TECNICHE_025
+  id: YT_BULL_t_025
   series: tecniche
-  title: "Ciao, tra i test su Scapite Bull. Segnale bomba e 5.000 nuovi iscritti. Sigla."
+  title: "Ciao, tra i test su Scapite Bull. Segnale bomba e 5.000 nuovi iscritti. Sigla"
   video_index: 25
   duration_minutes: 17
 
-entities: []
+entities:
+  - id: YT_BULL_t_025_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "06:06-06:13"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_025_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "14:49-14:54"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
 
 summary:
-  total_machine_executable: 0
+  total_machine_executable: 2
   total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

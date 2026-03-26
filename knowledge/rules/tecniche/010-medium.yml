@@ -1,13 +1,67 @@
 video:
-  id: YT_BULL_TECNICHE_010
+  id: YT_BULL_t_010
   series: tecniche
-  title: "Ciao traders, siete su Scopin'TheBull. Andiamo a parlare del time frame a 30 minuti, di cu"
+  title: "Ciao traders, siete su Scopin'TheBull. Andiamo a parlare del time frame a 30 minuti, di cui"
   video_index: 10
   duration_minutes: 8
 
-entities: []
+entities:
+  - id: YT_BULL_t_010_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "00:54-01:03"
+    conditions:
+      - timeframe_minutes < 30
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
+
+  - id: YT_BULL_t_010_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema60, trend, regime_filter]
+    source:
+      timecode: "03:22-03:32"
+    conditions:
+      - price_below_ema60 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
+    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+
+  - id: YT_BULL_t_010_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "06:43-06:49"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
 
 summary:
-  total_machine_executable: 0
+  total_machine_executable: 3
   total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

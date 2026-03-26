@@ -1,13 +1,67 @@
 video:
-  id: YT_BULL_TECNICHE_006
+  id: YT_BULL_t_006
   series: tecniche
-  title: "Ciao, Tade, siete su Scabinebull. Oggi facciamo il Daily con Stop a zero. Sigla."
+  title: "Ciao, Tade, siete su Scabinebull. Oggi facciamo il Daily con Stop a zero. Sigla"
   video_index: 6
   duration_minutes: 23
 
-entities: []
+entities:
+  - id: YT_BULL_t_006_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema60, trend, regime_filter]
+    source:
+      timecode: "02:10-02:15"
+    conditions:
+      - price_below_ema60 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
+    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+
+  - id: YT_BULL_t_006_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "11:26-11:33"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+  - id: YT_BULL_t_006_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "16:15-16:22"
+    conditions:
+      - timeframe_minutes < 30
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
 
 summary:
-  total_machine_executable: 0
+  total_machine_executable: 3
   total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

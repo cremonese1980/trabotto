@@ -1,13 +1,78 @@
 video:
-  id: YT_BULL_TECNICHE_014
+  id: YT_BULL_t_014
   series: tecniche
   title: "Ciao Trader, siete su Skape in the Bull. Oggi parliamo della tecnica di trading e tecnica"
   video_index: 14
   duration_minutes: 22
 
-entities: []
+entities:
+  - id: YT_BULL_t_014_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "12:05-12:12"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_014_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "16:52-17:00"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+  - id: YT_BULL_t_014_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [leverage, margin, risk_management]
+    source:
+      timecode: "18:28-18:33"
+    conditions:
+      - leverage <= 10
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
+    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
+
+  - id: YT_BULL_t_014_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "20:03-20:12"
+    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
+    rationale: "Riduce overtrading e decisioni impulsive."
 
 summary:
-  total_machine_executable: 0
-  total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  total_machine_executable: 3
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

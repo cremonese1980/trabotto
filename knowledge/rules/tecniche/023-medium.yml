@@ -1,13 +1,60 @@
 video:
-  id: YT_BULL_TECNICHE_023
+  id: YT_BULL_t_023
   series: tecniche
-  title: "Ciao trader siete su scappina bull 50 sfumature di bad parliamo di tecnica di trading fina"
+  title: "Ciao trader siete su scappina bull 50 sfumature di bad parliamo di tecnica di trading finalmente"
   video_index: 23
   duration_minutes: 21
 
-entities: []
+entities:
+  - id: YT_BULL_t_023_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "05:08-05:14"
+    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
+    rationale: "Riduce overtrading e decisioni impulsive."
+
+  - id: YT_BULL_t_023_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, trigger, candle_pattern]
+    source:
+      timecode: "08:14-08:19"
+    conditions:
+      - small_candle_detected == true
+      - breakout_of_small_candle_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La rottura della candelina viene usata come attivazione operativa."
+    notes: "La versione short è speculare sul minimo della candelina."
+
+  - id: YT_BULL_t_023_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "10:56-11:03"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
 
 summary:
-  total_machine_executable: 0
-  total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  total_machine_executable: 2
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

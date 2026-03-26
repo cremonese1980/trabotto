@@ -1,13 +1,22 @@
 video:
-  id: YT_BULL_TECNICHE_029
+  id: YT_BULL_t_029
   series: tecniche
   title: "Ciao a tutti e benvenuti su Scapin'the Bull, abbiamo finalmente l'incrocio 60-223, sigla!"
   video_index: 29
   duration_minutes: 21
 
-entities: []
+entities:
+  - id: YT_BULL_t_029_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "18:55-19:00"
+    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
+    rationale: "Riduce overtrading e decisioni impulsive."
 
 summary:
   total_machine_executable: 0
-  total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

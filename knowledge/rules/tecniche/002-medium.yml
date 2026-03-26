@@ -1,13 +1,59 @@
 video:
-  id: YT_BULL_TECNICHE_002
+  id: YT_BULL_t_002
   series: tecniche
   title: "ciao a tutti e a tutti, stiamo su scappi in bull, questo è un video molto importante che"
   video_index: 2
   duration_minutes: 19
 
-entities: []
+entities:
+  - id: YT_BULL_t_002_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "01:12-01:18"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+
+  - id: YT_BULL_t_002_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trigger, trend, risk_management]
+    source:
+      timecode: "01:43-01:48"
+    conditions:
+      - timeframe_minutes < 5
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["5m+"]
+      market_regime: []
+    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
+    notes: "Filtro preliminare applicato prima di valutare il setup."
+
+  - id: YT_BULL_t_002_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "08:39-08:44"
+    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
+    rationale: "Riduce overtrading e decisioni impulsive."
 
 summary:
-  total_machine_executable: 0
-  total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  total_machine_executable: 2
+  total_context_only: 1
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."

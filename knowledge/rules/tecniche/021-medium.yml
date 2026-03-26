@@ -1,13 +1,50 @@
 video:
-  id: YT_BULL_TECNICHE_021
+  id: YT_BULL_t_021
   series: tecniche
-  title: "Ciao a tutti e adesso vi parlo della tecnica del Viagra."
+  title: "Ciao a tutti e adesso vi parlo della tecnica del Viagra"
   video_index: 21
   duration_minutes: 19
 
-entities: []
+entities:
+  - id: YT_BULL_t_021_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, risk_management, trigger]
+    source:
+      timecode: "04:52-04:57"
+    conditions:
+      - position_open == true
+      - favorable_move_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
+    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+
+  - id: YT_BULL_t_021_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, invalidation, risk_management]
+    source:
+      timecode: "07:56-08:02"
+    conditions:
+      - position_open == true
+      - price_hits_stop_loss == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
+    notes: "Regola di protezione del capitale applicata senza discrezionalità."
 
 summary:
-  total_machine_executable: 0
+  total_machine_executable: 2
   total_context_only: 0
-  core_message: "Nessuna regola operativa deterministica estratta automaticamente da questa trascrizione."
+  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
