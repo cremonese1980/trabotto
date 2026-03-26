@@ -2,14 +2,14 @@ services:
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.6.1
-    container_name: triagemate-zookeeper
+    container_name: trabotto-zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
   kafka:
     image: confluentinc/cp-kafka:7.6.1
-    container_name: triagemate-kafka
+    container_name: trabotto-kafka
     depends_on:
       - zookeeper
     ports:
@@ -31,45 +31,15 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
 
-  ingest:
-    image: maven:3.9.9-eclipse-temurin-21
-    container_name: triagemate-ingest
-    depends_on:
-      - kafka
-    working_dir: /workspace
-    volumes:
-      - ./:/workspace
-      - m2-cache:/root/.m2
-    command: ["mvn", "-pl", "triagemate-ingest", "spring-boot:run"]
-    environment:
-      SPRING_PROFILES_ACTIVE: docker
-      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-    ports:
-      - "8081:8081"
 
-  triage:
-    image: maven:3.9.9-eclipse-temurin-21
-    container_name: triagemate-triage
-    depends_on:
-      - kafka
-    working_dir: /workspace
-    volumes:
-      - ./:/workspace
-      - m2-cache:/root/.m2
-    command: ["mvn", "-pl", "triagemate-triage", "spring-boot:run"]
-    environment:
-      SPRING_PROFILES_ACTIVE: docker
-      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-    ports:
-      - "8082:8082"
 
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: triagemate-postgres
+    container_name: trabotto-postgres
     environment:
-      POSTGRES_DB: triagemate
-      POSTGRES_USER: triagemate
-      POSTGRES_PASSWORD: triagemate
+      POSTGRES_DB: trabotto
+      POSTGRES_USER: trabotto
+      POSTGRES_PASSWORD: trabotto
     ports:
       - "5432:5432"
     volumes:
