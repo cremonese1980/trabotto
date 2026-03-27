@@ -1,8 +1,7 @@
 TODO
 
 *	Claude Code for rules review
-
-*	Download trade's images from discord
+*	Rename images, add timeframe
 
 
 *	github actions
@@ -16,6 +15,8 @@ TODO
 *   Whisper large transcriptions playlist Live trading crypto analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN
 *   Whisper large transcriptions playlist Live trade con analisi https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM
 *   Whisper large transcriptions playlist Live streaming su youtube https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e
+
+*	Download whole channel's trade's images from discord
 
 DONE
 
