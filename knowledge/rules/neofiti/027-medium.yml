@@ -1,0 +1,142 @@
+video:
+  id: YT_BULL_P_027
+  series: principianti
+  title: "Q&A Live — Gestione uscite breakout, timing chiusure e stanchezza mentale"
+  video_index: 27
+  duration_minutes: 39
+
+entities:
+  - id: BULL_P_27_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, candle_pattern, stop_loss, invalidation, risk_management]
+    source:
+      timecode: "06:36-07:55"
+    conditions:
+      - breakout_triggered == true
+      - price_makes_new_high_or_low == true
+      - candle_closes_back_inside_range == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: []
+    rationale: "Un breakout che non produce accelerazione (la candela chiude rientrata nel range) significa che i venditori sono più forti degli acquirenti in quel livello; rimanere dentro è statisticamente sbagliato."
+    notes: "Il breakout deve generare per forza movimento (panico di acquisto + chiusura short sovrapposti). Se non lo fa, la tesi è invalidata."
+
+  - id: BULL_P_27_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [breakout, all_time_high, regime_filter, daily, btc_index]
+    source:
+      timecode: "07:43-08:29"
+    conditions:
+      - nearest_target_distance_pct <= 5
+      - target_is_historical_high == true
+    action:
+      - ENTER_LONG
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bullish]
+    rationale: "I breakout con massimo storico a distanza ravvicinata (1-5%) hanno la probabilità di successo più alta perché la pressione di acquisto si somma alla chiusura massiva di short."
+    notes: "In mercato non bull, preferire breakout con target vicino (massimo del giorno prima). Evitare breakout senza target chiaro nelle fasi ribassiste."
+
+  - id: BULL_P_27_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, regime_filter, daily, btc_index, trend]
+    source:
+      timecode: "28:49-29:53"
+    conditions:
+      - market_regime IN [bear, lateral]
+      - position_in_gain == true
+      - spike_detected == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bear, lateral]
+    rationale: "In regime ribassista o laterale, vendere al primo spike disponibile e non cercare di tenere per guadagni maggiori — la probabilità di inversione è alta."
+    notes: "Eccezione: se il massimo del giorno prima è vicino e non ancora raggiunto, tenere con stop a zero per tentare il target."
+
+  - id: BULL_P_27_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, breakout, btc_index]
+    source:
+      timecode: "09:08-09:48"
+    statement: "In fasi in cui BTC è sulla EMA 223 daily con rischio di spike ribassista, le società con alta capitalizzazione approfittano dei momenti di volume dei breakout per scaricare, impedendo l'accelerazione attesa."
+    rationale: "Il contesto macro di BTC condiziona direttamente la qualità dei breakout su altcoin; ignorare l'indice porta a entrare su segnali tecnici invalidati dal flusso istituzionale."
+
+  - id: BULL_P_27_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, take_profit]
+    source:
+      timecode: "27:01-32:03"
+    statement: "Chiudere 'troppo presto' in gain è una strategia di gestione del rischio sostenibile nel lungo termine: piccoli guadagni costanti per 5 giorni per 4 settimane producono somme significative con stress minimo."
+    rationale: "La consistenza dei piccoli gain composti è più potente del tentativo di massimizzare ogni singola operazione."
+
+  - id: BULL_P_27_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "17:01-22:44"
+    statement: "Quando si è stanchi, dopo notti insonni, o in stato emotivo alterato (discussioni, problemi personali), non operare. La stanchezza mentale riduce la capacità di eseguire le chiusure al momento giusto, soprattutto ad 1 minuto."
+    rationale: "La precisione nelle uscite è critica nel trading a 1 minuto; anche pochi secondi di esitazione causati da stanchezza possono trasformare un piccolo stop in una perdita grave."
+
+  - id: BULL_P_27_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, breakout, book, stop_loss]
+    source:
+      timecode: "19:05-20:32"
+    statement: "Quando una whale pulisce il book con uno spike improvviso durante la gestione manuale di un'uscita, non esitare a chiudere anche se il prezzo sembra brutto: perdere 500 immediatamente è sempre meglio che trasformarli in 3.500 di perdita."
+    rationale: "Lo spike di una whale che svuota il book è un segnale di forza istituzionale contraria alla propria posizione — la chiusura immediata è la risposta corretta."
+
+  - id: BULL_P_27_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [regime_filter, daily, btc_index, trend, breakout]
+    source:
+      timecode: "33:45-38:54"
+    statement: "Il giorno in cui BTC daily rompe la EMA 10 (che ha fatto da resistenza per 7-8 giorni) con spazio fino alla EMA 60, è il segnale per lasciare correre le posizioni invece di chiudere al primo spike. In tutti gli altri momenti, chiudere al primo spike."
+    rationale: "La rottura della resistenza di EMA 10 daily con obiettivo EMA 60 è il contesto macro che giustifica target più ampi e tolleranza alle correzioni intra-operazione."
+
+  - id: BULL_P_27_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, candelina]
+    source:
+      timecode: "36:52-37:30"
+    statement: "Quando il mercato non offre conformazioni valide, non fare nulla. Il lavoro del trader è aspettare le condizioni, non crearle forzatamente."
+    rationale: "Una giornata a mercato flat dove si evitano errori vale quanto una giornata con piccoli guadagni."
+
+  - id: BULL_P_27_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, stop_loss, beginner]
+    source:
+      timecode: "12:53-13:33"
+    statement: "Impostare uno stop limit automaticamente appena si entra in una posizione, posizionandolo sotto il primo muro visibile nel book vicino al prezzo di ingresso. Questo elimina la necessità di decidere sotto pressione quando il mercato si muove contro."
+    rationale: "L'automatizzazione dell'uscita rimuove la componente emotiva dalla decisione più difficile nel trading."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 7
+  core_message: "In una sessione Q&A live emergono tre regole operative concrete: uscire immediatamente quando un breakout non produce accelerazione, preferire breakout con target vicino in mercato non bull, e vendere al primo spike in regime laterale/ribassista — il tutto inquadrato nel contesto di BTC daily come filtro macro imprescindibile."

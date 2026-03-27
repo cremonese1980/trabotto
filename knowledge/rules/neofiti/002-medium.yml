@@ -1,0 +1,52 @@
+video:
+  id: YT_BULL_P_002
+  series: principianti
+  title: "Come funziona il book: la spiegazione con l'esempio immobiliare"
+  video_index: 2
+  duration_minutes: 18
+
+entities:
+  - id: BULL_P_02_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, trend]
+    source:
+      timecode: "00:31-13:04"
+    statement: "Il book degli ordini funziona come un mercato immobiliare: i venditori in rosso vogliono prezzi più alti, i compratori in verde vogliono prezzi più bassi. Chi ha fretta di comprare fa salire il prezzo (compra a mercato), chi ha fretta di vendere lo fa scendere (vende a mercato)."
+    rationale: "L'analogia immobiliare rende comprensibile il meccanismo domanda/offerta in tempo reale a chi non ha mai visto un book di trading."
+
+  - id: BULL_P_02_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, trend, continuation]
+    source:
+      timecode: "13:04-14:03"
+    statement: "Quando arriva un grande volume di compratori (il pullman di cinesi), i venditori sono colti di sorpresa e il prezzo sale velocemente perché la domanda supera l'offerta disponibile. Questo spike è il segnale che qualcuno con molto capitale sta comprando."
+    rationale: "Comprendere le spike improvvise come risultato di acquisti massicci è fondamentale per non andare contro il trend nei momenti di accelerazione."
+
+  - id: BULL_P_02_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, ema, trend, beginner]
+    source:
+      timecode: "16:47-17:31"
+    statement: "Seguire le EMA significa vedere arrivare i grandi compratori e posizionarsi dalla stessa parte, per poi vendere ai prezzi più alti quando i compratori hanno esaurito la loro capacità d'acquisto."
+    rationale: "Le EMA non predicono il futuro ma permettono di seguire il trend dei grandi operatori, che è il vantaggio informativo del trader tecnico."
+
+  - id: BULL_P_02_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "00:45-01:05"
+    statement: "Questo video è un esperimento didattico: se una persona senza alcuna conoscenza di trading riesce a capire il meccanismo del book grazie all'esempio immobiliare, allora il metodo è valido."
+    rationale: "La playlist neofiti deve essere accessibile a chi parte da zero assoluto; il feedback della community determina la qualità del percorso formativo."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 4
+  core_message: "Spiegazione del meccanismo domanda/offerta del book tramite analogia immobiliare: chi compra a mercato fa salire il prezzo, chi vende a mercato lo fa scendere, e le EMA aiutano a identificare chi ha forza nel mercato."

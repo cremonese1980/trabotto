@@ -1,0 +1,122 @@
+video:
+  id: YT_BULL_P_003
+  series: principianti
+  title: "Le EMA spiegate con la scena del delitto"
+  video_index: 3
+  duration_minutes: 38
+
+entities:
+  - id: BULL_P_03_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, ema5, ema10, ema60, ema223, regime_filter, trend]
+    source:
+      timecode: "09:19-10:35"
+    conditions:
+      - asset_class == CRYPTO AND ema_set == [EMA5, EMA10, EMA60, EMA223]
+      - asset_class IN [EQUITY, FOREX] AND ema_set == [EMA5, EMA10, EMA50, EMA200]
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Usare esattamente EMA 5, 10, 60, 223 per crypto e EMA 5, 10, 50, 200 per equity/forex — queste combinazioni sono state selezionate empiricamente come le più affidabili."
+    notes: "EMA 60 e 223 sono specifiche del metodo Bull; EMA 223 sostituisce la 200 tradizionale per maggiore precisione nei mercati crypto."
+
+  - id: BULL_P_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, ema60, stop_loss, trend, candle_pattern]
+    source:
+      timecode: "14:05-14:50"
+    conditions:
+      - candle_close_below_ema10 == true
+      - previous_candles_closed_above_ema10 == true
+      - ema10_was_acting_as_support == true
+    action:
+      - EXIT_POSITION
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "Una chiusura candela sotto la EMA 10 (dopo che la teneva come supporto) segnala l'esaurimento della forza comprante e si deve uscire dalla posizione long o cercare short verso la EMA 60."
+    notes: "Spike sotto la EMA non contano: vale solo la chiusura candela. Se chiude sotto EMA10 il target successivo è EMA60."
+
+  - id: BULL_P_03_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema, regime_filter, trend, candle_pattern]
+    source:
+      timecode: "30:44-31:45"
+    conditions:
+      - ema_crosses_multiple_times_randomly == true
+      - no_single_ema_acting_as_clean_support_or_resistance == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando nessuna EMA comanda in modo pulito e il prezzo attraversa più EMA in modo caotico, la conformazione è contaminata e non affidabile."
+    notes: "Analogia: macchia di sangue contaminata non può essere usata come prova. Si opera solo su EMA pulite e precise."
+
+  - id: BULL_P_03_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema223, terzo_tocco, reversal, trigger]
+    source:
+      timecode: "31:54-32:21"
+    conditions:
+      - touch_count(EMA223) >= 3
+      - each_touch_candle_closes_above_ema223 == true
+      - ema223_acting_as_support == true
+    action:
+      - ENTER_LONG
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: [bullish, neutral]
+    rationale: "Tre tocchi puliti sulla EMA 223 con chiusure sopra indicano che il livello è un supporto affidabile e si può entrare long."
+    notes: "Se invece la EMA 223 agisce da resistenza (prezzo chiude sotto) ci si aspetta accelerazione al ribasso."
+
+  - id: BULL_P_03_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, trend, beginner]
+    source:
+      timecode: "02:14-03:37"
+    statement: "Le EMA non sono il trend: seguono il trend. Più il prezzo accelera, più la EMA si inclina; quando il prezzo lateralizza la EMA si appiattisce. Sono uno strumento che ci dice con che velocità e forza si sta muovendo chi compra o vende."
+    rationale: "Chiarire la distinzione tra trend e strumento di misura del trend evita l'errore comune di confondere la EMA con un segnale di ingresso in sé."
+
+  - id: BULL_P_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, ema223, ema10, ema5, beginner, trend]
+    source:
+      timecode: "10:40-11:55"
+    statement: "Le EMA funzionano come supporti a scalini: se il prezzo rompe la EMA 10 (chiusura candela sotto), il prossimo supporto è la EMA 60; se rompe la EMA 60, il prossimo è la EMA 223. Gli spike non contano, solo le chiusure."
+    rationale: "Conoscere la gerarchia degli scaglioni EMA permette di definire i target di discesa/salita in modo sistematico senza ricorrere al giudizio soggettivo."
+
+  - id: BULL_P_03_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema5, trend, reversal, candle_pattern]
+    source:
+      timecode: "34:55-36:55"
+    statement: "Quando il prezzo rimane sopra la EMA 5 per un lungo periodo (tecnica Viagra), il trend è molto eccitato. La rottura della EMA 5 con chiusura candela sotto segnala l'esaurimento brutale del trend e ci si può aspettare un crollo violento."
+    rationale: "La tecnica Viagra identifica i trend più potenti e la loro rottura produce i movimenti più profondi."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 3
+  core_message: "Spiegazione delle EMA come indizi della scena del delitto: EMA 5/10/60/223 per crypto, 5/10/50/200 per equity. Le EMA funzionano come supporti a scalini; solo le chiusure candela contano, non gli spike. Si opera solo quando una EMA comanda in modo pulito e preciso."

@@ -1,0 +1,105 @@
+video:
+  id: YT_BULL_P_005
+  series: principianti
+  title: "Book Bybit vs Binance: liquidità, livelli e grafici puliti"
+  video_index: 5
+  duration_minutes: 9
+
+entities:
+  - id: BULL_P_05_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, terzo_tocco, trigger, candle_pattern]
+    source:
+      timecode: "06:59-07:03"
+    conditions:
+      - book_large_level_visible == true
+      - touch_count(level) >= 3
+      - each_touch_candle_closes_above_level == true
+    action:
+      - ENTER_LONG
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Al terzo tocco di un livello significativo nel book si esegue l'ingresso: il livello ha dimostrato di essere un supporto/resistenza reale."
+    notes: "Strategia denominata 'terzo tocco'. Ingresso al mangiarsi (rottura) del livello, non prima."
+
+  - id: BULL_P_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, breakout, trigger, candle_pattern]
+    source:
+      timecode: "08:14-09:26"
+    conditions:
+      - book_level_visible == true
+      - book_level_size >> surrounding_levels
+      - book_level_broken == false
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Non entrare prima della rottura del livello book: aspettare il mangiarsi del livello per avere la conferma della direzione."
+    notes: "Regola esplicita nel video: 'non si entra short prima, si aspetta il mangiarsi di questo livello'. Vale sia per long che per short."
+
+  - id: BULL_P_05_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, trigger, breakout, ema10]
+    source:
+      timecode: "07:03-08:14"
+    conditions:
+      - book_significant_level_visible == false
+      - chart_pattern_clean_and_precise == true
+      - price_touches_level_precisely == true
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se il book non mostra livelli significativi ma il grafico ha una conformazione bella e precisa, è semaforo verde per operare sul livello grafico."
+    notes: "La perfezione grafica implica che nel book esiste qualcosa anche se non visibile. Esempio: candelina sul massimo con spike sulla EMA10 ma chiusura sempre sopra."
+
+  - id: BULL_P_05_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, position_sizing, beginner]
+    source:
+      timecode: "01:01-02:30"
+    statement: "Su Bybit perpetuo con 10.000$ si può entrare al primo livello del book; su Binance spot con la stessa size bisogna attraversare 4-5 livelli, aumentando lo spread effettivo pagato anche con fee nominalmente più basse."
+    rationale: "La liquidità del book determina il costo reale di esecuzione: una fee nominalmente più bassa può risultare più costosa in pratica se il book è poco profondo."
+
+  - id: BULL_P_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, candle_pattern, ema10]
+    source:
+      timecode: "02:51-03:14"
+    statement: "Più liquidità nel book significa grafici più puliti: su Bybit perpetuo la EMA 10 viene toccata senza spike, mentre su Binance spot si formano spike spaventosi che rompono erroneamente gli stop."
+    rationale: "I grafici più puliti riducono i falsi segnali e le esecuzioni errate degli stop, rendendo la strategia più affidabile e profittevole nel lungo periodo."
+
+  - id: BULL_P_05_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, candle_pattern]
+    source:
+      timecode: "03:36-03:50"
+    statement: "Molti neofiti dimenticano di impostare 'last trader price' su Bybit: senza questo settaggio i grafici risultano sporchi e inutilizzabili per l'analisi tecnica."
+    rationale: "La configurazione corretta di Bybit è prerequisito per poter applicare correttamente le tecniche della Bull Family."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 3
+  core_message: "Confronto book Bybit perpetuo vs Binance spot: Bybit offre più livelli, meno spread e grafici più puliti. Regola operativa: se c'è un livello book significativo si aspetta il mangiarsi per entrare; se non ci sono livelli ma il grafico è pulito e preciso, semaforo verde."

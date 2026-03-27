@@ -1,0 +1,152 @@
+video:
+  id: YT_BULL_P_038
+  series: principianti
+  title: "Checklist pre-trade: analisi multi-timeframe e conformazioni prima di entrare"
+  video_index: 38
+  duration_minutes: 15
+
+entities:
+  - id: BULL_P_38_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema10, daily, regime_filter, trend]
+    source:
+      timecode: "01:03-01:30"
+    conditions:
+      - daily_chart_opened_first == true
+      - price_position_relative_to_daily_ema10_classified == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1d"]
+      market_regime: []
+    rationale: "Il timeframe daily è il primo filtro; capire dove si trova il prezzo rispetto all'EMA 10 daily determina se un trade long è valido."
+    notes: "Primo step nella checklist pre-trade: daily → EMA 10 → above (bullish), below (bearish), or just broke/retested."
+
+  - id: BULL_P_38_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema10, ema223, regime_filter, pullback]
+    source:
+      timecode: "01:46-02:09"
+    conditions:
+      - price_distance_from_ema10_pct > threshold_extended
+    action:
+      - SKIP_TRADE
+      - WAIT
+    applicability:
+      timeframes: ["1min", "5min", "30min", "60min"]
+      market_regime: []
+    rationale: "Entrare quando il prezzo è troppo lontano dall'EMA 10 aumenta il rischio di un fakeout o di un'immediata inversione verso la EMA; solo gli ingressi vicini all'EMA offrono un rischio/rendimento favorevole."
+    notes: "Citato su più timeframe durante la walkthrough della checklist."
+
+  - id: BULL_P_38_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema10, retest, terzo_tocco, continuation]
+    source:
+      timecode: "04:19-04:53"
+    conditions:
+      - tf30min_ema10_touch_count == 2
+      - third_touch_not_yet_occurred == true
+      - daily_above_ema10 == true
+    action:
+      - MONITOR_LEVEL
+      - WAIT
+    applicability:
+      timeframes: ["30min"]
+      market_regime: [bullish]
+    rationale: "Il secondo tocco è il meno affidabile (più probabile che produca fakeout); aspettare il terzo tocco migliora significativamente la probabilità prima di entrare long."
+    notes: "Dimostrato con Waves: due tocchi già contati → nessun ingresso, aspettare il terzo."
+
+  - id: BULL_P_38_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema10, terzo_tocco, invalidation, trend]
+    source:
+      timecode: "04:42-04:53"
+    conditions:
+      - tf_ema10_touch_count == 3
+      - third_touch_failed_breakout_above == true
+    action:
+      - SKIP_TRADE
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["5min", "30min", "60min"]
+      market_regime: []
+    rationale: "Il terzo tocco dell'EMA 10 dal basso, quando non riesce a rompere, è un segnale short, non long; essere long in questo contesto mette contro il setup."
+    notes: "Terzo tocco fallito dell'EMA 10 → considerare short, non long."
+
+  - id: BULL_P_38_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema223, ema10, breakout, trigger, scalping]
+    source:
+      timecode: "02:24-02:58"
+    conditions:
+      - tf30min_price_below_ema10 == true
+      - tf5min_bad_setup_breaks_ema60 == true
+      - tf1min_price_approaches_ema223_from_below == true
+      - ema223_on_1min_is_declining == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "5min", "30min"]
+      market_regime: [bullish]
+    rationale: "L'allineamento multi-timeframe (alert 30m, BAD 5m, breakout EMA 223 1m) convergente dà un segnale di ingresso ad alta probabilità con livelli trigger definiti su ogni frame."
+    notes: "Esempio checklist multi-timeframe: imposta alert a 30m, monitora BAD a 5m, esegui al breakout EMA 223 a 1m."
+
+  - id: BULL_P_38_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema10, trigger, regime_filter, daily]
+    source:
+      timecode: "12:44-14:00"
+    conditions:
+      - price_extended_far_from_ema10 == true
+      - no_conformazione_present == true
+    action:
+      - MONITOR_LEVEL
+      - WAIT
+    applicability:
+      timeframes: ["30min", "60min"]
+      market_regime: []
+    rationale: "L'EMA 10 è dove il denaro istituzionale deve difendere o perdere il controllo; monitorarne l'avvicinamento tramite alert periodici evita entrate FOMO su prezzi estesi."
+    notes: "Impostare un alert mobile ogni 30 minuti al prezzo corrente dell'EMA 10. Quando il prezzo raggiunge la zona EMA 10, passare al TF1m e cercare il ritorno sopra EMA 223 come segnale."
+
+  - id: BULL_P_38_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, regime_filter]
+    source:
+      timecode: "09:43-09:56"
+    statement: "Con centinaia di pair disponibili, non forzare mai un ingresso; è la conformazione che deve convincerti a entrare, non il contrario. Se vuoi entrare a tutti i costi raccoglierai solo perdite."
+    rationale: "La scarsità di setup non è un vincolo reale; le entrate guidate dal FOMO bypassano il sistema di filtri multi-timeframe e producono trade a bassa probabilità."
+
+  - id: BULL_P_38_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema10, book, trigger]
+    source:
+      timecode: "13:15-14:06"
+    statement: "L'EMA 10 è dove sono i soldi: i partecipanti che sono long devono difenderla o si rompe; quando il prezzo si avvicina all'EMA 10, chi detiene grandi posizioni deve portare capitali — è il momento per un potenziale ingresso."
+    rationale: "Capire perché l'EMA 10 agisce come supporto/resistenza (difesa istituzionale) aiuta il trader a leggere le dinamiche del book quando il prezzo raggiunge quel livello."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Una checklist pre-trade multi-timeframe live viene dimostrata su più asset (AUTO, Waves, Rune, DENT, LRC), stabilendo che ogni ingresso deve superare il filtro di contesto daily EMA 10, il filtro di prossimità, il filtro di conteggio tocchi e una conformazione multi-frame prima che un trigger sia valido."

@@ -1,0 +1,104 @@
+video:
+  id: YT_BULL_P_030
+  series: principianti
+  title: "ICO e Staking su Binance Launchpad — BNB, ATA, Percentuali e Short Post-Quotazione"
+  video_index: 30
+  duration_minutes: 16
+
+entities:
+  - id: BULL_P_30_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [risk_management, btc_index, ema60, daily]
+    source:
+      timecode: "12:03-12:59"
+    conditions:
+      - bnb_daily_price >= ema60_daily
+      - ico_announcement_recently == true
+      - btc_trend IN [neutral, weak]
+    action:
+      - WAIT
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [lateral, bear]
+    rationale: "BNB sale in anticipo sull'annuncio ICO fino alla EMA 60 daily: questo livello ha storicamente fatto da resistenza solida. Dopo la quotazione, con BTC neutro o debole, BNB tende a scendere amplificando il ribasso di BTC."
+    notes: "La EMA 60 daily su BNB ha tenuto perfettamente come resistenza nel caso ATA — il segnale short si forma alla prima conformazione ribassista dopo la quotazione."
+
+  - id: BULL_P_30_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, short_entry, btc_index, daily, candle_pattern]
+    source:
+      timecode: "13:19-13:58"
+    conditions:
+      - ico_listing_occurs == true
+      - bnb_price_at_or_near_ema60_daily == true
+      - first_short_setup_forms_post_listing == true
+      - btc_trend != strong_bullish
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [lateral, bear]
+    rationale: "Al momento della quotazione ICO su Binance, BNB tende a scaricare perché chi ha holdato BNB per lo staking vende dopo aver ricevuto i token ICO, amplificando qualsiasi debolezza di BTC."
+    notes: "Short aperto alla prima conformazione ribassista dopo la quotazione delle ore 8, chiuso circa al livello di partenza del pump ICO."
+
+  - id: BULL_P_30_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [risk_management, position_sizing, beginner]
+    source:
+      timecode: "07:15-08:26"
+    conditions:
+      - staking_capital_bnb_usd == 10000
+      - expected_ico_gain_at_peak_usd <= 70
+      - bnb_daily_volatility_pct > 5
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Con 10.000 USD di BNB si ottengono circa 70 USD di token ICO anche a +4.000%: il rendimento dello staking ICO è trascurabile rispetto alla volatilità del sottostante BNB."
+    notes: "L'unica eccezione è per chi holda già BNB a lungo termine: in quel caso partecipare allo staking è gratuito e aggiunge un piccolo extra senza costi aggiuntivi."
+
+  - id: BULL_P_30_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, ema60, daily, regime_filter]
+    source:
+      timecode: "03:19-04:05"
+    statement: "BNB sale quando viene annunciata una nuova ICO (la gente compra BNB per partecipare allo staking) e scende dopo la quotazione (i partecipanti vendono BNB una volta ricevuti i token). Con BTC piatto, BNB tende a salire pre-quotazione; con BTC debole, l'effetto vendita post-quotazione amplifica il ribasso."
+    rationale: "Conoscere il ciclo di BNB attorno alle ICO di Binance Launchpad permette di anticipare movimenti direzionali con un catalizzatore fondamentale identificabile."
+
+  - id: BULL_P_30_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, position_sizing]
+    source:
+      timecode: "08:39-09:50"
+    statement: "Nelle prime candele di quotazione di un token ICO, le vendite provengono principalmente dal progetto stesso, da Binance (che scarica la propria quota) e da holder istituzionali con milioni di dollari — non è possibile competere in acquisto in quei momenti."
+    rationale: "Conoscere chi sta dall'altro lato dell'ordine nelle prime candele di un ICO evita di comprare contro flusso istituzionale nella finestra di maggior pressione di vendita."
+
+  - id: BULL_P_30_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, regime_filter]
+    source:
+      timecode: "11:40-12:03"
+    statement: "Lo staking ICO su Binance Launchpad ha senso economico solo durante una bull run in cui BNB comunque sale: in quel caso si somma il gain di BNB al piccolo extra dei token. In mercato laterale o ribassista, il rischio di perdita su BNB supera di gran lunga il rendimento dei token ICO."
+    rationale: "Il rendimento percentuale dei token ICO in staking è fisso e minuscolo; il rischio BNB è variabile e potenzialmente molto grande."
+
+summary:
+  total_machine_executable: 3
+  total_context_only: 3
+  core_message: "Le ICO di Binance Launchpad sono strumenti di speculazione quasi esclusivamente per gli istituzionali: il rendimento da staking su 10.000 USD di BNB è circa 70 USD anche a +4.000%, mentre BNB oscilla del 50%. L'opportunità reale per lo scalper è il setup short su BNB dopo la quotazione, quando la EMA 60 daily fa da resistenza e il flusso di vendita post-staking amplifica qualsiasi debolezza di BTC."

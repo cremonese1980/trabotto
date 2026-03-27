@@ -1,0 +1,116 @@
+video:
+  id: YT_BULL_P_037
+  series: principianti
+  title: "Come guadagnare long nei crolli: Luna -90% in un giorno"
+  video_index: 37
+  duration_minutes: 10
+
+entities:
+  - id: BULL_P_37_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, breakout, retest, candle_pattern, scalping]
+    source:
+      timecode: "03:00-03:45"
+    conditions:
+      - price_broke_above_ema10_on_1min == true
+      - price_pulled_back_creating_new_support_trigger_level == true
+      - price_returned_above_trigger_level == true
+      - book_support_visible == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min"]
+      market_regime: [downtrend, high_volatility]
+    rationale: "Dopo EMA 10 breakout e retest, il pullback diventa il nuovo trigger; entrare al corpo della candela con conferma book riduce le false entrate."
+    notes: "Trade di esempio a 0.94 su Luna; il prezzo andò direttamente alla EMA 60 dopo l'ingresso."
+
+  - id: BULL_P_37_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, candelina, ema60, breakout, scalping]
+    source:
+      timecode: "04:58-06:23"
+    conditions:
+      - price_tested_ema60_on_1min == true
+      - candelline_count_not_exceeding_spike_high >= 2
+      - candelline_form_at_bad_level == true
+      - ema10_begins_to_command == true
+    action:
+      - ENTER_LONG
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min"]
+      market_regime: [downtrend, high_volatility]
+    rationale: "Dopo una grande candela spike, attendere almeno 2 piccole candeline (candelline) che non superino il massimo dello spike assicura che il momentum si sia fermato e il livello BAD sia valido prima dell'ingresso."
+    notes: "Record BAD trade: +17.92% in ~1 minuto su Luna a -94% giornaliero. Ingresso via stop-limit; chiusura immediata dopo la candela di breakout."
+
+  - id: BULL_P_37_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema5, daily, pullback, scalping, continuation]
+    source:
+      timecode: "06:53-07:40"
+    conditions:
+      - tf30min_large_spike_then_heavy_retrace == true
+      - price_reaches_ema5_support_on_30min == true
+      - tf1min_entry_aligns_with_tf30min_ema5_support == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "30min"]
+      market_regime: [downtrend, high_volatility]
+    rationale: "Comprare al supporto EMA 5 sul timeframe superiore (30m) dà una rimbalzo ad alta probabilità anche se il grafico a 1 minuto appare strutturalmente vuoto."
+    notes: "+11.87% in ~1 minuto; 1127 USDT di profitto."
+
+  - id: BULL_P_37_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [terzo_tocco, ema223, trigger, scalping, candle_pattern]
+    source:
+      timecode: "07:52-08:26"
+    conditions:
+      - price_has_touched_support_level >= 2
+      - price_dipped_below_ema10_third_touch == true
+      - price_returns_above_ema10_and_trigger == true
+    action:
+      - ENTER_LONG
+      - TIGHTEN_TP
+    applicability:
+      timeframes: ["1min"]
+      market_regime: [downtrend, high_volatility]
+    rationale: "Il terzo tocco di un livello di supporto ha probabilità più alta del secondo; l'ingresso al livello trigger prima del terzo tocco formale cattura il premio e riduce l'esposizione."
+    notes: "+15% in ~90 secondi; 1523 USDT. Target chiuso prima della resistenza EMA 223."
+
+  - id: BULL_P_37_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, scalping, beginner]
+    source:
+      timecode: "00:00-00:55"
+    statement: "Anche un asset in calo del -90% giornaliero produrrà multipli rimbalzi tradabili di +10% a +1000% intraday; le conformazioni funzionano indipendentemente dalla direzione del trend."
+    rationale: "I trader che credono che un asset in caduta non possa essere tradato long perdono i setup di rimbalzo ad alta probabilità che si formano durante il declino."
+
+  - id: BULL_P_37_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, risk_management, scalping]
+    source:
+      timecode: "05:51-06:17"
+    statement: "Durante candele estremamente volatili (corpo grande), NON entrare immediatamente; aspettare prima che si formino le candelline (piccole candele di riposo), altrimenti si rischia di essere presi in una fiammata (wick)."
+    rationale: "Le candele volatili grandi portano un rischio di wick estremo; solo il periodo di riposo (candelline) fornisce un livello definibile e un rischio accettabile."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Quattro trade scalp live documentati su Luna durante un crash giornaliero del -94% dimostrano che gli ingressi long sui rimbalzi sono pienamente praticabili usando livelli BAD, supporti EMA e setup terzo tocco su timeframe a 1 minuto e 30 minuti, con durate di trade inferiori a 2 minuti ciascuno."

@@ -1,0 +1,140 @@
+video:
+  id: YT_BULL_P_040
+  series: principianti
+  title: "Il book degli ordini: come usarlo per ingressi, stop e gestione dei muri"
+  video_index: 40
+  duration_minutes: 16
+
+entities:
+  - id: BULL_P_40_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, breakout, trigger, risk_management]
+    source:
+      timecode: "01:51-02:27"
+    conditions:
+      - large_bid_wall_exists_below_current_price == true
+      - price_approaching_or_testing_wall_from_above == true
+    action:
+      - MONITOR_LEVEL
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Un grande muro in acquisto agisce come supporto strutturale; i partecipanti che devono comprare spostano i loro ordini sopra il muro, spingendo il prezzo su, rendendo il muro un riferimento valido per lo stop e la zona di ingresso."
+    notes: "Motivo per cui il book crypto è superiore a Forex/Nasdaq: profondità completa visibile su Binance."
+
+  - id: BULL_P_40_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, stop_loss, risk_management, trigger]
+    source:
+      timecode: "07:34-08:25"
+    conditions:
+      - position_open_with_bid_wall_as_structural_stop == true
+      - bid_wall_size_drops_to_50pct_of_original == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Quando il muro viene consumato da un grande ordine di vendita a mercato, il supporto sta cedendo; il momento in cui metà del muro è mangiata, l'effetto cascata accelera — uscire prima del collasso totale."
+    notes: "NON aspettare il consumo totale del muro. NON piazzare stop-limit esattamente al prezzo del muro."
+
+  - id: BULL_P_40_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, stop_loss, risk_management]
+    source:
+      timecode: "08:13-09:43"
+    conditions:
+      - position_open_with_bid_wall_as_stop_reference == true
+      - stop_limit_placed_well_below_wall_price == true
+      - wall_fluctuates_slightly == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Piazzare lo stop esattamente al prezzo del muro causa uscite premature sulle normali fluttuazioni; piazzarlo ben sotto significa che se l'uscita manuale fallisce, il limite cattura comunque i venditori in panico."
+    notes: "Stop-limit molto basso (es. 7.20) come rete di sicurezza, non come meccanismo di uscita primario. L'uscita primaria è manuale quando il muro viene consumato."
+
+  - id: BULL_P_40_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, breakout, trigger]
+    source:
+      timecode: "09:51-10:02"
+    conditions:
+      - large_ask_wall_exists_above_current_price == true
+      - wall_not_yet_consumed_or_significantly_reduced == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Piazzare un ordine di acquisto esattamente su un grande muro in vendita o non verrà eseguito o verrà eseguito nel momento peggiore; aspettare che inizi il consumo del muro."
+    notes: "Regola simmetrica rispetto alla logica dello stop sul muro in acquisto: comprare sopra il muro solo dopo aver confermato che il consumo è iniziato."
+
+  - id: BULL_P_40_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, stop_loss, position_sizing, risk_management]
+    source:
+      timecode: "10:55-12:55"
+    conditions:
+      - two_consecutive_large_bid_walls_at_different_levels == true
+      - plan_enter_on_consumption_of_wall_A == true
+      - both_wall_A_and_wall_B_consumed_in_single_candle == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Quando due muri vengono consumati in un singolo movimento, la finestra di ingresso scompare istantaneamente; non entrare è meglio di un ingresso in corsa."
+    notes: "Esempio live su INBOX: due muri consumati in una candela; nessun fill possibile, nessun trade eseguito."
+
+  - id: BULL_P_40_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, risk_management]
+    source:
+      timecode: "00:00-01:06"
+    statement: "Forex e Nasdaq sono più difficili da tradare del crypto perché non offrono un order book trasparente completo; nel Forex non c'è book, nel Nasdaq sono visibili solo 3-4 livelli di broker, rendendo le entrate in breakout molto più rischiose."
+    rationale: "Il vantaggio del book è il motivo principale per usare pair crypto su Binance come ambiente di training e operativo; senza di esso la validazione dei breakout è impossibile."
+
+  - id: BULL_P_40_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, stop_loss, risk_management]
+    source:
+      timecode: "07:49-08:12"
+    statement: "Un grande muro in acquisto crea un vuoto sotto di sé: tutti i compratori si sono spostati sopra il muro, quindi se il muro viene rotto non c'è niente che fermi un crollo veloce del -30% perché i compratori che erano sotto sono andati via."
+    rationale: "Più grande è il muro, più energia immagazzina e più catastrofico è il suo fallimento; la dimensione del muro è direttamente correlata alla gravità del crollo se viene rotto."
+
+  - id: BULL_P_40_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, risk_management, position_sizing]
+    source:
+      timecode: "11:41-12:01"
+    statement: "Se hai problemi di connessione, sei in una zona con scarso segnale, o sei lento con le scorciatoie da tastiera, evita di tradare asset con grandi muri come stop principale — la finestra per uscire durante il consumo del muro può essere inferiore a un secondo."
+    rationale: "Le uscite manuali durante il consumo del muro richiedono una reazione quasi istantanea; i vincoli tecnici che introducono latenza rendono questo metodo di gestione dello stop pericoloso."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "Un Q&A dettagliato spiega come usare i grandi muri dell'order book come conferma di ingresso e riferimento per lo stop: comprare sopra un muro intatto, impostare uno stop-limit di sicurezza ben sotto di esso, ma uscire manualmente non appena il muro inizia a essere consumato — mai aspettare il consumo totale — e perché il book a piena profondità di Binance rende questa tecnica praticabile dove Forex e Nasdaq non possono."

@@ -1,0 +1,138 @@
+video:
+  id: YT_BULL_P_004
+  series: principianti
+  title: "Bybit: guida completa a 360 gradi per la Bull Family"
+  video_index: 4
+  duration_minutes: 28
+
+entities:
+  - id: BULL_P_04_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [leverage, risk_management, stop_loss, margin, position_sizing]
+    source:
+      timecode: "08:50-09:06"
+    conditions:
+      - leverage == 10
+      - margin_mode == ISOLATED
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Usare sempre leva 10 in modalità isolated come configurazione di default: semplifica il calcolo dello stop e limita la perdita massima al margine investito."
+    notes: "Con leva 10 la liquidazione avviene al -10%. Con isolated si perde al massimo il margine investito, non l'intero capitale del conto."
+
+  - id: BULL_P_04_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [stop_loss, leverage, risk_management, margin]
+    source:
+      timecode: "11:00-11:23"
+    conditions:
+      - leverage == 10 AND stop_loss_pct > 5.0
+      - leverage == 20 AND stop_loss_pct > 2.5
+      - leverage == 5 AND stop_loss_pct > 10.0
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Lo stop loss non deve mai superare la metà della percentuale di liquidazione per proteggersi da liquidazioni anomale causate dal funding rate."
+    notes: "Su Bybit con leva 10 la liquidazione è al 10%, quindi lo stop massimo è al 5%. In pratica per scalping uno stop del 5% è già troppo grande."
+
+  - id: BULL_P_04_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, risk_management, beginner]
+    source:
+      timecode: "15:39-15:44"
+    conditions:
+      - order_submitted == true
+      - stop_loss_set == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Chiunque nella Bull Family venga trovato a operare senza stop loss viene bannato: lo stop loss è obbligatorio prima di ogni ordine."
+    notes: "Regola assoluta della community: stop loss sempre impostato prima o contestualmente all'ingresso, mai lasciare posizioni aperte senza protezione."
+
+  - id: BULL_P_04_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, stop_loss, risk_management]
+    source:
+      timecode: "16:47-18:01"
+    conditions:
+      - take_profit_order_type == MARKET
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Non usare TP a mercato perché si viene fillati male; usare sempre TP con ordine limite (stop-limit) per pagare meno fee e avere un prezzo controllato."
+    notes: "Su Bybit il TP con trigger + ordine limite permette di impostare un prezzo limite più alto del trigger per garantire l'esecuzione senza pagare le fee di market taker."
+
+  - id: BULL_P_04_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [position_sizing, beginner, risk_management]
+    source:
+      timecode: "23:28-23:54"
+    conditions:
+      - historical_pnl_positive == false
+      - position_size_usd > 100
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Finché non si ha uno storico di PnL positivo è inutile usare size grandi: operare con 10-50-100$ massimo per imparare senza distruggere il capitale."
+    notes: "Prima di aumentare la size è necessario dimostrare profittabilità su size piccole."
+
+  - id: BULL_P_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema5, ema10, ema60, ema223, beginner]
+    source:
+      timecode: "03:39-04:10"
+    statement: "Configurazione EMA consigliata su Bybit: EMA 5 (rosso), EMA 10 (giallo), EMA 60 (azzurro), EMA 223 (viola). L'EMA di default di Bybit va nascosta (hide) perché non è cancellabile."
+    rationale: "Standardizzare i colori delle EMA nella Bull Family permette il colpo d'occhio immediato e la comunicazione efficace tra i membri."
+
+  - id: BULL_P_04_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, leverage, position_sizing]
+    source:
+      timecode: "26:01-26:56"
+    statement: "Con leva 10 si può distribuire la stessa size su fino a 10 titoli diversi simultaneamente, aumentando le opportunità di trovare conformazioni valide senza aumentare il rischio totale."
+    rationale: "La leva non aumenta solo l'esposizione ma permette anche di diversificare le opportunità, vantaggio impossibile da replicare su spot con piccoli capitali."
+
+  - id: BULL_P_04_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, leverage]
+    source:
+      timecode: "05:34-07:11"
+    statement: "Il funding rate esiste per normalizzare il prezzo di Bybit rispetto agli altri exchange; scade 3 volte al giorno (02:00, 10:00, 18:00). Se è molto negativo e si è short, alla scadenza si paga una fee aggiuntiva."
+    rationale: "Il funding rate può trasformare un'operazione vincente in perdente aggiungendo costi imprevisti; i neofiti devono conoscerne l'esistenza prima di iniziare."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "Guida operativa completa a Bybit: leva 10 isolated come default assoluto, stop loss obbligatorio prima di ogni ordine (pena ban dalla community), TP sempre con ordine limite mai a mercato, e size piccola finché non si ha storico positivo."

@@ -1,0 +1,85 @@
+video:
+  id: YT_BULL_P_001
+  series: principianti
+  title: "Introduzione al trading: mentalità, book e come iniziare"
+  video_index: 1
+  duration_minutes: 15
+
+entities:
+  - id: BULL_P_01_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, risk_management, beginner, leverage, position_sizing]
+    source:
+      timecode: "09:35-10:30"
+    conditions:
+      - account_balance <= 100
+      - leverage == 10
+      - position_size_usd <= 10
+      - margin_mode == ISOLATED
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Limitare il capitale esposto a 10$ con leva 10 in isolated per garantire un hard stop del 10% su soli 10$, evitando perdite catastrofiche per chi sta imparando."
+    notes: "Il massimo assoluto consigliato per chi inizia è 100$ totali in account, operando con 10$ a leva 10 in modalità isolated su futures. La liquidazione massima è 10$."
+
+  - id: BULL_P_01_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    tags: [ema60, ema223, trend, regime_filter, candle_pattern]
+    source:
+      timecode: "06:29-07:05"
+    conditions:
+      - daily_close_below_ema60 == true
+      - previous_candle_high <= ema60
+      - ema60_acting_as_support == false
+    action:
+      - ENTER_SHORT
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: [bearish]
+    rationale: "Quando la EMA 60 smette di fare da supporto e diventa resistenza, il prossimo livello di riferimento è la EMA 223."
+    notes: "Esempio descritto: candela che finge il rimbalzo sulla EMA60, chiude sotto confermando che la EMA60 è diventata resistenza. Target successivo: EMA 223."
+
+  - id: BULL_P_01_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "00:00-01:00"
+    statement: "Il trading è un mestiere che richiede anni di pratica e dedizione; l'autore ha impiegato 4 anni prima di lasciare il lavoro tradizionale per fare trading a tempo pieno."
+    rationale: "Prevenire l'approccio speculativo da parte dei neofiti che si aspettano risultati rapidi dopo pochi video."
+
+  - id: BULL_P_01_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "01:32-03:45"
+    statement: "Per imparare a leggere il book, bisogna raggrupparlo finché non si vedono numeri grossi; i numeri grossi indicano potenziali supporti (in basso) e resistenze (in alto). Osservare il comportamento del prezzo a quei livelli per ore, giorni e mesi."
+    rationale: "La lettura del book è una competenza che si acquisisce solo con l'osservazione prolungata e non può essere appresa teoricamente."
+
+  - id: BULL_P_01_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "04:03-04:30"
+    statement: "Non depositare 1000$ subito: li perderete. Iniziate con 10-50$ al massimo, non più di 100$ se siete 'folli'."
+    rationale: "Proteggere il capitale del neofita dalla perdita totale prima di aver acquisito le competenze necessarie."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 3
+  core_message: "Video introduttivo alla serie neofiti: il trading è un mestiere serio che richiede anni, non scommesse. Regola operativa minima: massimo 10$ a leva 10 in isolated, e imparare a leggere il book osservando i livelli di liquidità."

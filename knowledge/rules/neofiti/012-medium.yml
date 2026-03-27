@@ -1,0 +1,125 @@
+video:
+  id: YT_BULL_P_012
+  series: principianti
+  title: "Come Opero Live su Crypto: Setup Monitor, BullBot, Gestione Trade da Order Book e Multi-Timeframe"
+  video_index: 12
+  duration_minutes: 44
+
+entities:
+  - id: BULL_P_12_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, daily, trigger, breakout, book, candelina]
+    source:
+      timecode: "00:00-02:00"
+    conditions:
+      - entry_only_after_conformazione_multi_timeframe == true
+      - leverage_max == 10
+      - margin_mode == ISOLATED
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "30min", "1d"]
+      market_regime: []
+    rationale: "Operare con leva 10 massima, stop loss obbligatorio, ingresso solo a conformazione confermata su più time frame: questo permette PNL positivo anche durante cali di Bitcoin."
+    notes: "Setup tipico: 2000-3000$ sul conto con leva 10 = size operativa 20.000-30.000$. Con leva 10 si può fare ingresso doppio (20.000) o operare su tre coin contemporaneamente (3x10.000)."
+
+  - id: BULL_P_12_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, book, leverage, risk_management, position_sizing]
+    source:
+      timecode: "27:55-32:15"
+    conditions:
+      - trade_open == true
+      - stop_loss_set_in_orderbook == true
+      - reduce_only_mode_enabled == true
+    action:
+      - MONITOR_LEVEL
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: []
+    rationale: "Gestire stop e target direttamente dall'order book con reduce_only attivo: si evita di aumentare accidentalmente la size e si può chiudere parzialmente la posizione livello per livello."
+    notes: "Stop loss piazzato manualmente nel book con reduce only. Target diviso in due metà automaticamente. Chiusura parziale cliccando i livelli nel book durante la salita."
+
+  - id: BULL_P_12_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, trigger, ema, breakout, regime_filter]
+    source:
+      timecode: "39:25-40:10"
+    conditions:
+      - daily_timeframe_analyzed_first == true
+      - conformazione_multi_timeframe_exists == true
+    action:
+      - CLASSIFY_SETUP
+      - WAIT
+    applicability:
+      timeframes: [daily, "30min", "5min"]
+      market_regime: []
+    rationale: "La sequenza obbligatoria prima di ogni trade è: daily → time frame operativo → book. Senza questa logica multi-timeframe le probabilità di successo calano drasticamente."
+    notes: "Il bullweb permette di visualizzare 3 time frame della stessa coin in un click. Setup raccomandato: bitcoin sempre visibile, due coin selezionate con TF 5m/30m/daily, e peggiori in classifica per short."
+
+  - id: BULL_P_12_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, trigger, breakout, candelina, ema]
+    source:
+      timecode: "23:50-26:30"
+    conditions:
+      - shimano_setup_on_tf5m == true
+      - book_large_level_at_trigger_stable == true
+      - touch_count(trigger_level) >= 3
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: []
+    rationale: "Il setup shimano combinato con livello book grosso testato tre volte crea una conformazione ad alta probabilità: il terzo test con book stabile indica accumulo di forza per breakout."
+    notes: "Ingresso anticipato rispetto al bad perché c'era una lateralizzazione (due candeline). Vedere la conformazione su più time frame + conferma book = molto più possibilità di accelerazione dopo la rottura."
+
+  - id: BULL_P_12_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, leverage, risk_management, position_sizing]
+    source:
+      timecode: "36:00-36:50"
+    statement: "Usare leva 10 come default con 2000-3000$ sul conto. Quando il conto ha molti soldi passare a leva 5 per evitare errori di dimensionamento. Non mantenere troppo capitale sul conto operativo."
+    rationale: "La gestione del capitale operativo è parte integrante della gestione del rischio: meno capitale esposto = meno danni in caso di errore."
+
+  - id: BULL_P_12_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, trigger, ema223, ema60, breakout]
+    source:
+      timecode: "32:30-35:50"
+    statement: "Il setup del monitor operativo: (1) bullbot con segnali daily sempre visibile, (2) classifica migliori 24h su TF30m, (3) top cap su TF30m, (4) migliori daily su TF5m, (5) peggiori su TF30m per short, (6) alert liquidazioni. Bitcoin sempre in vista graficamente."
+    rationale: "Un setup monitor organizzato permette di vedere contemporaneamente opportunità long e short, di monitorare il contesto macro (bitcoin) e di ricevere alert automatici dai livelli trigger."
+
+  - id: BULL_P_12_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, trigger, breakout, psychology]
+    source:
+      timecode: "43:55-44:10"
+    statement: "Non basta avere un livello nel book per fare un trade: serve una logica con più time frame che abbia senso. Il book da solo senza conformazione multi-timeframe non è sufficiente."
+    rationale: "Il book è uno strumento che amplifica la qualità di un'analisi multi-timeframe già valida, non un trigger autonomo sufficiente a giustificare un ingresso."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 3
+  core_message: "Dimostrazione live del setup operativo completo: gestione trade direttamente dall'order book con reduce only e chiusura parziale, struttura monitor con bullbot e classifiche multi-timeframe, leva 10 come default con 2000-3000$ operativi, e la regola fondamentale di partire sempre dal daily prima di operare."

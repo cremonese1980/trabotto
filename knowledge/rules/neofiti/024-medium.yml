@@ -1,0 +1,209 @@
+video:
+  id: YT_BULL_P_024
+  series: principianti
+  title: "Due live trading: BNB short su finta candela e XLP long con doppia conferma timeframe"
+  video_index: 24
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_24_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [candle_pattern, ema60, reversal, scalping, trigger]
+    source:
+      timecode: "00:35-04:28"
+    conditions:
+      - price_in_tight_range_below_ema60 == true
+      - multiple_tests_of_ema60_from_below == false
+      - pattern_of_lower_lows_without_ema60_test == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "When price repeats a pattern of moving down then bouncing without ever reaching EMA60, this recurring pattern is exploitable — wait for the next bounce to enter short with the same pattern."
+    notes: "BNB: 'stiamo vedendo lo stesso pattern in continuazione — tendenzialmente quando hai qualcosa che si ripete lo puoi sfruttare.' Waiting for the next iteration requires identifying when the pattern may end (don't trade it infinitely)."
+
+  - id: BULL_P_24_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, reversal, ema60, ema5, ema10, stop_loss, scalping]
+    source:
+      timecode: "02:25-04:42"
+    conditions:
+      - large_green_candle_breaks_above_ema5_and_ema10 == true
+      - candle_closes_with_long_upper_wick == true
+      - last_10_seconds_candle_reverses_sharply_to_close_low == true
+      - next_candle_opens_at_same_price_or_lower == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "A candle that breaks EMA5 and EMA10 powerfully but reverses in the final seconds to close near its low — a 'finta' — confirms 99.9% probability the next candle is red; enter short at the open of that next candle."
+    notes: "BNB finta: 'ha aperto al minuto nuovo allo stesso prezzo, è andato un po giù e poi è schizzato su, bucando sia la 5 che la 10 — candela piena era proprio una bomba.' Then in the last 10 seconds reverted to close low. 'Quando fa proprio questo tipo la candela dopo è rossa.' Stop above EMA5 and EMA10."
+
+  - id: BULL_P_24_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, ema10, scalping, take_profit, stop_loss]
+    source:
+      timecode: "05:47-06:30"
+    conditions:
+      - short_position_open == true
+      - candle_spikes_up_but_closes_red_below_ema10 == true
+      - price_did_not_close_above_ema10 == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "When a candle spikes above EMA10 but closes back below it (body remains below EMA10), this is a 'bellissima finta' that confirms the short — hold the position and do not exit on the spike."
+    notes: "'Uguale nato sopra ma poi fatto la chiusura in rosso qua bellissima finta, però comunque è rimasto rosso ed è rimasto sotto alla 10.' The close, not the spike, is what matters."
+
+  - id: BULL_P_24_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, scalping, candle_pattern, book]
+    source:
+      timecode: "06:23-06:45"
+    conditions:
+      - short_position_open == true
+      - significant_down_move_completed == true
+      - momentum_slowing == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Close short after a good extended move by waiting for the spike low and closing immediately — do not try to find the exact bottom of the move."
+    notes: "'Non vado mai a cercare i minimi — a un certo punto ha fatto suo lavoro già andato abbastanza, già viene già una discesa lunga quindi non sfruttiamolo troppo.' Closed BNB short at +253 USDT."
+
+  - id: BULL_P_24_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, ema60, retest, btc_index, continuation]
+    source:
+      timecode: "07:09-09:17"
+    conditions:
+      - price_broke_above_ema60 == true
+      - price_tested_ema60_as_support_twice == true
+      - ema60_held_as_support_both_times == true
+      - asset_came_from_long_downtrend == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish, neutral]
+    rationale: "Two successful retests of EMA60 as support after a break above it signal a high-probability long entry — more if the asset came from a long prior downtrend, as the bounce is 'ragionato e sudato'."
+    notes: "XLP setup: 'andato a spaccare 60 per ben due volte quindi ha fatto capire che non ce n'è voglio risalire — due riteste già mi piace da solo già per questo motivo.' Asset was -10% prior, making the bounce even more meaningful."
+
+  - id: BULL_P_24_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, ema60, btc_index, daily, scalping, trigger]
+    source:
+      timecode: "08:42-09:36"
+    conditions:
+      - ema60_retest_support_confirmed == true
+      - breakout_above_recent_high_on_1m == true
+      - breakout_confirmed_on_5m_also == true
+      - btc_showing_strength == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bearish, neutral]
+    rationale: "Enter long when 1m breakout is confirmed simultaneously by a 5m breakout and BTC is showing strength — three confirmations (1m breakout, 5m breakout, BTC strength) justify larger size and longer hold."
+    notes: "XLP 15000 USDT position (double normal size) due to triple confirmation. 'Rottura a un time frame a un minuto più rottura time frame a 5 minuti — pensa a quante conferme ho.' BTC also rising confirmed hold."
+
+  - id: BULL_P_24_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema10, btc_index, take_profit, scalping, continuation]
+    source:
+      timecode: "11:01-12:39"
+    conditions:
+      - long_position_open == true
+      - ema10_on_1m_holding_as_support == true
+      - btc_showing_continued_strength == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [neutral, bullish]
+    rationale: "Hold a long while EMA10 holds as support AND BTC is strong — both conditions together justify patience past the normal first-spike exit point."
+    notes: "'Io sto guardando bitcoin, non sto guardando xlp — nel frattempo adesso qua non ho il grafico del bitcoin ma comunque mi stava dando fiducia quindi ho tenuto.' Closed at +344 USDT when new breakout confirmed."
+
+  - id: BULL_P_24_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, position_sizing, scalping, liquidity_gate]
+    source:
+      timecode: "10:04-10:15"
+    conditions:
+      - planned_position_size_usdt > 10000
+      - asset_daily_volume_usdt < 500000000
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Only trade large size (>10k USDT) in assets with very high daily volume (3-4 billion+) where the order book is deep enough to absorb entries and exits without slippage."
+    notes: "XLP: 'scambia 3 miliardi 4 miliardi — il book è bello pieno, stiamo parlando di 17000.' Assets with <500M daily volume show thin book quantities at any meaningful grouping level. 'Ci sono altre cose che scambiano 200 milioni e poi aver problemi nel book.'"
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_24_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, reversal, scalping, trigger]
+    source:
+      timecode: "03:37-04:14"
+    statement: "A candle that breaks two key resistances (EMA5 + EMA10) powerfully but closes near its low in the final seconds is the most reliable individual candle signal for a short entry — the trainer calls it a 'segnale fantastico' with 99.9% probability the next candle is red."
+    rationale: "The finta candela pattern works because it shows institutional selling into retail breakout buyers — the strong body close low reveals the selling was overwhelming the apparent buying pressure shown mid-candle."
+
+  - id: BULL_P_24_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, scalping, risk_management]
+    source:
+      timecode: "06:31-06:42"
+    statement: "Never try to catch the exact bottom on a short or exact top on a long — close when the move has been meaningful and momentum signals are declining; chasing the final ticks is a psychological trap."
+    rationale: "'Non vado mai a cercare i minimi' — trying to squeeze the last percentage from a trade causes hesitation, missed exits, and ultimately smaller gains than disciplined early closure."
+
+  - id: BULL_P_24_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, scalping, position_sizing, beginner]
+    source:
+      timecode: "09:58-10:15"
+    statement: "The order book must always be grouped (raggruppato) sufficiently so it moves slowly enough to be readable — an ungrouped book on high-volume assets is incomprehensible even to experienced traders."
+    rationale: "'Il book lo devo vedere lento se no non si capisce niente nemmeno io capisco niente, figurati chi alle prime armi — raggruppato deve andare lento.' Proper book grouping is a prerequisite for using it as a trading tool."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 3
+  core_message: "BNB short on the rare 'finta' pattern (candle breaks EMA5+EMA10 but closes low in final seconds) and XLP long on double EMA60 retest with triple timeframe confirmation (1m + 5m + BTC). Position sizing is conditionally doubled when triple confirmation is present, but only in high-volume assets (3B+ daily volume) with deep book."

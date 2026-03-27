@@ -1,5 +1,8 @@
 TODO
 
+*	telegram-raw duplicated in ingest
+* 	.venv dentro ingest??
+
 *	Claude Code for rules review
 *	Rename images, add timeframe
 

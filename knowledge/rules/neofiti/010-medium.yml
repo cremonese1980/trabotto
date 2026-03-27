@@ -1,0 +1,73 @@
+video:
+  id: YT_BULL_P_010
+  series: principianti
+  title: "Manipolazione del Book? Come Sgamare Chi Sta Comprando Davvero con il Time Frame Giusto"
+  video_index: 10
+  duration_minutes: 7
+
+entities:
+  - id: BULL_P_10_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, ema60, ema, trend, regime_filter]
+    source:
+      timecode: "00:15-04:35"
+    conditions:
+      - timeframe_with_dominant_ema_identified == true
+      - price_respects_single_ema_cleanly == true
+      - book_shows_buyers_defending_ema_level == true
+    action:
+      - CLASSIFY_SETUP
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: []
+    rationale: "Prima di usare il book occorre trovare il time frame dove comanda una singola EMA: solo su quel time frame il book ha significato e mostra davvero chi sta comprando o vendendo con dominanza."
+    notes: "Esempio GXS: a 1 minuto non si capisce nulla, a 5 minuti si vede la EMA 200 che comanda, a 30 minuti EMA 60 che comanda. Il book a 1 minuto mostra guerra pari senza dominanza: inutile."
+
+  - id: BULL_P_10_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    tags: [book, breakout, trigger, invalidation]
+    source:
+      timecode: "05:55-06:55"
+    conditions:
+      - book_level_appears_large == true
+      - price_approaches_level == true
+      - level_disappears_before_execution == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Un livello che scompare quando il prezzo si avvicina non è un vero muro: va ignorato e non usato come riferimento per stop o ingresso."
+    notes: "Definizione iceberg corretta: un vero iceberg mantiene il prezzo SEMPRE sotto lo stesso livello senza mai lasciarlo superare. Se il prezzo lo supera non è un iceberg."
+
+  - id: BULL_P_10_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, psychology, beginner, btc_index]
+    source:
+      timecode: "00:00-02:10"
+    statement: "Il book non è manipolato nel senso di imprevedibile: esistono livelli finti ma la logica complessiva è leggibile scegliendo il time frame con EMA dominante. Lavorare vent'anni è possibile proprio perché il book ha una logica."
+    rationale: "Sfatare il mito della manipolazione incontrollabile: i livelli finti esistono ma sono identificabili, e il time frame corretto rivela sempre chi sta davvero comprando."
+
+  - id: BULL_P_10_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, breakout, psychology]
+    source:
+      timecode: "06:05-07:15"
+    statement: "Un iceberg vero si identifica graficamente: il prezzo non supera mai quel livello. Se il prezzo scende o sale liberamente, non è un iceberg. Non chiamare iceberg qualsiasi livello grande che poi viene superato."
+    rationale: "Usare i termini tecnici correttamente evita confusione nella comunicazione e nelle decisioni operative."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 2
+  core_message: "Video breve che smonta il mito della manipolazione del book: il book è leggibile se si sceglie il time frame con EMA dominante, i livelli finti si riconoscono perché si spostano quando il prezzo si avvicina, e la definizione corretta di iceberg è un livello che non viene mai superato graficamente."

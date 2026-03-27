@@ -1,0 +1,183 @@
+video:
+  id: YT_BULL_P_018
+  series: principianti
+  title: "Trading su titoli in esplosione (trend forte)"
+  video_index: 18
+  duration_minutes: 12
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_18_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trend, daily, candelina, lateralizzazione, scalping]
+    source:
+      timecode: "01:10-01:35"
+    conditions:
+      - price_far_above_ema60_daily == true
+      - strong_uptrend_multiple_days == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Do not enter daily setups on strongly trending titles — daily stop (EMA5) is too far from current price; random corrections can be deep and swift."
+    notes: "Strongly trending title: price has moved large distances from all MAs on the daily. Intraday scalping via lateralizzazione is the correct approach instead."
+
+  - id: BULL_P_18_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trend, lateralizzazione, candelina, breakout, scalping]
+    source:
+      timecode: "01:35-02:35"
+    conditions:
+      - strong_uptrend_confirmed == true
+      - small_body_candles_in_sequence == true
+      - price_consolidating_near_resistance == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bullish]
+    rationale: "On a strongly trending title, wait for a lateralizzazione to form on a lower timeframe (1m/5m) before considering entry."
+    notes: "The lateralizzazione allows MAs to catch up (dischargement), reduces spike risk, and concentrates the breakout energy."
+
+  - id: BULL_P_18_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trend, lateralizzazione, breakout, candelina, stop_loss, scalping]
+    source:
+      timecode: "02:00-02:57"
+    conditions:
+      - lateralizzazione_on_trending_title == true
+      - price_breaks_above_candle_body_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bullish]
+    rationale: "On a trending title, enter long when price breaks above the candle body maximum of the lateralizzazione. Stop is below the spike minimum of the channel."
+    notes: "Example: Paris Saint-Germain breakout at 59, stop at 57.85. The tighter the lateralizzazione range, the better the R:R."
+
+  - id: BULL_P_18_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [trend, lateralizzazione, all_time_high, scalping, trigger]
+    source:
+      timecode: "03:57-05:40"
+    conditions:
+      - lateralizzazione_detected == true
+      - channel_top == all_time_high OR channel_top == period_high
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bullish]
+    rationale: "When a lateralizzazione top coincides with an all-time high or period high, the breakout is a priority entry — shorts must close and FOMO buyers create explosive moves."
+    notes: "Long lateralizations touching ATH are especially powerful because every short position must cover at ATH breach."
+
+  - id: BULL_P_18_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trend, lateralizzazione, btc_index, regime_filter]
+    source:
+      timecode: "07:57-09:03"
+    conditions:
+      - lateralizzazione_top == period_high
+      - btc_rising_strongly == true
+      - asset_not_moving_despite_btc_rise == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bullish]
+    rationale: "If Bitcoin is making strong upside spikes but the asset is not moving (showing relative weakness), wait for ATH test — the asset needs its own trigger, not just BTC momentum."
+    notes: "Asset showing weakness relative to BTC means real money is not interested yet. Wait until the asset independently approaches its own high."
+
+  - id: BULL_P_18_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [trend, ema60, stop_loss, scalping]
+    source:
+      timecode: "09:17-10:58"
+    conditions:
+      - position_open == true
+      - price_retraces_below_ema60_intraday == true
+      - asset_has_history_of_touching_ema60 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "On strongly trending titles the price regularly dips below EMA60 on 1m and recovers — adjust the MA period (60, 70, 90) to match the actual trend line before using it as exit."
+    notes: "Adjust the MA period to find one that respects the actual trend. Do not blindly exit on EMA60 cross if the asset consistently recovers above it."
+
+  - id: BULL_P_18_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [trend, lateralizzazione, scalping, btc_index]
+    source:
+      timecode: "07:32-07:57"
+    conditions:
+      - lateralizzazione_duration_hours > 3
+      - price_tested_top_multiple_times == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "A very long lateralizzazione (4+ hours) that has not reached the top multiple times signals weak buying — breakout of the lower boundary may give little follow-through."
+    notes: "Waves example: 4-hour lateralizzazione that broke lower gave minimal follow-through. Long lateralizations without retests of resistance are less reliable."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_18_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trend, daily, risk_management]
+    source:
+      timecode: "00:42-01:27"
+    statement: "Strongly trending titles are difficult to trade on the daily timeframe — the EMA5 reference can be many percent away, making any stop impractically large."
+    rationale: "On a strongly trending title any pullback can reach the EMA5 or even EMA10 daily before resuming — this creates a very wide stop compared to normal entries."
+
+  - id: BULL_P_18_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trend, scalping, btc_index, all_time_high]
+    source:
+      timecode: "06:46-07:15"
+    statement: "The highest probability spike in a trending title occurs at the all-time high or period high confluence — shorts are forced to close and FOMO buying accelerates the move."
+    rationale: "At ATH levels two forces converge: short covering (obligatory buying) and FOMO longs (discretionary buying). This creates the fastest and largest spikes."
+
+  - id: BULL_P_18_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trend, ema60, scalping]
+    source:
+      timecode: "09:45-11:20"
+    statement: "EMA60 on 1m is not always the correct exit MA for trending titles — adjust the period (60, 70, 90, etc.) to find the MA that actually respects the trend before using it to manage exits."
+    rationale: "Blindly using EMA60 as exit on a strongly trending title will cause premature exits on normal pullbacks, missing the majority of the move."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "On strongly trending titles, skip daily entries entirely. Instead, wait for a lateralizzazione to form on 1m/5m, then enter on the upward breakout with stop below the spike minimum. Maximum power is at ATH/period-high confluence. Adjust exit MA period to match the actual trend slope."

@@ -1,0 +1,152 @@
+video:
+  id: YT_BULL_P_031
+  series: principianti
+  title: "Bull run psychology - come gestire i trade e la FOMO"
+  video_index: 31
+  duration_minutes: 28
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_P_31_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [breakout, ema60, regime_filter, trigger]
+    source:
+      timecode: "13:14-13:51"
+    conditions:
+      - "price_above_ema60_on_daily == true"
+      - "ema60_not_blocking_above == true"
+      - "price_lateralized_above_ema60 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: [bullish]
+    rationale: "Only enter breakouts when price has already proven itself above EMA 60 on the daily and has lateralized there; EMA 60 acting as resistance means others take the risk first."
+    notes: "Bull explicitly refuses to enter a breakout below EMA 60 or when EMA 60 is directly overhead. Wait for price to consolidate above EMA 60, then enter."
+
+  - id: BULL_P_31_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, invalidation, candle_pattern]
+    source:
+      timecode: "19:01-19:15"
+    conditions:
+      - "breakout_entry == true"
+      - "price_returns_to_breakout_level == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "When a breakout is taken and price returns to the breakout level without follow-through, exit immediately at zero or a small loss."
+    notes: "A valid breakout must go immediately; if it fails to hold, close the position without waiting for any further signal."
+
+  - id: BULL_P_31_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, ema223, daily, regime_filter]
+    source:
+      timecode: "14:20-14:45"
+    conditions:
+      - "daily_timeframe_checked == true"
+      - "price_above_ema60_daily == true"
+      - "ema_not_obstructing_path == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Before any entry, check the daily chart first: is price above EMA 60? Are there EMA levels blocking the upside? Only proceed to lower timeframes if daily confirms space to move."
+    notes: "Workflow: daily → 1-minute. Verify space above on daily, then find conformazione on 1-minute. Explicitly mentioned as the correct analytical order."
+
+  - id: BULL_P_31_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [position_sizing, scalping, daily]
+    source:
+      timecode: "12:56-13:14"
+    conditions:
+      - "two_consecutive_breakouts_failed == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "If two breakout attempts in the same session both fail, stop trading breakouts for that day; the market is not ready."
+    notes: "Switch to a different setup or study rather than chasing a failing pattern intraday."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_P_31_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, fomo]
+    source:
+      timecode: "2:48-3:30"
+    statement: "Wanting to enter at all costs (FOMO) leads to entries without a real conformazione. In bull run conditions every pump looks like an opportunity, but without a clean setup the entry is just gambling."
+    rationale: "The instructor shows his own bad entries driven by fear of missing out on a +14,000% move — even experienced traders are susceptible; beginners must build strict entry rules."
+
+  - id: BULL_P_31_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, candle_pattern, beginner]
+    source:
+      timecode: "7:23-7:51"
+    statement: "Extreme pump candles on 1-minute charts can drop 60% within a single minute. Entering without a conformazione can destroy a third of capital in 60 seconds."
+    rationale: "A real example: price went from 62 to 23 in one minute during a +1000% pump. No conformazione = no entry, regardless of how much the asset has already moved."
+
+  - id: BULL_P_31_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, scalping, daily]
+    source:
+      timecode: "9:00-9:53"
+    statement: "After a big move, an asset needs to rest and consolidate before making another leg up. A breakout that comes too fast after a prior spike is unreliable — wait for hours of rest."
+    rationale: "Like a cyclist who needs to rest and eat before another climb, an asset must consolidate (lateralize, retest EMAs) to reload momentum before the next extension."
+
+  - id: BULL_P_31_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, position_sizing]
+    source:
+      timecode: "17:42-18:49"
+    statement: "Limit to 2-3 quality trades per day; never trade all day long. Quality over quantity: aim for zero or one losing trade, not 60% win rate with high frequency."
+    rationale: "Overtrading, especially during an exciting bull run, destroys P&L. Trading 2-3 well-selected setups with conviction produces better results than 100 attempts."
+
+  - id: BULL_P_31_CTX_05
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "20:59-21:19"
+    statement: "Beginners should trade with $20-50 to learn. Putting $500, $1000, $5000 or $20,000 before mastering a single technique is irrational and will result in losses."
+    rationale: "The psychological pressure of large positions corrupts decision-making; small sizes let you learn without catastrophic consequences."
+
+  - id: BULL_P_31_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology, candle_pattern]
+    source:
+      timecode: "25:05-25:36"
+    statement: "After watching a video, paper-trade by drawing lines and testing the concept. Re-watch the same video after practicing — its meaning will be completely different the second time."
+    rationale: "Conceptual understanding deepens through practice; repetition with active testing builds intuition faster than passive viewing."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 6
+  core_message: "During bull runs, FOMO destroys discipline; the only antidote is requiring a clean conformazione above EMA 60 on the daily before any entry, and stopping immediately when breakouts fail twice in a session."

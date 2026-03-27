@@ -1,0 +1,112 @@
+video:
+  id: YT_BULL_P_011
+  series: principianti
+  title: "Book nei Time Frame Grandi: Ingresso con Stop EMA 10 su TF30 e Trigger Daily"
+  video_index: 11
+  duration_minutes: 16
+
+entities:
+  - id: BULL_P_11_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, daily, trigger, stop_loss, book, trend]
+    source:
+      timecode: "00:40-02:10"
+    conditions:
+      - ema10_TF30min_respected_count >= 3
+      - daily_trigger_level_exists == true
+      - price_retests_ema10_TF30min_as_support == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["30min", "60min"]
+      market_regime: [bullish]
+    rationale: "Trend a TF30 minuti con EMA 10 rispettata tre volte + trigger nel daily = setup per tenere la posizione con stop a EMA 10 e lasciare correre verso il target daily."
+    notes: "Trade dimostrato: +19% tenendo EMA 10 come stop su TF1h con trigger ai massimi del giorno precedente nel daily. Stop a EMA 223 su TF1m corrisponde a EMA 10 su TF30."
+
+  - id: BULL_P_11_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, stop_loss, trigger, ema10, daily]
+    source:
+      timecode: "04:05-06:15"
+    conditions:
+      - book_has_large_ask_level_near_or_above_bad_entry == true
+      - large_ask_level_size >= significant_threshold
+    action:
+      - SKIP_TRADE
+      - WAIT
+    applicability:
+      timeframes: ["30min", "5min"]
+      market_regime: []
+    rationale: "Anche su TF grandi con stop a EMA 10 TF30, se il book mostra un muro enorme subito sopra il punto di ingresso non ha senso entrare prima della rottura di quel livello."
+    notes: "Esempio: se a 0.283 ci fossero 100.000$ in vendita e il livello bad è a 0.28, non si entra a 0.28 ma si aspetta la rottura di 0.283. Il book cambia completamente il punto di ingresso."
+
+  - id: BULL_P_11_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, ema223, stop_loss, book, pullback, trigger]
+    source:
+      timecode: "07:10-10:30"
+    conditions:
+      - ema10_TF30min_distance_from_current_price > acceptable_stop_threshold
+      - price_retests_ema223_TF1min == true
+      - book_pullman_cinesi_visible == true
+    action:
+      - ENTER_LONG
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bullish]
+    rationale: "Se EMA 10 su TF30 è troppo distante, l'ingresso ottimale è al retest di EMA 223 su TF1m (che corrisponde a EMA 10 su TF30) con book che mostra pullman di cinesi."
+    notes: "La cosa migliore è sempre comprare sui supporti per avere stop vicino. EMA 223 TF1m = EMA 10 TF30: stessa EMA vista su due time frame diversi."
+
+  - id: BULL_P_11_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, trigger, ema223, breakout, cambiocolore]
+    source:
+      timecode: "10:40-14:00"
+    conditions:
+      - daily_candle_color_changes_from_red_to_green == true OR price_breaks_previous_day_high == true OR price_breaks_ema223_on_daily == true
+    action:
+      - CLASSIFY_SETUP
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "I momenti trigger nel daily sono: cambio colore candela da rosso a verde, superamento massimi del giorno precedente, rottura EMA 223 nel daily. Tre eventi in sequenza crescente di potenza."
+    notes: "Il bullbot avvisa quando il prezzo si avvicina ai massimi del giorno precedente. Tendere a vendere prima della EMA 223 e aspettare conformazione prima di entrare alla rottura."
+
+  - id: BULL_P_11_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, daily, trigger, ema]
+    source:
+      timecode: "02:25-05:55"
+    statement: "Anche operando su TF grandi (30m, 1h, daily) il book va sempre consultato per identificare: (1) dove entrare con precisione rispetto al livello bad, (2) se ci sono muri che bloccano il percorso verso il target, (3) livelli di supporto o resistenza non visibili graficamente."
+    rationale: "Il book su TF grandi non sostituisce il grafico ma aggiunge precisione all'ingresso e consapevolezza degli ostacoli nel percorso verso il target daily."
+
+  - id: BULL_P_11_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, ema223, ema10, risk_management, psychology]
+    source:
+      timecode: "07:50-09:40"
+    statement: "Entrare su TF minore per avere stop più vicino rispetto all'EMA 10 su TF grande comporta il rischio che il prezzo faccia spike al contrario, torni a testare la EMA 223 e poi riprenda il trend: in quel caso si è stati stoppati su un'operazione che avrebbe poi funzionato."
+    rationale: "Il trade-off tra stop vicino e rischio di stop-hunt è reale: lo stop più vicino non è sempre migliore se il supporto naturale è più lontano."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Come usare il book nei time frame grandi (30m, 1h, daily): stop a EMA 10 TF30, ingresso ottimale al retest di EMA 223 su TF1m con book che mostra pullman di cinesi, e i tre momenti trigger nel daily (cambio colore, massimi precedenti, rottura EMA 223)."

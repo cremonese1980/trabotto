@@ -1,0 +1,93 @@
+video:
+  id: YT_BULL_P_043
+  series: principianti
+  title: "Qual è il mercato migliore per fare trading? Crypto, Azionario o Forex"
+  video_index: 43
+  duration_minutes: 15
+
+entities:
+
+  - id: BULL_P_43_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, btc_index, beginner]
+    source:
+      timecode: "00:41-02:17"
+    statement: "Il book di Binance è il più democratico e verificabile tra tutti i mercati: aggregabile, con livelli infiniti e senza manipolazioni da broker."
+    rationale: "La visibilità dei livelli book è un vantaggio operativo diretto che distingue il mercato crypto da azionario e forex."
+
+  - id: BULL_P_43_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, leverage, margin, risk_management]
+    source:
+      timecode: "12:38-13:52"
+    statement: "I principianti devono operare in spot senza leva; usare leva solo dopo essere diventati profittevoli e aver capito bene le proporzioni delle candele."
+    rationale: "Un altcoin volatile con leva 100 porta a liquidazione alla prima candela avversa."
+
+  - id: BULL_P_43_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, leverage, position_sizing]
+    source:
+      timecode: "13:52-14:08"
+    statement: "Chi inizia deve usare spot con un massimo di 50 dollari; solo dopo la profittabilità si può valutare la leva."
+    rationale: "Evitare la liquidazione e imparare i meccanismi senza rischiare capitali significativi."
+
+  - id: BULL_P_43_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [position_sizing, risk_management, scalping]
+    source:
+      timecode: "11:59-12:10"
+    statement: "Sul mercato crypto con Binance è consigliato non superare i 20.000 dollari per operazione per mantenere le fee trascurabili."
+    rationale: "Le fee percentuali del mondo crypto diventano onerose su size elevate rispetto alla fee fissa del mercato azionario professionale."
+
+  - id: BULL_P_43_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, btc_index]
+    source:
+      timecode: "03:20-03:36"
+    statement: "Per chi inizia, il mercato crypto su Binance è la prima scelta assoluta per via del book democratico e delle fee bassissime anche su cifre piccole."
+    rationale: "Il book aggregabile e le fee a 0,075% in BNB abbassano la barriera di ingresso per i principianti."
+
+  - id: BULL_P_43_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "09:03-09:14"
+    statement: "Per operare sul mercato azionario serve almeno un book a 20 livelli; strumenti come Fineco (1 livello) sono impraticabili."
+    rationale: "Senza profondità di book non si possono valutare i livelli di liquidità e si opera alla cieca."
+
+  - id: BULL_P_43_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, trend, scalping]
+    source:
+      timecode: "10:17-11:26"
+    statement: "Il forex e gli indici senza book richiedono time frame più alti, grafici puliti e massima liquidità del sottostante; tenuti come ultima scelta."
+    rationale: "Senza book si perde il vantaggio nella gestione dei falsi breakout e nella lettura della liquidità."
+
+  - id: BULL_P_43_CTX_08
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [leverage, margin, risk_management]
+    source:
+      timecode: "12:28-14:30"
+    statement: "Usare la leva minima consentita dalla piattaforma per il titolo scelto; la leva non cambia il rischio reale se la size è calibrata correttamente rispetto alla volatilità della candela."
+    rationale: "Leva 10 su BTC (candele 0,1%) equivale a spot su un altcoin con candele 1%; il rischio è identico se la size è la stessa."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 8
+  core_message: "Video dedicato alla scelta del mercato ottimale per i principianti: il mercato crypto su Binance è preferito per il book democratico e le fee bassissime, il mercato azionario diventa conveniente solo con fee fisse da professionista e size elevate, il forex è l'ultima scelta per assenza di book. Per chi inizia: spot, massimo 50 dollari, zero leva."

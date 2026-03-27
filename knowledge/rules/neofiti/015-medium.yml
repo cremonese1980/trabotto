@@ -1,0 +1,166 @@
+video:
+  id: YT_BULL_P_015
+  series: principianti
+  title: "Tecnica del Daily Part 2"
+  video_index: 15
+  duration_minutes: 12
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_15_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, pullback, ema10, retest, stop_loss]
+    source:
+      timecode: "02:43-04:08"
+    conditions:
+      - price_retracing_to_ema10_daily == true
+      - prior_uptrend_confirmed == true
+      - price_above_ema60_daily == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Buying at EMA10 on the daily instead of at breakout highs keeps the stop much closer and dramatically reduces risk on the trade."
+    notes: "This method resolves the 'distant stop' problem identified in Part 1. Entry on EMA10 support means stop is just below EMA10."
+
+  - id: BULL_P_15_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, ema5, pullback, candelina]
+    source:
+      timecode: "03:28-03:47"
+    conditions:
+      - price_touching_ema5_daily == true
+      - prior_uptrend_confirmed == true
+      - touch_is_direct_without_multiple_days_at_ema5 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "A pullback directly to EMA5 (without prolonged consolidation there) can be used as an entry, but only on direct touch without multiple days bouncing at EMA5."
+    notes: "If the asset spends multiple days at EMA5 without moving, skip the entry at EMA5 and wait for EMA10 or EMA60."
+
+  - id: BULL_P_15_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, stop_loss, ema10, invalidation]
+    source:
+      timecode: "03:51-03:58"
+    conditions:
+      - position_open == true
+      - entry_near_ema10_daily == true
+      - daily_candle_closes_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Stop rule when entering at EMA10 support: close position on daily candle close below EMA10."
+    notes: "Example shown: entry at 1.90, close below EMA10 was triggered at 1.99 — still a 5% gain. This confirms the tight stop allows profitable exits even on bad days."
+
+  - id: BULL_P_15_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, lateralizzazione, breakout, candelina, continuation]
+    source:
+      timecode: "05:29-06:33"
+    conditions:
+      - small_body_candles_in_sequence == true
+      - price_at_resistance_level == true
+      - candle_closes_above_resistance == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Lateral consolidation with small candles at resistance acts like a compressed spring — breakout of resistance triggers a powerful move."
+    notes: "Entry is above the body of the highest small candle in the lateralization zone, not above intraday spikes."
+
+  - id: BULL_P_15_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, btc_index, regime_filter, trigger]
+    source:
+      timecode: "09:22-10:23"
+    conditions:
+      - btc_approaching_resistance == true
+      - target_asset_also_at_resistance == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Do not enter a daily setup when both the asset AND Bitcoin are simultaneously at resistance — wait for Bitcoin to resolve first."
+    notes: "If Bitcoin resolves positively (closes above resistance), the asset entry becomes valid. If BTC fails, many setups will fail simultaneously."
+
+  - id: BULL_P_15_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [daily, ema60, retest, trigger]
+    source:
+      timecode: "11:23-12:05"
+    conditions:
+      - price_touched_ema60_daily == true
+      - daily_candle_closed_above_ema60 == true
+      - btc_daily_stable == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "A clean touch of EMA60 on the daily with candle close above is an ideal entry — EMA60 held shows maximum strength."
+    notes: "MTL example: touched EMA60 precisely without spike below, then showed strength next day. Stop is below the EMA60 spike low."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_15_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, stop_loss, risk_management]
+    source:
+      timecode: "02:26-02:43"
+    statement: "Buying at highs/breakouts creates a very distant stop; buying at EMA10/EMA60 support solves the distance problem and is the preferred approach in Part 2."
+    rationale: "A tight stop is always preferable — it limits loss on failures and keeps position sizing more rational."
+
+  - id: BULL_P_15_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, btc_index, regime_filter]
+    source:
+      timecode: "07:46-10:05"
+    statement: "Bitcoin is the index for all crypto daily trades. When Bitcoin's daily chart is testing a critical support and may break down, avoid entering new daily setups regardless of how good the individual setup looks."
+    rationale: "A Bitcoin breakdown will drag down nearly all altcoins simultaneously, overwhelming any individual setup."
+
+  - id: BULL_P_15_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, psychology]
+    source:
+      timecode: "03:58-04:07"
+    statement: "The daily technique with tight stops is the preferred approach to minimise damage from bad days in the market."
+    rationale: "Tight stops close to EMA10 mean even on catastrophic market days the loss is limited to a small percentage."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Part 2 refines the daily technique by prioritising EMA10/EMA60 pullback entries instead of breakout entries — this keeps the stop tight and dramatically reduces maximum loss. The critical addition: skip any entry when Bitcoin is simultaneously at resistance."

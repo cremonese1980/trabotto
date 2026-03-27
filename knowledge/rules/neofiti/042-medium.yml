@@ -1,0 +1,92 @@
+video:
+  id: YT_BULL_P_042
+  series: principianti
+  title: "Fiscalità crypto 2023: tassazione plusvalenze, monitoraggio RW e condono"
+  video_index: 42
+  duration_minutes: 37
+
+entities:
+  - id: BULL_P_42_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, psychology]
+    source:
+      timecode: "00:00-02:17"
+    statement: "Fiscalità crypto italiana dal 1 gennaio 2023: franchigia annuale di 2.000 EUR. Se le plusvalenze totali superano i 2.000 EUR, l'intera plusvalenza (inclusi i primi 2.000) è tassata al 26% imposta sostitutiva."
+    rationale: "I trader devono comprendere la soglia fiscale per pianificare i timing di incasso ed evitare passività fiscali inattese; la franchigia non è deducibile — superarla tassa la plusvalenza intera."
+
+  - id: BULL_P_42_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "03:11-04:08"
+    statement: "Dal 2023 in Italia, un evento imponibile (cash-out) si verifica solo quando la crypto viene scambiata con fiat (EUR, USD, ecc.) o usata per acquistare beni/servizi; lo swap di una crypto con un'altra (BTC→ETH, USDT→BTC) NON scatena tassazione."
+    rationale: "Sapere cosa costituisce un evento imponibile consente ai trader di gestire il portafoglio senza innescare tasse inutili; gli swap crypto-crypto e il mantenimento in USDT sono attualmente eventi non tassabili."
+
+  - id: BULL_P_42_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "04:48-05:50"
+    statement: "Pagare beni o servizi con una Binance Card (USDT o qualsiasi crypto) costituisce un evento di cash-out ed è tassabile come se la crypto fosse stata prima convertita in fiat."
+    rationale: "Molti trader credono erroneamente che i pagamenti con carta in crypto non siano tassabili; scatenano la stessa imposizione di una conversione diretta in fiat."
+
+  - id: BULL_P_42_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "06:57-07:29"
+    statement: "L'obbligo del quadro RW (monitoraggio fiscale) è SEMPRE richiesto indipendentemente dal fatto che le plusvalenze abbiano superato i 2.000 EUR; è un obbligo separato dall'RT (tassazione delle plusvalenze) e non ha soglia minima per la crypto."
+    rationale: "I trader che rimangono sotto i 2.000 EUR spesso credono di non avere obblighi dichiarativi; l'RW deve sempre essere presentato per documentare le detenzioni crypto."
+
+  - id: BULL_P_42_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "08:42-09:49"
+    statement: "Un condono volontario introdotto con la legge di bilancio 2022 consente la regolarizzazione di RW non dichiarati e/o plusvalenze pregressi a un tasso forfettario del 3,5% (plusvalenze) + 0,5% (monitoraggio RW) per anno; la scadenza è stata prorogata al 30 settembre."
+    rationale: "I trader che non hanno mai presentato l'RW o dichiarato le plusvalenze negli anni precedenti hanno un'opportunità limitata nel tempo per mettersi in regola a costo ridotto ed evitare futuri accertamenti."
+
+  - id: BULL_P_42_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "27:32-28:11"
+    statement: "L'Agenzia delle Entrate ha fino a 8 anni per accertare le dichiarazioni passate (5 anni + 2 anni se la dichiarazione non è stata presentata); non adeguarsi ora lascia un'esposizione molto lunga."
+    rationale: "Il lungo termine di prescrizione significa che la finestra dell'amnistia è la salvaguardia pratica; aspettare rischia accertamenti anni dopo con sanzioni molto più alte."
+
+  - id: BULL_P_42_CTX_07
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, psychology]
+    source:
+      timecode: "20:29-21:45"
+    statement: "Le perdite dovute al fallimento di exchange (es. FTX) o truffe (rug pull, fuffaguru) NON sono deducibili come perdite di trading; sono classificate come perdite patrimoniali che l'Agenzia delle Entrate non riconosce come compensabili con le plusvalenze di trading."
+    rationale: "I trader che hanno subito perdite su exchange falliti o truffe non possono usarle per ridurre le plusvalenze di trading imponibili; devono essere contabilizzate separatamente."
+
+  - id: BULL_P_42_CTX_08
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "31:25-34:15"
+    statement: "I trader devono esportare lo storico completo delle transazioni Binance (CSV/Excel) e usare Binance Tax o strumenti di terze parti per calcolare le plusvalenze annuali; questo documento è necessario per dimostrare la conformità all'Agenzia delle Entrate e per popolare i quadri RT e RW."
+    rationale: "Senza storico documentato delle transazioni, il calcolo delle plusvalenze imponibili per centinaia o migliaia di trade è impossibile; l'export è la prova principale in qualsiasi accertamento."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 8
+  core_message: "Una sessione fiscale strutturata con due commercialisti italiani copre il framework completo della tassazione crypto 2023 in Italia: la franchigia di 2.000 EUR, cosa costituisce un cash-out tassabile, l'obbligo di monitoraggio RW sempre obbligatorio, il condono volontario con scadenza al 30 settembre, una finestra di accertamento di 8 anni, e la non deducibilità delle perdite da truffe/fallimenti exchange."

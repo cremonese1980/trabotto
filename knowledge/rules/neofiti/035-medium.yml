@@ -1,0 +1,208 @@
+video:
+  id: YT_BULL_P_035
+  series: principianti
+  title: "Take profit - proporzioni, EMA e book per trovare il target"
+  video_index: 35
+  duration_minutes: 25
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_P_35_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, ema10, ema60, candle_pattern]
+    source:
+      timecode: "0:24-0:59"
+    conditions:
+      - "price_broke_ema10_upward == true"
+      - "next_ema_above_is_ema60 == true"
+      - "candle_sizes_prior_to_breakout_are_small == true"
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When breaking EMA 10 with small candles, the first logical take-profit is EMA 60: the distance from breakout to EMA 60 should be proportional to the prior candle sizes."
+    notes: "The distance EMA10→EMA60 should roughly match the average candle size in the consolidation. If EMA 60 is much further than the typical candle size, it may not be reachable in one move."
+
+  - id: BULL_P_35_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [take_profit, candle_pattern, scalping]
+    source:
+      timecode: "1:44-2:46"
+    conditions:
+      - "entry_taken == true"
+      - "price_movement_dritto_per_dritto == true (very fast vertical move with no consolidation)"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "If price goes straight up without any consolidation after entry (dritto per dritto), exit immediately — the move is overextended and a sharp reversal is likely."
+    notes: "Bull sold immediately after a fast vertical move (+1.43%) and the next candle still went up, but the principle holds: very fast moves without rest are unreliable to hold."
+
+  - id: BULL_P_35_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, take_profit, trigger]
+    source:
+      timecode: "3:06-3:43"
+    conditions:
+      - "bad_to_moon_pattern_detected == true"
+      - "spike_above_bad_structure == true"
+      - "minimum_4_small_candles_in_consolidation == true"
+      - "breakout_above_bad_highest_level == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Bad-to-the-moon pattern (spike + consolidation of 4+ small candles + breakout above the structure high) provides a high-confidence entry at the first book level above the break."
+    notes: "More consolidation candles = more powerful setup. Bull entered at the first book wall after the breakout and held for a proportional target (~5% in this case)."
+
+  - id: BULL_P_35_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, daily, candle_pattern, all_time_high]
+    source:
+      timecode: "3:29-5:15"
+    conditions:
+      - "daily_timeframe_checked == true"
+      - "no_major_ema_overhead_on_daily == true"
+      - "setup_timeframe_is_1m_or_5m == true"
+      - "prior_conformazione_is_large_tf30m_or_greater == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily, 30m]
+      market_regime: []
+    rationale: "When the daily shows no overhead EMA resistance, allow the trade more room; a conformazione on 30m can yield proportionally much larger targets than a 1-minute setup."
+    notes: "In the GMT example, a 30-minute bad-to-the-moon near all-time highs had a proportional target of ~7% over 40-50 minutes. The daily context (no EMA above) unlocks larger targets."
+
+  - id: BULL_P_35_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, take_profit, trigger]
+    source:
+      timecode: "11:22-14:23"
+    conditions:
+      - "entry_taken == true"
+      - "large_book_wall_identified_above_entry == true"
+      - "book_wall_is_closer_than_proportional_target == true"
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "If the book shows a very large wall between entry and the proportional TP target, reduce the target to just before that wall — the wall will block or slow the move."
+    notes: "Book levels override proportional targets. Always check the book after calculating the proportional TP; if there is a wall before it, target just under the wall instead."
+
+  - id: BULL_P_35_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, ema223, retest, trigger, stop_loss]
+    source:
+      timecode: "17:14-20:15"
+    conditions:
+      - "price_approaching_ema223_or_ema60_from_above == false"
+      - "price_approaching_ema_from_below == true"
+      - "large_book_support_visible_below_ema == true (muraglia cinese)"
+      - "trader_can_exit_immediately_if_support_breaks == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "A calcio di rigore setup: huge book wall below EMA (muraglia cinese / Chinese wall) provides an extremely high-probability bounce entry. Enter just above the wall and exit if it breaks."
+    notes: "Bull placed order at 0.19 with massive walls at 0.2 below the EMA 223. Gained 5%. This requires extreme speed to exit if the book breaks — only for experienced traders who can act in seconds."
+
+  - id: BULL_P_35_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, retest, candle_pattern, trigger]
+    source:
+      timecode: "20:33-21:06"
+    conditions:
+      - "price_tested_ema60_or_ema223 == true"
+      - "price_bounced_back_above_ema == true"
+      - "ema10_breakout_signal_on_1m == true"
+      - "no_large_book_wall_confirmation == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Alternative bounce entry without book confirmation: wait for price to test the major EMA, bounce, then enter on the EMA 10 breakout as the first valid conformazione — safer than the calcio di rigore."
+    notes: "This is the book-light version of the bounce setup. No anticipation, just react to the conformazione after the test. Suitable for beginners who cannot read book fast enough."
+
+  - id: BULL_P_35_08
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, stop_loss, invalidation]
+    source:
+      timecode: "23:28-25:05"
+    conditions:
+      - "book_wall_identified_as_support == true"
+      - "book_wall_moves_away_from_original_price == true (order relocated)"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "If a book wall moves to a different price level, it was a fake/spoofed wall. Do not use it as a support reference; do not base stop placement on it."
+    notes: "If a wall at 2.20 relocates to 2.19, the original level no longer exists. Do not adjust stop — the wall was not real. If already in trade with stop based on that wall, either hold the original stop or exit earlier."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_P_35_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, daily, candle_pattern]
+    source:
+      timecode: "5:41-6:48"
+    statement: "Take profit is primarily proportional: the expected move should be roughly equal to the candle sizes in the prior conformazione. A small-candle setup on 1m targets a small move; a large 30m lateralization targets a much larger move."
+    rationale: "Proportionality prevents over-expecting small setups and under-expecting large ones. The conformazione size sets the scale of the expected target."
+
+  - id: BULL_P_35_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, all_time_high, daily, candle_pattern]
+    source:
+      timecode: "7:43-8:20"
+    conditions: []
+    statement: "At all-time highs with no EMA overhead on the daily, the proportional target can be larger than usual because there is no historical resistance to slow the move."
+    rationale: "All-time highs create asymmetric upside potential — no sellers waiting from prior purchases above, so the proportional calculation may underestimate the real target."
+
+  - id: BULL_P_35_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, risk_management]
+    source:
+      timecode: "13:49-14:29"
+    statement: "Trading take-profits without checking the book is trading blind. A book wall close to entry can block a proportional target entirely. Book levels must be checked before setting TP."
+    rationale: "Many beginners calculate a TP from proportions alone, missing that a huge order wall will stop the move well before the target. Book check is mandatory."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 3
+  core_message: "Take profit is set by three converging inputs: proportional move size based on prior candle sizes, the nearest overhead EMA, and the first major book wall above entry — whichever comes first wins, and the daily chart sets the overall scale for how ambitious the target can be."

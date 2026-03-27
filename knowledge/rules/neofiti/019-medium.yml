@@ -1,0 +1,170 @@
+video:
+  id: YT_BULL_P_019
+  series: principianti
+  title: "Come guadagnare con i crolli: long e short in mercato ribassista"
+  video_index: 19
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_19_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [breakout, trend, ema60, btc_index, regime_filter]
+    source:
+      timecode: "02:19-03:33"
+    conditions:
+      - dominant_downtrend_line_exists_on_30m == true
+      - price_approaching_dominant_trendline == true
+      - btc_also_approaching_trendline_break == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: [bearish]
+    rationale: "In a crash, wait for a breakout of the dominant downtrend line on 30m AND confirmation on BTC index before entering long — dual timeframe + index confirmation increases breakout probability significantly."
+    notes: "The longer the dominant trendline has held, the more important the breakout. Seek alignment: trendline break on 1m entry TF, confirmed by break of EMA60 on 30m, plus BTC breaking its own trendline concurrently."
+
+  - id: BULL_P_19_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, trend, ema60, btc_index, scalping]
+    source:
+      timecode: "05:30-08:03"
+    conditions:
+      - asset_in_strong_downtrend == true
+      - ema60_on_5m_acting_as_resistance == true
+      - btc_dominant_downtrend_line_broken == true
+      - asset_1m_trendline_broken == true
+      - asset_5m_trendline_broken == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [bearish]
+    rationale: "Enter long during a crash only when multiple timeframe trendlines break simultaneously on both the asset and BTC index — the triple confirmation signals a genuine new trend, not a dead-cat bounce."
+    notes: "Example: Ripple long at 1.0466 during -15% crash. Entry triggered when 1m trendline broke, 5m trendline broke, and BTC 1m trendline broke concurrently. Held longer than normal due to triple confirmation."
+
+  - id: BULL_P_19_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [trend, ema10, take_profit, scalping, continuation]
+    source:
+      timecode: "08:22-09:50"
+    conditions:
+      - position_open_long == true
+      - multiple_trendline_breakouts_confirmed == true
+      - price_above_new_dominant_breakout_level == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish, neutral]
+    rationale: "When holding a long with multiple trendline break confirmations, use EMA10 as trailing exit reference instead of first spike — broader signals justify letting the trade run further."
+    notes: "Normal scalp exits on spike 1-3; with triple confirmation hold until lateralizzazione breakout failure or EMA10 break."
+
+  - id: BULL_P_19_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, ema60, stop_loss, scalping, reversal]
+    source:
+      timecode: "11:16-12:34"
+    conditions:
+      - price_bouncing_repeatedly_below_ema60_on_1m == true
+      - each_bounce_lower_than_previous == true
+      - ema60_acting_as_resistance == true
+      - spike_down_confirms_rejection == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Enter short when price tests EMA60 multiple times from below, each attempt weaker, then rejects with a downward spike — EMA60 confirmed as resistance sets a tight stop above it."
+    notes: "Stop above EMA60. Once candle closes below the entry level, move stop to breakeven. Exit on first green candle after the move — this is pure scalping without the multi-signal conviction of the long setup."
+
+  - id: BULL_P_19_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, scalping, ema60, risk_management]
+    source:
+      timecode: "11:57-12:34"
+    conditions:
+      - short_position_open == true
+      - price_broke_below_entry == true
+      - price_retraces_back_to_entry_zone == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Once a short moves below entry, move stop to breakeven (zero) or just above zero — this eliminates loss risk while allowing the trade to continue working."
+    notes: "If price bounces back through entry level after stop is at zero, close at breakeven — a failed short that reverses above EMA60 needs immediate exit."
+
+  - id: BULL_P_19_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [take_profit, scalping, candle_pattern, reversal]
+    source:
+      timecode: "13:06-13:49"
+    conditions:
+      - short_position_open == true
+      - large_down_candle_printed == true
+      - next_candle_closes_green == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Exit short on the first green candle after a large red candle — the green candle signals short covering and potential reversal, especially in a scalping context with no multi-signal conviction."
+    notes: "Applied in BTC short example: large red candle printed, next candle turned green, exited at +297 (platform showed +338 due to spread). With fewer confirmation signals, exit sooner."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_19_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [leverage, risk_management, beginner]
+    source:
+      timecode: "04:17-05:09"
+    statement: "Using leva 20x (20x leverage) means a 5% adverse move wipes the entire position. Beginners should use leva 1x where a -50% move is needed to lose everything."
+    rationale: "High leverage is appropriate only with a mastered edge and strict stop management — beginners have neither, so low leverage buys time to learn and survive mistakes."
+
+  - id: BULL_P_19_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trend, reversal, btc_index, breakout]
+    source:
+      timecode: "10:50-11:09"
+    statement: "In a strong downtrend, a long bounce will come — but you must wait for the dominant trend line to be broken before entering. Never buy just because price looks cheap or has fallen far."
+    rationale: "Price can always go lower; only a confirmed trendline break on the appropriate timeframe gives a mechanical reason to enter long against the prevailing direction."
+
+  - id: BULL_P_19_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, risk_management, psychology]
+    source:
+      timecode: "13:37-14:04"
+    statement: "When a trade has fewer confirming signals (only scalping setup, no trendline + index alignment), exit earlier — the fewer the signals, the shorter the hold time should be."
+    rationale: "Signal quality determines hold time: a single scalp setup deserves 1-3 spike exits; a triple-confirmation setup can be held through lateralizzazione and EMA10 trailing."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "In a crash you can trade both sides: go long only on triple-confirmed trendline breaks (asset 1m + asset 5m + BTC index), and short when EMA60 is confirmed resistance with declining retests. Signal count dictates hold time — more signals means longer hold, fewer signals means faster exit."

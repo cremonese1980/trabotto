@@ -1,0 +1,169 @@
+video:
+  id: YT_BULL_P_022
+  series: principianti
+  title: "Tre live trading short su Doge: ieri e durante il Saturday Night Live di Elon"
+  video_index: 22
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_22_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, candle_pattern, reversal, stop_loss, scalping]
+    source:
+      timecode: "01:09-03:28"
+    conditions:
+      - price_crosses_above_ema60_after_crash == true
+      - first_candle_above_ema60_is_large_green == true
+      - second_candle_fails_to_extend_above_first_candle_high == true
+      - second_candle_closes_near_or_below_ema60 == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "After a crash, when price crosses above EMA60 but the following candle fails to push higher and closes back near EMA60, the 'double finta' pattern confirms the lack of buying conviction — short with stop above the failed swing high."
+    notes: "Doge short setup: price crossed EMA60, large green candle implied strength; second candle tried but closed back down — 'la seconda candela va su ma non ce la fa.' Stop above the local high above EMA60. Move stop lower as price confirms direction."
+
+  - id: BULL_P_22_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, ema60, risk_management, scalping]
+    source:
+      timecode: "04:09-04:30"
+    conditions:
+      - short_position_open == true
+      - price_retests_ema60_from_below == true
+      - price_stays_below_ema60_on_retest == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "When price retests EMA60 from below after a short entry and fails to cross above, move stop close to the retest high — the failed retest confirms the short direction and justifies tightening the stop."
+    notes: "Example: 'dopo che ha ritestato la 60 che è andato giù io qua dopo ho messo lo stop molto più vicino, ok? È quasi lo stesso prezzo 0.678 / 0.68.' Very small loss guaranteed even if stopped out."
+
+  - id: BULL_P_22_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, scalping, candle_pattern, risk_management]
+    source:
+      timecode: "05:27-06:05"
+    conditions:
+      - short_position_open == true
+      - price_reaches_prior_swing_low == true
+      - large_down_candle_printed == true
+      - candle_proportional_to_entry_range == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Close short when price reaches the prior significant swing low and the most recent candle is proportionally similar in size to the initial breakdown candle — the symmetry signals the impulse is exhausted."
+    notes: "Closed Doge short at +1277 USDT. 'Come proporzioni vedi una candela abbastanza simile — dico ok ci possiamo contentare, siamo a +1325, appena rimbalza chiudo.'"
+
+  - id: BULL_P_22_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [scalping, candle_pattern, stop_loss, reversal, trigger]
+    source:
+      timecode: "07:02-08:30"
+    conditions:
+      - known_external_catalyst_event_active == true
+      - catalyst_mentions_asset_negatively == true
+      - price_chart_shows_overbought_or_resistance == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [neutral, bullish]
+    rationale: "When a major scheduled external catalyst (TV show, announcement) references the asset in a way that removes upside surprise, enter short immediately after the catalyst — the final catalyst event removes the remaining FOMO premium."
+    notes: "Elon Musk SNL show: entered short at 0.635 after the Dogecoin joke. 'Finita la battuta sono andato short.' Stop needed immediately above entry. No chart reading required when catalyst is clear enough — enter at market, manage manually."
+
+  - id: BULL_P_22_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, scalping, candle_pattern, stop_loss]
+    source:
+      timecode: "08:20-09:41"
+    conditions:
+      - short_position_open == true
+      - limit_tp_pre_inserted == true
+      - price_reached_limit_tp_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Pre-inserting a limit TP order captures the target at half the fee cost — when an explosive move is anticipated, a limit order at the proportional target is the optimal exit strategy."
+    notes: "Doge SNL trade: pre-inserted TP at 0.551 (-20% from 0.635 entry). Closed at +1652 USDT. 'Spendo la metà di fee se metto un prezzo' on Binance futures. Candle closed at 0.54, limit was hit mid-candle."
+
+  - id: BULL_P_22_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, ema10, scalping, risk_management, take_profit]
+    source:
+      timecode: "11:44-14:43"
+    conditions:
+      - short_position_open == true
+      - ema5_and_ema10_acting_as_resistance == true
+      - price_progressively_making_lower_lows == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "As a short trades in-profit, progressively lower the stop following EMA5/EMA10 — each lower stop locks in more profit. Final stop positioned so that a break of EMA10 triggers automatic close."
+    notes: "Third Doge short: progressively moved stop from +160 guaranteed to +300 to +610. Final stop at 0.54, below EMA10 break level. 'Ecco 10 bucato va subito allo stop, finito.' Closed at +610."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_22_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, reversal, scalping, ema60]
+    source:
+      timecode: "10:04-10:48"
+    statement: "After a massive single-candle strappo, if the following green candle is small (proportionally tiny compared to the drop), it is a setup for re-entry short — a large drop followed by a tiny bounce confirms sellers remain in control."
+    rationale: "A large drop that only produces a tiny bounce means sellers are not exhausted; this pattern can be used for a second short entry, though the trainer advises caution after an 'enorme strappo' and typically does not re-enter immediately."
+
+  - id: BULL_P_22_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, scalping, risk_management]
+    source:
+      timecode: "10:59-11:12"
+    statement: "Never immediately re-enter the same direction in the same asset seconds after closing a trade — the setup mechanics have reset and the original context no longer applies."
+    rationale: "'Quando finisco di fare un trade, non me li metto far subito dopo pochi secondi un altro uguale — non ha senso.' Emotional re-entry chasing the same move has no setup basis and is a psychology trap."
+
+  - id: BULL_P_22_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, risk_management, beginner, scalping]
+    source:
+      timecode: "12:04-12:22"
+    statement: "Even when entering against the chart (e.g., short on unclear chart structure), having the stop above the spike high of the entry candle keeps the risk small — a close stop makes any trade acceptable."
+    rationale: "For the SNL end-of-show trade: 'non era un gran momento per andare short, comunque l'ho fatto e ho messo lo stop sopra al massimo dello stesso spike.' Stop distance defines risk; close stop = low risk regardless of chart quality."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Three Doge short trades during a crypto crash and a live SNL event: double-finta EMA60 failure pattern, progressive stop tightening along EMA5/EMA10, and catalyst-driven entry without chart reading. The unifying principle is always having a defined stop above the nearest swing high — tight stop makes any entry defensible."

@@ -1,0 +1,153 @@
+video:
+  id: YT_BULL_P_007
+  series: principianti
+  title: "Book e Medie Mobili - Dalla Base: Domanda, Offerta e Formazione del Prezzo"
+  video_index: 7
+  duration_minutes: 109
+
+entities:
+  - id: BULL_P_07_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, trend, ema, regime_filter, candle_pattern]
+    source:
+      timecode: "24:00-26:10"
+    conditions:
+      - candle_pattern_on_tf == clean
+      - ema_respected == true
+      - dominant_side IN [buyer, seller]
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["1min", "5min", "30min", "1d"]
+      market_regime: []
+    rationale: "Un disegno grafico pulito indica dominanza chiara di compratori o venditori; senza dominanza lo scalping è sconsigliato."
+    notes: "Se il grafico mostra spike lunghi e candele disordinate, chi compra e chi vende si stanno combattendo senza un vincitore: evitare operatività a 1 minuto in queste condizioni."
+
+  - id: BULL_P_07_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, breakout, trigger, ema, daily]
+    source:
+      timecode: "72:00-77:10"
+    conditions:
+      - book_resistance_level_size >= threshold_large
+      - price_approaching_resistance == true
+      - daily_chart_has_room_above_resistance == true
+    action:
+      - WAIT
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: []
+    rationale: "Prima di fare ingresso a un livello grafico, verificare sempre il book: se esiste una resistenza enorme immediatamente sopra non ha senso entrare prima della rottura di quel livello."
+    notes: "Ingresso manuale solo quando il book inizia a essere mangiato. Se dopo la rottura il prezzo torna immediatamente al livello, uscita immediata."
+
+  - id: BULL_P_07_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: SOFT
+    tags: [book, stop_loss, breakout, trigger]
+    source:
+      timecode: "50:30-58:30"
+    conditions:
+      - book_grouping_shows_meaningful_levels == true
+      - stop_limit_price_at_book_level_with_liquidity == true
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il raggruppamento del book deve essere calibrato affinché l'ampiezza di una candela sia visibile: solo così si vedono i livelli reali."
+    notes: "A nudo il book mostra cifre irrisorie (37$, 138$). Raggruppando al livello adatto si scoprono muri reali (es. 6000$, 30000$). Lo stop limit deve essere piazzato sul livello book vero."
+
+  - id: BULL_P_07_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, stop_loss, invalidation, breakout]
+    source:
+      timecode: "98:00-99:05"
+    conditions:
+      - price_breaks_large_book_level == true
+      - price_immediately_returns_to_level == true
+      - new_large_book_level_appears_at_same_price == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se dopo la rottura di un livello grosso il prezzo torna subito indietro e compare di nuovo un pezzo grosso allo stesso livello, la forza per rompere non era sufficiente: uscita immediata."
+    notes: "Vendere subito a qualsiasi prezzo senza aspettare. Chi sta vendendo ha quantità disumane e non ha senso rimanere dentro."
+
+  - id: BULL_P_07_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "00:00-05:15"
+    statement: "Il book mostra domanda e offerta: chi compra mette ordini a prezzo inferiore al mercato, chi vende a prezzo superiore. Gli scambi avvengono solo quando i prezzi si incrociano."
+    rationale: "Capire il meccanismo base di formazione del prezzo è prerequisito per ogni lettura del book."
+
+  - id: BULL_P_07_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, candle_pattern]
+    source:
+      timecode: "17:10-26:35"
+    statement: "Un disegno grafico bello e pulito indica che chi sta comprando o vendendo ha potere dominante e riesce a mantenere le medie mobili senza spike lunghi. Disegni brutti indicano lotta equilibrata: evitare."
+    rationale: "La qualità del disegno è proxy della dominanza: più è pulito, più il trend è affidabile e gli ingressi prevedibili."
+
+  - id: BULL_P_07_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "58:40-67:45"
+    statement: "I livelli nel book che entrano ed escono continuamente (si spostano quando il prezzo si avvicina) valgono zero. Non devono essere considerati né come supporto né come resistenza."
+    rationale: "I livelli finti vengono usati per creare confusione ma non vengono mai eseguiti: includerli nelle decisioni porta a errori."
+
+  - id: BULL_P_07_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, breakout, trigger, daily]
+    source:
+      timecode: "71:20-78:45"
+    statement: "Prima di operare: aprire il book, poi guardare il daily per contesto, poi confermare su time frame operativo. La sequenza daily → book → time frame minore aumenta le probabilità di successo."
+    rationale: "Multi-timeframe analysis con book integrato riduce le finte e aumenta la qualità degli ingressi."
+
+  - id: BULL_P_07_CTX_05
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, btc_index, psychology]
+    source:
+      timecode: "87:10-95:00"
+    statement: "Su Bitcoin futures il book non dà vantaggio informativo rilevante perché i livelli sono tutti proporzionalmente simili e quasi tutti finti. Operare su Bitcoin a conformazione grafica, non a livelli book."
+    rationale: "La liquidità estrema di Bitcoin rende il book meno discriminante rispetto ad altcoin meno scambiate dove i muri reali sono identificabili."
+
+  - id: BULL_P_07_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, candle_pattern, scalping]
+    source:
+      timecode: "106:20-108:00"
+    statement: "Evitare di ripetere lo stesso tipo di operazione senza una conformazione consolidata. Aspettare setup con lateralizzazione più lunga: più è lunga la conformazione, minore è la probabilità di finta."
+    rationale: "La pazienza nella selezione degli ingressi è fondamentale: cercare di entrare ad ogni movimento porta a prendere schiaffi su invertimenti veloci."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 6
+  core_message: "Lezione fondamentale su book e medie mobili per principianti: il meccanismo di domanda/offerta, come raggruppare correttamente il book per vedere livelli reali, come distinguere livelli finti da quelli veri, e come la qualità del disegno grafico indica la dominanza di compratori o venditori."

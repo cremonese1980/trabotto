@@ -1,0 +1,191 @@
+video:
+  id: YT_BULL_P_029
+  series: principianti
+  title: "Livelli Trigger — Meccanismo, Entrata Anticipata, Stop e Ribaltamento"
+  video_index: 29
+  duration_minutes: 33
+
+entities:
+  - id: BULL_P_29_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, terzo_tocco, daily, book]
+    source:
+      timecode: "07:59-09:25"
+    conditions:
+      - price_has_tested_resistance_level >= 2
+      - resistance_level_is_daily_high_or_multiday_high == true
+      - price_forms_consolidation_below_trigger == true
+    action:
+      - ENTER_LONG
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [bullish, lateral]
+    rationale: "Un livello testato più volte accumula stop loss di short e ordini condizionali di acquisto: quando la resistenza cede, la somma di questi ordini produce un'accelerazione significativa."
+    notes: "Il livello trigger è più forte se coincide con massimo daily o massimo multiday (terzo tocco plus). L'entrata anticipata è possibile se si individua nel book un sub-livello con resistenza visibile."
+
+  - id: BULL_P_29_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, invalidation, stop_loss]
+    source:
+      timecode: "15:12-16:55"
+    conditions:
+      - price_breaks_trigger_level_by_one_tick == true
+      - price_returns_inside_range_immediately == true
+      - no_acceleration_after_break == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min", "5min", "30min"]
+      market_regime: []
+    rationale: "Un trigger superato di un solo tick che poi rientra dimostra che il livello non ha prodotto la somma attesa di compratori + chiusure short: la resistenza è ancora attiva."
+    notes: "Il rientro di un solo tick dopo la rottura del trigger è il segnale di invalidazione più preciso e va eseguito immediatamente senza attendere la chiusura candela."
+
+  - id: BULL_P_29_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, stop_loss, ema10, invalidation]
+    source:
+      timecode: "18:44-19:27"
+    conditions:
+      - entry_anticipates_trigger_level == true
+      - price_has_not_yet_tested_trigger_level == true
+      - candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [bullish, lateral]
+    rationale: "Se si è entrati in anticipo rispetto al livello trigger e il prezzo non ha ancora testato il livello, lo stop è la chiusura sotto EMA 10."
+    notes: "Se la distanza dalla EMA 10 è troppo grande rispetto alla size, ridurre la size piuttosto che allargare lo stop."
+
+  - id: BULL_P_29_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, reversal, short_entry, invalidation]
+    source:
+      timecode: "16:55-17:55"
+    conditions:
+      - price_breaks_trigger_level == true
+      - no_acceleration_after_break == true
+      - price_returns_below_trigger == true
+    action:
+      - EXIT_POSITION
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1min", "5min", "30min"]
+      market_regime: [bear, lateral]
+    rationale: "Il fallimento del trigger è un segnale short di alta qualità: il venditore istituzionale ha assorbito tutti gli acquirenti e i cover degli short, dimostrando di avere ancora potere."
+    notes: "Su Bybit esiste il tasto 'reverse' che chiude la posizione long semi-mercato e apre immediatamente la posizione short all'ultimo prezzo di esecuzione."
+
+  - id: BULL_P_29_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [trigger, book, position_sizing, breakout]
+    source:
+      timecode: "31:44-32:46"
+    conditions:
+      - large_order_visible_in_book_at_trigger_level == true
+      - large_order_consumed_to_30pct_of_original == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bullish, lateral]
+    rationale: "Quando un ordine grosso nel book si sta consumando (es. da 100k a 30k), è il momento di entrare: si anticipa il trigger aspettando che il livello venga toccato dal proprio ingresso."
+    notes: "Non entrare quando il trigger è già stato superato — se si viene eseguiti a trigger già triggerato significa che non sta funzionando."
+
+  - id: BULL_P_29_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [trigger, stop_loss, position_sizing, ema10]
+    source:
+      timecode: "32:52-33:09"
+    conditions:
+      - distance_from_entry_to_ema10 > acceptable_stop_distance
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: []
+    rationale: "Se la distanza tra il punto di entrata e la EMA 10 (stop di riferimento) è troppo grande, ridurre la size per mantenere il rischio assoluto costante."
+    notes: "La size si determina sempre in funzione della distanza dello stop, non del potenziale gain."
+
+  - id: BULL_P_29_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [trigger, all_time_high, daily, terzo_tocco, continuation]
+    source:
+      timecode: "26:22-26:56"
+    conditions:
+      - trigger_level_is_all_time_high == true
+      - price_tests_trigger_with_clean_ema_structure == true
+    action:
+      - ENTER_LONG
+      - TIGHTEN_TP
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [bullish]
+    rationale: "I trigger su massimi storici hanno la più alta probabilità di successo perché sommano: break di resistenza storica + chiusure di short accumulati nel tempo + nuovi acquirenti breakout."
+    notes: "Su grafici sporchi (candele con spike grandi, EMA non pulite) uscire appena il livello trigger è testato senza attendere ulteriori conferme."
+
+  - id: BULL_P_29_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, book, breakout]
+    source:
+      timecode: "10:33-11:27"
+    statement: "Il livello trigger funziona perché simula la presenza di un 'venditore istituzionale' con milioni di azioni da piazzare: quando finisce di vendere, il prezzo esplode verso l'alto perché rimangono solo acquirenti + short che coprono."
+    rationale: "Comprendere il meccanismo istituzionale dietro i trigger aiuta a interpretare correttamente sia i successi che i fallimenti del setup."
+
+  - id: BULL_P_29_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, daily, terzo_tocco, book]
+    source:
+      timecode: "09:52-10:16"
+    statement: "Un livello trigger è tanto più potente quanto più è alto il timeframe su cui si è formato: un livello daily testato tre volte è molto più significativo di un livello a 5 minuti testato tre volte."
+    rationale: "I timeframe alti aggregano più partecipanti di mercato e accumulano una quantità maggiore di ordini pendenti al livello."
+
+  - id: BULL_P_29_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, breakout, candle_pattern, reversal]
+    source:
+      timecode: "27:33-28:24"
+    statement: "Un trigger che supera il livello, produce accelerazione, ma poi viene completamente riassorbito da un'entità istituzionale ancora più grande è un segnale short eccellente: il mercato ha dimostrato che il lato della domanda ha esaurito le munizioni."
+    rationale: "L'assorbimento totale di un trigger long è la prova sperimentale che il flusso istituzionale è short."
+
+  - id: BULL_P_29_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, book, ema10, ema60]
+    source:
+      timecode: "30:37-31:05"
+    statement: "Nel bull web, il minimo della candela di recupero sul livello trigger diventa il riferimento di uscita in caso di mancata esplosione. Questo permette di definire lo stop in modo oggettivo anche su timeframe a 5 minuti."
+    rationale: "Avere un riferimento visivo condiviso per lo stop del trigger riduce l'incertezza operativa e standardizza la gestione del rischio tra i membri della community."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 4
+  core_message: "Il livello trigger è il punto dove la somma di ordini di acquisto e chiusure di short produce potenzialmente un'accelerazione: va testato con un ingresso anticipato, e il suo successo o fallimento (superamento di un tick senza accelerazione) va gestito con regole meccaniche precise di uscita e/o ribaltamento della posizione."

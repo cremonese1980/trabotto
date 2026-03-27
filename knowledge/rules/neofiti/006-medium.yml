@@ -1,0 +1,158 @@
+video:
+  id: YT_BULL_P_006
+  series: principianti
+  title: "La candelina: la tecnica base per stop loss precisi e ingressi sicuri"
+  video_index: 6
+  duration_minutes: 18
+
+entities:
+  - id: BULL_P_06_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, stop_loss, ema10, trigger, candle_pattern]
+    source:
+      timecode: "00:31-01:18"
+    conditions:
+      - candle_body_size == small
+      - candle_close_near_key_level == true
+      - entry_price == candelina_high
+      - stop_loss == candelina_low
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "30min", "60min", "1d"]
+      market_regime: []
+    rationale: "La candelina (piccola candela di indecisione) fornisce un ingresso chiaro al massimo e uno stop chiaro al minimo, rendendo lo stop loss stretto e facilmente individuabile senza giudizio soggettivo."
+    notes: "Funziona su tutti i timeframe ma i neofiti devono usare TF minimo 5 minuti. L'ingresso è al massimo della candelina, lo stop al minimo."
+
+  - id: BULL_P_06_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [candelina, stop_loss, candle_pattern, beginner]
+    source:
+      timecode: "01:18-02:05"
+    conditions:
+      - timeframe_minutes < 5
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "Il timeframe 1 minuto ha 5 volte più finte rispetto al 5 minuti; i neofiti devono usare minimo 5 minuti per ridurre i falsi segnali."
+    notes: "Una candela da 5 minuti equivale a 5 candele da 1 minuto, quindi filtra le micro-oscillazioni che generano finte sull'ingresso e sullo stop."
+
+  - id: BULL_P_06_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candelina, stop_loss, candle_pattern, ema10]
+    source:
+      timecode: "05:23-05:32"
+    conditions:
+      - position_open == true
+      - current_candle_5m_closed == false
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["5min"]
+      market_regime: []
+    rationale: "Lo stop loss della candelina si sposta solo dopo la chiusura della candela da 5 minuti; non spostarlo durante la formazione evita di essere presi da movimenti momentanei."
+    notes: "Regola esplicita: 'fin quando non si chiude questa candela si tiene lo stop qua'."
+
+  - id: BULL_P_06_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candelina, stop_loss, candle_pattern, risk_management]
+    source:
+      timecode: "05:09-05:14"
+    conditions:
+      - position_open == true
+      - strong_acceleration_candle_closed == true
+      - price_moved_significantly_in_trade_direction == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["5min", "60min"]
+      market_regime: []
+    rationale: "Dopo uno strappo importante (candela di accelerazione chiusa) lo stop si sposta a zero (breakeven) perché il prezzo non dovrebbe più tornare al livello di ingresso."
+    notes: "Il video cita esplicitamente: 'quando c'è uno strappo importante poi lo stop si mette a zero'. Vale per tutti i timeframe."
+
+  - id: BULL_P_06_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [candelina, position_sizing, stop_loss, risk_management]
+    source:
+      timecode: "05:29-05:44"
+    conditions:
+      - candelina_stop_distance_pct > 2.0
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se la candelina è troppo grande (stop > 2%) dimezzare la size per mantenere il rischio in dollari equivalente a quello di una candelina normale."
+    notes: "Logica: le proporzioni del reward rimangono enormi rispetto allo stop anche se grande, ma la size dimezzata porta il rischio monetario all'1%."
+
+  - id: BULL_P_06_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, stop_loss, invalidation, candle_pattern]
+    source:
+      timecode: "06:19-07:01"
+    conditions:
+      - price_breaks_below_candelina_low == true
+      - candle_closes_above_candelina_low == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["5min"]
+      market_regime: []
+    rationale: "Se il prezzo rompe il minimo della candelina ma viene riassorbito (chiude sopra), lo stop rimane al minimo originale: la rottura falsa non invalida il setup."
+    notes: "Caso esplicito nel video: spike sotto il minimo della candelina ma chiusura sopra = si mantiene la posizione con stop invariato al minimo della candelina."
+
+  - id: BULL_P_06_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, psychology, beginner, stop_loss]
+    source:
+      timecode: "08:44-09:20"
+    statement: "Non aver paura di prendere gli stop: se sono posizionati bene sulla candelina la matematica darà ragione nel lungo periodo. Ogni volta che si prendono schiaffi non rispettando le regole, riguardare questo video."
+    rationale: "La disciplina nello stop loss è il fattore discriminante tra trader profittevoli e perdenti; lo stop corretto è il fondamento del risk management."
+
+  - id: BULL_P_06_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, ema10, ema5, trigger, beginner]
+    source:
+      timecode: "11:01-11:14"
+    statement: "Per qualsiasi conformazione tecnica (terzo tocco, breakout, shimano, ecc.) fare l'ingresso SOLO se c'è la candelina prima della rottura. Senza candelina non c'è uno stop che abbia senso."
+    rationale: "La candelina è la condizione necessaria e sufficiente per avere uno stop chiaro; senza di essa si entra con stop arbitrari che portano a uscite premature."
+
+  - id: BULL_P_06_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, ema10, candle_pattern, psychology]
+    source:
+      timecode: "04:15-04:37"
+    statement: "Le candelline rappresentano un braccio di ferro tra compratori e venditori: quando uno dei due vince si genera lo strappo. L'interesse del trader non è prevedere chi vince, ma avere uno stop stretto e ben individuabile."
+    rationale: "Separare la comprensione del meccanismo dalla necessità operativa riduce la paralisi da analisi e concentra il focus sull'esecuzione disciplinata."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "La candelina è la tecnica base obbligatoria per i neofiti: ingresso al massimo, stop al minimo, timeframe minimo 5 minuti. Lo stop si sposta solo dopo chiusura candela e va a breakeven dopo forte accelerazione. Per QUALSIASI conformazione tecnica è obbligatoria la presenza della candelina prima dell'ingresso."

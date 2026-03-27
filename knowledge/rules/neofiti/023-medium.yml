@@ -1,0 +1,189 @@
+video:
+  id: YT_BULL_P_023
+  series: principianti
+  title: "Tre live trading su Doge: long breakout e due short su esaurimento trend"
+  video_index: 23
+  duration_minutes: 11
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_23_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, ema10, btc_index, scalping, stop_loss]
+    source:
+      timecode: "00:17-03:06"
+    conditions:
+      - price_breaks_above_recent_consolidation == true
+      - btc_is_positive_at_entry == true
+      - asset_shows_relative_strength_vs_btc == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "Enter long on a breakout when BTC is positive AND the asset shows relative strength (rising while BTC dips) — the combination of breakout plus relative strength signals genuine buyers in the asset."
+    notes: "Doge long at 0.3 (entry price 0.299). BTC started dipping but Doge stayed bid on 3rd and 4th candles — 'doge rimane su, quindi questo mi fa capire che ha voglia di salire.' Closed +484 at 4th candle."
+
+  - id: BULL_P_23_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, take_profit, scalping, all_time_high, continuation]
+    source:
+      timecode: "03:07-03:42"
+    conditions:
+      - long_position_open == true
+      - price_not_near_daily_high_or_resistance == true
+      - breakout_is_small_range_lateralizzazione == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "When a long is based only on a small-range breakout without proximity to daily highs, exit within 4 candles — without a major resistance ahead to cause a squeeze, the move has limited follow-through."
+    notes: "'Non siamo sui massimi qua vicini — era semplicemente un piccolo piccolo breakout, quindi meno tengo meglio.' Could even close at candle 1. If at/near daily high instead, hold for more."
+
+  - id: BULL_P_23_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [reversal, ema10, stop_loss, scalping, candle_pattern]
+    source:
+      timecode: "04:51-05:18"
+    conditions:
+      - strong_uptrend_extended_move == true
+      - price_touches_ema10_and_bounces == true
+      - failed_breakout_attempt_1_detected == true
+      - failed_breakout_attempt_2_detected == true
+      - red_candle_closes_after_second_failed_attempt == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish, neutral]
+    rationale: "Short a tired uptrend when: (1) large red candle touches EMA10 and bounces, (2) green candle attempts new breakout but fails, (3) second attempt also fails — two failed breakout attempts after EMA10 touch signals exhaustion."
+    notes: "Doge short at 0.54: 'fa una rossa pesante perché va a toccarmi sulla 10, poi verde va per fare un breakout, quindi se qua l'ha veduto velo forte per andare su non ce l'ha fatta, fa un altro tentativo, rompe ma dopo torno giù.' Stop at 0.55001 (above 0.55 book resistance)."
+
+  - id: BULL_P_23_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [stop_loss, book, scalping, risk_management, trigger]
+    source:
+      timecode: "05:22-06:05"
+    conditions:
+      - entering_short_on_tired_trend == true
+      - large_ask_quantity_at_round_number == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish, neutral]
+    rationale: "Place stop 1 tick above a large order book concentration at a round number — when that level is broken it signals genuine buying pressure that invalidates the exhaustion short."
+    notes: "Stop at 0.55001 because 0.55 had large book quantities at 0.5500-0.5501. 'Guarda qua il book, 0.55007 quantità grossa, quantità grossa — io dico 0.5500, se mi rompi anche questo devo chiudere.'"
+
+  - id: BULL_P_23_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, ema10, scalping, risk_management]
+    source:
+      timecode: "07:09-07:43"
+    conditions:
+      - short_position_open == true
+      - ema10_broken_below == true
+      - price_recovers_back_above_ema10 == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish, neutral]
+    rationale: "When EMA10 breaks and price continues down, progressively move the stop just above the last local high — if price recovers back above EMA10, the stop at the prior high exits the trade with minimal loss."
+    notes: "'Man mano che mi dimostra che ho ragione lo stop lo abbasso — se qua dopo che mi ha rotto la 10 mi torno di nuovo su, basterebbe qua 0.545 mi dimostra che ha forza quindi posso andare qua.' Final close +245."
+
+  - id: BULL_P_23_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, ema60, reversal, scalping, stop_loss]
+    source:
+      timecode: "08:09-09:50"
+    conditions:
+      - strong_uptrend_present == true
+      - ema10_breaks_down == true
+      - ema60_also_breaks_down == true
+      - entry_candle_is_first_break_or_second == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "Enter short when a strong uptrend breaks EMA10 followed immediately by EMA60 break — double MA break in quick succession signals genuine trend reversal, not just a pullback."
+    notes: "Third Doge short at 0.60: 'forte rialzo, tenutela 10, si rompe la 10, ha rotto subito anche la 60.' Stop placed above the EMA10 area but not too tight to allow spike room. Used proportional TP target by eye based on prior candle ranges."
+
+  - id: BULL_P_23_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [take_profit, scalping, candle_pattern, book]
+    source:
+      timecode: "09:26-11:04"
+    conditions:
+      - short_position_open == true
+      - candle_retraces_more_than_half_its_body_upward == true
+      - price_not_making_new_lows == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Close a short when a candle retraces more than half its range back upward after not making a new low — the failed new low plus the candle retrace signals buying interest and likely reversal."
+    notes: "'Quando vedo che per esempio fa la candela così e poi ritraccia di più della metà, non mi piace tanto allora tendo a chiudere.' Closed at +242. Target was the TP limit but cancelled before execution as the candle stalled."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_23_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, scalping, continuation, regime_filter]
+    source:
+      timecode: "02:36-02:63"
+    statement: "When BTC is declining but the asset you hold stays bid and pushes up, this relative strength is a buy signal to hold longer — the asset is telling you buyers are present despite macro headwinds."
+    rationale: "Relative strength (asset rising while BTC dips) is one of the strongest intraday filters: it means real demand exists in the asset specifically, not just systematic BTC correlation."
+
+  - id: BULL_P_23_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, psychology, risk_management, reversal]
+    source:
+      timecode: "06:09-06:17"
+    statement: "Shorting against an existing uptrend is riskier than shorting in a clear downtrend — it requires exhaustion signals and an immediately tight stop, and the trainer explicitly warns beginners to be careful."
+    rationale: "'Questo è rischioso come operazione però è un'operazione che faccio spesso — fate attenzione voi a farlo, l'importante è che inserite subito uno stop.' Counter-trend shorts require more precision and faster stop entry."
+
+  - id: BULL_P_23_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, scalping, psychology]
+    source:
+      timecode: "12:09-12:29"
+    statement: "Never chase price to find the exact top or bottom — take profit when you have a good gain and see a reason to exit, then close the position. What happens after closing is irrelevant."
+    rationale: "'Io non cerco mai massimi, me ne frego dei massimi, me ne frego se dopo va a fare il più 100% — non mi interessa non lo vado a risseguire.' Greed for perfection leads to giving back profits."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "Three Doge trades covering the full directional toolkit: long on breakout with relative strength vs BTC, short on exhaustion (two failed breakout attempts after EMA10 touch), and short on double MA break (EMA10 + EMA60). Exit signals include proportional candle symmetry, mid-candle retrace above 50%, and relative strength divergence. Stop placed above key book levels or swing highs throughout."
