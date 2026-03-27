@@ -4,7 +4,6 @@ TODO
 * 	.venv dentro ingest??
 
 *	Claude Code for rules review
-*	Rename images, add timeframe
 
 
 *	github actions
@@ -38,6 +37,7 @@ DONE
 
 *	Codex for codifing rules from trasnscriptions for neofiti
 
+*	Rename images, add timeframe
 *	Check rules with Claude and refine rule generation prompt
 *	Codex for codifing rules from trasnscriptions x 5 (2X tecniche and 3X neofiti)
 
