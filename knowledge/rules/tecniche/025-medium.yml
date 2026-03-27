@@ -1,50 +1,148 @@
 video:
-  id: YT_BULL_t_025
+  id: YT_BULL_TECNICHE_025
   series: tecniche
-  title: "Ciao, tra i test su Scapite Bull. Segnale bomba e 5.000 nuovi iscritti. Sigla"
+  title: "Segnale Bomba - individuare asset esplosivi in anticipo"
   video_index: 25
-  duration_minutes: 17
+  duration_minutes: 16
 
 entities:
-  - id: YT_BULL_t_025_01
-    entity_type: INVALIDATION
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_25_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [bomba, breakout, trend, position_sizing]
+    source:
+      timecode: "03:02-04:50"
+    conditions:
+      - "bullbot_bomba_signal == true"
+      - "asset_was_dormant_before_signal == true"
+      - "sudden_price_explosion_detected == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "The bomba signal detects assets that suddenly wake up from dormancy with a large move. It provides early detection before the asset appears in rankings."
+    notes: "The bomba signal is not an entry trigger by itself. After receiving the signal, apply standard techniques (bud, terzo tocco, etc.) to find a proper entry point. Never enter blindly on the signal."
+
+  - id: BULL_T_25_02
+    entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [bomba, bud, candle_pattern, breakout]
     source:
-      timecode: "06:06-06:13"
+      timecode: "05:04-06:06"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - "bullbot_bomba_signal == true"
+      - "first_spike_completed == true"
+      - "lateralization_after_spike == true"
+      - "bud_structure_formed == true (spike + 2 rest candles)"
     action:
-      - EXIT_POSITION
+      - ENTER_LONG
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "After a bomba signal, the best entry is a bud structure: wait for the initial spike, then a lateralization, then enter on the breakout of the lateralization level."
+    notes: "Example: FOURTH signal arrived, first possible bud entry was on the lateralization breakout with stop below the consolidation. Combined bomba detection with bud execution."
 
-  - id: YT_BULL_t_025_02
+  - id: BULL_T_25_03
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bomba, candle_pattern, retest, breakout]
     source:
-      timecode: "14:49-14:54"
+      timecode: "08:30-09:14"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - "bullbot_bomba_signal == true"
+      - "first_spike_completed == true"
+      - "rest_candle_after_spike >= 1"
+      - "price_exceeds_rest_candle_high == true"
     action:
-      - EXIT_POSITION
+      - ENTER_LONG
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "After a bomba spike, wait for at least one rest candle, then enter when price exceeds the high of the rest candle."
+    notes: "If historical resistance (e.g., all-time highs) is nearby, that can serve as the entry trigger instead. Reduce size when entering at major resistance levels."
+
+  - id: BULL_T_25_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bomba, ema10, bud, continuation]
+    source:
+      timecode: "11:00-12:16"
+    conditions:
+      - "bullbot_bomba_signal == true"
+      - "initial_spike_completed == true"
+      - "price_pulled_back_below_ema10 == true"
+      - "lateralization_below_ema10 == true"
+      - "price_breaks_above_lateralization == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "The ideal bomba entry is when the asset spikes, pulls back below EMA 10, lateralizes, then breaks out again to make new highs. This is the maximum conviction entry for full size."
+    notes: "This pattern combines bomba detection with the classic bud retracement structure. Bull describes this as the ideal scenario where he enters all-in. It does not happen often but produces the largest gains."
+
+  - id: BULL_T_25_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [bomba, all_time_high, daily, breakout]
+    source:
+      timecode: "14:10-14:54"
+    conditions:
+      - "asset_approaching_100_day_highs == true"
+      - "distance_to_100_day_highs_pct <= 2"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "A daily signal that an asset is within 2% of its 100-day high provides a reference target. If a breakout signal coincides with proximity to 100-day highs, use full size and hold for the breakout."
+    notes: "Beyond the 100-day highs, shorts must cover and new buyers enter, creating potential for parabolic moves. This daily signal complements the 1-minute bomba signal."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_25_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bomba, risk_management, psychology]
+    source:
+      timecode: "06:52-07:02"
+    statement: "The bomba signal is not an entry signal. It is a detection signal. Always wait for a proper entry technique (bud, level, rest candle) before entering."
+    rationale: "Entering blindly on signal arrival without a structured entry leads to buying at the top of the initial spike."
+
+  - id: BULL_T_25_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bomba, beginner, risk_management]
+    source:
+      timecode: "13:22-13:34"
+    statement: "Start by observing bomba signals without trading them. Use small sizes when beginning. Build confidence before scaling up."
+    rationale: "Bomba signals involve fast-moving assets that can reverse quickly; experience is needed to manage the execution speed."
+
+  - id: BULL_T_25_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bomba, stop_loss, risk_management]
+    source:
+      timecode: "07:08-07:21"
+    statement: "Always use a stop loss. The cardinal rule applies especially on explosive bomba-type moves where reversals can be equally violent."
+    rationale: "Fast-moving assets can reverse just as quickly as they rallied."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "The bomba signal detects dormant assets that suddenly explode, providing early detection before they appear in rankings. It is a screening tool, not an entry trigger - after detection, apply standard techniques (bud, lateralization breakout, rest candle) to find a structured entry with proper risk management."

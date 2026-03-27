@@ -1,49 +1,131 @@
 video:
-  id: YT_BULL_t_034
+  id: YT_BULL_TECNICHE_034
   series: tecniche
-  title: "Ciao a tutti, siete su Scarp in a Bull puntata su come utilizzo il bull bot"
+  title: "Come utilizzo il BullBot - Stanze bomba, shimano, max ieri, doppio tocco"
   video_index: 34
-  duration_minutes: 22
+  duration_minutes: 21
 
 entities:
-  - id: YT_BULL_t_034_01
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: LIQUIDITY_GATE
-    severity: HARD
-    tags: [leverage, margin, risk_management]
-    source:
-      timecode: "00:59-01:03"
-    conditions:
-      - leverage <= 10
-    action:
-      - SKIP_TRADE
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
-    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
 
-  - id: YT_BULL_t_034_02
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_34_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [bomba, candle_pattern, trigger]
     source:
-      timecode: "01:30-01:35"
+      timecode: "02:53-03:12"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - signal_bomba == true
+      - daily_candle_pct > 2
     action:
-      - EXIT_POSITION
+      - MONITOR_LEVEL
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Il segnale bomba identifica coppie con candele superiori al 2%, indicando che il titolo paga a sufficienza per operare anche con una sola candela."
+    notes: "Non si entra appena esce il segnale bomba: si aspetta sempre una conformazione."
+
+  - id: BULL_T_34_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bomba, trigger, breakout]
+    source:
+      timecode: "06:23-06:57"
+    conditions:
+      - signal_bomba == true
+      - conformazione_detected == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Dopo il segnale bomba si lavora solo quando c'e' una conformazione tecnica: il segnale indica che il titolo paga, la conformazione indica quando entrare."
+    notes: "Il segnale bomba serve per filtrare coppie che si muovono abbastanza. L'ingresso vero e proprio segue le regole delle conformazioni."
+
+  - id: BULL_T_34_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, daily, breakout]
+    source:
+      timecode: "07:02-08:34"
+    conditions:
+      - price_approaching_yesterday_high == true
+      - price_breaks_above_yesterday_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "Il superamento dei massimi del giorno precedente e' un livello trigger che produce accelerazione rialzista."
+    notes: "Mettere un alert prima dei massimi di ieri. Alla rottura si fa l'ingresso. Segnale 'max ieri' del bullbot."
+
+  - id: BULL_T_34_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, ema60, trigger]
+    source:
+      timecode: "17:30-17:54"
+    conditions:
+      - ema60_touch_count >= 3
+      - timeframe == "5m" or timeframe == "30m"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Il terzo tocco della EMA 60 a timeframe 5 minuti e 30 minuti e' un segnale spettacolare di imminente rottura."
+    notes: "Quando esce il segnale terzo tocco, la rottura dell'EMA 60 al quarto tentativo e' molto probabile."
+
+  - id: BULL_T_34_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [shimano, ema223, trigger]
+    source:
+      timecode: "11:36-12:24"
+    conditions:
+      - shimano_signal == true
+      - price_approaching_ema223 == true
+      - timeframe == "1m"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Lo shimano segnala conformazioni sotto la EMA 223: mettere alert prima della rottura per essere pronti all'ingresso."
+    notes: "Se lo shimano e' lontano dal livello di rottura, non e' interessante. Guardare sempre lo stesso timeframe del segnale."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_34_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bomba, trigger]
+    source:
+      timecode: "19:39-20:16"
+    statement: "Tenere sempre aperta la stanza bomba/favorites come dashboard principale: contiene bomba, max ieri, doppio tocco e i segnali piu' importanti."
+    rationale: "Centralizzare il monitoraggio nella stanza preferita permette di non perdere nessun segnale importante."
+
+  - id: BULL_T_34_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, ema, trigger]
+    source:
+      timecode: "14:19-15:25"
+    statement: "La stanza daily segnala massimi degli ultimi 10 giorni prima che vengano raggiunti, permettendo di piazzare alert in anticipo."
+    rationale: "Sapere in anticipo l'avvicinamento ai massimi dei giorni precedenti permette di prepararsi con alert e conformazioni."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Il BullBot si usa come sistema di allerta multi-segnale: bomba filtra titoli che pagano, max ieri e doppio tocco forniscono trigger, shimano e terzo tocco EMA 60 conformazioni. Mai entrare al segnale ma sempre aspettare conformazione."

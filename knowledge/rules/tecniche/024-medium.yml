@@ -1,96 +1,177 @@
 video:
-  id: YT_BULL_t_024
+  id: YT_BULL_TECNICHE_024
   series: tecniche
-  title: "Ciao a tutti e adesso siete su Skype in the Bull, la 51esima sfumatura di BAD, sigla"
+  title: "51esima sfumatura di Bud - errori comuni, no-good, accelerazione e bud nel bud"
   video_index: 24
-  duration_minutes: 29
+  duration_minutes: 28
 
 entities:
-  - id: YT_BULL_t_024_01
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_24_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: LIQUIDITY_GATE
+    scope: TRADE_EXECUTION
     severity: HARD
-    tags: [leverage, margin, risk_management]
+    tags: [bud, trigger, book, stop_limit]
     source:
-      timecode: "02:58-03:02"
+      timecode: "01:36-02:03"
     conditions:
-      - leverage <= 10
+      - "bud_spike_level_identified == true"
+      - "two_rest_candles_completed == true"
+      - "no_large_book_wall_near_spike == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Enter precisely on the spike level line. If no significant book walls exist near the level, use the exact spike price for the stop-limit order."
+    notes: "If a book wall is slightly above or below the spike level, adjust entry to match the wall. If the wall is slightly below, enter at the wall. If there is a wall holding the rest candles, that can be used as an anticipation entry."
+
+  - id: BULL_T_24_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, invalidation, candle_pattern, breakout]
+    source:
+      timecode: "03:31-05:05"
+    conditions:
+      - "bud_spike_level_identified == true"
+      - "price_reaches_spike_level_without_rest == true"
+      - "move_to_spike_is_single_large_candle == true"
     action:
       - SKIP_TRADE
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
-    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
+    rationale: "When price goes straight to the spike level without any rest candle (dritto per dritto), do not enter. The large candle to the spike IS the expected profit candle and cannot be expected to repeat."
+    notes: "This is the most common error traders make. The breakout candle should produce our gain. If the gain-candle happens before entry, skip. Wait for price to rest even briefly before entering."
 
-  - id: YT_BULL_t_024_CTX_01
-    entity_type: WARNING
-    category: CONTEXT_ONLY
-    scope: GLOBAL
-    tags: [psychology, risk_management]
-    source:
-      timecode: "10:15-10:22"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
-
-  - id: YT_BULL_t_024_02
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
-    source:
-      timecode: "11:06-11:11"
-    conditions:
-      - position_open == true
-      - favorable_move_detected == true
-    action:
-      - EXIT_POSITION
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
-
-  - id: YT_BULL_t_024_03
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
-    source:
-      timecode: "11:29-11:36"
-    conditions:
-      - price_below_ema60 == true
-    action:
-      - WAIT
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
-
-  - id: YT_BULL_t_024_04
+  - id: BULL_T_24_03
     entity_type: INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [bud, invalidation, acceleration, exit]
     source:
-      timecode: "27:47-27:52"
+      timecode: "07:12-08:17"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - "bud_entry_triggered == true"
+      - "breakout_candle_fails_to_accelerate == true"
+      - "price_re_enters_below_spike_level == true"
     action:
       - EXIT_POSITION
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "After bud entry, the breakout MUST accelerate. If price re-enters below the spike level, the FOMO is killed and the setup has failed. Exit immediately without waiting for EMA 10."
+    notes: "A failed bud is actually a good short signal. When the breakout fails and price re-enters, all the FOMO-driven buying is trapped, creating short pressure."
+
+  - id: BULL_T_24_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [bud, exit, candle_pattern, timing]
+    source:
+      timecode: "23:09-23:31"
+    conditions:
+      - "bud_entry_triggered == true"
+      - "second_candle_after_entry == true"
+      - "candle_time_elapsed > 40_seconds_of_60"
+      - "price_near_entry_level == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "If the second candle after entry is near the 40-second mark and price is still close to the breakout level, exit without waiting for a red close. Lack of acceleration this late in the candle means the move has failed."
+    notes: "This applies to 1-minute timeframe. At the 40-second mark of the breakout candle, if there is no meaningful distance from entry, the acceleration has not materialized."
+
+  - id: BULL_T_24_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, continuation, trigger]
+    source:
+      timecode: "26:55-27:35"
+    conditions:
+      - "bud_level_1_identified == true"
+      - "bud_level_1_breakout_failed == true"
+      - "new_spike_level_created_below_level_1 == true"
+      - "rest_candles_after_new_spike >= 2"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "A bud within a bud creates a nested trigger: the inner bud entry has its own trigger plus the outer bud level as a second target, increasing the reward potential."
+    notes: "Enter on the inner bud breakout with the outer bud level as the profit target. This is similar to entering a bud with daily highs nearby - layered triggers compound the move."
+
+  - id: BULL_T_24_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [bud, regime_filter, ema60, all_time_high]
+    source:
+      timecode: "11:29-12:02"
+    conditions:
+      - "bud_setup_active == true"
+      - "price_at_daily_highs == true OR price_in_bounce_zone == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "The best moments to look for bud setups are at daily highs or during bounces. Bud setups under EMA 60 with EMA 60 nearby are risky because the EMA acts as resistance."
+    notes: "Avoid bud entries where EMA 60 is directly above the spike level. The acceleration will be blocked. Best contexts: daily highs, bounces from EMA 223, shimano exits."
+
+  - id: BULL_T_24_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, ema10, ema60, all_time_high]
+    source:
+      timecode: "18:08-19:13"
+    conditions:
+      - "price_at_daily_highs == true"
+      - "ema10_commanding == true (price above EMA 10, EMA 10 rising)"
+      - "bud_to_the_moon_setup == true (4+ rest candles)"
+      - "spike_level_near_daily_high == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "A bud to the moon at daily highs with EMA 10 commanding is the absolute best bud configuration. The combination of compressed candles, EMA 10 support, and daily high trigger creates the highest probability setup."
+    notes: "This is described as a 'penalty kick' - near-certain entry. First candle must break cleanly without re-entering. Subsequent new highs plus EMA 10 commanding plus bud to the moon is the top-tier configuration."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_24_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, invalidation, psychology]
+    source:
+      timecode: "25:18-25:23"
+    statement: "When a bud breakout fails and price re-enters, exit immediately. Do not wait for EMA 10 to break. Speed of exit determines the damage."
+    rationale: "Holding a failed bud hoping for recovery leads to larger losses as the FOMO unwind accelerates the drop."
+
+  - id: BULL_T_24_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, daily, scalping]
+    source:
+      timecode: "14:38-15:05"
+    statement: "Bud setups on the daily chart can be used to identify trigger moments for intraday (1-minute) entries. A daily bud level is a high-probability trigger zone for scalping."
+    rationale: "Daily chart patterns provide context for intraday trade timing, allowing precise entries within macro-level setups."
 
 summary:
-  total_machine_executable: 4
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "The critical bud refinements are: never enter on a straight-through move to the spike (dritto per dritto), always demand immediate acceleration after entry, exit instantly if price re-enters below the spike level, and the best bud configurations are at daily highs with EMA 10 commanding and 4+ rest candles (bud to the moon)."

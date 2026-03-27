@@ -1,96 +1,228 @@
 video:
-  id: YT_BULL_t_041
+  id: YT_BULL_TECNICHE_041
   series: tecniche
-  title: "quindi ho fatto una cartella ho fatto una cartella"
+  title: "Casa Bull - Bad, candela hammer, book vs EMA, timeframe management"
   video_index: 41
-  duration_minutes: 44
+  duration_minutes: 43
 
 entities:
-  - id: YT_BULL_t_041_01
-    entity_type: SETUP
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_41_01
+    entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [candelina, breakout, trigger, candle_pattern]
+    tags: [bud, candelina, candle_pattern, trigger]
     source:
-      timecode: "07:41-07:46"
+      timecode: "00:30-02:22"
     conditions:
-      - small_candle_detected == true
-      - breakout_of_small_candle_level == true
+      - bud_detected == true
+      - bud_shadow_very_large_vs_body == true
+      - small_candles_count_inside_bud >= 4
+      - small_candles_form_level_at_body == true
     action:
       - ENTER_LONG
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La rottura della candelina viene usata come attivazione operativa."
-    notes: "La versione short è speculare sul minimo della candelina."
+    rationale: "Quando un bud ha ombra sproporzionata rispetto al corpo, aspettare che si formino candeline piccole al livello del corpo; l'ingresso e' alla rottura di quel livello, non alla rottura dell'ombra."
+    notes: "Con ombra molto grande servono piu' di 2 candeline (almeno 4-5) per stabilizzarsi. L'ingresso dritto per dritto dopo lo spike non si fa."
 
-  - id: YT_BULL_t_041_02
-    entity_type: RULE
+  - id: BULL_T_41_02
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
+    scope: TRADE_EXECUTION
     severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    tags: [candle_pattern, reversal, ema, terzo_tocco]
     source:
-      timecode: "10:04-10:12"
+      timecode: "04:03-05:47"
     conditions:
-      - price_below_ema60 == true
+      - second_touch_of_support_level == true
+      - hammer_candle_detected == true
+      - hammer_at_meaningful_level == true
     action:
-      - WAIT
+      - ENTER_LONG
+    stop_loss: "sotto il minimo della candela hammer"
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "La candela hammer al secondo tocco di un supporto indica possibile inversione: ombra lunga mostra scarico completato e rimbalzo."
+    notes: "La hammer ha senso solo in punti significativi (secondo tocco, supporto EMA). Non ogni hammer e' un'inversione. Lo stop e' sotto il minimo dell'ombra."
 
-  - id: YT_BULL_t_041_03
+  - id: BULL_T_41_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, candelina, breakout, trigger]
+    source:
+      timecode: "07:23-08:08"
+    conditions:
+      - ema_commanding_precisely == true
+      - small_candle_on_commanding_ema == true
+      - next_candle_breaks_above_ema == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Dopo che un'EMA ha tenuto come resistenza, una candelina piccola sull'EMA di comando seguita dalla rottura e' un ottimo segnale di ingresso."
+    notes: "Funziona su qualsiasi EMA che comanda (5, 10, 60). Candelina piccola = test senza forza ribassista. Chiusura candela sotto = uscita."
+
+  - id: BULL_T_41_04
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    severity: HARD
+    tags: [ema, ema10, stop_loss, invalidation]
     source:
-      timecode: "10:04-10:12"
+      timecode: "07:46-08:08"
     conditions:
       - position_open == true
-      - favorable_move_detected == true
+      - ema10_was_commanding == true
+      - candle_close_below_ema10 == true
     action:
       - EXIT_POSITION
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Se la EMA 10 comandava al rialzo e il prezzo chiude candela sotto la EMA 10, uscire immediatamente."
+    notes: "Non importa il book: comanda il grafico. Chiusura candela sotto EMA di comando = exit."
 
-  - id: YT_BULL_t_041_04
+  - id: BULL_T_41_05
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
+    scope: TRADE_EXECUTION
     severity: HARD
-    tags: [trigger, trend, risk_management]
+    tags: [ema10, ema, risk_management]
     source:
-      timecode: "10:41-10:46"
+      timecode: "09:53-11:08"
     conditions:
-      - timeframe_minutes < 30
+      - tf_large_ema_supporting == true
+      - tf_small_used_for_entry == true
+      - tf_large_determines_stop == true
     action:
-      - SKIP_TRADE
+      - MONITOR_LEVEL
     applicability:
-      timeframes: ["30m+"]
+      timeframes: [1m, 5m, 30m]
       market_regime: []
-    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
-    notes: "Filtro preliminare applicato prima di valutare il setup."
+    rationale: "Comanda sempre il timeframe piu' grande. Si entra nel timeframe piccolo per avere stop vicino, ma il supporto e' quello del timeframe grande."
+    notes: "Non cercare all'infinito un TF piu' grande con EMA sotto per giustificare il trade. Decidere il TF di riferimento prima dell'ingresso."
 
-  - id: YT_BULL_t_041_CTX_01
+  - id: BULL_T_41_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, ema223, bud, reversal]
+    source:
+      timecode: "12:43-14:02"
+    conditions:
+      - tf30_price_approaching_ema10 == true
+      - tf1m_price_below_ema223 == true
+      - tf1m_conformazione_below_ema223 == true
+      - tf1m_price_breaks_above_ema10 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 30m]
+      market_regime: [bullish]
+    rationale: "Per il rimbalzo sulla EMA 10 a TF 30 minuti: spostarsi a TF 1 minuto, aspettare conformazione sotto EMA 223, e il primo segnale di rimbalzo (rottura EMA 10 a 1m o lateralizzazione sotto EMA 223)."
+    notes: "Due possibili ingressi a TF 1 minuto: rottura della EMA 223 con rientro sopra, oppure rottura della EMA 10 dopo lateralizzazione."
+
+  - id: BULL_T_41_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, candelina, candle_pattern]
+    source:
+      timecode: "17:08-18:03"
+    conditions:
+      - bud_signal_detected == true
+      - bud_has_two_small_candles == true
+      - third_candle_approaching == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Il segnale bud del bullbot arriva alla terza candela dopo due candeline piccole che non superano il livello del bud. Aspettare la rottura del livello."
+    notes: "Il segnale arriva prima della rottura. L'ingresso e' alla rottura del livello bud, non al segnale."
+
+  - id: BULL_T_41_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bud, candelina, candle_pattern, trigger]
+    source:
+      timecode: "17:14-17:52"
+    conditions:
+      - bud_detected == true
+      - inner_bud_detected == true
+      - inner_bud_two_candles_inside_outer_bud == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il bud nel bud (bud interno al bud esterno) permette ingresso anticipato rispetto alla rottura del bud esterno."
+    notes: "L'ingresso e' sulla rottura del bud interno; il target e' la rottura del bud esterno. Se rompe anche l'esterno, ulteriore guadagno."
+
+  - id: BULL_T_41_09
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [bud, invalidation, stop_loss]
+    source:
+      timecode: "20:52-21:18"
+    conditions:
+      - position_open == true
+      - entry_was_bud == true
+      - candle_close_inside_bud == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Chiusura candela dentro al bud invalida il setup: uscire senza aspettare nessuna EMA."
+    notes: "Nel bud classico l'invalidazione e' quando il prezzo va sotto la prima candela. Ma il livello del bud rimane valido per un futuro ingresso se torna a formare candeline sotto."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_41_CTX_01
     entity_type: WARNING
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [psychology, risk_management]
+    tags: [book, psychology, risk_management]
     source:
-      timecode: "28:50-28:56"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "24:06-28:00"
+    statement: "Se il book mostra livelli che si muovono continuamente (muri che si spostano), non fidarsi: comanda l'EMA. Uscire a chiusura candela sotto l'EMA di comando, non seguire i muri che scendono."
+    rationale: "I muri che si muovono sono finti (trucchetti di broker). Seguirli porta a non uscire mai e accumulare perdita."
+
+  - id: BULL_T_41_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, ema, trigger]
+    source:
+      timecode: "28:00-30:18"
+    statement: "Il book serve per calibrare ingresso e uscita piu' precisi (entrare sul muro, non sulla EMA; o non entrare se il muro e' appena sopra). Ma se il book e' sporco o fittizio, operare solo con EMA."
+    rationale: "L'EMA e' il trend, il book e' la finezza. Si puo' operare solo con EMA ma si perde il vantaggio di precisione."
+
+  - id: BULL_T_41_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, candelina, candle_pattern]
+    source:
+      timecode: "40:05-41:09"
+    statement: "Il bud preferito in assoluto e' quello allungato con almeno 4 candeline piccole dove nemmeno gli spike superano il corpo della prima candela."
+    rationale: "Il bud allungato ha lo stop piu' vicino e la maggiore probabilita' di riuscita tra tutte le conformazioni."
 
 summary:
-  total_machine_executable: 4
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 9
+  total_context_only: 3
+  core_message: "Casa Bull copre bud con ombra sproporzionata, candela hammer, gestione timeframe (comanda il piu' grande), bud nel bud, e il rapporto book/EMA: l'EMA comanda sempre, il book calibra; se il book e' sporco si opera solo con EMA."

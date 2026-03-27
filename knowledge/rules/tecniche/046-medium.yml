@@ -1,22 +1,86 @@
 video:
-  id: YT_BULL_t_046
+  id: YT_BULL_TECNICHE_046
   series: tecniche
-  title: "Ciao tra le desideri su scappino bull, nuovo segnale"
+  title: "Segnale CHEFOMO - trading sui livelli di FOMO"
   video_index: 46
-  duration_minutes: 5
+  duration_minutes: 4
 
 entities:
-  - id: YT_BULL_t_046_CTX_01
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_46_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, breakout, daily, trigger]
+    source:
+      timecode: "00:58-01:50"
+    conditions:
+      - daily_candle_percentage_move >= 40
+      - daily_candle_has_long_upper_wick == true
+      - daily_close_below_spike_high == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["daily"]
+      market_regime: []
+    rationale: "Una candela daily con spike enorme (FOMO) identifica un livello trigger: lo spike e' causato da chiusura short e acquisti irrazionali."
+    notes: "Il livello dello spike FOMO viene memorizzato come punto trigger permanente. Se il prezzo ci ritorna, puo' esplodere di nuovo. Tecnica chiamata 'chefomo'."
+
+  - id: BULL_T_46_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, daily, breakout]
+    source:
+      timecode: "01:50-02:43"
+    conditions:
+      - fomo_spike_level_identified == true
+      - price_approaching_fomo_level == true
+      - price_below_fomo_spike_high == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1m", "5m", "30m"]
+      market_regime: []
+    rationale: "Quando il prezzo si avvicina al livello FOMO precedente, bisogna monitorarlo perche' puo' partire un'altra esplosione."
+    notes: "Il segnale arriva prima che il prezzo tocchi il livello FOMO, per dare tempo di cercare una conformazione di ingresso. Il livello resta valido anche settimane o mesi dopo."
+
+  - id: BULL_T_46_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, candle_pattern]
+    source:
+      timecode: "02:43-03:48"
+    conditions:
+      - price_near_fomo_level == true
+      - valid_entry_setup_on_lower_tf == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m", "30m"]
+      market_regime: []
+    rationale: "Al livello FOMO si entra solo con una conformazione valida su timeframe inferiore, non a mercato."
+    notes: "Aspettare conformazione su 1m, 5m o 30m. Lo stop deve essere vicino per poter poi lasciar correre. Il livello FOMO e' valido anche dopo mesi."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_46_CTX_01
     entity_type: WARNING
     category: CONTEXT_ONLY
     scope: GLOBAL
     tags: [psychology, risk_management]
     source:
-      timecode: "00:06-00:10"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "00:03-00:15"
+    statement: "Non entrare quando c'e' FOMO a mercato; la FOMO crea pero' conformazioni interessanti da sfruttare con il segnale chefomo."
+    rationale: "La FOMO come emozione e' pericolosa, ma i livelli di prezzo creati dalla FOMO sono punti trigger operativi."
 
 summary:
-  total_machine_executable: 0
+  total_machine_executable: 3
   total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  core_message: "Il segnale 'chefomo' identifica livelli di spike creati da candele FOMO gigantesche nel daily; quando il prezzo ritorna a quei livelli si cerca una conformazione per entrare long, perche' possono esplodere di nuovo."

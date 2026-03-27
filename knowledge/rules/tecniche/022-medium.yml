@@ -1,50 +1,136 @@
 video:
-  id: YT_BULL_t_022
+  id: YT_BULL_TECNICHE_022
   series: tecniche
-  title: "Ciao Trader, siete su Scappi da Bull. Finalmente la tecnica di Bud Spencer. Sigla"
+  title: "Tecnica Bud Spencer - il controschiaffo long dopo rottura EMA 10"
   video_index: 22
-  duration_minutes: 18
+  duration_minutes: 17
 
 entities:
-  - id: YT_BULL_t_022_01
-    entity_type: INVALIDATION
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_22_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [bud, ema10, breakout, reversal, retest]
     source:
-      timecode: "04:11-04:18"
+      timecode: "01:51-02:44"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - "prior_uptrend == true"
+      - "candle_close_above_ema10 == true (first close above after downtrend)"
+      - "spike_high_recorded == true"
+      - "price_returns_below_ema10 == true (schiaffo)"
+      - "candle_count_below_spike_level >= 2"
     action:
-      - EXIT_POSITION
+      - CLASSIFY_SETUP
     applicability:
       timeframes: []
-      market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+      market_regime: [post_correction]
+    rationale: "After a long uptrend and subsequent drop below EMA 10, the first panic spike above EMA 10 creates a trigger level. If price fails to hold and returns below, we wait for at least two small candles of consolidation before setting a stop-limit at the spike level."
+    notes: "The spike above EMA 10 is created by panic buying (shorts covering). The level is significant because it was reached with market orders under panic. When price returns to that level with real buying interest, it signals strength."
 
-  - id: YT_BULL_t_022_02
+  - id: BULL_T_22_02
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, trigger, stop_limit, breakout]
     source:
-      timecode: "06:01-06:12"
+      timecode: "02:44-04:11"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - "bud_setup_active == true"
+      - "candles_below_spike_level >= 2"
+      - "candle_bodies_small == true (lateralization)"
     action:
-      - EXIT_POSITION
+      - ENTER_LONG
+    stop_loss: "below the start of the spike candle that crossed EMA 10"
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Place a stop-limit buy order at the spike high level. The entry triggers when price returns to the panic level with genuine buying pressure."
+    notes: "Use stop-limit orders, not market orders. Wait for at least two small candles below the spike level before placing the order. The stop is extremely tight, at the base of the spike candle."
+
+  - id: BULL_T_22_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [bud, invalidation, stop_loss]
+    source:
+      timecode: "04:28-04:40"
+    conditions:
+      - "bud_stop_limit_placed == true"
+      - "price_makes_new_lows_below_prior_swing == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "If price breaks below the prior swing low while waiting for the bud entry, remove the stop-limit order as the setup is invalidated."
+    notes: "New lows indicate the correction is deepening rather than forming a base. Wait for a new spike above EMA 10 to create a fresh bud setup."
+
+  - id: BULL_T_22_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bud, breakout, all_time_high]
+    source:
+      timecode: "07:53-09:14"
+    conditions:
+      - "bud_entry_triggered == true"
+      - "distance_to_prior_highs < small_threshold"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "When the bud entry level is close to prior highs, the breakout can lead to new all-time highs, allowing the position to be held longer."
+    notes: "If prior highs are nearby, consider holding through the breakout rather than taking quick profit. If new highs fail to produce acceleration, exit at new highs level."
+
+  - id: BULL_T_22_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, bomba, ema10, continuation]
+    source:
+      timecode: "13:35-14:50"
+    conditions:
+      - "bullbot_signal_large_rally == true"
+      - "price_breaks_below_ema10 == true"
+      - "lateralization_candles >= 2"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "After a large rally signaled by the bullbot, wait for the inevitable EMA 10 break, then apply the bud technique for a low-risk re-entry into the trend."
+    notes: "This combines the bomba signal for asset discovery with the bud technique for timing the entry. Every large rally must eventually break EMA 10, creating a bud opportunity."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_22_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, psychology, profit_taking]
+    source:
+      timecode: "09:47-10:08"
+    statement: "When profit is available after a bud entry, take it. The mentality should be to cash in regardless of what happens after, even if the asset continues higher."
+    rationale: "Consistent profitability comes from taking gains when available rather than hoping for maximum moves."
+
+  - id: BULL_T_22_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, psychology, patience]
+    source:
+      timecode: "16:28-16:44"
+    statement: "If you missed the initial rally of a strong asset, do not chase. Wait for the correction and apply the bud technique for a stress-free entry with a tight stop."
+    rationale: "The bud technique eliminates FOMO by providing a structured re-entry point after any missed rally."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "The bud (Bud Spencer) technique enters long after a correction by identifying the panic spike above EMA 10, waiting for at least two small consolidation candles, then placing a stop-limit at the spike level with an extremely tight stop at the candle base."

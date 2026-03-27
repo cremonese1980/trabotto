@@ -1,30 +1,115 @@
 video:
-  id: YT_BULL_t_040
+  id: YT_BULL_TECNICHE_040
   series: tecniche
-  title: "Ciao trader, siete su Scopinabull"
+  title: "Doppio book e boost - Sfruttare il gap di liquidita' tra book USDT e book BUSD"
   video_index: 40
   duration_minutes: 20
 
 entities:
-  - id: YT_BULL_t_040_01
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_40_01
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, ema60, trigger]
     source:
-      timecode: "16:02-16:06"
+      timecode: "01:01-02:01"
     conditions:
-      - price_below_ema60 == true
+      - usdt_spot_book_open == true
+      - alternative_book_open == true
+      - usdt_book_is_reference == true
     action:
-      - WAIT
+      - MONITOR_LEVEL
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "Il book spot USDT di Binance e' quello che comanda il mondo: tutti gli altri exchange e pair copiano i suoi livelli. Aprire sempre il book USDT come riferimento."
+    notes: "Anche se si opera su Futures, Bybit o altri exchange, i livelli reali sono nel book spot USDT di Binance."
+
+  - id: BULL_T_40_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, ema60, breakout]
+    source:
+      timecode: "04:47-06:58"
+    conditions:
+      - usdt_book_level_identified == true
+      - busd_book_has_less_liquidity == true
+      - limit_order_placed_at_usdt_reference_price == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Piazzare ordine limite nel book meno liquido (BUSD) al prezzo di riferimento del book USDT: si ottiene eseguito immediato e gratis perche' entra nel book."
+    notes: "Nel book BUSD con 200 dollari di liquidita' si riesce a comprare 10.000+ perche' si adegua al book USDT che ha 5.000. L'ordine entra nel book = fee zero."
+
+  - id: BULL_T_40_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, terzo_tocco, trigger, book]
+    source:
+      timecode: "08:30-09:30"
+    conditions:
+      - ema60_touch_count >= 4
+      - usdt_book_wall_at_ema60_level == true
+      - limit_order_in_busd_at_reference_price == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Conformazione su EMA 60 con 4 tocchi individuata nel book USDT, esecuzione nel book BUSD per fee zero e eseguito migliore."
+    notes: "L'operazione usa il book USDT per l'analisi e il book BUSD per l'esecuzione."
+
+  - id: BULL_T_40_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, stop_loss, invalidation]
+    source:
+      timecode: "16:52-17:43"
+    conditions:
+      - operating_on_low_liquidity_book == true
+      - stop_limit_order_placed == true
+      - spike_without_usdt_reference == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Nel book meno liquido gli spike sono piu' grandi e casuali: uno stop limit rischia di essere triggerato da spike senza senso che nel book USDT non esistono."
+    notes: "Evitare stop limit automatici nel book BUSD. Operare manualmente. I prezzi nel book meno liquido sono fittizi: un pirla che compra a mercato distrugge il book."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_40_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, risk_management, beginner]
+    source:
+      timecode: "16:52-17:26"
+    statement: "Nel book con meno liquidita' evitare stop limit e OCO automatici perche' gli spike casuali possono triggerare uscite ingiustificate che nel book USDT non sarebbero avvenute."
+    rationale: "Il book meno liquido ha prezzi fittizi e spike causati da singoli ordini a mercato."
+
+  - id: BULL_T_40_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, risk_management]
+    source:
+      timecode: "02:32-03:00"
+    statement: "Anche chi opera su Futures dove il book fa schifo deve avere sempre aperto il book spot USDT di Binance per vedere i livelli reali."
+    rationale: "Il book Futures e' derivato dal book spot: senza vedere il book spot non si capisce dove sono i livelli veri."
 
 summary:
-  total_machine_executable: 1
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Il book spot USDT di Binance comanda tutti gli altri: usarlo come riferimento per l'analisi e operare nel book meno liquido (BUSD) con ordini limite per ottenere eseguiti gratis e immediati sfruttando il gap di liquidita'. Mai usare stop limit nel book meno liquido."

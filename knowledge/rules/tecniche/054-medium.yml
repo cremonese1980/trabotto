@@ -1,67 +1,185 @@
 video:
-  id: YT_BULL_t_054
+  id: YT_BULL_TECNICHE_054
   series: tecniche
-  title: "Ciao Traders, siete su Skyping the Bull, vedete che ci sono io, ma c'è anche Paolo, adesso"
+  title: "50 sfumature di Viagra - ingresso preferito long e short"
   video_index: 54
-  duration_minutes: 18
+  duration_minutes: 17
 
 entities:
-  - id: YT_BULL_t_054_01
-    entity_type: RULE
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_54_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
-    scope: LIQUIDITY_GATE
+    scope: TRADE_EXECUTION
     severity: HARD
-    tags: [leverage, margin, risk_management]
+    tags: [viagra, ema5, ema10, breakout]
     source:
-      timecode: "06:45-06:49"
+      timecode: "04:37-05:12"
     conditions:
-      - leverage <= 10
+      - viagra_setup == true
+      - price_below_ema5 == true OR price_below_ema10 == true
+      - price_tests_ema == true
+      - rest_candle_count >= 1
+      - price_breaks_above_ema == true
+    action:
+      - ENTER_LONG
+    take_profit: "EMA superiore successiva (EMA 50/60 se si rompe EMA 5/10)"
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "L'ingresso preferito sul viagra: il prezzo testa l'EMA, fa almeno una candela di riposo, poi alla rottura del livello si entra long con target l'EMA superiore."
+    notes: "La candela di riposo dimostra che il venditore ha smesso di vendere. Due candele di riposo sono ancora meglio. Senza riposo e' un no-good."
+
+  - id: BULL_T_54_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [viagra, ema5, invalidation]
+    source:
+      timecode: "01:13-01:29"
+    conditions:
+      - viagra_setup == true
+      - price_breaks_ema_directly == true
+      - no_rest_candle == true
+      - no_book_support == true
     action:
       - SKIP_TRADE
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m"]
       market_regime: []
-    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
-    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
+    rationale: "Se il prezzo rompe l'EMA del viagra direttamente senza alcuna candela di riposo e senza supporto nel book, non entrare."
+    notes: "Puo' funzionare ma e' un ingresso che Bull non farebbe. L'unica eccezione e' se c'e' un pullman di cinesi (supporto nel book) al livello di rottura."
 
-  - id: YT_BULL_t_054_02
+  - id: BULL_T_54_03
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, ema10, stop_loss]
     source:
-      timecode: "09:24-09:28"
+      timecode: "08:01-08:16"
     conditions:
+      - viagra_breakout_long == true
       - position_open == true
-      - favorable_move_detected == true
+      - ema10_below_entry == true
     action:
       - EXIT_POSITION
+    stop_loss: "chiusura candela sotto EMA 10 (dopo rottura del viagra)"
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m"]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Dopo la rottura del viagra, l'EMA 10 diventa lo stop: non deve piu' chiudere candela sotto, neanche se si e' in gain."
+    notes: "Non mettere stop a zero, non ha senso. L'EMA 10 diventa il nuovo livello di comando dopo la rottura."
 
-  - id: YT_BULL_t_054_03
+  - id: BULL_T_54_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, ema5, short, reversal]
+    source:
+      timecode: "09:36-11:22"
+    conditions:
+      - viagra_rialzo == true
+      - ema5_commanding == true
+      - touch_count(ema5) >= 2
+      - new_high_is_spike_only == true
+      - candle_close_below_new_high == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "massimo dello spike (vicinissimo)"
+    take_profit: "EMA 10 (quasi mai tiene dopo rottura EMA 5)"
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Su un viagra a rialzo con EMA 5 che comanda, dopo il secondo tocco, un nuovo massimo fatto solo per spike (senza esplosione) e' segnale di stanchezza per andare short."
+    notes: "Lo stop e' vicinissimo (i massimi). Quando l'EMA 5 comanda e viene rotta, l'EMA 10 difficilmente tiene. Target naturale e' l'EMA sotto (50/60)."
+
+  - id: BULL_T_54_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [viagra, ema60, ema223, risk_management]
+    source:
+      timecode: "15:20-16:21"
+    conditions:
+      - viagra_breakout_imminent == true
+      - ema60_very_close_above == true
+      - ema223_distant == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Se la rottura del viagra porta subito contro un'EMA superiore molto vicina (e non siamo in zona antiincrocio), c'e' un palo in testa immediato."
+    notes: "Se l'EMA 60 e' vicina e la 223 e' distante, non e' antiincrocio ma semplicemente resistenza. Lasciar stare o puntare solo sulla rottura con lateralizzazione perfetta."
+
+  - id: BULL_T_54_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [viagra, ema60, ema223, invalidation]
+    source:
+      timecode: "15:47-16:21"
+    conditions:
+      - long_uptrend_broken == true
+      - price_below_ema60_and_ema223 == true
+      - first_bounce_after_cross == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Dopo un lungo rialzo, quando l'EMA 60 e 223 si incrociano al ribasso, il primo rimbalzo verso quella zona e' una trappola: lasciar stare, e' ottimo per andare short."
+    notes: "La prima volta che il prezzo si avvicina all'incrocio dopo il crossover ribassista e' la finta top per andare short. Non comprare."
+
+  - id: BULL_T_54_07
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
     severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    tags: [viagra, take_profit, position_sizing]
     source:
-      timecode: "15:07-15:13"
+      timecode: "06:25-06:49"
     conditions:
-      - price_above_ema60 == true
+      - viagra_setup == true
+      - distance_to_target_ema_pct < min_profitable_threshold
     action:
-      - WAIT
+      - SKIP_TRADE
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m"]
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "Prima di entrare su un viagra verificare che la distanza fino all'EMA target sia sufficiente per essere soddisfacente (almeno 1-1.5% in spot, meno con leva)."
+    notes: "Se il gap tra rottura e EMA target e' solo 0.2% in spot, non conviene: si regalano solo fee. Con leva 10 anche 0.1% puo' bastare, ma bisogna gia' essere profittevoli."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_54_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [viagra, ema, trend]
+    source:
+      timecode: "02:14-03:20"
+    statement: "Il viagra nasce quando un grosso venditore fa scendere il prezzo sotto un'EMA per avere piu' volumi e vendere di piu'; l'EMA funge da resistenza dinamica finche' il venditore non finisce."
+    rationale: "Capire la logica del viagra aiuta a identificare quando il venditore ha finito: la candela di riposo indica che ha smesso di vendere."
+
+  - id: BULL_T_54_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [viagra, risk_management, ema]
+    source:
+      timecode: "14:34-15:07"
+    statement: "Piu' conferme si hanno (bad, terzo tocco, pullman di cinesi, perfezione sull'EMA), piu' sicurezza e possibilita' di riuscita; l'ingresso minimo e' test dell'EMA + una candela di riposo."
+    rationale: "L'accumulo di conferme tecniche aumenta la probabilita' di successo del trade."
 
 summary:
-  total_machine_executable: 3
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "L'ingresso preferito sul viagra e' dopo il test dell'EMA con almeno una candela di riposo; il target e' l'EMA superiore. Per lo short, il viagra a rialzo con EMA 5 dopo il secondo tocco e' ideale. Attenzione alle EMA vicine come resistenza e al primo rimbalzo dopo un incrocio ribassista."

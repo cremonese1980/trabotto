@@ -1,78 +1,210 @@
 video:
-  id: YT_BULL_t_014
+  id: YT_BULL_TECNICHE_014
   series: tecniche
-  title: "Ciao Trader, siete su Skape in the Bull. Oggi parliamo della tecnica di trading e tecnica"
+  title: "Bicicletta parte 2 - Tre trade reali con la tecnica della bicicletta"
   video_index: 14
-  duration_minutes: 22
+  duration_minutes: 21
 
 entities:
-  - id: YT_BULL_t_014_01
-    entity_type: INVALIDATION
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_14_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [bicicletta, daily, ema5, breakout, trend]
     source:
-      timecode: "12:05-12:12"
+      timecode: "01:24-02:13"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - timeframe == daily
+      - daily_candle_is_green == true
+      - price_above_previous_day_open == true
+      - price_targeting_ema10_daily_from_below == true
+      - ema5_daily_broken_previous_day == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: [bullish]
+    rationale: "Bicicletta starts from identifying a daily trend: previous day broke EMA 5, today is green and targeting EMA 10."
+    notes: "The daily provides direction; entry is then refined on 1m. In this example (THETA), EMA 5 was broken the day before, and the target was EMA 10 daily."
+
+  - id: BULL_T_14_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bicicletta, ema223, stop_loss, risk_management]
+    source:
+      timecode: "03:03-03:45"
+    conditions:
+      - bicicletta_setup_active == true
+      - entry_on_1m_timeframe == true
+    action:
+      - ENTER_LONG
+    stop_loss: "Below EMA 223 on 1-minute chart"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "EMA 223 on 1m provides a distant but meaningful stop for the bicicletta technique."
+    notes: "Alternatively, use EMA 60 on 5m chart. EMA 223 on 1m gives plenty of room for the trade to work while you are away. The stop is far at entry but gets raised manually over time."
+
+  - id: BULL_T_14_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bicicletta, daily, ema10, take_profit]
+    source:
+      timecode: "02:05-02:30"
+    conditions:
+      - bicicletta_position_open == true
+      - price_reaches_ema10_daily == true
     action:
       - EXIT_POSITION
     applicability:
-      timeframes: []
+      timeframes: [daily]
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "EMA 10 on daily is the natural resistance target when approaching from below after an EMA 5 breakout."
+    notes: "Bull exited at EMA 10 daily (4.64 for THETA). The price did break above later, but EMA 10 is a safe exit point for the bicicletta approach."
 
-  - id: YT_BULL_t_014_02
+  - id: BULL_T_14_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bicicletta, ema60, daily, breakout, retest]
+    source:
+      timecode: "07:10-07:47"
+    conditions:
+      - timeframe == daily
+      - price_broke_above_ema60_daily == true (previous days)
+      - price_retested_ema60_daily == true
+      - ema10_daily_acting_as_catalyst == true
+      - daily_candle_slightly_negative_then_turned_positive == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: [bullish]
+    rationale: "A daily chart showing EMA 60 breakout, EMA 60 retest, and EMA 10 breakout is a strong bicicletta setup."
+    notes: "Paris Saint-Germain example: broke EMA 60, retested it, then EMA 10 acted as springboard. Daily slightly negative then turned positive confirmed the entry."
+
+  - id: BULL_T_14_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bicicletta, daily, ema60, breakout]
+    source:
+      timecode: "08:28-08:51"
+    conditions:
+      - timeframe == daily
+      - price_tested_ema60_daily_yesterday == true AND failed == true
+      - price_closed_below_ema60_yesterday == true
+      - today_targeting_ema60_breakout == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: []
+    rationale: "Failed EMA 60 test yesterday followed by a renewed attempt today creates a breakout bicicletta setup."
+    notes: "Juventus example: tested EMA 60 yesterday, failed, closed below. Today pointed at breakout. Entry on 1m at resistance breakout, stop on EMA 223 1m."
+
+  - id: BULL_T_14_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [bicicletta, ema60, daily, invalidation, resistance]
+    source:
+      timecode: "11:02-11:59"
+    conditions:
+      - daily_candle_immediately_near_ema60_resistance == true
+      - lateralization_near_ema60 == true
+      - no_room_for_trend_before_ema60 == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "If the daily chart shows EMA 60 acting as immediate resistance with no room for the trend to develop, the bicicletta will hit resistance too quickly."
+    notes: "The bicicletta needs space for the trend to develop. If EMA 60 resistance is right above the entry, the trade has no room and will likely reverse into your distant stop."
+
+  - id: BULL_T_14_07
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: MONITORING
     severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    tags: [bicicletta, stop_loss, trailing, ema223]
     source:
-      timecode: "16:52-17:00"
+      timecode: "10:05-10:28"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - bicicletta_position_open == true
+      - time_elapsed_since_entry > 0
+      - ema223_1m_has_risen == true
     action:
-      - EXIT_POSITION
+      - MOVE_SL_TO_BREAKEVEN
     applicability:
-      timeframes: []
+      timeframes: [1m]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "As time passes, EMA 223 on 1m rises, and the stop should be raised to follow it."
+    notes: "Bull periodically checks and manually raises the stop to match the rising EMA 223. This tightens risk over time while the trend works in his favor."
 
-  - id: YT_BULL_t_014_03
+  - id: BULL_T_14_08
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: LIQUIDITY_GATE
-    severity: HARD
-    tags: [leverage, margin, risk_management]
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [bicicletta, btc_index, regime_filter]
     source:
-      timecode: "18:28-18:33"
+      timecode: "01:54-02:05"
     conditions:
-      - leverage <= 10
+      - altcoin_showing_relative_strength_vs_btc == true
+      - btc_is_not_weak == true
     action:
-      - SKIP_TRADE
+      - CLASSIFY_SETUP
     applicability:
-      timeframes: []
+      timeframes: [daily]
       market_regime: []
-    rationale: "La gestione della leva viene esplicitata come vincolo di rischio."
-    notes: "Se la leva operativa supera il limite il segnale non viene eseguito."
+    rationale: "Bicicletta works best when the altcoin is stronger than BTC and BTC itself is at least neutral."
+    notes: "Bull checks that the altcoin outperforms BTC on the daily. If BTC is strong and the alt is even stronger, the bicicletta has wind at its back."
 
-  - id: YT_BULL_t_014_CTX_01
-    entity_type: WARNING
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_14_CTX_01
+    entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [psychology, risk_management]
+    tags: [bicicletta, daily, beginner]
     source:
-      timecode: "20:03-20:12"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "10:41-10:56"
+    statement: "The bicicletta technique is not easy because it requires reading daily candles and identifying trends; understanding the daily chart is a prerequisite."
+    rationale: "This technique combines multiple skills and is not suitable for complete beginners."
+
+  - id: BULL_T_14_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bicicletta, risk_management, stop_loss]
+    source:
+      timecode: "12:05-12:27"
+    statement: "At the start of a bicicletta trade, the stop is very far (EMA 223 on 1m); the first hour is critical because the trend must move in your favor to allow raising the stop."
+    rationale: "Understanding the risk profile at entry vs. later in the trade is essential for position sizing."
+
+  - id: BULL_T_14_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bicicletta, cambiocolore, daily]
+    source:
+      timecode: "13:22-13:58"
+    statement: "The bicicletta can also be combined with cambiocolore: large candle day 1, start in red day 2, then breakout green. It can also work in reverse (short) after a spike hits resistance."
+    rationale: "Shows the versatility of the bicicletta framework beyond just breakout setups."
 
 summary:
-  total_machine_executable: 3
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 8
+  total_context_only: 3
+  core_message: "The bicicletta technique identifies a daily trend (EMA 5 break, EMA 10 target, EMA 60 breakout/retest), enters on 1-minute timeframe, uses EMA 223 on 1m as a distant trailing stop, and requires room above entry before major resistance to let the trend develop."

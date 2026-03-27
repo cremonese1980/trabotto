@@ -1,60 +1,178 @@
 video:
-  id: YT_BULL_t_019
+  id: YT_BULL_TECNICHE_019
   series: tecniche
-  title: "Ciao tra i del sito su scappi da bull finalmente che c'è grande fomo la tecnica dello schiaffo"
+  title: "Lo Schiaffo - Tecnica short sulla debolezza dopo falso recupero sopra EMA 10"
   video_index: 19
-  duration_minutes: 19
+  duration_minutes: 18
 
 entities:
-  - id: YT_BULL_t_019_01
-    entity_type: INVALIDATION
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_19_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [short, ema10, ema5, breakout, reversal]
     source:
-      timecode: "01:31-01:39"
+      timecode: "00:52-01:51"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - prior_trend_was_strong_uptrend == true
+      - price_broke_below_ema10 == true (initial breakdown)
+      - price_then_spiked_back_above_ema10_and_ema5 == true (recovery candle)
+      - recovery_candle_is_green == true
+      - first_candle_after_recovery_shows_weakness == true (turns red or fails to make new high)
     action:
-      - EXIT_POSITION
+      - ENTER_SHORT
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+      timeframes: [1m]
+      market_regime: [bullish_exhaustion]
+    rationale: "The schiaffo shorts the weakness after a fake recovery above EMA 5/10. The green recovery candle is created by short-covering and FOMO buyers, but the inability to follow through reveals exhaustion."
+    notes: "The green recovery candle is driven by two forces: shorts closing in panic (afraid of new highs) and new longs entering. When the next candle shows weakness instead of continuation, it confirms the move was fake."
 
-  - id: YT_BULL_t_019_02
+  - id: BULL_T_19_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, stop_loss, risk_management, scalping]
+    source:
+      timecode: "02:14-03:28"
+    conditions:
+      - schiaffo_short_entered == true
+      - stop_loss_placed_above_recovery_candle_high == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "Above the high of the green recovery candle"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The stop is placed just above the recovery candle high. If price exceeds that, it will attempt new highs and the short is wrong."
+    notes: "The beauty of schiaffo is the very tight stop. Place it in the system (not manual) because reversals can be extremely fast. If the recovery candle high is breached, exit immediately."
+
+  - id: BULL_T_19_03
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    severity: HARD
+    tags: [short, stop_loss, trailing, scalping]
     source:
-      timecode: "01:31-01:39"
+      timecode: "05:07-05:30"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - schiaffo_short_active == true
+      - second_candle_moves_in_favor == true (price drops)
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "As soon as the second candle confirms the short direction, move stop to breakeven (entry price)."
+    notes: "Move stop to zero risk immediately once the trade goes in your favor. The schiaffo must demonstrate weakness continuously - any return to positive invalidates it."
+
+  - id: BULL_T_19_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, take_profit, scalping]
+    source:
+      timecode: "03:30-04:13"
+    conditions:
+      - schiaffo_short_active == true
+      - price_approaches_previous_low_support == true
+    action:
+      - EXIT_POSITION
+    take_profit: "At or near the previous swing low / zero line of the daily candle"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Target is the previous swing low or the zero line of the daily candle. If price reaches it with a quick spike, close immediately."
+    notes: "Set the take profit slightly beyond the target to catch spikes. If the target is reached slowly with small candles, consider closing early because momentum may be fading."
+
+  - id: BULL_T_19_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [short, exit, candle_pattern, scalping]
+    source:
+      timecode: "09:08-11:38"
+    conditions:
+      - schiaffo_short_active == true
+      - candle_after_entry_turns_green == true
+      - candle_exceeds_previous_candle_high == true
     action:
       - EXIT_POSITION
     applicability:
-      timeframes: []
+      timeframes: [1m]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "After the schiaffo entry, if any candle goes green and exceeds the prior candle's high, the weakness thesis is invalidated."
+    notes: "This is the manual exit rule: the short must keep demonstrating weakness. Any sign of strength (green candle exceeding prior high) means close at market immediately. Always have market sell ready."
 
-  - id: YT_BULL_t_019_CTX_01
-    entity_type: WARNING
+  - id: BULL_T_19_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [short, ema10, trend, invalidation]
+    source:
+      timecode: "02:50-03:01"
+    conditions:
+      - schiaffo_pattern_detected == true
+      - this_is_second_or_later_recovery_above_ema10 == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The schiaffo works best on the first recovery attempt above EMA 10. Second and subsequent recoveries are less reliable."
+    notes: "On the first time price recovers above EMA 10 after the initial break, the schiaffo has conviction. If it has already happened once and failed, the second time has less edge."
+
+  - id: BULL_T_19_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, ema10, candle_pattern, trigger]
+    source:
+      timecode: "06:56-07:33"
+    conditions:
+      - ema10_has_dominated_as_support_for_extended_period == true
+      - price_breaks_below_ema10 == true
+      - green_recovery_candle_above_ema5_and_ema10 == true
+      - recovery_candle_second_candle_starts_weak == true (goes red within seconds)
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish_exhaustion]
+    rationale: "The ideal schiaffo has a long period of EMA 10 dominance followed by the first break, a clean green recovery, and immediate weakness."
+    notes: "Best conditions: EMA 10 held as support many times (never broken), then one decisive break followed by the recovery candle. The longer EMA 10 dominated, the more powerful the schiaffo when it finally fails."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_19_CTX_01
+    entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [psychology, risk_management]
+    tags: [short, risk_management, scalping]
     source:
-      timecode: "14:09-14:14"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "12:05-12:18"
+    statement: "The schiaffo technique has very tight stops and fast targets (1-2 candles). It is a quick in-and-out short with immediate cash."
+    rationale: "Sets expectations for trade duration and risk profile of this technique."
+
+  - id: BULL_T_19_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology, risk_management]
+    source:
+      timecode: "12:55-13:41"
+    statement: "Observe the schiaffo pattern at least 10 times before trading it with real money. Draw lines, track results mentally, understand the strong and weak points, then test with small size."
+    rationale: "Pattern recognition through observation is essential before risking capital on a fast-execution technique."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "The schiaffo technique shorts the first sign of weakness after a fake recovery above EMA 10/5 following a strong uptrend breakdown. The green recovery candle is driven by short-covering and FOMO, and its failure to follow through creates a short entry with a very tight stop (above recovery candle high) and a target at the previous low or daily zero line."

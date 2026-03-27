@@ -1,49 +1,166 @@
 video:
-  id: YT_BULL_t_015
+  id: YT_BULL_TECNICHE_015
   series: tecniche
-  title: "Ciao Traders, siete su Sculpting the Bull. Oggi parliamo della tecnica della pesca notturna"
+  title: "Pesca Notturna - Ordini limit sulla EMA 5 daily prima di dormire"
   video_index: 15
-  duration_minutes: 18
+  duration_minutes: 17
 
 entities:
-  - id: YT_BULL_t_015_01
-    entity_type: INVALIDATION
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_15_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [daily, ema5, retest, continuation]
     source:
-      timecode: "12:18-12:31"
+      timecode: "03:21-04:56"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - timeframe == daily
+      - asset_in_strong_uptrend == true (recent large green candles)
+      - current_daily_candle_is_red == true
+      - price_approaching_ema5_daily == true
+      - ema5_daily_is_far_below_current_price == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "After a large spike, a red daily candle pulling back toward EMA 5 is a high-probability bounce zone for a limit order."
+    notes: "The pesca notturna technique: before sleeping, scan daily charts for assets that spiked hard and are now correcting toward EMA 5. Place limit buy orders slightly above EMA 5."
+
+  - id: BULL_T_15_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema5, limit_order, continuation]
+    source:
+      timecode: "05:02-07:07"
+    conditions:
+      - pesca_notturna_setup_active == true
+      - limit_buy_price == slightly_above_ema5_daily
+    action:
+      - ENTER_LONG
+    stop_loss: "Below EMA 10 daily"
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Place limit buy slightly above EMA 5 daily, not exactly on it, because if price bounces, the EMA will be pulled up by the bounce candle."
+    notes: "Critical detail: EMA is a moving average, so it shifts with each candle. If you place the order exactly on the EMA 5 line, a bounce will pull the EMA up and make it look like the touch was exact - but in reality you need to be slightly above to get filled. Account for the EMA moving."
+
+  - id: BULL_T_15_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema10, stop_loss, risk_management]
+    source:
+      timecode: "11:39-12:38"
+    conditions:
+      - pesca_notturna_position_open == true
+      - price_breaks_below_ema10_daily == true
     action:
       - EXIT_POSITION
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "EMA 10 daily is the real support in an uptrend; if EMA 5 bounce fails and price reaches EMA 10, the setup is invalidated."
+    notes: "The stop below EMA 10 is relatively far for scalping but acceptable for this daily-based technique. EMA 5 is the first support, EMA 10 is the hard stop."
 
-  - id: YT_BULL_t_015_02
+  - id: BULL_T_15_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, ema223, take_profit, scalping]
+    source:
+      timecode: "09:18-09:39"
+    conditions:
+      - pesca_notturna_position_open == true
+      - price_approaches_ema223_on_1m == true (from above, acting as support)
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Exit on a spike or at EMA 223 break on 1m for active management of the pesca notturna position the next morning."
+    notes: "Bull uses EMA 223 on 1m as exit reference the morning after. Either sell on a spike or sell if EMA 223 on 1m breaks."
+
+  - id: BULL_T_15_05
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    severity: HARD
+    tags: [daily, ema5, ema10, continuation, regime_filter]
     source:
-      timecode: "16:46-16:52"
+      timecode: "13:06-13:17"
     conditions:
-      - price_below_ema60 == true
+      - ema5_daily_distance_from_current_price_pct >= significant (e.g., > 5%)
     action:
-      - WAIT
+      - CLASSIFY_SETUP
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Only use pesca notturna when EMA 5 is very far from current price, indicating a strong extension that is likely to retrace."
+    notes: "The further EMA 5 is from the current price, the better the setup. If EMA 5 is close, there is not enough room for a meaningful bounce trade."
+
+  - id: BULL_T_15_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, ema10, limit_order, continuation]
+    source:
+      timecode: "14:00-15:38"
+    conditions:
+      - asset_already_near_ema5_daily == true
+      - correction_has_lasted_multiple_days == true
+      - ema10_daily_is_still_far_below == true
+    action:
+      - ENTER_LONG
+    stop_loss: "Below EMA 10 daily"
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "If the correction is deeper and has lasted multiple days, use EMA 10 instead of EMA 5 as the limit order level."
+    notes: "When EMA 5 has already been reached or is too close, move the target to EMA 10 for the limit order. Stop remains below EMA 10. This adapts the technique to deeper pullbacks."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_15_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, risk_management, beginner]
+    source:
+      timecode: "07:50-08:04"
+    statement: "Place multiple pesca notturna orders across different assets; some will trigger, some will not. The technique is probabilistic - you are casting multiple fishing lines."
+    rationale: "Diversifying limit orders across assets increases the chance of catching at least one overnight move."
+
+  - id: BULL_T_15_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, trend, regime_filter]
+    source:
+      timecode: "16:40-17:08"
+    statement: "Being in a positive trend does not mean price only goes up; it can still drop to EMA 60 or EMA 223 while remaining in an uptrend. Avoid all-in mentality."
+    rationale: "Manages expectations about pullback depth within bull trends, preventing over-leveraged positions."
+
+  - id: BULL_T_15_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, daily, risk_management]
+    source:
+      timecode: "16:25-17:00"
+    statement: "Always check BTC daily before placing pesca notturna orders; if BTC is also pulling back toward EMA 5, altcoin pullbacks are more likely to reach their targets."
+    rationale: "BTC direction overnight drives altcoin moves, making BTC analysis essential for pesca notturna timing."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "The pesca notturna technique places limit buy orders slightly above EMA 5 daily on assets that have spiked hard and are correcting, before going to sleep. Stop is below EMA 10 daily. It works best when EMA 5 is far from price, indicating a strong extension likely to retrace overnight."

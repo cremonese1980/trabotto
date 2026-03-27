@@ -1,86 +1,157 @@
 video:
-  id: YT_BULL_t_037
+  id: YT_BULL_TECNICHE_037
   series: tecniche
-  title: "Ciao Traderz, siete su Scopio in the Bull e adesso sono live su Twitch, tra 125 live che"
+  title: "Anti-incrocio EMA 60/223 - Finta dell'incrocio come segnale di forza"
   video_index: 37
-  duration_minutes: 21
+  duration_minutes: 20
 
 entities:
-  - id: YT_BULL_t_037_01
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: HARD
-    tags: [trigger, trend, risk_management]
-    source:
-      timecode: "01:32-01:41"
-    conditions:
-      - timeframe_minutes < 30
-    action:
-      - SKIP_TRADE
-    applicability:
-      timeframes: ["30m+"]
-      market_regime: []
-    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
-    notes: "Filtro preliminare applicato prima di valutare il setup."
 
-  - id: YT_BULL_t_037_02
-    entity_type: INVALIDATION
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_37_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [ema60, ema223, reversal, trend]
     source:
-      timecode: "07:38-07:43"
+      timecode: "00:23-01:57"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - price_below_ema223 == true
+      - ema60_approaching_ema223_from_above == true
+      - ema60_does_not_cross_below_ema223 == true
+      - price_rising_back_above_ema223 == true
     action:
-      - EXIT_POSITION
+      - CLASSIFY_SETUP
     applicability:
-      timeframes: []
+      timeframes: [1m, 5m, 30m, daily]
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "L'anti-incrocio avviene quando la EMA 60 dovrebbe incrociare al ribasso la EMA 223 ma non lo fa: segnale di forza perche' i compratori hanno assorbito la doppia pressione di vendita."
+    notes: "Funziona su qualsiasi timeframe. E' particolarmente potente perche' sgama che i compratori sono piu' forti dei venditori."
 
-  - id: YT_BULL_t_037_03
+  - id: BULL_T_37_02
     entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, bud, trigger]
+    source:
+      timecode: "06:25-07:14"
+    conditions:
+      - price_below_ema223 == true
+      - ema60_approaching_ema223 == true
+      - terzo_tocco_or_bud_formation == true
+    action:
+      - ENTER_LONG
+    stop_loss: "chiusura candela sotto EMA 60"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando si e' sotto la EMA 223 e la 60 sta per incrociare, un terzo tocco o bud fornisce l'ingresso per scommettere sull'anti-incrocio."
+    notes: "Il terzo tocco sotto la EMA 223 che poi porta all'anti-incrocio e' il setup ideale. Stop sulla EMA 60 a chiusura candela."
+
+  - id: BULL_T_37_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, bud, reversal]
+    source:
+      timecode: "09:36-10:10"
+    conditions:
+      - long_uptrend_preceded == true
+      - first_time_price_breaks_below_ema223 == true
+      - bud_or_bud_allungato_below_ema223 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo una lunga salita, la prima rottura della EMA 223 e' il momento per cercare l'anti-incrocio. Un bud allungato sotto la EMA 223 e' l'ingresso ideale."
+    notes: "Piu' c'e' spazio dalla salita precedente, piu' potente sara' l'anti-incrocio. L'ingresso ideale e' il bud allungato che porta alla rottura della EMA 223."
+
+  - id: BULL_T_37_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, bud, candle_pattern]
+    source:
+      timecode: "13:33-14:18"
+    conditions:
+      - ema_commanding_precisely == true
+      - bud_or_bad_allungato_below_commanding_ema == true
+      - two_to_three_candles_hesitating_before_breakout == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "L'ingresso con minor rischio e maggior percentuale di riuscita e' sempre una conformazione (bud, bud allungato) sotto l'EMA che comanda, non il dritto per dritto."
+    notes: "Non entrare se il prezzo sale dritto senza conformazione. Servono almeno 2-3 candele che tentennano prima della rottura. Il dritto per dritto non interessa."
+
+  - id: BULL_T_37_05
+    entity_type: INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    severity: HARD
+    tags: [ema60, ema223, stop_loss, invalidation]
     source:
-      timecode: "07:38-07:43"
+      timecode: "07:29-07:50"
     conditions:
       - position_open == true
-      - favorable_move_detected == true
+      - entry_was_anti_incrocio == true
+      - candle_close_below_ema60 == true
     action:
       - EXIT_POSITION
     applicability:
-      timeframes: []
+      timeframes: [1m]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Lo stop per l'anti-incrocio e' la chiusura candela sotto la EMA 60. Dare spazio per la prima finta, poi stop meccanico sullo spike minimo."
+    notes: "La prima finta sotto la EMA 60 ci deve stare. Dopo la prima finta, stop meccanico sullo spike minimo precedente."
 
-  - id: YT_BULL_t_037_04
+  - id: BULL_T_37_06
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
+    scope: TRADE_EXECUTION
     severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    tags: [ema10, ema223, reversal]
     source:
-      timecode: "14:18-14:27"
+      timecode: "01:09-01:57"
     conditions:
-      - price_below_ema60 == true
+      - tf30_price_touching_ema10 == true
+      - tf1m_price_below_ema223 == true
+      - first_conformazione_for_reversal == true
     action:
-      - WAIT
+      - ENTER_LONG
     applicability:
-      timeframes: []
+      timeframes: [30m, 1m]
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "Quando a TF 30 minuti il prezzo tocca la EMA 10, a TF 1 minuto si e' sotto la EMA 223: la prima conformazione per salire e' l'ingresso per il rimbalzo sulla EMA 10."
+    notes: "Questa e' la connessione tra anti-incrocio a 1 minuto e rimbalzo sulla EMA 10 a 30 minuti. L'anti-incrocio e' quasi sempre presente nel rimbalzo."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_37_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, ema223, book]
+    source:
+      timecode: "16:23-17:31"
+    statement: "Per la rottura della EMA 60 nell'anti-incrocio non serve un muro specifico nel book: la conformazione bud e' sufficiente. Verificare pero' che non ci siano livelli grossi sopra il bud."
+    rationale: "Il bud spesso non ha un livello grosso nel book da rompere; basta che non ci siano ostacoli sopra."
+
+  - id: BULL_T_37_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema223, reversal, psychology]
+    source:
+      timecode: "03:33-04:02"
+    statement: "Quando il prezzo rompe la EMA 223 ci sono due forze nello stesso senso: chi e' long esce e chi e' short entra. Questo raddoppia la pressione ribassista."
+    rationale: "Capire la meccanica delle due forze che si sommano spiega perche' l'anti-incrocio (assorbimento di entrambe) e' un segnale di forza estrema."
 
 summary:
-  total_machine_executable: 4
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "L'anti-incrocio EMA 60/223 segnala forza estrema dei compratori che assorbono doppia pressione ribassista. L'ingresso ideale e' un bud allungato sotto la EMA che comanda, mai il dritto per dritto. A TF 1 minuto coincide col rimbalzo sulla EMA 10 a 30 minuti."

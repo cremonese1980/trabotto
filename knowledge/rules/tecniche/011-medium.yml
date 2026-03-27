@@ -1,68 +1,220 @@
 video:
-  id: YT_BULL_t_011
+  id: YT_BULL_TECNICHE_011
   series: tecniche
-  title: "Ciao Traders, siete su ScapinTheWool. Stamattina dopo il sondaggio fatto alle 6 del mattino sul gruppo Telegra"
+  title: "Cambio Candela - Tecnica passaggio di colore sul daily"
   video_index: 11
-  duration_minutes: 18
+  duration_minutes: 17
 
 entities:
-  - id: YT_BULL_t_011_01
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_11_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [cambiocolore, daily, candle_pattern, breakout]
+    source:
+      timecode: "00:09-00:60"
+    conditions:
+      - previous_daily_candle_body_size == LARGE (relative to recent candles)
+      - daily_candle_color_changed == true (red_to_green OR green_to_red)
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "The cambiocolore technique trades the daily candle color switch after a large previous candle."
+    notes: "Works best when the previous candle is significantly larger than recent candles. The color change happens at 2 AM (winter: 1 AM) for crypto."
+
+  - id: BULL_T_11_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [cambiocolore, candle_pattern, daily, trend]
+    source:
+      timecode: "01:41-02:07"
+    conditions:
+      - previous_daily_candle_body_size_percentile >= 75 (relative to last 20 candles)
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "A large previous candle indicates momentum and higher probability of follow-through on the color change."
+    notes: "The bigger the previous candle, the more likely a strong move on the color switch. Small candles (choppy market) make this technique ineffective."
+
+  - id: BULL_T_11_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [cambiocolore, ema5, ema10, retest, daily]
+    source:
+      timecode: "02:07-02:30"
+    conditions:
+      - cambiocolore_setup_active == true
+      - price_retests_ema5_daily == true OR price_retests_ema10_daily == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "After the color change, price pulling back to test EMA 5 or EMA 10 provides a high-probability entry with defined risk."
+    notes: "On a red-to-green switch, the price going down to test EMA 5/10 then bouncing is the ideal entry point."
+
+  - id: BULL_T_11_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [cambiocolore, stop_loss, risk_management, daily]
+    source:
+      timecode: "06:20-06:34"
+    conditions:
+      - cambiocolore_entry_active == true
+      - lateralization_zone_identified == true
+    action:
+      - ENTER_LONG
+    stop_loss: "Below the lateralization zone"
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Entry requires a small consolidation/lateralization to define a meaningful stop loss level."
+    notes: "If price goes straight up without pausing, skip the trade. The lateralization provides the stop level. No lateralization = no entry."
+
+  - id: BULL_T_11_05
     entity_type: INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [cambiocolore, invalidation, candle_pattern]
     source:
-      timecode: "06:53-06:59"
+      timecode: "04:17-04:58"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - cambiocolore_setup_active == true
+      - price_already_made_new_highs_and_pulled_back == true
+      - price_not_making_new_intraday_highs == true
     action:
-      - EXIT_POSITION
+      - SKIP_TRADE
     applicability:
-      timeframes: []
+      timeframes: [daily]
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "If the candle already spiked to new highs and pulled back, the momentum is spent."
+    notes: "The entry is strongest when price is making fresh new intraday highs during the color change. If the wick already formed (spike already happened), the force is diminished."
 
-  - id: YT_BULL_t_011_02
+  - id: BULL_T_11_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [cambiocolore, invalidation, daily, candle_pattern]
+    source:
+      timecode: "03:24-03:46"
+    conditions:
+      - market_regime == CHOPPY
+      - recent_daily_candles_are_small == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: [range]
+    rationale: "In choppy markets with small daily candles, the cambiocolore technique does not work."
+    notes: "Small candles mean low volatility and frequent fakeouts. Wait for large candles to return before using this technique."
+
+  - id: BULL_T_11_07
     entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: MONITORING
     severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    tags: [cambiocolore, ema10, stop_loss, trailing]
     source:
-      timecode: "07:22-07:27"
+      timecode: "06:47-07:22"
     conditions:
       - position_open == true
-      - favorable_move_detected == true
+      - unrealized_pnl_pct > 0
+      - price_working_around_ema5_and_ema10 == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Once in profit and price is consolidating around EMA 5/10, raise stop to protect gains."
+    notes: "Bull moves stop to just below EMA 10 once price is working between EMA 5 and EMA 10. He hates closing a winning trade at zero."
+
+  - id: BULL_T_11_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [cambiocolore, ema10, exit, daily]
+    source:
+      timecode: "07:22-07:32"
+    conditions:
+      - position_open == true
+      - price_closes_below_ema10_daily == true
     action:
       - EXIT_POSITION
     applicability:
-      timeframes: []
+      timeframes: [daily]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "EMA 10 daily break signals the end of the short-term move."
+    notes: "Manual exit when price breaks below EMA 10 on daily. Also exit if BTC shows weakness even if altcoin is still above EMA 10."
 
-  - id: YT_BULL_t_011_03
+  - id: BULL_T_11_09
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [cambiocolore, ema60, trend, daily]
     source:
-      timecode: "11:40-11:46"
+      timecode: "11:40-11:57"
     conditions:
-      - price_above_ema60 == true
+      - price_reclaims_ema60_daily == true (after dipping below)
+      - cambiocolore_setup_active == true
     action:
-      - WAIT
+      - ENTER_LONG
     applicability:
-      timeframes: []
+      timeframes: [daily]
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "Price dipping below EMA 60 and reclaiming it shows strength, especially combined with a cambiocolore setup."
+    notes: "Failure to make new lows when below EMA 60 followed by a quick reclaim is a bullish sign that supports the color change entry."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_11_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [cambiocolore, timing]
+    source:
+      timecode: "00:18-00:28"
+    statement: "The daily candle change for crypto happens at 2 AM (1 AM winter time), so the technique requires morning monitoring."
+    rationale: "Timing is important because the setup triggers at a specific hour and the entry window is in the morning."
+
+  - id: BULL_T_11_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [cambiocolore, daily, take_profit]
+    source:
+      timecode: "12:10-12:41"
+    statement: "When the color change candle surpasses the previous day's highs, it promises well, but if it stalls, move stop above the spike and protect profits."
+    rationale: "Greed management: take what the market gives rather than hoping for the perfect outcome."
+
+  - id: BULL_T_11_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, risk_management, cambiocolore]
+    source:
+      timecode: "07:27-07:32"
+    statement: "Always monitor BTC when trading altcoins; if BTC looks weak, close the altcoin position regardless of its individual setup."
+    rationale: "BTC correlation can invalidate an otherwise valid altcoin trade."
 
 summary:
-  total_machine_executable: 3
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 9
+  total_context_only: 3
+  core_message: "The cambiocolore technique trades the daily candle color switch (red-to-green or green-to-red) after a large previous candle, entering on a lateralization with stop below it, and requires large candles to work - useless in choppy/small-candle markets."

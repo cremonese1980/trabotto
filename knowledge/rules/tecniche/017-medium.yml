@@ -1,77 +1,175 @@
 video:
-  id: YT_BULL_t_017
+  id: YT_BULL_TECNICHE_017
   series: tecniche
-  title: "Ciao traders, siete su Skyping The Bull. Oggi parliamo dell'EMA 60 che incrocia l'EMA"
+  title: "Incrocio EMA 60 e EMA 223 - Tecnica di conferma trend e short pre-mercato americano"
   video_index: 17
-  duration_minutes: 15
+  duration_minutes: 14
 
 entities:
-  - id: YT_BULL_t_017_01
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_17_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, short, trend, breakout]
+    source:
+      timecode: "03:16-04:15"
+    conditions:
+      - timeframe == 1m
+      - ema60_crosses_below_ema223 == true
+      - prior_trend_was_long_uptrend == true OR prior_trend_was_long_downtrend == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The EMA 60/223 crossover after a prolonged trend is a strong reversal signal with double confirmation."
+    notes: "Works best after long sustained moves (many hours of uptrend or downtrend). Short choppy moves produce fakeouts at the crossover - avoid those. The crossover acts as double confirmation: EMA 223 break plus the actual cross."
+
+  - id: BULL_T_17_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, short, scalping]
+    source:
+      timecode: "04:20-05:31"
+    conditions:
+      - timeframe == 1m
+      - time_of_day >= 11:30 AND time_of_day <= 14:00 (pre-US market)
+      - price_has_been_rising_since_morning == true
+      - price_breaks_below_ema223_1m == true
+      - ema60_approaching_ema223_from_above == true (cross imminent)
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The pre-US market hours (11:30-14:00) are ideal for shorting when the EMA 60/223 crossover is imminent after a morning uptrend."
+    notes: "Bull calls this the 'crazy American hour'. If the morning was bullish, look for short signals around noon. The EMA 223 break combined with the impending EMA 60/223 crossover gives a double-strength short signal."
+
+  - id: BULL_T_17_03
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, short, breakout]
     source:
-      timecode: "00:00-00:30"
+      timecode: "05:02-06:01"
     conditions:
-      - price_below_ema60 == true
+      - price_breaks_below_ema223_1m == true
+      - ema60_1m_will_cross_below_ema223_1m_soon == true (anticipation)
     action:
-      - WAIT
+      - ENTER_SHORT
     applicability:
-      timeframes: []
+      timeframes: [1m]
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "Anticipate the crossover by entering short when price breaks EMA 223, knowing the EMA 60 will follow and cross below."
+    notes: "You do not wait for the actual crossover to happen. When price breaks below EMA 223, the faster EMA 60 will be dragged down and will cross EMA 223. This anticipation is key - everyone sees the crossover after the fact."
 
-  - id: YT_BULL_t_017_02
+  - id: BULL_T_17_04
     entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, ema223, short, terzo_tocco]
+    source:
+      timecode: "08:04-08:22"
+    conditions:
+      - ema60_223_crossover_imminent == true
+      - price_touched_ema_resistance_3_times == true (terzo tocco)
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Combining the terzo tocco (third touch) pattern with an imminent EMA 60/223 crossover provides maximum confirmation."
+    notes: "NKN example: Bull entered short on the third touch of the EMA as it was crossing. The terzo tocco plus the crossover made it the strongest possible signal."
+
+  - id: BULL_T_17_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, trend, continuation]
+    source:
+      timecode: "10:13-10:56"
+    conditions:
+      - prior_short_driven_by_pre_us_session == true
+      - drop_appears_senseless_or_exaggerated == true
+      - ema60_crosses_above_ema223_1m == true (bullish crossover)
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "After an exaggerated pre-US drop, the bullish EMA 60/223 crossover signals the recovery and return to normalcy."
+    notes: "This is the mirror trade: the short has played out, the drop made no fundamental sense, and the bullish crossover signals buying. Wait for the actual crossover or anticipate slightly. Do not buy during the drop hoping for the bottom - wait for the cross."
+
+  - id: BULL_T_17_06
+    entity_type: INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: PRE_FILTER
     severity: HARD
-    tags: [trigger, trend, risk_management]
+    tags: [ema60, ema223, invalidation, candle_pattern]
     source:
-      timecode: "06:51-06:57"
+      timecode: "09:41-10:07"
     conditions:
-      - timeframe_minutes < 30
+      - ema60_223_crossover_occurred == true
+      - prior_trend_duration < 4_hours
+      - price_was_choppy_before_crossover == true
     action:
       - SKIP_TRADE
     applicability:
-      timeframes: ["30m+"]
-      market_regime: []
-    rationale: "La tecnica viene vincolata a un timeframe minimo esplicito."
-    notes: "Filtro preliminare applicato prima di valutare il setup."
+      timeframes: [1m]
+      market_regime: [range]
+    rationale: "Short-duration trends and choppy price action produce unreliable EMA 60/223 crossovers."
+    notes: "The crossover only works after sustained moves. If the trend lasted less than 4 hours or price was going up and down with no clear direction, the crossover is likely a fakeout."
 
-  - id: YT_BULL_t_017_03
+  - id: BULL_T_17_07
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
+    scope: PRE_FILTER
     severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    tags: [ema60, ema223, trend, volatility]
     source:
-      timecode: "09:35-09:41"
+      timecode: "13:04-13:30"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - asset_daily_range_pct < 3
     action:
-      - EXIT_POSITION
+      - SKIP_TRADE
     applicability:
-      timeframes: []
+      timeframes: [1m]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Low-volatility assets produce tiny candles at the crossover, making it impossible to capture a meaningful move."
+    notes: "Use this technique on assets that move a lot. If the asset only moves 3% per day, the crossover will produce candles too small to trade profitably."
 
-  - id: YT_BULL_t_017_CTX_01
-    entity_type: WARNING
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_17_CTX_01
+    entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [psychology, risk_management]
+    tags: [ema60, ema223, btc_index]
     source:
-      timecode: "11:40-11:48"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "05:48-06:17"
+    statement: "You can use BTC's EMA 60/223 crossover as a signal to short weaker altcoins. Find an altcoin that is weaker than BTC and it will cross first, giving an earlier entry."
+    rationale: "Altcoins that are lagging BTC will show the crossover sooner, allowing anticipation of the broader move."
+
+  - id: BULL_T_17_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology, risk_management]
+    source:
+      timecode: "11:34-12:07"
+    statement: "You only need one technique that works consistently. If you find the EMA 60/223 crossover suits you, master it with discipline and it is enough to be profitable."
+    rationale: "Technique mastery through discipline beats knowing many techniques superficially."
 
 summary:
-  total_machine_executable: 3
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "The EMA 60/223 crossover on 1-minute timeframe is a powerful reversal signal after prolonged trends. Best used for shorts during pre-US market hours (11:30-14:00) when a morning uptrend reverses, and for longs after exaggerated drops. Anticipate the crossover by entering when price breaks EMA 223, knowing EMA 60 will follow. Avoid choppy or low-volatility conditions."

@@ -1,97 +1,206 @@
 video:
-  id: YT_BULL_t_045
+  id: YT_BULL_TECNICHE_045
   series: tecniche
-  title: "Ciao trader, stiamo su scappinthebull, parliamo di una nuova tecnica di trading le tre cime, sigla"
+  title: "Le Tre Cime - tecnica di trading su pennant con EMA"
   video_index: 45
-  duration_minutes: 18
+  duration_minutes: 17
 
 entities:
-  - id: YT_BULL_t_045_01
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
-    source:
-      timecode: "03:57-04:02"
-    conditions:
-      - price_below_ema60 == true
-    action:
-      - WAIT
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
 
-  - id: YT_BULL_t_045_CTX_01
-    entity_type: WARNING
-    category: CONTEXT_ONLY
-    scope: GLOBAL
-    tags: [psychology, risk_management]
-    source:
-      timecode: "04:45-04:52"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+  # === MACHINE-EXECUTABLE ===
 
-  - id: YT_BULL_t_045_02
+  - id: BULL_T_45_01
     entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [candelina, breakout, trigger, candle_pattern]
+    tags: [candle_pattern, breakout, trend, terzo_tocco]
     source:
-      timecode: "08:46-08:52"
+      timecode: "01:55-03:00"
     conditions:
-      - small_candle_detected == true
-      - breakout_of_small_candle_level == true
+      - swing_high_count >= 3
+      - each_swing_high < previous_swing_high
+      - swing_low_count >= 3
+      - each_swing_low > previous_swing_low
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La tecnica 'tre cime' richiede almeno 3 massimi decrescenti e 3 minimi crescenti che formano un cuneo (pennant)."
+    notes: "I massimi non devono uguagliare ne' superare i precedenti, idem per i minimi. Si studia l'ingresso dalla terza volta in poi."
+
+  - id: BULL_T_45_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, breakout, trigger]
+    source:
+      timecode: "03:00-03:42"
+    conditions:
+      - tre_cime_setup == true
+      - touch_count(swing_high_zone) >= 3
+      - red_candle_at_swing_high == true
+      - price_breaks_above_last_swing_high == true
     action:
       - ENTER_LONG
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La rottura della candelina viene usata come attivazione operativa."
-    notes: "La versione short è speculare sul minimo della candelina."
+    rationale: "Dopo la terza cima, quando il prezzo fa una candela rossa al massimo e poi supera quel massimo, si entra long."
+    notes: "Ingresso standard: aspettare candela rossa di riposo al massimo, poi entrare alla rottura sopra quel massimo."
 
-  - id: YT_BULL_t_045_03
-    entity_type: INVALIDATION
+  - id: BULL_T_45_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, candle_pattern, pullback]
+    source:
+      timecode: "04:02-04:25"
+    conditions:
+      - tre_cime_setup == true
+      - touch_count(swing_low_zone) >= 3
+      - price_tests_ema60 == true
+      - candle_close_above_ema60 == true
+      - fake_breakout_below_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Ingresso anticipato: se dopo la terza cima il prezzo fa una finta sull'EMA 60 senza rompere i minimi precedenti, si puo' entrare a chiusura candela sopra."
+    notes: "Lo stop va sul minimo della finta. L'EMA 60 funge da supporto dinamico che conferma la tenuta del pattern."
+
+  - id: BULL_T_45_04
+    entity_type: RULE
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [stop_loss, candle_pattern, invalidation]
     source:
-      timecode: "10:26-10:32"
+      timecode: "04:48-05:04"
     conditions:
+      - tre_cime_entry == true
       - position_open == true
-      - price_hits_stop_loss == true
     action:
       - EXIT_POSITION
+    stop_loss: "minimo della candela di ingresso o minimo corrente del pattern"
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "Lo stop loss nelle tre cime e' il minimo del pattern: non deve mai piu' essere superato."
+    notes: "Non aspettare il minimo precedente piu' basso; basta il minimo corrente come stop."
 
-  - id: YT_BULL_t_045_04
+  - id: BULL_T_45_05
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [take_profit, breakout, trigger]
     source:
-      timecode: "15:00-15:04"
+      timecode: "06:29-07:06"
     conditions:
+      - tre_cime_entry == true
       - position_open == true
-      - favorable_move_detected == true
     action:
-      - EXIT_POSITION
+      - MONITOR_LEVEL
+    take_profit: "almeno la rottura del massimo della prima cima (il piu' alto)"
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Il target minimo e' la rottura del massimo superiore (la prima cima), perche' e' il punto trigger dove aspettarsi accelerazione."
+    notes: "Il primo massimo del pattern e' il vero punto trigger. Dopo la rottura ci si aspetta accelerazione."
+
+  - id: BULL_T_45_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, trend, continuation]
+    source:
+      timecode: "11:39-13:23"
+    conditions:
+      - swing_high_count >= 3
+      - each_swing_high > previous_swing_high
+      - swing_low_count >= 3
+      - each_swing_low > previous_swing_low
+      - channel_is_parallel == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Variante delle tre cime con canale parallelo (non a cuneo): massimi e minimi crescenti in modo uniforme."
+    notes: "In questo caso si puo' andare short dalla terza volta che tocca il massimo del canale, con stop sopra il massimo. Usato su Nasdaq/CFD."
+
+  - id: BULL_T_45_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, breakout, candle_pattern]
+    source:
+      timecode: "13:36-14:09"
+    conditions:
+      - tre_cime_setup == true
+      - minimi_sempre_piu_alti == true
+      - massimi_sempre_piu_bassi == true
+      - touch_count >= 3
+      - price_fails_to_make_new_low == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando dopo la terza volta il prezzo non riesce a fare nuovi minimi, si sgama che il pattern sta per rompere al rialzo."
+    notes: "Ingresso a chiusura candela sopra l'EMA 10 dopo aver verificato che i minimi non vengono piu' aggiornati."
+
+  - id: BULL_T_45_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, ema223, trigger]
+    source:
+      timecode: "10:47-11:14"
+    conditions:
+      - tre_cime_entry == true
+      - price_approaching_ema223 == true
+      - price_approaching_first_swing_high == true
+    action:
+      - MONITOR_LEVEL
+    take_profit: "rottura del primo massimo, spesso coincide con EMA 223"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il target naturale spesso coincide con l'EMA 223 che fa da resistenza; uscire prima e' un errore."
+    notes: "Bull ammette di aver chiuso anticipatamente trade che poi hanno accelerato alla rottura dell'EMA 223. Il punto di accelerazione e' sempre il massimo della prima cima."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_45_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, ema]
+    source:
+      timecode: "01:29-01:38"
+    statement: "Le tre cime non sono un semplice pennant tradizionale: gli ingressi e le uscite sono diversi grazie all'uso delle EMA."
+    rationale: "Bull differenzia la sua tecnica dal bullish/bearish pennant classico perche' le EMA permettono ingressi anticipati e piu' precisi."
+
+  - id: BULL_T_45_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, daily]
+    source:
+      timecode: "17:24-17:44"
+    statement: "Se nel daily c'e' un cambio colore, non chiudere subito ma aspettare la prima candela di accelerazione dopo il cambio colore."
+    rationale: "Il cambio colore daily puo' estendere il target oltre il livello della prima cima."
 
 summary:
-  total_machine_executable: 4
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 8
+  total_context_only: 2
+  core_message: "La tecnica 'tre cime' identifica pattern a cuneo con almeno 3 massimi decrescenti e minimi crescenti, con ingresso alla rottura dalla terza cima in poi; le EMA permettono ingressi anticipati e il target minimo e' la rottura del primo massimo."

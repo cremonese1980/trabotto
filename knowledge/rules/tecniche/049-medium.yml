@@ -1,87 +1,243 @@
 video:
-  id: YT_BULL_t_049
+  id: YT_BULL_TECNICHE_049
   series: tecniche
-  title: "Ciao traders, siete su Scabine Bull, siamo qua in montagna in Tarintino, mattinata"
+  title: "Tecniche di trading migliori per mercato in downtrend"
   video_index: 49
-  duration_minutes: 13
+  duration_minutes: 12
 
 entities:
-  - id: YT_BULL_t_049_01
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
-    source:
-      timecode: "03:50-03:58"
-    conditions:
-      - price_below_ema60 == true
-    action:
-      - WAIT
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
 
-  - id: YT_BULL_t_049_02
-    entity_type: INVALIDATION
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_49_01
+    entity_type: SETUP
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [candle_pattern, terzo_tocco, bud]
     source:
-      timecode: "05:59-06:05"
+      timecode: "00:47-01:35"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - tre_cime_setup == true
+      - touch_count(descending_highs) >= 3
+      - bud_to_the_moon_at_third_peak == true
     action:
-      - EXIT_POSITION
+      - ENTER_LONG
     applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "In mercato bear, le tre cime con bad to the moon sulla terza cima sono la conformazione migliore."
+    notes: "Non aspettarsi la rottura della prima cima in downtrend; accontentarsi del minimo e chiudere prima possibile."
 
-  - id: YT_BULL_t_049_03
-    entity_type: RULE
-    category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
-    source:
-      timecode: "09:14-09:20"
-    conditions:
-      - position_open == true
-      - favorable_move_detected == true
-    action:
-      - EXIT_POSITION
-    applicability:
-      timeframes: []
-      market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
-
-  - id: YT_BULL_t_049_04
+  - id: BULL_T_49_02
     entity_type: SETUP
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
+    scope: TRADE_EXECUTION
     severity: HARD
-    tags: [terzo_tocco, trigger, trend]
+    tags: [bud, terzo_tocco, breakout]
     source:
-      timecode: "10:31-10:37"
+      timecode: "01:53-03:19"
     conditions:
-      - touch_count(level) >= 3
-      - first_touch_day == yesterday
+      - daily_high_identified == true
+      - touch_count(daily_high) == 2
+      - price_stays_high_after_second_touch == true
+      - bud_to_the_moon_forming == true
     action:
-      - CLASSIFY_SETUP
+      - ENTER_LONG
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "Dopo il secondo tocco dei massimi daily, se il prezzo rimane alto e forma un bad to the moon verso il terzo tocco, e' un ingresso anticipato ottimo."
+    notes: "Vendere subito al terzo tocco, anche se fa solo uno sputino. In downtrend il secondo tocco da solo fa schifo, ma se rimane alto con candeline e' buono."
+
+  - id: BULL_T_49_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, ema10, candle_pattern]
+    source:
+      timecode: "04:35-05:07"
+    conditions:
+      - all_candles_below_ema10 == true
+      - fake_breakout_above_ema10 == true
+      - price_returns_below_ema10 == true
+      - small_candles_below_ema10 == true
+      - breakout_above_ema10 == true
+    action:
+      - ENTER_LONG
+    take_profit: "EMA 60"
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "Il viagra classico in downtrend: candeline sotto l'EMA 10, finta rottura, poi rottura vera con target EMA 60."
+    notes: "Le candeline sotto l'EMA 10 nel viagra sono il top. La finta rottura seguita da candeline e poi rottura vera e' il pattern ideale."
+
+  - id: BULL_T_49_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, candle_pattern, pullback]
+    source:
+      timecode: "05:08-06:15"
+    conditions:
+      - daily_high_breakout == true
+      - price_retests_ema10 == true
+      - small_candle_above_ema10 == true
+    action:
+      - ENTER_LONG
+    stop_loss: "sotto la candelina piccola"
+    take_profit: "massimi daily"
+    applicability:
+      timeframes: ["1m"]
+      market_regime: ["downtrend"]
+    rationale: "Dopo un rally, il retest dell'EMA 10 con una candelina piccola di stabilizzazione e' un ingresso con stop strettissimo per puntare ai massimi."
+    notes: "Difficile trovare pezzi grandi nel book sull'EMA 10, ma la candelina piccola indica supporto. Lo stop e' la parte sotto della candelina."
+
+  - id: BULL_T_49_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, invalidation, breakout]
+    source:
+      timecode: "06:35-07:06"
+    conditions:
+      - bud_breakout == true
+      - candle_close_below_breakout_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "In downtrend, appena il prezzo rientra sotto il livello di rottura del bad, uscire immediatamente."
+    notes: "La seconda candela puo' fare il retest del livello di rottura, ma deve tornare su entro fine candela. La terza candela deve rompere di nuovo. Se non lo fa, uscire."
+
+  - id: BULL_T_49_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, ema60, ema223]
+    source:
+      timecode: "07:48-08:50"
+    conditions:
+      - price_at_support_level == true
+      - multiple_candles_at_same_price >= 5
+      - ema60_below_price == true
+      - ema223_below_price == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "Il martello (tante candeline sullo stesso prezzo) con EMA 60 e 223 sotto e' fantastico: possiamo lasciar correre."
+    notes: "Condizione ideale: EMA 60 e 223 sotto, prezzo ha gia' fatto la rottura, lateralizzazione con bad to the moon o martello, EMA 10 che comanda. L'unico caso in downtrend dove si puo' tenere la posizione piu' a lungo."
+
+  - id: BULL_T_49_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [shimano, ema60, ema223]
+    source:
+      timecode: "08:55-10:07"
+    conditions:
+      - shimano_setup == true
+      - price_inside_ema60_ema223_channel == true
+      - price_tests_ema10_30m == true
+      - lateralization_inside_shimano == true
+      - small_candles_detected == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "30m"]
+      market_regime: ["downtrend"]
+    rationale: "All'interno dello shimano (tra EMA 60 e 223), una lateralizzazione con candeline permette un ingresso anticipato prima dell'uscita."
+    notes: "Le candeline neutralizzano le vendite e indicano supporto. Si puo' lasciar correre fino alla seconda rampa: prima rampa, riposo su EMA 10 a 1m, seconda rampa, uscire."
+
+  - id: BULL_T_49_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [take_profit, candle_pattern, risk_management]
+    source:
+      timecode: "10:07-10:26"
+    conditions:
+      - position_open == true
+      - consecutive_green_candles >= 3
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: ["downtrend"]
+    rationale: "In downtrend, non tenere mai piu' di tre candele positive di seguito; accontentarsi anche della prima rampa."
+    notes: "Regola di sopravvivenza per mercato bear. Il trend e' negativo, quindi ai primi segnali bisogna uscire."
+
+  - id: BULL_T_49_09
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, bud, trigger]
+    source:
+      timecode: "10:31-10:53"
+    conditions:
+      - daily_high_tested_3_times == true
+      - bud_inside_bud_before_third_touch == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
       market_regime: []
-    rationale: "Il setup viene descritto come terzo tocco con trigger sul livello marcato."
-    notes: "Configurazione strutturale usata per qualificare il segnale."
+    rationale: "Il top assoluto: terzo tocco con bad dentro un bad, che permette un ingresso ancora piu' anticipato rispetto al breakout."
+    notes: "Qualsiasi lateralizzazione prima di un livello trigger testato tre volte e' un'ottima opportunita'."
+
+  - id: BULL_T_49_10
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema10, terzo_tocco]
+    source:
+      timecode: "03:42-04:29"
+    conditions:
+      - touch_count(ema60) >= 2
+      - price_approaching_ema60_third_touch == true
+      - breakout_above_ema10 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: ["downtrend"]
+    rationale: "Dopo il secondo tocco dell'EMA 60, l'ingresso ideale e' alla rottura dell'EMA 10 che porta al terzo tocco."
+    notes: "Meglio quando il terzo tocco non rompe subito l'EMA 60, ci ripensa un attimo, e poi rompe. Arrivare al terzo tocco gia' con una conformazione."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_49_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, trend]
+    source:
+      timecode: "10:59-12:08"
+    statement: "In downtrend rimanere liquidi e' un'ottima strategia; il buy-the-dip non esiste in downtrend, esiste solo quando il prezzo testa supporti in uptrend (EMA 10 daily/weekly)."
+    rationale: "Comprare i ribassi in downtrend aumenta esponenzialmente le perdite. Meglio studiare con size minima e aspettare la stabilizzazione del mercato."
+
+  - id: BULL_T_49_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "01:39-01:53"
+    statement: "In mercato bear accontentarsi del minimo e chiudere l'operazione il prima possibile; meno si sta dentro meglio e'."
+    rationale: "Il trend negativo rende i breakout meno affidabili; chiudere presto riduce il rischio di inversioni improvvise."
 
 summary:
-  total_machine_executable: 4
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 10
+  total_context_only: 2
+  core_message: "In mercato bear le tecniche piu' affidabili sono le tre cime con bad sulla terza cima, il viagra sotto EMA 10, i martelli con EMA 60/223 sotto, e lo shimano; la regola chiave e' accontentarsi e uscire il prima possibile, massimo tre candele positive di seguito."

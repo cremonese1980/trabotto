@@ -1,50 +1,152 @@
 video:
-  id: YT_BULL_t_021
+  id: YT_BULL_TECNICHE_021
   series: tecniche
-  title: "Ciao a tutti e adesso vi parlo della tecnica del Viagra"
+  title: "Tecnica del Viagra - supertrend senza respiro sopra EMA 10"
   video_index: 21
-  duration_minutes: 19
+  duration_minutes: 18
 
 entities:
-  - id: YT_BULL_t_021_01
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_21_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, ema10, trend, candle_pattern, breakout]
+    source:
+      timecode: "01:21-02:55"
+    conditions:
+      - "price_above_ema10 == true for consecutive_candles >= viagra_threshold"
+      - "no_candle_close_below_ema10 during viagra_period == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: [strong_trend]
+    rationale: "When price stays above EMA 10 for an unusually long period without ever closing below it, the asset is in a 'viagra' state of extreme trend dominance, and a trend reversal becomes more probable."
+    notes: "The viagra threshold is a proprietary count of candles that never break EMA 10. The rarer this event, the higher the probability of a trend change at breakout."
+
+  - id: BULL_T_21_02
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, ema10, breakout, reversal]
     source:
-      timecode: "04:52-04:57"
+      timecode: "03:02-05:23"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - "viagra_setup_bullish == true (price below EMA 10 for long period)"
+      - "candle_close_above_ema10 == true"
     action:
-      - EXIT_POSITION
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [strong_downtrend_reversal]
+    rationale: "After a prolonged downtrend where EMA 10 dominated without any close above it, the first candle close above EMA 10 signals a likely trend reversal."
+    notes: "For uptrend viagra (price above EMA 10 for long period), enter short on first candle close below EMA 10. The same logic applies in both directions."
+
+  - id: BULL_T_21_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [viagra, stop_loss, risk_management]
+    source:
+      timecode: "07:51-08:18"
+    conditions:
+      - "viagra_entry == true"
+      - "position_open == true"
+    action:
+      - MONITOR_LEVEL
+    stop_loss: "below the last swing low before breakout"
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "The absolute last stop must be at the minimum made before the breakout candle."
+    notes: "If there is a visible support wall in the order book nearby, use that level instead. The stop should be tight since the entry is close to the swing low."
 
-  - id: YT_BULL_t_021_02
+  - id: BULL_T_21_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [viagra, stop_loss, breakeven]
+    source:
+      timecode: "11:51-12:29"
+    conditions:
+      - "viagra_entry == true"
+      - "price_spiked_above_entry == true"
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Once the spike candle fires after entry, immediately move stop loss to the bottom of the entry candle to protect capital."
+    notes: "The target is the breakout of the major moving average (e.g. EMA 60). After the spike, trailing the stop at entry level is mandatory."
+
+  - id: BULL_T_21_05
     entity_type: INVALIDATION
     category: MACHINE_EXECUTABLE
     scope: TRADE_EXECUTION
     severity: HARD
-    tags: [stop_loss, invalidation, risk_management]
+    tags: [viagra, invalidation, candle_pattern]
     source:
-      timecode: "07:56-08:02"
+      timecode: "15:02-16:20"
     conditions:
-      - position_open == true
-      - price_hits_stop_loss == true
+      - "viagra_setup == true"
+      - "pre_breakout_candles_are_large_green == true"
+      - "no_small_rest_candle_before_breakout == true"
     action:
-      - EXIT_POSITION
+      - SKIP_TRADE
     applicability:
       timeframes: []
       market_regime: []
-    rationale: "La violazione dello stop invalida il setup e forza l'uscita."
-    notes: "Regola di protezione del capitale applicata senza discrezionalità."
+    rationale: "If large green panic candles appear before the EMA 10 breakout instead of small resting candles, the move has already happened and the expected post-breakout acceleration is unlikely."
+    notes: "The big candle should come AFTER the breakout as our profit. If it comes before, the probability of continued momentum drops significantly. Wait for small candles near resistance before breakout."
+
+  - id: BULL_T_21_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [viagra, reversal, ema60]
+    source:
+      timecode: "12:17-13:28"
+    conditions:
+      - "viagra_short_signal_triggered == true (uptrend viagra broken)"
+      - "price_fails_to_reach_ema60 == true"
+      - "price_returns_above_breakout_level == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [strong_uptrend]
+    rationale: "When a viagra short signal fires but price fails to drop to EMA 60 and quickly recovers above the breakout level, it signals extreme underlying strength and a long entry opportunity."
+    notes: "This is a counter-signal trade: if the viagra reversal fails, it confirms the original trend is exceptionally strong."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_21_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [viagra, psychology, patience]
+    source:
+      timecode: "16:39-17:03"
+    statement: "The ideal viagra trade is a clean setup with small resting candles near resistance, followed by a single massive spike candle that hits the target in seconds."
+    rationale: "Clean setups with compressed candles before breakout produce the most explosive moves and highest probability trades."
+
+  - id: BULL_T_21_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [viagra, beginner, risk_management]
+    source:
+      timecode: "18:04-18:12"
+    statement: "Before trading viagra with real money, practice by drawing lines at the signal level and observing the outcome without risking capital."
+    rationale: "The viagra setup is rare and powerful but requires practice to execute correctly under pressure."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 0
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "The viagra technique identifies assets where EMA 10 has dominated price for an unusually long period without any breach, then trades the reversal when EMA 10 finally breaks, entering on the first candle close beyond EMA 10 with a tight stop at the prior swing extreme."

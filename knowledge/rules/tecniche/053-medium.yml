@@ -1,59 +1,177 @@
 video:
-  id: YT_BULL_t_053
+  id: YT_BULL_TECNICHE_053
   series: tecniche
-  title: "ciao tradez siete su scappina bull qua parliamo della candela hammer"
+  title: "Candela Hammer - inversione sui supporti EMA"
   video_index: 53
-  duration_minutes: 14
+  duration_minutes: 13
 
 entities:
-  - id: YT_BULL_t_053_01
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_53_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, ema10, reversal, pullback]
+    source:
+      timecode: "02:30-03:44"
+    conditions:
+      - hammer_candle_detected == true
+      - candle_has_long_lower_shadow == true
+      - candle_close_near_high == true
+      - candle_on_ema10 == true OR candle_on_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m", "1h"]
+      market_regime: []
+    rationale: "La candela hammer (ombra lunga sotto, corpo piccolo sopra) su un'EMA importante indica inversione: chi ha venduto per panico e' stato riassorbito dai compratori."
+    notes: "Non importa se la candela e' rossa, verde o senza corpo. L'importante e' l'ombra sotto e la chiusura verso i massimi. Cercarla sempre su punti EMA significativi."
+
+  - id: BULL_T_53_02
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: PRE_FILTER
-    severity: SOFT
-    tags: [ema60, trend, regime_filter]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, breakout, trigger]
     source:
-      timecode: "05:55-06:00"
+      timecode: "05:09-05:50"
     conditions:
-      - price_below_ema60 == true
+      - hammer_candle_detected == true
+      - position_open == false
     action:
       - WAIT
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m", "1h"]
       market_regime: []
-    rationale: "EMA 60 viene usata come riferimento direzionale del contesto."
-    notes: "Se il vincolo non è rispettato il trade resta in osservazione."
+    rationale: "L'ingresso sulla candela hammer si fa sempre al superamento dei massimi della candela hammer, non alla chiusura della hammer stessa."
+    notes: "Si aspetta la candela successiva e si entra quando supera il massimo della hammer. Per correttezza bisogna aspettare la rottura dei massimi."
 
-  - id: YT_BULL_t_053_02
+  - id: BULL_T_53_03
     entity_type: RULE
     category: MACHINE_EXECUTABLE
-    scope: MONITORING
-    severity: SOFT
-    tags: [take_profit, risk_management, trigger]
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, candle_pattern, risk_management]
     source:
-      timecode: "07:49-07:54"
+      timecode: "08:24-09:32"
     conditions:
-      - position_open == true
-      - favorable_move_detected == true
+      - hammer_entry == true
+      - hammer_shadow_length <= acceptable_stop_distance
     action:
       - EXIT_POSITION
+    stop_loss: "minimo dello spike della hammer (se vicino) oppure minimo della candela precedente (se spike troppo grande)"
     applicability:
-      timeframes: []
+      timeframes: ["1m", "5m", "1h"]
       market_regime: []
-    rationale: "La gestione prevede monetizzazione quando il movimento favorevole è già esteso."
-    notes: "Uscita parziale/totale dipende dalla progressione del trade."
+    rationale: "Se lo spike della hammer e' piccolo, lo stop e' al minimo dello spike. Se lo spike e' troppo grande, lo stop va al minimo della candela precedente o si usa l'EMA come riferimento."
+    notes: "Quando lo spike e' enorme, chiusura candela sotto l'EMA 10 basta come stop. Se non c'e' modo di avere uno stop vicino, non si fa l'ingresso."
 
-  - id: YT_BULL_t_053_CTX_01
-    entity_type: WARNING
+  - id: BULL_T_53_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, bud, reversal]
+    source:
+      timecode: "03:44-04:04"
+    conditions:
+      - bud_short_breakout == true
+      - candle_close_inside_bud_level == true
+      - hammer_candle_at_reentry == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Quando un bad short fallisce (il prezzo rientra dentro il livello di breakout) e forma una hammer, e' un ottimo segnale di inversione rialzista."
+    notes: "I bad a ribasso che falliscono sono segnali di ingresso long; se il fallimento avviene con una hammer e' ancora piu' forte."
+
+  - id: BULL_T_53_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, ema60, take_profit]
+    source:
+      timecode: "06:54-07:04"
+    conditions:
+      - hammer_entry == true
+      - hammer_on_ema10 == true
+      - ema60_above_price == true
+    action:
+      - MONITOR_LEVEL
+    take_profit: "EMA superiore (tipicamente EMA 60)"
+    applicability:
+      timeframes: ["1m", "5m", "1h"]
+      market_regime: []
+    rationale: "Quando la hammer e' sull'EMA 10, il target e' l'EMA superiore (EMA 60). Se sull'EMA 60, il target e' ancora piu' alto."
+    notes: "Il ragionamento e': hammer su un supporto EMA, target fino alla prossima resistenza EMA."
+
+  - id: BULL_T_53_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, ema10, reversal]
+    source:
+      timecode: "10:21-11:23"
+    conditions:
+      - timeframe == "1h"
+      - hammer_signal_received == true
+      - minutes_to_candle_close <= 5
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1h"]
+      market_regime: []
+    rationale: "Il segnale hammer a timeframe 1 ora arriva 5 minuti prima della chiusura, dando tempo di verificare la conformazione a timeframe inferiore."
+    notes: "A timeframe 1 minuto si puo' trovare un bad maxi o altra conformazione per ingresso anticipato. Se chiude diversamente dalla hammer, il segnale non vale. Ingresso anticipato con conformazione e' un sogno."
+
+  - id: BULL_T_53_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, invalidation, risk_management]
+    source:
+      timecode: "10:08-10:14"
+    conditions:
+      - hammer_detected == true
+      - price_never_breaks_above_hammer_high == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1m", "5m", "1h"]
+      market_regime: []
+    rationale: "Se dopo la hammer il prezzo non supera mai i massimi della candela hammer, non si fa nulla."
+    notes: "Anche una candela hammer bellissima non basta se non c'e' la rottura dei massimi. Nessun ingresso senza conferma."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_53_CTX_01
+    entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [psychology, risk_management]
+    tags: [candle_pattern, ema]
     source:
-      timecode: "08:24-08:31"
-    statement: "Evitare ingressi forzati e mantenere disciplina operativa."
-    rationale: "Riduce overtrading e decisioni impulsive."
+      timecode: "00:06-01:42"
+    statement: "Bull considera hammer tutte le candele con ombra lunga e chiusura verso i massimi: hammer classico, hammer invertito, dragonfly doji, hanging man, croce. Non importa il colore."
+    rationale: "La classificazione tradizionale e' irrilevante; cio' che conta e' il movimento: ombra lunga sotto e chiusura vicino ai massimi indica riassorbimento delle vendite."
+
+  - id: BULL_T_53_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, ema, trend]
+    source:
+      timecode: "12:24-12:46"
+    statement: "Quando a timeframe 1 minuto le candele sono precise e le EMA non sporcano, il grafico e' pulito e le rotture esplodono; la pulizia del grafico e' un segnale di qualita'."
+    rationale: "Grafici puliti a timeframe basso indicano che il titolo ha un buon carattere e le conformazioni sono piu' affidabili."
 
 summary:
-  total_machine_executable: 2
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "La candela hammer (ombra lunga sotto, chiusura verso i massimi) su un supporto EMA indica inversione; ingresso al superamento dei massimi della hammer, stop al minimo dello spike o della candela precedente se lo spike e' troppo grande."

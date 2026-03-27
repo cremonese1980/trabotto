@@ -1,22 +1,123 @@
 video:
-  id: YT_BULL_t_027
+  id: YT_BULL_TECNICHE_027
   series: tecniche
-  title: "Ciao trader, siete su scappina bull"
+  title: "Tecnica BNB - sfruttare i movimenti ciclici degli ICO di Binance"
   video_index: 27
   duration_minutes: 14
 
 entities:
-  - id: YT_BULL_t_027_CTX_01
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_27_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [bnb, breakout, trend, daily]
+    source:
+      timecode: "06:06-06:37"
+    conditions:
+      - "asset == BNB"
+      - "btc_price_stable == true OR btc_price_slightly_up == true"
+      - "bnb_1m_candle_pct_change > 3"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, daily]
+      market_regime: [bullish]
+    rationale: "BNB making a 3%+ spike in a single 1-minute candle while BTC and ETH are flat is an anomalous move that signals an ICO announcement. This does not happen organically."
+    notes: "Keep BNB visible alongside BTC and ETH on a multi-chart monitor. When BNB spikes independently, immediately check the Binance Announcements Telegram channel for confirmation."
+
+  - id: BULL_T_27_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bnb, breakout, trend, scalping]
+    source:
+      timecode: "07:06-07:38"
+    conditions:
+      - "bnb_ico_spike_detected == true"
+      - "btc_and_eth_stable == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "On detecting the ICO-driven BNB spike with BTC/ETH stable, enter immediately at market. Speed is critical because the move starts instantly with the announcement."
+    notes: "Bull bought at market on the spike candle. The initial entry may be at the candle high but the move typically continues for 20-30% over subsequent days. Intraday entry captures the initial spike."
+
+  - id: BULL_T_27_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [bnb, btc_index, risk_management, exit]
+    source:
+      timecode: "08:12-09:12"
+    conditions:
+      - "bnb_long_position_open == true"
+      - "btc_trend_uncertain == true OR btc_showing_weakness == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "The BNB ICO move lasts several days (20-30% total) but holding depends on BTC stability. If BTC is uncertain, close the same day. If BTC is stable, hold through the ICO period."
+    notes: "Bull closed early for +283 USDT because he did not trust BTC. Holding just one day would have yielded an additional 5% (800 USDT on 16K position). The trade-off is BTC risk vs BNB ICO momentum."
+
+  - id: BULL_T_27_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bnb, daily, reversal, pullback]
+    source:
+      timecode: "09:32-10:01"
+    conditions:
+      - "bnb_prior_ico_ended == true"
+      - "bnb_price_dropped_post_ico == true"
+      - "bnb_sudden_large_move_detected == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "After each ICO ends, BNB drops. When BNB makes a sudden large move from the post-ICO low, it likely signals the next ICO announcement."
+    notes: "ICO cycle in bull market is approximately every 10-15 days. Monitor BNB for the post-drop recovery spike as entry signal for the next cycle. Historical moves are 20-33% per ICO cycle."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_27_CTX_01
     entity_type: GUIDELINE
     category: CONTEXT_ONLY
     scope: GLOBAL
-    tags: [beginner, psychology]
+    tags: [bnb, daily, risk_management]
     source:
-      timecode: "00:00-00:02"
-    statement: "Il video è prevalentemente educativo e richiede conferme operative prima dell'esecuzione."
-    rationale: "Manca una sequenza completa e deterministica di condizioni->azione."
+      timecode: "02:36-03:08"
+    statement: "BNB ICO-driven moves historically produce 20-33% gains from announcement to listing. The real money is in holding BNB during the ICO period, not in the ICO token allocation itself."
+    rationale: "ICO token allocation yields roughly 1% per 1000% token gain on invested capital, while BNB price appreciation yields 20-30% on the full position."
+
+  - id: BULL_T_27_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bnb, psychology, risk_management]
+    source:
+      timecode: "09:00-09:16"
+    statement: "The BNB technique works best during bull market periods when Binance launches ICOs frequently (every 10-15 days). In bear markets, ICOs are rare and the setup does not apply."
+    rationale: "The cyclical nature of ICO launches is tied to market sentiment; the technique is regime-dependent."
+
+  - id: BULL_T_27_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bnb, btc_index, risk_management]
+    source:
+      timecode: "08:14-08:25"
+    statement: "Even with a high-conviction BNB ICO trade, always respect BTC risk. If BTC can crash, BNB will follow regardless of the ICO catalyst."
+    rationale: "BTC regime overrides individual token catalysts."
 
 summary:
-  total_machine_executable: 0
-  total_context_only: 1
-  core_message: "Regole estratte dalla trascrizione con priorità a condizioni osservabili e azioni standard."
+  total_machine_executable: 4
+  total_context_only: 3
+  core_message: "The BNB technique exploits the cyclical 20-33% moves driven by Binance ICO announcements. Detect the move by watching for anomalous BNB spikes (3%+ in 1 minute) while BTC/ETH are flat, enter at market immediately, and hold based on BTC stability - same-day exit if BTC is risky, multi-day hold if BTC is stable."
