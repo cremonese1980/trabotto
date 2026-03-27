@@ -1,0 +1,390 @@
+[
+  {
+    "term": "Alert",
+    "definition": "quando si dice alla piattaforma di trading di inviarci una notifica o avviso se un’azione o criptovalute raggiunge una condizione prefissata ad esempio un livello di prezzo"
+  },
+  {
+    "term": "Altcoin",
+    "definition": "sono tutte le monete digitali che non sono Bitcoin; altcoin sta infatti per alternative coin"
+  },
+  {
+    "term": "Analisi Tecnica",
+    "definition": "disciplina che analizza l'andamento dei mercati finanziari attraverso lo studio dei grafici con l'utilizzo indicatori e metodi matematico-statistici applicati alle serie storiche"
+  },
+  {
+    "term": "ATH All Time High",
+    "definition": "prezzo che non è mai stato raggiunto da una criptovaluta o un'azione"
+  },
+  {
+    "term": "Bearish",
+    "definition": "che deriva da Bear (orso) si utilizza spesso affiancato a mercato o tendenza e significa una direzione ribassista"
+  },
+  {
+    "term": "Bellezza",
+    "definition": "si usa quando un grafico, a prima vista, trasmette una regolarità nei movimenti, rispettando le EMA ed avendo un equilibrio costante nelle candele"
+  },
+  {
+    "term": "Book",
+    "definition": "elenco degli ordini sia in acquisto, solitamente verdi, che in vendita solitamente in rosso, può riportare anche il numero dei venditori, le quantità, la somma totale del sottostante in vendita"
+  },
+  {
+    "term": "Book a nudo",
+    "definition": "quando si guarda il book senza nessun raggruppamento"
+  },
+  {
+    "term": "Bottom",
+    "definition": "rappresenta un punto di minimo segnato dai prezzi"
+  },
+  {
+    "term": "Breakout",
+    "definition": "rottura di un livello che porta ad un movimento veloce al rialzo del prezzo"
+  },
+  {
+    "term": "Bull",
+    "definition": "persona scesa sulla terra per far conoscere lo scalping ed aiutare il prossimo a diventare profittevole, detto anche Mr Bull"
+  },
+  {
+    "term": "Bull Bot",
+    "definition": "sistema automatizzato (Bot) creato dagli scienziati pazzi della Bull family che segnala su Discord le conformazioni sulle quali poter operare"
+  },
+  {
+    "term": "Bull Family",
+    "definition": "insieme di persone legate da un forte vincolo di appartenenza che si aiutano l’uno con l’altro per superare le difficoltà dello scalping. I più fortunati si incontrano di persona ai meeting, studiano e fanno penitenza per gli stop non messi ed i trade eseguiti senza seguire le conformazioni, gli altri si incontrano e dialogano su Discord e Telegram"
+  },
+  {
+    "term": "Bull run",
+    "definition": "mercato è in bolla cioè siamo di fronte ad un periodo o ad una giornata di forti rialzi"
+  },
+  {
+    "term": "Bullish",
+    "definition": "che deriva da Bull (toro) si utilizza spesso affiancato a mercato o tendenza e significa una direzione rialzista"
+  },
+  {
+    "term": "Cambio colore nel daily",
+    "definition": "Quando una candela daily passa ad esempio da rossa a verde e rappresenta un momento trigger"
+  },
+  {
+    "term": "Chi se ne frega",
+    "definition": "esclamazione per sottolineare l’accontentarsi nei gain senza rincorrere cifre esagerate"
+  },
+  {
+    "term": "Conformazioni",
+    "definition": "sono sequenze di candele che si individuano sui grafici e che sono state codificate per ottenere dei profitti"
+  },
+  {
+    "term": "Daily",
+    "definition": "il grafico giornaliero di una criptovaluta o un'azione"
+  },
+  {
+    "term": "Dow Jones",
+    "definition": "indice azionario che rappresenta l'andamento dei 30 principali titoli del mercato americano"
+  },
+  {
+    "term": "Dritto per dritto",
+    "definition": "si verifica quando ci sono una serie di candele molto lunghe verdi che portano ad un repentino rialzo del prezzo"
+  },
+  {
+    "term": "Dump",
+    "definition": "letteralmente sgonfia, crollo repentino di un asset finanziario spesso associato a pump “pump & dump” \"pompa e sgonfia\""
+  },
+  {
+    "term": "EMA",
+    "definition": "Media mobile esponenziale sono linee che si impostano sui grafici e servono a definire l’operatività dei trade. I valori da settare sono per le azioni 5-10-50-200, per le criptovalute 5-10-60-223"
+  },
+  {
+    "term": "Entrare",
+    "definition": "significa essere dentro l'operazione, il trade; avere fatto l'acquisto se long oppure aver venduto se short"
+  },
+  {
+    "term": "Falling knife",
+    "definition": "tecnica assurda da non fare assolutamente che consiste nel comprare a cavolo su vari livelli quando c’è una discesa sperando di poter mediare il prezzo e sperando in un rimbalzo che sicuramente non avverrà"
+  },
+  {
+    "term": "FIAT",
+    "definition": "moneta alla quale è stato attribuito un valore perché un governo la dichiara moneta a corso legale – non ha valore intrinseco. L’oro invece ha un valore intrinseco."
+  },
+  {
+    "term": "Fillare-Fillato",
+    "definition": "quanto viene immesso un ordine per una certa quantità esempio 1000 pezzi ma ne viene eseguito solo una parte esempio 750 – (non mi ha fillato l’ordine)"
+  },
+  {
+    "term": "Finta",
+    "definition": "quando in un trend il livello del prezzo e delle candele scendono e sembra che voglia accelerare, ma al contrario inizia una risalita dimostrando forza. La finta può essere sia al rialzo che al ribasso."
+  },
+  {
+    "term": "FOMO",
+    "definition": "acronimo di Fear Of Missing Out, paura di rimanere fuori. Quando c’è qualche criptovaluta o azione che sta salendo e si sente una spinta interiore a volere entrare sul trade per paura di perdere il treno e non riuscire a salire sul carro del vincitore."
+  },
+  {
+    "term": "FOREX",
+    "definition": "Foreign Exchange Market è il mercato valutario, l’investimento avviene sull’andamento di una coppia di valute e l’oscillazione di un tasso di cambio"
+  },
+  {
+    "term": "Fuffa",
+    "definition": "insegnamenti di poco valore che vengono spacciati per nozioni di grande valore"
+  },
+  {
+    "term": "Fuffaguru - Fuffaroli",
+    "definition": "Personaggi di dubbia preparazione nel trading che preferiscono guadagnare con la formazione insignificante e piena di paroloni incomprensibili invece che fare il mestiere di trader"
+  },
+  {
+    "term": "Gain",
+    "definition": "guadagno che si realizza con un trade"
+  },
+  {
+    "term": "Gamblig",
+    "definition": "gioco d'azzardo che non ha nulla a che fare con lo scalping"
+  },
+  {
+    "term": "Gap Up - Gap Down",
+    "definition": "avviene quando su uno strumento finanziario l’apertura di oggi è superiore al massimo del giorno prima “Gap up” o quando l’apertura di oggi è inferiore al minimo fatto registrare il giorno precedente “Gap down”."
+  },
+  {
+    "term": "Gianno Nano",
+    "definition": "scalper non troppo preparato oggetto di una precedente espulsione"
+  },
+  {
+    "term": "Hedge fund",
+    "definition": "fondi speculativi che gestiscono il denaro affidato loro dagli investitori-risparmiatori, definiti anche balene"
+  },
+  {
+    "term": "High-frequency trading",
+    "definition": "sigla HFT sono sistemi di trading algoritmici che delegano ad una macchina la scelta, l’esecuzione e la gestione di ordini di compravendita"
+  },
+  {
+    "term": "Holdare",
+    "definition": "acquistare una criptovaluta e mantenerla in portafoglio per lungo tempo qualsiasi cosa succeda, sia che scenda o che salga, perché si crede tantissimo nel progetto"
+  },
+  {
+    "term": "Iceberg",
+    "definition": "ordine di acquisto o vendita di grande pezzatura che viene inserito nel book in maniera automatica dal sistema attraverso quantitativi più bassi e definiti in anticipo affinché il prezzo non crolli o non si alzi"
+  },
+  {
+    "term": "ICO",
+    "definition": "significa Initial Coin Offering ed è un modo di raccogliere il capitale per nuovi progetti attraverso l’utilizzo della blockchain"
+  },
+  {
+    "term": "Intraday",
+    "definition": "operazioni di trading eseguite nel corso della stessa giornata"
+  },
+  {
+    "term": "IPO",
+    "definition": "significa Offerta Pubblica Iniziale ed è la prima vendita di azioni emesse da una società ed avviene tramite la quotazione"
+  },
+  {
+    "term": "K",
+    "definition": "significa mille, 1K uguale 1000, 10K uguale 10.000, 100K uguale 100.000"
+  },
+  {
+    "term": "La Cash",
+    "definition": "soldi guadagnati con i trade"
+  },
+  {
+    "term": "Livello del book",
+    "definition": "nel book ogni prezzo relativo all'azione o alla criptovalute ha vicino il numero di pezzi in vendita o in acquisto ed a volte anche la valorizzazione complessiva. In alcuni casi anche il numero dei venditori. Ogni soglia di prezzo rappresenta un livello"
+  },
+  {
+    "term": "Long",
+    "definition": "posizione long, andare long, significa acquistare un titolo per rivenderlo ad un prezzo superiore"
+  },
+  {
+    "term": "Loss",
+    "definition": "perdita che si realizza con una transazione"
+  },
+  {
+    "term": "Market Cap",
+    "definition": "significa capitalizzazione di mercato e rappresenta il valore totale in dollari o altra moneta, di tutte le azioni di una società oppure, nel caso delle criptovalute valute, il valore totale di tutte le monete che sono state sottoposte a mining. Prezzo della singola criptovalute moltiplicato il prezzo delle monete minate."
+  },
+  {
+    "term": "Martello",
+    "definition": "conformazione che prevede una serie di candeline piccole in sequenza che possono essere rotte al rialzo o al ribasso"
+  },
+  {
+    "term": "Mediare",
+    "definition": "Quando compro delle azioni o criptovalute, queste scendono; ne compro altre per abbassare il prezzo medio e sperare che possano risalire. Azione non consigliata perché può far aumentare le perdite. Es. compro 10 Sand a 5 usdt ne compro altre 10 a 4 usdt il prezzo medio diventa 4,5 usdt"
+  },
+  {
+    "term": "Muro",
+    "definition": "quando le quantità in vendita o in acquisto sono molto più rilevanti rispetto ai quantitativi medi degli altri livelli del book, i muri vengono mangiati se comprati o venduti"
+  },
+  {
+    "term": "Nasdaq",
+    "definition": "National Association of Securities Dealers Automated Quotation, in Italiano Associazione nazionale degli operatori in titoli quotazione automatizzata, è una borsa che permette di comprare e vendere le azioni di circa 3000 società appartenenti al mercato tecnologico. L’apertura è alle ore 09:30 (Eastern Standard Time), le 15:30 in Italia e le contrattazioni si protraggono fino alle 04:00 pm (EST) le ore 22:00 italiane."
+  },
+  {
+    "term": "No good",
+    "definition": "espressione che sottolinea qualcosa che non va bene o non si deve fare"
+  },
+  {
+    "term": "Ordine",
+    "definition": "operazione con la quale si acquistano o si vendono delle azioni o delle criptovalute, può essere: a mercato, limite, condizionato"
+  },
+  {
+    "term": "Osservare",
+    "definition": "azione importantissima che è gratis e che tutti gli scalper devono fare per capire l’andamento delle candele, dei grafici e per impostare l’operatività"
+  },
+  {
+    "term": "Over trading",
+    "definition": "quando si cercano di fare una moltitudine, un’esagerazione di trade perdendo il senso reale e cioè, pochi trade ma fatti bene"
+  },
+  {
+    "term": "PAC",
+    "definition": "Piano di accumulo significa comprare degli strumenti finanziari con una frequenza ad esempio mensile per avere una media del prezzo che può toccare sia i massimi che i minimi. Meglio farlo in bull market che in bear market."
+  },
+  {
+    "term": "Peg",
+    "definition": "è il prezzo di riferimento a cui una criptovaluta vuole rimanere ancorata. Generalmente, si applica alle stablecoin: la maggior parte di esse USDT, BUSD, sono ancorate al valore di un dollaro. Mantenere il peg significa mantenere il valore fisso a 1$ o che si distacca di alcuni centesimi."
+  },
+  {
+    "term": "Perfezione",
+    "definition": "si raggiunge quando in un grafico le candele rispettano le EMA in maniera precisa e magari sono anche di dimensioni simili"
+  },
+  {
+    "term": "Pesca notturna",
+    "definition": "operazione di acquisto che viene effettuata tramite un ordine pendente inserito alla sera affinché la notte, se si verificano le condizioni prestabilite, l'ordine verrà eseguito ed alla mattina si può procedere alla vendita"
+  },
+  {
+    "term": "Piazza Affari",
+    "definition": "è la Borsa Valori Italiana di Milano e rappresenta il mercato in cui si negoziano azioni, fondi comuni, derivati"
+  },
+  {
+    "term": "Prezzo Denaro-bid – Prezzo Lettera-ask",
+    "definition": "prezzo denaro o prezzo bid, indica il livello di prezzo al quale il compratore è disposto a comprare. Prezzo lettera o prezzo ask, indica il livello di prezzo al quale il venditore è disposto a vendere."
+  },
+  {
+    "term": "Profit",
+    "definition": "guadagno che si realizza con un trade"
+  },
+  {
+    "term": "Profittevole",
+    "definition": "ccalper, trader che crea profitto in maniera continuativa"
+  },
+  {
+    "term": "Proporzioni",
+    "definition": "si usa nelle candele perché a volte, sul grafico, la lunghezza delle candele può essere uguale o simile, ma la percentuale di rialzo o ribasso è completamente diversa"
+  },
+  {
+    "term": "Pullman di cinesi",
+    "definition": "espressione che si usa per indicare che il book è molto, molto carico di acquirenti, ci sono molti soldi in acquisto nel book verde"
+  },
+  {
+    "term": "Pump",
+    "definition": "letteralmente pompa, aumento repentino di un asset finanziario spesso associato a dump “pump & dump” \"pompa e sgonfia\" far aumentare senza senso, artificialmente il prezzo con l'obiettivo di vendere quanto acquistato in precedenza a buon mercato"
+  },
+  {
+    "term": "Resistenza",
+    "definition": "livello di prezzo dove ci sono tanti pezzi in vendita ed il prezzo non riesce a superare questo livello"
+  },
+  {
+    "term": "Riposare",
+    "definition": "modo di dire per indicare che il trend, in salita o in discesa, fa una pausa nel movimento"
+  },
+  {
+    "term": "Ritracciamento",
+    "definition": "i prezzi stanno andando nella direzione opposta al trend precedente"
+  },
+  {
+    "term": "Scalper",
+    "definition": "persone che studiamo per essere profittevoli in operazioni di trading di breve o brevissimo termine"
+  },
+  {
+    "term": "Scalping",
+    "definition": "operazioni di acquisto e vendita fatte in un lasso di tempo molto ridotto"
+  },
+  {
+    "term": "Schiaffo",
+    "definition": "quando un trade non va nella nostra direzione ed abbiamo una perdita consistente - anche schiaffone se la perdita è veramente alta"
+  },
+  {
+    "term": "Scienziati pazzi",
+    "definition": "sono delle persone della Bull Family: Stefano, Matt, Andrea ed altri che sono dotati di intelligenza artificiale ed hanno creato il Bull Bot, le stanze su Discord; tramutano i pensieri di Mr Bull in applicazioni e risolvono tutti i problemi informatici al motto di: “e che ce vò…”"
+  },
+  {
+    "term": "Shimano",
+    "definition": "conformazione che prevede la rottura di un canale generato fra le EMA"
+  },
+  {
+    "term": "Short",
+    "definition": "andare short, significa utilizzare le vendite allo scoperto nella speranza che il titolo scenda, venderlo in alto per riacquistarlo in basso e guadagnare sulla differenza di prezzo"
+  },
+  {
+    "term": "Sigla",
+    "definition": "introduzione con musica ed immagini che apre i video di Bull; anche usata per sottolineare qualche trade o esclamazioni positive"
+  },
+  {
+    "term": "Size",
+    "definition": "quantità di denaro che viene impiegata in un trade"
+  },
+  {
+    "term": "Spike",
+    "definition": "quando si verifica un rialzo molto ampio con una percentuale alta"
+  },
+  {
+    "term": "Spoofing",
+    "definition": "traduzione “ingannare”, tecnica di manipolazione del mercato, che ha come obiettivo il voler ingannare il mercato inserendo ordini di acquisto o vendita di un determinato titolo, ritirandoli un attimo prima di eseguirli per cercare di falsare l’andamento del prezzo"
+  },
+  {
+    "term": "Sputino - Sputo",
+    "definition": "quando si rompe un livello ma la cripto o l’azione invece che fare il movimento auspicato, fanno un piccolo movimento al rialzo e poi ritornano sotto il livello iniziale annullando ogni tipo di forza rialzista"
+  },
+  {
+    "term": "Stablecoin",
+    "definition": "stable e coin, criptovalute il cui valore è ancorato a quello di una valuta avente corso legale stabile. Identificate anche con l’appellativo FIAT"
+  },
+  {
+    "term": "Stop a zero",
+    "definition": "quando si imposta un valore di vendita pari al valore di acquisto, oppure al valore di acquisto al quale viene aggiunta la spesa per le commissioni in maniera che nel caso in cui entri la vendita non vi sia alcuna perdita"
+  },
+  {
+    "term": "Stop Loss",
+    "definition": "valore che si individua per fissare il livello della perdita"
+  },
+  {
+    "term": "Supporto",
+    "definition": "livello di prezzo dove c'è un gran numero di pezzi in acquisto ed il prezzo non riesce a scendere sotto questo livello"
+  },
+  {
+    "term": "Take profit",
+    "definition": "valore che si definisce per fissare il guadagno di un trade"
+  },
+  {
+    "term": "Terzo tocco",
+    "definition": "conformazione che si crea quando le candele toccano per tre volte un livello definito può esserci anche il quarto tocco"
+  },
+  {
+    "term": "Time frame",
+    "definition": "sigla tf - è l'arco temporale, l'intervallo di tempo che si considera per misurare l'andamento di un titolo; può essere ad esempio tf 1 minuto 2,5,10, 15,30, minuti, 1 ora, 4 ore, un giorno, una settimana, un mese. Alcune piattaforme hanno introdotto 1 secondo."
+  },
+  {
+    "term": "To the bathroom",
+    "definition": "modo di dire per descrivere una criptovaluta o un'azione destinata ad arrivare molto in basso"
+  },
+  {
+    "term": "To the moon",
+    "definition": "modo di dire per descrivere una criptovaluta o un'azione destinata ad arrivare molto in alto"
+  },
+  {
+    "term": "Trade",
+    "definition": "operazione di acquisto o di vendita"
+  },
+  {
+    "term": "Trend",
+    "definition": "quando il mercato ha un movimento duraturo al rialzo o al ribasso"
+  },
+  {
+    "term": "Trigger",
+    "definition": "livello trigger – punto trigger - livello di prezzo molto importante dove si scatenano una serie di ordini che repentinamente fanno salire o crollare il prezzo."
+  },
+  {
+    "term": "Uscire",
+    "definition": "significa chiudere l'operazione, il trade; avere venduto se long oppure aver comprato se short"
+  },
+  {
+    "term": "Volume",
+    "definition": "si intende la quantità di azioni o criptovalute che sono state scambiate in un periodo di tempo. Solitamente è un istogramma di colore rosso o verde. Sul grafico giornaliero sarà il quantitativo giornaliero, sul grafico a un minuto sarà il quantitativo scambiato in un minuto e così via"
+  },
+  {
+    "term": "Whale",
+    "definition": "balena, sono gli investitori che muovono enormi quantità di azioni o criptovalute. Spesso nei loro acquisti o vendite cercano di non farsi vedere per non influenzare il mercato"
+  }
+]

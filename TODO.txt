@@ -2,6 +2,8 @@ TODO
 
 *	Claude Code for rules review
 
+*	Download trade's images from discord
+
 
 *	github actions
 *	github quality check

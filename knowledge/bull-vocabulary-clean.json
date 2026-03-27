@@ -1,0 +1,681 @@
+[
+  {
+    "term": "Alert",
+    "normalizedKey": "alert",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Quando si dice alla piattaforma di trading di inviarci una notifica o avviso se un’azione o criptovaluta raggiunge una condizione prefissata, ad esempio un livello di prezzo."
+  },
+  {
+    "term": "Altcoin",
+    "normalizedKey": "altcoin",
+    "category": "instrument_type",
+    "aliases": [],
+    "definition": "Sono tutte le monete digitali che non sono Bitcoin; altcoin sta infatti per alternative coin."
+  },
+  {
+    "term": "Analisi Tecnica",
+    "normalizedKey": "analisi_tecnica",
+    "category": "market_concept",
+    "aliases": ["technical analysis"],
+    "definition": "Disciplina che analizza l'andamento dei mercati finanziari attraverso lo studio dei grafici con l'utilizzo di indicatori e metodi matematico-statistici applicati alle serie storiche."
+  },
+  {
+    "term": "ATH All Time High",
+    "normalizedKey": "all_time_high",
+    "category": "market_structure",
+    "aliases": ["ATH"],
+    "definition": "Prezzo che non è mai stato raggiunto da una criptovaluta o un'azione."
+  },
+  {
+    "term": "Bearish",
+    "normalizedKey": "bearish",
+    "category": "market_concept",
+    "aliases": ["ribassista"],
+    "definition": "Che deriva da Bear (orso); si utilizza spesso affiancato a mercato o tendenza e significa una direzione ribassista."
+  },
+  {
+    "term": "Bellezza",
+    "normalizedKey": "bellezza",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Si usa quando un grafico, a prima vista, trasmette una regolarità nei movimenti, rispettando le EMA ed avendo un equilibrio costante nelle candele."
+  },
+  {
+    "term": "Book",
+    "normalizedKey": "book",
+    "category": "orderflow",
+    "aliases": ["order book"],
+    "definition": "Elenco degli ordini sia in acquisto, solitamente verdi, che in vendita, solitamente in rosso. Può riportare anche il numero dei venditori, le quantità e la somma totale del sottostante in vendita."
+  },
+  {
+    "term": "Book a nudo",
+    "normalizedKey": "book_a_nudo",
+    "category": "orderflow",
+    "aliases": [],
+    "definition": "Quando si guarda il book senza nessun raggruppamento."
+  },
+  {
+    "term": "Bottom",
+    "normalizedKey": "bottom",
+    "category": "market_structure",
+    "aliases": ["minimo"],
+    "definition": "Rappresenta un punto di minimo segnato dai prezzi."
+  },
+  {
+    "term": "Breakout",
+    "normalizedKey": "breakout",
+    "category": "market_structure",
+    "aliases": ["rottura"],
+    "definition": "Rottura di un livello che porta ad un movimento veloce al rialzo del prezzo."
+  },
+  {
+    "term": "Bull",
+    "normalizedKey": "bull",
+    "category": "bull_slang",
+    "aliases": ["Mr Bull"],
+    "definition": "Persona scesa sulla terra per far conoscere lo scalping ed aiutare il prossimo a diventare profittevole."
+  },
+  {
+    "term": "Bull Bot",
+    "normalizedKey": "bull_bot",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Sistema automatizzato creato dagli scienziati pazzi della Bull Family che segnala su Discord le conformazioni sulle quali poter operare."
+  },
+  {
+    "term": "Bull Family",
+    "normalizedKey": "bull_family",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Insieme di persone legate da un forte vincolo di appartenenza che si aiutano l’uno con l’altro per superare le difficoltà dello scalping."
+  },
+  {
+    "term": "Bull run",
+    "normalizedKey": "bull_run",
+    "category": "market_event",
+    "aliases": [],
+    "definition": "Periodo o giornata di forti rialzi; mercato in forte espansione."
+  },
+  {
+    "term": "Bullish",
+    "normalizedKey": "bullish",
+    "category": "market_concept",
+    "aliases": ["rialzista"],
+    "definition": "Che deriva da Bull (toro); si utilizza spesso affiancato a mercato o tendenza e significa una direzione rialzista."
+  },
+  {
+    "term": "Cambio colore nel daily",
+    "normalizedKey": "cambio_colore_daily",
+    "category": "pattern",
+    "aliases": ["daily color change"],
+    "definition": "Quando una candela daily passa, ad esempio, da rossa a verde e rappresenta un momento trigger."
+  },
+  {
+    "term": "Chi se ne frega",
+    "normalizedKey": "chi_se_ne_frega",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Esclamazione per sottolineare l’accontentarsi nei gain senza rincorrere cifre esagerate."
+  },
+  {
+    "term": "Conformazioni",
+    "normalizedKey": "conformazioni",
+    "category": "pattern",
+    "aliases": ["setup"],
+    "definition": "Sono sequenze di candele che si individuano sui grafici e che sono state codificate per ottenere dei profitti."
+  },
+  {
+    "term": "Daily",
+    "normalizedKey": "daily",
+    "category": "timeframe",
+    "aliases": ["1d", "giornaliero"],
+    "definition": "Il grafico giornaliero di una criptovaluta o un'azione."
+  },
+  {
+    "term": "Dow Jones",
+    "normalizedKey": "dow_jones",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Indice azionario che rappresenta l'andamento dei 30 principali titoli del mercato americano."
+  },
+  {
+    "term": "Dritto per dritto",
+    "normalizedKey": "dritto_per_dritto",
+    "category": "pattern",
+    "aliases": [],
+    "definition": "Si verifica quando ci sono una serie di candele molto lunghe verdi che portano ad un repentino rialzo del prezzo."
+  },
+  {
+    "term": "Dump",
+    "normalizedKey": "dump",
+    "category": "market_event",
+    "aliases": [],
+    "definition": "Crollo repentino di un asset finanziario, spesso associato a pump nel classico schema pump & dump."
+  },
+  {
+    "term": "EMA",
+    "normalizedKey": "ema",
+    "category": "indicator",
+    "aliases": ["media mobile esponenziale", "exponential moving average"],
+    "definition": "Media mobile esponenziale. Sono linee che si impostano sui grafici e servono a definire l’operatività dei trade. I valori da settare sono per le azioni 5-10-50-200, per le criptovalute 5-10-60-223."
+  },
+  {
+    "term": "Entrare",
+    "normalizedKey": "entrare",
+    "category": "trading_action",
+    "aliases": ["entry"],
+    "definition": "Significa essere dentro l'operazione, il trade; avere fatto l'acquisto se long oppure aver venduto se short."
+  },
+  {
+    "term": "Falling knife",
+    "normalizedKey": "falling_knife",
+    "category": "risk_management",
+    "aliases": [],
+    "definition": "Tecnica sconsigliata che consiste nel comprare ripetutamente durante una discesa sperando di mediare il prezzo e ottenere un rimbalzo."
+  },
+  {
+    "term": "FIAT",
+    "normalizedKey": "fiat",
+    "category": "instrument_type",
+    "aliases": [],
+    "definition": "Moneta alla quale è stato attribuito un valore perché un governo la dichiara moneta a corso legale; non ha valore intrinseco."
+  },
+  {
+    "term": "Fillare-Fillato",
+    "normalizedKey": "fill",
+    "category": "trading_action",
+    "aliases": ["fill", "fillato"],
+    "definition": "Quando viene immesso un ordine per una certa quantità ma ne viene eseguita solo una parte."
+  },
+  {
+    "term": "Finta",
+    "normalizedKey": "finta",
+    "category": "pattern",
+    "aliases": ["fake move"],
+    "definition": "Quando in un trend il prezzo sembra voler accelerare in una direzione ma poi inverte, dimostrando forza nella direzione opposta. Può essere sia al rialzo che al ribasso."
+  },
+  {
+    "term": "FOMO",
+    "normalizedKey": "fomo",
+    "category": "market_concept",
+    "aliases": ["fear_of_missing_out"],
+    "definition": "Fear Of Missing Out, paura di rimanere fuori da un movimento e di perdere l’occasione di entrare."
+  },
+  {
+    "term": "FOREX",
+    "normalizedKey": "forex",
+    "category": "market_concept",
+    "aliases": ["foreign_exchange_market"],
+    "definition": "Mercato valutario in cui l’investimento avviene sull’andamento di una coppia di valute e sull’oscillazione di un tasso di cambio."
+  },
+  {
+    "term": "Fuffa",
+    "normalizedKey": "fuffa",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Insegnamenti di poco valore che vengono spacciati per nozioni di grande valore."
+  },
+  {
+    "term": "Fuffaguru - Fuffaroli",
+    "normalizedKey": "fuffaguru_fuffaroli",
+    "category": "bull_slang",
+    "aliases": ["fuffaguru", "fuffaroli"],
+    "definition": "Personaggi di dubbia preparazione nel trading che preferiscono guadagnare con la formazione insignificante invece che fare realmente il mestiere di trader."
+  },
+  {
+    "term": "Gain",
+    "normalizedKey": "gain",
+    "category": "market_concept",
+    "aliases": ["profitto"],
+    "definition": "Guadagno che si realizza con un trade."
+  },
+  {
+    "term": "Gambling",
+    "normalizedKey": "gambling",
+    "category": "risk_management",
+    "aliases": [],
+    "definition": "Gioco d'azzardo che non ha nulla a che fare con lo scalping."
+  },
+  {
+    "term": "Gap Up - Gap Down",
+    "normalizedKey": "gap_up_gap_down",
+    "category": "market_structure",
+    "aliases": ["gap up", "gap down"],
+    "definition": "Avviene quando l’apertura di oggi è superiore al massimo del giorno prima (gap up) o inferiore al minimo del giorno precedente (gap down)."
+  },
+  {
+    "term": "Gianno Nano",
+    "normalizedKey": "gianno_nano",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Scalper non troppo preparato, oggetto di una precedente espulsione."
+  },
+  {
+    "term": "Hedge fund",
+    "normalizedKey": "hedge_fund",
+    "category": "market_actor",
+    "aliases": [],
+    "definition": "Fondi speculativi che gestiscono il denaro affidato loro dagli investitori-risparmiatori."
+  },
+  {
+    "term": "High-frequency trading",
+    "normalizedKey": "high_frequency_trading",
+    "category": "market_concept",
+    "aliases": ["HFT"],
+    "definition": "Sistemi di trading algoritmici che delegano ad una macchina la scelta, l’esecuzione e la gestione di ordini di compravendita."
+  },
+  {
+    "term": "Holdare",
+    "normalizedKey": "holdare",
+    "category": "trading_action",
+    "aliases": ["hold", "hodl"],
+    "definition": "Acquistare una criptovaluta e mantenerla in portafoglio per lungo tempo, indipendentemente dai movimenti di prezzo."
+  },
+  {
+    "term": "Iceberg",
+    "normalizedKey": "iceberg",
+    "category": "orderflow",
+    "aliases": ["iceberg order"],
+    "definition": "Ordine di acquisto o vendita di grande pezzatura che viene inserito nel book in maniera automatica attraverso quantitativi più bassi."
+  },
+  {
+    "term": "ICO",
+    "normalizedKey": "ico",
+    "category": "instrument_type",
+    "aliases": ["initial_coin_offering"],
+    "definition": "Modo di raccogliere capitale per nuovi progetti attraverso l’utilizzo della blockchain."
+  },
+  {
+    "term": "Intraday",
+    "normalizedKey": "intraday",
+    "category": "timeframe",
+    "aliases": [],
+    "definition": "Operazioni di trading eseguite nel corso della stessa giornata."
+  },
+  {
+    "term": "IPO",
+    "normalizedKey": "ipo",
+    "category": "instrument_type",
+    "aliases": ["offerta_pubblica_iniziale", "initial_public_offering"],
+    "definition": "Prima vendita di azioni emesse da una società tramite quotazione."
+  },
+  {
+    "term": "K",
+    "normalizedKey": "k",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Abbreviazione numerica: 1K = 1000, 10K = 10.000, 100K = 100.000."
+  },
+  {
+    "term": "La Cash",
+    "normalizedKey": "la_cash",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Soldi guadagnati con i trade."
+  },
+  {
+    "term": "Livello del book",
+    "normalizedKey": "livello_del_book",
+    "category": "orderflow",
+    "aliases": [],
+    "definition": "Ogni soglia di prezzo nel book, con quantità associate in acquisto o in vendita."
+  },
+  {
+    "term": "Long",
+    "normalizedKey": "long",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Posizione rialzista: acquistare un titolo per rivenderlo ad un prezzo superiore."
+  },
+  {
+    "term": "Loss",
+    "normalizedKey": "loss",
+    "category": "market_concept",
+    "aliases": ["perdita"],
+    "definition": "Perdita che si realizza con una transazione."
+  },
+  {
+    "term": "Market Cap",
+    "normalizedKey": "market_cap",
+    "category": "market_concept",
+    "aliases": ["capitalizzazione di mercato"],
+    "definition": "Valore totale di mercato di una società o di una criptovaluta."
+  },
+  {
+    "term": "Martello",
+    "normalizedKey": "martello",
+    "category": "pattern",
+    "aliases": ["hammer"],
+    "definition": "Conformazione che prevede una serie di candeline piccole in sequenza che possono essere rotte al rialzo o al ribasso."
+  },
+  {
+    "term": "Mediare",
+    "normalizedKey": "mediare",
+    "category": "risk_management",
+    "aliases": ["average down", "average price"],
+    "definition": "Comprare ulteriormente un asset in perdita per abbassare il prezzo medio di carico. Azione sconsigliata perché può aumentare le perdite."
+  },
+  {
+    "term": "Muro",
+    "normalizedKey": "muro",
+    "category": "orderflow",
+    "aliases": ["wall"],
+    "definition": "Livello del book con quantità in acquisto o vendita molto più rilevanti rispetto alla media."
+  },
+  {
+    "term": "Nasdaq",
+    "normalizedKey": "nasdaq",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Borsa americana focalizzata soprattutto sul mercato tecnologico."
+  },
+  {
+    "term": "No good",
+    "normalizedKey": "no_good",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Espressione che sottolinea qualcosa che non va bene o non si deve fare."
+  },
+  {
+    "term": "Ordine",
+    "normalizedKey": "ordine",
+    "category": "trading_action",
+    "aliases": ["order"],
+    "definition": "Operazione con la quale si acquistano o si vendono azioni o criptovalute; può essere a mercato, limite o condizionato."
+  },
+  {
+    "term": "Osservare",
+    "normalizedKey": "osservare",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Azione importantissima che tutti gli scalper devono fare per capire l’andamento delle candele e impostare l’operatività."
+  },
+  {
+    "term": "Over trading",
+    "normalizedKey": "over_trading",
+    "category": "risk_management",
+    "aliases": ["overtrading"],
+    "definition": "Quando si cercano di fare troppi trade, perdendo il senso reale dell’operatività selettiva."
+  },
+  {
+    "term": "PAC",
+    "normalizedKey": "pac",
+    "category": "trading_action",
+    "aliases": ["piano_di_accumulo"],
+    "definition": "Comprare strumenti finanziari con una frequenza regolare, ad esempio mensile, per ottenere un prezzo medio nel tempo."
+  },
+  {
+    "term": "Peg",
+    "normalizedKey": "peg",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Prezzo di riferimento a cui una criptovaluta, tipicamente una stablecoin, vuole rimanere ancorata."
+  },
+  {
+    "term": "Perfezione",
+    "normalizedKey": "perfezione",
+    "category": "pattern",
+    "aliases": ["perfect setup"],
+    "definition": "Si raggiunge quando in un grafico le candele rispettano le EMA in maniera precisa e magari sono anche di dimensioni simili."
+  },
+  {
+    "term": "Pesca notturna",
+    "normalizedKey": "pesca_notturna",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Operazione di acquisto effettuata tramite ordine pendente inserito alla sera, affinché durante la notte l’ordine venga eseguito se si verificano le condizioni prestabilite."
+  },
+  {
+    "term": "Piazza Affari",
+    "normalizedKey": "piazza_affari",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Borsa Valori Italiana di Milano."
+  },
+  {
+    "term": "Prezzo Denaro-bid – Prezzo Lettera-ask",
+    "normalizedKey": "bid_ask",
+    "category": "orderflow",
+    "aliases": ["bid", "ask", "prezzo denaro", "prezzo lettera"],
+    "definition": "Il bid è il prezzo al quale il compratore è disposto a comprare; l’ask è il prezzo al quale il venditore è disposto a vendere."
+  },
+  {
+    "term": "Profit",
+    "normalizedKey": "profit",
+    "category": "market_concept",
+    "aliases": ["profitto"],
+    "definition": "Guadagno che si realizza con un trade."
+  },
+  {
+    "term": "Profittevole",
+    "normalizedKey": "profittevole",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Scalper o trader che crea profitto in maniera continuativa."
+  },
+  {
+    "term": "Proporzioni",
+    "normalizedKey": "proporzioni",
+    "category": "pattern",
+    "aliases": [],
+    "definition": "Concetto usato sulle candele: a volte la lunghezza può sembrare uguale o simile, ma la percentuale di rialzo o ribasso può essere molto diversa."
+  },
+  {
+    "term": "Pullman di cinesi",
+    "normalizedKey": "pullman_di_cinesi",
+    "category": "orderflow",
+    "aliases": [],
+    "definition": "Espressione usata per indicare che il book è molto carico di acquirenti, con molti soldi in acquisto nel book verde."
+  },
+  {
+    "term": "Pump",
+    "normalizedKey": "pump",
+    "category": "market_event",
+    "aliases": [],
+    "definition": "Aumento repentino di un asset finanziario, spesso associato a dump in schemi di pump & dump."
+  },
+  {
+    "term": "Resistenza",
+    "normalizedKey": "resistenza",
+    "category": "market_structure",
+    "aliases": ["resistance"],
+    "definition": "Livello di prezzo dove ci sono tanti pezzi in vendita ed il prezzo non riesce a superarlo facilmente."
+  },
+  {
+    "term": "Riposare",
+    "normalizedKey": "riposare",
+    "category": "pattern",
+    "aliases": ["pausa del trend"],
+    "definition": "Modo di dire per indicare che il trend, in salita o in discesa, fa una pausa nel movimento."
+  },
+  {
+    "term": "Ritracciamento",
+    "normalizedKey": "ritracciamento",
+    "category": "market_structure",
+    "aliases": ["pullback", "retracement"],
+    "definition": "Movimento dei prezzi nella direzione opposta al trend precedente."
+  },
+  {
+    "term": "Scalper",
+    "normalizedKey": "scalper",
+    "category": "market_actor",
+    "aliases": [],
+    "definition": "Trader focalizzato su operazioni di breve o brevissimo termine."
+  },
+  {
+    "term": "Scalping",
+    "normalizedKey": "scalping",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Operazioni di acquisto e vendita fatte in un lasso di tempo molto ridotto."
+  },
+  {
+    "term": "Schiaffo",
+    "normalizedKey": "schiaffo",
+    "category": "bull_slang",
+    "aliases": ["schiaffone"],
+    "definition": "Quando un trade non va nella direzione sperata e si subisce una perdita consistente."
+  },
+  {
+    "term": "Scienziati pazzi",
+    "normalizedKey": "scienziati_pazzi",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Persone della Bull Family che hanno creato strumenti, bot e supporti tecnici per la community."
+  },
+  {
+    "term": "Shimano",
+    "normalizedKey": "shimano",
+    "category": "pattern",
+    "aliases": [],
+    "definition": "Conformazione che prevede la rottura di un canale generato fra le EMA."
+  },
+  {
+    "term": "Short",
+    "normalizedKey": "short",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Vendita allo scoperto nella speranza che il titolo scenda, per riacquistarlo più in basso e guadagnare sulla differenza."
+  },
+  {
+    "term": "Sigla",
+    "normalizedKey": "sigla",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Introduzione con musica ed immagini che apre i video di Bull; usata anche per sottolineare trade o esclamazioni positive."
+  },
+  {
+    "term": "Size",
+    "normalizedKey": "size",
+    "category": "risk_management",
+    "aliases": ["position size"],
+    "definition": "Quantità di denaro che viene impiegata in un trade."
+  },
+  {
+    "term": "Spike",
+    "normalizedKey": "spike",
+    "category": "market_event",
+    "aliases": [],
+    "definition": "Rialzo molto ampio in poco tempo con una percentuale alta."
+  },
+  {
+    "term": "Spoofing",
+    "normalizedKey": "spoofing",
+    "category": "orderflow",
+    "aliases": [],
+    "definition": "Tecnica di manipolazione del mercato che consiste nell’inserire ordini di acquisto o vendita per poi ritirarli prima dell’esecuzione, influenzando artificialmente il prezzo."
+  },
+  {
+    "term": "Sputino - Sputo",
+    "normalizedKey": "sputino_sputo",
+    "category": "pattern",
+    "aliases": ["sputino", "sputo"],
+    "definition": "Quando si rompe un livello ma il prezzo fa solo un piccolo movimento e poi torna sotto, annullando la forza rialzista attesa."
+  },
+  {
+    "term": "Stablecoin",
+    "normalizedKey": "stablecoin",
+    "category": "instrument_type",
+    "aliases": [],
+    "definition": "Criptovalute il cui valore è ancorato a quello di una valuta stabile avente corso legale."
+  },
+  {
+    "term": "Stop a zero",
+    "normalizedKey": "stop_a_zero",
+    "category": "risk_management",
+    "aliases": ["break even", "breakeven"],
+    "definition": "Quando si imposta un valore di uscita pari al prezzo di acquisto, eventualmente includendo le commissioni, in modo da non subire perdita."
+  },
+  {
+    "term": "Stop Loss",
+    "normalizedKey": "stop_loss",
+    "category": "risk_management",
+    "aliases": ["SL"],
+    "definition": "Valore che si individua per fissare il livello massimo di perdita accettata."
+  },
+  {
+    "term": "Supporto",
+    "normalizedKey": "supporto",
+    "category": "market_structure",
+    "aliases": ["support"],
+    "definition": "Livello di prezzo dove c'è un gran numero di pezzi in acquisto ed il prezzo non riesce a scendere facilmente sotto quel livello."
+  },
+  {
+    "term": "Take profit",
+    "normalizedKey": "take_profit",
+    "category": "risk_management",
+    "aliases": ["TP"],
+    "definition": "Valore che si definisce per fissare il guadagno desiderato di un trade."
+  },
+  {
+    "term": "Terzo tocco",
+    "normalizedKey": "terzo_tocco",
+    "category": "pattern",
+    "aliases": [],
+    "definition": "Conformazione che si crea quando le candele toccano per tre volte un livello definito; può esserci anche il quarto tocco."
+  },
+  {
+    "term": "Time frame",
+    "normalizedKey": "timeframe",
+    "category": "timeframe",
+    "aliases": ["tf"],
+    "definition": "Arco temporale considerato per misurare l'andamento di un titolo; può essere ad esempio 1 minuto, 5 minuti, 1 ora, 1 giorno, 1 settimana o 1 mese."
+  },
+  {
+    "term": "To the bathroom",
+    "normalizedKey": "to_the_bathroom",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Modo di dire per descrivere una criptovaluta o un'azione destinata ad arrivare molto in basso."
+  },
+  {
+    "term": "To the moon",
+    "normalizedKey": "to_the_moon",
+    "category": "bull_slang",
+    "aliases": [],
+    "definition": "Modo di dire per descrivere una criptovaluta o un'azione destinata ad arrivare molto in alto."
+  },
+  {
+    "term": "Trade",
+    "normalizedKey": "trade",
+    "category": "trading_action",
+    "aliases": [],
+    "definition": "Operazione di acquisto o di vendita."
+  },
+  {
+    "term": "Trend",
+    "normalizedKey": "trend",
+    "category": "market_structure",
+    "aliases": [],
+    "definition": "Movimento duraturo del mercato al rialzo o al ribasso."
+  },
+  {
+    "term": "Trigger",
+    "normalizedKey": "trigger",
+    "category": "market_structure",
+    "aliases": [],
+    "definition": "Livello o punto di prezzo molto importante dove si scatenano una serie di ordini che fanno salire o crollare il prezzo rapidamente."
+  },
+  {
+    "term": "Uscire",
+    "normalizedKey": "uscire",
+    "category": "trading_action",
+    "aliases": ["exit"],
+    "definition": "Significa chiudere l'operazione, il trade; avere venduto se long oppure aver comprato se short."
+  },
+  {
+    "term": "Volume",
+    "normalizedKey": "volume",
+    "category": "market_concept",
+    "aliases": [],
+    "definition": "Quantità di azioni o criptovalute scambiate in un determinato periodo di tempo."
+  },
+  {
+    "term": "Whale",
+    "normalizedKey": "whale",
+    "category": "market_actor",
+    "aliases": ["balena"],
+    "definition": "Investitore che muove enormi quantità di azioni o criptovalute."
+  }
+]
