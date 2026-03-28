@@ -642,9 +642,10 @@ trabotto/
 │   ├── requirements.txt                 # telethon, confluent-kafka, etc.
 │   ├── src/
 │   │   ├── telegram_listener.py         # Telethon Client API → listen to BullBot channel
-│   │   ├── bullweb_poller.py            # BullWeb REST API + Cognito SRP auth (fallback)
 │   │   ├── signal_normalizer.py         # parse raw message → structured signal JSON
-│   │   └── kafka_producer.py            # publish to signals.incoming
+│   │   ├── kafka_producer.py            # publish to signals.incoming
+│   │   └── transcribe.py               # audio transcription utility
+│   │   # TODO: bullweb_poller.py — BullWeb REST API + Cognito SRP auth (fallback)
 │   ├── tests/
 │   └── Dockerfile
 │
