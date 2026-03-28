@@ -26,8 +26,8 @@
 - [ ] Consolidate and deduplicate rules
 
 ### 0.3 Evidence Screenshots
-- [ ] Download Bull trade screenshots from Discord
-- [ ] Naming convention: BULL_TRADE_NNN_PAIR_DIRECTION_TF.png
+- [x] Download Bull trade screenshots from Discord
+- [x] Naming convention: BULL_TRADE_NNN_PAIR_DIRECTION_TF.png
 - [ ] Link screenshots to extracted YAML rules
 
 ## Definition of Done

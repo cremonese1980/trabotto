@@ -12,10 +12,10 @@
 - [ ] Health check endpoint
 
 ### 2.2 Signal Normalizer
-- [ ] Catalog all message formats from accumulated raw messages
-- [ ] Parse: exchange, pair, timeframe, strategy, diff_24h, perfezione
+- [x] Catalog all message formats from accumulated raw messages
+- [x] Parse: exchange, pair, timeframe, strategy, diff_24h, perfezione
 - [ ] Handle edge cases (cambio colore = daily, abbreviations like "bud")
-- [ ] Unit tests for each known message format
+- [x] Unit tests for each known message format
 
 ### 2.3 Kafka Integration
 - [ ] Publish normalized signals to signals.incoming topic
