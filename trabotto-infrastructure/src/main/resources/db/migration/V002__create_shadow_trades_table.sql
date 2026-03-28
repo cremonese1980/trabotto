@@ -1,0 +1,20 @@
+CREATE TABLE shadow_trades (
+    id                  UUID PRIMARY KEY,
+    signal_id           VARCHAR NOT NULL,
+    pair                VARCHAR NOT NULL,
+    timeframe           VARCHAR NOT NULL,
+    strategy            VARCHAR NOT NULL,
+    rejection_reason    VARCHAR NOT NULL,
+    confidence          DECIMAL NOT NULL,
+    matched_rules       JSONB NOT NULL,
+    entry_price         DECIMAL NOT NULL,
+    theoretical_sl      DECIMAL NOT NULL,
+    theoretical_tp      DECIMAL NOT NULL,
+    btc_price_at_signal DECIMAL NOT NULL,
+    outcome             VARCHAR,
+    outcome_price       DECIMAL,
+    outcome_pnl_pct     DECIMAL,
+    time_to_outcome     INTERVAL,
+    created_at          TIMESTAMPTZ NOT NULL,
+    closed_at           TIMESTAMPTZ
+);
