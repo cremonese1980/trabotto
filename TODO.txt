@@ -7,11 +7,13 @@ TODO
 
 *	Claude Code for rules review
 
-
 *	github actions
 *	github quality check
 
 *	docker-compose.yml
+
+
+LOW priority
 
 *   Whisper large transcriptions playlist neofiti https://www.youtube.com/playlist?list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc4NY
 *   Whisper large transcriptions playlist tecniche di trading https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
