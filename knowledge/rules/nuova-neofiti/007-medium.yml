@@ -1,0 +1,152 @@
+video:
+  id: BULL_NN_07
+  series: nuova-neofiti
+  title: "Punti trigger e breakout"
+  video_index: 7
+  duration_minutes: 24
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_07_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, terzo_tocco]
+    source:
+      timecode: "00:05-02:14"
+    conditions:
+      - "touch_count(resistance_level) >= 3"
+      - "price_breaks_above(resistance_level) == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Un punto trigger è un livello di prezzo preciso che, quando superato, fa scattare un'esplosione. Il terzo tocco su un livello è la conformazione base del trigger."
+    notes: "Il trigger è dove convergono due forze: chi vuole entrare long e chi era short e deve chiudere in perdita. Entrambi comprano, creando l'esplosione."
+
+  - id: BULL_NN_07_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, terzo_tocco]
+    source:
+      timecode: "05:27-07:10"
+    conditions:
+      - "trigger_level == round_number"
+      - "touch_count(trigger_level) >= 3"
+      - "price_exceeds_trigger_level_by_tick == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il punto trigger è quasi sempre un numero intero (13, 14, 15); superato il livello di un tick deve esplodere perché il venditore grosso ha finito e due correnti comprano contemporaneamente."
+    notes: "Quando il prezzo supera di un tick il livello trigger devono accadere due cose: chi vuole andare long compra, e chi era short chiude (comprando). Due correnti nella stessa direzione."
+
+  - id: BULL_NN_07_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, invalidation, breakout]
+    source:
+      timecode: "13:07-14:24"
+    conditions:
+      - "price_exceeded_trigger_level == true"
+      - "candle_closes_below_trigger_level == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se il prezzo supera il livello trigger ma poi la candela chiude sotto quel livello, il trigger non ha funzionato: bisogna uscire immediatamente e potenzialmente invertire la posizione."
+    notes: "Un trigger fallito è un fortissimo segnale per l'operazione inversa: se non esplode al rialzo, i venditori sono ancora lì e il prezzo crollerà. Bull a volte fa l'inversione: chiude il long in perdita e apre uno short."
+
+  - id: BULL_NN_07_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, terzo_tocco]
+    source:
+      timecode: "17:11-17:53"
+    conditions:
+      - "touch_count(support_level) >= 3"
+      - "price_breaks_below(support_level) == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il trigger funziona anche per lo short: tre tocchi su un supporto e la rottura al ribasso genera l'esplosione verso il basso con due correnti (nuovi short + chiusura long)."
+    notes: "Esempio di trigger short: tre tocchi precisi su un livello di supporto, alla rottura 5% di accelerazione al ribasso."
+
+  - id: BULL_NN_07_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [trigger, book, breakout]
+    source:
+      timecode: "20:40-22:42"
+    conditions:
+      - "trigger_level_has_large_book_order == true"
+      - "large_order_quantity_decreasing == true"
+      - "remaining_quantity < entry_size"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se al livello trigger nel book c'è un ordine grosso, non si compra appena il prezzo lo tocca ma si aspetta che l'ordine stia per finire; se non c'è ordine grosso nel book, si entra leggermente prima del livello."
+    notes: "Metafora: non compri le scarpe appena arriva il camion, aspetti che siano quasi finite per verificare che non ne arrivi un altro. Se nel book non c'è livello grande, si entra leggermente sotto il trigger."
+
+  - id: BULL_NN_07_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [trigger, breakout, retest]
+    source:
+      timecode: "19:25-20:06"
+    conditions:
+      - "trigger_breakout_occurred == true"
+      - "price_retests_trigger_level == true"
+      - "candle_closes_above_trigger_level == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Dopo un breakout il retest del livello trigger è normale e non è un problema, purché la candela non chiuda dentro (sotto) il livello trigger."
+    notes: "Il retest conferma il trigger come supporto. Solo se chiude dentro il livello si deve uscire."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_07_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, breakout, beginner]
+    source:
+      timecode: "07:16-08:15"
+    statement: "Al livello trigger c'è un venditore grosso (milioni di dollari) che sta vendendo; quando finisce i suoi pezzi, il livello viene superato e si innesca l'esplosione con due correnti: nuovi long e chiusura degli short."
+    rationale: "Spiega la meccanica reale dietro il punto trigger: esaurimento del venditore grosso."
+
+  - id: BULL_NN_07_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, risk_management]
+    source:
+      timecode: "10:56-11:15"
+    statement: "Il punto trigger va dimostrato: il venditore che doveva vendere 50 milioni potrebbe averne altri 50 che non conosciamo. Non siamo amici suoi, lo vediamo solo dalla grafica."
+    rationale: "Avvertimento che il trigger non è certezza al 100%: il venditore potrebbe avere più pezzi di quelli visibili."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Il punto trigger è un livello di prezzo dove convergono due forze (nuovi ingressi + chiusura posizioni contrarie), creando un'esplosione. Se il trigger fallisce (chiusura candela sotto il livello), è un segnale forte per l'operazione inversa. L'ingresso va calibrato sul book."

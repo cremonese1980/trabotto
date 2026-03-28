@@ -1,0 +1,226 @@
+video:
+  id: BULL_LSSY_05
+  series: live-streaming-su-youtube
+  title: "Live 4000 iscritti: pulizia grafici, breakout ai massimi, book vs trend"
+  video_index: 5
+  duration_minutes: 72
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LSSY_05_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, ema5, trend, candle_pattern]
+    source:
+      timecode: "20:54-22:35"
+    conditions:
+      - "ema5_line_clean == true"
+      - "no_spikes_crossing_ema5 == true"
+      - "candles_stay_above_or_below_ema5 == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La pulizia della EMA 5 indica la potenza della direzione: se chi comanda il trend ha abbastanza soldi, le candele non sporcano sopra e sotto la 5. Pulizia della 5 = trend molto forte, grafico operabile."
+    notes: "Quando la EMA 5 inizia a sporcarsi (spike che la attraversano), significa che chi gestisce il trend sta perdendo forza e bisogna cambiare direzione. Esempio SKL: dalle 15-17 era un sale e scendi attorno alla 5 (non operabile), poi dopo le 17 trend pulito con EMA 5 che comanda."
+
+  - id: BULL_LSSY_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, all_time_high, scalping]
+    source:
+      timecode: "27:22-28:11"
+    conditions:
+      - "price_breaks_new_high == true"
+      - "spike_occurs_immediately == false"
+      - "no_panic_buying_detected == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il prezzo tocca nuovi massimi e NON fa subito lo spike, uscire immediatamente: deve entrare il panico degli acquirenti piu le chiusure degli short. Se non c'e quella spinta, non c'e abbastanza forza."
+    notes: "Non aspettare la EMA 10 come stop: per esperienza, deve fare subito lo spike. Sono molto rari i casi in cui non fa lo spike, torna indietro, e poi lo fa. Meglio perdere pochissimo o uscire a zero che sperare."
+
+  - id: BULL_LSSY_05_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, all_time_high, reversal]
+    source:
+      timecode: "28:11-29:14"
+    conditions:
+      - "price_broke_new_high == true"
+      - "spike_failed == true"
+      - "price_returned_below_breakout_level == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Se il prezzo rompe i massimi ma non fa lo spike e torna indietro, e una finta: si puo sfruttare per andare short perche il mercato comunque andra contro chi era long."
+    notes: "Questa e la tecnica della finta applicata ai massimi. Il breakout fallito ai massimi e uno dei segnali piu forti per l'inversione. Non tutti fanno short, ma almeno chiudere il long e obbligatorio."
+
+  - id: BULL_LSSY_05_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, scalping, stop_loss]
+    source:
+      timecode: "44:54-46:13"
+    conditions:
+      - "breakout_entry_executed == true"
+      - "spike_occurred == false"
+      - "price_stagnant_or_retreating == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando entri su un breakout e il prezzo non fa nessuno spike, esci immediatamente senza neanche pensarci: il fatto che non parta significa che qualcosa non ha funzionato."
+    notes: "Lo stop ideale di Bull su un breakout e 'subito': se non spike, esci. Non inserisce stop limit ma chiude manualmente. Solo DOPO che ha fatto uno spike inserisce lo stop a zero. Se fa un piccolo spike e torna indietro, esci comunque. L'unico momento per inserire stop a zero e dopo uno spike confermato."
+
+  - id: BULL_LSSY_05_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, stop_loss, scalping]
+    source:
+      timecode: "45:26-48:07"
+    conditions:
+      - "breakout_entry_executed == true"
+      - "spike_occurred == true"
+      - "evaluating_hold_vs_close == true"
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo che il breakout fa lo spike, inserire immediatamente lo stop a zero come protezione; da li si puo valutare se chiudere subito (prendendo il gain) o tenere verso un obiettivo successivo."
+    notes: "Se nel book c'e un livello grosso poco sotto lo zero, mettere lo stop sotto quel livello (non proprio a zero). Piuttosto andare a zero che non proteggere il gain. Bull preferisce chiudere manualmente nella prima candela piuttosto che aspettare."
+
+  - id: BULL_LSSY_05_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, trend, breakout]
+    source:
+      timecode: "50:01-56:08"
+    conditions:
+      - "trend_very_strong == true"
+      - "chart_clean == true"
+      - "book_large_levels_present == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il trend e molto forte e il grafico e pulito, i livelli grandi nel book non contano niente: chi ha fretta di chiudere posizioni (stop a cascata) spazza via anche livelli enormi come fossero burro."
+    notes: "Esempio: titolo da 0.55 a 1.00 in pochi secondi, spazzando tutti i livelli grossi nel book. Se il trend e debole, i livelli diventano invece resistenze importanti. La pulizia del grafico (EMA 5 pulita) e il miglior indicatore della forza del trend, piu del book."
+
+  - id: BULL_LSSY_05_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, breakout, scalping]
+    source:
+      timecode: "37:26-40:07"
+    conditions:
+      - "first_candle_after_spike == true"
+      - "second_candle_turns_red == true"
+      - "second_candle_recovers_to_hammer == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo un grande spike, la seconda candela e molto probabile che vada subito in rosso; se il corpo rimane piccolo (hammer) e viene riassorbita, il trend e forte e si puo tenere per la candela successiva."
+    notes: "Se la seconda candela resta rossa fino alla chiusura, uscire. Se torna in verde, lasciare correre. Se fa hammer (negativa ma riassorbita), e segnale di potenza: la candela dopo deve andare in verde, altrimenti chiudere."
+
+  - id: BULL_LSSY_05_08
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [cambio_candela, daily, trend, breakout]
+    source:
+      timecode: "12:07-17:02"
+    conditions:
+      - "daily_candle_change_approaching == true"
+      - "asset_in_top_daily_performers == true"
+      - "rush_before_candle_change == true"
+      - "candle_showing_fatigue_before_change == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Se un titolo tra i migliori della giornata mostra stanchezza prima del cambio candela daily (rush verso l'alto che si esaurisce), si puo entrare short anche leggermente prima del cambio perche e difficile che il rush prosegua nella candela dopo."
+    notes: "Strategia complementare al cambio candela long: se il titolo e gia salito molto, al cambio candela si aspetta uno short. I migliori per il long al cambio candela sono quelli che non hanno ancora fatto verde (cambio candela vergine). Per il short, quelli che hanno gia sparato in verde prima del cambio."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LSSY_05_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "23:00-24:09"
+    statement: "Quando prendi uno spike che ti fa uscire in stop, non cercare di recuperare subito: la voglia di recuperare porta a entrare in trade che non avresti fatto, a rovinare la giornata e la psicologia. Ogni operazione deve stare in piedi da sola, non essere fatta per recuperare."
+    rationale: "Il meccanismo del recupero e uno dei piu distruttivi nel trading: porta a trade non pianificati e a perdite crescenti."
+
+  - id: BULL_LSSY_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, beginner]
+    source:
+      timecode: "25:24-27:10"
+    statement: "Ci possono essere ore o intere mattinate senza opportunita: non vuol dire che non sei trader, semplicemente non c'e l'occasione. Poi magari alle 16 arrivano 5 conformazioni una dietro l'altra e sei a posto. Non avere fretta, non fare operazioni solo perche non hai fatto niente."
+    rationale: "La pazienza e l'attesa sono parte integrante dello scalping; le giornate vuote seguite da esplosioni di opportunita sono normali."
+
+  - id: BULL_LSSY_05_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, beginner]
+    source:
+      timecode: "26:13-27:01"
+    statement: "Meno trade possibili, meno stai dentro meglio e: Bull cerca di fare il minimo necessario. Quando hai confidenza anche con una sola conformazione e aumenti la size, bastano 1-2 eseguite al giorno per avere il resto del tempo libero."
+    rationale: "La filosofia dello scalping di Bull e opposta al trading ad alta frequenza: pochi trade selezionati con alta probabilita."
+
+  - id: BULL_LSSY_05_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "40:07-40:28"
+    statement: "Dopo un'operazione riuscita in 5 secondi, non sentirti un fenomeno e non buttarti subito in un'altra operazione: rilassati, mangia un frutto, e poi torna. L'euforia post-gain porta all'over-trading."
+    rationale: "Il successo rapido crea un falso senso di invincibilita che porta a operazioni non pianificate e perdite."
+
+  - id: BULL_LSSY_05_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, trend]
+    source:
+      timecode: "56:20-57:04"
+    statement: "Fidati piu del trend e della pulizia del grafico che dei livelli nel book: quando il trend e forte, i livelli nel book vanno via come burro. Usa il book per scegliere punti di ingresso e uscita precisi, ma la direzione la decide il trend."
+    rationale: "La gerarchia e: pulizia del trend > book. Il book e uno strumento tattico, non strategico."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 5
+  core_message: "La pulizia della EMA 5 indica la forza del trend: se pulita, il trend e forte e i livelli nel book non contano. Al breakout sui massimi, deve fare subito lo spike o si esce immediatamente; il breakout fallito ai massimi e un segnale forte per lo short. Lo stop sui breakout e 'subito': se non parte, esci e metti stop a zero solo dopo uno spike confermato."

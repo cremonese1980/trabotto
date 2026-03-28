@@ -1,0 +1,226 @@
+video:
+  id: BULL_LSSY_04
+  series: live-streaming-su-youtube
+  title: "Live Discord: breakout falsi, conferma multi-TF, inversioni sullo spike"
+  video_index: 4
+  duration_minutes: 112
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LSSY_04_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, invalidation, ema, trend]
+    source:
+      timecode: "21:32-23:06"
+    conditions:
+      - "price_approaching_resistance == true"
+      - "price_arrived_straight_without_lateralization == true"
+      - "ema60_never_violated_during_rise == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il prezzo arriva dritto dritto su una resistenza senza aver mai fatto una discesa sotto la EMA 60, senza lateralizzazione, il breakout e probabilmente una finta; mancano le conferme necessarie."
+    notes: "Esempio Bitcoin: la EMA 60 non era mai stata violata durante la salita, il prezzo e arrivato dritto sui massimi di giornata. Bull non e andato long ma ha aspettato il rientro per andare short. Piu conferme (lateralizzazione, discesa sotto 60, retest) = piu probabilita che non sia una finta."
+
+  - id: BULL_LSSY_04_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, trend, trigger]
+    source:
+      timecode: "23:59-25:29"
+    conditions:
+      - "breakout_on_timeframe(1m) == true"
+      - "breakout_confirmed_on_higher_timeframe(5m OR 30m) == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "Quando un breakout sul TF 1 minuto ha conferma anche su un TF superiore (5m o 30m), le possibilita di finta si riducono enormemente; il riferimento su piu TF rafforza l'ingresso."
+    notes: "Esempio: massimo sul TF 30m era una resistenza; quando il TF 1m spacca quella resistenza, il candelone sul 30m conferma la forza. Piu TF confermano = meno rischio di finta. Non elimina la sfiga (notizie contrarie) ma abbassa il livello di sfiga."
+
+  - id: BULL_LSSY_04_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, breakout, terzo_tocco]
+    source:
+      timecode: "48:03-49:33"
+    conditions:
+      - "price_testing_ema60_as_resistance(timeframe_30m) == true"
+      - "touch_count(ema60_level) >= 3"
+      - "lateralization_forming_below_ema60 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Quando il prezzo testa la EMA 60 come resistenza 3-4 volte su TF 30m formando una lateralizzazione, alla rottura si puo entrare con fiducia perche la base e molto solida; si puo tenere anche un'ora."
+    notes: "Osservazione confermata da un partecipante con poca esperienza: salita, test della 60 su 30m 2-3 volte, alla quarta rompe e fa un bello short. Se la 60 rimane piatta e il prezzo lateralizza sotto, la base e forte. Se la 60 inizia a scendere, e ottimo per short."
+
+  - id: BULL_LSSY_04_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, ema223, reversal, trend]
+    source:
+      timecode: "30:08-32:52"
+    conditions:
+      - "long_sustained_rise == true OR long_sustained_decline == true"
+      - "ema223_never_crossed_during_trend == true"
+      - "ema60_approaching_ema223 == true"
+      - "price_squeezed_between_ema60_and_ema223 == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "L'incrocio EMA 60-223 dopo un lungo rialzo (dove la 223 non e mai stata toccata) segnala un cambio di trend importante; la 60 schiaccia il prezzo sulla 223 e poi lo fa scendere sotto."
+    notes: "Funziona SOLO dopo un trend lungo e sostenuto. Non usare se il grafico ha gia incrociato di recente o se e laterale. Al contrario: dopo una lunga discesa, l'incrocio 60-223 dal basso segnala long. Bull chiude subito solo nell'orario di follia americano (12:00-15:30); altrimenti tiene il trade piu a lungo."
+
+  - id: BULL_LSSY_04_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, breakout, trigger]
+    source:
+      timecode: "29:12-30:33"
+    conditions:
+      - "book_large_level_identified == true"
+      - "touch_count(large_level) >= 3"
+      - "price_approaching_large_level == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Alla terza volta che il prezzo si avvicina a un livello grande nel book, bisogna anticipare l'ingresso perche dopo la rottura c'e il vuoto assoluto: lo spike e violentissimo e chi non e gia dentro non riesce a entrare."
+    notes: "Usare stop limit, non manuale: la macchina lo vede, tu no. Dopo la rottura del livello grande ci sono solo livelli piccoli (20-50 pezzi vs 1000-2000 del supporto), quindi il vuoto genera spike enormi. Chi ha i soldi grossi compra gia prima del livello (es. a 380 se il livello e a 400)."
+
+  - id: BULL_LSSY_04_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, invalidation]
+    source:
+      timecode: "32:05-32:55"
+    conditions:
+      - "book_large_level_identified == true"
+      - "price_approaching_large_level == true"
+      - "large_level_moves_when_price_approaches == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se un pezzo grande nel book si sposta quando il prezzo si avvicina, e una finta (spoofing): non lo devi neanche calcolare. Solo i livelli che restano fermi quando toccati sono reali."
+    notes: "Esempio live: un livello da 750 pezzi a 32.400 su Bitcoin e apparso e poi scomparso quando il prezzo si avvicinava, confermando che era finto. Un livello reale resta fermo e viene consumato gradualmente."
+
+  - id: BULL_LSSY_04_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [reversal, candle_pattern, scalping]
+    source:
+      timecode: "81:43-87:11"
+    conditions:
+      - "large_price_movement_pct > 5"
+      - "candle_showing_fatigue == true"
+      - "candle_size_decreasing == true OR shadow_appearing == true"
+      - "spike_space_sufficient_for_stop == true"
+    action:
+      - ENTER_SHORT
+    stop_loss: "punta dello spike (massimo della candela)"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo uno spike grande (>5%) su un titolo, quando la candela mostra stanchezza (ombra che appare, dimensione che diminuisce), si entra short con stop sulla punta dello spike; le chiusure degli stop che hanno causato lo spike sono finite."
+    notes: "Tecnica avanzata basata sul feeling della candela: le candele dello spike sono causate da chiusure stop a cascata; quando finiscono gli stop, lo spike si esaurisce e il prezzo torna giu. La prima candela e lunga, la seconda meno, alla terza o quando appare l'ombra si entra short. Sconsigliata ai principianti."
+
+  - id: BULL_LSSY_04_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [position_sizing, risk_management]
+    source:
+      timecode: "54:43-56:37"
+    conditions:
+      - "conformazione_tested_and_high_success_rate == true"
+      - "trader_has_confidence_in_setup == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Aumentare la size solo su conformazioni gia testate con alta percentuale di riuscita e mai per recuperare perdite; recuperare con size aumentata porta sempre a perdite doppie per la legge di Murphy."
+    notes: "Bull su Bitcoin passa da 1 a 1.8-1.9 BTC quando vede una conformazione perfetta gia testata. Salvare screenshot delle conformazioni migliori per ricordarle. Non aumentare mai la size per recuperare perdite: e il modo piu veloce per bruciare il conto."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LSSY_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, beginner]
+    source:
+      timecode: "41:02-44:56"
+    statement: "Due candele hammer consecutive in tre giorni sul daily di Bitcoin e una situazione rarissima e imprevedibile: dopo un hammer fallito (trappolone) seguito da un altro hammer, il giorno dopo puo fare qualsiasi cosa. In situazioni cosi rare, non tenere niente in portafoglio."
+    rationale: "Le configurazioni rare e senza precedenti rendono qualsiasi previsione impossibile; meglio restare fuori che scommettere."
+
+  - id: BULL_LSSY_04_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, regime_filter]
+    source:
+      timecode: "51:39-52:14"
+    statement: "Il trader deve sapersi adattare ad ogni situazione: adesso si trida in modo completamente diverso da due mesi fa quando si era in bolla. Anche la size, le misure e la grandezza degli acquisti vanno dimensionati in base al mercato attuale."
+    rationale: "La stessa strategia che funziona in bull market puo essere devastante in bear market; l'adattamento continuo e essenziale."
+
+  - id: BULL_LSSY_04_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "71:14-75:14"
+    statement: "Chiudere subito in perdita da due vantaggi: la perdita e piccola (non devi lavorare il triplo per recuperare) e psicologicamente non hai la botta in faccia che ti demoralizza come trader. Non chiudere a -50 porta a -250, poi -450, poi a mediare comprando di piu, e alla fine a bruciare il conto."
+    rationale: "Tutto il meccanismo distruttivo del trading nasce dal non accettare subito le perdite: questo e il passaggio fondamentale da imparare."
+
+  - id: BULL_LSSY_04_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "74:22-75:14"
+    statement: "Mediare al ribasso (comprare di piu quando si e in perdita) e la trappola piu pericolosa: la prima volta che lo fai funziona per sfiga (torna a zero e guadagni), la seconda volta ti bruci il conto. La prima volta che funziona e una sfiga perche ti insegna il comportamento sbagliato."
+    rationale: "Il mediare funziona una volta per caso, poi diventa un'abitudine che porta alla rovina totale del conto."
+
+  - id: BULL_LSSY_04_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [reversal, candle_pattern]
+    source:
+      timecode: "87:23-88:01"
+    statement: "Gli spike grandi sono causati dalla cascata di chiusure stop: ogni volta che il prezzo sale, scatta un altro stop che fa salire ancora, creando la trappola continua. Quando gli stop sono finiti, lo spike si esaurisce e il prezzo deve normalizzarsi."
+    rationale: "Capire la meccanica degli spike (chiusure stop a cascata) e fondamentale per la tecnica dell'inversione sullo spike."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 5
+  core_message: "Un breakout con il prezzo che arriva dritto dritto senza lateralizzazione e probabilmente una finta. La conferma multi-TF riduce enormemente i falsi breakout. L'incrocio EMA 60-223 segnala cambio di trend solo dopo un trend lungo. Sui livelli grandi nel book, anticipare l'ingresso alla terza volta. Lo spike si puo invertire leggendo la stanchezza della candela."

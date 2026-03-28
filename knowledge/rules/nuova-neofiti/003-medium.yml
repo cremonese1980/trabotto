@@ -1,0 +1,103 @@
+video:
+  id: BULL_NN_03
+  series: nuova-neofiti
+  title: "Lettura delle candele, EMA e pulizia del grafico"
+  video_index: 3
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_03_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, candle_pattern, trend]
+    source:
+      timecode: "08:07-09:41"
+    conditions:
+      - "for each candle in recent_candles: candle_crosses_above_and_below_ema(candle, ema60) == true"
+      - "price_alternates_above_below_ema60 == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il prezzo va continuamente sopra e sotto l'EMA senza rispettarla, il grafico è sporco e non operabile."
+    notes: "Bull usa la metafora del sentiero sporco nel bosco: pieno di sassi, pozzanghere e alberi rotti. Indica assenza di trend chiaro e manipolazione o bassa liquidità."
+
+  - id: BULL_NN_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema, trend, candle_pattern]
+    source:
+      timecode: "08:46-09:03"
+    conditions:
+      - "price_respects_ema(ema10, timeframe) == true"
+      - "candle_closes_consistently_above_or_below_ema(ema10) == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Un grafico pulito dove le candele rispettano l'EMA (chiusure consistenti sopra o sotto) indica un trend affidabile su cui cercare conformazioni."
+    notes: "La pulizia del grafico è il primo filtro: sentiero illuminato che porta al bancomat. Se l'EMA tiene, il trend è leggibile."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_03_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, candle_pattern]
+    source:
+      timecode: "00:00-02:01"
+    statement: "La lettura delle candele è un esercizio pratico fondamentale: identificare apertura, chiusura, wick e corpo per ogni candela, e capire il movimento di prezzo che rappresentano."
+    rationale: "La pratica di lettura candele è il primo passo per diventare scalper."
+
+  - id: BULL_NN_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, trend]
+    source:
+      timecode: "02:22-03:10"
+    statement: "Le EMA (medie mobili esponenziali) ci fanno capire quante persone stanno entrando nel mercato a comprare o vendere; permettono di vedere dentro il 'camion' per capire se è pieno di scarpe o sta bleffando."
+    rationale: "Le EMA sono lo strumento principale di Bull per leggere la forza del trend."
+
+  - id: BULL_NN_03_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, invalidation]
+    source:
+      timecode: "05:40-06:25"
+    statement: "Quando una candela supera un livello (breakout) ma poi chiude sotto quel livello, è una finta: il breakout non ha tenuto e ci si aspetta il movimento opposto."
+    rationale: "La chiusura della candela rispetto al livello è il discriminante tra breakout valido e finta."
+
+  - id: BULL_NN_03_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "06:41-06:53"
+    statement: "Le conformazioni si basano sulla matematica, non sulla fortuna o il gioco d'azzardo; per questo si seguono regole precise di ingresso e uscita."
+    rationale: "Rinforza il concetto che l'approccio è sistematico e non casuale."
+
+  - id: BULL_NN_03_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "11:44-15:05"
+    statement: "Il book mostra i livelli di prezzo con le quantità in acquisto e vendita; i livelli con quantità molto più grandi degli altri sono come camion pieni di scarpe che impediscono al prezzo di muoversi."
+    rationale: "Primo accenno al book come strumento operativo per individuare supporti e resistenze reali."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 5
+  core_message: "La pulizia del grafico è il primo filtro operativo: se le candele non rispettano le EMA il grafico è sporco e non si opera. Le finte (chiusura sotto il livello rotto) segnalano inversione."

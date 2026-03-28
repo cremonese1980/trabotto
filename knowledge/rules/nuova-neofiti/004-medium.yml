@@ -1,0 +1,139 @@
+video:
+  id: BULL_NN_04
+  series: nuova-neofiti
+  title: "Le EMA spiegate: 5, 10, 60, 223 e frattalità"
+  video_index: 4
+  duration_minutes: 22
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_04_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, ema5, ema10, ema60, ema223]
+    source:
+      timecode: "03:53-04:53"
+    conditions:
+      - "market == CRYPTO"
+      - "ema_periods == [5, 10, 60, 223]"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Per il mercato crypto si usano EMA 5, 10, 60, 223; per azioni e forex si usa 5, 10, 50, 200."
+    notes: "Bull è l'unico al mondo a usare EMA 60 e 223 per crypto. La 60 e 223 sono state adattate perché il mercato crypto è aperto H24 a differenza dei mercati azionari."
+
+  - id: BULL_NN_04_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema, ema10, trend]
+    source:
+      timecode: "09:42-10:53"
+    conditions:
+      - "price_holds_above_ema(ema10, timeframe) == true"
+      - "candle_close_above_ema10 == true consistently"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il prezzo tiene costantemente sopra l'EMA 10 indica che un compratore grosso (hedge fund) sta mantenendo il prezzo; la forza del trend è proporzionale alla precisione del rimbalzo sull'EMA."
+    notes: "Bull dice: finché il prezzo rimane sopra l'EMA 10, il 'grosso' ha ancora soldi per comprare. Non ci manda un'email per dirci che sta finendo i soldi, ma lo vediamo dall'EMA."
+
+  - id: BULL_NN_04_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, ema10, terzo_tocco, breakout]
+    source:
+      timecode: "11:05-11:47"
+    conditions:
+      - "touch_count(ema10_support_level) >= 3"
+      - "price_breaks_below_ema10 == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Alla terza volta che il prezzo tocca l'EMA 10 come supporto è altamente probabile che la rompa, segnalando che il compratore grosso ha finito i soldi e il prezzo scenderà verso l'EMA sotto (60)."
+    notes: "Esempio del martello sul tavolo: prima martellata non succede niente, seconda si indebolisce, terza alta probabilità di rottura. Non è il 100% ma è altamente probabile."
+
+  - id: BULL_NN_04_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema, ema10, ema60, trend]
+    source:
+      timecode: "12:10-12:40"
+    conditions:
+      - "price_breaks_below_ema10 == true"
+      - "ema10_was_holding_as_support == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando l'EMA 10 non regge più, il target naturale di discesa è l'EMA 60; Bull usa solo 4 EMA (5, 10, 60, 223) proprio perché ogni rottura porta al livello successivo."
+    notes: "Non vengono usate EMA 20, 25, 30 ecc. perché le 4 EMA di Bull indicano la forza maggiore: quando una non tiene, si va alla successiva."
+
+  - id: BULL_NN_04_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, ema223]
+    source:
+      timecode: "18:25-19:07"
+    conditions:
+      - "ema60_crosses_above_ema223 == true OR ema60_approaches_ema223 == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "L'incrocio tra EMA 60 e EMA 223 è una tecnica molto importante; il punto di incrocio viene visto come cemento armato, un livello molto difficile da superare per il prezzo."
+    notes: "L'EMA 223 è molto lenta perché servono 223 candele per crearla, quindi l'incrocio con la 60 è un evento significativo e poco frequente."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, beginner]
+    source:
+      timecode: "01:17-02:30"
+    statement: "L'EMA (Exponential Moving Average) è una media mobile che dà più peso ai prezzi più recenti rispetto alla SMA (Simple Moving Average), rendendola più reattiva ai cambiamenti di mercato."
+    rationale: "Bull usa solo EMA e mai SMA perché l'EMA rispecchia meglio il comportamento attuale del prezzo."
+
+  - id: BULL_NN_04_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, beginner]
+    source:
+      timecode: "05:55-06:26"
+    statement: "L'EMA 60 su timeframe 5 minuti calcola la media degli ultimi 300 minuti (5 ore); su timeframe 30 minuti calcola gli ultimi 1800 minuti (30 ore). Il significato cambia radicalmente con il timeframe."
+    rationale: "Spiega la frattalità: stessa EMA ha significato diverso su timeframe diversi."
+
+  - id: BULL_NN_04_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, ema223, trend]
+    source:
+      timecode: "09:25-09:42"
+    statement: "L'EMA 223 è la media mobile più lunga usata da Bull ed è l'ultima speranza: segnala la forza del trend di lungo periodo."
+    rationale: "La 223 è il livello più profondo; se anche questa non regge, il trend è completamente invertito."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "Le 4 EMA di Bull (5, 10, 60, 223 per crypto) definiscono la struttura del trend: ogni EMA rappresenta un livello di forza dei compratori. Quando un'EMA non tiene, il prezzo scende alla successiva. Il terzo tocco su un'EMA è altamente probabile che la rompa."

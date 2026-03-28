@@ -1,0 +1,160 @@
+video:
+  id: BULL_LTCA_03
+  series: live-trade-con-analisi
+  title: "4 live trade: lateralizzazione sopra EMA 60, convinzione e stop a zero"
+  video_index: 3
+  duration_minutes: 24
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LTCA_03_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema10, candle_pattern, trend]
+    source:
+      timecode: "01:29-03:18"
+    conditions:
+      - "price_below_ema60 == true"
+      - "ema10_holding_as_resistance == true"
+      - "zigzag_period_ended == true"
+      - "hammer_above_ema10 == true"
+      - "next_candle_red_below_base == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo un periodo di zigzag sporco, quando la EMA 10 inizia a tenere come resistenza e un hammer appare sopra la 10 seguito da una candela rossa sotto la base, il segnale short e confermato."
+    notes: "Esempio ETH: non e entrato subito al primo spike perche era troppo sporco sopra/sotto. Ha aspettato che la EMA 10 iniziasse a tenere stabilmente, poi hammer sopra la 10 + candela rossa sotto la base = conferma. Il primo segnale pulito dopo la sporcizia e quello giusto."
+
+  - id: BULL_LTCA_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [scalping, take_profit, trend]
+    source:
+      timecode: "05:21-06:56"
+    conditions:
+      - "conviction_level == HIGH"
+      - "target_visible_on_chart == true"
+      - "price_still_below_ema10 == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando c'e un obiettivo visibile sul grafico (es. nuovi minimi) e la convinzione e forte, si tiene oltre il primo spike; si chiude solo su chiusura candela sopra EMA 10 o al raggiungimento del target."
+    notes: "Normalmente Bull chiude alla prima candela/spike. Ma con convinzione forte e target visibile, tiene. Il limit order va messo al target per catturare spike improvvisi. Se il target viene sfiorato ma non preso, si puo spostare piu in basso per spike futuri."
+
+  - id: BULL_LTCA_03_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, breakout, scalping]
+    source:
+      timecode: "09:05-10:50"
+    conditions:
+      - "lateralization_above_ema60 == true"
+      - "ema60_acting_as_support == true"
+      - "hammer_in_lateralization == true"
+      - "candles_small_no_huge_spikes == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Una lateralizzazione sopra la EMA 60 con un hammer e candele piccole crea una base con stop vicinissimo: alla rottura, la 60 diventa resistenza e lo stop e subito sopra la lateralizzazione."
+    notes: "Bull ama qualsiasi cosa con stop vicino. La lateralizzazione sopra la EMA 60 e perfetta: la 60 da supporto diventa resistenza, l'hammer conferma l'esaurimento, le candele piccole tengono lo stop vicino. Anche se chiudi in perdita, hai fatto una cosa intelligente."
+
+  - id: BULL_LTCA_03_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [scalping, regime_filter, trend]
+    source:
+      timecode: "15:07-17:16"
+    conditions:
+      - "conviction_very_high == true"
+      - "american_session_open == true"
+      - "ema60_very_close == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Con convinzione molto forte e orario americano (che amplifica i movimenti), si puo anticipare l'ingresso anche senza la conferma classica, purche lo stop sia vicino (EMA 60 vicina)."
+    notes: "Trade BTC: normalmente non sarebbe mai entrato li (EMA 60 testata troppe volte senza segnale classico), ma la convinzione era altissima (target 25.000) + orario americano. Ha anticipato al primo segnaletto. Lo stop vicino alla 60 limitava il rischio."
+
+  - id: BULL_LTCA_03_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, breakout, trigger]
+    source:
+      timecode: "18:04-19:48"
+    conditions:
+      - "price_approaching_round_number_support == true"
+      - "book_level_appears_large == true"
+      - "panic_selling_active == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "I numeri pari grossi nel book (es. 29.000) hanno sempre livelli grandi, ma durante il panico vanno via come il burro in zero secondi; il target va messo PRIMA del numero pari (es. 29.400 invece di 29.000)."
+    notes: "Esempio: livello da 400 a 29.000 sembrava enorme, ma e stato spazzato in 0 secondi durante il panico. Bull ha chiuso al primo strappo del panico ($836 di guadagno). I livelli grandi nel book non contano durante il panico."
+
+  - id: BULL_LTCA_03_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, retest, trend]
+    source:
+      timecode: "20:23-23:15"
+    conditions:
+      - "long_decline_preceded == true"
+      - "ema60_tested_multiple_times == true"
+      - "second_retest_in_short_time == true"
+      - "price_breaks_above_ema60 == true"
+    action:
+      - ENTER_LONG
+    stop_loss: "prezzo di acquisto (zero)"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo una discesa lunghissima, quando il prezzo testa la EMA 60 molte volte e poi riesce a romperla la seconda volta in poco tempo, e un segnale long con stop a zero; questo setup fallisce pochissime volte."
+    notes: "Setup della 'seconda volta dopo trend lungo': normalmente non fallisce mai. In questo caso ha fallito (lo stop a zero ha preso, perdita solo delle fee). Il target era inserito come limit per catturare spike. Dopo il fallimento, Bull non ha ri-entrato (perdita del treno accettata)."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LTCA_03_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "13:38-14:50"
+    statement: "Dopo un'uscita, anche se appare subito un segnale ottimo per rientrare, Bull tendenzialmente non lo fa: dice 'ho perso il treno, sono stato un pirla' ma non rientra per evitare il revenge trading. Preferisce chiudere dove il gain lo soddisfa piuttosto che entrare in modalita incazzatura."
+    rationale: "Il rientro immediato dopo un'uscita e psicologicamente rischioso: sembra revenge trading anche quando il segnale e valido."
+
+  - id: BULL_LTCA_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, trend]
+    source:
+      timecode: "05:37-05:58"
+    statement: "Piu lunga e la strada che ti ha portato su (o giu), piu e probabile che la correzione sia lunga. Quando la corsa precedente e stata molto lunga, si puo tenere il trade per un target piu distante."
+    rationale: "La lunghezza del trend precedente influenza l'ampiezza attesa della correzione, permettendo target piu ambiziosi."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "La lateralizzazione sopra la EMA 60 e il setup ideale per lo short: la 60 diventa resistenza e lo stop e vicinissimo. La convinzione guida il tenere o chiudere: convinzione alta = target lontano, bassa = primi spike. Lo stop a zero protegge dai fallimenti rari. Mai ri-entrare subito dopo un'uscita."

@@ -1,0 +1,94 @@
+video:
+  id: BULL_NN_02
+  series: nuova-neofiti
+  title: "Perché il prezzo si muove - Candele e Order Book"
+  video_index: 2
+  duration_minutes: 21
+
+entities:
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_02_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, trend]
+    source:
+      timecode: "01:12-02:07"
+    statement: "Capire perché e come il prezzo si muove è fondamentale: se il prezzo non si muove non esiste opportunità di trading."
+    rationale: "Il movimento di prezzo è la base di ogni operazione di scalping."
+
+  - id: BULL_NN_02_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, trend, book]
+    source:
+      timecode: "02:12-04:17"
+    statement: "Il prezzo si muove solo per squilibrio tra compratori e venditori: se i compratori superano i venditori il prezzo sale, e viceversa. Non servono 'tori' e 'orsi', servono persone reali che comprano e vendono."
+    rationale: "Demistifica la terminologia classica e riporta il focus sulla domanda e offerta reale."
+
+  - id: BULL_NN_02_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, book]
+    source:
+      timecode: "06:45-07:41"
+    statement: "Basta un solo compratore in più per far salire il prezzo; lo squilibrio anche minimo tra domanda e offerta genera il movimento."
+    rationale: "Il concetto di squilibrio marginale è alla base della lettura del book."
+
+  - id: BULL_NN_02_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, book]
+    source:
+      timecode: "10:14-12:07"
+    statement: "L'order book è dove avvengono realmente gli scambi, come la cassa del negozio: mostra il prezzo reale. Lo spread è la differenza tra il prezzo del miglior compratore (bid) e del miglior venditore (ask)."
+    rationale: "Introduce il concetto di order book e spread come elementi operativi fondamentali."
+
+  - id: BULL_NN_02_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, book, scalping]
+    source:
+      timecode: "12:07-12:25"
+    statement: "Per lo scalping è importante che lo spread sia molto piccolo, perché lo spread incide negativamente sul guadagno di ogni operazione."
+    rationale: "Spread basso è prerequisito per operatività scalping profittevole."
+
+  - id: BULL_NN_02_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, candle_pattern]
+    source:
+      timecode: "15:49-19:00"
+    statement: "Una candela è la rappresentazione grafica del movimento di prezzo in un arco di tempo scelto: ha corpo (parte grossa), wick (parte sottile), apertura e chiusura. Una candela rossa indica chiusura inferiore all'apertura (ribasso), verde il contrario."
+    rationale: "La lettura delle candele è il primo strumento di analisi tecnica per un neofita."
+
+  - id: BULL_NN_02_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "02:22-05:07"
+    statement: "Il trading non è gioco d'azzardo: a differenza del poker dove i soldi sono fissi, nei mercati chiunque è libero di entrare e uscire in qualsiasi momento, quindi non è un gioco a somma zero."
+    rationale: "Smonta l'equivoco che il trading sia equiparabile al gioco d'azzardo."
+
+  - id: BULL_NN_02_CTX_08
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "14:02-14:26"
+    statement: "Se non hai passione per la lettura del grafico e del book non riuscirai mai a fare scalping; deve essere una passione, non solo desiderio di fare soldi."
+    rationale: "La motivazione intrinseca è prerequisito psicologico per lo scalper."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 8
+  core_message: "Il prezzo si muove per squilibrio tra compratori e venditori. L'order book mostra la realtà degli scambi, lo spread deve essere basso per lo scalping, e le candele rappresentano graficamente il movimento di prezzo in un timeframe scelto."

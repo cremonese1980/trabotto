@@ -1,0 +1,185 @@
+video:
+  id: BULL_NN_09
+  series: nuova-neofiti
+  title: "Il book di negoziazione: leggere domanda e offerta"
+  video_index: 9
+  duration_minutes: 31
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_09_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, trend]
+    source:
+      timecode: "15:54-16:50"
+    conditions:
+      - "book_level_quantity(ask_level) >> average_level_quantity"
+      - "book_large_sell_wall_above_price == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando nel book c'è un livello di vendita molto più grande degli altri (es. 393.000 vs 15.000 sui livelli normali), il prezzo non può salire oltre quel livello finché non viene consumato."
+    notes: "È il 'camion gigante' di scarpe davanti al negozio. Prima di comprare long, quel livello deve essere quasi esaurito. Il prezzo deve scendere da 393k a livelli più bassi man mano che vengono consumati dai compratori."
+
+  - id: BULL_NN_09_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, trigger, terzo_tocco]
+    source:
+      timecode: "26:40-28:13"
+    conditions:
+      - "book_large_level_above_price == true"
+      - "touch_count(large_level_price) >= 3"
+      - "large_level_quantity_declining == true"
+      - "remaining_quantity < initial_quantity * 0.15"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Ogni volta che il prezzo tocca il livello grande nel book, la quantità scende (da 393k a 300k a 250k ecc.). Quando al quinto tocco rimangono solo 50k, si entra: l'esplosione è imminente."
+    notes: "Questo è il meccanismo reale del terzo tocco: il livello grande nel book viene consumato ad ogni tocco. Quando è quasi finito, l'esplosione avviene perché dopo quel camion gigante non c'è più niente."
+
+  - id: BULL_NN_09_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, trend]
+    source:
+      timecode: "22:13-24:09"
+    conditions:
+      - "position_is_short == true"
+      - "book_large_buy_level_below_price == true"
+      - "large_buy_level_quantity > remaining_sell_pressure"
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se si è short e sotto c'è un livello di acquisto molto grande nel book (es. 38.000 vs media 10.000), non si fa un secondo ingresso short: si aspetta che quel supporto venga consumato."
+    notes: "Esempio: sono già short ma c'è un supporto da 38.000. Non entro con altri 10.000 finché quel livello non scende a 15.000. Solo quando i cinesi finiscono i soldi posso aspettarmi che il tavolo si rompa."
+
+  - id: BULL_NN_09_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, trend]
+    source:
+      timecode: "17:54-19:50"
+    conditions:
+      - "book_large_sell_level_above_price == true"
+      - "price_approaching_large_level == true"
+      - "large_level_quantity_not_decreasing == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se c'è un livello grande di vendita nel book che fa da resistenza e il prezzo non riesce a superarlo, è un segnale per entrare short perché il prezzo è destinato a scendere."
+    notes: "Esempio reale: livello grande di vendita a 0.1813, il prezzo non supera, Bull entra short con target all'EMA sotto. Il livello grande conferma che i venditori hanno ancora molta forza."
+
+  - id: BULL_NN_09_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, invalidation]
+    source:
+      timecode: "28:27-30:07"
+    conditions:
+      - "book_large_level_identified == true"
+      - "price_approaches_large_level == true"
+      - "large_level_moves_away_from_price == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se un livello grande nel book si sposta quando il prezzo si avvicina, è spoofing (finta): le scatole sono vuote, non ci sono le scarpe. Quel livello va ignorato come se non esistesse."
+    notes: "Bull lo spiega come camion con scatole vuote: sembrano scarpe ma non lo sono. Si verifica guardando se il prezzo cambia quando ci si avvicina. Se il livello resta fermo quando toccato, è reale; se si muove, è finto."
+
+  - id: BULL_NN_09_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, trend]
+    source:
+      timecode: "24:53-25:44"
+    conditions:
+      - "book_large_buy_level_below_price == true"
+      - "price_touches_large_buy_level_first_time == true"
+      - "large_buy_level_holds == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il prezzo scende per la prima volta verso un livello grande di acquisto nel book e quel livello tiene (i soldi sono reali), è un segnale di rimbalzo long; il supporto è verificato."
+    notes: "La prima martellata verifica se il supporto è reale. Se i compratori tirano fuori i soldi veri, il rimbalzo è atteso. Alle martellate successive il livello si consuma progressivamente."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_09_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "02:26-03:25"
+    statement: "Il book (order book) è la tabella che mostra tutti gli ordini di acquisto e vendita presenti sul mercato: è come guardare dalla finestra del negozio per vedere quanti camion di scarpe arrivano e quanti pullman di cinesi con cash."
+    rationale: "Definizione fondamentale del book come strumento di trasparenza sul mercato."
+
+  - id: BULL_NN_09_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "03:25-04:22"
+    statement: "Il book è diviso in bid (compratori, verde) e ask (venditori, rosso). Ogni livello mostra il prezzo e la quantità che qualcuno è disposto a comprare o vendere."
+    rationale: "Struttura base del book che il neofita deve imparare a riconoscere."
+
+  - id: BULL_NN_09_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "08:06-09:34"
+    statement: "Un market order (ordine a mercato) compra o vende immediatamente al prezzo disponibile, consumando i livelli del book dal più vicino al più lontano; non appare nel book perché viene eseguito istantaneamente."
+    rationale: "Distinguere market order da limit order è cruciale per capire come si muove il prezzo nel book."
+
+  - id: BULL_NN_09_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "12:42-15:18"
+    statement: "Se hai fretta di comprare e nel book il primo livello ha solo 1.500 dollari ma tu ne vuoi 10.000, consumerai più livelli facendo salire il prezzo. Se non hai fretta, metti un limit order più in basso e aspetti che il prezzo scenda."
+    rationale: "Spiega la meccanica di come gli ordini a mercato muovono il prezzo attraverso i livelli del book."
+
+  - id: BULL_NN_09_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "05:01-06:11"
+    statement: "Lo spread è la differenza tra il miglior prezzo di acquisto e il miglior prezzo di vendita. Più compratori e venditori ci sono, più lo spread è basso; meno ce ne sono, più è alto."
+    rationale: "Lo spread influisce direttamente sulla profittabilità dello scalping."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 5
+  core_message: "Il book mostra la realtà di domanda e offerta: livelli grandi fungono da supporto/resistenza. Il terzo tocco nel book corrisponde al consumo progressivo di un livello grande. Lo spoofing (livelli che si spostano) va riconosciuto e ignorato. Il book conferma o invalida le conformazioni grafiche."

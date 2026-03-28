@@ -1,0 +1,94 @@
+video:
+  id: BULL_NN_01
+  series: nuova-neofiti
+  title: "Cos'è il trading e lo scalping - Introduzione"
+  video_index: 1
+  duration_minutes: 21
+
+entities:
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_01_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "00:00-01:06"
+    statement: "La playlist per neofiti parte da zero, con l'aiuto dell'intelligenza artificiale e di una persona che non sa nulla di trading."
+    rationale: "Stabilisce il livello base del percorso formativo."
+
+  - id: BULL_NN_01_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "01:30-02:33"
+    statement: "Un trader serio deve mostrare gli eseguiti (scontrini) delle proprie operazioni; chi non lo fa è un fuffaguru."
+    rationale: "La trasparenza degli eseguiti è il fondamento di credibilità nella Bull Family."
+
+  - id: BULL_NN_01_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "02:50-03:50"
+    statement: "Il trading si basa su protocolli rigidi e conformazioni (tecniche), non su intuizione o casualità; solo con regole precise si può replicare il risultato."
+    rationale: "Definisce l'approccio sistematico e replicabile che distingue il trading professionale dal gioco d'azzardo."
+
+  - id: BULL_NN_01_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology]
+    source:
+      timecode: "04:27-05:26"
+    statement: "Il trading è molto difficile ma non impossibile; richiede un percorso di studio paragonabile a una laurea."
+    rationale: "Avvertimento fondamentale per i neofiti: non aspettarsi guadagni immediati."
+
+  - id: BULL_NN_01_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "06:05-07:13"
+    statement: "Il trading è l'arte di comprare qualcosa ad un prezzo e rivenderlo ad un prezzo più alto in un arco di tempo relativamente breve."
+    rationale: "Definizione base del trading come compravendita con profitto."
+
+  - id: BULL_NN_01_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "10:08-12:17"
+    statement: "Lo scalping è una sottocategoria del trading portata all'estremo: operazioni di brevissima durata (secondi o minuti) per evitare l'esposizione a fattori esterni come geopolitica e eventi notturni."
+    rationale: "Definisce lo scalping come strategia per minimizzare il rischio temporale."
+
+  - id: BULL_NN_01_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "13:58-14:24"
+    statement: "Nello scalping il guadagno per singola operazione può sembrare piccolo (20-50 euro) ma ripetuto 10 o 100 volte al giorno diventa significativo."
+    rationale: "Il vantaggio competitivo dello scalping è nella ripetizione, non nel singolo trade."
+
+  - id: BULL_NN_01_CTX_08
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, psychology, risk_management]
+    source:
+      timecode: "19:58-20:16"
+    statement: "Se pensate di fare soldi immediatamente non è il percorso giusto; è un lavoro che richiede tempo e studio."
+    rationale: "Avvertimento contro le aspettative irrealistiche di guadagno rapido."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 8
+  core_message: "Video introduttivo che definisce trading e scalping come professioni basate su regole matematiche e conformazioni, non su fortuna o intuizione. Lo scalping minimizza il rischio temporale operando in tempi brevissimi."
