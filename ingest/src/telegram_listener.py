@@ -30,6 +30,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from telethon import TelegramClient, events
+from kafka_producer import publish_signal
 from signal_normalizer import normalize
 
 # Load config from .env
@@ -149,6 +150,7 @@ async def main():
 
         # Normalize the signal
         signal = normalize(text, url)
+        publish_signal(signal)
 
         # Log raw
         log_message_to_file(event.message)
