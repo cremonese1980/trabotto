@@ -1,5 +1,7 @@
 TODO
 
+*	next step to collect all rules?
+
 *	telegram-raw duplicated in ingest
 * 	.venv dentro ingest??
 

@@ -1,6 +1,9 @@
 
 knowledge/evidence/img
 
+ingest/.venv
+ingest/env.example
+
 TODO.txt
 notes.txt
 
