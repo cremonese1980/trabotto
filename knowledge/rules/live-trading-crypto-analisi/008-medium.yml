@@ -1,0 +1,150 @@
+video:
+  id: BULL_LTCRA_08
+  series: live-trading-crypto-analisi
+  title: "SYS trade: Bullbot segnale bomba sui massimi di ieri e all-time highs"
+  video_index: 8
+  duration_minutes: 8.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_08_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [all_time_high, trigger, breakout]
+    source:
+      timecode: "00:30-02:00"
+    conditions:
+      - bullbot_segnale_bomba == true
+      - price_approaching_yesterday_highs == true
+      - yesterday_highs == all_time_highs
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "Bullbot signals approaching yesterday's highs. When yesterday's highs coincide with all-time highs, the explosive potential doubles: shorts must cover AND FOMO enters."
+    notes: "The double trigger: yesterday's highs provide the immediate catalyst while all-time highs provide the structural catalyst. Both together create maximum breakout force."
+
+  - id: BULL_LTCRA_08_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, candle_pattern]
+    source:
+      timecode: "02:00-03:30"
+    conditions:
+      - price_near_all_time_high == true
+      - lateralization_with_candelline == true
+      - candelline_form_martello_pattern == true
+      - breakout_above_lateralization == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below the lateralization low"
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Candelline lateralization near ATH incorporates a martello (hammer) signal. The breakout above this lateralization is the entry."
+    notes: "The incorporated martello means the lateralization itself acts as a hammer on a higher timeframe. Small candles absorbing sellers = the shaft; the breakout = the reversal confirmation."
+
+  - id: BULL_LTCRA_08_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [take_profit, scalping, breakout]
+    source:
+      timecode: "03:30-05:00"
+    conditions:
+      - long_position_active == true
+      - second_rampa_detected == true
+      - pattern_riposa_accelera_riposa_accelera == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Always sell on the second rampa (acceleration wave). The pattern is: rest-accelerate-rest-accelerate-sell. The second push exhausts momentum."
+    notes: "Riposa-accelera-riposa-accelera-vendi is the rhythm. The first acceleration confirms the breakout; the second acceleration is where you exit. Do not wait for a third."
+
+  - id: BULL_LTCRA_08_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, take_profit, risk_management]
+    source:
+      timecode: "05:00-06:00"
+    conditions:
+      - long_position_active == true
+      - muro_vendita_ahead == true
+      - price_approaching_muro == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Sell before the muro (wall) for safety, not at it or after. If the wall holds, you avoid the reversal. If it breaks, you missed some upside but preserved gains."
+    notes: "Sold before 0.95 muro. The iceberg exit showed 3000 of 11600 real quantity. Safety first: taking guaranteed profit before a potential wall rejection."
+
+  - id: BULL_LTCRA_08_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candelina, book, breakout, retest]
+    source:
+      timecode: "06:00-07:00"
+    conditions:
+      - muro_vendita_holding == true
+      - lateralization_forming_under_muro == true
+      - candelline_absorbing_at_muro_level == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below the new lateralization low"
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "If the muro holds but a new lateralization forms directly under it with candelline absorbing, this creates a re-entry opportunity. The breakout of this sub-muro lateralization targets the muro itself."
+    notes: "This is the second-chance entry. If you sold before the muro and it holds, watch for a new lateralization under it. The breakout of that lateralization gives a fresh entry."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_08_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [all_time_high, breakout, psychology]
+    source:
+      timecode: "01:30-02:15"
+    statement: "When yesterday's highs equal all-time highs, the breakout potential is maximized. Two independent catalysts stack: recent momentum (yesterday's highs) and structural significance (ATH)."
+    rationale: "Understanding why certain levels produce more explosive moves helps traders size up on the highest-probability setups."
+
+  - id: BULL_LTCRA_08_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, scalping, position_sizing]
+    source:
+      timecode: "05:30-06:30"
+    statement: "Iceberg orders typically show approximately one-third of the real quantity. When you see 3000 on the book, the real order may be 10000+. Use this ratio to estimate true supply/demand."
+    rationale: "Knowing the typical iceberg ratio helps traders gauge real market depth and avoid being fooled by apparently thin order books."
+
+  - id: BULL_LTCRA_08_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, psychology, scalping]
+    source:
+      timecode: "04:30-05:15"
+    statement: "Do not try to sell at the exact top. Sell on the second rampa before the muro. The pattern is always riposa-accelera-riposa-accelera-vendi. Greed on the third push leads to giving back profits."
+    rationale: "The two-rampa exit rule removes the emotion of trying to time the perfect top. Systematic exits beat optimistic holds."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "SYS trade on Bullbot segnale bomba: yesterday's highs equaling all-time highs creates a double trigger. Enter on candelline lateralization breakout (incorporated martello), exit on the second rampa before the muro. Iceberg orders show ~1/3 of real size. Result: +575 USDT (+5.59%)."

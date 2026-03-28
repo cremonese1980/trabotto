@@ -1,0 +1,167 @@
+video:
+  id: BULL_LTCRA_04
+  series: live-trading-crypto-analisi
+  title: "Santos Finta su EMA 10 TF 30min - Shimano Entry, Stop Progressivo EMA 223/60/10"
+  video_index: 4
+  duration_minutes: ~
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_04_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, retest, reversal, candle_pattern]
+    source:
+      timecode: "~"
+    conditions:
+      - timeframe == 30m
+      - finta_on_ema10_detected == true
+      - candle_closed_above_ema10 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "A finta on EMA 10 at the 30-minute timeframe is a buy signal. Price tests below EMA 10 but the candle closes above, confirming the finta and validating the long entry."
+    notes: "Santos trade. The finta on the higher TF (30min) provides the directional bias. Actual entry execution happens on 1m TF for precision."
+
+  - id: BULL_LTCRA_04_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, candelina, scalping, continuation]
+    source:
+      timecode: "~"
+    conditions:
+      - timeframe == 1m
+      - shimano_pattern_active == true
+      - price_touching_ema_inside_shimano == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Enter at TF 1m inside the shimano pattern on an EMA touch. The shimano provides compression, and the EMA touch within it gives the precise entry point."
+    notes: "The shimano is the execution pattern. While price stays inside the shimano, the trade is safe. Breakout from shimano signals acceleration."
+
+  - id: BULL_LTCRA_04_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema223, stop_loss, risk_management]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - shimano_breakout_occurred == true
+      - candle_close_below_ema223 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "After shimano breakout, the widest stop is EMA 223. A candle close below EMA 223 invalidates the entire setup and requires exit."
+    notes: "This is the first tier of the progressive stop system. EMA 223 is the maximum pain level after shimano breakout."
+
+  - id: BULL_LTCRA_04_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema60, stop_loss, continuation]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - shimano_breakout_occurred == true
+      - price_above_ema60 == true
+      - candle_close_below_ema60 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Once price establishes above EMA 60 after shimano breakout, tighten stop to EMA 60. A candle close below EMA 60 triggers exit."
+    notes: "Second tier of the progressive stop: EMA 223 -> EMA 60. As the trade develops and price moves up, the stop tightens from the widest to the middle reference."
+
+  - id: BULL_LTCRA_04_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop_loss, trend]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - ema10_commanding == true
+      - candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "Once EMA 10 commands the price (price consistently above and respecting EMA 10), use EMA 10 candle close as the tightest stop."
+    notes: "Third and tightest tier: EMA 223 -> EMA 60 -> EMA 10. This progressive tightening maximizes profit capture while respecting the trade's development phase."
+
+  - id: BULL_LTCRA_04_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema223, risk_management]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - price_approaching_ema223 == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Set an alert on EMA 223 as an early warning system. When price approaches EMA 223, it signals potential trouble before the actual stop is hit."
+    notes: "The alert on EMA 223 gives advance warning. It does not trigger an exit, but it puts the trader on high alert to watch the candle close carefully."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, psychology, candelina]
+    source:
+      timecode: "~"
+    statement: "Multiple finte on the order book are normal and expected. Do not panic on book finte. Only the candle close matters for stop decisions."
+    rationale: "The book constantly shows fake walls and spoofing. Reacting to every book finta leads to premature exits. Candle close is the objective arbiter."
+
+  - id: BULL_LTCRA_04_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, take_profit, scalping]
+    source:
+      timecode: "~"
+    statement: "Use iceberg orders for exit to distribute the sell across multiple partial fills without revealing full size on the book."
+    rationale: "Iceberg exits prevent front-running and allow better average fill prices on larger positions."
+
+  - id: BULL_LTCRA_04_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, scalping, trend]
+    source:
+      timecode: "~"
+    statement: "Trade held approximately 20 minutes with a candelline pattern (small consecutive candles in the same direction). Candelline patterns inside a shimano breakout indicate sustained momentum."
+    rationale: "Candelline (small consistent candles) signal controlled buying. Erratic large candles signal uncertainty. Candelline after breakout = healthy trend."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Finta on EMA 10 at TF 30min is a buy signal. Enter at TF 1m inside shimano on EMA touch. After shimano breakout, use progressive stop system: EMA 223 (widest) -> EMA 60 -> EMA 10 (tightest) as the trade develops. Set alert on EMA 223 for early warning. Only candle close matters, not book finte."

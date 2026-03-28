@@ -1,0 +1,155 @@
+video:
+  id: BULL_LTCRA_03
+  series: live-trading-crypto-analisi
+  title: "Trade in Perdita - EMA 60+10 Doppio Supporto, Finta e Trigger Level"
+  video_index: 3
+  duration_minutes: ~
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_03_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema10, retest, trend]
+    source:
+      timecode: "~"
+    conditions:
+      - ema60_below_price == true
+      - ema10_below_price == true
+      - ema10_above_ema60 == true
+      - ema10_commanding == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When EMA 60 and EMA 10 converge as double support with EMA 10 commanding (above EMA 60 and price respecting it), this creates a strong support zone for long entries."
+    notes: "Entry based on the rottura della 60 (break of EMA 60 acting as support) with EMA 10 as the commanding reference. Lost 82 BUSD on this trade due to finta."
+
+  - id: BULL_LTCRA_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop_loss, candelina]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - candle_close_below_support_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "A spike below the support level is acceptable, but a candle CLOSE below the level requires immediate exit. The distinction between spike and close is critical."
+    notes: "Bull emphasizes: spike OK, candle close below = exit. This is a universal rule for all support-based entries."
+
+  - id: BULL_LTCRA_03_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [candelina, scalping, invalidation]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - candle_nearing_close == true
+      - price_not_showing_strength == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "By the end of the candle, price must show strength (move up convincingly). If it remains weak or indecisive near the close, exit the position."
+    notes: "This reinforces the candle-end acceleration rule. The trade must demonstrate conviction by candle close or it is invalidated."
+
+  - id: BULL_LTCRA_03_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [reversal, trigger, breakout]
+    source:
+      timecode: "~"
+    conditions:
+      - finta_detected_at_level == true
+      - candle_survived_test_of_level == true
+      - price_breaks_below_finta_level == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "After a finta (fake breakout) where the candle survives the test, that level becomes a trigger. If price subsequently breaks below the finta level with a candle close, it becomes a short entry signal."
+    notes: "The finta transforms a support level into a trigger for the opposite direction. This is how Bull converts a losing long into an actionable short setup."
+
+  - id: BULL_LTCRA_03_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema, book, trend]
+    source:
+      timecode: "~"
+    conditions:
+      - book_quantities_low_both_sides == true
+      - ema_alignment_clean == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When neither side of the order book shows significant quantities, rely on clean EMA alignment (pulizia) as the primary signal. Clean EMAs compensate for a weak book."
+    notes: "Not every trade has clear book levels. When the book is thin, EMA pulizia (clean alignment and separation) becomes the dominant signal."
+
+  - id: BULL_LTCRA_03_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [book, invalidation, risk_management]
+    source:
+      timecode: "~"
+    conditions:
+      - spike_level_visible_in_busd_book == true
+      - spike_level_absent_in_usdt_book == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When a book level appears on one pair (BUSD) but not the other (USDT), treat the level with less confidence. Dual-book confirmation strengthens the signal."
+    notes: "Asymmetric book levels require different treatment. A muro on BUSD only is weaker than one confirmed on both BUSD and USDT."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_03_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management, invalidation]
+    source:
+      timecode: "~"
+    statement: "Losing trades are valuable teaching moments. This trade lost 82 BUSD but demonstrated critical exit management rules: spike vs candle close, finta recognition, and candle-end strength requirement."
+    rationale: "Bull intentionally shows losing trades to teach proper exit discipline rather than only showcasing winners."
+
+  - id: BULL_LTCRA_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [trigger, reversal, breakout]
+    source:
+      timecode: "~"
+    statement: "After a finta, the level where the fake breakout occurred becomes a trigger level. If price returns and breaks that level with a candle close, trade in the direction of the break."
+    rationale: "Finte create new trigger levels. Recognizing this allows traders to immediately recalibrate after a failed setup rather than sitting idle."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "EMA 60 + EMA 10 double support with EMA 10 commanding creates long entries. Spike below OK but candle close below = exit. After a finta, the level becomes a trigger for shorts. Clean EMA alignment compensates for weak book. Dual-book asymmetry requires caution."

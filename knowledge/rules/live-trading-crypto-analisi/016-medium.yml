@@ -1,0 +1,178 @@
+video:
+  id: BULL_LTCRA_16
+  series: live-trading-crypto-analisi
+  title: "4 Trade BTC/ETH - Hammer sopra EMA, Lateralizzazione Resistenza, Limit su Spike, Stop a Zero"
+  video_index: 16
+  duration_minutes: 24
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_16_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [hammer, ema, red_candle, confirmation]
+    source:
+      timecode: "~"
+    conditions:
+      - hammer_candle_above_ema == true
+      - messy_price_action_preceding == true
+      - two_red_candles_below_follow == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, choppy]
+    rationale: "After messy price action, a hammer candle appears above the EMA. When followed by two red candles closing below the hammer, this confirms the hammer was a failed recovery attempt. Enter short on the second red candle confirmation."
+    notes: "ETH trade 1. The hammer above EMA looks bullish in isolation, but two consecutive red candles below it flip the signal bearish. The failed attempt to hold above EMA is the key. +220 USDT."
+
+  - id: BULL_LTCRA_16_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [target, hold, conviction, spike]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - conviction_in_larger_target == true
+      - first_spike_in_direction == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up]
+    rationale: "When convinced of a larger target, hold through the first spikes rather than closing at the first sign of profit. The conviction in the setup justifies riding volatility for a bigger payoff."
+    notes: "Bull held ETH through initial spikes because he was convinced of a larger downside target. The key is having a reason for the larger target, not just hope."
+
+  - id: BULL_LTCRA_16_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [limit_order, spike, new_lows, gain_target]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - direction == short
+      - price_making_new_lows == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When price is making new lows, it tends to spike further in the direction of the break. Place a limit gain target order to catch these spikes automatically, as they can be fast and reverse quickly."
+    notes: "Bull places limit orders at target levels to capture spikes on new lows. The spike on a new low is often the climactic move that reverses quickly, so a limit order ensures you catch it."
+
+  - id: BULL_LTCRA_16_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [lateralizzazione, ema60, support_resistance_flip, close_stop]
+    source:
+      timecode: "~"
+    conditions:
+      - lateralizzazione_above_ema60 == true
+      - ema60_acting_as_resistance == true
+      - support_to_resistance_flip == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When price forms a lateralizzazione (consolidation) above EMA 60 and EMA 60 has flipped from support to resistance, enter short with a very close stop. The tight consolidation above the EMA signals failed recovery and the close stop keeps risk minimal."
+    notes: "BTC trade 2. Hammer + lateralizzazione above EMA 60 with support-to-resistance flip. Even if closed in loss, this is an intelligent trade because the stop is so close. +269 USDT overall on continuation."
+
+  - id: BULL_LTCRA_16_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [third_test, support, exit, exhaustion]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - direction == short
+      - support_tested_three_times == true
+      - support_holds == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After the third test of a support level that holds, consider closing the short. Three tests without breaking suggests the support is strong enough to cause a reversal. The more times a level holds, the more likely buyers will push through."
+    notes: "BTC trade 2. Bull had to exit after the 3rd test of support held. Multiple tests without breakthrough signal diminishing selling pressure at that level."
+
+  - id: BULL_LTCRA_16_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, continuation, resistance, short]
+    source:
+      timecode: "~"
+    conditions:
+      - ema60_confirmed_as_resistance == true
+      - previous_short_from_ema60_worked == true
+      - price_retests_ema60 == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After a successful short from EMA 60 resistance, re-enter short on the next retest of EMA 60. The confirmed resistance provides a high-probability continuation entry with a known reference point."
+    notes: "BTC trade 3. Continuation short from EMA 60 resistance after the setup was already proven. +836 USDT - the largest gain, showing that continuation entries on confirmed levels can produce the biggest moves."
+
+  - id: BULL_LTCRA_16_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_zero, breakeven, fees_only]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - stop_at_entry_price == true
+      - trade_reverses_to_entry == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Stop at zero means setting the stop at the same price as entry. If the trade goes against you, you lose only fees. This is the safest risk management for trades where you want to give the setup a chance without risking capital."
+    notes: "BTC trade 4. Long on 2nd test of EMA 60 after long downtrend. High probability setup but it failed. Stop at zero = lost only fees instead of real money. The setup was correct but the market did not cooperate."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_16_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, second_touch, probability]
+    source:
+      timecode: "~"
+    statement: "The 2nd touch of EMA 60 after a long downtrend is a high-probability long setup. However, high probability does not mean guaranteed. Always protect with stop at zero to limit downside when the high-probability setup fails."
+    rationale: "After an extended downtrend, the first EMA 60 touch often gets rejected. The second touch has higher probability because it signals buyers are willing to defend the level. But the market can still override any probability edge."
+
+  - id: BULL_LTCRA_16_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [intelligent_trade, loss, close_stop]
+    source:
+      timecode: "~"
+    statement: "A trade that results in a loss can still be an intelligent trade if the stop was very close and the setup was sound. The quality of a trade is measured by the setup and risk management, not solely by the outcome."
+    rationale: "Bull explicitly calls out that even losing trades from lateralizzazione above EMA 60 with close stops are intelligent trades. The small risk relative to the potential reward justifies the entry regardless of outcome."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Hammer above EMA + two red candle confirmation = short. Lateralizzazione above EMA 60 = support-to-resistance flip with very close stop. Hold through spikes when convinced of target, use limit orders to catch spike on new lows. 3rd test of support holding = exit. Continuation short from confirmed EMA 60 resistance = biggest move. Stop at zero on high-probability setups to lose only fees. +220, +269, +836, fees-only loss."

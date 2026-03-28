@@ -1,0 +1,185 @@
+video:
+  id: BULL_LTCRA_26
+  series: live-trading-crypto-analisi
+  title: "ALICE Coppa col Manico: Stop Limit su Breakout in Range, Vendita prima del Numero Pari, Fill Parziale"
+  video_index: 26
+  duration_minutes: 10.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_26_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [coppa_col_manico, cup_and_handle, breakout]
+    source:
+      timecode: "00:00-02:00"
+    conditions:
+      - cup_and_handle_pattern_detected == true
+      - handle_forming_near_resistance == true
+      - breakout_level_identified == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range_breakout]
+    rationale: "Identify the coppa col manico (cup and handle) pattern. The cup forms the base, the handle is a small consolidation near resistance. The breakout level is the top of the handle. This is a classic breakout setup that works well with stop limit entries."
+    notes: "ALICE showed a textbook coppa col manico. The pattern provides a clear breakout level for the stop limit trigger and a defined structure for risk management."
+
+  - id: BULL_LTCRA_26_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_limit, trigger, entry, breakout]
+    source:
+      timecode: "02:00-04:00"
+    conditions:
+      - coppa_col_manico_detected == true
+      - breakout_level_identified == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range_breakout]
+    rationale: "Place a stop limit order with two prices: trigger price at the breakout level (24.1) and max price slightly above (24.15). Set quantity in tokens (211 tokens, approximately 5500 USDT). The trigger activates the order, the max price caps your entry to prevent overpaying on a gap."
+    notes: "Stop limit is the ideal order type for breakout entries. Trigger at 24.1 means the order only activates when price reaches breakout. Max at 24.15 protects against slippage. The small gap between trigger and max allows for normal spread."
+
+  - id: BULL_LTCRA_26_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [breakout_type, exit_strategy, range]
+    source:
+      timecode: "04:00-06:00"
+    conditions:
+      - long_position_active == true
+      - breakout_type == range_breakout
+      - breakout_is_not_new_highs == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range_breakout]
+    rationale: "Critical distinction: when the breakout is NOT at new highs (i.e., within a larger range), sell immediately on the first candle after entry. Do NOT follow EMAs for exit. Range breakouts lack the momentum of new-highs breakouts and tend to stall quickly."
+    notes: "This is the key lesson of the video. For ALICE, the breakout was within a range, not at new highs. The correct exit strategy was to sell on the first strong candle, not ride it with EMA 5/10. Sold at 24.95."
+
+  - id: BULL_LTCRA_26_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [new_highs, ema5, ema10, exit_strategy]
+    source:
+      timecode: "04:30-05:30"
+    conditions:
+      - long_position_active == true
+      - breakout_type == new_highs_breakout
+      - price_at_all_time_high == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When the breakout IS at new highs, follow EMA 5 or EMA 10 for the exit. New-highs breakouts have no overhead resistance, so the trend can extend. Let EMAs guide the trailing exit instead of selling on the first candle."
+    notes: "Opposite strategy to range breakouts. New highs = no sellers trapped above = potential for extended run. EMA 5 for aggressive trailing, EMA 10 for more conservative trailing."
+
+  - id: BULL_LTCRA_26_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [resistance, numero_pari, take_profit]
+    source:
+      timecode: "05:30-07:00"
+    conditions:
+      - long_position_active == true
+      - breakout_type == range_breakout
+      - approaching_numero_pari_resistance == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range_breakout]
+    rationale: "Sell before the first resistance at a round number (numero pari). For ALICE, sold at 24.95 before the 25.00 wall. Round numbers are always the first resistance level and will reject price on the initial approach, especially on range breakouts."
+    notes: "25.00 is the obvious muro for ALICE. Selling at 24.95 secures profit before the wall. Use a limit sell order to pay maker fees (half the taker fee on Binance)."
+
+  - id: BULL_LTCRA_26_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [partial_fill, patience, order_management]
+    source:
+      timecode: "07:00-08:30"
+    conditions:
+      - stop_limit_order_triggered == true
+      - fill_percentage < 100
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range_breakout]
+    rationale: "When a stop limit order is only partially filled (ALICE was only 26% filled initially), keep the remaining order active. Do not cancel and chase at a higher price. Wait for the price to return to your level to complete the fill."
+    notes: "Only 26% filled on the initial trigger. Bull waited patiently for price to return and fill the rest. Chasing a partial fill at higher prices worsens the average entry and increases risk."
+
+  - id: BULL_LTCRA_26_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [chase, reentry, discipline]
+    source:
+      timecode: "08:30-10:00"
+    conditions:
+      - position_closed == true
+      - price_continuing_in_favor == true
+      - no_new_conformazione_tecnica == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up, range_breakout]
+    rationale: "After exiting a position, do NOT chase price if it continues moving in the favorable direction. Wait for a new conformazione tecnica (technical setup) to form before re-entering. Chasing after an exit leads to poor entries at extended prices."
+    notes: "Discipline rule: once out, stay out until a new clean setup appears. The temptation to chase is strongest right after exiting a winner that keeps running. Resist it. +179 USDT secured."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_26_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_limit, order_type, execution]
+    source:
+      timecode: "02:00-03:00"
+    statement: "A stop limit order has two price components: the trigger (stop) price that activates the order, and the limit (max) price that caps the execution. Set the trigger at the breakout level and the max slightly above to allow for spread while preventing overpay on gaps."
+    rationale: "Understanding the mechanics of stop limit orders is essential for breakout trading. The trigger-max gap should be small enough to get filled but large enough to account for normal spread at the breakout moment."
+
+  - id: BULL_LTCRA_26_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [fees, limit_sell, binance]
+    source:
+      timecode: "06:00-06:30"
+    statement: "Use limit sell orders instead of market sell to pay maker fees (half the taker fee on Binance). When exiting at a known resistance level, there is time to place a limit order rather than hitting market. This saves significant fees over many trades."
+    rationale: "Fee optimization is part of consistent profitability. On Binance, maker fees are roughly half of taker fees. Over hundreds of trades, the savings compound into meaningful additional profit."
+
+  - id: BULL_LTCRA_26_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [breakout_type, exit, beginner]
+    source:
+      timecode: "04:00-05:00"
+    statement: "The most common mistake is applying the same exit strategy to all breakouts. A new-highs breakout and a range breakout are fundamentally different trades. New highs = follow EMAs. Range breakout = sell immediately on first candle. Confusing the two costs money."
+    rationale: "New-highs breakouts have no overhead supply (no trapped sellers above), allowing extended runs. Range breakouts face the resistance of the prior high, making immediate exit the safer strategy."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "ALICE coppa col manico trade via stop limit (trigger 24.1, max 24.15, 211 tokens). Critical distinction: this is a range breakout (not new highs), so sell immediately on first candle instead of following EMAs. New highs breakout = follow EMA 5/10. Sold at 24.95 before 25.00 numero pari muro. Only 26% filled initially, waited for return. Use limit sell for maker fees. Do not chase after exit - wait for new conformazione tecnica. +179 USDT."

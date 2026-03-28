@@ -1,0 +1,158 @@
+video:
+  id: BULL_LTCRA_25
+  series: live-trading-crypto-analisi
+  title: "LINA ICO Primo Giorno: Lettura Book Pura, Scarico Grandi Venditori, Rimbalzo al Muro in 49 Secondi"
+  video_index: 25
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_25_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ico, ipo, book, chart_useless]
+    source:
+      timecode: "00:00-02:00"
+    conditions:
+      - asset_is_first_day_listing == true
+      - minutes_since_open < 10
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m]
+      market_regime: [unknown]
+    rationale: "In the first minutes of an ICO/IPO listing, the chart is completely useless - there is no history, no EMAs, no patterns. The ONLY tool that matters is the order book. Ignore the chart entirely and focus exclusively on reading the book."
+    notes: "Bull is emphatic: the chart tells you nothing at open. Everything that matters is in the book. This applies equally to crypto ICOs and stock IPOs. Do not enter until book analysis is complete."
+
+  - id: BULL_LTCRA_25_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, large_sellers, ico, urgency]
+    source:
+      timecode: "02:00-05:00"
+    conditions:
+      - asset_is_first_day_listing == true
+      - large_sell_orders_visible == true
+      - large_sell_orders_quantity > 100000_usd
+      - sell_order_price_moving_down == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: [unknown]
+    rationale: "Watch for large sell orders (hundreds of thousands of dollars) in the book. Track both the quantity AND the price at which they are placed. When big sellers start moving their price DOWN, it signals urgency to sell - they have hundreds of percent in profit from the ICO allocation and want out fast."
+    notes: "The key signal is not just the presence of large sellers, but their price behavior. If the big sell order price drops repeatedly, the seller is getting desperate. This is the discharge phase - do not buy during it."
+
+  - id: BULL_LTCRA_25_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ico, book, exhaustion, bounce]
+    source:
+      timecode: "05:00-08:00"
+    conditions:
+      - large_sellers_exhausted == true
+      - price_bouncing == true
+      - remaining_resistance_muro_identified == true
+      - price_approaching_muro_from_below == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [reversal]
+    rationale: "After big sellers have exhausted their supply (their orders disappear or stop refreshing), wait for the first bounce. Identify the remaining resistance (muro) in the book. Enter long when price is approaching the muro from below, not on the touch itself - the price moves too fast at the muro to execute there."
+    notes: "LINA entry at 0.2999. The critical sequence: sellers exhaust, price bounces, identify muro, buy approaching it from below. Buying ON the muro is too late - by the time you click, price has already moved."
+
+  - id: BULL_LTCRA_25_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [muro, take_profit, ico, target]
+    source:
+      timecode: "08:00-09:30"
+    conditions:
+      - long_position_active == true
+      - price_approaching_resistance_muro == true
+      - target_approximately_10pct_from_entry == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [reversal]
+    rationale: "Sell at or just before the resistance muro. On first-day listings, target approximately 10% from entry. For LINA, sold at 0.329 (muro level), +10% from 0.2999 entry. Do not hold for more - the muro is likely to reject price on first approach."
+    notes: "Exit at 0.329, +330 USDT. The entire trade from buy to sell took 49 seconds. On ICO/IPO first day, take the quick profit at the muro and walk away."
+
+  - id: BULL_LTCRA_25_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, raggruppare, ico, readability]
+    source:
+      timecode: "03:00-04:00"
+    conditions:
+      - asset_is_first_day_listing == true
+      - book_chaotic == true
+      - too_many_price_levels_visible == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [unknown]
+    rationale: "In the chaotic first minutes of a listing, raggruppare (group/aggregate) the order book to reduce noise. Grouping price levels makes it easier to spot the real large orders and resistance walls among the noise of small orders."
+    notes: "The raw book at ICO open is unreadable due to thousands of small orders. Grouping by price level reveals the true structure: where the big money is sitting."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_25_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ico, ipo, technique, universal]
+    source:
+      timecode: "09:30-11:00"
+    statement: "This ICO/IPO first-day book-reading technique is universal. It works identically for crypto ICO listings, stock IPOs, and any other first-day-of-trading instrument. The underlying mechanics are the same: early holders want to sell, they show urgency in the book, eventually they exhaust, and the first bounce offers a trade."
+    rationale: "The pattern of early-holder discharge followed by bounce is driven by human behavior (profit-taking urgency), not by asset class specifics. This makes it applicable across all markets."
+
+  - id: BULL_LTCRA_25_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [speed, execution, ico]
+    source:
+      timecode: "08:00-09:00"
+    statement: "Speed is everything on first-day listings. LINA was bought 2 minutes 11 seconds after open and sold 49 seconds later. Use platform shortcuts: click on the book price to auto-fill your order price (Binance trick) instead of typing manually."
+    rationale: "At ICO/IPO open, prices move in seconds. Manual price entry is too slow. Using the click-on-book-price shortcut saves critical seconds and reduces the risk of missing the entry or exit level."
+
+  - id: BULL_LTCRA_25_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ico, chart, beginner]
+    source:
+      timecode: "01:00-02:00"
+    statement: "Never use chart-based analysis (EMAs, patterns, candles) in the first minutes of an ICO/IPO. There is no meaningful chart history. Traders who try to apply chart techniques to a 2-minute-old chart are guaranteed to lose. The book is the only source of truth."
+    rationale: "Chart analysis requires historical data to be meaningful. At listing open, all chart-based indicators are mathematically meaningless. Only the order book provides real-time supply/demand information."
+
+  - id: BULL_LTCRA_25_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ico, sellers, psychology]
+    source:
+      timecode: "04:00-06:00"
+    statement: "Do not buy while big sellers are still actively discharging. Their ICO allocation gains are often hundreds of percent, giving them enormous room to lower their ask price. They will keep selling aggressively until fully exhausted. Buying into active discharge is buying into a falling knife."
+    rationale: "ICO participants often bought at a fraction of listing price. Their willingness to sell at any price above their cost basis creates sustained downward pressure that overwhelms any buying attempt until their supply is depleted."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 4
+  core_message: "LINA ICO first-day trade: chart is useless at open, read the book only. Watch big sellers discharge (hundreds of thousands of dollars, price moving down = urgency). Wait until exhausted, identify muro on first bounce, enter approaching muro from below (not on touch - too fast). Sell at muro for ~10%. Bought at 0.2999, sold at 0.329 in 49 seconds, +330 USDT. Raggruppare book for readability. Technique is universal for any ICO/IPO."

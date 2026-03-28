@@ -1,0 +1,160 @@
+video:
+  id: BULL_LTCRA_22
+  series: live-trading-crypto-analisi
+  title: "3 DOGE Shorts su SNL Event - Failed Strength, Sell the News, Progressive Stop con EMA 5+10"
+  video_index: 22
+  duration_minutes: 15.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_22_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, failed_strength, weakness, short]
+    source:
+      timecode: "00:00-04:00"
+    conditions:
+      - ema60_broken_downward == true
+      - price_returned_above_ema60 == true
+      - failed_strength_attempts >= 2
+      - expected_green_candle_is_weak == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down, range]
+    rationale: "After EMA 60 breaks downward, price returns above it but fails to demonstrate strength. When the candle after the EMA 60 break should be a strong green but is not, this reveals weakness. A second failed attempt to show strength confirms the weakness. Two failed signals = confirmed short entry."
+    notes: "DOGE short #1 before SNL: EMA 60 broke, price came back above, two failed attempts to push higher. The candle that should have been strong green was weak. Two failures = confirmed weakness. Stop above the maximum. Result: +1277."
+
+  - id: BULL_LTCRA_22_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop, maximum, tighten, confirmation]
+    source:
+      timecode: "03:00-05:00"
+    conditions:
+      - short_position_active == true
+      - failed_strength_confirmed == true
+      - price_making_lower_lows == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down]
+    rationale: "Initial stop is placed above the maximum (the highest point of the failed strength attempts). After the short is confirmed by lower lows, progressively tighten the stop downward to lock in gains."
+    notes: "Stop management on DOGE short #1: started above the maximum of the failed retest, then tightened after each new lower low confirmed the downtrend."
+
+  - id: BULL_LTCRA_22_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [sell_the_news, event, short, target]
+    source:
+      timecode: "05:00-09:00"
+    conditions:
+      - major_event_in_progress == true
+      - event_catalyst_exhausted == true
+      - price_spiked_on_event == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above the event spike high"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [event_driven]
+    rationale: "Sell the news: short after the event mention or catalyst moment ends. When the anticipated event plays out (e.g., Dodge joke on SNL ends), the buying pressure that drove the run-up evaporates. Stop above the spike created by the event."
+    notes: "DOGE short #2 during SNL: entered short when the Dodge joke ended on the show. Stop above the spike. Pre-set target at -20% (0.551) for the anticipated panic move. Target hit exactly. Result: +1652."
+
+  - id: BULL_LTCRA_22_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [target, panic, distant, pre_set]
+    source:
+      timecode: "07:00-09:00"
+    conditions:
+      - short_position_active == true
+      - event_driven_panic_expected == true
+      - high_volatility_environment == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [event_driven, trend_down]
+    rationale: "For event-driven panic moves, pre-set a distant target (e.g., -20% from current price). Panic selling in event-driven situations can produce extreme moves that would normally seem unrealistic. Having the target pre-set ensures it gets filled during the chaos."
+    notes: "Bull pre-set a -20% target at 0.551 for the SNL DOGE short. The target was hit exactly during the panic selling. Without a pre-set order, execution during a panic move is extremely difficult due to speed and slippage."
+
+  - id: BULL_LTCRA_22_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema5, ema10, resistance, stop_lowering]
+    source:
+      timecode: "09:00-13:00"
+    conditions:
+      - short_position_active == true
+      - ema5_acting_as_resistance == true
+      - ema10_acting_as_resistance == true
+      - price_below_ema5_and_ema10 == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down]
+    rationale: "In a downtrend, when EMA 5 and EMA 10 act as dynamic resistance (price bounces down from them consistently), progressively lower the stop to just above these EMAs. They become the natural stop placement levels as the trend continues."
+    notes: "DOGE short #3 at end of SNL: EMA 5 and EMA 10 acted as ceiling. Each time price touched these EMAs and rejected, the stop was lowered to just above them. This progressively locked in gains. Result: +610."
+
+  - id: BULL_LTCRA_22_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, resistance_break, hard_stop]
+    source:
+      timecode: "12:00-14:00"
+    conditions:
+      - short_position_active == true
+      - ema10_was_acting_as_resistance == true
+      - candle_close_above_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down]
+    rationale: "When EMA 10 has been acting as resistance in a downtrend and price finally breaks above it on a candle close, this is a hard stop trigger. The dynamic resistance has failed, meaning the downtrend is likely over or pausing significantly."
+    notes: "DOGE short #3 exit: EMA 10 had been acting as perfect resistance. When it finally broke on a candle close, the stop triggered. This is a mechanical rule: EMA 10 breaks as resistance = exit, no discretion."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_22_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [failed_strength, psychology, confirmation]
+    source:
+      timecode: "01:00-03:00"
+    statement: "A failed strength demonstration is more powerful than a direct weakness signal. When the market SHOULD go up (after reclaiming EMA 60, after positive news, after support hold) but DOESN'T produce a strong candle, this absence of expected strength is a reliable short signal. Two failed demonstrations in sequence make it highly reliable."
+    rationale: "Markets reveal their true direction through what they fail to do, not just what they do. Expected bullish behavior that fails to materialize exposes hidden selling pressure that is stronger than the visible bullish catalysts."
+
+  - id: BULL_LTCRA_22_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [re_entry, patience, discipline]
+    source:
+      timecode: "13:00-15:00"
+    statement: "Do not re-enter immediately after closing a profitable trade in the same instrument. The temptation is strong after a winning trade, but the setup that generated the original entry has already played out. Wait for a completely new setup to form before considering re-entry."
+    rationale: "Post-profit euphoria creates a bias toward seeing setups that are not there. The edge came from the original setup; without a fresh setup, re-entry is gambling, not trading."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Three DOGE shorts around SNL event. Pre-SNL: failed strength after EMA 60 break (should be strong green but isn't) + second failed retest = confirmed short (+1277). During SNL: sell the news when Dodge joke ends, pre-set -20% target for panic move, target hit exactly (+1652). End of SNL: EMA 5+10 as resistance, progressive stop lowering just above them, hard exit when EMA 10 resistance breaks (+610). Do not re-enter immediately after closing profitable trades."

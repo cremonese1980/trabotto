@@ -1,0 +1,201 @@
+video:
+  id: BULL_LTCRA_23
+  series: live-trading-crypto-analisi
+  title: "3 DOGE Trades - Breakout Long, Exhaustion Short, EMA 10 Break Short, Proportion Targets"
+  video_index: 23
+  duration_minutes: 11.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_23_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, long, stop_placement, logic]
+    source:
+      timecode: "00:00-03:00"
+    conditions:
+      - breakout_level_identified == true
+      - price_above_breakout == true
+      - uptrend_logic_intact == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below the area where the uptrend logic fails"
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up, range_breakout]
+    rationale: "On a breakout long, place the stop below the area where the uptrend loses its logical sense, not at zero or at an arbitrary level. The stop should be at the point where the breakout thesis is invalidated, which keeps risk defined but gives the trade room to breathe."
+    notes: "DOGE long at 0.30 breakout: stop placed below where the uptrend logic fails. Not at zero (too wide) and not right at entry (too tight). The stop is at the invalidation of the breakout thesis. Result: +484."
+
+  - id: BULL_LTCRA_23_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, trend, positive, hold]
+    source:
+      timecode: "02:00-04:00"
+    conditions:
+      - long_position_active == true
+      - price_above_ema10 == true
+      - ema10_sloping_up == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up]
+    rationale: "As long as price remains above EMA 10, the trend is still positive and the position should be held. EMA 10 acts as the dynamic dividing line between bullish continuation and potential reversal. Leave room for the trade to develop while price holds above it."
+    notes: "DOGE long management: price stayed above EMA 10 throughout the trade, confirming the uptrend was intact. EMA 10 = the line in the sand for long positions. Exited after 4 candles with +484. Less holding = better."
+
+  - id: BULL_LTCRA_23_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [btc, altcoin, relative_strength, divergence]
+    source:
+      timecode: "03:00-04:30"
+    conditions:
+      - btc_dropping == true
+      - altcoin_pushing_higher == true
+      - altcoin_diverging_from_btc == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up]
+    rationale: "When BTC is dropping but an altcoin (like DOGE) is still pushing higher, this divergence is a strong bullish signal for the altcoin. It shows that the altcoin has independent buying pressure that overrides the BTC correlation."
+    notes: "During the DOGE long at 0.30, BTC was dropping. Despite this, DOGE kept pushing = very strong signal. The divergence from BTC confirmed independent demand for DOGE."
+
+  - id: BULL_LTCRA_23_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [exhaustion, failed_breakout, short, entry]
+    source:
+      timecode: "04:30-07:00"
+    conditions:
+      - strong_uptrend_active == true
+      - failed_breakout_attempts >= 2
+      - price_at_highs == true
+      - red_candle_appears == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up_exhaustion]
+    rationale: "After a strong uptrend, when price makes multiple failed breakout attempts at the highs, the trend is exhausted. Enter short when the first red candle appears after these failed attempts. Multiple failures to break higher signal that buyers are spent."
+    notes: "DOGE short at 0.54: strong uptrend with multiple failed breakouts at the highs. When a red candle appeared, Bull entered short. The exhaustion was confirmed by the repeated inability to push through. Result: +245."
+
+  - id: BULL_LTCRA_23_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop, book, muro, placement]
+    source:
+      timecode: "06:00-07:30"
+    conditions:
+      - short_position_active == true
+      - book_muro_identified == true
+      - muro_is_round_number == true
+    action:
+      - MONITOR_LEVEL
+    stop_loss: "just above the book muro (e.g., 0.55001 above 0.5500)"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up_exhaustion]
+    rationale: "Place the stop just above the book muro (wall), adding a tiny margin above the round number. For example, if the muro is at 0.5500, the stop goes at 0.55001. This positions the stop behind the wall of resistance, giving the wall a chance to hold before the stop is hit."
+    notes: "DOGE short at 0.54: stop placed at 0.55001, just above the 0.5500 muro in the book. The muro acts as a shield for the stop. If the muro breaks, the stop triggers immediately. Result: +245."
+
+  - id: BULL_LTCRA_23_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, break, downtrend, short]
+    source:
+      timecode: "07:30-09:30"
+    conditions:
+      - previous_strong_uptrend == true
+      - ema10_broken_downward == true
+      - candle_close_below_ema10 == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above EMA 10 area"
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_reversal, trend_down]
+    rationale: "After a strong uptrend, when EMA 10 breaks on a candle close, enter short on the next candle. EMA 10 was supporting the uptrend; its break signals the trend has shifted. Stop goes above the EMA 10 area."
+    notes: "DOGE short at 0.60: EMA 10 broke after a strong uptrend. Entry on the next candle after the close below EMA 10. Stop above EMA 10 area. Progressive stop lowering as trade developed. Result: +242."
+
+  - id: BULL_LTCRA_23_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [proportion, target, candle_size, estimation]
+    source:
+      timecode: "09:00-10:30"
+    conditions:
+      - position_open == true
+      - impulse_candle_size_measured == true
+      - continuation_expected == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_down, trend_up]
+    rationale: "Estimate the target by comparing candle sizes proportionally. Measure the body size of the initial impulse candles and project a similar-sized move for the continuation leg. This gives a data-driven target rather than an arbitrary one."
+    notes: "DOGE short at 0.60: Bull used proportion estimation by comparing the impulse candle sizes to project how far the next leg down could go. This method works across all timeframes and directions."
+
+  - id: BULL_LTCRA_23_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_lowering, progressive, confidence]
+    source:
+      timecode: "09:30-11:00"
+    conditions:
+      - short_position_active == true
+      - position_in_profit == true
+      - price_making_lower_lows == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down]
+    rationale: "Progressively lower the stop as the short trade moves in your favor and confidence builds. Each new lower low confirms the trade direction and justifies tightening the stop to protect gains."
+    notes: "DOGE short at 0.60: progressive stop lowering as each new lower low was made. This systematic approach ensures profits are locked while still giving the trade room to continue."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_23_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [holding_time, scalping, less_is_better]
+    source:
+      timecode: "03:30-04:30"
+    statement: "Less holding time is better for scalping. The longer you hold a scalp trade, the more exposed you are to random noise, news events, and mean reversion. Get in, take the move, get out. Bull exited the DOGE long after just 4 candles with +484, emphasizing that speed of execution and short hold times are virtues."
+    rationale: "Scalping edge comes from catching short-term momentum. Holding beyond the impulse move exposes the position to diminishing returns and increasing risk. The profit per unit of time decreases the longer you hold."
+
+  - id: BULL_LTCRA_23_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_placement, logic, invalidation]
+    source:
+      timecode: "01:00-02:30"
+    statement: "Stop placement should be based on where the trade thesis is invalidated, not on arbitrary levels or maximum loss tolerance. For a breakout long, the stop goes where the uptrend logic fails. For a short on exhaustion, the stop goes above the book resistance wall. Every stop must have a logical reason tied to the specific setup."
+    rationale: "Logical stops align risk management with the trade thesis. If the stop is hit, it means the thesis was wrong, which is a clean invalidation. Arbitrary stops create situations where you get stopped out even though the thesis is still valid."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 2
+  core_message: "Three DOGE trades. Long breakout at 0.30: stop where uptrend logic fails, hold above EMA 10, BTC weak + DOGE strong = bullish divergence, exit after 4 candles (+484). Short at 0.54: exhaustion after multiple failed breakouts, entry on red candle, stop just above book muro 0.55001 (+245). Short at 0.60: EMA 10 break after strong uptrend, entry on next candle, proportion-based target, progressive stop lowering (+242). Less holding time = better for scalping. Stop placement must be thesis-driven."

@@ -1,0 +1,134 @@
+video:
+  id: BULL_LTCRA_01
+  series: live-trading-crypto-analisi
+  title: "Live Trade Bybit - Breakout 1m, Candela di Azzeramento 1h, Funding Rate"
+  video_index: 1
+  duration_minutes: ~
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_01_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, daily, ema10]
+    source:
+      timecode: "~"
+    conditions:
+      - timeframe == 1h
+      - candela_di_azzeramento_detected == true
+      - daily_has_upside_potential == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1h]
+      market_regime: [trend_up]
+    rationale: "Enter long after a candela di azzeramento on the 1h timeframe when the daily chart shows upside potential. The azzeramento resets the move and provides a clean entry."
+    notes: "Breakout initially spotted on 1m TF, but the candela di azzeramento on the higher TF (1h) is the actual entry trigger. Daily level used as target."
+
+  - id: BULL_LTCRA_01_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [position_sizing, leverage, risk_management]
+    source:
+      timecode: "~"
+    conditions:
+      - expected_hold_duration > 1h
+      - trade_horizon == longer
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [1h, 4h, daily]
+      market_regime: []
+    rationale: "Use smaller cash size with leverage (e.g., 200$ cash at leva 10 = 2000$ position) for longer time horizon trades. Smaller size tolerates wider stops and longer holds."
+    notes: "Bull uses reduced size when planning to hold a trade for hours rather than minutes. This allows him to ride the move without tight scalping stops."
+
+  - id: BULL_LTCRA_01_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, risk_management, breakout]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - first_big_candle_completed == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m, 5m, 1h]
+      market_regime: []
+    rationale: "After the first big candle in your direction, move stop above entry price. This protects against spike reversals while locking in a risk-free trade."
+    notes: "Stop is placed above entry (not at entry) to account for spread and spike wicks. The goal is protection against sudden reversals."
+
+  - id: BULL_LTCRA_01_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop_loss, candelina]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Manually close the position if a candle closes below EMA 10. This is a dynamic stop that tightens as the trade progresses."
+    notes: "This is a manual close rule, not a fixed stop. Bull watches the candle close relative to EMA 10 and exits if it closes below."
+
+  - id: BULL_LTCRA_01_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, risk_management, trend]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - position_in_profit == true
+      - new_swing_low_formed == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 1h]
+      market_regime: [trend_up]
+    rationale: "Progressively raise the stop loss as the trade moves in your favor, trailing below each new swing low to lock in profits."
+    notes: "Bull raises stops progressively rather than using a fixed target. This lets the trade run while securing accumulated gains."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_01_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, leverage, margin]
+    source:
+      timecode: "~"
+    statement: "When funding rate is negative, holding a long position earns approximately 0.08% every 8 hours from shorts paying longs. This is an additional edge for long trades."
+    rationale: "Negative funding rate means the market is net short. Longs receive a payment, which adds a small but consistent edge to the trade over time."
+
+  - id: BULL_LTCRA_01_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, take_profit, trend]
+    source:
+      timecode: "~"
+    statement: "Use the daily level as target for trades entered on lower timeframes with candela di azzeramento. The daily provides the macro context for the profit objective."
+    rationale: "Aligning lower timeframe entries with daily targets gives a favorable risk/reward ratio, especially when using small size and leverage."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Enter long after candela di azzeramento on 1h when daily has potential. Use small size with leverage for longer holds. Stop above entry after first big candle, manual close below EMA 10, progressive stop raising. Negative funding rate adds edge for longs."

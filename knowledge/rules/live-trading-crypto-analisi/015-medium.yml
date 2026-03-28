@@ -1,0 +1,183 @@
+video:
+  id: BULL_LTCRA_15
+  series: live-trading-crypto-analisi
+  title: "4 Trade Analysis - Super Short EMA 60, Stanchezza Candele, BTC Potenziometro, AXS Daily Short"
+  video_index: 15
+  duration_minutes: 18
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_15_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, super_short, retest, conviction]
+    source:
+      timecode: "~"
+    conditions:
+      - price_breaks_below_ema60 == true
+      - price_returns_above_ema60 == true
+      - price_fails_below_ema60_again == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Super short setup: price breaks below EMA 60, returns above it (finta/trap), then fails below again. The failed recovery provides extra conviction because buyers tried and lost. This double failure signals strong selling pressure."
+    notes: "BTC trade 1. The return above EMA 60 traps longs, and when it fails again the trapped longs add fuel to the downside. Bull calls this a 'super short' due to the higher conviction level. +252 USDT."
+
+  - id: BULL_LTCRA_15_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stanchezza, exit, strappo, candle_fatigue]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - strappo_occurred == true
+      - price_fails_to_make_new_extremes == true
+      - price_returns_above_support_body == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up]
+    rationale: "After a strappo (sharp move), if price fails to make new lows (for shorts) or new highs (for longs) and returns above the body of the support/resistance level, the move is showing stanchezza (fatigue). Exit the position."
+    notes: "Bull acknowledged this was an error in timing - should have closed earlier when candle fatigue first appeared. The inability to make new extremes after the initial impulse signals exhaustion."
+
+  - id: BULL_LTCRA_15_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [triple_test, resistance, weakness, short]
+    source:
+      timecode: "~"
+    conditions:
+      - resistance_tested_three_times == true
+      - price_showing_weakness == true
+      - unable_to_break_higher == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range, trend_down]
+    rationale: "When price tests a resistance level three times without breaking through and shows weakness on the attempts, enter short. Multiple failed tests at the same level indicate exhaustion of buying pressure."
+    notes: "BTC trade 2. Triple resistance test with diminishing strength on each attempt. +123 USDT."
+
+  - id: BULL_LTCRA_15_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, zero_approach, exit, extended_move]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - extended_downtrend == true
+      - ema10_as_reference == true
+      - price_approaching_entry_level == true
+      - price_not_breaking_support == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "In an extended downtrend using EMA 10 as trailing reference, if price approaches your entry level (zero profit) without breaking the current support, close the trade. Approaching zero from profit indicates the move is reversing against you."
+    notes: "Bull uses EMA 10 as reference after extended downtrends. If the trade approaches breakeven without further progress, it is time to exit rather than risk turning a winner into a loser."
+
+  - id: BULL_LTCRA_15_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [btc_potenziometro, altcoin, correlation, exit]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - asset_is_altcoin == true
+      - btc_stops_making_new_lows == true
+      - altcoin_trade_direction == short
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Use BTC as a potenziometro (potentiometer/gauge) for altcoin trades. When BTC stops making new lows, close altcoin short positions. Altcoins follow BTC's directional momentum, so BTC stalling signals the altcoin move is ending."
+    notes: "ETC trade. Bull treats BTC as the leading indicator for altcoin momentum. When BTC's downtrend stalls, the altcoin downtrend loses its driver. +257 USDT."
+
+  - id: BULL_LTCRA_15_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [iper_comprato, daily, weakness, short]
+    source:
+      timecode: "~"
+    conditions:
+      - timeframe == daily
+      - extended_uptrend == true
+      - asset_iper_comprato == true
+      - first_weakness_sign_after_new_highs == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up_exhaustion]
+    rationale: "After an extended uptrend with the asset in iper comprato (overbought) territory, the first sign of weakness following new highs is a short entry. The stop goes above the body or spike of the most recent high."
+    notes: "AXS daily short. Extended uptrend reaching overbought conditions. First weakness candle after new highs = entry signal. +455 USDT."
+
+  - id: BULL_LTCRA_15_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [progressive_stop, tightening, daily, trend]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - timeframe == daily
+      - trade_in_profit == true
+      - trend_continuing == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_down]
+    rationale: "Progressively tighten the stop loss as the daily trade moves in your favor. Start with a wider stop above the spike/body, then narrow it as each new candle confirms direction. Every candle must demonstrate the direction; if it does not, the stop should be very close."
+    notes: "AXS trade: Bull started with a wider stop and progressively tightened it. The principle is that every candle must demonstrate something in the trade's direction, otherwise the trade is losing its thesis."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_15_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_demonstration, direction, exit]
+    source:
+      timecode: "~"
+    statement: "Every candle must demonstrate something in the direction of the trade. If a candle fails to show progress or conviction, the trade thesis is weakening. This is especially important on the daily timeframe where each candle represents significant time."
+    rationale: "A candle that does nothing for your trade is a silent warning. On higher timeframes, wasted candles represent significant time without progress, and the longer a move stalls the more likely it is to reverse."
+
+  - id: BULL_LTCRA_15_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [error_acknowledgment, timing, exit]
+    source:
+      timecode: "~"
+    statement: "Bull acknowledges timing errors openly: recognizing when an exit should have happened earlier due to visible candle fatigue. The lesson is to act on the first signs of stanchezza rather than waiting for confirmation of the reversal."
+    rationale: "Delayed exits after stanchezza signals reduce profits. The first sign of fatigue (failure to make new extremes after strappo) is the optimal exit point, not the second or third confirmation."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Super short: EMA 60 break, return above, fail again = extra conviction. Candle fatigue after strappo = exit on failure to make new extremes. Triple resistance test + weakness = short. BTC as potenziometro for altcoin exits. Daily short on first weakness after iper comprato. Progressive stop tightening: every candle must demonstrate direction. +252, +123, +257, +455 USDT."

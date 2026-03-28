@@ -1,0 +1,181 @@
+video:
+  id: BULL_LTCRA_19
+  series: live-trading-crypto-analisi
+  title: "BTC Mega Support Analysis - Short Prima del Supporto, Cascata Post-Rottura, Trade Mattutini con EMA 60 su 30min"
+  video_index: 19
+  duration_minutes: 18.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_19_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [mega_support, book, short, counter_intuitive]
+    source:
+      timecode: "00:00-03:00"
+    conditions:
+      - mega_support_in_book == true
+      - mega_support_size_btc >= 2000
+      - price_lateralizing_near_support == true
+      - distance_to_support_small == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [range, trend_down]
+    rationale: "When a mega support (~2200 BTC, ~100M USD) exists in the book and price has already lateralized nearby, this is a SHORT opportunity, not a long. Buyers position above the support and place stops below it. The lateralizzazione near support means buyers are already loaded and vulnerable."
+    notes: "Counter-intuitive: retail buys on mega support, but smart money shorts before it because all the stops sitting below create a cascade opportunity. Do NOT go long when price is already stuck near the mega support."
+
+  - id: BULL_LTCRA_19_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, stop_limit, mega_support, entry]
+    source:
+      timecode: "03:00-06:00"
+    conditions:
+      - mega_support_identified == true
+      - price_lateralizing_above_support == true
+      - stops_clustered_below_support == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above the lateralizzazione range high"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [range, trend_down]
+    rationale: "Enter short BEFORE price touches the mega support using a stop limit order. This ensures fill certainty before the cascade begins. Waiting for the actual break risks slippage or missed entry during the flash crash."
+    notes: "Bull went short via stop limit before the support was even touched. The logic: buyers have stops below, so the break will be violent. Getting in early with stop limit guarantees participation in the cascade."
+
+  - id: BULL_LTCRA_19_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [cascade, support_break, stop_hunt, exit]
+    source:
+      timecode: "06:00-09:00"
+    conditions:
+      - short_position_active == true
+      - mega_support_broken == true
+      - first_flash_completed == true
+      - manual_sellers_wave_detected == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After mega support breaks: first wave is automatic (stop losses triggering = flash crash), then a pause, then manual sellers create a second wave down. Monitor for the second wave to maximize profit before covering."
+    notes: "Two-phase cascade: 1) automatic stops fire creating the flash, 2) manual traders see the break and pile on shorts. The second wave often extends further than the first. +246 on BTC short."
+
+  - id: BULL_LTCRA_19_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, lateralizzazione, 30min, long]
+    source:
+      timecode: "09:00-13:00"
+    conditions:
+      - timeframe == 30m
+      - price_lateralizing_above_ema60 == true
+      - price_was_below_ema60_for_extended_period == true
+      - lateralizzazione_duration_candles >= 3
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_reversal, trend_up]
+    rationale: "On the 30-minute timeframe, when price lateralizes ABOVE EMA 60 after having been below it for a long time, this is a 'colpo sicuro' (guaranteed shot) for a long entry. The lateralizzazione above EMA 60 confirms the regime change from bearish to bullish."
+    notes: "Morning trade setup. Bull describes this as one of the highest-conviction long setups: TF 30min, price finally above EMA 60 after extended period below, then lateralizzazione confirms it is holding. +330 on BTC long."
+
+  - id: BULL_LTCRA_19_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [btc, eth, relative_strength, confirmation]
+    source:
+      timecode: "13:00-15:30"
+    conditions:
+      - btc_position_identified == true
+      - eth_position_identified == true
+      - one_index_not_touching_ema60 == true
+      - other_index_touching_ema60 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: [trend_up, trend_down]
+    rationale: "Compare BTC and ETH relative to EMA 60: the one that does NOT touch EMA 60 (stays further away in trend direction) is the stronger instrument. Use this to choose which to trade or to double conviction."
+    notes: "Bull compared ETH vs BTC strength by checking which one was further from EMA 60. The stronger one gives more confidence. Used both for double entries: +493 ETH long alongside BTC trades."
+
+  - id: BULL_LTCRA_19_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [double_index, position_sizing, conviction]
+    source:
+      timecode: "15:30-17:00"
+    conditions:
+      - btc_setup_valid == true
+      - eth_setup_valid == true
+      - both_confirming_same_direction == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: [trend_up]
+    rationale: "When both BTC and ETH confirm the same directional setup, enter positions on both instruments. Double index agreement increases conviction and justifies larger total exposure."
+    notes: "Bull entered both BTC and ETH longs simultaneously when both showed the same 30min setup. Double index usage = double conviction = larger total position. Combined result across all trades in the session: +246 BTC short, +493 ETH long, +330 BTC long."
+
+  - id: BULL_LTCRA_19_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema60, candle_close, short_exit]
+    source:
+      timecode: "17:00-18:30"
+    conditions:
+      - short_position_active == true
+      - candle_close_above_ema60 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: [trend_down]
+    rationale: "For short positions, a candle CLOSE above EMA 60 is the hard exit signal. Spikes above EMA 60 that do not close above it are not invalidation. Only the close matters for this rule."
+    notes: "Critical distinction: a spike/wick above EMA 60 is tolerable and not a reason to exit. Only when the candle actually closes above EMA 60 does the short thesis break. This prevents getting stopped out by noise."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_19_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [mega_support, retail_trap, psychology]
+    source:
+      timecode: "01:00-03:00"
+    statement: "Do NOT buy on a mega support when price has already lateralized near it. Retail traders see 100M USD of support and go long, but they become fuel for the cascade. Buyers position above the support and all put stops below it, creating the exact conditions for a violent break."
+    rationale: "The mega support acts as a magnet for retail longs, whose stops below become the cascade fuel. The counter-intuitive move is to short before the support, not to buy on it."
+
+  - id: BULL_LTCRA_19_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, 30min, colpo_sicuro]
+    source:
+      timecode: "10:00-12:00"
+    statement: "The 30-minute lateralizzazione above EMA 60, after price has been below EMA 60 for an extended period, is one of Bull's highest-conviction long setups. He calls it 'colpo sicuro' (guaranteed shot). The extended time below EMA 60 makes the regime change above it extremely significant."
+    rationale: "Extended bearish periods below EMA 60 create strong seller positioning. When price finally reclaims and holds EMA 60, it signals a genuine shift in market structure, making longs very high probability."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Mega support (~2200 BTC) is a SHORT opportunity, not a long. Buyers cluster above support with stops below, creating cascade conditions. Enter short via stop limit BEFORE the break. After break: first automatic stops flash, then manual sellers create second wave. Morning trades: 30min lateralizzazione above EMA 60 after extended time below = colpo sicuro long. Compare BTC vs ETH relative strength via EMA 60 distance. Candle close above EMA 60 = hard exit for shorts (not spikes). +246 BTC short, +493 ETH long, +330 BTC long."

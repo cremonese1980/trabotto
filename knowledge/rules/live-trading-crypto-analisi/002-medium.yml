@@ -1,0 +1,143 @@
+video:
+  id: BULL_LTCRA_02
+  series: live-trading-crypto-analisi
+  title: "Due Trade - Secondo Tocco con Candela di Riposo, Terzo Tocco con Iceberg Exit"
+  video_index: 2
+  duration_minutes: ~
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_02_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [candelina, retest, candle_pattern, invalidation]
+    source:
+      timecode: "~"
+    conditions:
+      - touch_count(level) == 2
+      - candela_di_riposo_before_2nd_touch == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "On a second touch, there must be at least one candela di riposo (rest candle) before the touch. Without it, the setup lacks the compression needed for a clean breakout."
+    notes: "First trade lost 35 BUSD because the 2nd touch lacked a candela di riposo. Bull emphasizes this as a hard filter for secondo tocco entries."
+
+  - id: BULL_LTCRA_02_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [candelina, breakout, scalping]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - candle_nearing_close == true
+      - acceleration_in_denaro == false
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When approaching the end of a candle, the price must show acceleration in denaro (buying pressure). If there is no acceleration, exit immediately."
+    notes: "Bull lost on the first trade because price did not accelerate into the candle close. The candle must finish strong or the setup is failing."
+
+  - id: BULL_LTCRA_02_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, breakout, trigger]
+    source:
+      timecode: "~"
+    conditions:
+      - touch_count(level) >= 3
+      - breakout_from_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "Terzo tocco (third touch) and quarto tocco (fourth touch) are more reliable than secondo tocco. The multiple compressions build energy for a cleaner breakout."
+    notes: "Second trade was a terzo/quarto tocco that yielded 3% gain on a 15k position. Bull considers terzo tocco significantly more reliable than secondo tocco."
+
+  - id: BULL_LTCRA_02_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, ema10, risk_management]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - position_in_profit == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Once in profit, move stop to zero (breakeven). EMA 10 then serves as the dynamic trailing stop for ongoing management."
+    notes: "Stop at zero is the first priority once profit appears. Then EMA 10 candle close becomes the active dynamic stop for the remainder of the trade."
+
+  - id: BULL_LTCRA_02_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, trigger, breakout]
+    source:
+      timecode: "~"
+    conditions:
+      - dual_book_checked == true
+      - muro_identified_on_usdt_or_busd == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Analyze both USDT and BUSD order books to identify muri (walls). The muro serves as the reference level for entry and exit targets."
+    notes: "Bull checks both pairs to get a complete picture. A muro visible on one pair but not the other still counts but requires extra caution."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_02_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, retest, psychology]
+    source:
+      timecode: "~"
+    statement: "Terzo tocco is significantly more reliable than secondo tocco. When a secondo tocco fails, look for the terzo tocco at the same level as the next opportunity."
+    rationale: "Each additional touch compresses price further and attracts more participants, making the eventual breakout more powerful."
+
+  - id: BULL_LTCRA_02_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, take_profit, scalping]
+    source:
+      timecode: "~"
+    statement: "Use iceberg orders for exit to avoid showing full size on the book. This prevents other traders from front-running your exit."
+    rationale: "Large visible exit orders attract predatory trading. Iceberg hides the true size and allows gradual fills at the target price."
+
+  - id: BULL_LTCRA_02_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, scalping, invalidation]
+    source:
+      timecode: "~"
+    statement: "On a secondo tocco entry, the trade must start immediately and move in your direction. If it stalls or hesitates, close the position. The secondo tocco demands instant confirmation."
+    rationale: "The secondo tocco has less compression than terzo tocco, so it relies on immediate momentum. Any hesitation signals the setup is not working."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "Secondo tocco requires a candela di riposo before entry and must accelerate into candle close. Terzo tocco is far more reliable. Use dual book analysis (USDT/BUSD) for muro identification. Iceberg orders for exit. Stop at zero once in profit, EMA 10 as dynamic stop."
