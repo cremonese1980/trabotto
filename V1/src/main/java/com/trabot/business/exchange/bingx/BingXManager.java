@@ -307,7 +307,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
 
     }
@@ -357,7 +357,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
     }
 
@@ -402,7 +402,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
     }
 
@@ -447,7 +447,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
     }
 
@@ -493,7 +493,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
     }
 
@@ -566,7 +566,7 @@ public class BingXManager {
 		System.out.println("GET request failed. Response Code: " + responseCode);
 	    }
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la connessione all'API", e);
+	    throw new RuntimeException("Error while connecting to the API", e);
 	}
     }
 
@@ -578,7 +578,7 @@ public class BingXManager {
 	    byte[] signature = mac.doFinal(input.getBytes(StandardCharsets.UTF_8));
 	    return Base64.getEncoder().encodeToString(signature);
 	} catch (Exception e) {
-	    throw new RuntimeException("Errore durante la firma della stringa con HmacSHA256", e);
+	    throw new RuntimeException("Error while signing payload with HmacSHA256", e);
 	}
     }
 

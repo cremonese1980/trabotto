@@ -70,9 +70,13 @@ public class WindowTimePrice {
 	sumVelocityPercent = BigDecimal.ZERO;
     }
     
-//    Media mobile esponenziale (EMA): Questo indicatore pone maggior peso sui dati più recenti. Puoi impostare un EMA a breve termine (ad esempio, 5 periodi) e un EMA a lungo termine (ad esempio, 20 periodi). Quando l'EMA a breve termine incrocia al di sopra dell'EMA a lungo termine, potrebbe essere un segnale di acquisto. Quando incrocia al di sotto, potrebbe essere un segnale di vendita.
-//    Band di Bollinger: Questo indicatore utilizza una media mobile e la deviazione standard per creare un "canale" attorno al prezzo. Quando il prezzo si muove verso l'estremità superiore del canale, potrebbe essere un segnale di vendita. Quando si muove verso l'estremità inferiore, potrebbe essere un segnale di acquisto.
-//    Relative Strength Index (RSI): Questo è un indicatore di momentum che può aiutare a identificare quando un asset è sovracomprato o ipervenduto. Se l'RSI supera 70, l'asset potrebbe essere sovracomprato e potrebbe essere il momento di vendere. Se l'RSI scende sotto 30, l'asset potrebbe essere ipervenduto e potrebbe essere il momento di comprare.
+//    Exponential Moving Average (EMA): this indicator gives more weight to recent prices.
+//    Configure a short-term EMA (for example, 5 periods) and a long-term EMA (for example, 20 periods).
+//    A bullish crossover can indicate a buy opportunity, while a bearish crossover can indicate a sell opportunity.
+//    Bollinger Bands: this indicator combines a moving average with standard deviation to form a price channel.
+//    A move toward the upper band can indicate overextension, while a move toward the lower band can indicate weakness.
+//    Relative Strength Index (RSI): this momentum indicator helps identify overbought and oversold conditions.
+//    Values above 70 can suggest overbought conditions; values below 30 can suggest oversold conditions.
 
     private void calculateValues(InstantPrice instantPrice) {
 
