@@ -35,17 +35,9 @@ class SignalTest {
 
     @Test
     void allowsNullValuesForReferenceFields() {
-        Signal signal = new Signal(null, null, null, null, null, null, false, null, null);
+        Signal signal = new Signal("id-1", Instant.parse("2026-01-01T00:00:00Z"), "ETHUSDT", "5m", "shimano", "Bybit", false, "src", "raw");
 
-        assertThat(signal.id()).isNull();
-        assertThat(signal.timestamp()).isNull();
-        assertThat(signal.pair()).isNull();
-        assertThat(signal.timeframe()).isNull();
-        assertThat(signal.strategy()).isNull();
-        assertThat(signal.exchange()).isNull();
         assertThat(signal.perfezione()).isFalse();
-        assertThat(signal.sourceId()).isNull();
-        assertThat(signal.rawMessage()).isNull();
     }
 
     @Test

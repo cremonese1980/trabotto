@@ -270,7 +270,7 @@ public class Processor {
 		|| (System.currentTimeMillis() - lastOrderTime) / 1000 > OBSERVATION_TIME_IN_SECONDS;
     }
 
-    // TODO scrivi test per comprovare
+    // TODO write tests to verify this behavior
     private boolean countZerosOk(List<BigDecimal> lastPrices, int zeros) {
 
 	return new BigDecimal(zeros).divide(new BigDecimal(lastPrices.size()), 10, RoundingMode.HALF_UP)

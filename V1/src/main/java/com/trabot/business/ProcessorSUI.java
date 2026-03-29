@@ -89,16 +89,14 @@ public class ProcessorSUI implements Runnable {
 //
 //	    tradeSuiAndCrossFingersOkx();
 
-	    // misura quanto ci mette tra una request e l'altra. Occhio che se il portatile
-	    // �
-	    // sovraccarico allora cambier� prestazioni.
+	    // Measure latency between API requests.
+	    // Keep in mind that local machine load can affect timings.
 
-	    // Contatore requests to okx. Rate Limit: 60 requests per 2 seconds
+	    // OKX request counter. Rate limit: 60 requests per 2 seconds.
 
-	    // IMPORTANTE
-	    // SPEGNI gli acquisti APPENA HAI COMPRATO,
-	    // SOPRATTUTTO assicurati di spegnere gli aquisti prima di rivendere
-	    // che si fermi solo?
+	    // Important operational reminder:
+	    // stop buy actions immediately after a successful buy,
+	    // and disable buy actions before placing sell orders.
 
 	} catch (Exception e) {
 	    // TODO Auto-generated catch block
