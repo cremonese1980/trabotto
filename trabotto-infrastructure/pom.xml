@@ -12,6 +12,11 @@
 
     <artifactId>trabotto-infrastructure</artifactId>
     <name>trabotto-infrastructure</name>
+    <description>
+        The trabotto-infrastructure module provides external adapters for Kafka messaging, PostgreSQL persistence,
+        and runtime serialization/configuration concerns needed by the platform. It translates domain ports into
+        concrete IO implementations so the core remains framework-agnostic while integrations stay replaceable.
+    </description>
 
     <dependencies>
         <dependency>

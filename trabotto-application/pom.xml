@@ -12,6 +12,11 @@
 
     <artifactId>trabotto-application</artifactId>
     <name>trabotto-application</name>
+    <description>
+        The trabotto-application module orchestrates domain use cases and execution flows by coordinating ports,
+        decisions, and policy checks without owning infrastructure concerns. It is the service layer that wires
+        domain intent into concrete application workflows while preserving clear boundaries for adapters.
+    </description>
 
     <dependencies>
         <dependency>

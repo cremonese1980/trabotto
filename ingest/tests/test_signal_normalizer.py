@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from signal_normalizer import normalize
+from signal_normalizer import normalize, STRATEGY_MAP, SKIP_STRATEGIES
 
 
 # ---------------------------------------------------------------------------
@@ -322,3 +322,67 @@ class TestAuditFields:
         msg = "[Bybit - CFXUSDT 30MIN viagra sotto ema 10. differenza 24h: -5.04% PERFEZIONE]"
         sig = normalize(msg, BYBIT_CFXUSDT_URL)
         assert sig["bullweb_url"] == BYBIT_CFXUSDT_URL
+
+
+# ---------------------------------------------------------------------------
+# Full strategy-map coverage
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    ("raw_strategy", "expected"),
+    sorted(STRATEGY_MAP.items(), key=lambda kv: kv[0]),
+)
+def test_every_strategy_in_strategy_map_is_recognized(raw_strategy, expected):
+    msg = f"[Bybit - BTCUSDT 5MIN {raw_strategy}. 24h: +1.00%]"
+    sig = normalize(msg, None)
+    assert sig["strategy"] == expected
+
+
+@pytest.mark.parametrize("skip_token", SKIP_STRATEGIES)
+def test_every_skip_strategy_is_skipped(skip_token):
+    msg = f"[Bybit - BTCUSDT 1GIORNO {skip_token} 24h: +0.10%]"
+    sig = normalize(msg, "https://bullweb.scalpingthebull.com/chart/?symbol=BYBIT:BTCUSDT.P&timeframe=1440")
+    assert sig["skipped"] is True
+    assert sig["skip_reason"] == skip_token.replace(" ", "_")
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "[Bybit - ADAUSDT 5MIN shimano differenza 24h: +1.0%]",
+        "[Binance - ETHUSDT 1MIN bud 24h: -0.5%]",
+    ],
+)
+def test_no_url_uses_pair_fallback(message):
+    sig = normalize(message, None)
+    assert sig["pair"] in {"ADAUSDT", "ETHUSDT"}
+
+
+@pytest.mark.parametrize(
+    "canonical_strategy",
+    [
+        "cambio_colore",
+        "ath_proximity",
+        "doppio_tocco",
+        "proximity_min_ieri",
+        "proximity_max_ieri",
+        "daily_moon",
+    ],
+)
+def test_all_implicit_daily_tf_strategies_set_daily_timeframe(canonical_strategy):
+    key = next(raw for raw, canonical in STRATEGY_MAP.items() if canonical == canonical_strategy)
+    msg = f"[Bybit - SOLUSDT {key}]"
+    sig = normalize(msg, "https://bullweb.scalpingthebull.com/chart/?symbol=BYBIT:SOLUSDT.P&timeframe=1440")
+    assert sig["strategy"] == canonical_strategy
+    assert sig["timeframe"] == "1d"
+
+
+def test_empty_message_returns_unknown_strategy():
+    sig = normalize("", None)
+    assert sig["strategy"] == "unknown"
+    assert sig["pair"] is None
+
+
+def test_null_message_raises_attribute_error():
+    with pytest.raises(AttributeError):
+        normalize(None, None)
