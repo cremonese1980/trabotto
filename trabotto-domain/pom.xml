@@ -12,8 +12,31 @@
 
     <artifactId>trabotto-domain</artifactId>
     <name>trabotto-domain</name>
+    <description>
+        The trabotto-domain module contains the core trading vocabulary, immutable model records, domain enums,
+        and engine contracts that define how signals are evaluated and translated into actions. It intentionally keeps
+        zero runtime dependencies so the business rules remain portable, deterministic, and independently testable.
+    </description>
 
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

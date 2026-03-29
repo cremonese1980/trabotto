@@ -15,6 +15,11 @@
     <artifactId>trabotto-boot</artifactId>
     <version>0.1.0</version>
     <name>trabotto-boot</name>
+    <description>
+        The trabotto-boot module is the runnable Spring Boot composition root that assembles domain, application,
+        and infrastructure modules into a single executable service. It defines runtime packaging and environment
+        wiring for local development and deployments without leaking framework concerns into core business code.
+    </description>
 
     <properties>
         <java.version>21</java.version>

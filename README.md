@@ -121,6 +121,8 @@ trabotto/
 │   │   ├── signal_normalizer.py
 │   │   ├── kafka_producer.py
 │   │   └── transcribe.py       # Whisper transcription pipeline
+│   ├── tests/
+│   ├── pyproject.toml
 │   └── Dockerfile
 │
 ├── trabotto-domain/            # Pure domain model (zero dependencies)
@@ -131,7 +133,9 @@ trabotto/
 ├── knowledge/
 │   ├── transcriptions/         # Whisper output (1 file per video)
 │   ├── rules/                  # Extracted YAML rules
-│   └── evidence/               # Trade screenshots from Bull
+│   └── telegram_raw/           # Raw Telegram captures by day
+│
+├── V1/                         # Legacy prototype retained for reference
 │
 ├── docs/
 │   ├── ARCHITECTURE.md         # Full system design

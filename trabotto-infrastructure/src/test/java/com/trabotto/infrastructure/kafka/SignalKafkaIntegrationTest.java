@@ -99,4 +99,35 @@ class SignalKafkaIntegrationTest {
         assertThat(deserialized.timeframe()).isEqualTo("5");
         assertThat(deserialized.id()).isEqualTo("test-id-001");
     }
+
+    @Test
+    void preservesAllSignalFieldsDuringKafkaRoundTrip() throws Exception {
+        Signal signal = new Signal(
+                "test-id-002",
+                Instant.parse("2024-06-01T12:34:56Z"),
+                "ETHUSDT",
+                "30m",
+                "shimano",
+                "Binance",
+                false,
+                "test-source-2",
+                "raw two"
+        );
+
+        signalProducer.publishSignal(signal);
+
+        ArgumentCaptor<ConsumerRecord<String, String>> captor =
+                ArgumentCaptor.forClass(ConsumerRecord.class);
+
+        await()
+                .atMost(Duration.ofSeconds(10))
+                .pollInterval(Duration.ofMillis(500))
+                .untilAsserted(() -> verify(signalConsumer, atLeastOnce()).onMessage(captor.capture()));
+
+        ConsumerRecord<String, String> received = captor.getValue();
+        Signal deserialized = objectMapper.readValue(received.value(), Signal.class);
+
+        assertThat(deserialized).isEqualTo(signal);
+        assertThat(received.key()).isEqualTo("ETHUSDT");
+    }
 }
