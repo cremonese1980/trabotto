@@ -1,0 +1,148 @@
+video:
+  id: YT_BULL_P_036
+  series: principianti
+  title: "Come guadagnare long in un mercato che crolla"
+  video_index: 36
+  duration_minutes: 9
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_P_36_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, retest, pullback, trigger, candle_pattern]
+    source:
+      timecode: "2:41-3:13"
+    conditions:
+      - "asset_in_individual_uptrend == true (despite broader market crash)"
+      - "price_pulled_back_to_ema60 == false"
+      - "price_pulled_back_and_bounced_from_ema10 == true"
+      - "large_book_support_below_ema10 == true (pullman di cinesi)"
+      - "ema10_tf30m_commanding == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [bearish, neutral]
+    rationale: "Even in a broad market crash, individual assets can be in their own uptrend. A pullback to EMA 10 on 30m with a massive book wall below is a valid long entry regardless of Bitcoin or index direction."
+    notes: "Bull made +3.5% / +344 USDT on DF while Nasdaq and BTC were both crashing hard. The individual asset's conformazione is independent of macro conditions."
+
+  - id: BULL_P_36_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, candle_pattern, retest, trigger, pullback]
+    source:
+      timecode: "3:19-3:50"
+    conditions:
+      - "asset_in_steep_downtrend_on_tf30m == true"
+      - "price_formed_hammer_candle_above_ema10 == true"
+      - "hammer_candle_at_potential_support == true"
+      - "first_valid_conformazione_after_major_drop == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m, 1m]
+      market_regime: [bearish, neutral]
+    rationale: "After a significant downtrend, a hammer candle above EMA 10 on 30m is the first valid conformazione for a long bounce entry."
+    notes: "MOB example: +2.38% / +227 USDT. The asset had been crashing; a martello (hammer) above EMA 10 was the signal Bull used for the bounce entry."
+
+  - id: BULL_P_36_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, trigger, all_time_high]
+    source:
+      timecode: "4:06-4:47"
+    conditions:
+      - "asset_making_new_daily_highs == true"
+      - "bad_to_moon_lateralization_before_previous_high == true"
+      - "first_entry_at_lateralization_breakout == true"
+      - "second_entry_at_prior_high_breakout == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish, neutral]
+    rationale: "A bad-to-the-moon setup at daily highs produces two entries: first at the lateralization breakout, second at the prior session highs breakout — both valid regardless of macro crash."
+    notes: "FOTH example: +552 USDT total. Full-size entry possible because the conformazione was very clear (bad to moon at prior daily highs). Broader market crashing is irrelevant to individual asset conformazioni."
+
+  - id: BULL_P_36_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [regime_filter, daily, ema10, trend]
+    source:
+      timecode: "5:50-6:24"
+    conditions:
+      - "price_closed_below_ema10 == true"
+      - "asset_now_in_downtrend == true"
+      - "price_bounced_from_ema60 == true (current test)"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: [bearish]
+    rationale: "When an asset has closed below EMA 10 and entered a downtrend reaching EMA 60, it can produce +3.5% bounces on individual 1-minute candles. Each pullback offers a bounce opportunity."
+    notes: "GMT example: falling candle had 16% drop for the day, yet each conformazione gave a 3.5% bounce. Track the downtrend but trade the bounces, do not short."
+
+  - id: BULL_P_36_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [regime_filter, trend, reversal]
+    source:
+      timecode: "7:10-7:27"
+    conditions:
+      - "asset_in_downtrend == true"
+      - "time_frame_1m_change_of_trend_conformazione_forming == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Even a heavily falling asset will eventually form a cambio di colore / change-of-trend signal on 1-minute. Monitor for it; once confirmed it enables a higher-conviction long entry."
+    notes: "Described as GMT preparing a trend-change conformazione. This is a pre-cursor watch, not an entry signal by itself — wait for the actual conformazione to trigger."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_P_36_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, regime_filter, reversal, trend]
+    source:
+      timecode: "4:56-5:14"
+    statement: "Nothing goes down forever and nothing goes up forever. Every falling asset will have bounces; every rising asset will have pullbacks. Always look for the conformazione in the opposite direction."
+    rationale: "Macro bear markets create panic in retail traders who think everything must be shorted. In reality, every 1-minute chart will show long opportunities even in a -90% crash asset."
+
+  - id: BULL_P_36_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "2:23-2:37"
+    statement: "Trading long during market crashes is perfectly normal. Do not be influenced by news, neighbors, or social media worrying about falling markets. If the conformazione is there, the trade is valid."
+    rationale: "Retail panic during crashes destroys returns. The methodology is timeframe-specific and conformazione-driven — macro conditions do not invalidate individual asset setups."
+
+  - id: BULL_P_36_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, reversal, beginner]
+    source:
+      timecode: "7:44-8:07"
+    statement: "Going short is not necessary to profit during market crashes. Long-only trading works even in prolonged bear markets if the trader identifies bounces and individual strong assets. Avoid the crypto short market entirely."
+    rationale: "The instructor explicitly states he will never use short futures again. Focusing only on long setups simplifies the trading framework and avoids the additional risk of short squeezes."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "Market-wide crashes do not prevent profitable long trades — individual assets form their own conformazioni (EMA 10 bounces, bad-to-moon breakouts, hammer candles) that can be traded long for 2-5% gains even while everything else is falling."

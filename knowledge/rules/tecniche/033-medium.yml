@@ -1,0 +1,150 @@
+video:
+  id: BULL_T_033
+  series: tecniche
+  title: "Friday Candle Night - Strategie per il cambio candela daily"
+  video_index: 33
+  duration_minutes: 57
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_33_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, candle_pattern, all_time_high, regime_filter]
+    source:
+      timecode: "14:30-15:01"
+    conditions:
+      - daily_candle_close_approaching_all_time_high == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Massima priorita' per il cambio candela va ai titoli in all-time-high: situazione piu' bullish possibile con massimo potenziale di accelerazione."
+    notes: "ATH e' la prima priorita' nella classifica di selezione per il cambio candela."
+
+  - id: BULL_T_33_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, ema, candle_pattern, regime_filter]
+    source:
+      timecode: "03:38-05:19"
+    conditions:
+      - daily_ema5_trending_up == true
+      - daily_price_approaching_multi_day_high == true
+      - daily_candle_close_above_previous_day_high == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Per selezionare candidati per il cambio candela si parte dal daily: EMA 5 che comanda, prezzo vicino ai massimi di 2 giorni fa, possibile chiusura sopra."
+    notes: "Se la chiusura daily supera i massimi dei giorni precedenti e' il massimo livello trigger."
+
+  - id: BULL_T_33_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, regime_filter, invalidation]
+    source:
+      timecode: "16:23-17:08"
+    conditions:
+      - daily_candle_caused_by_single_tweet == true
+      - daily_movement_in_one_or_two_candles == true
+      - movement_not_from_technical_formation == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Movimenti causati da un singolo tweet o evento non tecnico non sono calcolati e hanno meno affidabilita' per il cambio candela."
+    notes: "Esempio: DOGE con tweet di Elon Musk. Se il movimento e' in 1-2 candele e dovuto a news, evitare."
+
+  - id: BULL_T_33_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, ema, ema10, regime_filter]
+    source:
+      timecode: "23:12-24:09"
+    conditions:
+      - daily_ema10_commanding_precisely == true
+      - daily_price_approaching_ema10_breakout == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Rottura della EMA 10 nel daily dopo lungo comando preciso e' un trigger estremamente potente, anche per il cambio candela."
+    notes: "Piu' a lungo la EMA 10 comanda al ribasso nel daily, maggiore lo spike alla rottura."
+
+  - id: BULL_T_33_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, daily, regime_filter]
+    source:
+      timecode: "44:08-45:39"
+    conditions:
+      - btc_daily_price_near_ema10 == true
+      - btc_daily_breakout_above_ema10_possible == true
+      - btc_daily_price_above_ema5 == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Se Bitcoin chiude la candela daily sopra la EMA 10 e' un segnale molto potente e bullish per tutto il mercato crypto."
+    notes: "Al contrario, chiusura sotto EMA 5 sarebbe molto negativa. BTC comanda il regime."
+
+  - id: BULL_T_33_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, daily, invalidation]
+    source:
+      timecode: "45:33-45:49"
+    conditions:
+      - btc_daily_close_below_ema5 == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Chiusura daily di Bitcoin sotto la EMA 5 e' un segnale molto negativo che invalida i setup rialzisti per il cambio candela."
+    notes: "Questo e' un filtro di regime globale che prevale sulle singole conformazioni."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_33_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, psychology, candle_pattern]
+    source:
+      timecode: "08:14-09:03"
+    statement: "Il cambio candela daily e' il momento piu' esplosivo della giornata perche' e' come se tutto ripartisse da zero, creando panico in chi non entra subito."
+    rationale: "La dinamica del cambio candela amplifica i movimenti per effetto FOMO e paura di rimanere fuori."
+
+  - id: BULL_T_33_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, candle_pattern]
+    source:
+      timecode: "06:11-07:11"
+    statement: "Per il cambio candela ogni membro del team controlla una coin diversa come referente, per coprire piu' opportunita' in modo coordinato."
+    rationale: "Gioco di squadra per non perdere conformazioni su troppi titoli simultaneamente."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "La selezione per il cambio candela daily parte dall'analisi del daily: priorita' ai titoli in ATH o con rottura EMA 10, con Bitcoin come filtro regime globale. Si escludono movimenti da news/tweet non tecnici."

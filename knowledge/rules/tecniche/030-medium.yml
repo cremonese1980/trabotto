@@ -1,0 +1,141 @@
+video:
+  id: BULL_T_030
+  series: tecniche
+  title: "Tecnica del cavallo pazzo - quando e su cosa applicare le tecniche di trading"
+  video_index: 30
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_30_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [regime_filter, trend, scalping, breakout]
+    source:
+      timecode: "01:44-02:36"
+    conditions:
+      - "asset_daily_pct_change > 30"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "Assets moving 30%+ in a day (cavallo pazzo) are the ideal targets for applying all trading techniques. Breakouts and patterns on these assets produce proportionally larger gains than on slow-moving assets."
+    notes: "The same terzo tocco or bud on an asset doing +80% will produce a 3-6% breakout, while on a +10% asset the same setup might yield only 0.3%. Always prefer volatile movers."
+
+  - id: BULL_T_30_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, breakout, trigger, candle_pattern]
+    source:
+      timecode: "02:36-03:28"
+    conditions:
+      - "asset_daily_pct_change > 30"
+      - "touch_count(resistance_level) >= 3"
+      - "price_breaks_above_level == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "On a cavallo pazzo asset, a terzo tocco breakout is highly reliable. Even 4 or 5 touches are valid - enter on the breakout after minimum 3 touches."
+    notes: "Bull entered with nearly 10K USDT on a 4th-touch breakout via stop-limit while having an aperitivo, making 11%. The minimum is 3 touches, but more touches increase conviction."
+
+  - id: BULL_T_30_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, breakout, terzo_tocco, trigger]
+    source:
+      timecode: "08:47-09:09"
+    conditions:
+      - "asset_daily_pct_change > 30"
+      - "ema60_breakout_completed == true"
+      - "touch_count(ema60_or_resistance) >= 3"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "On a cavallo pazzo asset, a terzo tocco at the EMA 60 level followed by breakout is a high-conviction entry, particularly when it coincides with a cambiocolore or EMA 223 breakout."
+    notes: "Bull made 6% on this setup. He entered before the actual third touch breakout by reading the small candles approaching the level, which showed the breakout was imminent."
+
+  - id: BULL_T_30_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [regime_filter, invalidation, risk_management]
+    source:
+      timecode: "10:37-11:19"
+    conditions:
+      - "asset_already_moved_50pct_today == true"
+      - "no_new_formation_visible == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Once a cavallo pazzo has already moved 50%+ from the daily low, the easy phase is over. Further entries become a fight. Only re-enter if a clear new formation appears for a new-highs breakout."
+    notes: "After the big move, the asset needs to rest. It becomes interesting again only when it lateralizes on EMA 60 or forms a bud to the moon near the new highs. Otherwise, leave it alone."
+
+  - id: BULL_T_30_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, regime_filter, breakout, trigger]
+    source:
+      timecode: "11:52-12:54"
+    conditions:
+      - "market_quiet_day == true (no cavallo pazzo visible)"
+      - "daily_chart_shows_3_candles_at_same_level == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: []
+    rationale: "On quiet days with no obvious cavallo pazzo, search the daily charts for assets with 3+ candles at the same level. These compressed daily patterns can produce the next day's breakout candidate."
+    notes: "Use the bullbot daily signals to find these. A daily compression of 3+ candles at a level, when broken on the intraday chart at a level coinciding with the prior day's high, can become the next cavallo pazzo."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_30_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, patience, risk_management]
+    source:
+      timecode: "04:35-05:20"
+    statement: "It is crucial to wait for the right moment. When the market is slow and nothing moves big, do not force trades. Wait for the cavallo pazzo days. There is no obligation to trade every day."
+    rationale: "Forced trades on slow days lead to over-trading and holding losing positions. Patience to wait for big movers is itself a technique."
+
+  - id: BULL_T_30_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management, beginner]
+    source:
+      timecode: "02:03-02:36"
+    statement: "When using techniques on assets that only move 10%, the breakouts are so small that traders fail to take profit, start hoping, and end up holding losing positions. The techniques work the same but the moves are not big enough to satisfy and exit."
+    rationale: "The same technique produces different absolute results depending on the volatility of the asset. Low-volatility assets make it psychologically harder to take small profits."
+
+  - id: BULL_T_30_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, regime_filter, patience]
+    source:
+      timecode: "13:56-14:19"
+    statement: "On days when the cavallo pazzo exists, trade it. On days without one, search daily charts for the next candidate or simply rest and study. Alternating between active trading and study days is the sustainable approach."
+    rationale: "Sustainability in trading requires rest periods. Forced daily trading leads to burnout and poor decisions."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "The cavallo pazzo technique is a meta-strategy: apply existing techniques (terzo tocco, bud, breakout) only on assets moving 30%+ daily for proportionally larger and easier gains. On quiet days without a cavallo pazzo, search daily charts for compression patterns that could produce the next big mover, or simply rest."

@@ -1,0 +1,182 @@
+# Low-confidence segments for: 047_ICO_Come_si_fa_trading_sulle_nuovo_coppie_Tutorial.mp3
+# Total flagged: 59
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:19-1:24] (confidence: -0.193)
+  "io vedo ragazzi che c'è tantissimo fomo con l'ISO porca miseria e ogni volta mi"
+
+[1:24-1:28] (confidence: -0.193)
+  "tocca scrivere ragazzi bisogna aspettare una conformazione invece c'è gente che"
+
+[1:28-1:33] (confidence: -0.193)
+  "arriva che viene dalla giungla fuori dalla bull family c'è la giungla c'è le"
+
+[1:33-1:37] (confidence: -0.193)
+  "cose più assurde possibili basta fare un giro su facebook leggere delle robe"
+
+[1:37-1:41] (confidence: -0.193)
+  "allucinanti e la gente è convinta che questa"
+
+[1:41-1:44] (confidence: -0.193)
+  "candela qua del primo giorno ci sia qualcuno che ci abbia guadagnato facendo"
+
+[1:44-1:50] (confidence: -0.158)
+  "trading cioè la gente è convinta la gente è convinta che qualcuno ha"
+
+[1:50-1:59] (confidence: -0.158)
+  "comprato a 1 è 1 e dopo un minuto anzi dopo pochi secondi poteva vendere a 1"
+
+[1:59-2:02] (confidence: -0.158)
+  "e 50 ok la gente è convinta di questo non ha"
+
+[2:02-2:07] (confidence: -0.158)
+  "capito nulla quindi pensa che in un minuto possa fare il 44% per questo c'è"
+
+[2:07-2:13] (confidence: -0.158)
+  "fomo ragazzi non esiste questa cosa qua ok toglietevi toglietevi da questi"
+
+[3:07-3:13] (confidence: -0.227)
+  "col book vuoto non c'è nulla e quindi a caso si fa una candela a caso che non"
+
+[3:13-3:18] (confidence: -0.227)
+  "c'entra niente non puoi fare nulla cioè non c'è modo di poter comprare il primo"
+
+[3:18-3:23] (confidence: -0.227)
+  "decimo di secondo è inutile ok quindi lasciate stare non serve niente non è"
+
+[3:23-3:29] (confidence: -0.227)
+  "neanche casino è si chiama suicidio non è nulla ok quindi evitate di fare su"
+
+[3:29-3:32] (confidence: -0.227)
+  "cilio anzi chiunque vuole adottare la tecnica del suicidio toglietevi dalla"
+
+[3:33-3:39] (confidence: -0.209)
+  "non vi vogliamo non voglio persone che dicono sono entrato al primo secondo"
+
+[3:39-3:42] (confidence: -0.209)
+  "che non esiste non potete neanche entrare non verrete mai eseguiti prenderete"
+
+[3:42-3:46] (confidence: -0.209)
+  "solo schiaffi in faccia basta ok detto ciò quindi questa prima candela non c'è"
+
+[3:46-3:54] (confidence: -0.209)
+  "nessuno facendo trading che poi che sia entrato a 1 a 1 ok non c'è nessuno il"
+
+[3:54-3:58] (confidence: -0.209)
+  "book era vuoto quindi semplicemente avrà uno spike a destra sinistra con"
+
+[3:58-4:01] (confidence: -0.198)
+  "volumi 0 quindi niente e ti fa questa candela basta ok"
+
+[4:01-4:07] (confidence: -0.198)
+  "dov'è che si può iniziare a guadagnare dopo ok dopo appena c'è una conformazione"
+
+[4:07-4:14] (confidence: -0.198)
+  "si può iniziare a guadagnare che infatti io ho fatto il mio primo guadagno dopo il"
+
+[4:14-4:17] (confidence: -0.198)
+  "primo bad della giornata ho fatto il mio primo guadagno c'era solo le ma 10"
+
+[4:17-4:22] (confidence: -0.198)
+  "quindi probabilmente era subito questo sì era subito questo qua quindi"
+
+[4:22-4:26] (confidence: -0.198)
+  "candeline formato il suo primo bad to the moon della storia"
+
+[5:47-5:52] (confidence: -0.242)
+  "60 minuti ho fatto un bel terzo tocco sopra la 60 prima che arrivasse la 223"
+
+[5:52-5:56] (confidence: -0.242)
+  "bellissimo terzo tocco vedete quindi aspettate semplicemente conformazione"
+
+[5:56-6:03] (confidence: -0.242)
+  "allora perché noi abbiamo fomo quindi perché gli esperti hanno fomo nel nuovi"
+
+[6:03-6:07] (confidence: -0.242)
+  "ICO perché pagano tanto e le conformazioni che ci sono poi dopo appunto"
+
+[6:07-6:11] (confidence: -0.242)
+  "pagano tanto quindi io non vedo l'ora che ci sia un nuovo ICO o anche solo"
+
+[6:11-6:16] (confidence: -0.242)
+  "una nuova cotazione di una nuova coppia semplicemente perché le"
+
+[8:29-8:34] (confidence: -0.227)
+  "per venirvi prendere i soldi dalla tasca ok se invece voi lavorate con le"
+
+[8:34-8:38] (confidence: -0.227)
+  "conformazioni lavorate con la matematica a favore"
+
+[8:38-8:44] (confidence: -0.227)
+  "lavorate con la matematica a favore è più probabile che voi imparando piano"
+
+[8:44-8:48] (confidence: -0.227)
+  "piano con l'esperienza potreste avere appunto diventare profittevoli ok ci"
+
+[8:48-8:54] (confidence: -0.227)
+  "vuole tempo bene avete capito ditemi se ci sono delle domande su questa cosa"
+
+[8:54-9:00] (confidence: -0.213)
+  "delle iso così finisco questo video anche domande che avevate voi ingenuamente"
+
+[9:00-9:05] (confidence: -0.213)
+  "all'inizio che avete capito capito così ogni volta che arriva qualcuno di nuovo"
+
+[9:05-9:09] (confidence: -0.213)
+  "quando c'è nuove iso e dice posso entrare la prima candela gli faccio"
+
+[9:09-9:14] (confidence: -0.213)
+  "vedere questo video e capirà le dinamiche quindi prima candela non si"
+
+[9:14-9:18] (confidence: -0.213)
+  "fa nulla perché questa è una candela finta una candela con zero volumi 0 non"
+
+[9:18-9:23] (confidence: -0.213)
+  "vale nulla inizia a valere dalla seconda terza candela in poi ma le candele sono"
+
+[10:41-10:47] (confidence: -0.215)
+  "l'orario quindi magari l'ora prima aspettate una conformazione l'ora prima"
+
+[10:47-10:52] (confidence: -0.215)
+  "e ve lo tenete poi dopo per quella apertura lì se fate non so un terzo"
+
+[10:52-10:57] (confidence: -0.215)
+  "tocco un'ora prima entrate e poi rientra nel terzo tocco dovete comunque uscire"
+
+[10:57-11:04] (confidence: -0.215)
+  "ok comunque poi grazie bulo ho capito io non"
+
+[11:04-11:11] (confidence: -0.228)
+  "vedo il bad nella tua entrata adonna ragazzi questo è un bad questo è il"
+
+[11:11-11:15] (confidence: -0.228)
+  "livello allora se avete visto solo la candela c'è solo il primo video qua non"
+
+[11:15-11:18] (confidence: -0.228)
+  "capirete il bad ok invece se avete visto anche le sfumature"
+
+[11:18-11:23] (confidence: -0.228)
+  "questo è il livello più alto queste sono le candele di riposo questa è la"
+
+[11:23-11:25] (confidence: -0.228)
+  "rottura quindi un bad to the moon perché sono più di quattro candela ok"
+
+[11:25-11:30] (confidence: -0.228)
+  "che ragazzi non è un bad classico fa parte delle sfumature quindi"
+
+[12:22-12:27] (confidence: -0.172)
+  "raggruppo sempre al massimo cioè io devo vedere proprio i livelli in grande"
+
+[12:27-12:34] (confidence: -0.172)
+  "ok quindi deve essere molto raggruppato non a nudo molto raggruppato perché si"
+
+[12:34-12:38] (confidence: -0.172)
+  "muove velocemente devi poter capire a colpo d'occhio dove sono i muri ok quindi"
+
+[12:38-12:43] (confidence: -0.172)
+  "io parto subito con i muri book raggruppatissima e poi dopo eventualmente"
+
+[12:43-12:50] (confidence: -0.172)
+  "lo vado a sistemare dopo ok grande golmans che contribuisce"
+

@@ -1,0 +1,83 @@
+# Low-confidence segments for: 004_La_tecnica_del_DAILY_parte_2_tenere_lo_stop_loss_vicino.mp3
+# Total flagged: 26
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:38-1:48] (confidence: -0.116)
+  "E' molto distante, e ovviamente può succedere, come in questo caso, che tu compri e va su, magari non ti accontenti,"
+
+[1:48-1:55] (confidence: -0.116)
+  "poi soprattutto in questo caso io non avrei consigliato di vendere, perché era bello andare a fare i massimi storici,"
+
+[1:55-2:00] (confidence: -0.116)
+  "quindi questo di solito è diciamo un po' l'obiettivo, quindi quando c'è una salita,"
+
+[2:00-2:06] (confidence: -0.116)
+  "tu vai a cercare quello che potrebbe essere l'obiettivo di chi sta comprando, ma poi non c'è riuscito, la cosa è andata giù."
+
+[3:18-3:28] (confidence: -0.205)
+  "ma una volta che ha fatto un massimo si va a individuare la trendline che sta facendo da supporto."
+
+[3:28-3:36] (confidence: -0.205)
+  "Quindi in questo caso qua abbiamo visto che ha tenuto il 10, qua ha tenuto il 10, qua sta tenendo il 5,"
+
+[3:36-3:40] (confidence: -0.205)
+  "allora a questo punto si può pensare di fare un'entrata in questa giornata qua."
+
+[3:40-3:47] (confidence: -0.205)
+  "Qua è entrato comunque il alto, però è entrato proprio sul supporto e quindi questo poteva essere un giorno di ingresso."
+
+[6:04-6:19] (confidence: -0.198)
+  "Quindi in questo caso la lateralizzazione qua si poteva entrare tranquillamente anche sopra qua, quindi i nuovi massimi si erano stati a 0095 e qua andava a 0160, a voglia."
+
+[6:19-6:32] (confidence: -0.198)
+  "E il bello era appunto entrando qua, anche entrando sui nuovi massimi che erano qua 0095 si vendeva qua, ovviamente è molto più vicino che andare a vendere, è comunque comparto sui massimi."
+
+[6:55-7:06] (confidence: -0.214)
+  "Allora qua si poteva comprare, stando vicino ai mediemobili, a 8 e 4, 5 e nata a 22, avendo sempre lo stop molto vicino."
+
+[7:06-7:16] (confidence: -0.214)
+  "Però andiamo a vedere cosa è successo dopo. Dopo qua c'è stato il crollo, allora quando poi è crollato è andato subito a rompere anche il 10, non ha tenuto, quindi non era da fare un ingresso."
+
+[7:16-7:26] (confidence: -0.125)
+  "E qua ha sporcato tutto, non c'era da fare nessun tipo di ingresso. Con ieri però è successo una cosa interessante, ieri crollato come tutti gli altri ha tenuto la media del 60,"
+
+[7:26-7:37] (confidence: -0.125)
+  "ha chiuso leggermente sotto ma ha tenuto. Oggi ha fatto per far capire che vuol salire, adesso sta ritracciando, abbiamo comunque bitcoin che sta andando giù,"
+
+[8:25-8:31] (confidence: -0.214)
+  "La chiusura è fondamentale, questa linea deve continuare a funzionare altrimenti è un disastro."
+
+[8:31-8:42] (confidence: -0.214)
+  "Allora, niente, ieri alla grande ha recuperato, ha fatto sempre danni ma comunque ha recuperato, ok, danni per chi ha un portafoglio."
+
+[8:42-8:56] (confidence: -0.187)
+  "Poi oggi invece ha partito bene, stava recuperando e adesso sta andando giù a testare, è già arrivato a testare, è andato un attimino sotto e è tornato su."
+
+[9:21-9:36] (confidence: -0.121)
+  "Vediamo se fa le solite finte o meno, comunque è da tenere d'occhio. Quindi nel caso in cui stessimo per entrare, ecco l'una, questa è l'una, in un titolo dove anch'esso è su questa resistenza io eviterei."
+
+[9:36-9:47] (confidence: -0.121)
+  "Nonostante per esempio oggi è un bel segnale quindi sarebbe un ottimo ingresso a l'una, ma sarebbe un ottimo ingresso se quello che è il nostro riferimento, sapete che per me l'indice è il bitcoin,"
+
+[9:47-10:05] (confidence: -0.198)
+  "quindi se vado il bitcoin tendenzialmente porta giù quasi tutto, quindi se anche bitcoin è nello stesso condizioni di quello che noi vogliamo comprare evito, ok, quindi a sto punto devo aspettare un bel segnale positivo da parte di bitcoin che in questo momento non c'è."
+
+[10:05-10:23] (confidence: -0.095)
+  "Ma nel caso in cui invece bitcoin fosse tranquillo, quindi bitcoin avesse un grafico tranquillo, quindi tranquillamente se ne sta sopra a questa media mobile, quindi se ne sta in questa zona qua e siamo su l'una che sta testando, questo può essere un ottimo ingresso, ok?"
+
+[10:23-10:51] (confidence: -0.16)
+  "Magari si vede cosa succede domani, però questo potrebbe essere un ottimo ingresso, perché ha fatto una gran salita, adesso ha fatto la sua bella discesina, ha fatto la sua testa della resistenza, è la prima volta poi che lo va a testare, se fosse la seconda volta lascerei perdere, è comunque la prima volta, la resistenza sarebbe molto vicina, quindi se domani bitcoin fa capire che non vuole andare sotto e questo fa capire che comunque vuole salire, può essere un ottimo ingresso e hai lo stop molto vicino, ok?"
+
+[10:51-10:59] (confidence: -0.143)
+  "Quindi questa seconda parte del video è più un punto sul fatto di avere questa tecnica con lo stop molto vicino."
+
+[10:59-11:23] (confidence: -0.152)
+  "Andiamo a vedere l'ultimo esempio, uguale, qua siamo su MTL, quindi mega spiccone, in questo caso non è andato subito giù a testare la media mobile 10, ma ha fatto resistenza e ha fatto da supporto quello da 5, comunque non ci interessa per il discorso daily, può essere interessante invece qua, ok?"
+
+[11:23-11:42] (confidence: -0.222)
+  "Quindi ieri, pulito pulito, ha toccato il 60, senza andare neanche a fare lo spike sotto, quindi ha dimostrato grandissima forza, questa MTL, molto interessante, e oggi ancora meglio, ha fatto niente, io amo quando dopo che hanno testato la resistenza i giorni dopo fanno niente, questo momento sta facendo niente."
+
+[11:42-12:05] (confidence: -0.156)
+  "Ok, questo tenetelo d'occhio, MTL, perché per la tecnica del daily con un supporto vicino, molto interessante, se è bitcoin, non va su fondario 60, anche questo ottimo ingresso, ottimo ingresso è lo stop ovviamente sotto questo spike, ok? Lo stop è sotto proprio questo spike qua, quindi siamo abbastanza vicini, ok?"
+

@@ -1,0 +1,266 @@
+# Low-confidence segments for: 031_Segnale_MARTELLO_Tecnica_di_Trading_Tutorial_Uno_dei_piu_potenti_ed_efficaci.mp3
+# Total flagged: 87
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.486)
+  "Ciao Traders, siete su Scapina Bull. Oggi parliamo del segnale martello, sigla."
+
+[0:34-0:45] (confidence: -0.307)
+  "C'è FOMO qua sotto. Il segnale c'è già dal 31 dicembre, però devo ancora fare il video."
+
+[0:45-0:50] (confidence: -0.307)
+  "Nella festività eccetera. Aspettiamo un attimo. L'ho già mostrato non so quante volte, infatti"
+
+[0:50-0:59] (confidence: -0.307)
+  "ho un sacco di esempi. Però niente, qua quindi segnali del bullbot, martello, ok? Poi su ogni"
+
+[0:59-1:06] (confidence: -0.169)
+  "segnale, qua non vedete che c'è il link, ma ogni segnale ha il link del video, ok? Su martello,"
+
+[1:06-1:13] (confidence: -0.169)
+  "quindi finito questo video, troverete il link sopra. Quindi ogni tipo di segnale ha il video che vi"
+
+[1:13-1:18] (confidence: -0.169)
+  "spiega. Ok, basta cliccare qua, fantastico, facile, ok? Così vi diamo una mano. Quindi martello,"
+
+[1:18-1:22] (confidence: -0.169)
+  "non c'è ancora il video perché lo sto facendo in questo momento. E qua sono tutti i nostri"
+
+[1:22-1:30] (confidence: -0.179)
+  "bei segnali. Quindi andiamo a vedere con qualcosa di già fatto, ok? Quindi qua troviamo, prima era"
+
+[1:30-1:35] (confidence: -0.179)
+  "in beta channel, ma adesso è in beta channel per noi dove sperimentiamo, e invece adesso è già"
+
+[1:35-1:44] (confidence: -0.179)
+  "passato al martello. Quindi cos'è? Esempio, questo è il segnale del bullbot che ci segnala"
+
+[1:44-1:48] (confidence: -0.179)
+  "appunto una lateralizzazione con le candeline. La lateralizzazione con le candeline è il segnale"
+
+[1:48-1:55] (confidence: -0.174)
+  "martello. Quindi candeline piccole sullo stesso livello, ok? Quindi c'è un azzeramento, diciamo,"
+
+[1:55-2:01] (confidence: -0.174)
+  "delle medie mobili quelle più vicine. Fantastico questo perché poi alla rottura di questo canale"
+
+[2:01-2:08] (confidence: -0.174)
+  "puoi andare a esplodere, ok? Questo è il segnale per eccellenza, mi piace veramente un sacco. E quindi"
+
+[2:08-2:12] (confidence: -0.174)
+  "prima di tutto cosa succede? Ti arriva il segnale, cioè tutto l'elenco lunghissimo, e voi dovete andare"
+
+[2:12-2:17] (confidence: -0.174)
+  "a selezionare magari qualcosa che vi piace di più, ok? In questo caso sta facendo un più 20, capite"
+
+[2:43-2:49] (confidence: -0.217)
+  "più alta la percentuale, più è probabile che forse fa delle candele grandi, quindi vi accontentate,"
+
+[2:49-2:54] (confidence: -0.217)
+  "ok? Quindi se stiamo lavando su un titolo che sta facendo l'1%, fa un martello, poi fa il breakout,"
+
+[2:54-2:58] (confidence: -0.217)
+  "magari quel breakout ha dello 0,2%, quindi non vi accontentate. Se è qualcosa che fa il 20,"
+
+[2:58-3:07] (confidence: -0.217)
+  "magari il breakout ha del 3, 4, 5%, ok? Quindi il segnale verrà così. Più è pulito il segnale,"
+
+[3:07-3:12] (confidence: -0.221)
+  "più è bello da utilizzare, ok? Quindi in questo caso molto bello, molto pulito,"
+
+[3:12-3:18] (confidence: -0.221)
+  "candelline piccole, vedete già dal grafico che vi arriva, ok? Però dopo lo andate a aprire,"
+
+[3:18-3:24] (confidence: -0.221)
+  "andate a vedere. In questo caso, vedi questo è i jasmi, quindi il segnale sta di prima,"
+
+[3:24-3:29] (confidence: -0.221)
+  "aveva segnato questo. Alla rottura si fa l'ingresso e poi dopo ha fatto la botta,"
+
+[4:21-4:28] (confidence: -0.159)
+  "Potreste non vedere da una parte o dall'altra o di ritrodo da tutte le parti il livello grosso"
+
+[4:28-4:32] (confidence: -0.159)
+  "nel book perché semplicemente o sono iceberg o è questa tecnica dove quando viene mangiato viene"
+
+[4:32-4:35] (confidence: -0.159)
+  "comunque inserito, quindi è come se fosse un iceberg anche se tecnicamente non lo è perché"
+
+[4:35-4:41] (confidence: -0.159)
+  "ogni volta potrebbe scendere un attimo per ripartire. Quando avremo molti più iceberg reali"
+
+[4:41-4:46] (confidence: -0.159)
+  "come nei mercati azionari, anche nel mercato cripto, il segnale martello sarà sempre più pulito, ok?"
+
+[4:46-4:50] (confidence: -0.159)
+  "Questo livello sotto che batte e non fa mai uno spike sotto, questo è più da iceberg, quindi è"
+
+[5:17-5:22] (confidence: -0.132)
+  "compra, ok? E il prezzo oscilla all'interno. Cosa succede? Una volta rotto questo canale,"
+
+[5:22-5:28] (confidence: -0.132)
+  "se rompa a ribasso, crollerà a ribasso, se rompa a rialzo, crollerà a rialzo. Per questo ci piace"
+
+[5:28-5:34] (confidence: -0.132)
+  "tanto, ok? Quindi ci può essere il livello come no. Io delle volte faccio l'ingresso anticipato e"
+
+[5:34-5:42] (confidence: -0.132)
+  "sono io che vado a innescare poi la rottura del livello per farlo saltare, ok? Magari adesso ne"
+
+[6:31-6:38] (confidence: -0.185)
+  "un esempio pratico che ho fatto. Quindi candeline, ok? E' andato poi a rompere sotto. Quindi qua"
+
+[6:38-6:41] (confidence: -0.185)
+  "non c'era nessun ingresso. Se rompeva sopra si entrava già qua. Invece ha rotto sotto,"
+
+[6:41-6:47] (confidence: -0.185)
+  "ha tornato su, ha tornato di nuovo al stesso livello, quindi l'iceberg o il pezzo grosso. Ha"
+
+[6:47-6:53] (confidence: -0.185)
+  "laterizzato ancora, se rompe niente, torna su. Ecco, appena rompe ha rialzo, quindi questo livello"
+
+[6:53-6:59] (confidence: -0.185)
+  "bello pari si entra, ok? Io in questo caso non l'ho visto, sono entrato in quello dopo e niente,"
+
+[7:20-7:29] (confidence: -0.238)
+  "l'atterizzazione è piccola ma di candelline, molto piccoline, precise, allorattura esplode,"
+
+[7:29-7:36] (confidence: -0.238)
+  "esplosione. State capendo no? Che potenziale che c'ha questa roba qua. L'atterizzazione,"
+
+[7:36-7:41] (confidence: -0.238)
+  "quindi qua ci poteva essere non so 200.000 nel book, un livello molto grande, allorattura,"
+
+[7:41-7:45] (confidence: -0.238)
+  "no sennò era un iceberg, allorattura si entra. Io sono uscito subito, sono contentato,"
+
+[7:45-7:51] (confidence: -0.25)
+  "guarda dove è andato. Ha fatto un'esplosione pazzesca però che se ne frega noi ci accontentiamo."
+
+[7:51-7:58] (confidence: -0.25)
+  "Guardate qua, più sono precise queste cose, più sono candelline, più dopo può esplodere. Ok?"
+
+[7:58-8:06] (confidence: -0.25)
+  "Questo è un 20% ha fatto, rendetevi conto. Da 5,5 a 6,5, questo è un 20%. Ok? Ovviamente ci"
+
+[8:06-8:14] (confidence: -0.25)
+  "sono le proporzioni. Ovviamente, per esempio qua, ha fatto un 20% ma vedete qua solo più 17,"
+
+[10:36-10:44] (confidence: -0.223)
+  "perché qua è schiacciato fra denaro, cioè sotto e lettera e fa un canale. Qualcuno che vuole vendere"
+
+[10:44-10:49] (confidence: -0.223)
+  "una quantità grossa in vendita, qualcuno che sta comprando una quantità grossa in denaro e fa"
+
+[10:49-10:56] (confidence: -0.223)
+  "lateralizzare con candeline il prezzo. Quando rompe vuol dire che questo qua ha finito di vendere e"
+
+[10:56-11:04] (confidence: -0.223)
+  "quindi dopo c'è spazio. Quindi c'è proprio panico cavolo e quindi dopo esplode. Mio avanti,"
+
+[11:30-11:35] (confidence: -0.206)
+  "time frame. Quando chiedete dov'è il target, dipende dal grafico. Quindi andate a vedere i time"
+
+[11:35-11:41] (confidence: -0.206)
+  "frame più alti e capirete dove sono i vari trigger, i vari posti dove ci può essere l'esplosione"
+
+[11:41-11:47] (confidence: -0.206)
+  "ancora di più oppure dove ci può essere una resistenza per poi uscire, ok? I trigger e i"
+
+[11:47-11:52] (confidence: -0.206)
+  "trigger. Il target, quindi la vendita, se non sapete dove venderli andate a vedere i time frame più"
+
+[11:52-11:57] (confidence: -0.206)
+  "grandi e cercate di capire. Ok, all'inizio non capirete nulla ovviamente, giustamente per questo"
+
+[11:57-12:02] (confidence: -0.233)
+  "mestiere difficilissimo, ma col tempo piano piano stando nella family, riuscirete a capire,"
+
+[12:02-12:09] (confidence: -0.233)
+  "altro livello, testa sinistra, sotto e sopra, denaro e lettera che schiaccia all'ortura si entra, ok?"
+
+[12:09-12:19] (confidence: -0.233)
+  "Ho un sacco di esempi. Rose, laterizzazione, ok? Non è candelline, semplicemente laterizzazione,"
+
+[12:19-12:25] (confidence: -0.233)
+  "il livello del bad è il livello più alto, rotto si entra, vai. Quindi per questo dovete imparare"
+
+[13:51-13:59] (confidence: -0.237)
+  "perché ovviamente stavo prendendo una percentuale molto alta, però l'ho visto nel daily, ok? Quindi"
+
+[13:59-14:07] (confidence: -0.237)
+  "guardate gli altri time frame, 30 minuti, time frame a 1 ora, il daily, e andate a capire"
+
+[14:07-14:13] (confidence: -0.237)
+  "dove sono i livelli per poter uscire. Anche qua, uguale, all'interno dello shimano, candeline piccole,"
+
+[14:13-14:17] (confidence: -0.237)
+  "la rottura si entra, ok? Quindi segnale martello all'interno dello shimano, cosa volete di più?"
+
+[14:41-14:47] (confidence: -0.166)
+  "ci interessa, perché non ci interessa andare short, ci interessa poi mettere un alert al livello,"
+
+[14:47-14:55] (confidence: -0.166)
+  "ok? Quindi rotto lo 0325, qua era il segnale short, voi rimettete un alert a 0325, perché se dovesse"
+
+[14:55-15:03] (confidence: -0.166)
+  "tornare al livello 0325 e rompe poi questo livello qua, quindi rompe il livello che non diceva a rompere"
+
+[15:03-15:08] (confidence: -0.166)
+  "prima del crollo, questo è un livello trigger dove potete tranquillamente entrare senza aspettare"
+
+[15:08-15:12] (confidence: -0.182)
+  "un'ulteriore conformazione e la conformazione è già stata fatta prima, quindi questa è semplicemente"
+
+[15:12-15:18] (confidence: -0.182)
+  "una finta, quindi dopo si entra all'ortura sempre di questo livello qua, ok? Mettete un alert quando"
+
+[15:18-15:27] (confidence: -0.182)
+  "supera il livello della discesa, quindi il livello del supporto, se dovesse tornare è fantastico,"
+
+[15:27-15:31] (confidence: -0.182)
+  "se ci torna fra tre giorni, un altro discorso, se ci torna subito quel livello è fantastico, ok?"
+
+[15:31-15:36] (confidence: -0.182)
+  "Quindi si può usare doppiamente, se rompe e dice vabbè l'ho seguito per niente, no, mettete un alert,"
+
+[16:52-16:58] (confidence: -0.126)
+  "livello e torna a questo livello si vende, non c'è bisogno di aspettare la 60, non lo deve fare, ok?"
+
+[16:58-17:07] (confidence: -0.126)
+  "Se qua avesse rotto e poi torna dentro si deve chiudere, ok? Quando parte deve partire, poi dopo"
+
+[17:07-17:13] (confidence: -0.126)
+  "partendo può fare anche candeline, non deve ritornare nel livello dell'iceberg, il livello"
+
+[17:13-17:17] (confidence: -0.126)
+  "preciso, non deve più tornare in quel livello lì, se ci torna dovete chiudere, non dovete aspettare"
+
+[18:05-18:13] (confidence: -0.212)
+  "scorreli, vedi? Quando vedete delle candele precisissime, le vedete già, alcuni i segnali"
+
+[18:13-18:17] (confidence: -0.212)
+  "sono un po' più sporchi, alcuni no, comunque andate a visualizzare, ovviamente con i percentuali"
+
+[18:17-18:21] (confidence: -0.212)
+  "più alti sono quelli che con i break out vi daranno maggior soddisfazione, però controllate sempre"
+
+[18:21-18:28] (confidence: -0.212)
+  "che, anche in negativa, fantastica, incontrati sempre che le proporzioni di questo titolo che"
+
+[18:28-18:34] (confidence: -0.212)
+  "andate a vedere siano adeguate a far sì che noi ci possiamo accontentare, quindi usate il righello,"
+
+[19:01-19:10] (confidence: -0.278)
+  "42 persone in ascolto e 4 persone nell'arena, cioè 4 persone in cattedra nell'arena, questa è"
+
+[19:10-19:19] (confidence: -0.278)
+  "Bularena e qua impari analisi di mercato, usano i termini, guardano i segnali, non avete vero"
+
+[19:19-19:25] (confidence: -0.278)
+  "conto di cosa siamo arrivati, pensate fra un anno cosa ci sarà, io sono stupito. Iscrivetevi a"
+
+[19:25-19:30] (confidence: -0.278)
+  "youtube mi raccomando, iscrizione, mi raccomando il like, perché se no io video li faccio quando"
+

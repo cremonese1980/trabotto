@@ -66,7 +66,7 @@ def download_audio(url: str, output_dir: Path) -> list[Path]:
     ]
 
     print(f"Downloading: {url}")
-    subprocess.run(cmd, check=True)
+    subprocess.run(cmd, check=False)
 
     # Return all mp3 files in output dir, sorted
     return sorted(output_dir.glob("*.mp3"))

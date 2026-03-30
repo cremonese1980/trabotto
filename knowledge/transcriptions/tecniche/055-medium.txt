@@ -1,0 +1,228 @@
+0:00 ciao a tutti e adesso siete su Skyping the Bull video sul founding rate, questa bella
+0:05 dicitura che trovate qua in alto founding rate con un valore, ecco vi vado a
+0:10 spiegare quello lì con due tecniche per utilizzare questo ne ho parlato al
+0:19 webinar di tutte le tecniche e qua però mi voglio soffermare sulle due tecniche
+0:25 che vorrei che voi utilizzasse ok quindi partiamo dal fatto che cos'è il
+0:29 founding rate? allora quando un prezzo oscilla troppo fra il perpetuo quindi
+0:36 su buybit sui futures diciamo il prezzo che abbiamo sui futures è diverso
+0:42 rispetto al prezzo che abbiamo sul mercato spot, adesso qua prendiamo l'esempio
+0:46 binance perché sul mercato spot ha più volumi ma si può usare anche lo spot di
+0:53 buybit per ver come riferimento comunque quando il prezzo si distanzia
+0:59 cosa voglio dire? qua c'è l'esempio c'è la linea blu è lo stesso orario fra i
+1:04 due grafici e qua vedete su binance che è andato a fare nuovi massimi arrivato a
+1:11 12.3 più o meno e qua invece è iniziato a lateralizzare e vedete il massimo è
+1:17 11.25 quindi capite che c'è una bella differenza quindi 11.25 qua è arrivato a
+1:24 12.3 è un 10 per cento di differenza vedete proprio differenza di prezzo che
+1:29 qua continua a salire qua invece inizia a lateralizzare ok poi con formazione
+1:33 short ma quando accade che il prezzo si discosta cosa può fare buybit o
+1:41 comunque qualsiasi altro exchange? mettono il founding rate ok qua stiamo
+1:45 parlando di buybit perché noi siamo buybit e cosa fanno? aumenta mette una
+1:50 tassa founding rate non è altro che una tassa per disincentivare chi è short per far sì
+1:57 che il prezzo si possa allineare ok non l'ho mai visto un founding rate in
+2:02 positivo importante qua nel founding rate stiamo parlando di cifre da meno un
+2:08 percento in su ok sotto non è niente per poter applicare questa tecnica serve
+2:14 almeno un meno un percento cosa significa meno un percento significa che
+2:18 se sei short allo scadere qua mancano per esempio 10 minuti quindi allo
+2:24 scadere se sono short dovrò pagare questa cifra in questo caso è oggi non
+2:28 c'è nessuno in founding rate con un founding rate allevato però in questo caso allo
+2:33 scadere dovrei pagare lo 0,16 per cento a chi è long allo scadere ok ma invece
+2:41 negli esempi che andremo a vedere invece il founding rate era in questo caso
+2:46 l'uno e mezzo per cento quindi allo scadere qua era le ore 9 adesso dipende
+2:53 appunto gli orari sono sempre 8 ore fra una cosa e l'altra
+2:57 dipende sempre se cambio candela e a l'une di notte alle due di notte perché
+3:01 parte da lì lì è la prima scadenza del founding rate da lì sono 8 ore per 3
+3:06 volte al giorno e in questo caso alle 9 per cambio candela era l'una e allo
+3:14 scadere allo scadere che avete alle 9 si pagava l'uno e mezzo per cento poi qua
+3:20 vedete due perché il prezzo è continuato a discostarsi quindi ha aumentato il
+3:24 founding rate da 1 e mezzo è andato addirittura a meno 2 ok e poi qua c'è
+3:27 l'orario in cui va a scadere quindi ricapitolando cosa accade quando i due
+3:32 prezzi sono diversi fra il mercato spot e il mercato perpetuo il mercato
+3:37 perpetuo il mercato dove ci sono i futures dove possiamo andare anche short
+3:41 dove c'è tantissima liquidità c'è più liquidità rispetto al mercato binance spot
+3:46 ok e sono due mercati diversi talmente sono
+3:50 diversi e talmente è reale che devono mettere un founding rate cioè devono
+3:53 dire nei mercati azionari cosa fanno quando ci sono dei problemi non di
+3:57 differenza di prezzo ma oscillazioni troppo grandi spesso tolgono la
+4:02 possibilità di andare short invece qua invece di toglierla possibilità per
+4:05 fortuna ha fatto una cosa più intelligente hanno messo una tassa ok
+4:08 quindi disincentiva ecco grazie a questa logica quindi praticamente dicono non
+4:14 non ti togliamo la possibilità di andare short tu puoi andare short ma devi pagare
+4:18 una tassa del 2 per cento che è tantissimo o in questo caso quando è
+4:21 scaduto era l'uno e mezzo per cento è tantissimo quindi va a disincentivare
+4:25 l'utilizzo di quello strumento che in realtà lo puoi utilizzare all'interno
+4:28 del tempo l'importante è che entro la scadenza tu lo vada a chiudere ok poi
+4:33 quando chiude quando finisce fa questo spike e proprio grazie a questo si
+4:43 forma una tecnica per quando ci stiamo andando alla scadenza è una tecnica per
+4:50 quando è scaduto ok quindi voi dovete capire prima come è possibile che ci
+4:56 sia questa differenza di prezzo è proprio perché qualcuno di grande di
+5:01 enorme infatti qua abbiamo anche il segnale del bull bot che si chiama
+5:06 founding rate e big balena in base agli spostamenti qua per esempio il segnale
+5:13 big balena c'è già una differenza fra spot e per peto del 159 per cento quindi
+5:17 ti avverte che attenzione su questo titolo qua si sta già discostando
+5:21 perché io non vorrei farvi fare comunque la prima la prima tecnica poi
+5:28 ve lo racconto insomma e quindi praticamente ti dice che si sta già
+5:31 spostando e quindi voi potete fare attenzione quando si sposta io vi
+5:35 consiglio di avere sempre i due grafici di aver sempre due grafici sotto quindi
+5:42 praticamente in questo contesto qua ecco di avere sempre un grafico del
+5:48 del mondo spot è un grafico del perpetuo in modo che si possa capire la
+5:52 differenza e capire perché quando si discosta quindi a un certo punto qua
+5:57 con il lateralizza invece su spot si va a far nuovi massimi
+6:00 cosa succede che stanno vuol dire che stanno anticipando pesantemente quindi
+6:05 qualcuno di molto grosso o più persone di molto grosso insieme stanno dicendo io
+6:10 ho delle posizioni voglio aprire una posizione molto grosso short quindi non
+6:16 mi interessa il prezzo continua a salire semplicemente io continuerò a vendere
+6:19 riuscirò a venderne di più e mi preparo poi dopo per il prezzo che va a
+6:23 crollare ok oppure questo è il primo scenario
+6:26 oppure semplicemente è uno che grazie ai forti rialzi ai forti rialzi questo
+6:31 accade sempre dopo un forte rialzo nel founding right difficilmente si va a
+6:35 discostare il prezzo fra i due mercati difficilmente si va a discostare se il
+6:39 prezzo non è salito fortemente quando sale fortemente quindi siamo anche nel
+6:42 caso in cui qualcuno semplicemente ha guadagnato tantissimo non gli interessa
+6:46 vendere un prezzo più alto perché ha delle quantità talmente enormi che deve
+6:50 iniziare a vendere prima vi ricordo che se hai delle percentuali di società quindi
+6:54 stiamo parlando di mille o 10.000 o 100.000 dollari stiamo parlando di milioni
+6:58 di dollari quindi se delle percentuali ci vogliono addirittura più giorni quindi
+7:02 una persona può anche dire ok basta non mi interessa adesso inizia a vendere
+7:05 anticipo e quindi proprio proprio per il fatto che si va a discostare
+7:11 incentiverò le persone a comprare io invece venderò le mie quota enormi
+7:15 magari invece di metterci tre giorni ci metterò due giorni questo è però
+7:19 interessante capire proprio se questa balena questo fondo quel che è sta
+7:25 iniziando a andare short o se questa balena o fondo quel che è sta vendendo
+7:32 semplicemente i suoi long sta chiudendo i suoi long grazie a questo si creerà
+7:39 una tecnica allora la prima tecnica che invece vi
+7:43 sconsiglio perché secondo me è la più difficile è proprio questa che quando
+7:47 inizia a discostarsi quindi sui perpetuo il mercato inizia a lateralizzare e
+7:52 invece su spot continuo a fare i massimi non andate short a prescindere
+7:58 perché questo quando va a fare i massimi vi può fare degli spike e vi può
+8:01 liquidare vi ricordo anche che la liquidazione mi potrebbe anche venire
+8:06 anche se non tocca il prezzo di liquidazione proprio perché si tiene
+8:11 conto del prezzo medio spot quindi se non c'è un prezzo medio molto diverso su
+8:16 spot potresti essere liquidato quindi quando si opera col founding rate alto
+8:21 ragazzi la abbassate drasticamente la leva quindi se usate leva 10 usate
+8:29 magari leva 5 e mettete uno stop massimo del 2-3% altrimenti rischierete
+8:35 essere liquidati ingiustamente e vi chiederete come mai questo è il motivo
+8:38 ve l'ho già spiegato perché si basano sul prezzo spot quindi fate attenzione
+8:42 molto pericoloso ma soprattutto prima di dare short aspettate una qualsiasi
+8:46 conformazione short prima in spot quindi prima dobbiamo vedere che spot
+8:50 crolli e dopo possiamo pensare che possa crollare anche perpetuo quindi
+8:54 mi raccomando però questa è la tecnica più difficile io vorrei farvi concentrare
+8:58 su gli altri due e gli altri due tecniche sono queste qua
+9:03 quindi una volta capito il perché e che cos'è il founding rate cerchiamo di
+9:09 capire due tecniche allora se noi siamo short quindi siamo quel fondo che è short
+9:17 verrà disincentivato ad aumentare i suoi short prima dello scadere
+9:23 tendenzialmente andrò a alleggerirmi ok o tendenzialmente gli altri quindi noi
+9:29 trader non andremo non terremo i nostri short aperti prima e dopo lo scadeo o
+9:38 nello scadere perché sennò dovremmo pagare nel entro allora in questo caso
+9:43 scadeva alle 9 alle 8 59 e 55 secondi quindi addirittura se noi siamo dentro
+9:50 5 secondi prima della scadenza siamo short noi anche prima di scadere quindi
+9:56 entro 5 secondi prima dobbiamo chiudere perché altrimenti dobbiamo pagare il
+9:59 famoso founding rate che in questo caso era l'uno e mezzo per cento a chi è long
+10:05 ok quindi noi saremo disincentivati se sei disincentivato ad andare short cosa
+10:10 può accadere può accadere che appunto il prezzo possa salire perché appunto
+10:15 sei disincentivato ad andare short e se sei short sei incentivato a chiudere e se
+10:21 chiudi gli short cosa devi fare devi comprare quindi praticamente è più
+10:25 facile che si possono avere dei movimenti long ok quindi io di solito
+10:28 quando c'è quando c'è il founding rate auto cosa faccio mettere gli alert
+10:32 un'ora prima quindi in questo caso era alle 9 io metto un alert un'ora prima e
+10:36 aspetto di vedere se ci sono delle conformazioni per poter andare long
+10:39 perché appunto sarà avrò diciamo il venti in pop cioè avrò più possibilità
+10:45 che che con il discorso del long io posso avere un qualcosa a favore ok in
+10:52 questo caso l'ho sfruttato malissimo perché appunto o mi sono svegliato tardi
+10:55 oppure insomma non lo so però comunque sono uscito a fare il mio rimbalzo però
+10:58 qua vedete è proprio un trend rialzista ovviamente non è sempre così ma voi
+11:02 aspettate una conformazione per andare long nell'ora prima dello scadere e
+11:08 sappiate già che abbiamo la possibilità che questo trend si possa
+11:11 accentuare ok quindi lo sappiamo già quindi già questo è un nostro vantaggio
+11:15 proprio per quello che ho detto prima gli short sono disincentivati quindi o non
+11:19 si va short oppure chi è short tende a chiudere per poter non pagare questo
+11:23 1% e mezzo a chi è short a chi è long un altro tecnica su cui invece io non
+11:31 voglio che vi soffermate e cercare di incassare con 1 e mezzo per cento ok
+11:34 perché uno può dire io semplicemente tengo il long faccio scadere
+11:42 l'orario mi incasso 1 e mezzo poi vendo ma vedrete che sarà difficilissimo che
+11:46 voi riuscirete a incassare cioè riuscirete a incassarli ma poi non
+11:50 riuscirete a vendere all'1 e mezzo per cento sopra l'1 e mezzo per cento ok
+11:54 quindi in pratica è come se non lo prendeste quindi questa tecnica io vorrei
+11:57 che lo chiudeste prima dello scadere quindi 10 secondi prima dello
+12:04 scadere ok entro i 50 secondi dello scadere ok importantissimo questo poi
+12:10 volete fare i vostri test volete provare voi provate pure a cercare di
+12:14 chiuderlo prima perché vedrete che in realtà cosa fa si crolla della
+12:20 grandezza del del founding rate di fatti io vorrei che voi poi faceste
+12:26 questa cosa metteste una linea dove finita dove dell'orario di chiusura
+12:31 quindi il massimo una linea del valore del founding rate quindi in questo caso
+12:36 è un meno 1 e mezzo per cento questo vi farà capire la seconda
+12:40 tecnica quindi la prima tecnica è sfruttare gli long quindi qualsiasi
+12:43 conformazione long noi lo sfruttiamo sapendo di avere il vento in poppa lo
+12:47 chiudiamo prima dello scadere se volete tenerlo poi provate voi fate la vostra
+12:52 statistica ma vedrete che delle volte riuscirete a chiudere la prima del
+12:55 chiudere la incassando un e mezzo e vendendolo prima del corollo ma
+12:59 solitamente non ci riuscirete ok però l'importante già capire questo meccanismo
+13:04 qua la seconda tecnica è mettere le due linee capire dove è l'uno e mezzo per
+13:09 cento questo poi perché va a crollare perché le persone che sono nati long
+13:12 cosa vogliono fare vogliono incassare l'une mezza e poi vendere ok sono
+13:16 disposti a farlo fino all'uno e mezzo per cento quindi tendenzialmente non
+13:19 dovrebbe fare più dell'uno e mezzo per cento quando invece fa di più di uno e
+13:22 mezzo per cento vuol dire che gli short sono di sono di nuovo partiti perché
+13:28 dopo lo scadere hai dopo otto ore di tempo per stare long quindi ovviamente
+13:34 sei incentivato in questa casa ad andare a andare a andare a andare short
+13:39 sei incentivato a andare short perché dopo hai otto ore prima della prossima
+13:41 volta che devi pagare ok quindi da qui se noi vediamo che il prezzo rimane
+13:47 sotto l'uno e mezzo per cento tendenzialmente andrà a far nuovi minimi
+13:51 ok quindi qua praticamente ha fatto le sui battai però già la prima candela
+13:58 vedete ha chiuso sotto l'une mezza quindi qua abbiamo capito che era
+14:00 debole ha testato la 10 ma dopo ha andato a fare nuovi minimi ok
+14:04 proprio perché dopo hai di nuovo l'incentivo ma se se per caso invece
+14:09 attenzione livello estremamente trigger una volta ha postato il trade infatti
+14:14 dove subito era andato a meno 1% ma poi dopo è andato subito a
+14:18 chiudere questo gap quando va a chiudere il gap del founding rate per
+14:22 questo voglio che mettete in linea questo livello è molto molto molto molto
+14:26 trigger ok quindi questa è la tecnica che voi più dovete fare attenzione
+14:33 guardate poi dopo che è successo dopo di fatti è andato a fare questo nuovo minimo
+14:38 proprio perché ritorna il discorso dell'incentivo quindi c'è l'incentivo a
+14:43 riaprire gli short ok e quindi dopo è andato a fare nuovi minimi ma questo
+14:50 livello tenete la mente importantissimo perché cosa è successo quando poi siamo
+14:54 andati eccolo qua quando poi siamo andati al founding rate dopo quindi
+14:59 stiamo parlando di quello invece delle 17 ok quindi otto ore dopo stesso discorso
+15:05 è crollato ma poi è arrivato al livello più alto del founding rate e guardate
+15:12 cosa ha fatto esploso ok questo diventa un livello estremamente trigger diventa
+15:18 come un cambio colore daily ragazzi è potentissimo quindi attenzione ok
+15:23 importante che lo sapete e poi poi qua ha fatto una bellissima conformazione
+15:26 antincrocio che in realtà si poteva addirittura anticipare questo livello
+15:29 però ogni volta c'è una conformazione diversa qua si trovava sotto le emma a
+15:35 timeframe un minuto e in questo caso anche su binance c'è stato questa
+15:39 esposizione però è stato più rimarcato per quanto riguarda by bit
+15:46 eccolo qua c'è abbiamo un altro caso
+15:49 ecco questo era proprio il caso precedente e quando ha fatto poi il 2%
+15:57 ha tenuto le due linee io poi qua fatto le mie varie operazioni di scalping
+16:01 tenuto le due linee ho fatto il mio rimbalzo perché è andato molto più
+16:04 giù ho fatto semplicemente il mio rimbalzo e altre cosine poi dove questa
+16:09 roba roba da scalping io invece vorrei che ecco tenete per esempio
+16:13 eventualmente un terzo tocco per andare short ok ma tenete sempre i livelli
+16:18 tenete gli alert sui livello più alto perché se dovesse andarci e dopo qua
+16:22 c'è andato avete visto cos'è successo ok e la cosa importante è eccolo qua
+16:29 vedete poi è crollato guardo ho fatto le mie operazioni e aspettare sempre una
+16:34 conformazione ok quindi conformazione la mano abbiamo avuto questo antincrocio
+16:39 molto interessante e poi dopo questo è il livello estremamente trigger ok
+16:44 quindi questa è la tecnica del founding rate vorrei che teneste d'occhio l'ora
+16:49 prima per avere il vento in poppa per sfruttare questo fatto di del disincentivo
+16:54 degli short fregarvene di incassare la parte del founding rate se volete fare
+17:03 queste prove con una size piccola fatela ma vedrete che è molto difficile e la
+17:06 seconda parte nel caso in cui dovesse andare a rompere i massimi ok delle volte
+17:11 lo fa subito tipo in primi 4-5 minuti è veramente un livello estremamente trigger
+17:18 ok perché vuol dire che lo shortista che prima teneva scostato il prezzo ha
+17:25 praticamente ha finito ha finito il suo lavoro e quindi esplode ok e poi
+17:31 vedrete che dopo infatti dopo il prezzo poi si è macciato ok questo è su buy
+17:35 bit questa è binance qua arrivato a 53 e 12 qua arrivato a 53 e 4 quindi dopo il
+17:40 prezzo si è molto rilineato ok poi il founding rate può rimanere anche per più
+17:45 tempo vedono loro se c'è un bilanciamento o meno però questo è ok
+17:50 quindi mi raccomando i primi test che fate sempre con le nuove tecniche con size
+17:54 molto ridotte cercate di capire se avete feeling o meno ma l'importante è
+17:59 capire questo questo nuovo meccanismo che è veramente qualcosa di potente che
+18:04 noi abbiamo per lavorare abbiamo bisogno di che cosa abbiamo bisogno di
+18:07 movimento e questa veramente è potentissima come avere un cambio colore
+18:12 ogni 8 ore un cambio colore daily ogni 8 ore estremamente trigger il livello del
+18:19 founding rate e aspettate sempre che abbia almeno un meno 1% altrimenti non
+18:23 ha senso non c'è tutti i giorni ma quando c'è e poi comunque potete essere
+18:26 aggiornati tenendo semplicemente discord è aperto iscrivetevi al canale mi
+18:31 raccomando per poter aver tutti i link da bull family
+18:34 arrivate qua così non finite nel livello iscam non fate le ricerche qua
+18:37 trovate tutto ciao

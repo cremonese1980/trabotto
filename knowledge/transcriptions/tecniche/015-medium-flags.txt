@@ -1,0 +1,83 @@
+# Low-confidence segments for: 015_LA_TECNICA_DELLA_PESCA_NOTTURNA_Ecco_come_funziona.mp3
+# Total flagged: 26
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.447)
+  "Ciao Traders, siete su Sculpting the Bull. Oggi parliamo della tecnica della pesca notturna."
+
+[0:07-0:09] (confidence: -0.447)
+  "Sigla!"
+
+[0:58-1:03] (confidence: -0.312)
+  "fa un po' ridere. Però in realtà è una cosa molto seria e perché poi l'ha chiamata pesca"
+
+[1:03-1:13] (confidence: -0.312)
+  "notturna. Allora questa è una tecnica bellissima che usavo ai primi tempi quando ho inperenizzato"
+
+[1:13-1:20] (confidence: -0.312)
+  "con Binance. Ho messo 1000 euro, quindi 1200 resi di t e appunto visto che comunque la cifra"
+
+[1:20-1:27] (confidence: -0.312)
+  "era quel che era e appunto non dedicavo tanto tempo quindi usavo la tecnica del daily e questa"
+
+[2:40-2:47] (confidence: -0.186)
+  "più perché poi io poi dopo quando sono arrivato a 10.000 e dopo facevo scalping e basta quindi non"
+
+[2:47-2:54] (confidence: -0.186)
+  "facevo più questa non usavo più questa tecnica poi dopo è iniziato il trend di bitcoin e mi faceva"
+
+[2:54-2:59] (confidence: -0.186)
+  "schifo quindi dopo è iniziato a crollare eccetera quindi questo periodo qua non l'ho più utilizzato"
+
+[2:59-3:03] (confidence: -0.186)
+  "avrei potuto in certe occasioni ma non mi fidavo più non lo facevo perché perché appunto in realtà"
+
+[3:03-3:09] (confidence: -0.186)
+  "è una sfumatura della tecnica del daily adesso vi spiego perché adesso invece col fatto che siamo"
+
+[6:43-6:49] (confidence: -0.172)
+  "si spostano ok quindi quando andiamo a verificare per esempio quando andiamo a scegliere il punto"
+
+[6:49-6:56] (confidence: -0.172)
+  "del del del e5 dove deve essere deve essere sopra alla linea ok un poco sopra perché devi"
+
+[6:56-7:02] (confidence: -0.172)
+  "calcolare che tu lo stai comprando perché poi vuoi che dopo rimbalzi se rimbalza ci tirerà"
+
+[7:02-7:07] (confidence: -0.172)
+  "sulla linea e quindi dopo risulterà più su questo è giusto per far capire il punto comunque la"
+
+[7:07-7:12] (confidence: -0.172)
+  "logica è scegliere un qualcosa che ha fatto uno spike grande ma non solo di un solo anche"
+
+[8:04-8:11] (confidence: -0.253)
+  "bella anche se non sempre ti va ti va bene e appunto io ne avevo tre se avessi messo 5"
+
+[8:11-8:18] (confidence: -0.253)
+  "sarei riuscito a verne altri un altro stamattina ho guardato il grafico e un altro mi avevo beccato"
+
+[8:18-8:25] (confidence: -0.253)
+  "la 5 ma non l'avevo poi alla fine inserito ho scelto questi tre e comunque quindi quindi"
+
+[8:25-8:31] (confidence: -0.253)
+  "la tecnica è questa sopra la 5 e poi dopo vai beccarti e l'eventuale rimbatto ovviamente"
+
+[11:06-11:12] (confidence: -0.164)
+  "finisce quello io non vendo perché aspetto che finisca finisca il tempo e prima che finisca il"
+
+[11:12-11:16] (confidence: -0.164)
+  "tempo appunto il minuto viene ricaricato viene rigenerato un muro che era già stato sfondato"
+
+[11:16-11:21] (confidence: -0.164)
+  "quindi fantastico molto interessante poi ve lo farò vedere per farvi capire che il buco è importante"
+
+[11:21-11:27] (confidence: -0.164)
+  "ma non fondamentale ok cioè è importante per capire i livelli di ingresso ma certi muri che"
+
+[11:27-11:32] (confidence: -0.164)
+  "vi sembrano veramente giganteschi che dice ok se lo sfonda deve per forza scendere non è detto"
+
+[13:16-13:29] (confidence: -0.444)
+  "no questo non è allora andiamo a vedere la pesca qua ok quindi true e fisca ok si andiamo a"
+

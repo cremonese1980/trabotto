@@ -1,0 +1,173 @@
+# Low-confidence segments for: 001_Corso_Trading_Online_per_Principianti_Inizia_da_ZERO.mp3
+# Total flagged: 56
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:27-0:33] (confidence: -0.178)
+  "nulla di trading, non capisce nulla ma a differenza dell'altra volta vorrebbe imparare,"
+
+[0:33-0:38] (confidence: -0.178)
+  "vediamo però i primi step insieme, ok, quindi abbiamo intelligenza artificiale, una persona"
+
+[0:38-0:43] (confidence: -0.178)
+  "che non sa nulla e io che faccio una playlist dopo anni e ho un po' più di esperienza nello"
+
+[0:43-0:48] (confidence: -0.178)
+  "spiegare, ok, vediamo se viene fuori qualcosa di bello, scrivetelo nei commenti, partiamo da,"
+
+[0:48-0:56] (confidence: -0.178)
+  "non da questo, io farei il primo step, ho chiesto a gemini, ho chiesto semplicemente così per farti"
+
+[3:13-3:18] (confidence: -0.151)
+  "Ophidi lo fai con qualcuno che veramente non sa nulla ma che vorrebbe imparare? Direi che questa"
+
+[3:18-3:22] (confidence: -0.151)
+  "volta ci sono riuscito, allora a differenza di molti corsi che insegnano a sentire il mercato,"
+
+[3:22-3:26] (confidence: -0.151)
+  "questo approccio si basa su protocolli rigidi, esatto, non si entra a caso, mai si entra a"
+
+[3:26-3:34] (confidence: -0.151)
+  "caso, deve sempre esserci una logica, perché solo se c'è una logica è replicabile, se non c'è una"
+
+[3:34-3:39] (confidence: -0.151)
+  "logica come fai a replicarlo, visto che questo non vuole essere un botto di culo ma vuole essere un"
+
+[3:39-3:45] (confidence: -0.258)
+  "lavoro, devesseci delle regole perché se ci sono delle regole sai anche quando non funziona, sai"
+
+[3:45-3:50] (confidence: -0.258)
+  "quando funziona e quindi puoi lasciarli andare, quando non funziona ti devi andare, ci sono regole"
+
+[3:50-3:54] (confidence: -0.258)
+  "matematiche di ingresso e uscito, esattamente, io le chiamo in conformazioni, comunque regole matematiche,"
+
+[3:54-4:02] (confidence: -0.258)
+  "per un neofita, cos'è il neofita quindi? Ti piace essere chiamato neofita? Esatto, mi piace anche a me,"
+
+[11:23-11:29] (confidence: -0.209)
+  "rimettiti la scarpa volevi guadagnarci tu aspetti a prima che chi si chiude la giornata"
+
+[11:29-11:35] (confidence: -0.209)
+  "torni nel negozio prima che chiude la giornata e la prima persona che si avvicina dice ascolta"
+
+[11:35-11:40] (confidence: -0.209)
+  "ho visto che non c'è più l'automisura di quelle scarpe io ce l'ho se vuoi te la vendo invece di"
+
+[11:40-11:46] (confidence: -0.209)
+  "60 come esemite prima te la vendo a 40 e lei magari può dire ok va bene tu hai guadagnato 10 subito"
+
+[11:46-11:52] (confidence: -0.209)
+  "però domani avresti potuto guadagnarci 50 o 60 ma magari arrivava il camion la mattina con un"
+
+[13:33-13:39] (confidence: -0.255)
+  "reverse è veramente un esempio di merda è molto meglio esempio che ho fatto io a meno penso come"
+
+[13:39-13:45] (confidence: -0.255)
+  "concetto di quello di essere all'outlet prendere la scarpa subito prima che chiude il negozio e"
+
+[13:45-13:50] (confidence: -0.255)
+  "che magari possa arrivare durante la notte un camion con un nuovo carico io lo rivendo ok questo"
+
+[13:50-13:58] (confidence: -0.255)
+  "un po la dinamica uno scalper potrebbe comprare bitcoin a 60.000 e rivendo la 60.5 dopo solo"
+
+[13:58-14:05] (confidence: -0.295)
+  "30 secondi il segreto 60 euro sembrano pochi ma se lo fai 100 volte al giorno il risultato"
+
+[14:05-14:11] (confidence: -0.295)
+  "diventa enorme è un lavoro di precisione di stress elevato effettivamente 50 euro se lo fai 10 volte"
+
+[14:11-14:16] (confidence: -0.295)
+  "devono già 500 se lo fai 100 volti devono arrivare a 5000 quindi uno non sa pensare questa operazione"
+
+[14:16-14:24] (confidence: -0.295)
+  "ho guadagnato solo 50 ho guadagnato solo 20 ma se lo fai 10 volte quei 20 diventano 200 invece"
+
+[15:47-15:54] (confidence: -0.187)
+  "mobile ma capirei dopo intanto sai che su trading view puoi avere in grafico gratis ti scrivi non"
+
+[15:54-15:58] (confidence: -0.187)
+  "devi pagare niente e per avere le ema che normalmente dovreste pagare per aver più ema basta"
+
+[15:58-16:04] (confidence: -0.187)
+  "questo solo indicatore avete visto come trovarlo e vi troverete queste linee questo è quello pro"
+
+[16:04-16:09] (confidence: -0.187)
+  "faccio scritto pro scalping the bull perché però perché lo sto usando io no è proprio perché questo"
+
+[16:09-16:14] (confidence: -0.187)
+  "invece ha pagamento ma come puoi vedere anche le tecniche per esempio questo è un bad short di cui"
+
+[17:04-17:09] (confidence: -0.176)
+  "cliccare su una tecnica e ti si apriranno direttamente i grafici che ti fanno vedere"
+
+[17:09-17:15] (confidence: -0.176)
+  "dove quella tecnica ok quindi ti aiuta tantissimo e poi abbiamo discord questo invece è completamente"
+
+[17:15-17:23] (confidence: -0.176)
+  "gratis su discord siamo in più di 11.000 e in fondo quindi vi scrivete assolutamente gratis in fondo"
+
+[17:23-17:28] (confidence: -0.176)
+  "in fondo trovate tutte queste stanze che sono le mie tecniche e sono gli scontrini di cui ti parlavo"
+
+[17:28-17:35] (confidence: -0.261)
+  "prima per esempio tu non sai ancora nulla ma questo per esempio su koa i ho fatto questa operazione"
+
+[17:35-17:40] (confidence: -0.261)
+  "che è un tocco secondo tocco terzo tocco al quarto tocco a rotto fatto questo ingresso vedete l'ingresso"
+
+[17:40-17:45] (confidence: -0.261)
+  "che c'è la b vuol dire buy questo simbolino vuol dire buy e linee gialle dove sono entrato linee"
+
+[17:45-17:51] (confidence: -0.261)
+  "gialle dove sono uscito la percentuale questa percentuale grossa invece da in 30 minuti questo"
+
+[17:51-17:56] (confidence: -0.261)
+  "in questo è un trade di almeno più di un'ora e fatto l'otto per cento e qua fa vedere i movimenti"
+
+[18:22-18:27] (confidence: -0.314)
+  "esempi veri reali quello che diceva prima intelligenza artificiale diceva gemini perché sono"
+
+[18:27-18:31] (confidence: -0.314)
+  "conosciuto sono conosciuto per queste cose qua sono come fossero dei certificati ok con queste"
+
+[18:31-18:36] (confidence: -0.314)
+  "tre cose faremo la playlist per neoffiti andiamo avanti finire quest'ultima parte"
+
+[18:36-18:46] (confidence: -0.314)
+  "ecco la parte 3 differenza chiave tabella scansionabile durata quindi praticamente"
+
+[18:46-18:52] (confidence: -0.314)
+  "dei trading ore dell'interno giornata secondo obiettivo catturare un trend e questo diciamo"
+
+[19:17-19:23] (confidence: -0.172)
+  "perché lo scalping è molto difficile come anche guidare una macchina formula 1 è molto difficile"
+
+[19:23-19:27] (confidence: -0.172)
+  "io ho guidato una macchina formula 4 ed è molto difficile non tutti quelli che hanno fatto la"
+
+[19:27-19:32] (confidence: -0.172)
+  "prova sono riusciti poi neanche a partire con quella macchina formula 4 ma non è impossibile"
+
+[19:32-19:36] (confidence: -0.172)
+  "non è che non esiste nessuno che guida la macchina formula 1 come non c'è nessuno che guida la"
+
+[19:36-19:42] (confidence: -0.172)
+  "macchina formula 4 lo sono uscito anch'io che non sono un pilota però è importante capire questo"
+
+[19:42-19:48] (confidence: -0.26)
+  "il trading richiede studio assolutamente studio per questo prima ti ho fatto l'esempio del"
+
+[19:48-19:52] (confidence: -0.26)
+  "voler diventare un dottore e comunque studiare da un percorso di 5 anni minimo dopo che hai fatto i"
+
+[19:52-19:58] (confidence: -0.26)
+  "5 anni e poi hai detto tutto ancora deve ancora studiare ancora fare non è denaro magico ecco"
+
+[19:58-20:02] (confidence: -0.26)
+  "questo è importante ragazzi tutti quelli che vi stessi scrivendo e che state guardando questo"
+
+[20:02-20:10] (confidence: -0.26)
+  "video se pensate al cash subito ragazzi lasciate stare andate dai fuffaguro fatevi rubare tutti"
+

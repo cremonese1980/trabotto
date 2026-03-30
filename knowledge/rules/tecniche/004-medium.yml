@@ -1,0 +1,159 @@
+video:
+  id: BULL_T_004
+  series: tecniche
+  title: "Tecnica del Daily - Parte 2: ingresso sul supporto con stop vicino"
+  video_index: 4
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_04_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema10, pullback, stop_loss]
+    source:
+      timecode: "02:28-03:01"
+    conditions:
+      - timeframe == daily
+      - price_above_ema60_daily == true
+      - price_retracing_to_ema10_daily == true
+      - ema10_acting_as_support == true
+    action:
+      - ENTER_LONG
+    stop_loss: "daily candle close below EMA 10"
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "Instead of buying at breakout highs with distant stops, buy on the EMA 10 support pullback for a much closer stop loss."
+    notes: "This solves the problem from part 1 where breakout entries had stops too far away. The stop is the EMA 10 daily close."
+
+  - id: BULL_T_04_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, ema10, ema5, trend, support]
+    source:
+      timecode: "03:28-04:08"
+    conditions:
+      - daily_long_active == true
+      - ema5_daily_acting_as_support == true OR ema10_daily_acting_as_support == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "Identify which EMA (5 or 10) is the active support by observing which one price respects over several days."
+    notes: "Give it a few days to determine the true support EMA before entering. The trendline that holds becomes your reference."
+
+  - id: BULL_T_04_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, ema10, stop_loss, exit]
+    source:
+      timecode: "03:38-03:58"
+    conditions:
+      - daily_long_active == true
+      - daily_candle_close_below_support_ema == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "When price breaks below the identified support EMA with a daily candle close, exit immediately."
+    notes: "This is the close stop version of the daily technique. Much tighter than using EMA 60 as stop."
+
+  - id: BULL_T_04_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, breakout, lateralization, candle_pattern]
+    source:
+      timecode: "05:29-06:04"
+    conditions:
+      - timeframe == daily
+      - lateralization_detected == true
+      - multiple_small_candles_in_range == true
+      - price_breaks_above_lateralization_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [sideways, trend_up]
+    rationale: "A series of small candles in a tight range acts as a coiled spring. The breakout above the range high triggers the entry."
+    notes: "Bull loves sequences of small candles because they signal compression. The breakout can be explosive in either direction."
+
+  - id: BULL_T_04_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, btc_index, regime_filter, ema60]
+    source:
+      timecode: "08:14-10:05"
+    conditions:
+      - btc_daily_near_ema60 == true
+      - btc_risk_of_breakdown == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "When Bitcoin is testing EMA 60 on the daily and risks breaking down, avoid daily long entries on altcoins."
+    notes: "Even if an altcoin has a perfect daily setup, if BTC is weak near its EMA 60, the entire market can be dragged down."
+
+  - id: BULL_T_04_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, ema60, retest, support]
+    source:
+      timecode: "11:23-11:42"
+    conditions:
+      - timeframe == daily
+      - price_retesting_ema60_daily == true
+      - first_touch_ema60_after_decline == true
+      - daily_candle_did_not_spike_below_ema60 == true
+    action:
+      - MONITOR_LEVEL
+    stop_loss: "below the spike low near EMA 60"
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_down]
+    rationale: "After a decline, the first clean touch of EMA 60 on the daily without a spike below shows strong support and is a potential entry."
+    notes: "Bull loves when after testing resistance, the following days do nothing (tiny candles). That stillness signals strength."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, stop_loss, risk_management]
+    source:
+      timecode: "03:58-04:08"
+    statement: "Having a close stop on a daily trade is the single biggest improvement for reducing risk. Buy on support, not on breakout highs."
+    rationale: "Close stops allow better position sizing and smaller drawdowns when wrong."
+
+  - id: BULL_T_04_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, ema60, btc_index]
+    source:
+      timecode: "08:25-08:31"
+    statement: "Bitcoin EMA 60 on the daily must hold. If it breaks with a candle close below, it is a disaster signal for the entire crypto market."
+    rationale: "BTC EMA 60 daily is the macro trend divider; losing it cascades into altcoin crashes."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Daily technique part 2 focuses on buying pullbacks to EMA 10/EMA 5 support instead of breakout highs, providing much closer stop losses. Always check Bitcoin's position relative to EMA 60 daily before entering."

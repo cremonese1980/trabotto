@@ -1,0 +1,33 @@
+video:
+  id: YT_BULL_P_044
+  series: principianti
+  title: "Come fare trading con il cellulare su Bybit"
+  video_index: 44
+  duration_minutes: 8
+
+entities:
+
+  - id: BULL_P_44_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, risk_management, beginner]
+    source:
+      timecode: "01:48-01:55"
+    statement: "Inserire sempre uno stop loss al momento dell'apertura di ogni operazione, anche quando si opera dal cellulare."
+    rationale: "La piattaforma mobile Bybit permette di impostare stop loss e target direttamente al momento dell'ordine; non farlo è un rischio evitabile."
+
+  - id: BULL_P_44_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, take_profit, beginner, scalping]
+    source:
+      timecode: "05:36-06:10"
+    statement: "Su Bybit mobile è possibile spostare stop loss e target price semplicemente trascinando le linee sul grafico, rendendo la gestione del trade estremamente rapida."
+    rationale: "La facilità di modifica degli ordini dal cellulare elimina l'alibi di non poter gestire il trade quando non si è al PC."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 2
+  core_message: "Tutorial pratico di operatività mobile su Bybit: il video mostra come inserire ordini, stop loss e target trascinando le linee direttamente sul grafico dal cellulare o tablet. Non contiene nuove regole di strategia ma conferma l'obbligo di stop loss anche in mobilità."

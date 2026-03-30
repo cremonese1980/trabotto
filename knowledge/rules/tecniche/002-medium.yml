@@ -1,0 +1,203 @@
+video:
+  id: BULL_T_002
+  series: tecniche
+  title: "La Candelina - Tecnica base per ingressi con stop stretto"
+  video_index: 2
+  duration_minutes: 18
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_02_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, candle_pattern, stop_loss, ema10]
+    source:
+      timecode: "00:31-01:08"
+    conditions:
+      - small_candle_detected == true
+      - candle_body_size_pct < threshold_small (relative to recent candles)
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h, daily]
+      market_regime: []
+    rationale: "A candelina (small candle) provides a clearly defined entry (high) and stop loss (low) with tight risk."
+    notes: "The candelina represents a tug-of-war between buyers and sellers. When one side wins, the breakout tends to be explosive."
+
+  - id: BULL_T_02_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, stop_loss, entry]
+    source:
+      timecode: "02:33-03:02"
+    conditions:
+      - candelina_setup_active == true
+      - price_breaks_above_candelina_high == true
+    action:
+      - ENTER_LONG
+    stop_loss: "candelina low"
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h, daily]
+      market_regime: []
+    rationale: "Entry is at the candelina high, stop loss at the candelina low. The small candle ensures tight risk."
+    notes: "If price spikes below the candelina low and gets reabsorbed, the level remains valid. The stop is the candelina body, not the spike."
+
+  - id: BULL_T_02_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [candelina, timeframe, risk_management]
+    source:
+      timecode: "01:19-02:05"
+    conditions:
+      - timeframe >= 5m
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h, daily]
+      market_regime: []
+    rationale: "Minimum 5-minute timeframe for candelina. Each 5m candle contains five 1m candles, filtering out more fakes."
+    notes: "Never use 1-minute timeframe for candelina entries. Higher timeframes produce fewer false signals."
+
+  - id: BULL_T_02_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [candelina, stop_loss, breakeven]
+    source:
+      timecode: "05:09-05:18"
+    conditions:
+      - candelina_long_active == true
+      - current_candle_closed == true
+      - candle_shows_strong_move_in_direction == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h]
+      market_regime: []
+    rationale: "Once a strong move occurs after the candelina breakout, move stop loss to zero (breakeven) to eliminate risk."
+    notes: "Wait for the current 5m candle to close before moving stop. Do not move stop prematurely."
+
+  - id: BULL_T_02_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candelina, position_sizing, risk_management]
+    source:
+      timecode: "05:29-05:44"
+    conditions:
+      - candelina_stop_distance_pct > 2.0
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h]
+      market_regime: []
+    rationale: "If the candelina is too large (stop > 2%), halve the position size to keep risk at approximately 1%."
+    notes: "The reward-to-risk ratio remains favorable even with reduced size because candelina breakouts produce outsized moves."
+
+  - id: BULL_T_02_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, ema10, retest, continuation]
+    source:
+      timecode: "10:17-10:27"
+    conditions:
+      - candelina_detected == true
+      - candelina_on_ema10 == true
+      - ema10_acting_as_support == true
+    action:
+      - ENTER_LONG
+    stop_loss: "candelina low"
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h]
+      market_regime: [trend_up]
+    rationale: "A candelina forming on EMA 10 that is acting as support provides the highest probability long entry."
+    notes: "Entry at the candelina high, stop at the candelina low. After the 5m candle closes in profit, move stop to breakeven."
+
+  - id: BULL_T_02_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, short, ema5, reversal]
+    source:
+      timecode: "09:13-09:30"
+    conditions:
+      - candelina_detected == true
+      - candelina_near_local_high == true
+      - price_breaks_below_candelina_low == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "candelina high"
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: []
+    rationale: "Candelina at highs followed by a break below the candelina low signals a short entry with stop at the candelina high."
+    notes: "Short candelina works on second ramps (not the first ramp up). On the first ramp, only look for long candelina setups."
+
+  - id: BULL_T_02_08
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, invalidation, stop_loss]
+    source:
+      timecode: "06:26-06:50"
+    conditions:
+      - candelina_long_active == true
+      - candle_close_below_candelina_low == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 15m, 30m, 1h]
+      market_regime: []
+    rationale: "A candle closing below the candelina low invalidates the setup. Spikes below that get reabsorbed are acceptable."
+    notes: "The key distinction is close vs spike. A wick below that recovers is fine; a body close below is the exit signal."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_02_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, beginner, psychology]
+    source:
+      timecode: "08:44-09:07"
+    statement: "Do not fear taking stop losses on candelina trades. If the stop is well-positioned, mathematics will favor you over time."
+    rationale: "Tight stops on candelina setups mean small losses and outsized wins, creating positive expectancy."
+
+  - id: BULL_T_02_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, beginner, risk_management]
+    source:
+      timecode: "10:57-11:14"
+    statement: "For any technique, only enter if there is a candelina present. Without a candelina, the stop loss has no logical placement."
+    rationale: "The candelina provides the only objective stop level; entering without one leads to arbitrary and usually too-wide stops."
+
+  - id: BULL_T_02_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candelina, breakout]
+    source:
+      timecode: "15:16-15:22"
+    statement: "Breakouts without a preceding candelina do not work. Always wait for the candelina before a breakout entry."
+    rationale: "A breakout without consolidation (candelina) lacks the compression needed for a sustained move."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 3
+  core_message: "The candelina technique uses small candles as entry triggers with the high as entry and low as stop loss, providing tight risk. It works on all timeframes (minimum 5m) and is the recommended base technique for beginners."

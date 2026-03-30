@@ -1,0 +1,101 @@
+# Low-confidence segments for: 045_LE_TRE_CIME_Tecnica_di_Trading_Tutorial.mp3
+# Total flagged: 32
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[7:19-7:21] (confidence: -0.436)
+  "Reali col cash"
+
+[7:27-7:32] (confidence: -0.436)
+  "Col cash reale allora qua vedete minimi sempre più alti"
+
+[7:32-7:35] (confidence: -0.436)
+  "Sempre più alti questo era bello perché"
+
+[7:36-7:38] (confidence: -0.436)
+  "massimi sempre più bassi"
+
+[7:38-7:41] (confidence: -0.436)
+  "Questo era bello perché comunque si andava verso"
+
+[10:56-10:59] (confidence: -0.426)
+  "Non so per quel motivo anticipato forse c'era un qualcosa"
+
+[11:00-11:03] (confidence: -0.426)
+  "legato ai mercati azionari non so che io"
+
+[11:03-11:08] (confidence: -0.426)
+  "Sapete guardo anche il se è in asda che che bitcoin come indice quindi magari avevo avuto un segnale debole lì e quindi non ho"
+
+[11:09-11:13] (confidence: -0.426)
+  "Detto a 2 e mezzo esco e basta comunque era una size ero quasi full size"
+
+[11:14-11:18] (confidence: -0.426)
+  "Stiamo parlando comunque di 400 boost però il target naturale bisogna aspettare"
+
+[11:19-11:24] (confidence: -0.426)
+  "Almeno cioè è un peccato uscire prima come ha fatto qua perché comunque questo è un livello molto trigger"
+
+[12:42-12:48] (confidence: -0.407)
+  "Uno due volte questa navale a terza quindi poteva starci che poi dopo la nava rompe quindi si dopo dopo qua"
+
+[12:48-12:54] (confidence: -0.407)
+  "Aveva seguito un'esitazione quindi in questo caso qua quando fa nuovi minimo questo doveva essere il mio target ma detto ok che se ne frega"
+
+[12:54-12:58] (confidence: -0.407)
+  "Spendiamo aspettiamo le ma 10 ovviamente avrei risparmi avrei"
+
+[12:59-13:02] (confidence: -0.407)
+  "Rischiato di guadagno almeno ma comunque serenato in guadagno"
+
+[13:03-13:10] (confidence: -0.407)
+  "E ha fatto una solo cadenizzazione ha rotto questa cosa quindi dopo estremamente trigger per andare short quindi dopo come quando"
+
+[13:33-13:35] (confidence: -0.421)
+  "Qua invece abbiamo"
+
+[13:36-13:41] (confidence: -0.421)
+  "Come questo precedente quindi perché questo un canale non va stringersi massimi sempre più"
+
+[13:42-13:47] (confidence: -0.421)
+  "Alti qua abbiamo anche la due centri di tre per questa ma volissima variante minimi sempre più alti"
+
+[13:48-13:53] (confidence: -0.421)
+  "Sempre più bassi quando non è andato fare quindi dopo la terza volta"
+
+[13:53-14:00] (confidence: -0.421)
+  "Ho aspettato che andasse a fare nuovi minimi non è andato a fare nuovi minimi quindi abbiamo sgamato il fatto che non facesse più non"
+
+[14:00-14:08] (confidence: -0.414)
+  "Ripetesse più questo movimento ok quindi abbiamo sgamato subito qua quindi bastava comprare direttamente poi"
+
+[14:09-14:16] (confidence: -0.414)
+  "Alla chiusura candela sopra e così poi ho fatto non ho fatto subito la prima aspettato comunque che pensavo che inna se magari a ritestare"
+
+[14:17-14:19] (confidence: -0.414)
+  "e niente dopo ho fatto la chiusura candela che mi ha"
+
+[14:21-14:23] (confidence: -0.414)
+  "Appunto dimostrato che"
+
+[14:23-14:28] (confidence: -0.414)
+  "Le ma 10 se non potesse comandare quindi entrata chiusura candela sotto le ma 10"
+
+[15:21-15:25] (confidence: -0.466)
+  "Però insomma aspettiamo sempre questo tipo di logiche l'ultimo"
+
+[15:27-15:29] (confidence: -0.466)
+  "Quello abbiamo fatto invece con lema 60"
+
+[15:30-15:36] (confidence: -0.466)
+  "Che comunque sono massimi sempre più bassi che è andato a rompere comunque la 60 anche in questo caso qua"
+
+[15:36-15:38] (confidence: -0.466)
+  "massimi sempre più bassi"
+
+[15:39-15:41] (confidence: -0.466)
+  "minimi sempre più alti"
+
+[15:42-15:46] (confidence: -0.466)
+  "che minimo più alto ha fatto un minimo qua andato a fare un minimo sempre"
+

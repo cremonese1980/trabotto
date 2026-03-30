@@ -1,0 +1,65 @@
+# Low-confidence segments for: 005_Ho_perso_soldi_su_LAZIO_Live_Trading_Analisi_della_perdita_Ecco_cos_e_successo.mp3
+# Total flagged: 20
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:37-3:42] (confidence: -0.152)
+  "siamo su un supporto quindi ci può stare che vada a fare uno spike più o meno in questa zona qua"
+
+[3:42-3:51] (confidence: -0.152)
+  "7.65 è un livello già molto sensibile ma non abbiamo più niente ok siamo coperti bene col 7.6"
+
+[3:51-3:56] (confidence: -0.152)
+  "se di qua che di là abbiamo anche 7.59 quindi sono abbastanza tranquillo perché non è diciamo è"
+
+[3:56-4:01] (confidence: -0.152)
+  "uno stop molto vicino quindi mal che vada ho questo livello molto coperto ecco mi sta"
+
+[4:01-4:08] (confidence: -0.19)
+  "dando completamente contro quindi già che mi sta sotto qua la 223 già non mi piace però"
+
+[4:08-4:14] (confidence: -0.19)
+  "potrebbe farla finta mancano 31 secondi ok quindi entro questo minuto deve tornare su altrimenti"
+
+[4:14-4:21] (confidence: -0.19)
+  "io devo chiudere 20 secondi già dal ventesimo di iniziale accelerare non lo sta facendo niente"
+
+[4:21-4:28] (confidence: -0.19)
+  "qua non mi piace più non sta accelerando non sta succedendo nulla non importa aspettare il 7.6"
+
+[5:18-5:26] (confidence: -0.19)
+  "bene ok per adesso io metto questo 7.63 nel caso poi clicco e vendo a questo livello qua ok in cui"
+
+[5:26-5:30] (confidence: -0.19)
+  "non ho bisogno di mettere l'iceberg perché il livello è grande ma soprattutto qua è molto"
+
+[5:30-5:35] (confidence: -0.19)
+  "molto grande in usdt questo è un livello molto grande rispetto agli altri ok però già graficamente"
+
+[5:35-5:40] (confidence: -0.19)
+  "non deve fare questa cosa è già bruttissimo quindi nonostante le pulizie nonostante tutto"
+
+[5:40-5:45] (confidence: -0.19)
+  "il ragionamento nonostante questa sia una conformazione che a meno 8 9 volte su 10 funziona"
+
+[7:23-7:30] (confidence: -0.173)
+  "di setup perché poi la 223 a time frame un minuto a time frame 30 minuti è l'ema 10 quindi"
+
+[7:30-7:35] (confidence: -0.173)
+  "questa è la classica finta su l'ema 10 che mi piace tanto la prima volta che fa la finta il target"
+
+[7:35-7:41] (confidence: -0.173)
+  "è la 60 poi quando torno giù io amo proprio che faccia la rottura quindi questa candela di rottura"
+
+[7:41-7:46] (confidence: -0.173)
+  "perché appena mi fa chiusura candela sopra si fa l'ingresso ok questo funziona veramente spesso"
+
+[7:46-7:51] (confidence: -0.173)
+  "perlomeno per arrivare alla 60 ok poi dopo potrebbe fare la tecnica dell'ante in croce fare un bel"
+
+[8:14-8:22] (confidence: -0.332)
+  "youtube due canali telegram discord twitch telegram l'ho già detto instagram insomma si"
+
+[8:22-8:23] (confidence: -0.332)
+  "anda ovunque ciao"
+

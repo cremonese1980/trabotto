@@ -1,0 +1,180 @@
+video:
+  id: BULL_LTCRA_18
+  series: live-trading-crypto-analisi
+  title: "Finta Candle 99.9% Reversal, Double Timeframe Confirmation, BTC Conviction per Holding"
+  video_index: 18
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_18_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [finta_candle, ema5, ema10, reversal]
+    source:
+      timecode: "~"
+    conditions:
+      - candle_opens_at_same_price == true
+      - candle_spikes_above_ema5_and_ema10 == true
+      - candle_crashes_in_final_seconds == true
+      - candle_closes_below_open == true
+      - long_upper_wick == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, range]
+    rationale: "Finta candle pattern: candle opens at the same price level, spikes above EMA 5 and EMA 10 during its formation, then crashes in the final 10 seconds to close below the open with a long upper wick. This specific formation has a 99.9% probability of the next candle going in the opposite direction. Wait for the next candle to confirm before entering."
+    notes: "BNB trade 1. The finta candle is identifiable by its specific behavior: the spike above EMAs followed by the last-second crash creates a rejection pattern. The long upper wick represents trapped buyers. Position size: 8500 USDT at x20 leverage."
+
+  - id: BULL_LTCRA_18_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [finta_candle, entry, confirmation, red_candle]
+    source:
+      timecode: "~"
+    conditions:
+      - finta_candle_detected == true
+      - next_candle_is_red == true
+      - next_candle_confirms_direction == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, range]
+    rationale: "After identifying a finta candle, enter short only on the NEXT candle when it confirms by being red. Do not enter on the finta candle itself. The confirmation candle validates that the reversal is real and not just a wick."
+    notes: "BNB trade 1. Bull waits for the candle after the finta to confirm red before entering. The stop goes above EMA 5 and EMA 10. +253 USDT."
+
+  - id: BULL_LTCRA_18_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, body_close, exit, short]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - direction == short
+      - candle_close_above_ema10_body == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Hold the short position until a candle closes above the EMA 10 body. A body close above EMA 10 signals that selling pressure has weakened and buyers are regaining control. This is the exit trigger for finta candle shorts."
+    notes: "BNB trade 1. Bull held until a candle would close above EMA 10 body, using EMA 10 as the dynamic exit reference rather than a fixed target."
+
+  - id: BULL_LTCRA_18_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [double_timeframe, breakout, tf1m, tf5m]
+    source:
+      timecode: "~"
+    conditions:
+      - tf_1m_breakout == true
+      - tf_5m_breakout == true
+      - both_timeframes_aligned == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up, range_breakout]
+    rationale: "Double timeframe confirmation: when both TF 1min and TF 5min show a breakout simultaneously, the signal is significantly stronger. The alignment of two timeframes provides a high-confidence entry. Multiple confirmations justify larger position sizing."
+    notes: "XLP trade 2. Breakout aligned on both 1m and 5m timeframes simultaneously. Additional confirmations: long descent recovery and daily context. Position size: 15000 USDT (larger due to multiple confirmations)."
+
+  - id: BULL_LTCRA_18_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [multiple_confirmations, position_sizing, confidence]
+    source:
+      timecode: "~"
+    conditions:
+      - double_timeframe_confirmed == true
+      - daily_context_supports == true
+      - long_descent_recovery == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up, range_breakout]
+    rationale: "When multiple confirmations stack (double timeframe breakout + long descent recovery + daily context), increase position size. The convergence of independent signals dramatically increases the probability of the trade working."
+    notes: "XLP trade 2. Bull increased to 15000 USDT (vs 8500 USDT on the BNB trade) because of the stacked confirmations. More confirmations = more size."
+
+  - id: BULL_LTCRA_18_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [btc_conviction, altcoin, hold, exit]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - asset_is_altcoin == true
+      - btc_showing_strength == true
+      - would_normally_close_at_first_candle == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "BTC behavior drives hold/exit decisions for altcoin positions. Normally close at the first candle close that stalls, but if BTC is showing continued strength, allow the altcoin trade to run longer. BTC conviction overrides the default early-exit behavior."
+    notes: "XLP trade 2. Bull would normally have closed at the first candle close, but BTC's strength gave him confidence to hold longer. BTC acts as a sentiment gauge for the broader market. +344 USDT."
+
+  - id: BULL_LTCRA_18_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [first_candle_close, default_exit, normal_behavior]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - first_candle_after_entry_closes == true
+      - no_additional_conviction_signals == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "The default behavior is to close at the first candle close after entry. This is the safe baseline. Only override this default when additional conviction signals (like BTC strength) justify holding longer."
+    notes: "Bull's default exit strategy is first candle close. The XLP trade was an exception because BTC gave additional confidence. Without BTC confirmation, he would have taken the smaller profit."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_18_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [repetitive_pattern, exploitation, finta]
+    source:
+      timecode: "~"
+    statement: "When the same price behavior pattern repeats consistently (e.g., finta candle with spike above EMAs followed by crash), exploit it systematically. Repetitive patterns in the same session indicate a structural market behavior that is likely to continue."
+    rationale: "Markets exhibit behavioral persistence within sessions. A pattern that works once in a session often works multiple times because the underlying participants and conditions remain similar. Systematic exploitation of repeated patterns is a core edge."
+
+  - id: BULL_LTCRA_18_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [overconfidence, probability, reversal]
+    source:
+      timecode: "~"
+    statement: "Even a 99.9% probability pattern requires confirmation via the next candle before entry. Never enter on the finta candle itself. The confirmation candle is the difference between acting on probability and acting on emotion."
+    rationale: "High-probability patterns create a temptation to jump in early. Waiting for confirmation sacrifices a small amount of potential profit but eliminates the risk of the rare failure. Discipline on entry timing separates consistent traders from gamblers."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Finta candle (opens flat, spikes above EMA 5+10, crashes in final seconds with long upper wick) = 99.9% next candle reversal. Enter on next red candle confirmation, stop above EMA 5+10, exit on candle close above EMA 10 body. Double timeframe confirmation (1m+5m breakout simultaneously) justifies larger position size. BTC strength overrides default first-candle-close exit for altcoins. Repetitive patterns within a session should be systematically exploited. +253, +344 USDT."

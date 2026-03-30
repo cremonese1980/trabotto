@@ -1,0 +1,149 @@
+# Low-confidence segments for: 011_TECNICA_DI_TRADING_CAMBIO_COLORE_PASSAGGIO_DI_CANDELA_DAILY_TUTORIAL.mp3
+# Total flagged: 48
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:17-1:21] (confidence: -0.318)
+  "Il passaggio, nel senso che quando ha fatto il cambio candela"
+
+[1:22-1:25] (confidence: -0.318)
+  "era andato su, poi è andato giù a fare i nuovi minimi"
+
+[1:27-1:32] (confidence: -0.318)
+  "Io sono entrato con il passaggio di candela quindi dal rosso al verde ma aveva già fatto"
+
+[1:33-1:40] (confidence: -0.318)
+  "diciamo col cambio candela, aveva già fatto dei massimi poi ha fatto dei minimi e è tornato su, ok? Allora una caratteristica da guardare"
+
+[1:41-1:46] (confidence: -0.318)
+  "è sempre la candela prima, cioè questa tecnica io"
+
+[4:00-4:05] (confidence: -0.554)
+  "Invece niente qua sono andati alla grande fatto una mega candella passato"
+
+[4:05-4:09] (confidence: -0.554)
+  "La 5 la 10 mega spicone il giorno dopo è andato a ritestare"
+
+[4:10-4:17] (confidence: -0.554)
+  "La 5 la 10 e dopo c'è stato il passaggio ok io ho sfruttato questo quindi andiamo a vedere questo è il primo esempio però"
+
+[4:17-4:23] (confidence: -0.554)
+  "diciamo quando fa già il passaggio comunque una candella già abbastanza grande"
+
+[4:24-4:27] (confidence: -0.554)
+  "Tendenzialmente questi li sono già molto grandi"
+
+[4:27-4:29] (confidence: -0.413)
+  "Tendenzialmente questi li evito"
+
+[4:30-4:36] (confidence: -0.413)
+  "In questo caso è entrato solo perché poi è andato a testare la 5 la 10 allora dopo sono entrato su ma se avesse diciamo fatto"
+
+[4:37-4:41] (confidence: -0.413)
+  "Questo spike poi torna sotto di poco poi torna su non"
+
+[4:42-4:46] (confidence: -0.413)
+  "Non entro ok perché ha meno forza c'è l'ha già fatto diciamo"
+
+[4:47-4:52] (confidence: -0.413)
+  "Lo spike t no e quindi ha meno forza ha più forza quando sta facendo uno spike nuovo"
+
+[5:20-5:22] (confidence: -0.733)
+  "Questo tra lì di qua come ha funzionato adesso potete vedere che"
+
+[5:24-5:28] (confidence: -0.733)
+  "Quindi sono sia su matick che su bitcoin ok"
+
+[5:31-5:34] (confidence: -0.733)
+  "Matick sono già su perché ha già fatto il passaggio"
+
+[5:35-5:37] (confidence: -0.733)
+  "Adesso andiamo a vedere"
+
+[5:38-5:42] (confidence: -0.733)
+  "Qua siamo su bitcoin qua c'è stato l'ingresso qua allo stop"
+
+[5:43-5:46] (confidence: -0.733)
+  "che ovviamente lo metto sempre molto vicino e qua sta per"
+
+[5:46-5:48] (confidence: -0.828)
+  "Allora questo è sempre bitcoin"
+
+[5:49-5:55] (confidence: -0.828)
+  "Ecco quasi ho trovato su matick allora qua si vede dove sono entrato"
+
+[5:56-5:59] (confidence: -0.828)
+  "Ok 1.6. E' un po' più che io ho trovato"
+
+[6:00-6:02] (confidence: -0.828)
+  "E' un po' più che io ho trovato"
+
+[6:03-6:05] (confidence: -0.828)
+  "E' un po' più che io ho trovato"
+
+[6:06-6:08] (confidence: -0.828)
+  "E' un po' più che io ho trovato"
+
+[6:09-6:11] (confidence: -0.828)
+  "E' un po' più che io ho trovato"
+
+[7:56-7:59] (confidence: -0.842)
+  "Il titolo che ho visto è un trend molto più realista"
+
+[7:59-8:05] (confidence: -0.842)
+  "Bitcoin invece piatto ok sta facendo una resistenza quindi matick molto potente"
+
+[8:09-8:15] (confidence: -0.842)
+  "Questo è bitcoin dove fa il mio ingresso e lo stop è comunque sopra al mio ingresso"
+
+[8:17-8:19] (confidence: -0.842)
+  "Ma perché in realtà io"
+
+[8:19-8:21] (confidence: -0.842)
+  "Sto sono sul passaggio"
+
+[10:08-10:10] (confidence: -0.547)
+  "Andiamo a cercare il daily"
+
+[10:11-10:13] (confidence: -0.547)
+  "Per te mi sa che l'ho messo alla fine"
+
+[10:19-10:23] (confidence: -0.547)
+  "Vediamo dove ho messo il daily"
+
+[12:12-12:18] (confidence: -0.522)
+  "Promette bene ma come sappiamo non sempre tutto va non mi accontento"
+
+[12:19-12:23] (confidence: -0.522)
+  "Non mi accontento questo è il suono che sono su bitcoin"
+
+[12:24-12:26] (confidence: -0.522)
+  "E niente"
+
+[12:26-12:27] (confidence: -0.522)
+  "Non mi accontento"
+
+[12:27-12:32] (confidence: -0.522)
+  "Perché appunto il fatto che appunto è la candela era proprio vergine e bella di andare a fare nuovi strappi"
+
+[12:32-12:35] (confidence: -0.522)
+  "Non lo fa sposto lo stop lo metto"
+
+[12:35-12:40] (confidence: -0.603)
+  "Sopra lo strappo che è per quello ha fatto quindi se torna giù comunque sono in guadagno"
+
+[12:41-12:43] (confidence: -0.603)
+  "Ovviamente io faccio questa operazione perché appunto"
+
+[12:44-12:46] (confidence: -0.603)
+  "Anche anche bitcoin"
+
+[12:46-12:54] (confidence: -0.603)
+  "Sta dimostrando forza invece niente qua a un certo punto mi inizia andare contro qua c'è il qua c'è la 10 che è il mio stop"
+
+[12:56-13:02] (confidence: -0.603)
+  "Manuale ma io e solo la stop perché come vedete è un po' più che è un po' più che è un po' più che è un po' più"
+
+[17:26-17:31] (confidence: -0.525)
+  "E quindi niente ciao ragazzi e buon weekend"
+

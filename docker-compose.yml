@@ -1,0 +1,56 @@
+services:
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.1
+    container_name: trabotto-zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    restart: unless-stopped
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    container_name: trabotto-kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"     # EXTERNAL — host apps (Spring Boot dev, CLI tools) connect on localhost:9092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+
+      # Dual-listener setup:
+      #   EXTERNAL (port 9092)  — advertised as localhost:9092 for host processes
+      #   INTERNAL (port 19092) — advertised as kafka:19092 for intra-Docker services (Python ingest sidecar, etc.)
+      KAFKA_LISTENERS: EXTERNAL://0.0.0.0:9092,INTERNAL://0.0.0.0:19092
+      KAFKA_ADVERTISED_LISTENERS: EXTERNAL://localhost:9092,INTERNAL://kafka:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: EXTERNAL:PLAINTEXT,INTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+
+      # Single-node safe config
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+    restart: unless-stopped
+
+
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: trabotto-postgres
+    environment:
+      POSTGRES_DB: trabotto
+      POSTGRES_USER: trabotto
+      POSTGRES_PASSWORD: trabotto
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  m2-cache:
+  postgres_data:

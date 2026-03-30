@@ -1,0 +1,131 @@
+# Low-confidence segments for: 009_Come_Leggere_il_BOOK_Corso_di_Trading_Online.mp3
+# Total flagged: 42
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.246)
+  "ciao a tutti e benvenuti su Skype in the Bull, nuovo video della playlist per i off-tee,"
+
+[0:05-0:11] (confidence: -0.246)
+  "attenzione vedete il mega pullman di cinesi che arriva col cash in mano e questi sono i"
+
+[0:11-0:17] (confidence: -0.246)
+  "camion di scarpe, quindi quando arriva il pullman con i cinesi con tutti questi soldi"
+
+[0:17-0:22] (confidence: -0.246)
+  "capite che i prezzi non possono che salire, c'è proprio una sproporzione tra il camion"
+
+[0:22-0:27] (confidence: -0.246)
+  "e il pullman di cinesi, questa stessa sproporzione lo andremo a vedere nel book, il book è qualcosa"
+
+[0:27-0:33] (confidence: -0.184)
+  "di incredibile, lei ha incredibilmente paura di questa puntata perché pensa che sia molto"
+
+[0:33-0:39] (confidence: -0.184)
+  "difficile ma ha ragione, è molto difficile ma vedrete che vi piacerà, ok? Ho chiesto se avevo"
+
+[0:39-0:44] (confidence: -0.184)
+  "qualche domanda sulla puntata precedente, quindi bitcoin come indice, no è convinta di averlo"
+
+[0:44-0:48] (confidence: -0.184)
+  "capito, me l'ha descritto e definitivamente aveva ragione, ma ve lo rispiego e riassumo in attimo,"
+
+[0:48-0:52] (confidence: -0.184)
+  "quindi in pratica abbiamo bitcoin, anzi avevo un'altra immagine che l'altra volta non l'avevo"
+
+[1:47-1:51] (confidence: -0.209)
+  "più grande che arriva davanti al negozio, molto più grande degli altri, il prezzo non può che"
+
+[1:51-1:56] (confidence: -0.209)
+  "scendere perché ci sono molte più scape da vendere e per convincere le persone a comprare"
+
+[1:56-2:04] (confidence: -0.209)
+  "devi abbassare il prezzo, ok? se tu hai una casa in vendita, a 300 mila e nessuno viene a chiederti"
+
+[2:04-2:08] (confidence: -0.209)
+  "ha comprato da 300 mila, se lo metti a 200 vedrai che qualcuno lo trovi, ok? questo è lo stesso"
+
+[2:08-2:14] (confidence: -0.209)
+  "concetto, ne arrivano tanti da vendere, se lo vedi al prezzo intero non li venderai mai, tu lo"
+
+[12:42-12:50] (confidence: -0.17)
+  "reale che sta scambiando, quindi qua sono le persone che entrano nel negozio e guardano e dicono"
+
+[12:50-12:56] (confidence: -0.17)
+  "per me i prezzi sono troppo alti metto un prezzo più basso e questa è la quantità, quante scarpe,"
+
+[12:56-13:05] (confidence: -0.17)
+  "ok? Io voglio comprare 549 euro di scarpe al prezzo di 17,21, di più non sono disposto,"
+
+[14:55-15:01] (confidence: -0.247)
+  "vedi il negozio puoi scegliere, poi lo prezzo più basso lo inserisci nel verde e vedi se arrivano"
+
+[15:01-15:06] (confidence: -0.247)
+  "più scarpe che il prezzo scende, tu entri, hai fretta, puoi entrare comprare le scarpe,"
+
+[15:06-15:10] (confidence: -0.247)
+  "andare subito a casa, perché devi andare a vedere la Durso che c'è a poverigiocinque, devi"
+
+[15:10-15:14] (confidence: -0.247)
+  "andare subito qua, non c'è abbastanza, c'è solo 1.500, tu hai 10.000, vai livello dopo,"
+
+[15:14-15:18] (confidence: -0.247)
+  "quindi prezzo più alto, non è ancora abbastanza, vai ancora un prezzo più alto e da lì capisci"
+
+[15:18-15:26] (confidence: -0.192)
+  "che il prezzo sale, quindi quando qualcuno ha fretta compra e fa salire il prezzo, quando"
+
+[15:26-15:31] (confidence: -0.192)
+  "qualcuno ha fretta non di comprare ma di vendere, dovrà fare lo stesso ragionamento,"
+
+[15:31-15:37] (confidence: -0.192)
+  "dovrà vendere e farà scendere il prezzo, se uno ha 10.000 dollari di scarpe e vuole vendere subito"
+
+[15:37-15:41] (confidence: -0.192)
+  "perché deve andare a mangiare, può vedere l'ultimo video di Sculpting the Bull su YouTube,"
+
+[15:41-15:47] (confidence: -0.192)
+  "video di analisi tecnica, venderà, qua c'è solo 500, deve abbastare il prezzo, quindi deve vendere"
+
+[17:04-17:16] (confidence: -0.412)
+  "Perché qua? Vabbè comunque, qua c'era un livello, non si capisce perché qua sto perdendo dei soldi,"
+
+[17:16-17:22] (confidence: -0.412)
+  "vabbè comunque, interessante perché qua ero short, sì, qua sono short 100.000,"
+
+[17:22-17:29] (confidence: -0.412)
+  "sì, è sell, ero nato short, non ho ancora rotto il livello evidentemente, vabbè comunque,"
+
+[27:24-27:28] (confidence: -0.242)
+  "la macchina, sono 20.000, tu entri e da lì dopo che ti puoi aspettare quell'esplosione,"
+
+[27:28-27:38] (confidence: -0.242)
+  "perché dopo il camion gigante non c'è più niente, quasi si formano le conformazioni,"
+
+[27:38-27:45] (confidence: -0.242)
+  "perché il prezzo si avvicina, tu vedi la tua barra, il prezzo si avvicina e poi viene rigettato"
+
+[27:45-27:50] (confidence: -0.242)
+  "perché non riesce a superarlo e quindi torna giù, poi ritorna su e viene rigettato di nuovo,"
+
+[30:32-30:36] (confidence: -0.214)
+  "vogliono i soldi finti. Come fai a capire se sono soldi veri o no? Entra nei negozi e dice"
+
+[30:36-30:43] (confidence: -0.214)
+  "vediamo un attimo se vedo almeno uno di questi cinesi che compra. Se vedo uno di questi cinesi"
+
+[30:43-30:49] (confidence: -0.214)
+  "che compra e la cassiera verifica i soldi sono veri vuol dire che quel pullman è vero. Altrimenti"
+
+[30:49-30:56] (confidence: -0.214)
+  "è tutto un bluff. E questo accade per cercare di manovrare le cose, quindi deve avere locca anche"
+
+[30:56-31:00] (confidence: -0.214)
+  "per capire cosa stai guardando e cosa no. Il neofita dice sempre, ma quello si sta muovendo"
+
+[31:24-31:32] (confidence: -0.237)
+  "book ce ne saranno credo almeno due o tre. Vedo un sorriso sottile, ma c'è già un sorriso. Forse"
+
+[31:32-31:36] (confidence: -0.237)
+  "hai capito qualcosina? Scrivetelo nei commenti e iscrivetevi al canale. Ciao!"
+

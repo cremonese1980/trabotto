@@ -1,0 +1,239 @@
+# Low-confidence segments for: 049_Le_Tecniche_di_Trading_migliori_dei_crolli_del_Bear_Market.mp3
+# Total flagged: 78
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:16-1:24] (confidence: -0.207)
+  "uno ancora meglio, oppure questa è la terza cima, scende poi torna su e fa"
+
+[1:24-1:29] (confidence: -0.207)
+  "semplicemente la rottura ma i top sono appunto, arriva la terza cima e poi dopo"
+
+[1:29-1:35] (confidence: -0.207)
+  "fa un allaterizzazione bad o bad to the moon e dopo siamo a posto, è più difficile adesso"
+
+[1:35-1:39] (confidence: -0.207)
+  "che vado a fare addirittura la rottura della prima cima, in condizioni di"
+
+[1:39-1:42] (confidence: -0.207)
+  "mercato migliori si va addirittura a superare la prima cima, adesso bisogna"
+
+[1:42-1:48] (confidence: -0.275)
+  "sempre accontentarci del meno possibile, prima chiudiamo l'operazione"
+
+[1:48-1:53] (confidence: -0.275)
+  "meglio è, in periodo di mercato dove non è il massimo di manerci, quindi meno"
+
+[1:53-2:00] (confidence: -0.275)
+  "si stiamo meglio è, poi ovviamente, primo tocco quindi abbiamo i massimi di"
+
+[2:00-2:09] (confidence: -0.275)
+  "giornata, primo tocco, secondo tocco o dopo ci fa il bad to the moon, prima del"
+
+[2:09-2:16] (confidence: -0.197)
+  "secondo tocco, ok, fai conto che in un mercato dove siamo sugli all time high, quindi"
+
+[2:16-2:20] (confidence: -0.197)
+  "in bull market, quando questi sono all time high, quindi ha fatto un massimo e sono i"
+
+[2:20-2:25] (confidence: -0.197)
+  "nuovi massimi all time high, fa la discesa, già quando andiamo al secondo tocco questo"
+
+[2:25-2:30] (confidence: -0.197)
+  "in realtà è da fare in bull market, ok, in questo caso qua invece non lo facciamo"
+
+[2:30-2:33] (confidence: -0.197)
+  "perché appunto facendo all time high sono dei trigger pazzeschi, lì ci possiamo"
+
+[2:33-2:37] (confidence: -0.197)
+  "aspettare delle chiusure di panico, di short, di persone che vogliono entrare, insomma è"
+
+[2:37-2:40] (confidence: -0.189)
+  "diverso, invece in questo caso il secondo tocco fa schifo, addirittura fa quasi schifo anche"
+
+[2:40-2:46] (confidence: -0.189)
+  "il terzo, ma se abbiamo un secondo tocco e rimane alto, perché di solito quando andiamo a fare"
+
+[2:46-2:50] (confidence: -0.189)
+  "il secondo tocco poi dopo scende drasticamente, invece quando facciamo il secondo tocco e rimane"
+
+[2:50-2:56] (confidence: -0.189)
+  "alto, quindi facciamo quelle due tre candeline piccoline, ovviamente possiamo"
+
+[2:56-3:04] (confidence: -0.189)
+  "già fare, il topo ovviamente, rimane sempre massi di giornata, primo tocco, secondo tocco e"
+
+[4:23-4:29] (confidence: -0.178)
+  "fare un ingresso qua, quindi alla rottura dell'ema 10, quindi dopo il secondo tocco fa una conformazione"
+
+[4:29-4:35] (confidence: -0.178)
+  "di rottura dell'ema 10 che porta al terzo tocco, sempre meglio arrivare al terzo tocco come anche"
+
+[4:35-4:41] (confidence: -0.178)
+  "sui massimi con già una conformazione, come vi spiego il viagra, il viagra ovviamente in un"
+
+[4:41-4:49] (confidence: -0.178)
+  "mercato che crolla, quindi queste ema 10, tutte le candele sotto, arriviamo a avere una candela"
+
+[6:35-6:41] (confidence: -0.249)
+  "è sempre importante, come il fatto che è importante avere il bud to the moon, che"
+
+[6:41-6:48] (confidence: -0.249)
+  "viene alle candelline, fa la rottura, se va bene, ok, abbiamo capito tutti, appena rientra sotto"
+
+[6:48-6:52] (confidence: -0.249)
+  "il livello di rottura ragazzi ci siamo, dobbiamo uscire, ok, anche prima segni di debolezza,"
+
+[6:52-6:56] (confidence: -0.249)
+  "insomma, la seconda candella ci possiamo aspettare, addirittura il riteste del livello di rottura,"
+
+[6:56-7:01] (confidence: -0.249)
+  "ma dopo verso la fine di quella candella deve già tornare su e la terza candella deve andare a rompere"
+
+[7:01-7:06] (confidence: -0.202)
+  "di nuovo, se non lo fa possiamo già uscire, ok, quindi dobbiamo sempre contentarci il primo"
+
+[7:06-7:12] (confidence: -0.202)
+  "possibile perché appunto tendenzialmente il mercato ci stanno contro, perché? Perché il"
+
+[7:12-7:17] (confidence: -0.202)
+  "mercato è in down trend, ok, quindi il trend è negativo e quindi i primi segnali ce ne dobbiamo"
+
+[7:17-7:24] (confidence: -0.202)
+  "andare, poi cosa ci può essere? Terzo tocco anche dell'EMA 223, vale come prima, quindi 223,"
+
+[7:24-7:30] (confidence: -0.202)
+  "lunga discesa, segnali saldi, sodi discorso dell'EMA 60 fatto uguale, al terzo cerchiamo"
+
+[7:57-8:01] (confidence: -0.177)
+  "il prezzo va sempre a battere lì, ok, io amo questi da un po' che non se ne vedevano tanti,"
+
+[8:01-8:07] (confidence: -0.177)
+  "adesso sono tornati in martello, i martello sono fantastici sempre, ok, quindi tante candelline"
+
+[8:07-8:13] (confidence: -0.177)
+  "sullo stesso prezzo, questi sono fantastici praticamente sempre, soprattutto se abbiamo"
+
+[8:13-8:20] (confidence: -0.177)
+  "l'EMA 60 223 sotto, ok, ultimamente li sto trovando che i migliori, dove possiamo proprio lasciar correre,"
+
+[8:46-8:50] (confidence: -0.264)
+  "caso in cui possiamo con l'EMA 60, 200l sotto, qua addirittura possiamo lasciar correre un po',"
+
+[8:50-8:55] (confidence: -0.264)
+  "ok, qua possiamo cercare una percentuale importante, non li fanno spesso ma comunque"
+
+[8:55-9:03] (confidence: -0.264)
+  "quando li fanno sono ottimi, ok, e poi cosa ho detto? Ah lo shimano, quindi l'EMA 60 e l'EMA 223,"
+
+[9:03-9:09] (confidence: -0.264)
+  "rientriamo appunto in questo caso dentro lo shimano, andiamo a battere sullo 200l 3 che"
+
+[9:09-9:14] (confidence: -0.24)
+  "la finta sull'EMA 10 a time fare 30 minuti, ok, potrebbe anche andarlo a rompere, torniamo dentro,"
+
+[9:14-9:20] (confidence: -0.24)
+  "l'ideale è o quando facciamo l'uscita lo facciamo al terzo tocco, l'uscita lo shimano, che quindi è"
+
+[9:20-9:24] (confidence: -0.24)
+  "discorso che facevo prima della 60, ma possiamo trovare all'interno, quindi dopo che ha testato"
+
+[9:24-9:29] (confidence: -0.24)
+  "all'interno, una laterizzazione, ok, un bad dentro un bad, un bad to the moon o qualcosa del"
+
+[9:29-9:33] (confidence: -0.24)
+  "genere, una laterizzazione, abbiamo bisogno, come ti ho capito, di una laterizzazione, quindi"
+
+[9:33-9:39] (confidence: -0.2)
+  "candelline, quindi il must, avere candelline perché neutralizzano le vendite, ok, ci fanno"
+
+[9:39-9:45] (confidence: -0.2)
+  "capire che lì c'è il supporto, le candelline significa che c'è il supporto, se poi dopo il"
+
+[9:45-9:50] (confidence: -0.2)
+  "supporto sotto che non fa fare le candelle o spike, ok, quando troviamo le candelline lì ottimo,"
+
+[9:50-9:55] (confidence: -0.2)
+  "essendo poi uno shimano, quindi praticamente un rinbalz con un time frame importante, quindi l'EMA"
+
+[9:55-9:59] (confidence: -0.2)
+  "10 a time fare 30 minuti, qua anche qua possiamo lasciar cuore, quindi se troviamo la laterizzazione"
+
+[9:59-10:03] (confidence: -0.196)
+  "anche all'interno dello shimano possiamo fare un ingresso anticipato all'uscita e lì anche lì"
+
+[10:03-10:08] (confidence: -0.196)
+  "possiamo cercare una conformazione, possiamo lasciar correre un po' di più del solito, ok, quindi"
+
+[10:08-10:14] (confidence: -0.196)
+  "non solo la rottura della 60 ma lasciamo fare magari la seconda rampa, la prima rampa poi la"
+
+[10:14-10:21] (confidence: -0.196)
+  "riposo su l'EMA 10 a time frame un minuto e poi la seconda usciamo, ok, non tenete mai più di"
+
+[10:21-10:26] (confidence: -0.196)
+  "tre candelle positive di seguito, se per caso vi capitano tre belle candelle di seguito,"
+
+[10:26-10:31] (confidence: -0.191)
+  "o contentatevi anche se la prima rampa, ok, questo è importante, quindi questo è quello che uso,"
+
+[10:31-10:37] (confidence: -0.191)
+  "quindi il top del top del top è terzo tocco, quindi questi sono i massimi, primo tocco, secondo"
+
+[10:37-10:44] (confidence: -0.191)
+  "tocco, al terzo tocco abbiamo un bud dentro un bud, quindi un bud un po' più alto, un bud dentro un"
+
+[10:44-10:48] (confidence: -0.191)
+  "bud è proprio il top, ok, perché riusciamo a fare un ingresso ancora più anticipato rispetto ai"
+
+[10:48-10:53] (confidence: -0.191)
+  "break out, ma comunque ad ogni modo qualsiasi cosa, qualsiasi laterizzazione prima di un"
+
+[10:53-10:59] (confidence: -0.168)
+  "livello importante trigger, ok, testato tre volte, ricordatevi questa cosa qua e l'ultima cosa prima"
+
+[10:59-11:05] (confidence: -0.168)
+  "di lasciarvi ricordatevi che in questo periodo l'ottima strategia è rimanere liquidi, ok,"
+
+[11:05-11:11] (confidence: -0.168)
+  "come avete visto il by the deep non esiste se siamo in downtrend, il by the deep esiste quando"
+
+[11:11-11:19] (confidence: -0.168)
+  "andiamo a toccare dei supporti, quindi abbiamo non so l'EMA 10 che comanda nel weekly, nel settimanale"
+
+[11:19-11:25] (confidence: -0.217)
+  "o nel daily, allora ogni volta che nel daily poi quindi qua abbiamo il prezzo in rialzo,"
+
+[11:25-11:31] (confidence: -0.217)
+  "questa è l'EMA 10, ogni volta che va a testare l'EMA 10 non so nel daily, allora quello è il by the deep"
+
+[11:31-11:36] (confidence: -0.217)
+  "che facciamo noi, quello è il comprare sui supporti, ok, questo può essere l'EMA 10 daily o l'EMA 10"
+
+[11:36-11:40] (confidence: -0.217)
+  "di rotto di settimanale, individuato da un trend grosso e lì può esserci, al contrario non ha"
+
+[11:40-11:45] (confidence: -0.217)
+  "nessun senso perché ogni volta che scende il prezzo va a toccare l'EMA 10 poi torni"
+
+[11:45-11:49] (confidence: -0.19)
+  "il nuovo su quindi il by the deep è semplicemente aumentare esponenzialmente le vostre perdite,"
+
+[11:49-11:54] (confidence: -0.19)
+  "quindi non ha senso, quindi noi siamo liquidi, chi è liquido adesso ha un'ottima strategia perché"
+
+[11:54-11:59] (confidence: -0.19)
+  "appunto si ritrova che poi quando il mercato si stabilizzerà non dovrà recuperare le perdite"
+
+[11:59-12:04] (confidence: -0.19)
+  "ma andrà a seguirlo in gain, quindi non fare nulla è un'ottima strategia, ricordatevi che siamo"
+
+[12:04-12:08] (confidence: -0.19)
+  "fortunati su questo aspetto qua, quindi semplicemente studiare, avere una size minima minima"
+
+[12:08-12:15] (confidence: -0.249)
+  "giusto per applicare le tecniche, quello è ottimo, ok, buon Natale a tutti, buon Natale a tutti,"
+
+[12:15-12:20] (confidence: -0.249)
+  "like al video mi raccomando e iscrivetevi al canale e alla prossima, ciao!"
+

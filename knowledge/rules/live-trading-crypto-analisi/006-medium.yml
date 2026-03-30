@@ -1,0 +1,170 @@
+video:
+  id: BULL_LTCRA_06
+  series: live-trading-crypto-analisi
+  title: "Due trade: ONE long su iceberg e Telecom Italia short su rottura supporto"
+  video_index: 6
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_06_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, ema10, breakout, book]
+    source:
+      timecode: "00:30-02:00"
+    conditions:
+      - candelline_under_resistance == true
+      - resistance_is_daily_high == true
+      - ema10_holding_price_from_below == true
+      - ema60_incrocio_rialzista == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Small candles clustering under resistance (daily highs) while EMA 10 holds price from below and EMA 60 crosses bullish signals accumulation before breakout."
+    notes: "The candelline pattern under resistance shows buyers absorbing all selling. EMA 10 precision proves institutional/iceberg buying is present."
+
+  - id: BULL_LTCRA_06_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, candelina, ema10]
+    source:
+      timecode: "02:00-03:30"
+    conditions:
+      - book_vendita_shows_large_levels == true
+      - book_denaro_appears_empty == true
+      - ema10_precision_on_price == true
+      - price_not_dropping_despite_empty_denaro == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "When the book shows heavy selling levels but empty bids, yet price holds precisely on EMA 10 without dropping, hidden iceberg buyers are supporting the price."
+    notes: "The finta (fake): the book looks bearish (empty denaro, full vendita) but the price action (EMA 10 precision) reveals hidden buying. This is the iceberg detection method."
+
+  - id: BULL_LTCRA_06_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, book, trigger]
+    source:
+      timecode: "03:30-05:00"
+    conditions:
+      - iceberg_buying_detected == true
+      - muro_vendita_broken == true
+      - price_breaks_above_resistance == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "After confirming iceberg buying via EMA 10 precision and empty denaro, enter long when the resistance wall (muro) is broken."
+    notes: "The muro breaking confirms the hidden buyers have won. Size was 10k USDT. Result: +570 USDT on ONE."
+
+  - id: BULL_LTCRA_06_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, take_profit, scalping]
+    source:
+      timecode: "05:00-06:00"
+    conditions:
+      - long_position_active == true
+      - iceberg_exit_order_placed == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Exit via iceberg order to avoid creating counter-pressure on the book. Hide your selling to preserve momentum."
+    notes: "Use iceberg to exit just as iceberg was used to accumulate. Do not show your full size on the book."
+
+  - id: BULL_LTCRA_06_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, breakout, scalping]
+    source:
+      timecode: "06:30-09:00"
+    conditions:
+      - mega_support_level_identified == true
+      - large_piece_count_at_support > 5000000
+      - support_being_eaten_despite_no_vendita_pressure == true
+      - hidden_sellers_detected == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above the eaten support level"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When a mega support (e.g., 7 million pieces at a level) starts getting eaten despite no visible selling pressure in the book, hidden sellers are working. Short on support break."
+    notes: "Telecom Italia example: 7M pieces at 0.30 after a -12% suspension. When the support started eating with nothing visible in vendita = hidden institutional selling. Result: +360 EUR."
+
+  - id: BULL_LTCRA_06_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, take_profit, scalping]
+    source:
+      timecode: "09:00-10:30"
+    conditions:
+      - short_position_active == true
+      - large_piece_appearing_in_denaro == true
+      - price_below_broken_support == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After support breaks, close the short immediately when a large piece appears in denaro (bids). This signals institutional buying stepping in to catch the fall."
+    notes: "After a support break: first comes panic selling, then a pause (normal breathing), then continuation down. But when a big bid appears, that cycle is interrupted. Exit immediately."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_06_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, ema10, psychology]
+    source:
+      timecode: "02:30-03:15"
+    statement: "EMA 10 precision is the fingerprint of iceberg buying. When price rides EMA 10 perfectly in an area where the book shows no visible support, someone is buying hidden."
+    rationale: "Price does not hold itself up. If visible bids are absent but price stays on EMA 10, the only explanation is hidden (iceberg) orders."
+
+  - id: BULL_LTCRA_06_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [breakout, psychology, scalping]
+    source:
+      timecode: "09:30-10:30"
+    statement: "After a major support breaks: first panic (sharp drop), then normal breathing (small bounce/pause), then continuation down. This is the standard three-phase pattern of support failure."
+    rationale: "Understanding the post-break rhythm allows traders to hold through the pause phase and exit before the next reversal."
+
+  - id: BULL_LTCRA_06_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, psychology, beginner]
+    source:
+      timecode: "02:00-02:45"
+    statement: "An empty book in denaro (bids) does not mean there are no buyers. Iceberg orders hide the real demand. Never trust the visible book alone; cross-reference with EMA behavior and price action."
+    rationale: "Beginners often read the visible book at face value and panic sell when denaro looks empty, missing the hidden accumulation."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Two trades demonstrating iceberg detection: on ONE, EMA 10 precision revealed hidden buyers despite empty denaro, entry after muro break (+570 USDT). On Telecom Italia, mega support eating without visible vendita revealed hidden sellers, short on break (+360 EUR). The book lies; price action on EMAs tells the truth."

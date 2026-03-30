@@ -1,0 +1,150 @@
+video:
+  id: YT_BULL_P_008
+  series: principianti
+  title: "Sculping the Book - Sessione con Neofiti della Family: Raggruppamento, Livelli Finti e Spike"
+  video_index: 8
+  duration_minutes: 79
+
+entities:
+  - id: BULL_P_08_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, breakout, candelina, trigger]
+    source:
+      timecode: "06:50-12:30"
+    conditions:
+      - book_grouping_shows_single_candle_range == true
+      - book_levels_near_entry_have_meaningful_liquidity == true
+    action:
+      - CLASSIFY_SETUP
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["5min"]
+      market_regime: []
+    rationale: "Il raggruppamento del book deve essere scelto in modo da rendere visibile il movimento di una singola candela: solo così si identificano muri reali e si calibrano stop e target correttamente."
+    notes: "Esempio ACM su TF5m: candela da 2.39%, range 2.975-3.047. A raggruppamento troppo stretto si vedono cifre ridicole (300$, 26$, 85$); al livello medio si vede resistenza a 3.05 da 15.000$."
+
+  - id: BULL_P_08_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, stop_loss, candelina, breakout, trigger]
+    source:
+      timecode: "13:40-16:05"
+    conditions:
+      - book_sub_level_visible_at_nudo == true
+      - entry_price_adjusted_to_book_sub_level == true
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "1min"]
+      market_regime: []
+    rationale: "Il book a nudo serve per identificare l'esatta suddivisione interna di un livello aggregato: l'ingresso va fatto sul primo sotto-livello, non sul livello arrotondato."
+    notes: "Esempio livello 2.9: a nudo si vede 2.903 e 2.900. Stop limit short a 2.899. Se si mette stop a 2.9 tondo esiste il rischio di non essere eseguiti perché chi vende mangia quel livello prima."
+
+  - id: BULL_P_08_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, invalidation, stop_loss, breakout]
+    source:
+      timecode: "19:00-21:15"
+    conditions:
+      - book_level_large_moves_away_when_price_approaches == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Un livello che si sposta continuamente mentre il prezzo si avvicina vale zero come supporto o resistenza: non usarlo né come stop né come target di ingresso."
+    notes: "Un livello vero viene eseguito parzialmente: si vede la quantità diminuire quando il prezzo lo tocca. Un livello finto si sposta prima di essere eseguito."
+
+  - id: BULL_P_08_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, breakout, trigger, ema60]
+    source:
+      timecode: "33:00-42:00"
+    conditions:
+      - book_no_significant_levels_near_entry == true
+      - chart_conformazione_valida == true
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: []
+    rationale: "Quando il book non mostra nulla di interessante (livelli tutti uguali o finti), si opera esclusivamente sulla conformazione grafica."
+    notes: "Vantaggio: uscita facile perché non ci sono muri bloccanti. Svantaggio: non si può anticipare o posticipare l'ingresso grazie al book."
+
+  - id: BULL_P_08_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, candelina, breakout, trigger, ema]
+    source:
+      timecode: "34:15-40:10"
+    conditions:
+      - chart_trigger_level != book_real_level
+      - entry_adjusted_to_book_real_level == true
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min"]
+      market_regime: []
+    rationale: "Il livello trigger grafico può differire dal livello book reale: entrare al livello book reale evita di non essere eseguiti."
+    notes: "Dal grafico si legge 3.068, dal book si vede che il muro vero è a 3.06. Ingresso a 3.06 per avere più possibilità di esecuzione e stop sotto la candelina."
+
+  - id: BULL_P_08_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "00:00-03:30"
+    statement: "Il book non va guardato sempre in ogni momento, ma solo quando si è identificata una conformazione grafica valida. Cercarlo casualmente porta a ingressi non supportati da probabilità."
+    rationale: "Guardare il book senza una conformazione non aggiunge valore: si trova sempre qualcosa che sembra un livello ma non porta a trade di qualità."
+
+  - id: BULL_P_08_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, candle_pattern, breakout]
+    source:
+      timecode: "27:00-33:00"
+    statement: "Gli spike sono ordini a mercato di persone con fretta: chi compra/vende a mercato spazzola tutti i livelli disponibili creando vuoto e poi il prezzo rimbalza dove trova la prossima liquidità. Gli spike non sono i pullman di cinesi stessi."
+    rationale: "Distinguere cause degli spike (ordini mercato) dai livelli che li fermano (grandi liquidità) è essenziale per capire dove può avvenire il prossimo rimbalzo."
+
+  - id: BULL_P_08_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, breakout, psychology]
+    source:
+      timecode: "22:30-27:50"
+    statement: "Un livello grande nel book quasi eseguito che poi si toglie senza essere completamente mangiato è un livello 'quasi finto'. Un livello vero viene eseguito parzialmente: la quantità diminuisce quando il prezzo lo tocca."
+    rationale: "Solo i livelli che vengono effettivamente mangiati dal prezzo sono reali e utilizzabili come riferimento operativo."
+
+  - id: BULL_P_08_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, psychology]
+    source:
+      timecode: "70:30-72:00"
+    statement: "All'inizio non si sarà mai profittevoli: è impossibile. Se si è in utile all'inizio è solo fortuna. Iniziare con massimo 50$ in spot senza leva per imparare senza perdere cifre significative."
+    rationale: "Il trading è un mestiere difficile che richiede tempo: iniziare con size minima elimina il danno economico degli errori inevitabili del principiante."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 4
+  core_message: "Sessione pratica con neofiti sul book: come raggruppare correttamente per vedere i livelli reali, come distinguere livelli finti da veri, come usare il book a nudo per precisione sub-livello, e quando operare a sola conformazione grafica quando il book è omogeneo."

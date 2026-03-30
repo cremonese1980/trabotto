@@ -1,0 +1,166 @@
+video:
+  id: BULL_T_010
+  series: tecniche
+  title: "Time Frame 30 minuti - EMA 60 come spartiacque per inversioni di trend"
+  video_index: 10
+  duration_minutes: 8
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_10_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [tf30ema60, ema60, trend, regime_filter]
+    source:
+      timecode: "00:42-01:33"
+    conditions:
+      - timeframe == 30m
+      - price_below_ema60_30m == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_down]
+    rationale: "EMA 60 on the 30-minute timeframe is the maximum bounce limit after a crash. Price below it means we are in a bearish regime."
+    notes: "Use this as the ceiling for bounces. If price is below EMA 60 on 30m, any rally is a bounce within a downtrend, not a reversal."
+
+  - id: BULL_T_10_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [tf30ema60, short, ema60, retest]
+    source:
+      timecode: "02:24-03:03"
+    conditions:
+      - timeframe == 30m
+      - price_first_touch_ema60_30m_after_crash == true
+      - ema60_30m_acting_as_resistance == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [30m, 1m, 5m]
+      market_regime: [trend_down]
+    rationale: "The first time price touches EMA 60 on the 30m after a crash, it almost always bounces back down. This is a high-probability short entry."
+    notes: "Bull showed ETH perfectly respecting the EMA 60 on 30m as resistance. Find the setup on 30m, then enter on a lower TF (1m or 5m) conformazione."
+
+  - id: BULL_T_10_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [tf30ema60, ema60, trend, reversal]
+    source:
+      timecode: "04:38-05:08"
+    conditions:
+      - price_below_ema60_30m == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_down]
+    rationale: "While price stays below EMA 60 on the 30m, the downtrend has force to push toward new lows at any time."
+    notes: "Even large bounces within this zone remain bearish. Do not flip to bullish bias until EMA 60 on 30m is reclaimed."
+
+  - id: BULL_T_10_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [tf30ema60, ema60, breakout, trend]
+    source:
+      timecode: "06:15-06:49"
+    conditions:
+      - timeframe == 30m
+      - first_touch_ema60_30m_rejected == true
+      - second_approach_ema60_30m_without_new_lows == true
+      - price_breaks_above_ema60_30m == true
+      - lateralization_above_ema60_30m == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below EMA 60 on 30m (if re-enters below, exit)"
+    applicability:
+      timeframes: [30m, 5m]
+      market_regime: [trend_down]
+    rationale: "On the second approach to EMA 60 on 30m (without new lows in between), a breakout above it and lateralization signals a potential trend reversal."
+    notes: "First touch = reject and go short. Second touch (without new lows) = potential breakout. If price lateralizes above EMA 60, enter long."
+
+  - id: BULL_T_10_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [tf30ema60, ema60, invalidation, stop_loss]
+    source:
+      timecode: "06:37-06:49"
+    conditions:
+      - long_above_ema60_30m_active == true
+      - price_drops_back_below_ema60_30m == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "If a long entered above EMA 60 on 30m falls back below it, exit. The trend reversal has failed."
+    notes: "This is a simple binary: above EMA 60 on 30m = hold long, below = exit. No exceptions."
+
+  - id: BULL_T_10_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [tf30ema60, ema60, retest, finta]
+    source:
+      timecode: "06:04-06:15"
+    conditions:
+      - first_touch_ema60_30m_after_crash == true
+      - price_rejected_from_ema60_30m == true
+      - new_lows_made_after_rejection == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_down]
+    rationale: "After first touch rejection with new lows, the counter resets. The next approach counts as a new first touch."
+    notes: "New lows after a rejection nullify the 'second touch' count. The pattern resets and you must treat the next approach as first touch again (short, not long)."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_10_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [tf30ema60, ema60, trend]
+    source:
+      timecode: "05:08-05:22"
+    statement: "The 30-minute timeframe is fundamentally important for trend changes. Each candle represents 30 minutes, making it slow and significant."
+    rationale: "The 30m TF smooths out noise while remaining responsive enough to catch trend changes within a trading day."
+
+  - id: BULL_T_10_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [tf30ema60, ema60, ema]
+    source:
+      timecode: "07:01-07:08"
+    statement: "EMA 60 on the crypto 30-minute timeframe corresponds to EMA 50 on the equity 30-minute timeframe. Both serve as the trend spartiacque (watershed)."
+    rationale: "Traders working across markets should adjust the EMA period accordingly."
+
+  - id: BULL_T_10_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [tf30ema60, finta, ema60]
+    source:
+      timecode: "06:00-06:10"
+    statement: "The first time price touches EMA 60 on 30m after a long decline, there are almost always finte (fakeouts). Be very cautious of false breakouts."
+    rationale: "First touches after crashes attract trapped longs. The rejection creates a short opportunity, not a long one."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "EMA 60 on the 30-minute timeframe is the watershed for trend direction. First touch after a crash almost always rejects (short opportunity). Second touch without new lows can break through (long opportunity). Below EMA 60 on 30m = bearish, above = potential reversal."

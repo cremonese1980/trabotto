@@ -1,0 +1,53 @@
+# Low-confidence segments for: 052_CANDELA_DI_AZZERAMENTO_Tecnica_di_Trading_con_segnale_Bull_Bot.mp3
+# Total flagged: 16
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[2:04-2:13] (confidence: -0.156)
+  "diciamo mercato ma è qualcosa di vero di solido e che potenzialmente può portare a fare il secondo"
+
+[2:13-2:16] (confidence: -0.156)
+  "tocco addirittura superare ok ovviamente noi ci contentiamo di meno avete visto anche qua"
+
+[2:16-2:23] (confidence: -0.156)
+  "questo candellina di azzeramento e questo pezzo che ho fatto io è il 4 per cento quindi non ci"
+
+[2:23-2:28] (confidence: -0.156)
+  "importa diciamo che ci va che va così su noi proprio per questo dobbiamo pensare che ci sia"
+
+[2:28-2:33] (confidence: -0.156)
+  "tanto spazio per poterci accontentare il primo possibile e avere molte più probabilità di"
+
+[5:45-5:52] (confidence: -0.151)
+  "200 ok è molto bello molto potente proprio perché a time frame un minuto abbiamo che le due ema"
+
+[5:52-5:57] (confidence: -0.151)
+  "sono molto molto vicini o come in questo caso proprio addirittura una una linea continua ok"
+
+[5:57-6:02] (confidence: -0.151)
+  "in questo momento qua questo è quello che io ho visto time frame un minuto quindi veniamo quando"
+
+[6:02-6:07] (confidence: -0.151)
+  "c'è una candelina veniamo comunque dai movimenti piccoli e torniamo diciamo all'azzeramento quindi"
+
+[10:40-10:47] (confidence: -0.214)
+  "un po diversi comunque era talmente poco c'era veramente qualcosa di un minuto come era ok"
+
+[10:47-10:53] (confidence: -0.214)
+  "era veramente talmente poco diciamo c'era bellissima laterizzazione quindi non ci sono"
+
+[10:53-10:59] (confidence: -0.214)
+  "stati non c'è stato problema ok non c'è stato problema questo non è andato a fare chissà che"
+
+[10:59-11:04] (confidence: -0.214)
+  "roba comunque era laterizzazione e poi sono uscito subito qua non sono andato al secondo"
+
+[11:04-11:09] (confidence: -0.214)
+  "tocco anche se poi insomma credo che addirittura ci sia andato chiuso mi sono contentato prima"
+
+[20:04-20:10] (confidence: -0.175)
+  "poter chiudere ok vi ricordo che questo video è gratis mettete un like che è gratis e iscrivetevi"
+
+[20:10-20:14] (confidence: -0.175)
+  "al canale che è gratis ok io non metto nemmeno pubblicità ciao"
+

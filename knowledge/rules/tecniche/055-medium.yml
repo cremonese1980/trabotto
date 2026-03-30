@@ -1,0 +1,171 @@
+video:
+  id: BULL_T_055
+  series: tecniche
+  title: "Funding Rate - due tecniche per sfruttare lo scadere del founding rate"
+  video_index: 55
+  duration_minutes: 18
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_55_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, leverage, position_sizing]
+    source:
+      timecode: "08:01-08:42"
+    conditions:
+      - funding_rate <= -1.0
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il funding rate e' alto (>= -1%), abbassare drasticamente la leva (da 10 a 5) e mettere stop massimo 2-3% perche' si rischia liquidazione basata sul prezzo spot."
+    notes: "La liquidazione puo' avvenire anche se il prezzo non tocca il livello di liquidazione, perche' si basa sul prezzo medio spot che puo' essere diverso dal perpetuo."
+
+  - id: BULL_T_55_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trend, breakout, trigger]
+    source:
+      timecode: "09:03-11:15"
+    conditions:
+      - funding_rate <= -1.0
+      - minutes_to_funding_expiry <= 60
+      - valid_long_setup == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Un'ora prima dello scadere del funding rate, cercare conformazioni long: gli short sono disincentivati e chi e' short tende a chiudere (comprando), creando vento in poppa per i long."
+    notes: "Mettere alert un'ora prima della scadenza. Chiudere la posizione prima dello scadere (entro 50 secondi dalla scadenza). Non cercare di incassare il funding rate tenendo il long aperto."
+
+  - id: BULL_T_55_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, trigger]
+    source:
+      timecode: "11:31-12:10"
+    conditions:
+      - funding_rate_long_position == true
+      - seconds_to_funding_expiry <= 50
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Chiudere la posizione long entro 50 secondi dallo scadere del funding rate; non cercare di incassare il funding rate."
+    notes: "Se si tiene il long dopo lo scadere, il crollo successivo mangera' il guadagno del funding rate incassato. E' molto difficile vendere in profitto dopo aver incassato."
+
+  - id: BULL_T_55_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, breakout, risk_management]
+    source:
+      timecode: "12:26-15:18"
+    conditions:
+      - funding_rate_expired == true
+      - funding_rate_was <= -1.5
+      - price_max_after_expiry_marked == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Dopo lo scadere del funding rate, segnare il livello del massimo raggiunto (pari al valore percentuale del funding rate); questo livello e' estremamente trigger, come un cambio colore daily."
+    notes: "Se il funding rate era -1.5%, il livello trigger e' +1.5% dal prezzo allo scadere. Se il prezzo rimane sotto questo livello, tendera' a fare nuovi minimi (incentivo a riaprire short). Se lo supera, esplode."
+
+  - id: BULL_T_55_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, breakout, trend]
+    source:
+      timecode: "14:54-17:18"
+    conditions:
+      - funding_rate_expired == true
+      - price_breaks_above_funding_rate_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Quando il prezzo supera il livello del funding rate (il massimo pari alla percentuale del funding rate), e' un segnale esplosivo: lo shortista ha finito il suo lavoro."
+    notes: "Puo' succedere subito (primi 4-5 minuti) o dopo ore. E' potentissimo come un cambio colore daily. Dopo lo shortista ha 8 ore prima del prossimo funding rate, quindi il prezzo tende a riallinearsi tra spot e perpetuo."
+
+  - id: BULL_T_55_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [short, terzo_tocco, trigger]
+    source:
+      timecode: "13:47-14:04"
+    conditions:
+      - funding_rate_expired == true
+      - price_below_funding_rate_level == true
+      - first_candle_closes_below_funding_rate_level == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Dopo lo scadere, se la prima candela chiude sotto il livello del funding rate, il prezzo e' debole e tendera' a fare nuovi minimi."
+    notes: "Dopo lo scadere gli short sono di nuovo incentivati (hanno 8 ore prima del prossimo pagamento). Cercare conformazioni short come terzo tocco."
+
+  - id: BULL_T_55_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [risk_management, trigger]
+    source:
+      timecode: "02:08-02:14"
+    conditions:
+      - funding_rate > -1.0
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "La tecnica del funding rate richiede almeno -1% di funding rate; sotto questa soglia non ha senso applicarla."
+    notes: "Valori come -0.16% sono normali e non creano le dinamiche di disincentivo necessarie per questa tecnica."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_55_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, short]
+    source:
+      timecode: "07:43-08:58"
+    statement: "La tecnica piu' difficile e sconsigliata e' andare short quando il prezzo si discosta tra spot e perpetuo; si rischia liquidazione perche' il prezzo spot puo' fare spike mentre il perpetuo lateralizza."
+    rationale: "Aspettare sempre che lo spot crolli prima di pensare allo short sul perpetuo. La liquidazione si basa sul prezzo medio spot."
+
+  - id: BULL_T_55_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, trend]
+    source:
+      timecode: "05:57-07:19"
+    statement: "Quando il prezzo tra spot e perpetuo si discosta fortemente, significa che una balena o fondo sta anticipando pesantemente: o sta aprendo short enormi o sta chiudendo long enormi approfittando dei volumi."
+    rationale: "Capire chi c'e' dietro (shortista vs venditore di long) aiuta a prevedere il comportamento dopo lo scadere del funding rate."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Il funding rate >= -1% crea due opportunita': cercare long un'ora prima dello scadere (vento in poppa) e monitorare il livello del funding rate dopo lo scadere come trigger esplosivo (come un cambio colore daily ogni 8 ore). Chiudere sempre prima dello scadere, non cercare di incassare il funding rate."

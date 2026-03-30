@@ -1,0 +1,232 @@
+0:00 Ciao a tutti e benvenuti su Scarpe in the Bull. Nuova puntata per la playlist dei neofiti.
+0:06 Parliamo di EMA, l'ho già accennato prima, oggi è il giorno in cui andremo a
+0:10 approfondire l'EMA. EMA 5 è la più veloce, EMA 10 che segue, poi l'EMA 60
+0:18 vedete che diventa quasi di traverso e poi abbiamo l'A223. Lo vediamo meglio
+0:24 sul bull web, queste sono le tre applicazioni, quindi Trading View, Discord
+0:28 che è in fondo, quindi Discord quando arrivate è tutto pieno di stanze con
+0:32 tantissime informazioni. Guardate in fondo ci sono le stanze con tutte i trade,
+0:38 per esempio terzo tocco plus poi capirete che cos'è e vedete i vostri
+0:41 trade. E il bull web, che magari andiamo a vedere meglio qua, qua possiamo vedere
+0:47 meglio un esempio con l'EMA. Quindi la 5 è la più veloce, poi c'è la 10 che è la
+0:56 gialla, poi c'è l'EMA 60 che è la blu e l'A223 che è questo qui a viola. Queste
+1:02 sono i colori che io uso io, se volete usatevi stessi. Il colore verde invece il
+1:06 cambio colore daily, poi ve lo spiegherò un'altra volta. Usiamo
+1:12 assolutamente Gemini, che ci spiega un po' meglio la sua definizione, poi vi
+1:17 spiego io meglio la mia. Poi volendo c'è anche la tua. Allora, spiegare l'EMA
+1:25 exponential moving average, ovvero le medie mobile esponenziali è molto semplice
+1:32 se paragonate una sorta di memoria breve termine del mercato. Quindi lui usa i
+1:37 termini che non avrei mai utilizzato, questa è la cosa bella che dopo vi
+1:40 spiego io il mio punto di vista. A differenza delle medie semplici SMA che
+1:45 io non utilizzo, che dà la stessa importanza a ciò che è successo un mese
+1:51 fa a ciò che è successo ieri. L'EMA è più reattiva, esponenziale, pesa di più
+1:57 i prezzi più recenti. Ecco una struttura chiara per spiegare a
+2:02 qualcuno. La metafora del presente che conta. Immagino di voler valutare
+2:08 l'umore di un amico, la media semplice SMA guarda come si è comportato
+2:13 negli ultimi 10 giorni e fa una media matematica. L'EMA invece dice ok ma come
+2:19 si comporta come si è comportato stamattina ieri,
+2:23 quindi dà ovviamente più importanza a quello che sta accadendo adesso, per
+2:26 questo è che mi sono sempre trovato meglio. Dando più peso agli ultimi dati
+2:30 l'EMA si adatta più velocemente ai cambiamenti di umore del mercato come
+2:36 funziona senza troppa matematica. Mentre la media semplice è un banale somma
+2:40 divisa in numeri di periodi, la EMA usa una formula che
+2:44 include un moltiplicatore, se volete leggete la formula, questo è per i nerds,
+2:49 direi che noi possiamo andare avanti. A cosa servono in pratica? Chi fa trading
+2:54 usa la EMA principalmente per tre scopi, identificare il trend, ecco questo sono
+2:58 d'accordo, se il prezzo è sopra la EMA il trend è realzista, se è sotto è ribassista.
+3:03 Somma dopo andremo a vedere. Sì e no, quindi sì e no. Supporti e resistenza
+3:09 dinamica, molti trader usano la EMA a 20 o 50 periodi come una barriera quando il
+3:16 prezzo scende e tocca la linea spesso rimbalza il supporto, i cross incroci
+3:20 infatti con le EMA abbiamo anche gli incroci, senza le EMA non possiamo avere
+3:24 incroci. Quando una EMA a breve termine, esempio 9 periodi, taglia verso
+3:29 l'alto, una EMA lunga è considerato un segnale di acquisto.
+3:34 Va bene, vi faccio vedere prima un'altra cosa che non ho fatto, non ho salvato.
+3:40 Ecco qua, vogliamo che le apre, apre qua, no good, ok, eccolo qua, vi faccio vedere
+3:49 questo,
+3:53 questo, eccolo qua. Allora abbiamo la nostra EMA che uso io per il mondo
+4:00 cripto quindi solo per le criptovalute è 5, l'ema 5, 10, 60, 223, la più veloce
+4:10 ovviamente è la 5, poi la 10, la 60, la 223 quella lunga. Per tutto il resto, forex,
+4:17 mercato azionari, le banana al mercato si usa 5, 10, 50, 200.
+4:24 Io ho fatto, questa diciamo sono la 50 e la 200 sono più utilizzati dal resto
+4:30 del mondo, il mondo azionario poi, forex comunque si ferma ad un certo punto,
+4:35 forex si ferma nei weekend comunque ad evi orari in cui si ferma, il mercato
+4:41 delle cripto invece c'è h24 ho dovuto adattare, ho fatto questa modifica quindi
+4:45 ho la 60 e la 223, sono l'unico al mondo che utilizza questa cosa e vedrete
+4:49 la precisione della 60 è veramente incredibile.
+4:53 Detto ciò vi faccio leggere la seconda pagina che è questa qua,
+5:00 eccolo qua, spiegare la EMA 60 su diversi time frame è un ottimo modo per
+5:06 per fare capire il concetto di frattalità, che chi vuol dire frattalità?
+5:13 del mercato ovvero come la stessa impostazione possa rappresentare cose
+5:18 completamente diverse a seconda dell'orizzonte temporale che osserviamo
+5:21 ecco come puoi scomporre la spiegazione, il significato della EMA 60
+5:27 a prescindere dal time frame, la EMA 60 rappresenta l'equilibrio dei prezzi
+5:31 nell'ultima ora, che è l'ultimo ono di mercato, se guardi i minuti
+5:36 nell'ultime 60 è candele o nell'ultime 60 è candele, è considerato una media
+5:42 di medio periodo che pulisce il rumore dei prezzi ma resta abbastanza veloce da
+5:48 segnalare il cambio di trend, io credo che un neofita non possa aver capito nulla
+5:52 di quel colletto fino adesso, infatti dopo andrò a spiegarne meglio
+5:55 EMA 60 su time frame 5 minuti, su un grafico a 5 minuti la EMA 60 calcola la media
+6:01 degli ultimi 300 minuti, perché è il time frame 5 minuti per l'EMA 60 quindi
+6:08 ogni candela da 5 minuti calcola l'ultima 60 candela da 5 minuti
+6:15 quindi per questo fa 300 minuti, infatti 5 minuti per 60, ovvero l'ultimo 5 hour di
+6:20 trading quindi si muoverà ogni 60 candele da 5 minuti, ve lo spiego meglio
+6:26 col grafico, il ruolo è il battito cardio che è una sessione giornaliera intraday
+6:31 cosa significa? se il prezzo è sopra l'EMA 60 a 5 minuti la giornata è chiaramente
+6:36 realzista, non sono assolutamente d'accordo, i trader la usano spesso come
+6:40 supporto per comprare i ritracciamenti durante la mattinata o pomeriggio, qua ci
+6:44 può anche stare, la sensibilità è molto fluida e segue i movimenti del prezzo
+6:49 con una certa precisione chirurgica, EMA 60 su time frame 30 minuti, quindi qua
+6:54 fa un esempio EMA 60 time frame 5 e time frame 30, poi lo andiamo a vedere sul grafico
+6:57 qui la musica cambia, la EMA 60 time frame 30 minuti calcola la media degli ultimi
+7:02 1800 minuti perché ogni candela del time frame 30 minuti, una candela
+7:10 ogni 30 minuti ce ne vogliono 60 per fare nascere la prima EMA, quindi
+7:16 ovviamente il tempo è molto di più rispetto a quello da 5 quindi si va a
+7:20 vedere effettivamente magari i livelli daily, ovvero l'ultime 30 ore di trading
+7:24 nel suo ruolo è una bustola per il trend multijornaliero, qua sono d'accordo, cosa
+7:28 indica? non guarda più solo a oggi ma tiene conto anche di come si è chiuso il
+7:32 mercato ieri, se il prezzo rompe l'EMA 60 su M30 non è solo un piccolo
+7:39 movimento passeggero ma è un probabile cambi di direzione nei prossimi 2-3 giorni
+7:44 è molto più pesante, difficile da rompere rispetto a quella da time frame 5
+7:49 allora andiamo sul grafico così vi faccio capire
+7:54 perché però adesso penso che un neofitan possa aver capito nulla, non ho capito
+7:58 nulla io sinceramente, quindi semplicemente EMA 5, la rossa
+8:07 qua abbiamo tutti i time frame che utilizzo io, quindi a un minuto, 5 minuti, 30
+8:12 minuti, 1 ora, 4 ore, daily, weekly, mensile, questo è il time frame 30 minuti quindi
+8:19 ogni candela raccoglie il movimento di prezzo di quei 30 minuti, quello che
+8:26 abbiamo visto l'altra volta, questa è un'altra candela dove vede tutto il
+8:30 movimento degli ultimi 30 minuti per fare nascere la EMA 60 quindi se questo
+8:35 fosse la sua primissima candela quindi è il nuovo ICO, ICO significa è la nuova
+8:41 quotazione quindi questa questa cripto che si chiama F, F quindi F si chiama, F è la
+8:48 sigla, se questa fosse la sua prima candela non è mai successo niente prima
+8:53 prima di vedere l'EMA 5 dovremmo aspettare 5 candele quindi 1, 2, 3, 4, 5 e
+9:01 spunterebbe la prima EMA quindi vedrete la prima tratta rossa per vedere l'EMA 10
+9:07 dovremmo aspettare 10 candele quindi si sommano altri 5 e vedremo spuntare l'EMA
+9:12 10 per vedere la prima EMA 60 dobbiamo aspettare 60 candele da 30 minuti da
+9:20 lì c'era quel conto lunghissimo ok e dopo per avere la 223 finalmente spunterà
+9:25 dopo 223 candele da 30 minuti quindi pensa quanto tempo passa arriverà la
+9:30 223 quindi la 223 è assolutamente la nostra media mobile più lunga ed è
+9:36 anche l'ultima speranza che qua segnala la forza del trend
+9:42 quindi con che forza sta salendo il prezzo quindi in questo caso sta tenendo
+9:49 l'EMA 10 qua ha fatto la sua finta ma ha chiuso candela sempre sopra l'EMA 10 anche
+9:58 qua quando è andato a ritestare di nuovo che l'ha sporcato l'ha sporcato sta
+10:02 tenendo fa capire che l'EMA 10 è il suo trend che significa che quel camion di
+10:09 cui parlavamo che arriva davanti al negozio che arriva non ne arrivano
+10:15 troppi se arrivassero troppi camion il prezzo scenderebbe e non si terrebbe
+10:22 l'EMA 10 non terrebbe quindi crollerebbe il prezzo ma arriva un camion giusto
+10:27 ogni volta che va a toccare l'EMA 10 quindi ogni volta che il prezzo scende
+10:30 del negozio all'EMA 10 arriva un camion non ne arrivano due perché se ne arrivassero
+10:34 solo due scenderebbe di prezzo e probabilmente scenderebbe fino all'EMA
+10:39 dopo quindi arrivano i camion a rifornire negozio ma con un time
+10:48 sempre rimanendo sopra l'EMA 10 quindi noi capiamo con che frequenza
+10:53 arriverà il camion e non perché ce l'ha detto il camionista lo stiamo leggendo
+10:57 nel trend se poi questo è il livello in cui ha rotto ha già creato un altro
+11:05 livello quindi qua abbiamo, vado a metterlo all'erte in modo che si crei una linea
+11:13 eventualmente ci suona eccolo qua questa linea qua abbiamo già un tocco che ha
+11:20 rotto la 10 un secondo tocco che ha rotto la 10 la terza volta che ci va è
+11:26 altamente probabile che arriveranno molti più camion che faranno passare il prezzo
+11:31 e lo porteranno all'EMA sotto cioè all'EMA 60 per questo io questo è stato una
+11:36 prima finta non è successo niente quindi tornato su se fosse avesse fatto questa
+11:40 prima prima prima finta avesse fatto la stessa cosa quindi avesse creato un
+11:43 livello di rottura lo avremmo usato qua invece no ha funzionato e poi è noto
+11:47 a fare nuovi massimi in realtà non ha superato questo massimo per l'altro ha fatto
+11:51 un'accelerazione adesso si è riposato di nuovo quindi i camion sono tornati ma sembra
+11:56 che si stia un po' appesantendo cioè sembra che adesso possono arrivare molto
+12:00 più camion quindi il prezzo di quei camion con le scarpe arriveranno nei
+12:05 negozi essendoci abbondanza di scarpe il venditore abbasserà il prezzo e il prezzo
+12:10 scenderà molto probabilmente fino all'EMA 60 per questo io non uso altri ema
+12:15 quindi l'EMA 20, l'EMA 25, l'EMA 3 perché io voglio che queste due ema ci indicano la
+12:20 forza maggiore l'EMA 5 e l'EMA 10 quando questi non funzionano più quindi non
+12:27 reggono più la salita significa semplicemente che stanno arrivando più
+12:31 camion del previsto e il prezzo naturalmente scenderà e scenderà fino al
+12:35 target che sarà questo prezzo qua ok per questo uso l'EMA ci serve per capire con
+12:41 che forza stanno tenendo il prezzo per non fare l'esempio del camion ti faccio
+12:46 l'esempio reale realmente cosa sta accadendo qua c'è uno grosso e io non
+12:53 sono uno grosso uno grosso significa un hedge fund o un fondo che ha milioni di
+12:59 euro che o milioni di dollari e sta investendo molto probabilmente ma magari
+13:04 sta cercando di comprare che ne so l'1% della società il 2% della società ha
+13:08 tanti soldi quelli sono quelli che vogliamo capire noi e seguire noi quindi
+13:13 mettiamo che lui è detto io oggi voglio comprare l'1% di questa società è
+13:18 entrato ha comprato una quantità esagerata all'inizio ma dopo si deve
+13:21 dosare perché se no il prezzo sale troppo quindi ha smesso di comprare così tanto
+13:26 è iniziato a comprare piano piano ma sempre sopra l'EMA 10 fino quando il
+13:33 prezzo rimane sopra l'EMA 10 vuol dire che lui ha abbastanza soldi per tenere il
+13:38 prezzo sempre sopra l'EMA 10 quando lui finirà i suoi soldi che ovviamente lui
+13:42 non ci manda un email e ci dice signor bull io fra poco finisco i miei soldi
+13:47 ok così tu ne puoi profitare per andare short poi vi spiegherò che cosa short
+13:51 non accade questo grazie l'EMA però possiamo capire effettivamente quando un
+13:57 signore grosso un fondo in hedge fund sta affinendo i soldi questo è quello che serve
+14:02 ed essendo pulito perché pulito perché si ha sporcato l'EMA significa che è
+14:09 sceso sotto l'EMA mai se ha sempre chiuso sopra quindi questo è molto pulito non è
+14:13 pulito se ogni candela è sempre sopra e sotto l'EMA ok se ogni candela fosse
+14:20 sempre sempre sopra sotto l'EMA è un grafico che non di cui non ci possiamo
+14:25 fidare quindi non ci possiamo lavorare come l'esempio precedente dove vi
+14:28 facevo vedere lo sporco nel bosco ok quando fa sopra sotto l'EMA abbiamo questo
+14:35 dove andiamo a morire quando la strada è bella pulita è bella pulita anche l'EMA
+14:40 ok e questo ci fa capire quindi non ci manda l'email per dire che sta
+14:44 finendo i soldi ma ci fa capire che l'EMA non tiene più e in quel caso abbiamo
+14:51 a dire tu non terzo tocco questa è una tecnica quindi andremo a spiegare dopo
+14:54 ma in breve ti spiego che perché il terzo tocco è importante se tu hai un martello
+14:58 e dai un ammartellato sul tavolo è altamente probabile che con la prima martellata il tavolo
+15:05 non si romperà ci dai un'altra martellata il tavolo si indebolirà ma non si rompe
+15:12 alla terza volta è altamente probabile non esiste il 100% è altamente probabile che il
+15:20 tavolo si romperà ma non c'è il 100% però altamente probabil da lì nasce la tecnica
+15:26 del terzo tocco quindi ogni livello toccato tre volte ed è se è preciso è più è preciso
+15:33 più è fidabile in questo caso è molto preciso è proprio lo stesso livello vedete tocca proprio
+15:37 la linea perfettamente la terza volta che ci va ci fa capire che questo ha finito i soldi per
+15:42 poter comprare e semplicemente il prezzo scenderà giù quindi li capiamo che i camion stanno arrivando
+15:51 poi noi abbiamo un'altra arma che si chiama il book che questo da bulweb abbiamo anche il
+15:56 book più veloce al mondo incredibile non c'è book più veloce di questo abbiamo il book più
+16:00 veloce al mondo il book dove effettivamente le persone stanno comprando e vendendo ok si
+16:05 prova a raggruppare in maniera da poter vedere di più la distanza qua vediamo i livelli più
+16:11 grandi che sono 43 mila euro questi sono 31 mila euro vedete le barre più lunghe significa che
+16:16 c'è più soldi qua però abbiamo un ottimo supporto questo molto probabilmente 66 2 no 66
+16:23 qua dove c'è il terzo tocco è 66 e 3 lo vediamo nel book raggruppato così no proviamo a raggruppare
+16:32 ancora un po eccolo qua 66 3 infatti il 66 4 abbiamo un bel pezzo grande 76 mila abbiamo uno
+16:39 anche molto grande 140 mila che è il più grande che c'è in assoluto lì qua vediamo i camion ok
+16:44 non ti preoccupare perché faremo un video solo sul book ok questa è la cosa più complessa che c'è
+16:51 ok quindi per adesso vi faccio vedere solo velocemente qua si vedono i camion chi sta
+16:56 realmente comprando e vendendo e chi sta arrivando con i camion per vendere o comprare
+17:01 però le ema ci servono quindi riassumendo a scappito di per il che c'è tutto gemini ci
+17:10 servono semplicemente per capire la forza in cui sta crescendo andiamo a vedere qualche esempio
+17:15 sul mercato per esempio è un'altra alert pop-up guardiamo questo lo mettiamo a time frame 5 minuti
+17:24 fa veramente schifo perché fa schifo perché guardate le queste le ma guardate come passa
+17:29 sopra sotto come se non esistesse anche le ma 60 passa sopra sotto come se non esistesse quindi
+17:34 ci fa veramente cagare l'unica ema che ha tenuto bene la 223 ma è altamente inaffidabile perché
+17:41 va troppo su e giù a 30 minuti avevo messo un alert perché questa aveva fatto un terzo tocco
+17:47 un tocco un secondo tocco che l'ha superato quindi la finta quando fa la finta questo dopo deve
+17:52 scendere ma se ci ritorna questo è potente ok quindi abbiamo messo un alert perché questo è un
+17:58 terzo tocco è molto sporco in time frame 5 minuti cosa significa che tu potresti comprare
+18:03 e la candela in cui tu entra puoi scendere ma non devi vendere perché conta la chiusura a
+18:09 time frame 30 minuti perché se noi lo vediamo pulito a time frame 30 minuti quello è il suo
+18:14 time frame non dobbiamo guardarlo a un minuto o cinque minuti ma questa ancora è un'altra cosa
+18:18 difficile che spiegherò più avanti quello che è importante è capire intanto vediamo un incrozzo
+18:25 per esistere l'incrozzo è perché l'ema 223 è molto più lento come abbiamo visto prima ci vogliono
+18:31 223 candele da time frame 30 minuti per creare questo quindi sarà molto lento a
+18:38 muoversi vedete che è molto orizzontale la 60 servono 60 candela da 30 minuti quindi anche
+18:45 questo è lento ma è più veloce essendo comunque più veloci rispetto a 223 può incrociare e questa
+18:51 è un'altra tecnica molto importante l'incrocio ok ovviamente abbiamo anche la 10 e la 5 che in
+18:58 questo caso sono state anche belli perché quando poi ha rotto è sceso ma tornando sopra
+19:02 fatto capire che non sarebbe andato a toccare l'incrocio dove effettivamente l'incrocio
+19:07 viene visto come cemento armato c'è un punto molto difficile che le prezzi possa andare per
+19:11 questo questo non era tanto un andar short ma ad aspettare che tornasse sopra a 10 per poi
+19:16 dar far noi massi che sono tutte cose che poi andrò a spiegare molto meglio dopo ma da oggi
+19:21 credo si inizia a capire realmente la complessità ok non è un gioco non è una cosa semplice c'è
+19:28 tanto da imparare ma intanto cerchiamo di capire queste ema ok vediamo quanti minuti siamo siamo
+19:33 già a 20 minuti quindi mi piace per terminare ripassiamo un attimo ema 5 è la più veloce
+19:40 perché se abbiamo un time frame a 30 minuti servono 5 candele da 30 minuti e quindi sarà
+19:49 più veloce la 10 servono 10 candele da 30 minuti ok è andato dove c'è il terzo tocco
+19:59 per andare short e poi quindi la 10 è 10 candele da 30 minuti la 60 sono 60 candele
+20:06 da 30 minuti la 223 sono 223 candele da 30 quindi ogni candela 30 minuti se noi cambiamo
+20:13 time frame vediamo se hai capito attenzione domanda molto difficile al time frame 5 minuti
+20:21 l'ema 5 si creerà dopo 5 candele da 5 minuti la 10 si forma in 5 minuti quindi la 10 si
+20:28 forma in 5 minuti l'ema 5 si creerà dopo 5 candele da 5 minuti la 10 si formerà dopo
+20:36 quante candele da 5 minuti la 60 dopo quante candele da 5 minuti e la 223 dov'è dopo
+20:46 quante candele da 5 minuti ok quindi se faccio da un minuto capisci che è sempre la stessa
+20:52 cosa ok nel daily quindi ogni candela è un giorno intero questa è importantissima
+20:59 come time frame per me è il più importante di tutti perché ogni candela fa il movimento
+21:04 di un giorno intero se abbiamo una conformazione con una candela daily è molto potente perché
+21:12 sappiamo che quel giorno li possiamo avere cioè sappiamo il movimento che l'azione
+21:18 del titolo la crypto può fare per tutto quel giorno è quindi molto importante avere
+21:23 questo perché abbiamo tutto il giorno in cui sappiamo cosa potrebbe fare e da qua è uguale
+21:27 quindi la 5 sarà 5 candele da un giorno la 10 sarà 10 candele da un giorno 60 candele
+21:37 da un giorno la 223 invece da un giorno perfetto ragazzi mettete un like iscrivetevi ci vediamo
+21:44 alla prossima ciao ciao ciao

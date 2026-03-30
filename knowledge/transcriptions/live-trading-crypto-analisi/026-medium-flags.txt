@@ -1,0 +1,14 @@
+# Low-confidence segments for: 026_Live_trading_su_Binance.mp3
+# Total flagged: 3
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:23-0:33] (confidence: -0.252)
+  "montaggio ma faccio il video che guarda il video al live che ho fatto pochi minuti fa"
+
+[0:33-0:39] (confidence: -0.252)
+  "così riesco a stopparlo e vi faccio capire meglio e innanzitutto ho fatto partire appena"
+
+[0:39-0:46] (confidence: -0.252)
+  "mi è partito un ordine l'ordine era con un stop limit che si può vedere qua stop limit cosa"
+

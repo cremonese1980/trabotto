@@ -32,16 +32,23 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Internal modules -->
             <dependency>
-                <groupId>com.triagemate</groupId>
-                <artifactId>triagemate-contracts</artifactId>
+                <groupId>com.trabotto</groupId>
+                <artifactId>trabotto-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.triagemate</groupId>
-                <artifactId>triagemate-test-support</artifactId>
+                <groupId>com.trabotto</groupId>
+                <artifactId>trabotto-infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.trabotto</groupId>
+                <artifactId>trabotto-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- Logging -->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
@@ -63,7 +70,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- Testcontainers compatibile con Docker 29 -->
+            <!-- Testcontainers -->
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>testcontainers-bom</artifactId>

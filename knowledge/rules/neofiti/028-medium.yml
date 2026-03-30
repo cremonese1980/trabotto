@@ -1,0 +1,92 @@
+video:
+  id: YT_BULL_P_028
+  series: principianti
+  title: "Psicologia Avanzata — Frustrazione, Dopamina e Accettare la Sconfitta"
+  video_index: 28
+  duration_minutes: 58
+
+entities:
+  - id: BULL_P_28_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "00:00-02:27"
+    statement: "Il meccanismo della dopamina spinge a continuare ad aprire operazioni anche dopo aver raggiunto l'obiettivo. Riconoscere questo come un meccanismo biologico (non una scelta razionale) è il primo passo per controllarlo."
+    rationale: "L'impulso compulsivo a fare trading è una risposta neurofisiologica alla ricerca di scariche di dopamina, non una valutazione tecnica del mercato."
+
+  - id: BULL_P_28_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, stop_loss]
+    source:
+      timecode: "02:37-06:58"
+    statement: "Quando la frustrazione da attesa porta ad anticipare l'entrata senza che la conformazione sia completa, si entra in 'modalità parallela' dove la checklist tecnica viene bypassata inconsciamente. Vocalizzare ad alta voce i criteri di entrata aiuta a rimanere nel piano."
+    rationale: "La frustrazione da attesa prolungata è una delle cause principali di entrate premature e non valide."
+
+  - id: BULL_P_28_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, stop_loss, risk_management, beginner]
+    source:
+      timecode: "15:47-18:16"
+    statement: "Chiudere in perdita non è sconfitta: è accettare che quella specifica conformazione non ha funzionato nel suo 10% di insuccesso statistico. La sconfitta reale è rimanere dentro sperando in un rimbalzo — in quel caso si dipende dalla fortuna, non dalla strategia."
+    rationale: "I trader profittevoli distinguono tra perdita accettata (decisione tecnica) e perdita subita (rifiuto della realtà); solo i primi costruiscono track record sostenibili."
+
+  - id: BULL_P_28_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, reversal]
+    source:
+      timecode: "27:04-28:55"
+    statement: "Rimanere dentro un'operazione che ha invalidato la tesi perché si spera in un rimbalzo verso la EMA 60 è un pensiero magico statisticamente sconfessato. Uscire e rientrare su una conformazione secondaria successiva ha probabilità più alte e stress inferiore."
+    rationale: "Il costo opportunità di restare in una posizione invalidata è doppio: perdita immediata che cresce + impossibilità di entrare sulla conformazione migliore che si forma subito dopo."
+
+  - id: BULL_P_28_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, position_sizing]
+    source:
+      timecode: "29:45-32:40"
+    statement: "Il livello base di aspettativa (e quindi di dopamina) può essere abbassato riducendo i trigger di gratificazione nella vita quotidiana: meno social, meno zuccheri, meno stimoli ad alta intensità. Un livello base più basso lascia più spazio alla lucidità nell'operatività."
+    rationale: "Un livello basale di aspettativa elevato amplifica la reazione emotiva alle perdite e rende più difficile rispettare le regole operative."
+
+  - id: BULL_P_28_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "43:42-44:53"
+    statement: "Il 'pensiero magico' nel trading — 'ho perso tutto il giorno, quindi adesso mi deve andare bene per forza' — è un bias cognitivo non legato alla realtà statistica. Riconoscere questa distorsione nel momento in cui si manifesta è la difesa principale contro l'overtrading di recupero."
+    rationale: "Le probabilità di ogni trade sono indipendenti dalla storia degli trade precedenti nella stessa giornata."
+
+  - id: BULL_P_28_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "47:31-49:35"
+    statement: "Il trader esperto non entra pensando 'oggi è il giorno che cambierò la mia vita': valuta le conformazioni presenti nel mercato in quel momento e opera solo se ci sono. Se non ci sono, non opera e quella non è una giornata persa — è una giornata professionale."
+    rationale: "L'assenza di aspettativa sul risultato giornaliero è la condizione mentale che permette di operare con la massima selettività e lucidità."
+
+  - id: BULL_P_28_CTX_08
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, leverage, stop_loss]
+    source:
+      timecode: "57:03-58:27"
+    statement: "Lasciarsi liquidare invece di chiudere manualmente in perdita è la forma più grave di rifiuto della sconfitta. Chiudere tu stesso in perdita — anche a -5% — significa mantenere il controllo; aspettare la liquidazione è cedere il controllo al mercato."
+    rationale: "Chi non chiude mai in perdita per propria scelta costruisce una psicologia dipendente dal caso anziché dalla competenza."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 8
+  core_message: "In questo Q&A con psicologi e trader, emerge che la radice di quasi tutti gli errori operativi è l'incapacità di accettare la sconfitta in tutte le sue forme: perdita su singolo trade, giornata senza operazioni, uscita prematura, stop loss attivato. Il meccanismo biologico della dopamina e il pensiero magico sono i due sabotatori principali da imparare a riconoscere."

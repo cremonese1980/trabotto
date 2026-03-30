@@ -1,0 +1,167 @@
+video:
+  id: BULL_T_018
+  series: tecniche
+  title: "La Finta - Tecnica per individuare i fakeout e entrare sul rimbalzo"
+  video_index: 18
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_18_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, candle_pattern, breakout, retest, trend]
+    source:
+      timecode: "02:02-05:17"
+    conditions:
+      - prior_trend_clean_and_precise == true (EMA 5 and EMA 10 respected without dirty wicks)
+      - price_breaks_below_ema10 == true
+      - price_quickly_reclaims_above_ema10 == true (within same candle or next)
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "A clean trend followed by a brief EMA 10 break that is immediately reclaimed is a finta (fakeout) and signals trend continuation."
+    notes: "The finta shakes out weak hands (people with tight stops on EMA 10) while the dominant buyer reasserts control. The key prerequisite is a 'perfect' prior trend with clean EMA 5/10 respect."
+
+  - id: BULL_T_18_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, book, breakout, trigger]
+    source:
+      timecode: "07:04-08:14"
+    conditions:
+      - finta_setup_detected == true
+      - price_dropped_below_ema10 == true
+      - large_buy_wall_appears_in_order_book == true (at or near the low)
+      - price_reclaims_ema10 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "The appearance of a large buy wall in the order book after the fakeout break confirms the finta and signals the entry."
+    notes: "In the book: support gets eaten, sell pressure loads up (baiting shorts), then a massive buy order appears blocking further downside. This is the confirmation that the dominant buyer has returned. From this point, the road is clear upward."
+
+  - id: BULL_T_18_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, candle_pattern, trigger, trend]
+    source:
+      timecode: "10:36-11:35"
+    conditions:
+      - finta_detected_as_hammer_candle == true
+      - prior_trend_was_clean == true
+      - hammer_wick_went_below_ema10 == true AND hammer_body_closed_above == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "A hammer candle that wicks below EMA 10 but closes above is the candle-pattern version of the finta, with the same mechanics."
+    notes: "The hammer is the finta seen on the candle chart without the order book. Both patterns work identically. An hammer on clean trend at EMA 10 = finta = entry long."
+
+  - id: BULL_T_18_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, short, breakout, reversal]
+    source:
+      timecode: "12:37-13:22"
+    conditions:
+      - price_below_ema60 == true (no EMA 60 between price and EMA 223)
+      - price_rising_toward_ema223_from_below == true
+      - price_spikes_above_ema223 == true
+      - price_quickly_falls_back_below_ema223 == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "The finta works in reverse for shorts: a spike above EMA 223 resistance that quickly reverses is a bearish finta."
+    notes: "When price approaches EMA 223 from below (with no EMA 60 in between), if it spikes above and immediately returns below, that is a short finta. Same logic: weak hands who went long on the breakout get trapped."
+
+  - id: BULL_T_18_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [invalidation, candle_pattern, trend]
+    source:
+      timecode: "10:48-11:06"
+    conditions:
+      - prior_trend_is_messy == true (spikes everywhere, no clean EMA respect)
+      - no_dominant_ema_acting_as_support_or_resistance == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The finta technique requires a clean prior trend. Messy charts with spikes in every direction do not produce reliable finta signals."
+    notes: "If the chart shows no clean EMA dominance (neither EMA 5 nor EMA 10 acting as consistent support), switch to another chart entirely. Do not force the technique."
+
+  - id: BULL_T_18_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, position_sizing, risk_management]
+    source:
+      timecode: "09:18-09:35"
+    conditions:
+      - finta_confirmed == true
+      - existing_position_is_partial == true (not full size)
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [bullish]
+    rationale: "After a confirmed finta, add to the position if not already at full size."
+    notes: "Only add on confirmation, never average down during the fakeout. If not in a position at all, the finta is a fresh entry point. If already partial, it is a second entry to reach full size."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_18_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner, risk_management]
+    source:
+      timecode: "11:19-11:52"
+    statement: "The finta is very fast and requires extended observation before live trading. Watch it happen many times before risking money. It is a technique you earn the right to use through observation."
+    rationale: "Speed of execution makes this technique dangerous for beginners who have not developed pattern recognition."
+
+  - id: BULL_T_18_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "14:04-14:20"
+    statement: "The order book on spot is easier to read than on futures. Start with spot order book analysis to learn the finta pattern before attempting it on futures."
+    rationale: "Spot order books have cleaner signals; futures order books are noisier and harder to interpret for this technique."
+
+  - id: BULL_T_18_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, risk_management, psychology]
+    source:
+      timecode: "04:42-05:17"
+    statement: "Do not place stop loss orders directly at EMA 10 because finta patterns will trigger them. Keep stops ready manually but do not automate them at obvious EMA levels."
+    rationale: "Automatic stops at EMA levels are exactly what the finta exploits. Manual stops allow you to distinguish real breaks from fakeouts."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "The finta technique identifies fakeout breaks of EMA 10 (or EMA 223 for shorts) during clean trends. A brief break followed by a large buy/sell wall in the order book or a hammer candle confirms the fakeout. The prerequisite is a perfectly clean prior trend with precise EMA respect. Avoid this on messy charts."

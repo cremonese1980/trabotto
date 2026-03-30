@@ -1,0 +1,118 @@
+video:
+  id: BULL_T_032
+  series: tecniche
+  title: "Scalping su spike con lettura del book - Operazione live su GLMR"
+  video_index: 32
+  duration_minutes: 8
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_32_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, scalping, trigger]
+    source:
+      timecode: "00:25-01:12"
+    conditions:
+      - large_sell_wall_detected == true
+      - sell_wall_size_usd > 1000000
+      - price_spike_down_to_wall_level == true
+      - wall_being_consumed == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando un venditore scarica un pezzo enorme a sconto (muro da 1-2 milioni) e il muro viene mangiato, si entra long per lo spike di rimbalzo."
+    notes: "Operazione da esperti. Serve grande velocita' e capacita' di lettura del book. Il venditore vuole liquidare velocemente e offre a sconto."
+
+  - id: BULL_T_32_02
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [scalping, invalidation, stop_loss]
+    source:
+      timecode: "01:52-02:27"
+    conditions:
+      - position_open == true
+      - entry_was_spike_scalp == true
+      - immediate_spike_up == false
+      - time_since_entry_seconds > 10
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo l'ingresso sullo spike lo deve spikeare subito al rialzo. Se non parte immediatamente significa che c'e' ancora voglia di vendere."
+    notes: "Se non fa spike rialzista nei primissimi secondi, uscire. Non aspettare."
+
+  - id: BULL_T_32_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, scalping, trigger]
+    source:
+      timecode: "02:51-03:38"
+    conditions:
+      - sell_pressure_exhausted == true
+      - large_buy_walls_appearing_in_bid == true
+      - support_levels_forming_in_book == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando i muri in lettera si esauriscono e appaiono supporti grossi in denaro, il prezzo sta per rimbalzare."
+    notes: "Aspettare che arrivino i muri di supporto in denaro prima di entrare. Stop a zero o breakeven."
+
+  - id: BULL_T_32_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [scalping, stop_loss, risk_management]
+    source:
+      timecode: "04:37-05:04"
+    conditions:
+      - position_open == true
+      - price_declining == true
+      - partial_fill == true
+    action:
+      - EXIT_POSITION
+    stop_loss: "breakeven (zero)"
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Togliere l'ordine rimanente e tenere stop a zero: se torna giu' si chiude, non si continua a comprare."
+    notes: "In caso di eseguito parziale, rimuovere ordine residuo. Non mediare al ribasso."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_32_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, book, beginner]
+    source:
+      timecode: "00:45-01:02"
+    statement: "Questo tipo di operazioni su spike con lettura del book e' riservato esclusivamente a trader molto esperti con grande velocita' e sensibilita'."
+    rationale: "Serve capacita' avanzata di lettura del book e tempi di reazione rapidissimi."
+
+  - id: BULL_T_32_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, scalping]
+    source:
+      timecode: "06:34-07:04"
+    statement: "Si opera cosi' solo quando ci sono pezzi giganteschi nel book, cioe' persone che hanno bisogno di vendere velocemente grandi quantita' a sconto."
+    rationale: "Senza la condizione del pezzo enorme in vendita a sconto, il setup non si forma."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Scalping avanzato su spike ribassisti causati da grandi venditori: si entra quando il muro viene mangiato o quando arrivano supporti in denaro, e si esce immediatamente se non parte lo spike rialzista."

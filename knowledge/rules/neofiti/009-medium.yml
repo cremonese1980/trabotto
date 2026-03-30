@@ -1,0 +1,125 @@
+video:
+  id: YT_BULL_P_009
+  series: principianti
+  title: "Lettura del Book - Serata in Autogestione della Bull Family: Terzo Tocco, Balene e Conformazioni"
+  video_index: 9
+  duration_minutes: 40
+
+entities:
+  - id: BULL_P_09_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, terzo_tocco, ema223, breakout, trigger]
+    source:
+      timecode: "01:50-09:20"
+    conditions:
+      - touch_count(EMA223) >= 3
+      - each_touch_was_precise == true
+      - book_has_large_stable_bid_level_near_ema223 == true
+      - book_ask_side_no_massive_wall_above_entry == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bullish]
+    rationale: "Il terzo tocco preciso della EMA 223 all'interno di uno shimano con book che mostra supporto grosso stabile è il setup ideale per ingresso long."
+    notes: "Esempio DUSK +33%: terzo tocco EMA 223 a 55.7 con shimano. Se in verde c'è un pezzo grosso (30.000-100.000) prima dell'entry, questo dà coraggio perché chi sta comprando sta mostrando i soldi per far salire."
+
+  - id: BULL_P_09_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, trend, psychology, regime_filter]
+    source:
+      timecode: "05:35-09:20"
+    conditions:
+      - book_bid_side_empty == true
+      - price_is_rising == true
+      - accumulation_mode_inferred == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando il book in denaro è vuoto ma il prezzo sale, chi sta comprando usa la tecnica di accumulo nascosto: non è sfruttabile dallo scalper perché uno spike inverso può rovinare il trade."
+    notes: "Chi accumula percentuali di società compra senza farsi vedere. Se si entra e un venditore esce con 30.000 USDT a mercato, crea uno spike odioso al contrario. Aspettare che il grande compratore inizi a mostrare i soldi."
+
+  - id: BULL_P_09_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, candelina, ema, trigger, breakout]
+    source:
+      timecode: "11:00-15:55"
+    conditions:
+      - book_support_level_visible == true
+      - candle_count_resting_on_level >= 2
+      - book_level_does_not_move_during_candles == true
+    action:
+      - ENTER_LONG
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: []
+    rationale: "Due candeline di riposo su un livello book stabile dimostrano che quel livello è affidabile come supporto: solo dopo questa conferma si può fare ingresso alla rottura del livello resistenza sopra."
+    notes: "Il principio è identico a quello del bad: le candeline sono l'azzeramento del trend prima del breakout."
+
+  - id: BULL_P_09_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, ema, regime_filter, trend, breakout]
+    source:
+      timecode: "16:55-25:00"
+    conditions:
+      - book_bid_side_full == true
+      - price_is_falling == true
+      - conformazione_rottura_verso_il_basso_approaching == true
+    action:
+      - MONITOR_LEVEL
+      - WAIT
+    applicability:
+      timeframes: ["5min"]
+      market_regime: []
+    rationale: "Book pieno in verde (denaro) mentre il prezzo scende non è contraddizione: i pezzi grossi fermano il prezzo e creano la conformazione di breakout. Sono il tappo che verrà rotto generando accelerazione."
+    notes: "Ragionamento neofita errato: 'il book è pieno di verde eppure scende'. Quei pezzi grossi proteggono il livello e lo faranno lateralizzare finché non si accumula forza per romperlo."
+
+  - id: BULL_P_09_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, psychology, trend]
+    source:
+      timecode: "03:45-09:00"
+    statement: "Chi compra percentuali di società usa tre fasi: accumulo silenzioso (senza mostrare denaro), distribuzione parziale mostrando i soldi per far salire anche gli altri, poi to-the-moon comprando pubblicamente facendo esplodere il prezzo."
+    rationale: "Capire la fase in cui si trova il grande compratore permette di decidere se entrare o aspettare: solo nella fase 2 e 3 il book mostra segnali sfruttabili dallo scalper."
+
+  - id: BULL_P_09_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, book, btc_index]
+    source:
+      timecode: "26:40-33:50"
+    statement: "Le 'balene' non sono entità onnipotenti: sono hedge fund che ogni anno in molti casi falliscono. Non esistono orari in cui 'entra la balena' e il prezzo non può scendere. Chi compra percentuali ha sempre una controparte che vende."
+    rationale: "Demistificare il mito delle balene è necessario per non prendere decisioni di trading basate su superstizioni invece che su analisi tecnica e book reale."
+
+  - id: BULL_P_09_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, ema, psychology, beginner]
+    source:
+      timecode: "16:05-20:10"
+    statement: "Book e medie mobili viaggiano insieme: non si sceglie uno o l'altro. La conformazione grafica (EMA) indica quando entrare, il book indica dove esattamente e se ci sono ostacoli. Su 9-9.5 volte su 10 una conformazione bella e precisa coincide con un book favorevole."
+    rationale: "L'integrazione di book e EMA massimizza la probabilità di successo; guardare solo il book senza EMA o solo le EMA senza book lascia informazioni preziose sul tavolo."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 3
+  core_message: "Serata interattiva sulla lettura del book: il setup terzo tocco EMA 223 con supporto book stabile, la differenza tra accumulo silenzioso e fase di distribuzione pubblica, perché il book pieno in verde mentre il prezzo scende non è contraddizione, e la demistificazione delle 'balene' come hedge fund normali."

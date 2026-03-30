@@ -1,0 +1,164 @@
+video:
+  id: YT_BULL_P_039
+  series: principianti
+  title: "Stop loss: psicologia, matematica e gestione pratica su tutti i timeframe"
+  video_index: 39
+  duration_minutes: 45
+
+entities:
+  - id: BULL_P_39_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, breakout, invalidation, risk_management]
+    source:
+      timecode: "00:27-00:40"
+    conditions:
+      - position_open_after_breakout == true
+      - candle_closes_back_inside_range == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min", "5min", "30min", "1d"]
+      market_regime: []
+    rationale: "Se la conformazione non produce movimento immediato lontano dal livello trigger, il setup è fallito; tenere significa combattere un setup che è diventato un segnale short."
+    notes: "La regola è agnostica rispetto al timeframe: logica identica su grafico a 1 minuto o daily."
+
+  - id: BULL_P_39_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, daily, terzo_tocco, invalidation]
+    source:
+      timecode: "03:32-04:07"
+    conditions:
+      - daily_setup_entered_via_terzo_tocco_30min == true
+      - tf30min_price_returns_below_terzo_tocco_entry == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["30min"]
+      market_regime: []
+    rationale: "Il livello di ingresso a 30m è il punto di invalidazione per il setup daily; violarlo significa che la conformazione è fallita indipendentemente dal fatto che la candela daily sia ancora aperta."
+    notes: "Consente una perdita quasi zero su un setup daily usando un'invalidazione più stretta a 30m anziché aspettare la chiusura della candela daily."
+
+  - id: BULL_P_39_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, stop_loss, risk_management, trigger]
+    source:
+      timecode: "08:31-10:03"
+    conditions:
+      - position_open_with_book_wall_as_stop_reference == true
+      - book_wall_size_drops_to_50pct_of_original == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: []
+    rationale: "Quando il muro viene consumato da un grande ordine di vendita a mercato, il supporto sta cedendo; il momento in cui metà del muro è mangiata, l'effetto cascata accelera — uscire prima del collasso totale."
+    notes: "NON aspettare il consumo totale del muro. NON piazzare stop-limit esattamente al prezzo del muro."
+
+  - id: BULL_P_39_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, terzo_tocco, trigger, invalidation]
+    source:
+      timecode: "25:10-26:22"
+    conditions:
+      - terzo_tocco_entry_taken == true
+      - spike_through_trigger_then_returned_below == true
+      - new_trigger_level == spike_high
+    action:
+      - WAIT
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "5min", "30min"]
+      market_regime: []
+    rationale: "Dopo uno spike finto il vero trigger migra dove ha raggiunto il picco lo spike; è quel livello che il mercato deve riconquistare per confermare la validità del setup."
+    notes: "Q&A esplicito: dopo uno sputo del terzo tocco il nuovo ingresso della conformazione è al livello dello spike, non al livello di breakout originale."
+
+  - id: BULL_P_39_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [stop_loss, book, ema10, candle_pattern]
+    source:
+      timecode: "27:30-29:10"
+    conditions:
+      - position_entered_on_ema_finta == true
+      - large_bid_wall_visible_at_or_below_current_price == true
+      - spike_touched_wall_and_bounced == true
+      - wall_remains_at_full_size == true
+    action:
+      - WAIT
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1min"]
+      market_regime: []
+    rationale: "La tecnica EMA finta richiede lettura del book per distinguere uno spike di stop-hunt da un vero ribasso; la presenza di un grande muro intatto dopo lo spike conferma che il setup è ancora valido."
+    notes: "Tecnica avanzata che richiede lettura sub-secondo del book; i principianti devono usare stop di breakout più semplici."
+
+  - id: BULL_P_39_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [stop_loss, take_profit, risk_management, scalping]
+    source:
+      timecode: "31:37-34:42"
+    conditions:
+      - position_entered == true
+      - oco_order_placed == true
+      - sell_limit_at_target_proportional_to_bad_candle == true
+      - stop_limit_trigger_below_wall_level == true
+    action:
+      - EXIT_POSITION
+      - TIGHTEN_TP
+    applicability:
+      timeframes: ["1min", "5min", "30min", "1d"]
+      market_regime: []
+    rationale: "Gli ordini OCO automatizzano simultaneamente stop e target; rimuovono l'interferenza psicologica per i principianti e garantiscono che lo stop scatti anche se il trader è lontano dallo schermo."
+    notes: "Per principianti: usare sempre stop-limit all'ingresso + OCO. Per esperti: limit manuale pronto, cancella e reinserisci mentre il prezzo si avvicina. Proporzione target ~2.6% per l'esempio daily BAD dato."
+
+  - id: BULL_P_39_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management, beginner]
+    source:
+      timecode: "13:18-16:33"
+    statement: "Una conformazione che funziona il 70% delle volte fallisce comunque il 30% delle volte; quei tre fallimenti azzereranno i guadagni di sette vincite se non si esce. La matematica impone di tagliare le perdite immediatamente quando il setup fallisce."
+    rationale: "Il bias del sopravvissuto porta i principianti a tenere i perdenti; la matematica probabilistica di qualsiasi tecnica, anche una buona, produce profitto netto solo quando le perdite sono più piccole delle vincite."
+
+  - id: BULL_P_39_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, stop_loss, invalidation]
+    source:
+      timecode: "19:14-19:44"
+    statement: "Quando un livello di breakout fallisce e il prezzo torna sotto di esso, quel livello rotto diventa un setup short ad alta probabilità; rimanere long significa avere sia la matematica che i venditori attivi che lavorano contro di te."
+    rationale: "Capire che un setup long fallito crea immediatamente un'opportunità short riformula il costo mentale del tagliare la perdita: non stai rinunciando, stai evitando un attacco doppio al tuo capitale."
+
+  - id: BULL_P_39_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "40:53-42:34"
+    statement: "NON imparare dal caso raro in cui tenere un setup fallito alla fine si è ripreso; quel bias del sopravvissuto causerà di tenere nel 30% dei casi dove non si riprende mai, producendo perdite catastrofiche."
+    rationale: "Un caso sopravvissuto insegna la lezione sbagliata statisticamente; calibrare sempre le decisioni sull'aspettativa matematica su tutte le occorrenze, non su recuperi memorabili isolati."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Una sessione Q&A live completa sulla gestione dello stop loss dimostra che la regola di uscita è identica su tutti i timeframe — uscire quando la conformazione fallisce — e spiega come posizionare gli stop usando i livelli dei muri del book e gli ordini OCO, mentre la matematica di qualsiasi tecnica impone la disciplina dello stop per rimanere profittevoli nel tempo."

@@ -1,0 +1,288 @@
+video:
+  id: BULL_LTCRA_11
+  series: live-trading-crypto-analisi
+  title: "Panico totale: 3 long spot + iceberg su SLP, COTI, YGG in giornata di crash"
+  video_index: 11
+  duration_minutes: 32
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_11_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, reversal, book]
+    source:
+      timecode: "04:19-05:21"
+    conditions:
+      - price_tested_ema60 == true
+      - price_tested_ema223 == true
+      - ema223_held_as_support == true
+      - finta_breakdown_detected == true
+      - price_recovered_above_ema223 == true
+      - price_retested_ema223_without_breaking == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [crash_bounce]
+    rationale: "When price tests EMA 60 and EMA 223, holds EMA 223, fakes a breakdown then recovers and retests without breaking, this is a strong long setup on a crash-bounce day."
+    notes: "SLP trade: title had been crashing continuously, day of +35% bounce. EMA 223 held, finta below it, recovered, retested = strong conformazione. Entry via ordine condizionato at muro level 0.08105, max price 0.08106. Position size 20,000 USDT. Result: +328 USDT."
+
+  - id: BULL_LTCRA_11_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, trigger, scalping]
+    source:
+      timecode: "04:48-05:21"
+    conditions:
+      - muro_identified_in_book == true
+      - muro_aligns_with_chart_support == true
+      - trading_mode == spot
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Place ordine condizionato at the muro level in the book. Set trigger price at the muro and max price slightly above (1 tick) to ensure fill when the muro is consumed."
+    notes: "SLP entry: muro at 0.08105, ordine condizionato triggers at 0.08105 with max buy price 0.08106. Filled completely at 0.08105. The muro acts as both support and entry trigger."
+
+  - id: BULL_LTCRA_11_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, iceberg, scalping]
+    source:
+      timecode: "08:47-09:14"
+    conditions:
+      - iceberg_sell_order_placed == true
+      - candle_deflating == true
+      - candle_body_shrinking == true
+      - muro_on_sell_side_still_holding == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Cancel iceberg sell order when the candle starts deflating. A deflating candle means momentum is fading and the price will not break through the sell-side muro."
+    notes: "The candle must remain gonfio (full-bodied) to have the force to break a large muro. If buyers are already getting scared and the candle is shrinking, the breakout thesis is dead. Cancel the iceberg and prepare for a manual exit or repositioning."
+
+  - id: BULL_LTCRA_11_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, invalidation, scalping]
+    source:
+      timecode: "06:49-07:32"
+    conditions:
+      - long_position_active == true
+      - sell_side_book_loading_disproportionately == true
+      - sell_side_quantity >> buy_side_quantity
+      - book_becoming_pesantito == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "When the sell side of the book loads up disproportionately compared to the buy side, the title becomes pesantito (heavy). This signals sellers are overwhelming buyers and the price will drop."
+    notes: "SLP: at the 0.08128-0.08200 level, sellers filled in with large amounts that were not there before. The term pesantito means the title is weighed down by sell orders. Cifre sproporzionate (disproportionate amounts) on sell side vs buy side = exit signal."
+
+  - id: BULL_LTCRA_11_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, scalping, take_profit]
+    source:
+      timecode: "10:41-11:12"
+    conditions:
+      - long_position_active == true
+      - large_block_appears_on_sell_side == true
+      - sell_block_size >= 60000
+      - sell_block_disproportionate_to_surrounding_levels == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "When a single large sell block (pezzone) appears in the book, it signals a major seller has arrived. Sell immediately at market before the spike down happens."
+    notes: "SLP exit: the 60,000 block appeared, Bull recognized it was too large and sold immediately. Once he sold, the price spiked down hard (vuoto, spike rosso). Everyone who read the book correctly also sold. The sequence: large block appears -> sell at market -> spike down -> finito."
+
+  - id: BULL_LTCRA_11_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, trend, reversal]
+    source:
+      timecode: "11:51-12:44"
+    conditions:
+      - cambio_colore_daily_detected == true
+      - daily_candle_turned_green == true
+      - key_level_identified_in_book == true
+      - muro_at_key_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [crash_bounce]
+    rationale: "Cambio colore daily (red to green) combined with a key level in the book triggers a long entry via ordine condizionato at the resistance-turned-trigger level."
+    notes: "COTI trade: daily candle changed color with passaggio in verde. Entry at 0.057 via ordine condizionato, max price 0.0571. The level at 0.057 was a large muro in the book acting as resistance. Once broken, expected continuation into new daily highs (candela nuova vergine). Result: +264 USDT."
+
+  - id: BULL_LTCRA_11_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, invalidation, scalping]
+    source:
+      timecode: "14:22-15:06"
+    conditions:
+      - long_position_active == true
+      - buy_side_book_heavily_loaded == true
+      - price_failing_to_advance == true
+      - sell_side_has_little_resistance == true
+      - price_cannot_break_despite_strong_bid == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "When the buy side (denaro) is heavily loaded but the price still cannot advance despite minimal sell-side resistance, the move is exhausted. Forced exit."
+    notes: "COTI: denaro was carichissimo (extremely loaded), sell side had poca roba (little resistance), yet the price could not make the jump. If price cannot advance with everything in its favor, the trade thesis is dead. Non ce la fa = forced exit."
+
+  - id: BULL_LTCRA_11_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, scalping, trigger]
+    source:
+      timecode: "15:48-16:34"
+    conditions:
+      - trading_mode == spot
+      - chart_entry_level_identified == true
+      - book_muro_level_identified == true
+      - book_muro_level != chart_entry_level
+      - book_muro_has_large_quantity == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "On spot, enter where the book has sense (at the muro), not just where the chart suggests. If the chart says enter here but the muro is elsewhere, wait for the muro level."
+    notes: "COTI trade 2: the chart entry would have been higher, but the large muro was lower. On futures, levels are often the same (chart = book), but on spot the book provides different, often better, entry levels. No stop limit placed because the muro seemed too large (no urgency), so waited to observe the reaction first. Position size 20,000 USDT, max price 0.0542."
+
+  - id: BULL_LTCRA_11_09
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [iceberg, book, position_sizing]
+    source:
+      timecode: "17:57-18:29"
+    conditions:
+      - trading_mode == spot
+      - position_size_would_create_visible_muro == true
+      - position_size > average_book_level_size * 2
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Use iceberg order to exit when your position size would create a visible muro in the book, scaring other participants. Show only a fraction of the total quantity."
+    notes: "COTI trade 2: 36,000 pezzi (about 20,000 USDT) to sell. Showed only 8,800 via iceberg. If the full 20,000 USDT were visible, it would jump from 3,000 to 23,000 at that level, creating a pesante (heavy) level that discourages buyers. Iceberg regenerates the visible portion until the full quantity is filled."
+
+  - id: BULL_LTCRA_11_10
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [iceberg, book, take_profit]
+    source:
+      timecode: "21:29-22:12"
+    conditions:
+      - long_position_active == true
+      - large_muro_ahead_on_sell_side == true
+      - muro_not_at_daily_high == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Place iceberg sell order just before a large muro on the sell side. Exit before the muro, not at it, because muri that are not at the daily high have lower probability of breaking."
+    notes: "YGG trade: muro at higher level, iceberg exit placed just below it at 0.02163 (price col 9). Showed 800 of 2,000 total. Low liquidity pair (80M volume), so even small sizes matter. Filled almost instantly. Result: bought 15,165, sold 15,342, approximately +177 USDT. One-minute trade."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_11_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, scalping]
+    source:
+      timecode: "03:21-04:05"
+    statement: "The spot book is the best book in trading history. It shows dollar amounts (not contract counts), making muri immediately visible with their true size (100K, 50K dollars). On futures, this granularity does not exist."
+    rationale: "Dollar-denominated book levels on spot provide actionable information that is not available on futures, where contract sizes obscure the real dollar commitment behind each level."
+
+  - id: BULL_LTCRA_11_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, scalping]
+    source:
+      timecode: "29:53-30:26"
+    statement: "Pesca notturna on spot protects from spike liquidation. On futures, a night spike can liquidate you even if the trade would have been profitable. On spot, the spike is irrelevant because there is no liquidation mechanism; the position survives and you profit when price recovers."
+    rationale: "Spot eliminates the single biggest risk of overnight trading (pesca notturna): liquidation via spike. This makes night fishing viable as a strategy."
+
+  - id: BULL_LTCRA_11_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, scalping, take_profit]
+    source:
+      timecode: "05:54-06:21"
+    statement: "A muro at the daily high has higher probability of being broken than a muro at a random level. When the muro is not at the daily high, it is more likely to hold, so set take profit before it rather than betting on a breakout."
+    rationale: "Daily highs attract breakout triggers and stop-loss cascades. Muri at these levels are more likely to be consumed. Muri elsewhere lack this catalyst and tend to hold as resistance."
+
+  - id: BULL_LTCRA_11_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "02:03-02:53"
+    statement: "A trader must be able to operate in any condition: small candles, large candles, bull market, bear market, lateral market, spot, futures, any portal. If you can only trade in perfect conditions, you will only be profitable for a short period."
+    rationale: "Adaptability is what separates consistently profitable traders from those who only succeed in favorable regimes."
+
+  - id: BULL_LTCRA_11_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [iceberg, book, scalping]
+    source:
+      timecode: "09:42-10:11"
+    statement: "When selling at market (hitting the bid), there is no need for an iceberg order because no one sees you in the book. Iceberg is only needed when placing a limit order in the book where other participants can see your size."
+    rationale: "Iceberg orders hide size from other book readers. Market orders execute immediately against existing bids, so there is nothing to hide."
+
+  - id: BULL_LTCRA_11_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, risk_management, leverage]
+    source:
+      timecode: "28:06-29:05"
+    statement: "If you are not profitable, stop trading futures. You are just donating money to the system. Learn on spot where you cannot be liquidated; accumulate gradually (50-100 EUR per month), and hold. On spot, your capital is preserved even in drawdowns."
+    rationale: "Unprofitable traders on futures lose capital permanently via liquidation. On spot, even bad entries eventually recover or can be averaged over time."
+
+summary:
+  total_machine_executable: 10
+  total_context_only: 6
+  core_message: "Panico totale day with 3 spot long trades (SLP +328, COTI +264/+202, YGG +177 USDT) demonstrating spot book superiority: dollar-denominated muri for entries via ordine condizionato, iceberg exits to hide size, book pesantito and large block detection for exits, and cambio colore daily for timing. Spot protects from spike liquidation, making pesca notturna viable."

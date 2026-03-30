@@ -1,0 +1,195 @@
+video:
+  id: BULL_T_052
+  series: tecniche
+  title: "Candelina di azzeramento - ingresso su EMA 10 a timeframe 1 ora"
+  video_index: 52
+  duration_minutes: 20
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_52_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, ema10, pullback, candle_pattern]
+    source:
+      timecode: "02:55-04:25"
+    conditions:
+      - timeframe == "1h"
+      - price_near_ema10 == true
+      - current_candle_is_smallest_in_sequence == true
+      - candle_touches_ema10_precisely == true
+      - ema60_below_price == true
+      - ema223_below_price == true
+    action:
+      - ENTER_LONG
+    stop_loss: "minimo della candelina"
+    applicability:
+      timeframes: ["1h"]
+      market_regime: []
+    rationale: "La candelina di azzeramento e' la candela piu' piccola che tocca precisamente l'EMA 10 a timeframe 1 ora; ingresso alla rottura dei massimi della candelina, stop al minimo."
+    notes: "Non importa se la candela e' rossa o verde, o se e' solo uno spike (T-shape). L'importante e' che sia la candela piu' piccola e tocchi precisamente l'EMA 10. EMA 60 e 223 devono essere sotto."
+
+  - id: BULL_T_52_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, ema10, stop_loss]
+    source:
+      timecode: "03:10-03:32"
+    conditions:
+      - candelina_entry == true
+      - position_open == true
+    action:
+      - EXIT_POSITION
+    stop_loss: "minimo della candelina di azzeramento"
+    applicability:
+      timeframes: ["1h", "5m"]
+      market_regime: []
+    rationale: "Lo stop e' sempre il minimo della candelina di azzeramento; essendo la candela piu' piccola, lo stop e' molto vicino."
+    notes: "Ingresso al massimo della candelina. Lo stop vicino e' il vantaggio principale di questa tecnica."
+
+  - id: BULL_T_52_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candelina, ema10, candle_pattern]
+    source:
+      timecode: "08:26-09:05"
+    conditions:
+      - timeframe == "1h"
+      - small_candle_below_ema10 == true
+      - candle_touches_ema10_precisely == true
+      - no_large_spike_below == true
+    action:
+      - ENTER_LONG
+    stop_loss: "minimo della candelina"
+    applicability:
+      timeframes: ["1h"]
+      market_regime: []
+    rationale: "La candelina di azzeramento puo' anche stare sotto l'EMA 10, purche' sia precisa sul tocco e non abbia spike grandi sotto."
+    notes: "Ingresso alla candela successiva alla rottura. Se non supera i minimi precedenti, la tesi resta valida. Variante valida ma meno ideale."
+
+  - id: BULL_T_52_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candelina, take_profit, risk_management]
+    source:
+      timecode: "09:20-09:49"
+    conditions:
+      - candelina_entry == true
+      - position_open == true
+      - price_approaching_daily_high == true
+      - touch_count(daily_high) == 2
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1h"]
+      market_regime: []
+    rationale: "Accontentarsi il prima possibile; se si e' al secondo tocco e c'e' l'EMA 60 daily come tappo, non aspettare che arrivi li'."
+    notes: "Tenere per il secondo tocco dei massimi daily solo se il primo rialzo e' recente e i massimi sono vicini. Altrimenti chiudere alla prima opportunita'."
+
+  - id: BULL_T_52_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candelina, ema10, candle_pattern]
+    source:
+      timecode: "06:45-07:35"
+    conditions:
+      - timeframe == "5m"
+      - small_candle_on_ema10 == true
+      - candle_body_minimal == true
+      - candle_shape_is_t == true
+    action:
+      - ENTER_LONG
+    stop_loss: "minimo della candelina"
+    applicability:
+      timeframes: ["5m"]
+      market_regime: []
+    rationale: "A timeframe 5 minuti la candelina di azzeramento funziona ugualmente: candela a forma di T con corpo minuscolo precisa sull'EMA 10."
+    notes: "Timeframe 5 minuti e' per chi e' un po' piu' bravo. La forma ideale e' una T (corpo piccolo, spike sotto). Non scendere sotto i 5 minuti con questa tecnica."
+
+  - id: BULL_T_52_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [bomba, ema10, candelina]
+    source:
+      timecode: "16:15-17:08"
+    conditions:
+      - bomba_signal_received == true
+      - elapsed_candles_since_bomba >= 3
+      - timeframe == "1h"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1h"]
+      market_regime: []
+    rationale: "Dopo un segnale bomba, servono almeno 3 candele per arrivare all'EMA 10; mettere una sveglia al 50esimo minuto per verificare se si forma la candelina."
+    notes: "Procedura: arriva segnale bomba, metti sveglia dopo 2h50m. Ogni ora al 50esimo minuto controlla se c'e' la candelina sull'EMA 10. Se non c'e', vai avanti."
+
+  - id: BULL_T_52_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [candelina, ema10, invalidation]
+    source:
+      timecode: "15:40-16:05"
+    conditions:
+      - signal_on_ema10 == true
+      - no_small_candle_on_ema10 == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["30m", "1h"]
+      market_regime: []
+    rationale: "Se il prezzo tocca l'EMA 10 ma non forma una candelina piccola, non c'e' ingresso; andare avanti."
+    notes: "Il segnale che il prezzo torna sull'EMA 10 non basta da solo; serve la candelina di azzeramento. Senza di essa, skip."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_52_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, risk_management]
+    source:
+      timecode: "03:30-04:02"
+    statement: "La candelina di azzeramento a timeframe 1 ora e' la tecnica 'casa' per chi vuole diventare profittevole: semplice da capire, ingresso e stop chiari, lontana dalla FOMO."
+    rationale: "A timeframe 1 ora c'e' tempo per inserire stop e target, non serve stare incollati allo schermo, basta controllare ogni 50 minuti."
+
+  - id: BULL_T_52_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "02:16-02:48"
+    statement: "Accontentarsi il prima possibile e non puntare al secondo tocco: chiudere prima aumenta la probabilita' di riuscita, aspettare il secondo tocco porta piu' schiaffi."
+    rationale: "Se si cerca sempre il secondo tocco si prendono piu' perdite; il rimbalzo iniziale e' il guadagno piu' probabile."
+
+  - id: BULL_T_52_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "19:44-20:04"
+    statement: "Partire dalle conformazioni piu' lente (1 ora) perche' all'inizio non si e' capaci; non usare la scusa di non poter chiudere."
+    rationale: "I principianti devono padroneggiare la candelina a 1h prima di passare a timeframe piu' veloci."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "La candelina di azzeramento e' la candela piu' piccola che tocca precisamente l'EMA 10 a timeframe 1 ora: ingresso alla rottura dei massimi, stop al minimo della candelina, con EMA 60 e 223 sotto come supporto. E' la tecnica 'casa' per principianti, lontana dalla FOMO."

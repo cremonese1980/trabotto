@@ -1,0 +1,164 @@
+video:
+  id: YT_BULL_P_017
+  series: principianti
+  title: "Lateralizzazione (scalping su canali laterali)"
+  video_index: 17
+  duration_minutes: 9
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_17_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [lateralizzazione, candelina, ema, scalping]
+    source:
+      timecode: "01:40-03:05"
+    conditions:
+      - price_range_last_60min < price_range_threshold
+      - ema5_ema10_ema60_all_compressed == true
+      - candle_bodies_small == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "A lateralization is confirmed when all moving averages are compressed together and candle bodies are small — all MAs lose significance and only the channel boundaries matter."
+    notes: "Minimum duration used in example: ~60 minutes of lateral price action to confirm the channel. Shorter periods are less reliable."
+
+  - id: BULL_P_17_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [lateralizzazione, book, trigger, scalping]
+    source:
+      timecode: "03:05-04:08"
+    conditions:
+      - lateral_channel_detected == true
+      - book_wall_at_channel_boundary == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Validate both channel boundaries (support and resistance) in the order book — a large wall confirms the level as real. Without book validation, use the graphical level directly."
+    notes: "Example: channel support at 2.47 confirmed by book wall of 230 lots. Book gives the precise level and confirms whether a breakout is meaningful."
+
+  - id: BULL_P_17_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [lateralizzazione, breakout, candelina, stop_loss, scalping]
+    source:
+      timecode: "01:58-02:35"
+    conditions:
+      - lateral_channel_detected == true
+      - price_breaks_above_channel_resistance == true
+      - candle_body_closes_above_resistance == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Buy on upward breakout of the lateral channel. Entry is at the close of the candle body above resistance (not above the spike high)."
+    notes: "Stop is below the minimum spike low of the lateral channel. Tight stop is the main advantage of this technique."
+
+  - id: BULL_P_17_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [lateralizzazione, breakout, candelina, stop_loss, scalping]
+    source:
+      timecode: "04:00-04:56"
+    conditions:
+      - lateral_channel_detected == true
+      - price_breaks_below_channel_support == true
+      - candle_body_closes_below_support == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Sell short on downward breakout of the lateral channel boundary confirmed by book wall."
+    notes: "Stop is above the maximum spike high of the lateral channel. Same mechanics as long breakout but inverted."
+
+  - id: BULL_P_17_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [lateralizzazione, btc_index, regime_filter, scalping]
+    source:
+      timecode: "06:43-07:14"
+    conditions:
+      - lateral_channel_detected == true
+      - breakout_direction == long
+      - index_direction == flat OR index_direction == up
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "A lateral breakout to the upside is highest quality when the index (DAX/NASDAQ/BTC) is neutral or rising — the stock/asset is breaking out on its own strength."
+    notes: "If the breakout is in the same direction as the index move, reduce size — the move may be index-driven and reverse when the index reverses."
+
+  - id: BULL_P_17_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [lateralizzazione, regime_filter, risk_management, scalping]
+    source:
+      timecode: "06:43-07:55"
+    conditions:
+      - lateral_channel_breakout_direction == index_direction
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When the breakout direction matches the index direction, the trade is partly driven by macro momentum — reduce size because the signal is weaker."
+    notes: "Strongest breakouts: asset breaks independently of or against the index. These warrant larger size."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_17_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [lateralizzazione, ema, scalping]
+    source:
+      timecode: "02:38-03:05"
+    statement: "During lateralization all EMAs become meaningless — they are all compressed at the same level. The only relevant levels are the channel top and bottom."
+    rationale: "EMAs lose predictive power when price action is horizontal; only horizontal support/resistance provides actionable signals."
+
+  - id: BULL_P_17_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [lateralizzazione, regime_filter, btc_index]
+    source:
+      timecode: "06:52-07:55"
+    statement: "If the index (BTC/NASDAQ) is in a sell-off and the asset breaks channel support, this is a dangerous short — the move may reverse sharply when the index bounces."
+    rationale: "Shorting with index momentum means you are riding macro selling; when the index reverses intraday the short can snap back violently."
+
+  - id: BULL_P_17_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [lateralizzazione, candelina, scalping, psychology]
+    source:
+      timecode: "05:44-06:03"
+    statement: "Small sequential daily candles accumulate tension like a compressed spring — breakout can go either direction but tends to be explosive."
+    rationale: "The smaller and more uniform the candles during accumulation, the more energy stored for the eventual breakout."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Lateralizzazione technique: identify a channel where all EMAs are compressed, validate the channel boundaries in the order book, then trade the breakout of either boundary with the spike opposite as stop. Strongest signals are when the asset breaks independently of the index."

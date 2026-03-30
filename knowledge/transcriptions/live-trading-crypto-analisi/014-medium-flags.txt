@@ -1,0 +1,107 @@
+# Low-confidence segments for: 014_LIVE_TRADING_SU_FIS_sul_mercato_spot_Long_su_Breakout_nuovi_massimi_di_giornata_Analisi_tecnica.mp3
+# Total flagged: 34
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:02] (confidence: -0.491)
+  "Ciao Traders, siete su Sculpting the Bull."
+
+[0:02-0:08] (confidence: -0.491)
+  "Allora, l'analisi tecnica di un live trade su Fizz Spot."
+
+[0:08-0:09] (confidence: -0.491)
+  "Sigla!"
+
+[0:56-0:58] (confidence: -0.211)
+  "Ehm..."
+
+[0:58-1:04] (confidence: -0.211)
+  "Me l'ho segnalato nel gruppo di Piazza Fari, che non c'entra niente su Discord."
+
+[1:04-1:09] (confidence: -0.211)
+  "Il gruppo Piazza Fari, perché stavamo parlando appunto a Piazza Fari e..."
+
+[1:09-1:11] (confidence: -0.211)
+  "Dov'è?"
+
+[1:11-1:13] (confidence: -0.211)
+  "Ride Lightning."
+
+[1:13-1:18] (confidence: -0.211)
+  "Ha detto, sai che ho comprato Fizz che sta scoppiando? Bene, sono andato a vedere."
+
+[1:18-1:21] (confidence: -0.211)
+  "Ed effettivamente era già qua. Era già andato a fare sti massimi."
+
+[1:21-1:23] (confidence: -0.169)
+  "Quindi, ho spettato l'altearizzazione."
+
+[1:23-1:26] (confidence: -0.169)
+  "Comunque, Bull Family sempre al top."
+
+[1:26-1:31] (confidence: -0.169)
+  "Ho spettato l'altearizzazione che scaricasse un po', andando a fare nuovi massimi."
+
+[1:31-1:36] (confidence: -0.169)
+  "Ho fatto l'ingresso. Vi faccio vedere però la registrazione che ce l'ho."
+
+[1:38-1:39] (confidence: -0.169)
+  "Ecco."
+
+[1:39-1:43] (confidence: -0.169)
+  "Allora, ho messo la linea, perché in spot non ti lascia l'ingresso."
+
+[1:43-1:46] (confidence: -0.169)
+  "Quindi io metto la linea per avere un riferimento."
+
+[2:41-2:46] (confidence: -0.131)
+  "Quindi visto che poi qua non ha fatto la finta, quindi non si è avvicinato,"
+
+[2:46-2:50] (confidence: -0.131)
+  "poi è tornato giù e ha fatto il manico, quindi è andato su dritto per dritto,"
+
+[2:50-2:54] (confidence: -0.131)
+  "mi fido meno e quindi cerco di vendere prima dei muri."
+
+[2:54-2:55] (confidence: -0.131)
+  "Allora il primo muro era questo."
+
+[2:55-3:00] (confidence: -0.131)
+  "Quindi adesso vado ad inserire, visto che ci sta arrivando, è a 2.4.7.5.2."
+
+[3:00-3:03] (confidence: -0.131)
+  "In denaro, sì, sta caricando. Non male."
+
+[3:03-3:05] (confidence: -0.131)
+  "Però non ci sono quantità così grosse."
+
+[3:05-3:08] (confidence: -0.131)
+  "Quindi non mi fido proprio perché non ha fatto anche il manico."
+
+[3:08-3:13] (confidence: -0.157)
+  "Quindi è andato su abbastanza dritto e questa latalizzazione non è lunghissima,"
+
+[3:13-3:16] (confidence: -0.157)
+  "non ha anche testato la 60. Quindi mi sto fidando poco."
+
+[3:16-3:18] (confidence: -0.157)
+  "E di conseguenza adesso andiamo avanti."
+
+[3:19-3:21] (confidence: -0.157)
+  "Vado a cliccare."
+
+[3:21-3:23] (confidence: -0.157)
+  "Inserisco..."
+
+[3:23-3:26] (confidence: -0.157)
+  "Cliccato adesso. Linea rossa è il prezzo che ho inserito."
+
+[3:26-3:28] (confidence: -0.157)
+  "Qua c'è il book."
+
+[3:29-3:34] (confidence: -0.157)
+  "Mi preparo eventualmente, vedi qua, mi preparo per cliccare qua"
+
+[3:34-3:37] (confidence: -0.157)
+  "per poter cancellare l'ordine e cambiare poi il prezzo."
+

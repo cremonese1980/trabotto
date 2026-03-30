@@ -1,0 +1,86 @@
+# Low-confidence segments for: 008_LIVE_TRADING_usando_i_segnali_BULL_BOT_SYS_sui_nuovi_massimi_storici_con_BITCOIN_che_crolla.mp3
+# Total flagged: 27
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.579)
+  "Ciao traders, siete su Scapin'theBull, analisi tecnica di un live trade grazie a Bullbot,"
+
+[0:07-0:08] (confidence: -0.579)
+  "sigla."
+
+[0:08-0:27] (confidence: -0.306)
+  "Guardate la perfezione, guardate la perfezione di questa linea."
+
+[0:27-0:32] (confidence: -0.306)
+  "Guardate la perfezione del Bullbot, dove mi sveglio questa mattina, ovviamente vado a"
+
+[0:32-0:37] (confidence: -0.306)
+  "vedere i topping classifica, poi apro il Bullbot, vado a vedere diverse cose."
+
+[0:37-0:41] (confidence: -0.213)
+  "Prima cosa, ovviamente vado a vedere Bomba, perché nel segnale Bomba ci sono anche i"
+
+[0:41-0:42] (confidence: -0.213)
+  "Max."
+
+[0:42-0:50] (confidence: -0.213)
+  "Il segnale, appunto, questo rosa, anche se gli scienziati pazzi dicono che si chiama"
+
+[0:50-0:52] (confidence: -0.213)
+  "Aranto, comunque mi piace questo rosino."
+
+[0:52-0:54] (confidence: -0.213)
+  "Cosa indica il rosino?"
+
+[0:54-0:56] (confidence: -0.213)
+  "Bomba invece questo violino."
+
+[0:56-1:04] (confidence: -0.213)
+  "Indica se si sta avvicinando ai massimi del giorno precedente, quindi S, Y, S, che ovviamente"
+
+[1:04-1:07] (confidence: -0.149)
+  "non era in classifica perché stava facendo più 6."
+
+[1:07-1:12] (confidence: -0.149)
+  "Un giorno di differenza, quindi il 3% dai massimi di ieri, quindi ottimo segnale, soprattutto"
+
+[1:12-1:16] (confidence: -0.149)
+  "perché qua già vediamo, con il time frame un minuto, che c'è già una lateritazione,"
+
+[1:16-1:19] (confidence: -0.149)
+  "quindi c'è già praticamente un segnale martello incorporato, quindi già è interessante"
+
+[1:19-1:25] (confidence: -0.149)
+  "per sé, in più sai che mancano 3% dai massimi di ieri, quindi già, capito, molto interessante."
+
+[1:25-1:33] (confidence: -0.149)
+  "Quindi ovviamente apro subito, quindi cambiamo videata e andiamo di qua, sì, ok."
+
+[7:02-7:07] (confidence: -0.229)
+  "quindi qua, diciamo, c'è i due muri, quindi un muro 53 è già un muro a 44,"
+
+[7:07-7:09] (confidence: -0.229)
+  "e a 94 e poi 94,2, ok?"
+
+[7:09-7:13] (confidence: -0.229)
+  "Quindi mi sono messo posizionato bene."
+
+[7:13-7:16] (confidence: -0.229)
+  "Eccoci, ci stiamo avvicinando, 2.000."
+
+[7:16-7:20] (confidence: -0.229)
+  "Ecco, in un colpo solo ho mangiato tutto, ho mangiato sia questo che questo."
+
+[7:20-7:22] (confidence: -0.229)
+  "Ovviamente mangiando tutto il mio."
+
+[7:22-7:25] (confidence: -0.229)
+  "Ecco, e sono uscito."
+
+[7:25-7:28] (confidence: -0.229)
+  "Quindi ho venduto tutto, 10.900, sono entrato."
+
+[8:49-8:53] (confidence: -0.324)
+  "Scrivetevi anche a Discord e ovviamente a Google. Ciao!"
+

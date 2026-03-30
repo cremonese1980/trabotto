@@ -1,0 +1,157 @@
+video:
+  id: BULL_T_009
+  series: tecniche
+  title: "Come andare Short - Live trading con massimi decrescenti"
+  video_index: 9
+  duration_minutes: 9
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_09_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, retest, trend, ema60]
+    source:
+      timecode: "00:36-01:08"
+    conditions:
+      - lateralization_detected == true
+      - multiple_retests_of_support == true
+      - lower_highs_forming == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "A short setup requires lateralization with multiple retests of support and consistently lower highs (descending tops)."
+    notes: "Lower highs indicate sellers are stronger each bounce. The pattern is a cup with handle variation (coppa col manico e cucchiaino)."
+
+  - id: BULL_T_09_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, entry, lower_highs, stop_loss]
+    source:
+      timecode: "01:08-02:04"
+    conditions:
+      - lower_highs_count >= 3
+      - price_breaks_below_support_base == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above the highest high of the pattern"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After three or more lower highs, the break below support triggers the short entry. Stop is above the pattern high."
+    notes: "Can enter at the second lower high but stop is further away. At the third, conviction is higher and stop is closer. EMA 60 is not reliable as stop if price has been going above it."
+
+  - id: BULL_T_09_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [short, breakeven, stop_loss]
+    source:
+      timecode: "01:54-02:08"
+    conditions:
+      - short_active == true
+      - price_made_initial_drop == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Once the short makes an initial strappo (drop), move stop to breakeven. If it bounces back to zero after a strappo, exit immediately."
+    notes: "A bounce back to entry after a strappo is dangerous because it can squeeze higher. Always protect capital."
+
+  - id: BULL_T_09_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, ema60, finta, candle_pattern]
+    source:
+      timecode: "04:39-05:49"
+    conditions:
+      - price_above_ema60 == true
+      - large_green_candle_formed == true
+      - next_candle_fails_to_make_new_high == true
+      - price_returns_below_ema60 == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above EMA 60 or above the failed high"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "A big green candle that fails to follow through and drops back below EMA 60 is a finta (fake breakout). This is an excellent short entry."
+    notes: "The finta shows trapped longs. When the second candle makes a lower high and turns red below EMA 60, that is the entry signal."
+
+  - id: BULL_T_09_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [short, exit, new_lows, btc_index]
+    source:
+      timecode: "06:13-06:57"
+    conditions:
+      - short_active == true
+      - price_approaching_new_daily_lows == true
+      - btc_showing_indecision == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When short approaches new daily lows and BTC shows indecision, close the short. New daily lows can trigger panic selling then a sharp reversal."
+    notes: "At new daily lows, panic selling may create a final flush followed by a strong bounce. Take profits before the reversal."
+
+  - id: BULL_T_09_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [short, invalidation, candle_pattern]
+    source:
+      timecode: "02:22-02:39"
+    conditions:
+      - short_active == true
+      - price_returns_above_candle_body_high == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "If after shorting the price returns above the candle body high (not just spike), the short is invalidated and must be closed."
+    notes: "This protects against short squeezes. A clean candle close above the entry zone kills the thesis."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_09_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [short, beginner, risk_management]
+    source:
+      timecode: "07:22-07:34"
+    statement: "For shorts, the logic is the same as longs but inverted: sell first (click 'sell'), then buy to close. On futures, close from the position panel."
+    rationale: "Many beginners are confused by the mechanics of shorting. The process is simply reversed."
+
+  - id: BULL_T_09_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [short, ema60, trend]
+    source:
+      timecode: "01:23-01:49"
+    statement: "EMA 60 is not always reliable as a stop reference for shorts if price has been going above it repeatedly. Use the pattern high instead."
+    rationale: "When EMA 60 is repeatedly breached, it loses its significance as a resistance level."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Short trading requires identifying lower highs (descending tops) with lateralization. Enter short on the break below support after three lower highs, or on a finta where a green candle fails above EMA 60 and returns below it. Always move stop to breakeven after the initial drop."

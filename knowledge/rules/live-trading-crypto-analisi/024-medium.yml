@@ -1,0 +1,147 @@
+video:
+  id: BULL_LTCRA_24
+  series: live-trading-crypto-analisi
+  title: "XRP Lavorazione Cambio Candela Daily: Doppio Ingresso su EMA 5 e Rottura, Stop Gain sotto Mega Resistenza"
+  video_index: 24
+  duration_minutes: 5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_24_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, cambio_candela, ema5, lavorazione]
+    source:
+      timecode: "00:00-01:30"
+    conditions:
+      - timeframe == daily
+      - yesterday_candle_made_new_highs_body_and_spike == true
+      - today_candle_opened_red == true
+      - price_holds_above_daily_ema5 == true
+      - price_starts_recovering_intraday == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "The cambio candela lavorazione technique: after a strong strappo day that made new highs (both body and spike), the next day opens red at the daily transition (2 AM for crypto). If price holds the daily EMA 5 and starts recovering, this signals continuation and an entry opportunity on the new day."
+    notes: "This is a specific Bull technique exploiting the daily candle transition. The key is the combination: strong prior day + red open + EMA 5 hold + recovery. Crypto cambio candela happens at 2 AM, not midnight."
+
+  - id: BULL_LTCRA_24_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [double_entry, support, breakout]
+    source:
+      timecode: "01:00-02:30"
+    conditions:
+      - cambio_candela_setup_detected == true
+      - price_holding_daily_ema5 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Double entry strategy: first entry at 0.877 on the EMA 5 support test (lower risk, earlier), second entry at 0.912 on the breakout confirmation (rottura). Splitting entries balances early positioning with confirmation."
+    notes: "First entry catches the support bounce, second entry adds size once breakout confirms direction. Both entries are valid independently; together they optimize average entry price."
+
+  - id: BULL_LTCRA_24_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, crypto, trend]
+    source:
+      timecode: "01:30-02:00"
+    conditions:
+      - asset_type == crypto
+      - trend_analysis_required == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up, trend_down]
+    rationale: "For crypto, use EMA 60 instead of EMA 50 (which is used for stocks). EMA 60 fits crypto price action better and provides more reliable dynamic support/resistance levels."
+    notes: "Bull explicitly states EMA 60 is the reference for crypto, not EMA 50 as used in equity markets. This applies across all crypto timeframes."
+
+  - id: BULL_LTCRA_24_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_gain, resistance, numero_pari]
+    source:
+      timecode: "02:30-03:30"
+    conditions:
+      - position_open == true
+      - approaching_mega_resistance == true
+      - mega_resistance_is_numero_pari == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "Set stop gain just below mega resistance at round numbers (numeri pari). For XRP, stop gain was at 0.975, just under 1.00 which acts as mega resistenza. Round numbers attract massive selling and are extremely difficult to break on first approach."
+    notes: "1.00 is a psychological mega resistance for XRP. Placing the stop gain at 0.975 secures profit before the wall. This applies universally: always respect round number resistance levels."
+
+  - id: BULL_LTCRA_24_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, spike, candle_close]
+    source:
+      timecode: "03:30-04:30"
+    conditions:
+      - position_open == true
+      - price_spikes_through_ema10 == true
+      - candle_body_not_closed_below_ema10 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "When price spikes through EMA 10 but the candle body has not closed below it, do NOT exit. Only a candle body close below EMA 10 invalidates the position. Spikes (wicks) are noise and should be ignored."
+    notes: "Critical distinction: spike through EMA 10 is not a sell signal. Wait for the candle to close. If the body closes above EMA 10, the trend is intact. This prevents shakeout exits on volatile wicks."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_24_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [crypto, daily, cambio_candela]
+    source:
+      timecode: "00:30-01:00"
+    statement: "Crypto daily candles change at 2 AM (UTC), not at midnight. This means the daily cambio candela analysis must be done after 2 AM. The red open of the new day candle at 2 AM is the signal to start evaluating the lavorazione setup."
+    rationale: "Misunderstanding the daily candle reset time leads to wrong analysis. Crypto exchanges use 2 AM UTC as the daily cutoff, which shifts the timing of all daily-level techniques."
+
+  - id: BULL_LTCRA_24_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [timeframe, execution, direction]
+    source:
+      timecode: "00:00-00:45"
+    statement: "Use the daily timeframe for directional bias and setup identification (cambio candela, EMA 5 hold, new highs). Use the 1-minute timeframe for precise execution timing and entry/exit management."
+    rationale: "The daily provides the macro context (is the trend valid?), while the 1-minute provides the micro timing (when exactly to enter). Confusing the two leads to either missed entries or wrong-direction trades."
+
+  - id: BULL_LTCRA_24_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [resistance, numero_pari, psychology]
+    source:
+      timecode: "03:00-03:30"
+    statement: "Round numbers (numeri pari) like 1.00, 0.50, 10.00 act as mega resistance levels in crypto. Never set a target at or above a round number on the first approach. Always take profit just below."
+    rationale: "Round numbers concentrate enormous sell orders from both retail and institutional participants. The probability of clean breakout on first touch is low, making it essential to secure profit before the wall."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "XRP lavorazione on daily cambio candela (2 AM): yesterday strong strappo with new highs, today opens red, holds EMA 5, recovers. Double entry at 0.877 (support) and 0.912 (breakout). Use EMA 60 for crypto (not 50). Stop gain at 0.975 below mega resistenza 1.00. Spikes on EMA 10 are not exit signals - only candle body close matters. TF daily for direction, 1min for execution."

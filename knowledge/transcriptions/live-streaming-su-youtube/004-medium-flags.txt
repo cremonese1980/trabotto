@@ -1,0 +1,608 @@
+# Low-confidence segments for: 004_BITCOIN_FOLLIA_GESTIONE_PERDITE_OVER_TRADING_FALSI_SEGNALI_RESISTENZE_NEL_BOOK_LIVE_DISCORD.mp3
+# Total flagged: 201
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:13] (confidence: -3.888)
+  "Ho generalizzato"
+
+[0:13-0:17] (confidence: -0.424)
+  "Oh, oh, oh, oh, oh, oh, oh, oh People I once knew"
+
+[0:17-0:24] (confidence: -0.424)
+  "And hearts I can untangle from my own I go in my head"
+
+[0:24-0:30] (confidence: -0.424)
+  "Hanging by a thread Drifting through her hair"
+
+[0:30-0:36] (confidence: -0.424)
+  "One day you will find That it's time to get your hopes up"
+
+[0:36-0:39] (confidence: -0.424)
+  "They try to kick me but I won't budge"
+
+[1:39-1:45] (confidence: -0.323)
+  "Ciao ragazzi, mi sentite? Giustamente non potete rispondere"
+
+[1:45-1:53] (confidence: -0.323)
+  "Allora vi ricordo che... Oh, c'è qualcuno?"
+
+[1:53-1:59] (confidence: -0.323)
+  "Allora se cliccate sulla manina potete avere richieste per poter parlare"
+
+[1:59-2:03] (confidence: -0.323)
+  "Così parliamo una volta, grande anche Max, non vero?"
+
+[2:04-2:09] (confidence: -0.664)
+  "Anzi faccio parlare, c'è qualcuno? Così, fate se ci sente"
+
+[2:11-2:14] (confidence: -0.664)
+  "Vado via, andiamo mai"
+
+[2:21-2:23] (confidence: -0.664)
+  "Max, mi senti?"
+
+[2:28-2:30] (confidence: -0.664)
+  "Senti la voce?"
+
+[12:24-12:31] (confidence: -0.214)
+  "però insomma c'è tanto da imparare, mondo del cripto veniamo da una salita pazzesca andiamo a vedere il daily"
+
+[12:31-12:36] (confidence: -0.214)
+  "il daily si, allora qua praticamente, quando è iniziato qua?"
+
+[12:36-12:42] (confidence: -0.214)
+  "allora praticamente potremmo dire che è già iniziato anche nel luglio 2020 quindi un anno"
+
+[12:42-12:52] (confidence: -0.214)
+  "ha fatto un anno dai già qua, si dai già a luglio quindi un anno vabbè la parabola da novembre 2020"
+
+[17:45-17:55] (confidence: -0.134)
+  "ci sono le varie stanze poi c'è dove segnali ecco solo segnali dove appunto lì si scrivono solo segnali su telegram anche telegram si chiama"
+
+[17:55-18:02] (confidence: -0.134)
+  "solo segnali la chat però ovviamente alla fine su telegram si parla un po' di tutto però vedrete che da settembre ottobre"
+
+[18:02-18:12] (confidence: -0.134)
+  "quando diciamo finisce un po' l'aria d'estate eccetera e che tornano diciamo insomma si esce un po' meno tipo ottobre quando torna a piovere"
+
+[18:29-18:38] (confidence: -0.324)
+  "scusate devo mutare ecate si senti c'è il reverbero di ecate o ecate"
+
+[18:38-18:39] (confidence: -0.324)
+  "si sono gli sposami"
+
+[18:39-18:41] (confidence: -0.324)
+  "chiudi chiudi"
+
+[18:41-18:53] (confidence: -0.324)
+  "e stavo stavo dicendo che io alcune volte lo scrivo stesso il pomeriggio quando ho la possibilità di essere la disponibilità di mettermi sul discord perché comunque"
+
+[19:14-19:43] (confidence: -0.255)
+  "educate possono dire la loro quindi è veramente molto è abbastanza incredibile è abbastanza incredibile il fatto che non ci siano tanti spammatori venditori di pentola queste cose qua sono veramente pochi sono sorpreso anche io adesso magari aumentando quando saremo sesseremo migliaia di più però per adesso veramente"
+
+[19:43-20:11] (confidence: -0.215)
+  "si sta creando un gruppo molto bello e infatti sono sono molto contento e questi strumenti aiutano appunto perché in due su anche su telegram posso mettersi d'accordo dicono dai andiamo su canale vocale vocale qua su su su discord e poi parlo di loro si crea gruppo è molto interessante no infatti ottimo no è bello ma guarda io pure per dare una mano ad una ragazza una volta che doveva fare lo scambio da eu batete"
+
+[20:11-20:14] (confidence: -0.505)
+  "era un ragazzo col cavolo che lo faceva"
+
+[20:14-20:42] (confidence: -0.465)
+  "io avevo tre domande allora la prima era di uno scorso live c'è era la sono segnata e non so se te l'avevano già fatta ed era ciao bu volevo farti una domanda che magari puoi spiegare nella prossima live ho visto che a volte quando quando capisci che le break out a volte sono sempre troppo spaventate"
+
+[20:42-20:56] (confidence: -0.225)
+  "quando capisci che le break out a poca forza vai short sui massimi quindi quali sono tutti elementi da considerare per capire che ha poca forza grazie non ho scritto chi era però ecco la ho salvata"
+
+[20:56-21:02] (confidence: -0.393)
+  "ok questa domanda che stai leggendo perché era una domanda che aveva già fatto qualcuno"
+
+[21:02-21:05] (confidence: -0.313)
+  "non lo so forse può servire pure a qualcuno"
+
+[21:05-21:18] (confidence: -0.313)
+  "se avevi scritto Aler, qualcuno se la può memorizzare perché poi quando facciamo una live possiamo utilizzarla per poterla spiegare"
+
+[21:18-21:32] (confidence: -0.142)
+  "io adesso so sotto proprio il grafico di bitcoin time frame a un minuto dove è andato a fare la rottura sui massimi di giornata questa è bellissima perché è una bella finta ok infatti dopo sono entrato short"
+
+[21:32-21:47] (confidence: -0.142)
+  "vi spiego il perché era probabilmente una finta nonostante fosse un momento molto importante perché era il massimo di giornata quindi è un momento dove io amo entrare perché si iniziano gli strapi e ci sono le chiusure degli short"
+
+[21:47-22:00] (confidence: -0.171)
+  "però in questo caso aveva fatto se anche voi chi riesce comunque dopo rivedete il video che oggi ho sotto il grafico e che dopo domani mattina lo vado a pubblicare questo video o stasera se vediamo"
+
+[22:00-22:16] (confidence: -0.171)
+  "allora ha fatto una piccola lateralizzazione non di tanto sono 1 2 3 4 tipo 10 candele in cui comunque rimaneva sopra lema 10 e poi dopo è andato a fare è andata a spaccare allora perché ho cruduto poco"
+
+[22:16-22:28] (confidence: -0.157)
+  "infatti non sono andato lungo ho aspettato che rientrasse per andare short perché praticamente viene da la 60 non è mai stata violata praticamente se andate sempre time frame a un minuto"
+
+[22:28-22:44] (confidence: -0.157)
+  "vedete la 60 da quando bitcoin ha rotto la 60 in pratica è andato sempre solo su ok quindi quando ti arriva dritto dritto così senza aver fatto una discesa sotto la 60 questi qua li ha sporcati ma non ha fatto una bella discesa dove poi è andato a fare il test"
+
+[22:44-23:06] (confidence: -0.242)
+  "ogni volta dopo la torri sempre risalire quindi diciamo era una salita troppo diretta per poter poi andare a sfondare questa questa diciamo questi nuovi massimi quindi praticamente delle volte io spesso vi dico di aspettare il terzo tocco o con il secondo tocco"
+
+[23:06-23:31] (confidence: -0.231)
+  "o pure vi dico aspettate che va sotto la 60 poi torna su proprio perché più volte più conferme abbiamo più possibilità ci sono poi che questo non sia una finta quindi in pratica aspetta che torno sul discorso che sto sentendo dietro sento una specie di sfondo ma qualcuno ha la tv accesa sotto per caso no?"
+
+[23:31-23:59] (confidence: -0.378)
+  "ok puoi premere sul destro e fai volume utente e lo porti sullo zitto. No no ho fatto un bottone fanta grande vedi sto scoprendo il disco perfetto allora aspetta torno di qua quindi in pratica allora più conferme hai quindi quando un titolo arriva dritto dritto su un supporto dove tu dovresti andare long e se ci arriva senza fare troppo lateralizzazione lì c'è il rischio puoi provare a farlo ma tieni pronto la chiusura perché poi è un po' più facile"
+
+[23:59-24:29] (confidence: -0.152)
+  "ma tieni pronto la chiusura perché può farla finta come può farla finta? Invece quando hai più riferimenti quindi con anche più time frame io spesso vi faccio vedere sia time frame a 5 minuti ma soprattutto quello a 30 quando abbiamo dei riferimenti di una rottura ecco esempio qua adesso voi non lo vedete però domani nel video faccio vedere ecco qua questo è un massimo dove con time frame a 30 minuti andato a fare questa era una resistenza quando poi è andato a"
+
+[25:29-25:37] (confidence: -0.228)
+  "cercando appunto di avere più riferimenti possibili e possibilmente con più time frame quello è il massimo diciamo."
+
+[25:37-25:59] (confidence: -0.228)
+  "Ok ok guarda poi c'era una c'era un'altra domanda che anche tu hai ritenuto che fossi intelligente di matte la sto solo riportando ed è tipo bull ho qualche problema di individuare la dimensione delle resistenze nella lettura del bull."
+
+[25:59-26:13] (confidence: -0.233)
+  "Ovviamente non parlo dei muri da mille mila ma le vie di mezzo cioè prendiamo un book con ordini generale del valore esempio 10 muri da mille faccio fatica a capire i blocchi da 40 50 60."
+
+[26:13-26:16] (confidence: -0.499)
+  "Ecco questa è la domanda di matte."
+
+[26:16-26:22] (confidence: -0.499)
+  "Questa è domanda bomba faccio sentire anche."
+
+[26:22-26:30] (confidence: -0.499)
+  "No no no perché qua non ha bella domanda giusto giustamente ho detto di dirle."
+
+[26:30-26:37] (confidence: -0.499)
+  "Allora praticamente vedi sono felice anche le donne le donne allora adesso vado sempre sul book di bitcoin."
+
+[27:25-27:29] (confidence: -0.401)
+  "Si ve ha visto due mega spike di hard in questo momento qua."
+
+[27:29-27:34] (confidence: -0.401)
+  "Hard hard fa queste cose quando fa una laterizzazione è solo su spot se non sbaglio."
+
+[27:35-27:39] (confidence: -0.401)
+  "Però quando fa una laterizzazione dopo fa degli spike pazzeschi fantastico."
+
+[27:39-27:45] (confidence: -0.401)
+  "Comunque niente allora dice aspetta che lo mostro così dopo nel video si vede."
+
+[27:45-27:50] (confidence: -0.401)
+  "Ecco qua guarda che spettacolo laterizzazione questo lo fa sempre incredibile."
+
+[29:34-30:03] (confidence: -0.116)
+  "Quindi quella roba li va via in un secondo ma soprattutto dopo c'è il vuoto c'è il vuoto assoluto quindi ti vedi sempre questi spike pazzeschi perché dopo c'è proprio il vuoto anche se tu vedi 20 30 40 50 ti possono sembrare dei pezzi decenti ma in confronto ai 1000 2000 di quello che ha il supporto è niente soprattutto tutti quelli che erano oltre quel prezzo avranno messo messo la vendita prima quindi comunque si crea il vuoto quindi se tu lo vuoi comprare."
+
+[30:04-30:33] (confidence: -0.203)
+  "Per sfruttare la rottura di un pezzo grosso nel bucche devi entrare prima quindi devi devi comunque rischiare perché se lo metti tu proprio metterlo con lo stop limit perché se lo fai manualmente neanche lo vedi quindi non ce la fai ma se metti lo stop limit ce la fai cioè lo vede la macchina ma è probabile che chi ha chi compra compra l'intero livello e lo compra da prima quindi per esempio qua se fosse a."
+
+[30:33-30:46] (confidence: -0.449)
+  "23 e se stiamo dentro e fuori ecco se fosse 23 400 e il tipo lo compro già 23 e 380 compro già 380 in poi e quindi te lo fa te lo fa fuori e tu non riesci a entrare il problema dei."
+
+[30:46-31:04] (confidence: -0.256)
+  "Delle resistenze con pezzi grandi è proprio quello che dopo dici ha una tante grande riesco a entrare su quel pezzo lì se è un medio che hai ce la fai ma quando è proprio grande grande e se tu ti metti nei panni di di un fondo o di qualcuno che ha bisogno di comprare tanti pezzi."
+
+[31:04-31:22] (confidence: -0.214)
+  "Soprattutto nei mercati azionali dove comunque hai il costo è semplicemente di una transazione e tu approfitti se tu vedi pezzi grossi cioè tu praticamente aspetti di entrare nel mercato proprio quando vedi prezzi grossi ecco adesso ce n'è uno 30."
+
+[31:22-31:32] (confidence: -0.258)
+  "30 di so sicuramente sarà stato uno di voi che l'ha messo è 32.400 c'è un 750 pezzi."
+
+[31:32-31:51] (confidence: -0.258)
+  "Adesso nel book se andate a vedere su bitcoin perpetuo ecco 32.400 c'è un bel pezzo da 734 fantastico allora ecco in questo caso la prima volta che ci torna quindi adesso probabilmente avremo un rimbalzo proprio su quella cifra lì."
+
+[31:51-31:57] (confidence: -0.303)
+  "Lì potrebbe essere buono per rendere shot bisogna però fare attenzione perché questo fino a due minuti fa non c'era."
+
+[31:57-32:05] (confidence: -0.303)
+  "Ok quindi può essere farlo questo non non c'era fino a due minuti fa che proprio ho visto quella cifra lì."
+
+[32:25-32:55] (confidence: -0.128)
+  "Ok allora tu ovviamente se tu vedi i pezzi grandi questo una volta me l'hanno chiesto nel gruppo che mi diceva ma come cosa faccio se io vedo che c'è un pezzo grande ma si muove se è un pezzo grande che si muove non lo devi neanche calcolare perché non funziona praticamente è una finta che ogni volta che il prezzo sale poi si muove quindi non è un qualcosa che devi calcolare quando invece tu vedi che si avvicina e c'è quello lo devi tenere in considerazione e poi dopo lo puoi sfruttare in questo caso infatti si niente ho anticipato che probabilmente"
+
+[33:49-33:52] (confidence: -0.834)
+  "te lo mando dopo e buonifico tranquillo se indietro di"
+
+[34:47-34:56] (confidence: -0.323)
+  "con una semplicità unica ti spieghi le cose"
+
+[34:56-35:05] (confidence: -0.323)
+  "grazie mille davvero grazie per il tuo intervento grazie per le domande ottimo che hai segnato prossima volta ti voglio sempre qua su discord che ti segni qualche altra domanda"
+
+[35:05-35:20] (confidence: -0.397)
+  "guarda io ti volevo dire una cosa se sono così disponibile è perché da parte tua c'è un'insana educazione e gentilezza"
+
+[35:20-35:48] (confidence: -0.175)
+  "e pure gli altri ragazzi che vedo attivi su telegram sono tutti ragazzi almeno quelli che scrivono per lo più tipo max che prima ha parlato robert ed altri che adesso non ricordo pure luca lk lc mi sembra sono dei ragazzi fantastici nel senso che si mettono a disposizione lungo l'altro pur non essendoci mai conosciuti"
+
+[35:48-36:06] (confidence: -0.306)
+  "trovo trovo che fare questo questa cosa dicono che a meno non costa nulla farlo per questa comunità lo faccio pur che volentieri vi saluto così non faccio perdere tempo a bull"
+
+[36:06-36:20] (confidence: -0.352)
+  "il bello di questa questa comunità è proprio proprio questo grazie mille davvero e niente alla prossima allora andiamo da tutti raga un saluto da siena e saluto pure max gli lo dico e saluto"
+
+[36:20-36:50] (confidence: -0.259)
+  "allora vediamo se riesco a riattivare qua pronto mi senti dobbiamo essere attivo tu mi senti grande ti sento benissimo ok perfetto scusami prima ho fatto un po di casino non so perché mi ha accettato la chiamata e non me ne ero accorto quindi sentivate la televisione"
+
+[36:50-36:56] (confidence: -0.556)
+  "sentivamo che non lo ha fatto c'era tipo la tv sotto tipo colpo grosso qualcosa del genere se non sbaglio"
+
+[36:56-37:02] (confidence: -0.556)
+  "no no era un film"
+
+[37:02-37:06] (confidence: -0.556)
+  "immaginavo immaginavo"
+
+[37:06-37:21] (confidence: -0.681)
+  "tranquillo tranquillo ascolta allora di dove sei di dove sei da quant'è che sei sul mondo cripto"
+
+[37:51-37:59] (confidence: -0.481)
+  "in discoteca praticamente se giri in discoteca vestito da pilota ciao proprio ciao one te li porti via dentro la valigia"
+
+[37:59-38:10] (confidence: -0.409)
+  "io pensavo che una decina di anni fa organizzavo festa in discoteca e faccio il dj ma non facevo ancora il pilota quindi hai capito ho cambiato diciamo pronto"
+
+[38:10-38:21] (confidence: -0.42)
+  "no però noi abbiamo il numero uno dei dj che è andy quindi dopo se facciamo parlare lui addio perché lui è proprio lui girato il mondo facendo i dj no ascolta allora niente pilota"
+
+[38:21-38:30] (confidence: -0.224)
+  "aspetta il nome che non mi ricordo mai andrea scusimi andrea e fa piacere che anche questa"
+
+[38:30-38:40] (confidence: -0.224)
+  "volta ti sei ti sei messo qua aspetta che carico già un'altra persona così carica subito ok no dimmi pure vai"
+
+[38:40-38:48] (confidence: -0.482)
+  "prima cosa a livello pratico ma il video non c'è in sta live giusto?"
+
+[38:48-38:57] (confidence: -0.482)
+  "io sto registrando e dopo lo vado a pubblicare praticamente hai fatto bene a farmi domande?"
+
+[38:57-39:04] (confidence: -0.482)
+  "no ma non stai facendo live trading adesso stai così stai anche accherando insomma"
+
+[39:52-40:00] (confidence: -0.178)
+  "per me è fantastico così riuscite a parlare anche voi e nel frattempo vediamo se c'è qualcosa che accade così possiamo fare anche un'operazione live"
+
+[40:00-40:08] (confidence: -0.178)
+  "l'idea è proprio questa insomma ovvio che voi non vedete in diretta come su streaming quello che sto facendo ma ci possiamo mettere d'accordo"
+
+[40:08-40:21] (confidence: -0.178)
+  "se te lo dico sono su bitcoin 32.800 c'è rottura per andare long vediamo di provare insomma in questo senso qua quindi vediamo che succede quindi ci buttiamo l'occhio"
+
+[40:43-40:54] (confidence: -0.332)
+  "quindi non sape di più che rimbalza e ritorna su quindi sfruttare un po' il rimbalzo su quel supporto che ha fatto adesso o dice che va giù"
+
+[40:54-40:56] (confidence: -0.332)
+  "ok quindi stai parlando di bitcoin?"
+
+[40:56-40:58] (confidence: -0.332)
+  "BTC eh"
+
+[40:58-41:02] (confidence: -0.332)
+  "allora bene ottimo andiamo a fare perché era poi la prima cosa che volevo fare ma poi alla fine non l'ho fatto"
+
+[41:02-41:06] (confidence: -0.247)
+  "allora oggi praticamente è una giornata pazzesca perché ehm..."
+
+[41:06-41:21] (confidence: -0.247)
+  "allora ieri ha fatto questa candela molto negativa e stamattina io pensavo di svegliarmi già a 25.000 perché i giapponesi magari e gli asiatici erano convinto che avrebbero distrutto tutto mentre si dormiva"
+
+[42:18-42:32] (confidence: -0.223)
+  "la cosa che è allucinante è che ha fatto questo hammer quindi per adesso siamo in una configurazione quasi da hammer e è tornato praticamente su allora dobbiamo vedere quando fa la chiusura cosa fa però può succedere due cose"
+
+[42:56-43:26] (confidence: -0.144)
+  "poi dopo che è successo che abbiamo beccato un hammer invece due giorni fa era un hammer che potrebbe essere quello che fa oggi proprio quello è un hammer bellissimo proprio come conformazione mi piace tanto quando fa questo piccolo spazio quello di due giorni fa ok da lì avrebbe dovuto fare un altro bel candelone verde da spaccare la 5 e la 10 invece ha fatto l'inverso ha fatto proprio mega finta e ha fatto distruzione totale che è la candela di ieri quindi oggi ci potremmiamo di nuovo con un hammer in tre giorni una cosa rarista è che"
+
+[46:49-47:19] (confidence: -0.173)
+  "è lì è lì solo che sì è che siamo sotto alla 60 questa configurazione qua non è male anche perché bitcoin sta rimbalzando sta praticamente andando su però ha fatto questa è una bella bella laterizzazione però qual è il problema di laterizzazione sotto alla 60 o comunque con la 60 vicino proprio perché appunto c'è una resistenza che sta schiacciando quindi che fa sta facendo questa laterizzazione e in più anche sta"
+
+[47:36-48:03] (confidence: -0.324)
+  "per dimmi una cosa questa cosa qua secondo te è giusta io ho notato adesso guardando tanti grafici soprattutto sulla 30 ho notato infatti lì molte volte ho preso quasi sempre ho notato che quando al momento di salita diciamo quindi salita poi va a testarmi la 60 2 3 volte sulla 30 minuti ti sto parlando e subito sì e subito ci"
+
+[48:03-48:33] (confidence: -0.244)
+  "è la che poi btc poi si porta dietro tutte le altre più o meno comunque parliamo parlando di btc salita testata più volte 2 3 volte la 60 se son tre ancora meglio alla quarta volta di solito va a rompere la 60 viene un bello short di solito sui 30 minuti e lì di solito sempre quasi beccato quella è una strategia giusta sì sì sì è giustissima allora sì allora aspetta tu la 60 allora quando hai quando allora"
+
+[49:03-49:33] (confidence: -0.151)
+  "lì la rottura di questa quarta candela qua se avesse fatto chiusura sopra lì era bello per tenerlo capito cioè lì un break out che lo puoi anche tenere quindi puoi tenerlo anche un'oretta o qualcosa e non è male poi io difficilmente faccio questo cosa di tenerlo così tanto perché se poi dopo appena vedo che mi va su non ce la faccio chiudo però quando hai una lateralizzazione di 3 4 candele con il time frame a 30"
+
+[50:33-50:51] (confidence: -0.183)
+  "per darmi un long che mi potesse dar fiducia mi dava fiducia solo short quando faceva io aspettavo praticamente che mi che facesse lo spike e poi andavo short e mettevo lo stop sullo spike e poi scivo quello che vi sconsiglio di fare però comunque niente io"
+
+[50:51-50:55] (confidence: -0.401)
+  "di andare long non ce l'ha fatta perché non si è mai fermato."
+
+[50:55-51:04] (confidence: -0.401)
+  "Ma poi ti posso dire io ultimamente long veramente ho andato pochissime volte, sono sempre solo"
+
+[51:04-51:10] (confidence: -0.401)
+  "andando short e sto sempre solo scegliendo configurazioni di quel tipo lì quando mi va"
+
+[51:10-51:15] (confidence: -0.401)
+  "a testare più volte magari la 30 o comunque mi va a testare anche magari una comunicazione"
+
+[51:15-51:21] (confidence: -0.283)
+  "un po' più veloce sul minuto che mi fa fare una salita mi testa due o tre volte poi scende"
+
+[51:21-51:22] (confidence: -0.283)
+  "short di nuovo."
+
+[51:22-51:26] (confidence: -0.283)
+  "Quella lì sono le configurazioni migliori dal mio punto di vista anche se ho pochissima"
+
+[51:26-51:30] (confidence: -0.283)
+  "proprio quasi zero esperienza però da quello che ho potuto vedere con i miei occhi sono"
+
+[51:30-51:37] (confidence: -0.283)
+  "quelle che funzionano bene adesso in quest'ultimo periodo poi non è un provisto e alta sinceramente"
+
+[51:37-51:39] (confidence: -0.283)
+  "di long io veramente poco poco poco."
+
+[51:39-51:44] (confidence: -0.283)
+  "Hai detto bene in questo periodo perché appunto il trader si deve saper adattare ad ogni situazione"
+
+[52:14-52:16] (confidence: -0.426)
+  "o a quello che si sta."
+
+[52:16-52:18] (confidence: -0.426)
+  "Allora vedi c h z."
+
+[52:18-52:23] (confidence: -0.426)
+  "Gia che andiamo a dire che a zetta perché sta facendo quella laterizzazione sta facendo"
+
+[52:23-52:24] (confidence: -0.426)
+  "c h z."
+
+[52:24-52:29] (confidence: -0.426)
+  "Andiamo a vedere c h z sta facendo quella laterizzazione che ovviamente non ha fatto"
+
+[52:29-52:35] (confidence: -0.426)
+  "il breakout che poi eravamo sotto alla sessanta ma adesso con bitcoin se continua a essere"
+
+[52:35-52:42] (confidence: -0.426)
+  "debole il primo a spaccare ecco in questo caso io non la configurazione se bitcoin facesse"
+
+[62:45-62:56] (confidence: -0.46)
+  "allora grazie ma è bene ok ti ringraziamo tutti anche i ragazzi non solo i ragazzi"
+
+[62:56-63:03] (confidence: -0.46)
+  "e ok quindi raccontami un attimo il tuo background quindi te stai iniziando adesso"
+
+[63:03-63:14] (confidence: -0.46)
+  "te mi sa che hai già di esperienza giusto? sì io ho circa decina anni di esperienza nell'ambito"
+
+[65:00-65:05] (confidence: -0.176)
+  "lavorato però mi piace appunto sapere con qualcuno che c'è lavorato per sapere un po' i pro e i"
+
+[65:05-65:11] (confidence: -0.176)
+  "contro diciamo del mercato forex soprattutto adesso che tu sei sulle crypto quindi riesci"
+
+[65:11-65:19] (confidence: -0.176)
+  "anche a spiegarci diciamo quello che sono secondo te le differenze e poi è interessante questa cosa"
+
+[65:19-65:26] (confidence: -0.176)
+  "dei bot che appunto c'è un desiderio incredibile di poter sfruttare i bot tu hai dell'esperienza"
+
+[70:15-70:23] (confidence: -0.153)
+  "però non mi fermo del tutto quel giorno lì o mi fermo al contrario cioè se invece faccio subito"
+
+[70:23-70:29] (confidence: -0.153)
+  "in mattinata mi succede spesso con il mercato azionario italiano che col fatto che ci sono"
+
+[70:29-70:38] (confidence: -0.153)
+  "sospensioni praticamente può fare dei movimenti abbastanza grossi subito e mi ritrovo avere dei"
+
+[70:38-70:43] (confidence: -0.201)
+  "guadagni subito allora dico niente basta prendo e me ne vado e vado via 2 o 3 ore"
+
+[70:43-70:51] (confidence: -0.201)
+  "può essere tipo oggi che sono stato in bici o anche fare altre cose vado al lago con la famiglia"
+
+[70:51-70:57] (confidence: -0.201)
+  "ma faccio qualcosa per staccare ma non ho una regola non guardo la percentuale io non so"
+
+[70:57-71:03] (confidence: -0.201)
+  "neanche che percentuale non sono neanche che che percentuale io guardo proprio la cifra cioè se"
+
+[72:50-72:55] (confidence: -0.162)
+  "guadagno perché tu dopo non devi lavorare il doppio il triplo per recuperare ma sei praticamente"
+
+[72:55-73:04] (confidence: -0.162)
+  "a zero comunque un meno 50 e niente rispetto almeno 450 o quel che è e in più non è solo e non è solo"
+
+[73:04-73:09] (confidence: -0.162)
+  "che devi recuperare poco quindi praticamente devi non devi guadagnare il triplo per poter recuperare"
+
+[73:09-73:17] (confidence: -0.162)
+  "ma psicologicamente non hai quella botta in faccia quel pugno in faccia che ti dice ti demoralizza"
+
+[73:43-73:48] (confidence: -0.177)
+  "fai un'operazione che è il primo che ti capita un po bellino e mai metti il doppio o il triplo e"
+
+[73:48-73:53] (confidence: -0.177)
+  "dopo prendi l'altra mazzata e dopo ti è una cosa continua è una valanga che va avanti che va avanti"
+
+[73:53-74:00] (confidence: -0.177)
+  "io facevo così perché io io so io so queste cose ho cambiato perché io facevo così ma addirittura"
+
+[74:00-74:05] (confidence: -0.177)
+  "gli inizi i primi errori così erano che praticamente quando andava giù quindi succedeva"
+
+[74:05-74:10] (confidence: -0.177)
+  "che magari faceva il breakout ero più 200 non chiudevo andava subito a meno 50 non chiudevo"
+
+[76:24-76:29] (confidence: -0.11)
+  "in un mercato in bolla è molto più difficile e quindi gli errori devono essere minimi perché"
+
+[76:29-76:34] (confidence: -0.11)
+  "tu devi essere pronto poi per quando poi ci sarà questo rialzo e in quel rialzo lì tu non devi"
+
+[76:34-76:39] (confidence: -0.11)
+  "recuperare tutti i soldi che hai perso ma tu devi fare cash che ti serve poi per i momenti in cui"
+
+[76:39-76:45] (confidence: -0.11)
+  "devi operare meno e fare meno errori non deve succedere che tu fai tanti errori durante un"
+
+[76:45-76:50] (confidence: -0.11)
+  "periodo in cui il mercato è in discesa oppure fermo e quindi i guadagni sono poco sono pochi"
+
+[85:40-85:49] (confidence: -0.244)
+  "ci sono queste configurazioni di spike e continui e questo è un'inversione che mi piace tanto ma"
+
+[85:49-85:59] (confidence: -0.244)
+  "deve essere un qualcosa che sta facendo un movimento grande quindi non qualcosa che ha"
+
+[85:59-86:04] (confidence: -0.244)
+  "fatto un movimento di 1 o 2 per cento in quel giorno deve essere qualcosa che ha già fatto"
+
+[86:04-86:13] (confidence: -0.196)
+  "il 5 il 10 c'è qualcosa che ha fatto tanto quando c'è su spot qualcosa che si deve fare movimenti"
+
+[86:13-86:20] (confidence: -0.196)
+  "lunghi deve essereci proprio dei movimenti pazzi insomma allora lì si può fare quando c'è invece"
+
+[86:20-86:25] (confidence: -0.196)
+  "poca roba non mi ci metto anche se fa uno spike dell'1 per cento però in quella giornata lì"
+
+[86:25-86:31] (confidence: -0.196)
+  "fatto il 2 lì non mi ci metto neanche invece quando c'è qualcosa bitcoin oggi è stato fantastico"
+
+[87:23-87:31] (confidence: -0.173)
+  "chiusure degli stop che stanno facendo questo spike assurdo quindi praticamente ti va proprio"
+
+[87:31-87:37] (confidence: -0.173)
+  "a ogni volta che va su va sempre più su perché arriva a un prezzo nuovo dove scatta un altro stop"
+
+[87:37-87:42] (confidence: -0.173)
+  "che fa salire la chiusura al meglio che ti fa salire ancora e c'è questa trappola diciamo in"
+
+[87:42-87:48] (confidence: -0.173)
+  "continuo una volta che è finito quindi ha fatto uno spike e non ne sta facendo un altro vuol dire"
+
+[88:36-88:39] (confidence: -0.456)
+  "tutti ciao bulla ciao aspetta un attimo e di spetta un attimo"
+
+[88:39-88:55] (confidence: -0.456)
+  "è due ore che l'intico con discord uscire poi rientrarci è impazzivo poi riusciva moderatore"
+
+[88:55-89:00] (confidence: -0.456)
+  "palco io non volevo disturbare non ha trovato altri modi lo clicchiamo e poi vedi altro succede"
+
+[89:28-89:37] (confidence: -0.517)
+  "io non credo farò tempo di venire no adesso forse no però insomma tanto ti sei divertito"
+
+[89:37-89:42] (confidence: -0.517)
+  "hai giocato il mondo te hanno tu sei di quelli che ti hanno pagato per girare il mondo e"
+
+[89:42-89:51] (confidence: -0.517)
+  "t'hanno pagato per andare in discoteca quindi shopo sono sono goduta si alla grande proprio"
+
+[94:08-94:15] (confidence: -0.244)
+  "a zero ed è bruttissimo è bruttissimo quando sei in una giornata bellissima dove saresti felice"
+
+[94:15-94:20] (confidence: -0.244)
+  "anche se solo sei lavorato un giorno un'ora o due ore e chiuderesti la giornata dicendo che bella"
+
+[94:20-94:25] (confidence: -0.244)
+  "giornata di lavoro oggi invece dici ma hai ciò questi soldi in più spettacchè provo e poi dopo"
+
+[94:25-94:30] (confidence: -0.244)
+  "perdi un attimo poi dici vabbè aspettare un recupero perdi la seconda e la terza vai a zero"
+
+[94:30-94:36] (confidence: -0.244)
+  "dirittura sotto e dopo sei cioè psicologicamente anche questo è devastante quindi anche su questa"
+
+[95:04-95:08] (confidence: -0.445)
+  "messo in spot a fare una cosa sola delle attività e ho detto perché devo imparare"
+
+[95:08-95:14] (confidence: -0.445)
+  "10 cose ne faccio una bene e spacco e così è stato ricordo una giornata da 500 euro"
+
+[95:14-95:21] (confidence: -0.445)
+  "bruciati perché ho iniziato a fare cazzate ed è stata una lezione importante e da lì poi"
+
+[95:21-95:30] (confidence: -0.445)
+  "siamo entrati in bear market quindi la storia è stata più lenta però no mi sto rispondendo bene"
+
+[95:30-95:36] (confidence: -0.406)
+  "no bathy no ottimo per questa esperienza io amo questa cosa quando parliamo insieme con"
+
+[95:36-95:43] (confidence: -0.406)
+  "con tutta la pull family proprio perché l'esperienza aiutano tanto anche a me ma"
+
+[95:43-95:48] (confidence: -0.406)
+  "a tutto il gruppo a chi non ha esperienza ma anche a chi ce l'ha proprio perché ci troviamo"
+
+[95:48-95:54] (confidence: -0.406)
+  "spesso in queste in queste situazioni ed è bello capire che ad altri che non hanno"
+
+[95:54-95:58] (confidence: -0.406)
+  "già passato che comunque non sei solo tu che passi queste cose che è una cosa che"
+
+[95:58-96:02] (confidence: -0.238)
+  "che ha dovuto per forza chi è diventato trader per forza ha dovuto avere a che fare con queste"
+
+[96:02-96:09] (confidence: -0.238)
+  "cose gli schiaffoni li ha presi tutti e ha dovuto capire quando è il momento di dire"
+
+[96:09-96:17] (confidence: -0.238)
+  "oggi basta anche se è passato un'ora ma anche mezz'ora e uno dice ho fatto due operazioni"
+
+[96:17-96:22] (confidence: -0.238)
+  "sono nati dalla mente da dio basta fai qualcosa del di chi c'hai tanto non è che perché"
+
+[97:14-97:21] (confidence: -0.188)
+  "gli amici e questa è la più grande fortuna di chi fa il trader poter sfruttare questi questi"
+
+[97:21-97:27] (confidence: -0.188)
+  "spazi di poter decidere da soli quello che uno deve fare io non ho clienti non ho capi non ho"
+
+[97:27-97:36] (confidence: -0.188)
+  "soci non ho non ho nulla e faccio qua quando ho pieno voglio stacco vado via ed è veramente"
+
+[97:36-97:44] (confidence: -0.188)
+  "questa è la più grande fortuna che che questo lavoro mi ha dato in questi anni ed è un qualcosa"
+
+[98:09-98:16] (confidence: -0.25)
+  "cercare al virgoletto in binance quella quella revenge o quel denaro che manca da altre da altre"
+
+[98:16-98:23] (confidence: -0.25)
+  "parti questa è una cosa che a me ha insegnato tantini in un altro ambiente ed è fondamentale"
+
+[98:23-98:27] (confidence: -0.25)
+  "perché se non entri sereno quando sei davanti a binance diventa come una slot machine che però"
+
+[98:50-98:56] (confidence: -0.298)
+  "bottone comprare vendere tutto quello che c'è dietro veramente ti fa la fa la differenza"
+
+[98:56-99:08] (confidence: -0.298)
+  "e niente e di facciamo così saluto te faccio l'ultima domanda grazie ciao a tutti ci vediamo"
+
+[99:08-99:16] (confidence: -0.298)
+  "in segnali ci vediamo in segnali grazie mille facciamo l'ultima domanda qua e poi basta dopo"
+
+[99:43-99:48] (confidence: -0.495)
+  "comunque tutto quello che hai fatto per me è difficilemente si trova su youtube o comunque"
+
+[99:48-99:54] (confidence: -0.495)
+  "da altre parti quindi niente insomma questo non ho non ho una vera spetta spetta spetta no no non"
+
+[99:54-99:59] (confidence: -0.495)
+  "puoi uscire così facilmente da questa cosa intanto approfittiamo perché così come ti"
+
+[99:59-100:04] (confidence: -0.495)
+  "chiami ma quando un certo nome di dove sei e da quant'è che sei nel mio amico chiamo eduardo"
+
+[107:57-108:06] (confidence: -0.19)
+  "non so più 9 è stato viene sospeso a più 10 e poi dopo riapre dopo un so 4-5 ore a più 25 tu"
+
+[108:06-108:13] (confidence: -0.19)
+  "hai fatto quel 15% senza aver fatto niente laddove tu su binance magari stai operando su"
+
+[108:13-108:18] (confidence: -0.19)
+  "una roba che sta facendo più 10 poi magari ti fa lo spike dell'uno e mezzo per cento il 2% tu lo"
+
+[108:18-108:23] (confidence: -0.19)
+  "chiudi subito e non vai fare quel guadagno che magari dopo tre ore ti va a fare magari il più"
+
+[108:23-108:27] (confidence: -0.19)
+  "15 ma tu non lo vai fare perché stai facendo sempre avanti indietro perché magari ti torna"
+

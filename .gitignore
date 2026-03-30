@@ -1,8 +1,23 @@
+
+knowledge/evidence/img
+
+ingest/.venv
+ingest/env.example
+
+TODO.txt
+notes.txt
+
 tmp_audio
 .env
 env.example
 *.session
 *.session-journal
+
+whisper-env
+
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 
 HELP.md

@@ -1,0 +1,269 @@
+# Low-confidence segments for: 025_SEGNALE_BOMBA_Tecnica_di_Trading_Tutorial_utilizzando_il_segnale_Bomba_del_Bull_Bot.mp3
+# Total flagged: 88
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.802)
+  "Ciao, tra i test su Scapite Bull. Segnale bomba e 5.000 nuovi iscritti. Sigla."
+
+[0:07-0:34] (confidence: -0.418)
+  "Eh sì, la perfezione di questo numero ne è mal aggiunto i 5.000. Da quando avete saputo"
+
+[0:34-0:40] (confidence: -0.26)
+  "che per avere il segnale della bomba bastava raggiungere quota 5.000 e si è sempre stato"
+
+[0:40-0:45] (confidence: -0.26)
+  "visibile a tutti. Ciao. Avete chiesto ai parenti, amici, vicini di casa, addirittura"
+
+[0:45-0:50] (confidence: -0.26)
+  "ho letto di qualcuno che è andato al ristorante e ha obbligato tutti quelli che c'erano di"
+
+[0:50-0:56] (confidence: -0.26)
+  "iscriversi. Insomma, a fatto stava semolati immediatamente la quota 5.000. Pensavo ci volesse"
+
+[0:56-1:05] (confidence: -0.258)
+  "ancora una settimana, ma bravi voi. Bene, guardiamo innanzitutto questa bomba che cos'è."
+
+[1:05-1:16] (confidence: -0.258)
+  "Allora, dopo questo video il nostro uno dei scienziati pazzi, quindi Stefano, Stefano e"
+
+[1:16-1:23] (confidence: -0.258)
+  "Matt, insomma uno dei due, andrà a lanciare per tutti questo segnale. Cosa si vedrà?"
+
+[1:23-1:30] (confidence: -0.303)
+  "Che bello che siete già tutti live, a commentare, il trade, a lavorare insieme, è fantastica."
+
+[1:30-1:37] (confidence: -0.303)
+  "Bull Family sempre numero uno. Allora qua, Bullbot, voi non vedete questo qua, beta channel"
+
+[1:37-1:41] (confidence: -0.303)
+  "dove noi facciamo tutti i testi quelli nuovi, non vedete pesca, non vedete martello, vedete"
+
+[1:41-1:47] (confidence: -0.303)
+  "da qua in poi, quindi nuove monete, quando c'è una nuova cripto che si quota, un nuovo"
+
+[1:47-1:57] (confidence: -0.219)
+  "vedrete qua. E questo è quello nuovo. Si chiama bomba max ieri. Cosa significa? Che"
+
+[1:57-2:02] (confidence: -0.219)
+  "ci sono due segnali in realtà, uno che c'era già, sono i max di ieri, cioè quando sta"
+
+[2:02-2:11] (confidence: -0.219)
+  "facendo un massimo e si avvicina ai massimi di ieri, è quel famoso segnale magenta, insomma"
+
+[2:12-2:23] (confidence: -0.269)
+  "di rosa. E adesso lo trovate qua, ecco questo colore qua, differenza di 2% ai massimi di"
+
+[2:23-2:31] (confidence: -0.269)
+  "ieri. Questo colore qua io adesso l'ho messo, visto che bomba non è un segnale che c'è"
+
+[2:31-2:35] (confidence: -0.269)
+  "ogni 5 minuti, neanche magenta, ho messo due segnali che a volte mi piacciono tantissimi"
+
+[2:35-2:40] (confidence: -0.269)
+  "in una stanza sola, quindi qua c'è sia bomba che max, quando si avvicina ai massimi di"
+
+[2:40-2:47] (confidence: -0.239)
+  "ieri, che sapete che è una zona trigger da paura, e per vedere il segnale magente"
+
+[2:47-2:56] (confidence: -0.239)
+  "basta anche andare ai massimi minimi plus. Massimi e minimi plus, però parliamo di questa"
+
+[2:56-3:02] (confidence: -0.239)
+  "qua. Quindi segnale che c'è già, in più ci sarà questa famosa bomba finalmente. Cos'è"
+
+[3:54-4:00] (confidence: -0.248)
+  "qualche esempio, oggi, allora questo è telegram, innanzitutto abbiamo festeggiato i 5000 iscritti,"
+
+[4:00-4:06] (confidence: -0.248)
+  "superati già stamattina, spettacolari, questo è il quiz, già risposto, ecco, fourth, andiamo"
+
+[4:06-4:17] (confidence: -0.248)
+  "a vedere, fourth, allora eravamo, video qua, fourth, eccoci qua, era questa che ha segnalato,"
+
+[4:17-4:23] (confidence: -0.248)
+  "no, prima ha segnalato questa salita qua, ecco la prima salita, vedi, dal nulla, dal"
+
+[6:06-6:13] (confidence: -0.261)
+  "a questo livello, ok, quindi sono entrato in questa candela qua, stop era assolutamente qua sotto,"
+
+[6:13-6:19] (confidence: -0.261)
+  "ok, sotto la candela di ingresso e niente, ho l'emadieci, insomma, vedete voi, e dopo niente"
+
+[6:19-6:25] (confidence: -0.261)
+  "è andato su e ha fatto questo ingresso qua, torniamo a vedere telegram, ha fatto questo ingresso qua,"
+
+[6:25-6:32] (confidence: -0.261)
+  "eccolo, vedi? Ingresso qua, questa candela, tac, poi ho chiuso subito qua, ho andato subito target,"
+
+[6:32-6:38] (confidence: -0.169)
+  "prima del muro che c'era 17-20 e comunque mi sono portato a casa un po' di soldi,"
+
+[6:38-6:43] (confidence: -0.169)
+  "quanti erano? 280 USDT, ok, potevo guadagnare il doppio, però insomma, io mi accontento,"
+
+[6:43-6:47] (confidence: -0.169)
+  "esco dal muro, ho fatto il suo lavoro e siamo a posto così. Tutto nasce appunto,"
+
+[6:47-6:52] (confidence: -0.169)
+  "però io non è che avesse potuto sapere o scoprire questo false, l'ho scoperto tramite"
+
+[6:52-6:57] (confidence: -0.169)
+  "il segnale bomba, poi dopo si aspetta un ingresso, quindi dovete comunque studiare,"
+
+[7:21-7:32] (confidence: -0.197)
+  "Piva, questa era la risposta al quiz di oggi, ecco, questo cos'è, un'altra bomba, andiamo a vedere,"
+
+[7:32-7:40] (confidence: -0.197)
+  "questo è ghost, andiamo a vedere cosa ha combinato ghost, cambiamo schermo, sto migliorando, sto"
+
+[8:36-8:42] (confidence: -0.16)
+  "che si poteva fare era qua, con la prima aspettare, almeno che faccio io poi voi fate come vi pare,"
+
+[8:42-8:50] (confidence: -0.16)
+  "aspettare una candela di riposo al superamento di questa spike, quindi al superamento di questa"
+
+[8:50-8:57] (confidence: -0.16)
+  "candela di riposo si fa l'ingresso, quindi ingresso si poteva fare qua a 2.2 e chiudere, solo che"
+
+[8:57-9:03] (confidence: -0.16)
+  "qual'è il problema? Che c'erano i massimi storici a 2.4, io qua non ho fatto l'ingresso e ho detto"
+
+[9:53-9:59] (confidence: -0.221)
+  "in basso, sinceramente non l'ho fatto in tempo a inserirlo, ok? Era un po' troppo sporco, il book si"
+
+[9:59-10:04] (confidence: -0.221)
+  "muoveva velocemente, non mi è piaciuto, ho fatto questo spike subito a testare l'Elma 10, quindi"
+
+[10:04-10:08] (confidence: -0.221)
+  "mi aspettavo un'altra candela di riposo, non l'ho fatto, è andato su, vabbè, allora cosa ho fatto?"
+
+[10:08-10:13] (confidence: -0.221)
+  "Ho detto ok, l'ultimo ingresso valido per poter entrare è 2.400, quindi ho bastato la size,"
+
+[10:13-10:20] (confidence: -0.221)
+  "sono sceso a 5.000, di solito vado a 10 come minimo, quindi ho dimezzato la size, ho fatto"
+
+[10:20-10:26] (confidence: -0.264)
+  "ingresso sui massimi storici 2.400, esplosivo, ho venduto subito prima del 2.6 che c'era il"
+
+[10:26-10:34] (confidence: -0.264)
+  "muro e poi dopo è andato comunque più su, quindi 2.59. Andiamo a vedere su Telegram, che si vede qua,"
+
+[10:34-10:39] (confidence: -0.264)
+  "era questo sì, quindi quello che ho spiegato adesso è venuto subito pochi secondi e comunque"
+
+[11:06-11:11] (confidence: -0.214)
+  "è che non è che arriva il segnale e entrate a caso, ok? Cercate un livello, cercate almeno"
+
+[11:11-11:18] (confidence: -0.214)
+  "una candela di riposo. Cosa succede invece che quando fanno i grossi realzi, di solito cosa"
+
+[11:18-11:28] (confidence: -0.214)
+  "fanno? Torniamo di là, ok? Cosa fanno di solito? Arriva su, fa un livello, che speravo lo facesse"
+
+[11:28-11:36] (confidence: -0.26)
+  "qua, poi torna giù, quindi questa è già comunque una bella salita, torna giù, rompe la 10, fa una"
+
+[11:36-11:43] (confidence: -0.26)
+  "lateralizzazione e poi torno su e fa i massimi. Ecco, io entro all in, io li faccio, adesso dipende"
+
+[11:43-11:47] (confidence: -0.26)
+  "anche dalla quantità nel book, ma comunque se c'è la quantità, entro con quantità grosse,"
+
+[11:47-11:55] (confidence: -0.26)
+  "perché comunque l'atteria ha fatto già il bel step in avanti e da lì potete lasciare correre,"
+
+[12:16-12:27] (confidence: -0.211)
+  "c'è dopo, ok? E niente, questo è un segnale fantastico, perché comunque chi è che ci dice"
+
+[12:27-12:32] (confidence: -0.211)
+  "quando qualcosa si sveglia da niente? Il Bullbot, finalmente. Lui può scannerizzare,"
+
+[12:32-12:37] (confidence: -0.211)
+  "lui ogni minuto scannerizza tutte le copie che ci sono, tutti quelle che dormono. Noi io prima,"
+
+[12:37-12:40] (confidence: -0.211)
+  "come facevo a vedere questi qua? Io li vedo dalla classifica, ma li vedevo quando entravano in"
+
+[12:40-12:48] (confidence: -0.3)
+  "classifica, cioè quando erano già in alto. Adesso oggi fa schifo, non sembra neanche in"
+
+[12:48-12:56] (confidence: -0.3)
+  "classifica del crypto. Accorcio un attimo se non lo vedete. Ecco, il massimo, il primo è più 20,"
+
+[12:56-13:01] (confidence: -0.3)
+  "poi abbiamo visto l'altro giorno, c'erano più 200, più 400, più 100. Quei giorni lì,"
+
+[13:01-13:08] (confidence: -0.3)
+  "Bullbot è santo, santo subito. E non te ne accorgi, se adesso qualcosa da zero, fa da zero a più 6% qua,"
+
+[13:08-13:12] (confidence: -0.265)
+  "non entra neanche in classifica, non lo vedi? Come fa a vedere su Tock? Poi dovresti imparare a memoria"
+
+[13:12-13:15] (confidence: -0.265)
+  "tutti quelli che ci sono, appena entra qualcosa di nuovo e si fa andare a vedere, è impossibile."
+
+[13:15-13:22] (confidence: -0.265)
+  "Invece, infatti, così, adesso con il Bullbot fa lui, fa lui, ci segnala qua, c'è qualcosa,"
+
+[13:22-13:29] (confidence: -0.265)
+  "andiamo a vedere e valutiamo. Non fate i pazzi, usate la size. All'inizio, osservate come al solito,"
+
+[13:29-13:34] (confidence: -0.265)
+  "mettete le linee, usate size piccolissime. Quando iniziate a capire, prendete confidenza,"
+
+[14:28-14:33] (confidence: -0.139)
+  "i massimi, così c'è tempo di fare l'ingresso anche daily. Questa è ottima anche come tecnica"
+
+[14:33-14:40] (confidence: -0.139)
+  "daily. Serve sia per time frame a un minuto, quindi io so che se ho un qualcosa vicino ai"
+
+[14:40-14:45] (confidence: -0.139)
+  "massimi degli ultimi 100 giorni, quello ho un bel riferimento, è un obiettivo dove il titolo"
+
+[14:45-14:49] (confidence: -0.139)
+  "può andare. Lo voglio se per prima, perché se fa un breakout e so che c'è quello vicino,"
+
+[14:49-14:54] (confidence: -0.139)
+  "io quel breakout lì lo faccio full size. Ok? E aspetto, non chiudo subito, perché l'obiettivo"
+
+[14:54-14:58] (confidence: -0.195)
+  "deve andare a fare nuovi massimi. Superato quei massimi lì, chissà cosa succede, perché"
+
+[14:58-15:02] (confidence: -0.195)
+  "possono essere tutti i trigger di chi è short, che deve chiudere in perdita, e di chi vuole"
+
+[15:02-15:07] (confidence: -0.195)
+  "entrare perché sta facendo nuovi massimi, quindi può diventare veramente qualcosa di"
+
+[15:07-15:12] (confidence: -0.195)
+  "parabolico. Comunque ci sarà un altro video, prossima settimana quando uscirà quello farà"
+
+[15:12-15:20] (confidence: -0.195)
+  "un altro video. Quindi segnale bomba, molto utile. Da lì dovete studiare le altre tecniche"
+
+[15:20-15:27] (confidence: -0.216)
+  "per poter sfruttare il segnale e poter fare gli ingressi senza farevi male. Ok? Non fatevi"
+
+[15:27-15:35] (confidence: -0.216)
+  "prendere, non è gambling qua. Quindi aspettate una conformazione, aspettate un livello, soprattutto"
+
+[15:35-15:42] (confidence: -0.216)
+  "se riposa un attimo quello è il nostro ingresso ideale, altrimenti vedete voi. Ok? Bene, alla"
+
+[15:42-15:47] (confidence: -0.216)
+  "fine un video anche corto, non sono contento. Fatemi sapere, va 15 minuti, non è anche"
+
+[15:47-15:56] (confidence: -0.355)
+  "un video. Scrivetevi nei commenti se ci sono dubbi, e nel frattempo scrivetevi a Discord,"
+
+[15:56-16:05] (confidence: -0.355)
+  "fino a gennaio, va tutto gratis. Poi a YouTube, che vi ha superato quota 5000, a 6000 ci saranno"
+
+[16:05-16:13] (confidence: -0.355)
+  "altri segnali gratis, e poi ai due canali, telegram. Sì, vi ricordo, telegram. Questo"
+
+[16:13-16:17] (confidence: -0.355)
+  "è quello mio, dove io posto, e voi non potete scrivere niente, se non solo i commenti, quindi"
+

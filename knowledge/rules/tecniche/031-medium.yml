@@ -1,0 +1,152 @@
+video:
+  id: BULL_T_031
+  series: tecniche
+  title: "Segnale Martello - Lateralizzazione con candeline e breakout"
+  video_index: 31
+  duration_minutes: 19
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_31_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candelina, breakout, martello, candle_pattern]
+    source:
+      timecode: "01:44-02:08"
+    conditions:
+      - small_candles_count_at_same_level >= 3
+      - candle_range_pct < threshold_small
+      - price_consolidation_channel_detected == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Candeline piccole sullo stesso livello formano il segnale martello, indicando una lateralizzazione pronta ad esplodere alla rottura."
+    notes: "Il canale e' creato da pressione denaro sotto e lettera sopra. Piu' le candeline sono precise e piccole, maggiore il potenziale esplosione."
+
+  - id: BULL_T_31_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, martello, trigger, candelina]
+    source:
+      timecode: "05:22-06:07"
+    conditions:
+      - martello_setup_detected == true
+      - price_breaks_above_channel_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Alla rottura al rialzo del canale di lateralizzazione si entra immediatamente, senza aspettare ulteriori conferme."
+    notes: "Se rompe a ribasso non si entra long. Se il livello e' molto preciso si deve entrare subito alla rottura."
+
+  - id: BULL_T_31_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [martello, position_sizing, trend]
+    source:
+      timecode: "02:12-02:58"
+    conditions:
+      - daily_change_pct > 5
+      - martello_setup_detected == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Titoli con percentuale di variazione giornaliera piu' alta producono breakout con proporzioni maggiori."
+    notes: "Un martello su un titolo a +20% avra' breakout da 3-5%, mentre su un titolo a +1% il breakout potrebbe essere solo 0.2%."
+
+  - id: BULL_T_31_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [martello, finta, trigger, breakout]
+    source:
+      timecode: "09:34-10:12"
+    conditions:
+      - martello_setup_detected == true
+      - price_broke_below_channel == true
+      - price_returns_above_channel_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se il martello rompe a ribasso ma poi ritorna al livello del canale, la finta conferma la forza e si entra alla rottura rialzista."
+    notes: "Mettere un alert al livello del martello. Se ci torna entro 1-2 ore e' un livello trigger eccellente."
+
+  - id: BULL_T_31_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, martello, invalidation]
+    source:
+      timecode: "16:04-17:17"
+    conditions:
+      - position_open == true
+      - entry_was_martello_breakout == true
+      - price_reenters_channel == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando rompe il canale del martello il prezzo non deve tornare dentro: se rientra significa che non c'e' forza sufficiente."
+    notes: "Non aspettare EMA 5 o EMA 10 come stop. Se fa spike e torna dentro il canale si vende immediatamente. Il livello dell'iceberg non deve essere ritoccato."
+
+  - id: BULL_T_31_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, daily, martello]
+    source:
+      timecode: "11:04-11:52"
+    conditions:
+      - position_open == true
+      - entry_was_martello_breakout == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily, 30m, 1h]
+      market_regime: []
+    rationale: "Il target si cerca nei timeframe piu' alti: cambio candela daily, massimi del giorno precedente, livelli di resistenza."
+    notes: "Guardare TF 30 minuti, 1 ora e daily per trovare dove sono trigger e resistenze per decidere dove uscire."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_31_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, martello]
+    source:
+      timecode: "03:42-05:10"
+    statement: "Il canale del martello puo' essere causato da iceberg o pezzi grossi nel book sia in denaro che in lettera che tengono il prezzo compresso."
+    rationale: "Capire la dinamica del book aiuta a comprendere perche' alla rottura il prezzo esplode: il tappo viene rimosso."
+
+  - id: BULL_T_31_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [martello, shimano, ema223]
+    source:
+      timecode: "12:18-12:55"
+    statement: "Il segnale martello puo' combinarsi con altre tecniche come lo shimano sulla EMA 223, creando setup piu' potenti con maggiore probabilita' di riuscita."
+    rationale: "L'intersezione di piu' tecniche aumenta la qualita' del setup."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Il segnale martello identifica lateralizzazioni con candeline piccole sullo stesso livello; alla rottura rialzista si entra subito, e se il prezzo rientra nel canale si esce immediatamente senza attendere altri segnali."

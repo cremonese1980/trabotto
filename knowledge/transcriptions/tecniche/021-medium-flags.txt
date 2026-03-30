@@ -1,0 +1,146 @@
+# Low-confidence segments for: 021_La_Tecnica_del_VIAGRA_Tecnica_di_Trading_TUTORIAL.mp3
+# Total flagged: 47
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.899)
+  "Ciao a tutti e adesso vi parlo della tecnica del Viagra."
+
+[0:56-1:03] (confidence: -0.263)
+  "perché e ma grazie alla grandissima invenzione che abbiamo solo noi quella"
+
+[1:03-1:12] (confidence: -0.263)
+  "del bullbot che ha tutto spot si riesce a utilizzare spesso e capirete che bomba"
+
+[1:12-1:18] (confidence: -0.263)
+  "che è incredibile quindi praticamente è difficilissimo da... poi ve lo spiego il"
+
+[1:18-1:20] (confidence: -0.263)
+  "perché. Allora partiamo dal perché, intanto si"
+
+[1:21-1:33] (confidence: -0.307)
+  "ve lo faccio vedere nel uptrend quindi prendiamo questo esempio. Il Viagra è un supertrend che"
+
+[1:33-1:41] (confidence: -0.307)
+  "è talmente citato che non riposa mai, quindi riesce a stare in un trend in un supertrend"
+
+[1:41-1:47] (confidence: -0.307)
+  "praticamente sopra Alema 10 per tantissime candele, quindi siamo riusciti a trovare una"
+
+[1:47-1:58] (confidence: -0.286)
+  "formula per il bullbot che non è un bot, è il bullbot che ha tutto spot e con questa formula"
+
+[1:58-2:04] (confidence: -0.286)
+  "faccio che conti tantissime candele dove non va a rompere l'A, vede tutto sto passato qua,"
+
+[2:04-2:12] (confidence: -0.286)
+  "non va mai a rompere l'Ama 10 e quindi è come se fosse in così super eccitato,"
+
+[6:19-6:25] (confidence: -0.227)
+  "un esempio, ok? Qua siamo superpe, quindi qua ho fatto una registrazione, ero già dentro,"
+
+[6:25-6:32] (confidence: -0.227)
+  "è bello questa perché questo è quello che di solito non succede, quindi vi è piaciuto come"
+
+[6:32-6:35] (confidence: -0.227)
+  "esempio perché è un qualcosa che di solito succede poche volte ma comunque dovete tenere"
+
+[6:35-6:41] (confidence: -0.227)
+  "in considerazione. Ok? Allora, ovviamente, potendo scegliere, scegliamo il bot che ci ne"
+
+[6:41-6:46] (confidence: -0.227)
+  "presenta diverse, scegliamo quello sempre più preciso, ok? Questo è molto preciso, quindi"
+
+[6:46-6:51] (confidence: -0.184)
+  "domigno assoluto dei venditori, fantastico. Quindi qua è per andare long, quindi quando scende,"
+
+[6:51-6:55] (confidence: -0.184)
+  "noi spettiamo il segnale per andare long, ok? Quando sale, spettiamo il segnale per andare short,"
+
+[6:55-7:01] (confidence: -0.184)
+  "poi vi spiego anche in quel caso come si può andare comunque long. Niente, aspettato, eccetera."
+
+[7:01-7:05] (confidence: -0.184)
+  "Qua non ha fatto il breakout, fate, non sono entrato, ha lateralizzato, ok? Questo di solito"
+
+[7:05-7:11] (confidence: -0.184)
+  "non lo fa, quindi io in realtà aspettavo questa candela che mi andasse semplicemente più in alto,"
+
+[7:11-7:16] (confidence: -0.184)
+  "quindi più o meno qua e sarei entrato, ma non l'ho fatto, è stato schiaffeggiato e ha proseguito"
+
+[7:41-7:45] (confidence: -0.155)
+  "guadagno, quindi dovete fare attenzione. Io qua avevo delle certezze perché aveva già fatto una"
+
+[7:45-7:51] (confidence: -0.155)
+  "piccola chiusura sopra, una candela a zero, quindi già questo si poteva già fare l'ingresso,"
+
+[7:51-7:56] (confidence: -0.155)
+  "io comunque l'ho fatto qua aspettando che salisse. Poi dopo è sceso, ok? È sceso, ma chi se ne frega,"
+
+[7:56-8:02] (confidence: -0.155)
+  "tanto lo stop è sul muro che c'è sotto. Allora, l'ultimo stop in assoluto deve essere per forza il"
+
+[8:02-8:08] (confidence: -0.155)
+  "minimo che ha fatto qua, ok? Quindi 18.4, bello perché è comunque vicino. Però dipende un po'"
+
+[8:37-8:43] (confidence: -0.217)
+  "sopra, ok? Volendo si poteva già fare questo ingresso qua, lo stop era sempre lo stesso,"
+
+[8:43-8:47] (confidence: -0.217)
+  "ok? Però cos'è la cosa difficile? Quedi, questa volta l'ha atterrizato tanto, quindi c'era ancora"
+
+[8:47-8:52] (confidence: -0.217)
+  "tantissima forza di vendita. Vedrete negli altri esempi che questo non succede mai o quasi,"
+
+[8:52-8:57] (confidence: -0.217)
+  "però comunque vi piace come esempio. Poi a un certo punto quindi stop qua non ha fatto, poi ha fatto"
+
+[8:57-9:03] (confidence: -0.217)
+  "la sua candela di rottura e poi mi ha dato subito a target, che il mio target però era molto vicino,"
+
+[9:25-9:34] (confidence: -0.18)
+  "l'ho messo un po' più in alto, ecco e me l'ha preso, ok. È un guainettino da 174, però dopo"
+
+[9:34-9:39] (confidence: -0.18)
+  "un'allaterizzazione del genere io mi fido poco e quindi l'ho chiuso, ok? Cioè praticamente questo"
+
+[9:39-9:42] (confidence: -0.18)
+  "deve andare a fare subito il movimento, quindi al mio ingresso potuto subito fare il breakout,"
+
+[9:42-9:47] (confidence: -0.18)
+  "allora avrei potuto tenere di più. Visto che ha fatto questa allaterizzazione non mi è piaciuta,"
+
+[9:47-9:52] (confidence: -0.18)
+  "quindi l'ho chiuso subito, insomma dai l'ho spostato un attimo più in su, ma dopo ho chiuso, ok? L'ho"
+
+[10:18-10:24] (confidence: -0.165)
+  "qua. Allora questo è un altro caso un po' particolare, dove comunque il segnale non è"
+
+[10:24-10:30] (confidence: -0.165)
+  "arrivato qua, il segnale è arrivato più o meno qua, quindi dopo c'è stato tempo. Qua si poteva"
+
+[10:30-10:34] (confidence: -0.165)
+  "fare il primo ingresso, si poteva fare già qua, già questo si poteva fare, se non si fa qua perché"
+
+[10:34-10:38] (confidence: -0.165)
+  "si aspetta la candela un po' più in alto si può fare tranquillamente con questa, quindi si faceva"
+
+[10:38-10:43] (confidence: -0.165)
+  "più o meno qua. Se per caso qua non fai l'ingresso, che andava già bene fare l'ingresso,"
+
+[14:09-14:15] (confidence: -0.156)
+  "mettere lo stop sotto l'ingresso di questo e qua forse l'avrebbe preso, forse no, quindi se non"
+
+[14:15-14:21] (confidence: -0.156)
+  "avessimo venduto qua sarebbe andato lo stop a zero, però comunque va messo, ok? Ma il che vada,"
+
+[14:21-14:26] (confidence: -0.156)
+  "questo è un'eccezione, se l'ha preso, cioè se è andato a toccare qua sotto, qua non si vede bene,"
+
+[14:26-14:35] (confidence: -0.156)
+  "ma probabilmente sì, comunque andava stop a zero, ok? Prendete l'abitudine, non calcolate che su"
+
+[18:39-18:43] (confidence: -0.428)
+  "ai due canali telegram e a discord. Ciao!"
+

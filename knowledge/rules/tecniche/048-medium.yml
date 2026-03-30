@@ -1,0 +1,188 @@
+video:
+  id: BULL_T_048
+  series: tecniche
+  title: "Stanchezza di candela - leggere la proporzione delle candele"
+  video_index: 48
+  duration_minutes: 22
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_48_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, book, take_profit]
+    source:
+      timecode: "03:47-05:06"
+    conditions:
+      - position_open == true
+      - book_level_broken == true
+      - book_level_reloaded_at_same_price == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Quando un livello nel book viene rotto ma subito ricaricato con nuovi pezzi in vendita allo stesso prezzo, indica pesantezza e il prezzo non passera'."
+    notes: "Ogni volta che il prezzo sale al livello e viene ricaricato il book in vendita, conferma che non c'e' benzina per salire. Uscire senza aspettare l'EMA."
+
+  - id: BULL_T_48_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, trend, take_profit]
+    source:
+      timecode: "07:06-08:28"
+    conditions:
+      - position_open == true
+      - consecutive_green_candles >= 3
+      - current_candle_body < previous_candle_body
+      - current_candle_body < min(all_rally_candle_bodies)
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Se durante un rally il corpo della candela corrente e' nettamente piu' piccolo di tutti i corpi precedenti, il movimento e' stanco."
+    notes: "Non serve guardare il book: la proporzione dei corpi delle candele rivela la stanchezza. Come uno sprint dove gli ultimi metri si perde energia."
+
+  - id: BULL_T_48_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, take_profit, trigger]
+    source:
+      timecode: "08:32-09:27"
+    conditions:
+      - position_open == true
+      - breakout_candle_1_close_at_high == true
+      - breakout_candle_2_close_at_high == true
+      - breakout_candle_3_has_upper_wick == true
+      - breakout_candle_3_body < breakout_candle_1_body
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Dopo un breakout, se le prime candele chiudono sui massimi ma la terza ha corpo piccolo e ombra superiore, il momentum e' esaurito."
+    notes: "Sequenza tipica: candela grande chiude sui massimi, seconda chiude sui massimi, terza fa un massimo ma chiude con corpo piccolo. Uscire e aspettare nuova conformazione."
+
+  - id: BULL_T_48_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, breakout, trigger]
+    source:
+      timecode: "13:41-15:23"
+    conditions:
+      - position_open == true
+      - consecutive_small_candles >= 3
+      - current_candle_body > 3 * average(previous_small_candle_bodies)
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Dopo una lunga serie di candeline piccole, una candela che strappa pesantemente e' un segnale di uscita: qualcuno ha chiuso posizioni grosse a mercato."
+    notes: "E' difficile che dopo uno strappo cosi' ce ne sia un altro ancora piu' grande (solo 20% dei casi). Uscire a meno che il book non mostri un livello che dia sicurezza."
+
+  - id: BULL_T_48_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, invalidation, risk_management]
+    source:
+      timecode: "15:30-17:07"
+    conditions:
+      - position_open == true
+      - breakout_occurred == true
+      - large_red_candle_destroys_breakout_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Se dopo un breakout arriva una candela rossa enorme che distrugge tutto il book, uscire immediatamente entro la chiusura della candela stessa."
+    notes: "Non aspettare la seconda candela o sperare nel rimbalzo. In mercati bear queste candele rosse segnalano che grossi operatori stanno chiudendo posizioni approfittando dei volumi."
+
+  - id: BULL_T_48_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [candle_pattern, trend, trigger]
+    source:
+      timecode: "10:49-11:47"
+    conditions:
+      - candle_close_approaching == true
+      - seconds_to_candle_close <= 10
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Gli ultimi 10 secondi prima della chiusura candela sono cruciali per confermare stanchezza o accelerazione."
+    notes: "Se negli ultimi 10 secondi il prezzo accelera e chiude a candela piena, si puo' tenere. Se non accelera e chiude con corpo piccolo, conferma stanchezza. Usare il timer."
+
+  - id: BULL_T_48_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bud, invalidation, short]
+    source:
+      timecode: "05:12-06:33"
+    conditions:
+      - breakout_occurred == true
+      - candle_close_below_breakout_level == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Qualsiasi breakout (bad, terzo tocco, ecc.) che rientra sotto il livello di breakout e' un segnale fantastico per andare short."
+    notes: "Non aspettare l'EMA. Il fallimento del breakout su livelli trigger importanti dimostra pesantezza. Funziona l'80% delle volte; solo il 20% poi torna a fare nuovi massimi."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_48_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "01:00-01:29"
+    statement: "La stanchezza di candela si impara con l'esperienza; non bisogna avere fretta perche' piano piano si impara a percepirla."
+    rationale: "Non e' una regola meccanica ma una competenza che si sviluppa col tempo osservando le proporzioni delle candele."
+
+  - id: BULL_T_48_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, trend]
+    source:
+      timecode: "01:36-03:21"
+    statement: "Ogni coppia/azione ha un 'carattere': alcune si muovono con conformazioni pulite, altre fanno breakout seguiti da finte. Osservare il carattere storico prima di operare."
+    rationale: "Conoscere il carattere di un titolo permette di evitare quelli con movimenti imprevedibili e concentrarsi su quelli che rispettano le conformazioni."
+
+  - id: BULL_T_48_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, trend]
+    source:
+      timecode: "20:05-21:26"
+    statement: "In mercato bear la stanchezza di candela si manifesta diversamente rispetto al bull market; adattarsi al contesto di mercato e' fondamentale."
+    rationale: "In bear market le possibilita' di guadagno sono piu' difficili; meglio ridurre la size e studiare piuttosto che rischiare."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "La stanchezza di candela si legge dalla proporzione dei corpi: quando il corpo diventa nettamente piu' piccolo dei precedenti o quando il book viene ricaricato a ogni rottura, il movimento e' esaurito e bisogna uscire senza aspettare l'EMA."

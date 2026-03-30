@@ -1,0 +1,151 @@
+video:
+  id: YT_BULL_P_026
+  series: principianti
+  title: "Psicologia 2 — Proporzioni, Overtrading e Accettare le Perdite"
+  video_index: 26
+  duration_minutes: 28
+
+entities:
+  - id: BULL_P_26_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [risk_management, position_sizing, breakout, beginner, daily]
+    source:
+      timecode: "01:22-03:19"
+    conditions:
+      - asset_daily_range_pct < 5
+      - expected_breakout_move_pct < 0.5
+      - expected_gain_at_target < minimum_acceptable_gain
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bear, lateral]
+    rationale: "Un asset con range giornaliero ristretto produce breakout proporzionalmente piccoli; il margine atteso non giustifica il rischio."
+    notes: "Prima di entrare, calcolare il punto di uscita ipotetico e verificare se il gain sarebbe soddisfacente. Se non lo è, non entrare."
+
+  - id: BULL_P_26_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [risk_management, position_sizing, breakout, beginner]
+    source:
+      timecode: "04:17-04:45"
+    conditions:
+      - asset_daily_range_pct > 20
+      - trade_size == standard_size
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: ["1min", "5min", "30min"]
+      market_regime: []
+    rationale: "Asset con movimenti giornalieri molto grandi amplificano proporzionalmente sia i guadagni che le perdite; la size standard è inadeguata."
+    notes: "La stessa configurazione grafica su un asset +30% può generare perdite molto maggiori rispetto a un asset +3%."
+
+  - id: BULL_P_26_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, position_sizing, breakout, book]
+    source:
+      timecode: "10:28-11:16"
+    conditions:
+      - position_in_gain == true
+      - price_lateralizes_after_entry == true
+      - price_breaks_lateralization_level == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1min", "5min"]
+      market_regime: [bullish, lateral]
+    rationale: "Raddoppiare la size solo quando si è già in guadagno e il prezzo rompe una lateralizzazione — con stop spostato al punto di rottura — permette di aumentare l'esposizione a costo zero."
+    notes: "Il raddoppio di posizione NON deve mai avvenire in perdita per recuperare. Lo stop del secondo ingresso va posizionato al livello di rottura della lateralizzazione."
+
+  - id: BULL_P_26_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [stop_loss, risk_management, beginner, leverage]
+    source:
+      timecode: "23:18-26:48"
+    conditions:
+      - trade_entry_executed == true
+      - stop_loss_set == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1min", "5min", "30min", "1d"]
+      market_regime: []
+    rationale: "Inserire sempre uno stop loss al momento dell'entrata, anche se distante, per prevenire margin call e perdite illimitate."
+    notes: "Lo stop loss logico si posiziona nel punto in cui il cambio di trend invalida la tesi dell'operazione: dove non ha più senso comprare e inizia ad avere senso vendere."
+
+  - id: BULL_P_26_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "05:10-08:10"
+    statement: "Quando la giornata va molto bene all'inizio, è il momento più pericoloso: la sensazione di aver 'capito tutto' porta ad aumentare la size e ad entrare su conformazioni non valide, azzerando il gain."
+    rationale: "L'euforia da guadagno abbassa la soglia di selezione dei trade e porta all'overtrading."
+
+  - id: BULL_P_26_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "08:03-09:17"
+    statement: "Quando si inizia bene la giornata, la tecnica ottimale è chiudere il terminale del mercato specifico e tornare eventualmente dopo 2-4 ore con una mentalità fresca."
+    rationale: "La separazione fisica dal mercato dopo un buon gain elimina la tentazione dell'overtrading."
+
+  - id: BULL_P_26_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, candelina]
+    source:
+      timecode: "12:32-13:28"
+    statement: "Nelle giornate con candele molto piccole (candeline), non forzare operazioni. Non è necessario fare trading ogni giorno — solo quando ci sono le conformazioni adatte."
+    rationale: "Forzare operazioni in assenza di movimento porta a frustrazioni, stop colpiti e perdite evitabili."
+
+  - id: BULL_P_26_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "22:29-23:18"
+    statement: "Accettare la perdita e chiudere in stop è un guadagno, perché riduce l'importo da recuperare. Una piccola perdita accettata subito impedisce che diventi una liquidazione."
+    rationale: "I trader profittevoli a lungo termine sono quelli che sanno chiudere in perdita senza esitazione quando la conformazione lo richiede."
+
+  - id: BULL_P_26_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, regime_filter, trend, daily]
+    source:
+      timecode: "19:50-21:45"
+    statement: "Adattare la tecnica al regime di mercato: in mercato ribassista o laterale accontentarsi degli spike veloci; in bull run iniziare a lasciare correre le posizioni gradualmente, calibrandosi sull'andamento del daily."
+    rationale: "La stessa tecnica applicata in regimi di mercato diversi produce risultati molto differenti; la flessibilità è una competenza chiave."
+
+  - id: BULL_P_26_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, position_sizing, book, beginner]
+    source:
+      timecode: "16:24-17:28"
+    statement: "Prima di operare con qualsiasi size, imparare a leggere il book per capire se la size scelta è effettivamente eseguibile senza fare il buco e senza impattare il mercato in modo indesiderato."
+    rationale: "Una size eccessiva rispetto alla liquidità disponibile nel book può rendere impossibile l'uscita al prezzo desiderato."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 6
+  core_message: "La redditività dipende da tre pilastri psicologico-operativi: rispettare le proporzioni tra range dell'asset e size, evitare l'overtrading sia nelle giornate negative che in quelle molto positive, e accettare la perdita come strumento di protezione del capitale — non come sconfitta."

@@ -1,0 +1,124 @@
+video:
+  id: BULL_NN_06
+  series: nuova-neofiti
+  title: "Short selling: guadagnare a ribasso"
+  video_index: 6
+  duration_minutes: 28
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_06_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, stop_loss, take_profit]
+    source:
+      timecode: "25:16-25:53"
+    conditions:
+      - "position_open == true"
+      - "stop_loss_set == false OR take_profit_set == false"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Ogni operazione deve sempre avere stop loss e take profit impostati; senza di essi il rischio è illimitato, soprattutto nello short selling."
+    notes: "Bull dice: se perdi tutto il tuo capitale vuol dire che non hai rispettato nessuna regola della Bull Family. Il rischio teoricamente infinito dello short è neutralizzato da SL/TP."
+
+  - id: BULL_NN_06_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema10, trend]
+    source:
+      timecode: "05:48-06:38"
+    conditions:
+      - "price_was_holding_above_ema10 == true"
+      - "price_breaks_below_ema10 == true"
+      - "ema10_support_broken == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Quando l'EMA 10 che teneva come supporto viene rotta, il pullman di cinesi ha finito i soldi; il prezzo crolla verso l'EMA sotto."
+    notes: "Esempio con EMA 10 che ha tenuto perfettamente più volte, poi viene rotta: segnale che i compratori hanno esaurito la forza."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_06_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "00:00-01:03"
+    statement: "Lo short selling è vendere qualcosa che non si possiede ancora, sperando che il prezzo scenda, per poi ricomprarlo a meno e intascare la differenza."
+    rationale: "Definizione fondamentale dello short selling per neofiti."
+
+  - id: BULL_NN_06_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "08:12-09:17"
+    statement: "Lo short selling raddoppia le possibilità operative: si può guadagnare sia a rialzo (long) che a ribasso (short), riducendo lo stress e l'ansia di dover aspettare solo rialzi."
+    rationale: "Avere entrambe le direzioni disponibili è un vantaggio competitivo significativo per lo scalper."
+
+  - id: BULL_NN_06_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "09:17-09:38"
+    statement: "Se Bull dovesse scegliere tra operare solo long o solo short, sceglierebbe short."
+    rationale: "Indica una preferenza operativa del trader che può influenzare la selezione dei setup."
+
+  - id: BULL_NN_06_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "12:06-12:30"
+    statement: "Nello short selling: vendi prima a un prezzo alto, poi ricompri a un prezzo più basso. Esempio: vendi a 120, ricompri a 100, guadagno = 20. È l'esatto contrario del long."
+    rationale: "Meccanica operativa dello short spiegata in termini semplici."
+
+  - id: BULL_NN_06_CTX_05
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner]
+    source:
+      timecode: "22:08-24:50"
+    statement: "Nel long senza leva il massimo che puoi perdere è il capitale investito (il prezzo va a zero). Nello short la perdita è teoricamente illimitata (il prezzo può salire all'infinito). Tuttavia con stop loss e take profit questo rischio è controllato."
+    rationale: "Avvertimento fondamentale sul rischio asimmetrico dello short selling, mitigato dalla disciplina operativa."
+
+  - id: BULL_NN_06_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, trend]
+    source:
+      timecode: "26:12-27:37"
+    statement: "Non esiste mai una situazione dove tutto scende: c'è sempre qualcosa in controtendenza. Durante il Covid saliva Moderna, durante le guerre salgono i titoli dell'armamento, quando tutto crolla si compra l'oro."
+    rationale: "Principio di diversificazione e opportunità: anche nei crash c'è sempre qualcosa su cui operare long."
+
+  - id: BULL_NN_06_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner]
+    source:
+      timecode: "15:07-17:08"
+    statement: "Il broker (exchange) presta le azioni/crypto per lo short selling perché guadagna sulle fee degli scambi aggiuntivi. Chi detiene l'asset in portafoglio lo mette a disposizione ricevendo una piccola fee, e lo riavrà indietro a fine giornata."
+    rationale: "Spiega la meccanica del prestito titoli dietro lo short selling."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 7
+  core_message: "Lo short selling permette di guadagnare quando il prezzo scende, raddoppiando le opportunità operative. Il rischio teoricamente illimitato è controllato con stop loss e take profit obbligatori. La rottura dell'EMA 10 è un segnale chiave per entrare short."

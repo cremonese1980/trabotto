@@ -1,0 +1,107 @@
+# Low-confidence segments for: 006_LIVE_TRADING_con_soldi_reali_2_Long_senza_marginazione_su_API3_Analisi_completa_del_Trade.mp3
+# Total flagged: 34
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.253)
+  "ciao trader siete su scappin the bull live trading analisi di un 2 live trading di questa"
+
+[0:06-0:11] (confidence: -0.253)
+  "mattina di ap3 ok 2 di questa mattina che mi sono svegliato presto quindi mi sono messo"
+
+[0:11-0:20] (confidence: -0.253)
+  "di buona volontà ho fatto anche il video partiamo tanto dura 5 minuti a trade quindi"
+
+[0:20-0:25] (confidence: -0.253)
+  "facciamo senza andare in velocità massima qua vado a inserire l'ordine un terzo tocco"
+
+[0:25-0:31] (confidence: -0.268)
+  "1 2 3 poi questo può essere conservato il terzo quindi questo è il quarto addirittura"
+
+[0:31-0:38] (confidence: -0.268)
+  "sapete che è quella quarta con il quarto tocco livello ovviamente è 6 andiamo a vedere qua 6"
+
+[0:38-0:44] (confidence: -0.268)
+  "io addirittura metto uno stop limit al 7.599 quindi io devo partire prima di toccare il muro che"
+
+[0:44-0:54] (confidence: -0.268)
+  "talmente mi piace e io comunque sto entrando non mi ricordo se ero con 10 15.000 anzi vado a vedere"
+
+[1:17-1:24] (confidence: -0.473)
+  "il book visto comunque abbiamo la spetta teniamo un attimo indietro anzi andiamo a"
+
+[1:24-1:29] (confidence: -0.473)
+  "dire il 7.5 c'è il pezzo c'è il muro molto pesante ecco se lo faccio vede"
+
+[1:29-1:43] (confidence: -0.473)
+  "va beh comunque è coperto bene e niente quando fai il breakout ovviamente non deve"
+
+[1:43-1:48] (confidence: -0.255)
+  "fare chiusura candela sotto che è importantissimo che non faccia chiusura candela sotto il livello"
+
+[1:48-1:54] (confidence: -0.255)
+  "del breakout quindi qua stiamo finendo i secondi e si sta avvicinando al livello di chiusura quindi"
+
+[1:54-2:01] (confidence: -0.255)
+  "7.6 deve essere coperto ok e la fine che si era avvicinato non deve chiudere sotto se parte e"
+
+[2:01-2:06] (confidence: -0.255)
+  "fa la candela verde e poi chiude sotto è troppo debole quindi bisogna chiedere se ha bisogno di"
+
+[2:06-2:12] (confidence: -0.255)
+  "stop chiude subito non parte c'è la seconda candela invece sappiamo che molto probabilmente"
+
+[5:29-5:36] (confidence: -0.181)
+  "sempre un terzo tocco ok è un po strano perché è un terzo tocco quindi questo è un livello"
+
+[5:36-5:41] (confidence: -0.181)
+  "questo è un secondo tocco e questo è il terzo tocco dove io volevo entrare ma sono andato tardi"
+
+[5:41-5:48] (confidence: -0.181)
+  "sono andato tardi ho inserito l'ordine ma me l'hanno già preso che niente cosa faccio lascio lì e"
+
+[5:48-5:54] (confidence: -0.181)
+  "sto sperando che mi vengono a prendere ok a 39 fra l'altro perché era dove c'era il livello"
+
+[6:17-6:24] (confidence: -0.193)
+  "il livello di questo tocco qua ok un po più in alto il 745 e niente e lo vado a mettere vengo"
+
+[6:24-6:33] (confidence: -0.193)
+  "eseguito solo in parte però rimane ecco eseguito completamente ok quindi questo è il livello del"
+
+[6:33-6:38] (confidence: -0.193)
+  "mio ingresso che questo livello qua il terzo tocco ideale quindi ero sotto perché eravamo tutto più"
+
+[6:38-6:46] (confidence: -0.193)
+  "vicino adesso mi sta andando contro comunque ho qualcosa e sono entrato anche 7.4 ecco vedi ci"
+
+[7:38-7:45] (confidence: -0.283)
+  "che stiamo vicinando alla 10 quantità comunque ci sono a proteggere vedete faccio i massimi"
+
+[7:45-7:50] (confidence: -0.283)
+  "faccio più livelli questo ha potuto accettare anche l'ingresso più in là perché avevo anche"
+
+[7:50-7:56] (confidence: -0.283)
+  "questi massimi altrimenti non non sarei entrato non è nel mio stile entrar dopo ecco verso la fine"
+
+[7:56-8:03] (confidence: -0.283)
+  "c'è la però cosa mi fa capire questo che fa tanti spike a testare quindi anche adesso che sta salendo"
+
+[8:03-8:08] (confidence: -0.283)
+  "non è che mi stia affidando tanto perché ho paura che si vada su poi di nuovo vada a testarla 10"
+
+[8:35-8:42] (confidence: -0.132)
+  "a capire che non c'era tanto da fidarsi quindi metto l'uscita target più vicino ok ovviamente"
+
+[8:42-8:47] (confidence: -0.132)
+  "avrei dovuto metterlo verso 5 9 5 8 invece lo metto molto stretto cioè punto sulla rottura che"
+
+[8:47-8:52] (confidence: -0.132)
+  "adesso c'è stato di questo muro qua è uno spike veloce che vado a prendermi se invece non avesse"
+
+[8:52-8:57] (confidence: -0.132)
+  "fatto questo spike avrei puntato più in alto quindi avrei avrei puntato verso 7.5 8 o 7.5 9"
+
+[8:57-9:03] (confidence: -0.132)
+  "adesso vediamo abbiamo 19 secondi adesso questo minuto qua lo chiudo comunque vado lo chiudo se"
+

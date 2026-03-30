@@ -1,0 +1,177 @@
+video:
+  id: BULL_T_047
+  series: tecniche
+  title: "Come operare sugli ICO e nuove coppie - aspettare la conformazione"
+  video_index: 47
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_47_01
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [candle_pattern, risk_management, invalidation]
+    source:
+      timecode: "02:36-03:46"
+    conditions:
+      - asset_is_new_listing == true
+      - candle_index == 1
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La prima candela di un nuovo ICO/listing ha book vuoto e volumi zero; e' una candela finta non tradabile."
+    notes: "Nel mondo crypto gli ICO partono con book vuoto a differenza delle IPO azionarie. La prima candela e' solo uno spike casuale, impossibile essere eseguiti."
+
+  - id: BULL_T_47_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, risk_management, trend]
+    source:
+      timecode: "04:42-05:11"
+    conditions:
+      - asset_is_new_listing == true
+      - elapsed_minutes_since_listing < 60
+    action:
+      - WAIT
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Aspettare almeno 60 minuti dal listing per avere l'EMA 60 formata sul timeframe 1 minuto."
+    notes: "Un'ora di candele a 1m genera l'EMA 60. Solo dopo si puo' cercare una conformazione. Per esperti si puo' operare prima ma con estrema cautela."
+
+  - id: BULL_T_47_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bud, breakout, trigger]
+    source:
+      timecode: "04:01-04:29"
+    conditions:
+      - asset_is_new_listing == true
+      - elapsed_minutes_since_listing >= 5
+      - bud_to_the_moon_setup == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Il primo bad to the moon di un nuovo listing e' un ingresso valido per esperti, con candele enormi che pagano tanto."
+    notes: "Bull ha fatto il suo primo guadagno su un ICO entrando al primo bad. La candela di ingresso ha fatto il 5%, lui ha fatto il 2.93%. Solo per esperti."
+
+  - id: BULL_T_47_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, ema60, breakout]
+    source:
+      timecode: "05:43-06:07"
+    conditions:
+      - asset_is_new_listing == true
+      - elapsed_minutes_since_listing >= 60
+      - ema60_present == true
+      - touch_count(resistance_level) >= 3
+      - price_above_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Su un ICO, dopo un'ora, un terzo tocco sopra l'EMA 60 e' un ingresso ideale con candele che pagano molto."
+    notes: "Bull ha fatto un bel terzo tocco sopra la 60 prima che arrivasse la 223, con risultato del 2.63%."
+
+  - id: BULL_T_47_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [invalidation, stop_loss, risk_management]
+    source:
+      timecode: "07:28-07:46"
+    conditions:
+      - entry_on_new_listing == true
+      - position_open == true
+      - candle_close_below_entry_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Su un ICO, se dopo l'ingresso il prezzo non parte o chiude sotto il livello di ingresso, bisogna chiudere immediatamente."
+    notes: "Se non si chiude, puo' arrivare una candela contraria del 5% o piu'. Bull ha visto persone perdere il 60% in 3-4 ore per non aver chiuso."
+
+  - id: BULL_T_47_06
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [bud, trigger, breakout]
+    source:
+      timecode: "09:45-10:52"
+    conditions:
+      - asset_listed_on_other_exchange == true
+      - new_pair_about_to_launch_on_binance == true
+      - bud_setup_on_existing_pair == true
+      - time_before_launch <= 60
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "Se una coppia esiste gia' su un altro exchange e sta per aprire su Binance, si puo' entrare sulla conformazione dell'exchange esistente prima del lancio."
+    notes: "Esempio: osmo/btc esiste, osmo/boost sta per aprire. Se c'e' un bad allungato su osmo/btc un'ora prima dell'apertura, si entra li'. Uscire comunque secondo le regole del terzo tocco."
+
+  - id: BULL_T_47_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, risk_management]
+    source:
+      timecode: "12:08-12:43"
+    conditions:
+      - asset_is_new_listing == true
+      - book_grouping == "maximum"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "All'inizio di un nuovo listing il book va raggruppato al massimo per vedere i livelli grandi a colpo d'occhio."
+    notes: "Con le esplosioni iniziali il book si muove velocemente. Raggruppamento massimo permette di individuare i muri. Dopo si puo' raffinare."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_47_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "06:42-08:17"
+    statement: "Operare senza conformazione sugli ICO e' gambling: si gioca contro la matematica e il sistema non vede l'ora di portarvi via i soldi."
+    rationale: "Le conformazioni hanno una proporzione di successo studiata; senza conformazione si rischia perdite enormi in poco tempo."
+
+  - id: BULL_T_47_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "09:09-09:28"
+    statement: "La prima candela di un ICO non vale nulla: inizia a valere dalla seconda-terza candela in poi, ma le candele sono enormi e pericolose per i non esperti."
+    rationale: "Solo i mega esperti possono operare le primissime conformazioni di un ICO; gli altri devono aspettare almeno un'ora."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Sugli ICO e nuovi listing la prima candela e' non tradabile (book vuoto); bisogna aspettare almeno 60 minuti per avere l'EMA 60 e una conformazione valida, altrimenti si rischia di perdere il 60% in poche ore."

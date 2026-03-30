@@ -1,0 +1,134 @@
+video:
+  id: BULL_NN_08
+  series: nuova-neofiti
+  title: "Bitcoin come indice e forza relativa"
+  video_index: 8
+  duration_minutes: 20
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_08_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, regime_filter, trend]
+    source:
+      timecode: "06:39-09:35"
+    conditions:
+      - "market == CRYPTO"
+      - "altcoin_holds_above_ema(timeframe) == true"
+      - "btc_price_below_ema(timeframe) == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Se un'altcoin tiene sopra le EMA mentre Bitcoin è sotto, quell'altcoin è più forte del mercato; quando Bitcoin smette di scendere, l'altcoin accelererà al rialzo molto più di Bitcoin."
+    notes: "Metafora dei due negozi: se nel negozio di fianco (Bitcoin) arrivano pochi clienti mentre nel tuo (altcoin) sono pieni, quando finiscono le scarpe nell'altro negozio i clienti vengono anche da te."
+
+  - id: BULL_NN_08_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, regime_filter, trend]
+    source:
+      timecode: "13:37-14:21"
+    conditions:
+      - "market == CRYPTO"
+      - "btc_price_above_ema(timeframe) == true"
+      - "altcoin_lateralizing_or_below_ema(timeframe) == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Se Bitcoin sale ma l'altcoin rimane laterale o sotto le EMA, l'altcoin è troppo debole; se sale, sale solo perché trascinata dal mercato e non per forza propria."
+    notes: "Non operare su altcoin deboli rispetto all'indice: salgono solo se trascinate e scenderanno più forte quando il mercato gira."
+
+  - id: BULL_NN_08_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [btc_index, regime_filter, trigger]
+    source:
+      timecode: "14:27-15:23"
+    conditions:
+      - "btc_approaching_trigger_level_for_breakdown == true"
+      - "altcoin_has_long_setup == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Se Bitcoin ha un livello trigger per scendere (es. quarto tocco su supporto), aspettare prima di entrare long sull'altcoin anche se ha una conformazione valida, perché il crollo di BTC trascina giù tutto."
+    notes: "Bitcoin che crolla del 5% porta giù anche le altcoin più forti. Aspettare che BTC chiarisca la situazione prima di operare."
+
+  - id: BULL_NN_08_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [btc_index, regime_filter]
+    source:
+      timecode: "14:49-15:53"
+    conditions:
+      - "btc_bounced_from_trigger_level == true"
+      - "btc_re_entered_above_broken_level == true"
+      - "altcoin_stronger_than_btc == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Quando Bitcoin rimbalza e rientra sopra il livello rotto, è un segnale di forza; se l'altcoin è già più forte di BTC, è doppia conferma per entrare long."
+    notes: "La doppia conferma (BTC rimbalza + altcoin più forte) riduce il rischio dell'operazione."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_08_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, beginner]
+    source:
+      timecode: "03:38-04:28"
+    statement: "Bull usa Bitcoin come indice per tutte le crypto e il Nasdaq come indice per tutto il resto (azioni, forex, oro, valute). Bitcoin domina per capitalizzazione quindi basta da solo come indice crypto."
+    rationale: "Definisce gli indici di riferimento per l'operatività di Bull."
+
+  - id: BULL_NN_08_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, beginner]
+    source:
+      timecode: "04:47-06:38"
+    statement: "Un indice è la media dei rialzi e ribassi di un gruppo di titoli; serve a capire l'andamento generale del settore. Bitcoin capitalizza molto più di tutte le altre crypto sommate, quindi funziona come indice da solo."
+    rationale: "Spiega cos'è un indice e perché Bitcoin è sufficiente per il settore crypto."
+
+  - id: BULL_NN_08_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, trend, beginner]
+    source:
+      timecode: "17:17-17:43"
+    statement: "Se un asset è più forte dell'indice si cercano conformazioni long; se è più debole si cercano conformazioni short. L'indice determina la direzione preferenziale."
+    rationale: "La forza relativa rispetto all'indice guida la scelta della direzione operativa."
+
+  - id: BULL_NN_08_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, trend]
+    source:
+      timecode: "07:54-08:26"
+    statement: "Per confrontare la forza relativa, tutti gli asset vanno guardati allo stesso timeframe; si confronta la posizione del prezzo rispetto alle EMA e la presenza o assenza di incroci."
+    rationale: "Il confronto visuale a colpo d'occhio richiede uniformità di timeframe tra i grafici."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 4
+  core_message: "Bitcoin è l'indice di riferimento per le crypto (Nasdaq per il resto). La forza relativa dell'altcoin rispetto a BTC determina la direzione operativa: long se più forte, short se più debole. Mai entrare su un'altcoin quando BTC è in pericolo di crollo."

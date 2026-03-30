@@ -1,0 +1,140 @@
+video:
+  id: BULL_LTCRA_14
+  series: live-trading-crypto-analisi
+  title: "FIZZ Spot Trade - Breakout da Lateralizzazione Daily, Stop Limit al Muro, Uscita Anticipata senza Finta"
+  video_index: 14
+  duration_minutes: 5.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_14_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, daily, lateralizzazione, candelline]
+    source:
+      timecode: "~"
+    conditions:
+      - timeframe == daily
+      - long_lateralizzazione_detected == true
+      - candelline_pattern == true
+      - breakout_from_range == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [range_breakout]
+    rationale: "Identify a long lateralizzazione on the daily chart characterized by small candles (candelline). When price breaks out of this range, enter long. The compressed range indicates accumulated energy for a directional move."
+    notes: "FIZZ showed a textbook lateralizzazione with candelline on the daily. Bull spotted the breakout opportunity from this daily-level pattern and entered via stop limit on spot."
+
+  - id: BULL_LTCRA_14_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_limit, muro, entry, breakout]
+    source:
+      timecode: "~"
+    conditions:
+      - breakout_setup_identified == true
+      - muro_level_identified == true
+      - market == spot
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 1h]
+      market_regime: [range_breakout]
+    rationale: "Place a stop limit buy order at the muro level to catch the breakout. For FIZZ, the muro was at 2.40 with a max entry of 2.42. This ensures entry only happens on confirmed breakout through resistance."
+    notes: "Size was 12000 USDT on spot. Stop limit at muro guarantees you enter only when the wall is being consumed, confirming buying pressure."
+
+  - id: BULL_LTCRA_14_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [finta, manico, exit, distrust]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - price_moved_dritto_per_dritto == true
+      - no_finta_pattern == true
+      - no_manico_pattern == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When price goes straight up without any finta or manico pattern (dritto per dritto), there is less trust in the continuation. Sell before the next muro. A healthy breakout should include a pullback/finta to build a base."
+    notes: "Bull sold at 2.49 before the 2.50 muro because the move went dritto per dritto without any manico formation, which reduces confidence in sustained momentum."
+
+  - id: BULL_LTCRA_14_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema60, confidence, continuation]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - ema60_not_tested == true
+      - breakout_in_progress == true
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "If price breaks out but never tests EMA 60 during the move, confidence in continuation is lower. The lack of an EMA 60 test means the move has no confirmed dynamic support. Consider reducing size or preparing to exit earlier."
+    notes: "EMA 60 test acts as a confidence builder for the trend. Without it, Bull had less trust and chose to exit before the next resistance cluster at 2.50 and 2.55."
+
+  - id: BULL_LTCRA_14_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [muro, resistance, exit]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - approaching_muro == true
+      - multiple_muri_ahead == true
+      - confidence_low == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When multiple muri are stacked ahead (e.g., 2.50 and 2.55) and confidence is already low due to missing patterns (no finta, no EMA 60 test), exit before hitting the wall rather than risking a rejection."
+    notes: "Bull closed at 2.49 with +437 USDT, avoiding the risk of rejection at the muro cluster. Better to secure profit when the setup lacks confirmation signals."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_14_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [spot, entry_line, platform]
+    source:
+      timecode: "~"
+    statement: "On spot platforms, the entry line is not displayed automatically. Manually mark the entry price on the chart so you can reference it for stop and target management throughout the trade."
+    rationale: "Unlike futures platforms, spot trading interfaces often lack visual entry markers. Without marking entry manually, it is easy to lose track of the exact entry level during volatile moves."
+
+  - id: BULL_LTCRA_14_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, breakout, identification]
+    source:
+      timecode: "~"
+    statement: "Daily chart lateralizzazione with candelline (small bodies, low volatility) is a precursor to breakouts. Scan daily charts for this compressed range pattern and prepare stop limit orders at the breakout level."
+    rationale: "Compressed daily ranges represent equilibrium between buyers and sellers. When this equilibrium breaks, the move tends to be directional and significant. Early identification allows prepared entries via stop limit."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Enter FIZZ spot via stop limit at muro (2.40-2.42) on daily lateralizzazione breakout. Exit before next muro when price goes dritto per dritto without finta/manico and without testing EMA 60 - both reduce continuation confidence. Multiple muri ahead + low confidence = take profit early. +437 USDT."

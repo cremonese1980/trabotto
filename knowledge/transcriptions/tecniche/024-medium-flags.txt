@@ -1,0 +1,287 @@
+# Low-confidence segments for: 024_51esima_Sfumatura_di_Bud_Tutorial_definitivo_Tecnica_di_Trading.mp3
+# Total flagged: 94
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.442)
+  "Ciao a tutti e adesso siete su Skype in the Bull, la 51esima sfumatura di BAD, sigla."
+
+[0:06-0:24] (confidence: -0.442)
+  "Quindi visto che insomma i BAD sono spettacolari, fantastici e abbiamo fatto il primo BAD dove"
+
+[0:24-0:27] (confidence: -0.442)
+  "spiegava la candela di autodad 10, le due di riposo."
+
+[0:27-0:31] (confidence: -0.234)
+  "Poi abbiamo fatto tutte le sfumature, abbiamo chiamato appunto 50 sfumature,"
+
+[0:31-0:34] (confidence: -0.234)
+  "facciamo la 51esima che in realtà è la raccolta di tutto ma soprattutto"
+
+[0:34-0:39] (confidence: -0.234)
+  "avendovi studiato ed analizzato andiamo ad analizzare dove secondo me sbagliate,"
+
+[0:39-0:44] (confidence: -0.234)
+  "dove invece come sfruttarlo al meglio e qualche caratteristica in più."
+
+[0:44-0:54] (confidence: -0.234)
+  "Ok quindi partiamo da un disegno, facciamo qua con paint, ecco."
+
+[1:42-1:47] (confidence: -0.201)
+  "giganteschi, entraremo precisamente sulla linea, insomma più o meno sulla linea,"
+
+[1:47-1:52] (confidence: -0.201)
+  "anzi precisamente sulla linea, in caso in cui ci fosse un muro leggermente sopra o leggermente"
+
+[1:52-1:58] (confidence: -0.201)
+  "sotto possiamo entrare lì, oppure magari, visto che ha fatto due candelette, magari c'è già un"
+
+[1:58-2:03] (confidence: -0.201)
+  "muro qua che sta tenendo le due candelette, si può fare un anticipo, però insomma questo è il bad"
+
+[2:03-2:09] (confidence: -0.201)
+  "classico, ok, rottura delle EMA 10, due candelette di riposo, eccetera, ok, questo però è una"
+
+[2:58-3:02] (confidence: -0.158)
+  "stato invalidato, quindi non valeva più, in realtà invece questo è sempre un livello trigger,"
+
+[3:02-3:06] (confidence: -0.158)
+  "cioè sempre un livello dove quando il prezzo viene raggiunto è stato stoppato, è stato fermato,"
+
+[3:06-3:13] (confidence: -0.158)
+  "bloccato e ha fatto scendere il prezzo, da quell'umente in poi noi non sappiamo se da lì in poi diamo"
+
+[3:13-3:18] (confidence: -0.158)
+  "fastidio a qualcuno, nel senso che poi dopo qualcuno ha fretta di entrare o qualcuno ha fretta"
+
+[3:18-3:22] (confidence: -0.158)
+  "di chiudere gli stop, ok, noi lo sappiamo solo quando ritorna a raggiungere quel livello lì,"
+
+[4:44-4:52] (confidence: -0.171)
+  "dovrebbe essere quello il nostro guadagno, che deve fare dopo la rottura, non all'interno, ok, proprio"
+
+[4:52-4:56] (confidence: -0.171)
+  "per questo è che non facciamo l'ingresso perché quella è la candella dove avremmo dovuto guadagnarci,"
+
+[4:56-5:05] (confidence: -0.171)
+  "ok, noi avremmo dovuto guadagnarci in questa candella grande che è quella che ci aspettiamo"
+
+[5:05-5:12] (confidence: -0.171)
+  "dopo, quindi se lo fa prima no good, se invece all'interno di questo spazio fa tutte le candelle"
+
+[6:27-6:33] (confidence: -0.15)
+  "un muro, da qua sotto parte, va su dritto per dritto, magari ci arriva, che ne so, al trentesimo"
+
+[6:33-6:39] (confidence: -0.15)
+  "secondo, ci lavora una ventina di secondi e poi verso chiusura candela va a mangiarsi questo livello,"
+
+[6:39-6:45] (confidence: -0.15)
+  "quindi voi dopo entrate al finire del livello, ok, quello è l'unica eccezione che mi potrebbe"
+
+[6:45-6:52] (confidence: -0.15)
+  "convincere di entrare anche su una candela, anche su una candela dritto per dritto, ma deve arrivare"
+
+[6:52-6:59] (confidence: -0.161)
+  "al livello con un muro grande che appunto deve consumarsi poi eventualmente possa entrare, da"
+
+[6:59-7:03] (confidence: -0.161)
+  "lì comunque posso aspettare l'accelerazione perché c'è proprio un muro visibile altrimenti non lo"
+
+[7:03-7:12] (confidence: -0.161)
+  "faccio, non lo vado a rischiare, poi cosa non deve succedere, torniamo indietro, anche nel bad"
+
+[7:12-7:21] (confidence: -0.161)
+  "classico o qualsiasi bad, quando va a far la rottura deve accelerare, se fa così, quindi già"
+
+[8:12-8:17] (confidence: -0.173)
+  "rientra viene stoppato completamente quello che è la fomo, ok? È come se fosse uno schiaffo a"
+
+[8:17-8:24] (confidence: -0.173)
+  "fomo, infatti questo se voi studiate i bad, questo è un ottimo momento per andare short,"
+
+[8:24-8:30] (confidence: -0.173)
+  "un bad che fallisce, cioè che fa una chiusura e poi non accelera è un ottimo momento per andare"
+
+[8:30-8:36] (confidence: -0.173)
+  "short, ricordatevi non c'è bisogno di aspettare l'ema 10, l'ema 5, non c'è bisogno, si può"
+
+[8:36-8:43] (confidence: -0.173)
+  "tranquillamente uscire, non ha funzionato, poi eventualmente lavora giù, poi torna di nuovo il"
+
+[8:43-8:49] (confidence: -0.173)
+  "nostro nuovo livello però è questo, non è più quello vecchio, ed eventualmente possiamo provare"
+
+[8:49-8:53] (confidence: -0.173)
+  "di nuovo, perché? Perché va a testare il nuovo terreno di nuovo e da lì possiamo andare a"
+
+[8:53-8:59] (confidence: -0.173)
+  "sperimentare e vedere se andiamo a toccare qualcuno che ha fretta, ok? E se si inneschia di nuovo il"
+
+[8:59-9:06] (confidence: -0.195)
+  "movimento, ok? Quindi per adesso vediamo se riusciamo a tirare fuori qualche esempio, ok?"
+
+[9:06-9:13] (confidence: -0.195)
+  "Nel frattempo facciamolo girare bene, ok? Quindi stamattina su Vib ho visto i famosi bad nel bad"
+
+[9:13-9:20] (confidence: -0.195)
+  "nel bad, poi vi faccio studiare e vi faccio spiegare, allora questo sarebbe un livello bad,"
+
+[9:20-9:24] (confidence: -0.195)
+  "quindi nelle sfumature, ok? Quindi è semplicemente un livello alto che ha fatto, ok? Un livello di"
+
+[10:47-10:51] (confidence: -0.155)
+  "è un esempio di bad nel bad nel bad, ma di cui noi non dobbiamo fare nessun tipo di ingresso,"
+
+[10:51-10:57] (confidence: -0.155)
+  "perché non ci ha dato la possibilità di poterlo fare, quindi l'ideale sarebbe stato al terzo bad"
+
+[10:57-11:02] (confidence: -0.155)
+  "più basso qua, anche solo un'altra candelletta piccola, e poi la rottura era ottima perché poi"
+
+[11:02-11:06] (confidence: -0.155)
+  "dopo avremmo avuto il trigger di questo bad, il trigger di quest'altro bad e poi dopo il guadagno"
+
+[11:06-11:11] (confidence: -0.155)
+  "dopo, ok? E poi l'uscita, invece in questo caso no good perché è andato solo poi dritto per"
+
+[11:11-11:18] (confidence: -0.227)
+  "dritto, e questo sarebbe stato il nostro guadagno, che non possiamo pensare che continui"
+
+[11:18-11:22] (confidence: -0.227)
+  "poi all'infinito, quindi ha già tre candelle, ma anche se è stato una sola candella non si fa"
+
+[11:22-11:29] (confidence: -0.227)
+  "l'ingresso, ok? Quindi questo è un esempio no good, un altro esempio no good è questo, per esempio,"
+
+[11:29-11:36] (confidence: -0.227)
+  "fatto sul livello bad, siamo comunque sotto l'ema 60 e sulla 200.3, quindi in un contesto molto"
+
+[12:02-12:08] (confidence: -0.177)
+  "primo bad, comunque è bello come esempio, quindi questo è un bad dove magari si può andare a"
+
+[12:08-12:14] (confidence: -0.177)
+  "testarmi, abbiamo subito la 60 lì, ma questo è un bel esempio di quando appunto non ha funzionato,"
+
+[12:14-12:18] (confidence: -0.177)
+  "quindi praticamente nonostante sia rimasto sempre sopra la 10, quindi ci piace, si fa tutte le"
+
+[12:18-12:23] (confidence: -0.177)
+  "candeline sempre sopra la 10, questo ci piace molto, in un contesto normale, quindi magari"
+
+[12:23-12:28] (confidence: -0.177)
+  "senza l'ema 60 lì fossimo stati vicini ai massimi di giornata sarebbe stato veramente fantastico,"
+
+[18:12-18:17] (confidence: -0.184)
+  "giornata e tante candeline con l'ema 10 che comanda ragazzi è fantastico, questo è veramente"
+
+[18:17-18:24] (confidence: -0.184)
+  "fantastico, è l'ideale, candelline, ema 10 che comanda, tante, quindi diventa un bad to the moon,"
+
+[18:24-18:29] (confidence: -0.184)
+  "bad to the moon bastano 4 candelline piccole, qua sono tantissime, ema 10 che comanda sui massimi,"
+
+[18:29-18:34] (confidence: -0.184)
+  "ragazzi questo è un calcio di rigore, prima candela comunque strappato, non è più tornato"
+
+[18:34-18:39] (confidence: -0.184)
+  "dentro, nuovi massimi, si sono usciti poi presto, ho fatto l'1.82, guardate dopo, dopo ho fatto la"
+
+[18:39-18:46] (confidence: -0.165)
+  "candelona, comunque va bene, quindi il bad come struttura, come tecnica, come ragionamento,"
+
+[18:46-18:55] (confidence: -0.165)
+  "è già di suo qualcosa di trigger, se poi si aggiunge che toccherà anche i nuovi massimi che"
+
+[18:55-19:00] (confidence: -0.165)
+  "è un trigger anche quello, si sommono le cose, se poi sommiamo appunto che abbiamo anche l'ema 10"
+
+[19:00-19:06] (confidence: -0.165)
+  "a nostro favore che dimostra di voler comandare, è stato testato, fatto finta più volte, il livello"
+
+[19:30-19:38] (confidence: -0.148)
+  "assoluto, quello è quello che funziona di più, ok? Questo è un altro caso, qua siamo sempre sui"
+
+[19:38-19:49] (confidence: -0.148)
+  "massimi di giornata, e abbiamo avuto un livello, ha ragionato, ha fatto più di 4 candelle quindi"
+
+[19:49-19:54] (confidence: -0.148)
+  "stiamo parlando di un bad to the moon, l'ema 10 ha comandato, qua ha fatto una chiusura ma è vicinissimo,"
+
+[19:54-19:59] (confidence: -0.148)
+  "quindi l'ema 10 in comando, nuovi massimi, ragazzi, ha fatto la chiusura accelerato, non ha fatto il"
+
+[20:26-20:30] (confidence: -0.184)
+  "anche in questo contesto qua, sempre saluto discorso, ema 10 che comanda, bad to the moon perché sono"
+
+[20:30-20:37] (confidence: -0.184)
+  "più di 4 candelle, qua è come se fosse poi un bad nel bad, ok? Quindi primo livello bad, un altro"
+
+[20:37-20:43] (confidence: -0.184)
+  "livello di un massimo all'interno del bad, due candelle di riposo, quindi abbiamo all'interno un bad"
+
+[20:43-20:50] (confidence: -0.184)
+  "prima del bad, io ho fatto l'ingresso infatti nel bad prima del bad e poi dopo ho tenuto i massimi"
+
+[20:50-20:56] (confidence: -0.184)
+  "di giornata come secondo trigger, poi non ha fatto mega accelerazione quindi sono uscito, ok? Però"
+
+[20:56-21:03] (confidence: -0.184)
+  "anche qua è fantastico, quindi un bad to the moon o un bad nel bad prima dei massimi è un altro contesto"
+
+[21:03-21:09] (confidence: -0.184)
+  "dove ci piace andarlo a cercare, quindi capite che i bad bisogna saperli anche andare a cercare, ok?"
+
+[21:09-21:15] (confidence: -0.184)
+  "Matematicamente quindi come percentuali questo è quello che funziona maggiormente, è il momento"
+
+[21:15-21:20] (confidence: -0.184)
+  "migliore per andarle a cercare, qua un altro bad to the moon non solo comanda la 10 ma comanda"
+
+[21:47-21:52] (confidence: -0.186)
+  "book, sì è vero si poteva anticipare ma comunque se io vedo un livello grande nel book aspetto"
+
+[21:52-21:58] (confidence: -0.186)
+  "quella rottura, ho aspettato il muro e poi fatto la mia accelerazione, ok? E ha fatto addirittura un"
+
+[21:58-22:04] (confidence: -0.186)
+  "3%, ovviamente qua era molto esteso quindi prima candela verde a favore sono uscito subito, ok?"
+
+[22:04-22:13] (confidence: -0.186)
+  "perché era già molto esteso, quindi calcoliamo anche questo tipo di estensione. Un altro esempio,"
+
+[22:39-22:46] (confidence: -0.208)
+  "sempre, ok? Anche qua, uguale, queste conformazioni valgono in tutti i mercati, sul forex, azionario,"
+
+[22:46-22:51] (confidence: -0.208)
+  "qualsiasi, ho provato su tutto e funziona su tutto ragazzi, è proprio la filosofia dietro che è"
+
+[22:51-22:58] (confidence: -0.208)
+  "fantastico, ok? Quindi un bud, qui non sono stato fillato quindi dopo ho fatto l'ingresso sui massimi,"
+
+[22:58-23:04] (confidence: -0.208)
+  "ma comunque anche qua è uguale, vedete? Le MA10 che comanda ha fatto un massimo, deve riposare al"
+
+[23:04-23:09] (confidence: -0.153)
+  "meno due candele, ha fatto il to the moon quindi almeno 4, la rottura, faccio l'ingresso, questa"
+
+[23:09-23:14] (confidence: -0.153)
+  "candela ha sporcato ma nel caso in cui avesse fatto chiusura sotto doveva uscire soprattutto se ci"
+
+[23:14-23:19] (confidence: -0.153)
+  "troviamo verso chiusura candela quindi verso il quarantesimo secondo della candela non si deve"
+
+[23:19-23:25] (confidence: -0.153)
+  "trovare attaccato al nostro ingresso, nel caso possiamo già uscire senza aspettare il rosso, ok?"
+
+[23:25-23:31] (confidence: -0.153)
+  "Quindi se la seconda candela, quindi quello di rottura, al quarantesimo secondo ci troviamo vicini"
+
+[27:58-28:02] (confidence: -0.301)
+  "a youtube, mettete tanti like, commentate se avete problemi, eventualmente ne parliamo a casa bull,"
+
+[28:02-28:11] (confidence: -0.301)
+  "tutti i lunedì ore 19, iscrivetevi quindi a youtube, due canali telegram, discord, twitch,"
+
+[28:11-28:14] (confidence: -0.301)
+  "instagram, ciao ragazzi!"
+

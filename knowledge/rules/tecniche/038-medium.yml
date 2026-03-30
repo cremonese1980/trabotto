@@ -1,0 +1,111 @@
+video:
+  id: BULL_T_038
+  series: tecniche
+  title: "Segnali Cavallino e ATH500 - Nuovo in classifica e all-time-high 500 giorni"
+  video_index: 38
+  duration_minutes: 11
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_38_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [bomba, breakout, trigger]
+    source:
+      timecode: "01:13-04:05"
+    conditions:
+      - new_coin_enters_top5_daily_ranking == true
+      - ranking_start_from_daily_candle_change == true
+      - time_after_0400_utc == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il segnale cavallino avverte quando una coppia nuova entra nei primi 5 della classifica giornaliera, potenziale cavallo pazzo del giorno."
+    notes: "Non si entra appena arriva il segnale. Si aspetta conformazione: terzo tocco, lateralizzazione, bud. Funziona come bomba evoluta che non richiede candela sopra il 2%."
+
+  - id: BULL_T_38_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bomba, terzo_tocco, candelina, trigger]
+    source:
+      timecode: "04:34-06:09"
+    conditions:
+      - cavallino_signal == true
+      - terzo_tocco_or_lateralizzazione_or_bud == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Dopo il segnale cavallino, la prima conformazione valida (terzo tocco, bud, lateralizzazione) e' il momento dell'ingresso."
+    notes: "Esempio KNC: segnalato alle 8:34, primo ingresso su terzo tocco 1-2-3. Se EMA 10 viene rotta, uscita e nuovo ingresso su successivo terzo tocco."
+
+  - id: BULL_T_38_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [all_time_high, daily, trigger]
+    source:
+      timecode: "06:41-08:02"
+    conditions:
+      - price_approaching_all_time_high_500_days == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Il segnale ATH500 avverte prima che il prezzo raggiunga l'all-time-high degli ultimi 500 giorni, livello trigger importantissimo."
+    notes: "Il segnale arriva prima del raggiungimento, non quando lo tocca. Alla rottura dell'ATH500 il prezzo esplode (esempio KNC da 4.5 a 4.8 alla rottura)."
+
+  - id: BULL_T_38_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [all_time_high, breakout, trigger]
+    source:
+      timecode: "07:54-08:02"
+    conditions:
+      - ath500_signal == true
+      - price_breaks_above_ath500_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "Alla rottura dell'all-time-high degli ultimi 500 giorni il prezzo accelera fortemente."
+    notes: "ATH500 copre quasi 2 anni di storico. Non serve che sia ATH di 10 anni, basta l'ultimo anno e mezzo."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_38_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "08:29-09:27"
+    statement: "Per fare soldi bisogna essere rilassati: con l'ansia si perdono soldi. Il sistema di segnali serve a non dover impazzire con 500 schermi."
+    rationale: "Lo stress e l'ansia portano a ingressi forzati. I segnali automatici riducono la necessita' di monitoraggio continuo."
+
+  - id: BULL_T_38_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bomba, trigger]
+    source:
+      timecode: "06:09-06:21"
+    statement: "Su ogni segnale del bullbot non si entra appena arriva ma si aspetta sempre una conformazione: terzo tocco, lateralizzazione, bud o equivalente."
+    rationale: "Il segnale indica l'opportunita', la conformazione indica il timing dell'ingresso."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Due nuovi segnali: Cavallino (coppia che entra nei top 5 della classifica giornaliera, potenziale cavallo pazzo) e ATH500 (prezzo vicino all'all-time-high degli ultimi 500 giorni). Entrambi richiedono conformazione prima dell'ingresso."

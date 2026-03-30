@@ -1,0 +1,156 @@
+video:
+  id: BULL_LTCA_01
+  series: live-trade-con-analisi
+  title: "4 trade in analisi tecnica: RLC long, ETH short x2, EOS stop"
+  video_index: 1
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LTCA_01_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, breakout, retest, trigger]
+    source:
+      timecode: "00:06-01:05"
+    conditions:
+      - "daily_lateralization_days >= 5"
+      - "daily_breakout_occurred == true"
+      - "price_retesting_previous_day_spike_high == true"
+      - "retest_finding_support == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, daily]
+      market_regime: []
+    rationale: "Dopo 5 giorni di lateralizzazione nel daily seguiti da un'esplosione, il secondo giorno che ritesta il massimo dello spike del giorno prima e trova supporto e un momento molto cruciale per entrare long."
+    notes: "Esempio RLC: il daily mostrava 5 giorni laterali poi esplosione. Al retest dello spike del giorno prima, il prezzo trovava supporto. Bull guarda sempre daily e 30m prima di scendere a 1m per l'entry."
+
+  - id: BULL_LTCA_01_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, trend, retest]
+    source:
+      timecode: "03:49-04:16"
+    conditions:
+      - "price_above_ema60 == true"
+      - "ema60_tested_twice == true"
+      - "ema60_held_as_support == true"
+      - "price_fails_new_highs == true"
+      - "price_breaks_below_ema60 == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il prezzo testa la EMA 60 due volte come supporto, rimbalza ma non fa nuovi massimi, e poi rompe sotto la 60, e un segnale short con lo stop sopra la 60 (vicinissimo)."
+    notes: "Esempio ETH: la 60 ha tenuto perfettamente due volte, poi il prezzo ha fatto la finta (nuovi massimi) ed e tornato giu. Lo short e entrato appena rotto sotto i minimi degli spike precedenti. La 60 su crypto e perfezione, meglio della 50."
+
+  - id: BULL_LTCA_01_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [stop_loss, risk_management, scalping]
+    source:
+      timecode: "04:43-05:16"
+    conditions:
+      - "position_open == true"
+      - "trade_moving_in_favor == true"
+      - "new_extreme_formed == true"
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Lo stop va spostato progressivamente: all'inizio in un punto che abbia senso (sopra la candela di ingresso e la EMA), poi vicinato quando il trade conferma facendo nuovi minimi/massimi."
+    notes: "Esempio: stop iniziale sopra la candela e la EMA 60, poi spostato sopra la candela che ha fatto nuovi minimi. Il principio: inizialmente piu distante (perderesti di piu), poi sempre meno man mano che il trade da ragione."
+
+  - id: BULL_LTCA_01_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema60, trend, terzo_tocco]
+    source:
+      timecode: "07:02-08:20"
+    conditions:
+      - "ema60_tested_count >= 3"
+      - "price_same_level_three_times == true"
+      - "triple_confirmation == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "La tripla conferma (3 volte allo stesso prezzo di traverso) e sempre fantastica: se il prezzo torna 3 volte sulla EMA 60 senza riuscire a superarla, prima o poi scende."
+    notes: "Secondo short su ETH: meno distanza di corsa rispetto al primo trade (setup meno bello sotto quell'aspetto), ma la tripla conferma compensa. Quando hai la tripla conferma e sempre fantastico."
+
+  - id: BULL_LTCA_01_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, scalping, risk_management]
+    source:
+      timecode: "05:55-06:49"
+    conditions:
+      - "position_short == true"
+      - "spike_expected_at_new_lows == true"
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Mettere un limit order al prezzo ideale di uscita per catturare lo spike: quando il prezzo fa nuovi minimi spikea sempre, e con l'ordine limit si spende meta delle fee su Binance."
+    notes: "Inserire il prezzo ideale con un limit order; se lo spike lo raggiunge, viene eseguito automaticamente. Se non lo raggiunge per un pelo, si puo tenere o spostare. Il limit su Binance dimezza le fee rispetto al market order."
+
+  - id: BULL_LTCA_01_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema5, ema10, scalping, trend]
+    source:
+      timecode: "02:27-03:01"
+    conditions:
+      - "conviction_level == HIGH"
+      - "daily_setup_supports_direction == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando la convinzione e forte (setup daily convincente), si puo tollerare oltre la EMA 5 e aspettare la rottura della EMA 10 come stop; quando la convinzione e debole, si chiude ai primi spike (1-2-3 spike e fuori)."
+    notes: "Esempio RLC: convinzione alta dal daily → tolleranza fino a EMA 10. In altri trade, convinzione bassa → spike 1, spike 2, spike 3 al massimo e fuori. La EMA 5 e lo stop per i trade veloci, la 10 per quelli con piu convinzione."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LTCA_01_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, stop_loss, beginner]
+    source:
+      timecode: "10:52-12:37"
+    statement: "Imparate a mettere lo stop in un punto che abbia senso: sopra la candela di ingresso e sopra la EMA di riferimento. Lo stop forzato e fantastico perche taglia le perdite anche quando col dito ci arrivi tardi. Le perdite devono essere sempre piu piccole dei guadagni."
+    rationale: "La gestione dello stop e il fondamento della profittabilita: lo stop ben posizionato limita le perdite a cifre gestibili ($67 in questo caso) mentre i guadagni sono multipli ($329, $281, $836)."
+
+  - id: BULL_LTCA_01_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, ema60, beginner]
+    source:
+      timecode: "04:04-04:16"
+    statement: "La EMA 60 su crypto e perfezione: quando viene chiesto perche usa la 60 e non la 50, Bull mostra che la 60 testa perfettamente sui grafici crypto."
+    rationale: "La scelta della 60 al posto della 50 per il mercato crypto e basata sull'osservazione empirica della precisione del rimbalzo."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "Quattro trade reali mostrano il workflow: daily per la direzione, 1m per l'entry. La EMA 60 su crypto e il riferimento chiave per short (doppio/triplo test come conferma). Lo stop va sempre in un punto con senso tecnico e spostato progressivamente. Limit order per catturare gli spike risparmiando fee."

@@ -1,0 +1,215 @@
+# Low-confidence segments for: 002_Come_si_muove_il_prezzo_nel_Trading_Playlist_per_Neofiti.mp3
+# Total flagged: 70
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.449)
+  "Ciao tra i video, siamo sul Scarpe in a Bull, secondo video per la playlist per neofiti"
+
+[0:05-0:11] (confidence: -0.449)
+  "allora siamo rimasti qua, sell 150, siamo andati alle scarpe, buy 100"
+
+[0:11-0:16] (confidence: -0.449)
+  "ovviamente questa se resti tu un po' orientale, è andata al mercato ha"
+
+[0:16-0:20] (confidence: -0.449)
+  "comprato le scarpe a 100 e ha trovato questo giovane che ha detto wow io li ho"
+
+[0:20-0:26] (confidence: -0.449)
+  "visti nel mio paese che costavano 300, 150 le compro, lei ci guadagna 50 e lui è"
+
+[0:26-0:30] (confidence: -0.296)
+  "felice ok questo è un po' il concetto del compro e vendere, ok?"
+
+[0:30-0:35] (confidence: -0.296)
+  "ai mercati è così poi c'è anche lo short selling, hai sentito parlare di short selling?"
+
+[0:35-0:40] (confidence: -0.296)
+  "esattamente questo ci piace perché non sai nulla e ci arriveremo piano piano"
+
+[0:40-0:45] (confidence: -0.296)
+  "ragazzi non dovete avere fretta prima facciamo la parte teorica poi piano piano"
+
+[0:45-0:52] (confidence: -0.296)
+  "con gli esempi, quando è che arriva il cash? mai! no arriva con calma ma piano piano"
+
+[0:52-0:58] (confidence: -0.263)
+  "non avete fretta non schippate questi video, allora andiamo avanti"
+
+[0:58-1:01] (confidence: -0.263)
+  "ecco ancora teoria mi sto facendo aiutar da Gemini ma avete già visto la prima"
+
+[1:01-1:06] (confidence: -0.263)
+  "puntata quindi non mi sto a ripetere, vogliamo rileggere perché Scarp in a Bull è numero 1?"
+
+[1:06-1:12] (confidence: -0.263)
+  "ok allora ottimo se il primo step era capire cosa stiamo facendo, comprare e"
+
+[1:12-1:17] (confidence: -0.263)
+  "vendere, il secondo step è capire perché e come il prezzo si muove, questo è"
+
+[1:17-1:23] (confidence: -0.183)
+  "fondamentale perché perché se il prezzo non si muove ragazzi io non esisto non"
+
+[1:23-1:28] (confidence: -0.183)
+  "esisterebbe nessun trader, non esisterebbe nessun scalper quindi se i mercati"
+
+[1:28-1:34] (confidence: -0.183)
+  "crollano per noi fantastico se il mercato esplode fantastico se tutti i titoli sul"
+
+[1:34-1:40] (confidence: -0.183)
+  "mercato non si muovesse come potrei guadagnarci? niente sarei morto che non"
+
+[1:40-1:44] (confidence: -0.183)
+  "esisterei e in quel caso avrebbe ragione Emerick di milano finanze dove lo"
+
+[1:44-1:48] (confidence: -0.196)
+  "Scarp non esiste ma invece si muovono e quindi se si muovono ci sono delle"
+
+[1:48-1:55] (confidence: -0.196)
+  "conformazioni, le conformazioni vanno a sgamare il trend quindi dove in realtà i"
+
+[1:55-1:58] (confidence: -0.196)
+  "soldi si stanno realmente muovendo e noi seguiamo quelle cose lì perché io non"
+
+[1:58-2:03] (confidence: -0.196)
+  "conto nulla ok anche se mi chiamo mi chiamo no bull ma io non conto nulla"
+
+[2:03-2:07] (confidence: -0.196)
+  "sul mercato, zero assoluto, più avanti capirai meglio ok non mi voglio far"
+
+[2:07-2:12] (confidence: -0.196)
+  "rendere più difficile questa cosa già di più di quel che è, bene quindi perché"
+
+[2:38-2:45] (confidence: -0.264)
+  "come gioco ad azzardo e dicono addirittura che se uno guadagna poi chi"
+
+[2:45-2:50] (confidence: -0.264)
+  "non capisce nulla di trading dice vince se uno vince c'è qualcun altro che perde"
+
+[2:50-2:56] (confidence: -0.264)
+  "ok sentirei molto questo se frequenti fu faguro vedi le cose hanno un po questa"
+
+[2:56-3:00] (confidence: -0.264)
+  "diceria cioè chi non riesce a fare trading dice sempre sì ma se tu guadagno"
+
+[3:00-3:07] (confidence: -0.264)
+  "dici che qualcun altro sta perdendo questo accade invece nel quel giocacarte"
+
+[5:02-5:07] (confidence: -0.227)
+  "assolutamente un gioco d'azzardo che non è bianco rosso non è verde nero non è"
+
+[5:07-5:12] (confidence: -0.227)
+  "blackjack non è nulla di questo per questo che ci sono le tecniche per il"
+
+[5:12-5:16] (confidence: -0.227)
+  "tuo video questo capitolo si chiamano il motore del mercato non lo chiamerò"
+
+[5:16-5:21] (confidence: -0.227)
+  "assolutamente mercato mercato gemini qua ha fatto civecca però va bene chi muove"
+
+[5:21-5:28] (confidence: -0.227)
+  "i fili ecco i tre concetti fondamentali da spiegare a un neofita 1 la lotta tra"
+
+[5:28-5:33] (confidence: -0.244)
+  "tori orsi io odio questi concetti tori di giuro che io odio sta cosa anche se"
+
+[5:33-5:37] (confidence: -0.244)
+  "ho girato molti capitali dove ci sono appunto il toro davanti alcune anche"
+
+[5:37-5:42] (confidence: -0.244)
+  "anche l'orso domanda offerta nel trading non esistono i grafici sono"
+
+[5:42-5:47] (confidence: -0.244)
+  "semplicemente compratori venditori i tori vengono chiamati chi compra gli orsi"
+
+[5:47-5:52] (confidence: -0.244)
+  "chi vende io amo tutte e due questi animali perché io amo anche guadagnare"
+
+[5:52-5:58] (confidence: -0.185)
+  "a ribasso schema short selling però non chiamo né tori né orsi insomma nel"
+
+[5:58-6:03] (confidence: -0.185)
+  "trading non esistono i grafici esistono le persone esistono ovviamente i grafici"
+
+[6:03-6:07] (confidence: -0.185)
+  "ma dietro quel grafico c'è un movimento di prezzo chi è che sta comprando e"
+
+[6:07-6:12] (confidence: -0.185)
+  "vendendo un toro o un orso no una persona che poi questa persona può essere"
+
+[6:12-6:17] (confidence: -0.185)
+  "un fondo quindi dietro di lui ci sono tanti soldi di tanti investitori può"
+
+[6:17-6:20] (confidence: -0.185)
+  "essere un edge found che è la stessa cosa può essere un privato che da casa o"
+
+[6:20-6:25] (confidence: -0.138)
+  "col cellulare semplicemente clicca e entra ok ma è sempre sono sempre persone"
+
+[6:25-6:30] (confidence: -0.138)
+  "poi la persona può programmare un software per comprare e vendere mai"
+
+[6:30-6:34] (confidence: -0.138)
+  "sempre c'è dietro sempre una persona che non c'è un orso non c'è un toro non c'è"
+
+[6:34-6:39] (confidence: -0.138)
+  "solo solo il programma non c'è solo il computer c'è comunque la persona che"
+
+[6:39-6:45] (confidence: -0.138)
+  "comanda la situazione se il prezzo si muove solo perché c'è un prezzo non se"
+
+[6:45-6:49] (confidence: -0.138)
+  "il prezzo si muove solo perché c'è uno squilibrio qua sono assolutamente"
+
+[8:38-8:44] (confidence: -0.138)
+  "salirà ecco semplicemente sono persone che comprono pensando che ci saranno più"
+
+[8:44-8:50] (confidence: -0.138)
+  "compratori basta un solo compratore in più il prezzo salirà al contrario gli"
+
+[8:50-8:55] (confidence: -0.138)
+  "orsi bears spingono il prezzo verso il basso zampata dall'alto verso il basso"
+
+[8:55-9:00] (confidence: -0.138)
+  "vendono perché pensano che il prezzo scenderà il concetto per il video"
+
+[9:00-9:06] (confidence: -0.138)
+  "quando vedi un prezzo che sale vertiginosamente non è magia è solo che"
+
+[10:26-10:34] (confidence: -0.222)
+  "cassa dentro negozio dove realmente arrivi lì metti i soldi ti dà lo scontrino quindi vedi"
+
+[10:34-10:39] (confidence: -0.222)
+  "realmente il prezzo perché cosa può succedere che tu magari vedi il prezzo sulla sull'etichetta"
+
+[10:39-10:45] (confidence: -0.222)
+  "compri una cosa c'è scritto costava 360 e 60 vai la cassa diciamo scusi ci siamo sbagliati"
+
+[10:45-10:51] (confidence: -0.222)
+  "non è 60 era 70 ok il momento reale del prezzo reale lo trovi la cassa ecco nel mercato finanziario"
+
+[13:01-13:08] (confidence: -0.217)
+  "o di un progetto o di un progetto cripto esempio bitcoin è scarso ci sono solo 21 milioni di pezzi"
+
+[13:08-13:14] (confidence: -0.217)
+  "quindi il valore salirà nel tempo guarda le notizie l'adozione la tecnologia vabbè sulla"
+
+[13:14-13:19] (confidence: -0.217)
+  "scarsità e so qua non c'è bisogno di parlare di sta roba qua però effettivamente c'è anche la"
+
+[13:19-13:25] (confidence: -0.217)
+  "possibilità di studiare di che cosa stiamo parlando cioè stiamo parlando non so di un"
+
+[20:21-20:27] (confidence: -0.2)
+  "che non ho capito se tu hai capito, scrivete nei commenti se avete capito perché questo è il"
+
+[20:27-20:33] (confidence: -0.2)
+  "secondo video che finisce dopo 20 minuti anche in questo video scrivetemi perché dopo andiamo"
+
+[20:33-20:38] (confidence: -0.2)
+  "avanti un passo alla volta ma è importantissimo già capire questo primo concetto della candela"
+
+[20:38-20:46] (confidence: -0.2)
+  "e iniziate a masticare quelle che sono le tecniche è un fascino incredibile ragazzi io impazzisco"
+

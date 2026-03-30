@@ -1,0 +1,305 @@
+0:00 Ciao trader, siete su Scopinabull.
+0:02 Allora questa è un'analisi di un live trade, però come vedete c'è già qualcosa di strano,
+0:07 ho il doppio book, quindi vi spiegherò praticamente come è andato il trade, ma nel frattempo
+0:11 vi spiego come usare il doppio book, il perché sto usando il doppio book, ma soprattutto
+0:16 come sfruttare boost con questa nuova modalità.
+0:20 Ho scoperto una cosa molto molto molto interessante che ci fa risparmiare, è un metodo molto
+0:27 molto furbo per poter sfruttare i boost dove abbiamo appunto gli eseguiti gratis nel caso
+0:36 in cui entra nel book.
+0:37 Quindi andiamo a vedere che cosa succede, ok?
+0:39 Perché non lo utilizzavamo e vediamo.
+0:42 Allora qua siamo su HRO, poi questo video lo vado a mettere nelle video delle tecniche
+0:47 di trading, ok?
+0:48 Perché in realtà questo è un trade, ma questa è una nuova tecnica.
+0:53 Quindi, usare due book e usare i boost, perché vedrete che è un bel vantaggio, quindi lo
+0:59 vado a mettere nelle tecniche.
+1:01 Allora, qua ho il book in USDT, ok?
+1:09 Perché il book dell'USDT è dove ci sono i più volumi, quindi è il book che comanda
+1:16 in assoluto ovunque.
+1:18 Quindi quando tu sei su Binance, tu hai a che fare con il book che sta dominando tutto
+1:25 il mercato cripto.
+1:26 Quindi quello che accade nel nostro book su Binance è quello che di conseguenza poi accaderà
+1:31 in tutti gli altri book che ci sono, ok?
+1:33 Gli altri scimmiottono, copiono, diciamo, quello che accade qua.
+1:37 Questo è un ragionamento molto importante.
+1:39 Perché accade questo?
+1:40 Perché praticamente vanno a fixare, vanno in automatico ad aggiustarsi, ad adeguarsi
+1:46 a quello che è il book per eccellenza, quello con più volumi, ok?
+1:49 E accade su Binance.
+1:50 Se un giorno FTX o qualcun altro avrà più volumi di Binance, noi ci sposteremo lì.
+1:56 Ma per adesso c'è la Binance e quindi comanda Binance, quindi noi stiamo qua.
+2:01 Con questo tipo di ragionamento, cosa accade?
+2:04 Che anche se voi lavorate su Futures, dove il book fa veramente schifo, vi conviene sempre
+2:09 comunque avere il book di Binance in spot aperto.
+2:12 Quindi anche se usate, non so, Bybit, usate FTX, qualche è, volete saper realmente quel
+2:16 che sta accadendo nel book, quindi dovete innanzitutto saper leggere il book.
+2:19 Se non sapete leggere il book, potete chiudere direttamente il video e tornate su Facebook
+2:24 a guardare FufaGuru.
+2:26 Se invece siete qua, vuol dire che il book, insomma, vi affascina, volete avere questo
+2:30 vantaggio, ma non ha nessun senso saper leggere il book se poi dopo avete un book fittizio,
+2:35 ok?
+2:36 Quindi anche se operate con altre piattaforme, anche se operate su Futures, il book in spot
+2:43 vi serve, ok?
+2:44 E capirete quant'è importante.
+2:46 Detto ciò, potete operare su qualsiasi altra cosa.
+2:48 Quindi potete avere il book di Binance senza dover avere soldi su Binance, non c'è bisogno
+2:54 di aver soldi su Binance o pagare un abbonamento per avere il book di spot.
+2:57 Spot è tutto l'intero mercato, ok?
+3:00 Quindi avete qualsiasi cosa che hai quotato.
+3:02 E poi dopo operare con quel che volete.
+3:04 In questo caso ho fatto lo stesso ragionamento.
+3:06 Sono sempre su Binance, ma qua potreste essere su qualsiasi altra cosa, sia su Futures che
+3:11 su un'altra piattaforma.
+3:12 E qua avete il vostro book che vedrete che è diverso, ok?
+3:17 Sia per volumi, guardate qua, qua ci sono gli stessi livelli, anzi sono un po' diversi,
+3:22 vedi 7.3 qua 7.4, ma soprattutto le quantità, ok?
+3:24 Questo è 253 boost, quindi 253 dollari.
+3:32 Qua invece ci sono 5000, guardate la differenza.
+3:34 Quattro, qua abbiamo 5000 e qua abbiamo 800 dollari.
+3:39 A 7.5 abbiamo 223 dollari, qua abbiamo 4300.
+3:43 Cioè capite che io qua con una size di 10.000 non potrei mai operare.
+3:48 Come faccio ad operare qua?
+3:50 Con una size di 10.000, ok?
+3:53 E' praticamente impossibile.
+3:55 E invece, e invece si può, ok?
+3:58 Queste sono le operazioni passate.
+4:00 E invece si può, vi spiego una tecnica bellissima, perché il ragionamento è proprio questo,
+4:04 perché questo è quello che comanda, di conseguenza tutto il resto si adegua.
+4:09 Cosa significa?
+4:11 Che se io sono nel buco, anche con una quantità molto più grande, voglio comprare 10.000
+4:17 boost a 0.455, ma io non ho 10.000, io lo riesco a fare anche senza usare l'iceberg.
+4:24 E qua farei fatica.
+4:27 Qua con 10.000 non ce la farei, perché il muro è a 54, quindi finito questo io avrei
+4:33 solo 800 dollari, e qua ne avrei 300.
+4:36 Eppure io qua riuscirei a comprare 10.000 e qua invece non riuscirei a comprare 10.000.
+4:41 Andiamo a vedere perché, ve lo spiego piano piano, ok?
+4:44 Un pezzo alla volta, capirete quel che ho scoperto.
+4:47 Quindi, in pratica qua sono andato a comprare, ok?
+4:52 Subito.
+4:53 Qua avevo messo 4.55, vedete che io qua ho 1.000 più 300, quindi 10.000, qua non dovrebbe
+5:00 rimanere 8.000 e 5, ok?
+5:02 8.6 e 50 dovrebbe rimanere.
+5:05 Se fossi qua invece, che qua c'era il livello a 5 e 4, comunque non avrei avuto l'eseguito
+5:11 intero, ok?
+5:12 Ma cosa accade?
+5:13 Vediamo se io riesco a averlo eseguito.
+5:15 Mettiamo play così va in tempo reale.
+5:18 Cliccato.
+5:19 Metto pausa.
+5:22 Guarda che roba.
+5:26 Io ho l'eseguito subito.
+5:29 Cioè, se io fossi stato su boost, su USDT e avessi comprato a questo livello, non avrei
+5:39 avuto l'eseguito totale.
+5:40 Qua invece l'ho avuto subito totale eppure c'è molto meno quantità.
+5:46 Come mai?
+5:47 Perché si adegua a quello che accade qua.
+5:48 Ok?
+5:49 Vi faccio capire.
+5:50 Io sto per comprare 9.000 boost, ok?
+5:55 9.000.
+5:56 Massimo che voglio spendere, quindi è un compra limite, è 0.455.
+6:02 0.455 io ho 1.000 più 340.2.
+6:04 Eppure, guarda cosa succede.
+6:06 Appena, non rimane neanche nel book.
+6:08 Appena clicco ho subito l'eseguito.
+6:10 Vedete?
+6:11 Non rimane neanche la linea qua.
+6:13 Vengo subito eseguito.
+6:15 Vedi?
+6:16 Ce l'ho già immediatamente.
+6:17 E qua rimane ancora.
+6:18 Pazzesco questo, eh?
+6:22 Quindi qua vediamo effettivamente quelli che sono dei prezzi in vendita, ma sono, delle
+6:26 volte trovi dei muri anche più grandi di quelli che ci sono qua.
+6:29 Ma spesso è proprio così.
+6:31 Vedrete che c'è proprio delle robe da 20 euro, cioè delle robe da 45, da 12.
+6:35 Cioè io qua potrei mai, e tra i 11.000, non riuscire a ragionare per i livelli del book.
+6:39 Ma invece comanda questo.
+6:41 Quindi io sfrutto il gap che c'è.
+6:43 Quindi io quando ho cliccato qua c'era il 4.55 e quindi qua mi ha dato l'eseguito
+6:48 perché c'era in questo book qua.
+6:51 A prescindere indipendentemente dalla quantità che c'era qua.
+6:54 Io addirittura avrei potuto comprare neanche 15.000, forse anche 20.000.
+6:56 E mi avrebbe dato lo stesso l'eseguito.
+6:58 Perché questo, tutti gli altri devono copiare quello che accade qua.
+7:03 Ok?
+7:04 Quindi se il prezzo, se io avessi comprato a mercato invece avrei distrutto il book e
+7:10 questo avrebbe fatto uno spike tipo questo.
+7:12 Avrebbe fatto uno spikeone.
+7:14 Ma sarebbe stato un Pierla perché bastava inserire l'ordine a limite e sarebbe stato
+7:19 eseguito ugualmente.
+7:21 Ok?
+7:21 Quindi se sei un Pierla e lavori a mercato mi ne ha eseguito malissimo a distruggere
+7:25 il book ma tanto poi torni indietro perché si deve riassestare a quello che troviamo
+7:29 qua.
+7:30 Se invece sei intelligente tu metti il prezzo che tu vedi qua, compri al livello che tu
+7:34 vedi qua, te ne freghi quanto leggi e tanto ti dà l'eseguito lo stesso e in più paghi
+7:39 gratis perché il prezzo è entrato nel book.
+7:42 È il colpo.
+7:44 Qua pagherei e non avrei avuto l'eseguito.
+7:46 Qua ho l'eseguito e non pago perché è entrato nel book.
+7:50 Ok?
+7:50 Anche se voi non l'avete visto ma per un millesimo di secondo io sono proprio entrato col book
+7:55 ok?
+7:56 E quindi io vado a vedere e ho l'eseguito gratis.
+7:58 È incredibile.
+8:01 Mi ha iniziato a capire il vantaggio.
+8:03 Ok, vado a mettere il livello.
+8:04 Quindi ho comprato i 9000 a questo livello qua.
+8:06 Ovviamente ho usato una size più piccola perché anch'io stavo testando questa roba
+8:09 qua ma ti dico ho provato anche fino a 20.000.
+8:12 È una figata.
+8:15 Se rimane nel book e non viene eseguito è perché non è stato eseguito poi in questo
+8:19 livello qua.
+8:20 Adesso comunque andrete avanti e vi faccio vedere che succede.
+8:22 Poi io entro e poi fa un mega spike giustamente perché sono entrato a una conformazione.
+8:30 Uno, due, tre, quattro volte che va sulla sessanta.
+8:36 Prima o poi deve rompere.
+8:37 Quindi ho individuato il livello con USDT che è il book che comanda il mondo.
+8:45 Quindi tutti gli altri exchange su AKRO stanno copiando quel che cade nel book di Binance.
+8:53 Quindi se qua c'è un livello enorme, se qua invece di 6000 ci sono stati 200.000,
+8:58 io lo voglio vedere ma in tutti gli altri book non ci sarebbero quei 200.000.
+9:02 Ma farebbe da tappo e qua non lo vedrei e direi come mai che non sale?
+9:06 Perché c'è il tappo ma lo vedo solo qua in questo book qua.
+9:08 Tutti gli altri che ci sono nel mondo non ci sono.
+9:10 Al contrario se qua si fosse stato 200.000, 20.000 a 5.500, se questo sale, quei 20.000
+9:18 contano niente e salirebbe comunque.
+9:20 Comanda quell'altro.
+9:22 Allora guardate qua che succede.
+9:24 Entro e poi dopo fa il suo mestiere, cioè fa lo spike, perché quello è un punto trigger.
+9:30 Comandava da tanto, l'hanno testato più volte e va a farle un'ottura.
+9:36 Distruggendo il book, ok?
+9:37 Qua arrivo a 1.6 e però tu vedi che la candela qua è 1.6 ma qua è rimasta ancora sotto,
+9:43 perché comunque la candela è più veloce.
+9:45 Nel book, poi comunque torna giù, quindi ci sono.
+9:57 Ecco inserisco l'ordine, quando vedo sto spike qua dici ok, aspetta che metto la vendita.
+10:00 Quindi nel book vado a vedere dove ci sono i livelli, inserisco a 4.7, non l'ho ancora
+10:06 visto però visto che ci sono gli spike mi metto più o meno lì perché se c'è un altro
+10:10 spike voglio già uscire a target.
+10:12 Ok?
+10:13 In frattempo guardate la differenza, ok?
+10:16 Quindi qua vediamo a 6.4, vediamo un livello più grande in boost.
+10:21 Ok?
+10:22 Quello che vi dicevo io ogni tanto sono dei livelli più grandi, però qua non c'è niente,
+10:26 199, 79.
+10:28 Cioè capite che qua non c'è niente.
+10:30 Guardate qua, qua ho 3000, a 6 ho 79 dollari, qua ne ho 3000, invece a 6.4 ho 200, invece
+10:38 qua ne ho 13, ma non conta questo 13, conta questo che c'è qua, ok?
+10:43 Questi sono i livelli che contano, non quelli li.
+10:45 Qua ovviamente il book è stato completamente pulito perché è stato fatto lo spike, quindi
+10:48 i pezzi sono tutti piccoli perché è stato pulito, ok?
+10:52 Questo spike qua ha mangiato tutto.
+10:53 Andiamo avanti.
+10:55 Quindi ricordatevi, la resistenza è quella qua, quindi 106, qua vedete addirittura 12
+11:03 è più grande, ma non è la resistenza che conta, questo non conta niente, conta qua,
+11:08 e qua non c'è ben nessuna resistenza, quindi vedrete che conta nulla.
+11:12 Nonostante sia più grande, quando viene superato viene mangiato senza nessun esito.
+11:17 Vedete?
+11:18 Ecco, finito.
+11:19 Una volta che sale qua, qua viene distrutto qualsiasi cifra c'è, che deve copiare quello
+11:33 che c'è lì.
+11:34 Poi gli spike qua sono più grandi proprio perché ha il buco vuoto, quindi se qualcuno
+11:46 compra mercato va a distruggere il book perché non c'è niente.
+11:48 Dice qua se uno compra mercato lo va a distruggere almeno perché ci sono i livelli grandi, ma
+11:53 se noi usiamo il limite abbiamo un vantaggio enorme.
+11:56 Ho tolto nel frattempo che è arrivato qua, visto che ha fatto lo spike, poi io volevo
+12:02 essere eseguito nel caso in cui avesse fatto un altro spike, senza conformazione diciamo,
+12:06 no?
+12:07 Invece adesso sta salendo piano piano, quindi sta facendo una conformazione, allora a me
+12:09 non mi va più bene vendere a questo prezzo qua, posso pensare di poter vendere più
+12:12 in alto.
+12:14 I livelli non ce ne è, cioè giusto il 0747, quindi o mi metto sotto prima di questo o
+12:19 se no se si rompe questo dopo qua c'è il vuoto, quindi cerco di vadaignare qualcosa
+12:25 di più.
+12:26 Pratempo torna giù, abbiamo le MA10 che comanda ovviamente e adesso quello che era
+12:32 la resistenza, la 60, diventa il supporto, ok?
+12:36 Quindi quello è quello che dobbiamo guardare.
+12:39 Pratempo qua completamente vuoto, il book completamente vuoto, qua invece abbiamo i
+12:46 livelli.
+12:47 469, vedi abbiamo il livello, 469 abbiamo il niente, quindi qua ti fa sembrare che non
+12:53 ci sia nulla, se compri a mercato tu vai a distruggere, io compro 10.000 boost a mercato,
+12:58 vado a distruggere tutto, vado a fare uno spike, invece qua no, perché qua c'ho i livelli,
+13:02 ok?
+13:03 Quindi è importantissimo avere questo per capire che cosa sta accadendo, ma se io comprassi
+13:08 10.000 a... ecco, in questo momento qua ci sono 200 dollari, qua ci sono 4.000, ma se
+13:13 io adesso entrassi con 10.000 io avrei l'eseguito.
+13:16 Qua non ce l'avrei, riuscirei a comprare solo 4.000 e rimarrebbero 6.000, invece qua
+13:22 riesco ad avere l'eseguito totale di 10.000, perché non sale come prezzo rispetto a qua,
+13:29 perché lì c'è appunto la vendita, quindi può salire come spike ma dopo verrebbe normalizzato
+13:36 e tornerebbe giù.
+13:37 Infatti qua ha fatto uno spike, poi è tornato giù, ecco.
+13:43 Ci stiamo avvicinando al nuovo livello trigger che è questo dello spike e quindi comunque
+13:49 è il 47 che abbiamo qua, che adesso non c'è più, hai anticipato.
+13:53 Io guardate, io ho già messo un prezzo inferiore perché dico questo può essere la resistenza,
+13:59 se non lo distrugge io devo poter vendere.
+14:01 Sto avvicinando, adesso andiamo a concentrarci, ecco, in un colpo.
+14:14 Guardate, qua praticamente non c'è nulla, qua invece abbiamo i livelli, 7.1, guardate
+14:20 che succede.
+14:21 Ho mangiato tutto in un colpo, vedete?
+14:23 Qua è entrato un pezzo grosso, qua pure, livello leggermente superiore a questo, qua
+14:29 è entrato un pezzo enorme rispetto a qua, no, qua è ancora più grande, però ha un
+14:33 livello diverso.
+14:34 Distrugge tutto quel livello lì, ha raggiunto il livello trigger, ecco, adesso fa il mio
+14:41 bello spike, io alzo il prezzo per poter averlo eseguito.
+14:46 Vi ricordo che per alzare il prezzo non c'è bisogno di scriverlo, basta cliccare col mouse
+14:50 qua e poi con la rotellina vai su o giù e questo si alza, dei tick che ti servono, ok?
+14:55 Fantastico questa funzione, ricordatevelo.
+14:58 Ecco, io vado, guardate, quando arriva qua che distrugge il livello, qua non ci sarebbe
+15:04 nulla nel book, io metto 0.72, non c'è nulla, ci sono 349 dollari, io ne ho 9.360, qua
+15:14 invece avrei 200, quindi non avrei niente, guardate che succede, io adesso vendo, tac,
+15:19 si abbassa, guardate, i 9.000, c'erano 200 dollari, c'erano 300 dollari, io metto dentro,
+15:29 già mi rimangono solo 1.300, rimangono solo 1.300, fantastico, tac, eseguito, un secondo
+15:38 dopo, qualche secondo dopo, a posto, capito?
+15:43 E gratis, gratis senza fee, gratis senza fee, vedete?
+15:50 Eseguito totale, 9.368, ero entrato a 9.027, quindi sono più 341, però il meccanismo
+15:58 che vi voglio far capire, quindi non è tanto il trade, che comunque è un bellissimo trade
+16:02 perché comunque vedete la bellezza della Lema 60, ricordatevi, l'Lema 60 l'ho vendata
+16:06 io, nessuno al mondo ha mai usato l'Lema 60, guardate la precisione, io l'ho scelto
+16:11 proprio per questo, una volta che si rompe, è entrata ok, fra l'altro con la tecnica
+16:18 del anti-incrocio, ok?
+16:20 Trovate tutti questi video nella playlist delle tecniche dove poi troverete anche questo,
+16:25 gratis senza pubblicità, l'unico che fa una roba del genere, chissà perché, e niente,
+16:30 come vedete mostro tutto, non c'era nessun problema, questi erano i soldi che avevo in
+16:34 boost, vedete poi all'inizio, questi sono i soldi che ho lasciato in boost, che adesso
+16:40 grazie a questa tecnica che ho scoperto, io vado a aumentare i boost, quindi andrò a
+16:48 dare la priorità alle operazioni in boost.
+16:50 Qual è lo svantaggio?
+16:52 Allora, lo svantaggio è che dovete essere bravi perché se voi usate invece lo stop
+16:57 limit, quindi fate operazioni stop limit o oco, dovete fare attenzione con boost perché
+17:05 come vi dicevo ci possono essere spike senza senso, perché mancano i livelli, ok?
+17:10 Quindi voi potreste arrivare a uno stop senza che in realtà su USDT sia accaduto, infatti
+17:15 io tutta questa operazione qua l'ho fatto manualmente, quindi prima di poter sfruttare
+17:20 questa cosa qua dovete essere bravi a entrare e uscire manualmente.
+17:26 Se mettete uno stop limit qua c'è il rischio che faccia spike, vedi qua fa spike più
+17:31 grandi rispetto a quello che vedrete qua proprio perché c'è il vuoto nel book, basta
+17:35 il primo coglione che entra a mercato e ti va a raggiungere il livello e uscirete, ok?
+17:39 Che invece qua non succederebbe perché c'è la protezione del prezzo, ok?
+17:43 Perché questi sono prezzi reali, questi sono prezzi fittizi e basta un pirla che entra
+17:47 a mercato che lo rovina, ok?
+17:49 Quindi il limite è usare uno stop limit qua è un grosso problema, quindi dovete basarvi
+17:54 sui numeri diciamo numeri più grandi diciamo quindi interi, quindi non mettete stop limit
+18:02 non so 6 1 6 2 6 3 4 6 4 5 ok però io vi consiglio comunque se volete sempre usare
+18:10 loco eccetera fate sempre con USDT meglio pagarli i fee, meglio pagar qualche fee.
+18:14 Se invece siete bravi quindi iniziate ad essere bravi capaci di gestirvi per i fatti
+18:18 propri quindi riuscite a entrare uscire chiudere in perdita manualmente con stop limit.
+18:25 Ragazzi qua avete fee gratis e potete usare size grandi ovviamente dopo dovete essere
+18:31 profitevere quindi dopo che avete esperienza che siete capaci però dovete capire che c'è
+18:35 questo meccanismo fantastico fee gratis e fra l'altro viene eseguito meglio che con
+18:41 boost che con USDT.
+18:43 Io non ho bisogno di usare l'iceberg, ok?
+18:49 L'ho comunque preparato ma stavo facendo ancora i test non ci sarebbe bisogno di dover usare
+18:57 l'iceberg perché tanto viene eseguito comunque ok?
+19:01 Perché sì questo si deve adeguare a quello che è il prezzo mondiale e tutti i prezzi
+19:05 mondiali seguono Binance ok?
+19:07 Il book in spot è quello che comanda quindi se c'è un dislivello non mi refreda niente
+19:11 se sono 310.000 o 20.000 deve livellarsi a questo e quindi viene comprato tutto quindi
+19:17 questi volumi che noi abbiamo che sono circa adesso la metà prima erano tipo un quarto
+19:22 adesso siamo arrivati alla metà e appunto comunque c'è l'equidità c'è il sistema
+19:29 ti dà la possibilità di mangiare i livelli l'importante è che vada uguale a quel che
+19:33 accade qua ok?
+19:34 E quindi noi sfruttiamo questa cosa.
+19:36 Bene scrivetelo nei commenti se avete delle domande quindi magari poi faccio un altro
+19:42 video o ne parlo a casa bull stasera poi sarò a casa bull quindi ogni lunedì 19.30
+19:47 il giovedì non è più 19.30 ma ore 19 anticipo perché dopo alle ore 20 c'è un altro programma
+19:52 sono i scienziati pazzi e quindi iscrivetevi a youtube likeate mi raccomando iscrivetevi
+19:59 al canale e poi ci sono i due canali telegram discord twitch ed instagram ciao a tutti

@@ -1,0 +1,119 @@
+# Low-confidence segments for: 044_TRADING_SOLO_CON_IL_BOOK_Si_puo_Tutorial_completo.mp3
+# Total flagged: 38
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:53-0:58] (confidence: -0.205)
+  "deve rimanere nel book verde per non pagare, se vendo deve rimanere nel book rosso per"
+
+[0:58-1:03] (confidence: -0.205)
+  "non pagare, altrimenti si paga come in USDT. Però vedete che ci sono delle differenze."
+
+[1:03-1:09] (confidence: -0.205)
+  "Quindi appunto qua ci sono le quantità più grosse in USDT, ma ogni tanto capita il contrario."
+
+[1:09-1:13] (confidence: -0.205)
+  "Quando capita il contrario per me è estremamente interessante, quindi i livelli, quindi per"
+
+[1:13-1:23] (confidence: -0.205)
+  "esempio 821, 821 non c'abbiamo niente, qua ce l'abbiamo 822 ma è poca roba. Se ha 820,"
+
+[1:51-1:56] (confidence: -0.188)
+  "un ingresso da fare, ok? Lo capisco solo con il doppio book, quindi capisco che qua"
+
+[1:56-2:01] (confidence: -0.188)
+  "finiscono i livelli, ma in USDT invece ho dei livelli molto grandi rispetto a qua e"
+
+[2:01-2:06] (confidence: -0.188)
+  "quindi no good, ok? Quindi importante, sto scoprendo proprio usando il doppio book che"
+
+[2:06-2:10] (confidence: -0.188)
+  "posso andare a vedere queste differenze, ma anche un'altra cosa molto importante,"
+
+[2:10-2:17] (confidence: -0.188)
+  "se io sono dentro un trade e ho il target, che ne so, entro nel trade, il target è 824"
+
+[2:17-2:25] (confidence: -0.164)
+  "perché 825 c'è questo pezzo enorme, se però a 823 che qua non c'è niente, ci fosse un"
+
+[2:25-2:33] (confidence: -0.164)
+  "pezzo grande, quindi un, che ne so, un 20.000, io userai il target prima, quindi l'822, ok?"
+
+[2:33-2:39] (confidence: -0.164)
+  "Quindi i livelli grandi in boost sono molto importanti e sono sensibili anche in USDT,"
+
+[2:39-2:45] (confidence: -0.164)
+  "quindi io ho un vantaggio così, quindi non andrei a mettermi a 824, mi metterai a 823"
+
+[8:49-8:54] (confidence: -0.157)
+  "già che paga perché è un segnale bomba, quindi in automatico se non paga non verrà mai segnalato"
+
+[8:54-9:01] (confidence: -0.157)
+  "un segnale bomba, e così anche per i doppi tocchi, così per cavallino, quindi sappiamo già che"
+
+[9:01-9:07] (confidence: -0.157)
+  "ci sono i titoli nuovi che stanno arrivando, ok? Questo che c'è un 3% dal superamento del giorno"
+
+[9:07-9:12] (confidence: -0.157)
+  "precedente, quindi questo è un segnale ottimo, quindi non importa andare a vedere tutte le coppie"
+
+[9:12-9:16] (confidence: -0.157)
+  "che va a finire che selezionate dei livelli grandi nel book, ma di coppie che non pagano,"
+
+[11:35-11:40] (confidence: -0.147)
+  "reale come si muove, non potendolo raggruppare si muove tantissimo, quindi qua per esempio non vedi"
+
+[11:40-11:45] (confidence: -0.147)
+  "che c'è livello perché non c'è più in là, ok? Non potendolo raggruppare non lo vedi, ecco,"
+
+[11:45-11:51] (confidence: -0.147)
+  "sta spuntando adesso, ma col book di profondità lo avresti visto, ok? Quindi se il book non è,"
+
+[11:51-11:56] (confidence: -0.147)
+  "non c'è la possibilità di poterlo raggruppare, il book di profondità vi segnala i pezzi grandi,"
+
+[11:56-12:01] (confidence: -0.147)
+  "che magari non vedresti perché appunto sono distanti, non sono distanti di prezzo,"
+
+[17:20-17:25] (confidence: -0.144)
+  "mangiata almeno viene assaggiata poi cliccate e comprate, oppure io addirittura se il livello"
+
+[17:25-17:29] (confidence: -0.144)
+  "non è gigantesco, quindi in questo caso questo 41.000 che non è grande, io devo comprare appena"
+
+[17:29-17:35] (confidence: -0.144)
+  "lo tocca, appena lo tocca, poi io so che io entro con 10.000 15.000 20.000 e so che sono io"
+
+[17:35-17:44] (confidence: -0.144)
+  "comunque a fare da innesco, ok? Poi dopo se voi quando entrate il livello, quel minuto in cui voi"
+
+[17:44-17:49] (confidence: -0.144)
+  "entrate non viene chiuso, quindi si prova a mangiare questo ma non riesce a superarlo, dovete uscire,"
+
+[21:20-21:28] (confidence: -0.16)
+  "ancora ok? È sempre meglio poter selezionare, quindi fare meno trade possibili, ma selezionandoli,"
+
+[21:28-21:33] (confidence: -0.16)
+  "ovviamente se guardate solo il book, come fate a fare la selezione? Avete bisogno di selezionare"
+
+[21:33-21:38] (confidence: -0.16)
+  "la conformazione, come fate a sapere se c'è una conformazione perfezione? Lo sapete guardando"
+
+[21:38-21:45] (confidence: -0.16)
+  "la conformazione, guardando le EMA, no? Sono solo 4 e sono gratis, utilizzateli. Quindi niente,"
+
+[21:45-21:50] (confidence: -0.16)
+  "quindi fate queste prove qua, provate a vedere come vi trovate, ovviamente Binance numero 1 che"
+
+[23:08-23:18] (confidence: -0.191)
+  "riparliamo eventualmente faccio la seconda versione di questo video, faccio magari eventualmente la"
+
+[23:18-23:22] (confidence: -0.191)
+  "parte 2, quindi scrivete le domande, ne parliamo a casa bull e eventualmente faccio la seconda"
+
+[23:22-23:29] (confidence: -0.191)
+  "versione. Ovviamente il 3 settembre nel webinar andremo a vedere i vari livelli e capirete dal"
+
+[23:29-23:36] (confidence: -0.191)
+  "vivo come poter gestire queste cose in base alle conformazioni quindi guardando l'ema. Ciao ragazzi,"
+

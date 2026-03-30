@@ -1,0 +1,44 @@
+# Low-confidence segments for: 012_LIVE_TRADING_RAW_+513_usdt_SENZA_TAGLI_SU_QNT_UTILIZZANDO_BINANCE_SPOT.mp3
+# Total flagged: 13
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:30-0:33] (confidence: -0.195)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[1:00-1:03] (confidence: -0.104)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[1:30-1:33] (confidence: -0.101)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[2:00-2:03] (confidence: -0.098)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[2:30-2:33] (confidence: -0.095)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[3:01-3:04] (confidence: -0.195)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[3:34-3:37] (confidence: -0.34)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[4:04-4:07] (confidence: -0.154)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[4:34-4:37] (confidence: -0.104)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[5:04-5:07] (confidence: -0.101)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[5:34-5:37] (confidence: -0.098)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[6:04-6:07] (confidence: -0.095)
+  "Sottotitoli creati dalla comunità Amara.org"
+
+[6:34-6:37] (confidence: -0.092)
+  "Sottotitoli creati dalla comunità Amara.org"
+

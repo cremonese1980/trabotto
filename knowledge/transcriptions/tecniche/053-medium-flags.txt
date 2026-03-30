@@ -1,0 +1,65 @@
+# Low-confidence segments for: 053_Candela_HAMMER_Tutorial_Inversione_di_Trend_Segnale_Bull_Bot_Time_Frame_1_ora.mp3
+# Total flagged: 20
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:51-0:55] (confidence: -0.24)
+  "sempre un hammer al contrario anche questo è un hammer anche questo lo"
+
+[0:55-0:59] (confidence: -0.24)
+  "vengo considero anche questo lo considero un hammer quindi un hammer"
+
+[0:59-1:04] (confidence: -0.24)
+  "hammer invertito questi sono tutti hammer questo ovviamente no anche il dragon"
+
+[1:04-1:09] (confidence: -0.24)
+  "fly doji questo lo considero un hammer anche questo considero un hammer"
+
+[1:09-1:13] (confidence: -0.24)
+  "perché è il movimento che conta poi dopo ve lo spiego però l'importante è"
+
+[1:13-1:18] (confidence: -0.24)
+  "avere l'ombra ok è l'ombra e poi la chiusura verso i massimi quindi anche se"
+
+[10:42-10:46] (confidence: -0.162)
+  "cambiare è cambiato il prezzo è cambiato radicalmente vete qua è dove"
+
+[10:46-10:51] (confidence: -0.162)
+  "è arrivato il segnale ed eravamo ancora prima di fare il break out del bad maxi"
+
+[10:51-10:57] (confidence: -0.162)
+  "time frame cinque minuti qua eravamo però prima di chiudere candela e poi"
+
+[10:57-11:01] (confidence: -0.162)
+  "esploso perché ha rotto il livello bad quindi se dopo andavamo a vedere non"
+
+[11:01-11:04] (confidence: -0.162)
+  "risultava una candela hammer ma l'ingresso era fantastico quindi il segnale ci"
+
+[11:04-11:06] (confidence: -0.162)
+  "arriva cinque minuti prima ci dà la possibilità di poter vedere se c'è una"
+
+[11:06-11:10] (confidence: -0.162)
+  "conformazione se vediamo la conformazione un bad maxi è veramente"
+
+[11:32-11:40] (confidence: -0.222)
+  "di ritorna anticipare qua è vgx qua è time frame un minuto ok qua come lo"
+
+[11:40-11:45] (confidence: -0.222)
+  "vediamo time frame minuto guardate qua questa è a un'ora un'ora vedete ha fatto"
+
+[11:45-11:50] (confidence: -0.222)
+  "il suo bellissimo hammer vedete è ritornato a comandare la 10 è"
+
+[11:50-11:54] (confidence: -0.222)
+  "crollato giù fatto un hammer questo è bellissimo verde sopra fa proprio fa"
+
+[11:54-11:59] (confidence: -0.222)
+  "capire vi fa capire che la 10 comanda e poi nato a accelerare ok ma quando"
+
+[13:19-13:26] (confidence: -0.268)
+  "bullo eventualmente farò un altro video sul segnale hammer sulla candela hammer"
+
+[13:26-13:30] (confidence: -0.268)
+  "iscrivetevi mettete like alla prossima ciao"
+

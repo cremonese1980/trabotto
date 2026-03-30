@@ -1,0 +1,140 @@
+video:
+  id: BULL_NN_05
+  series: nuova-neofiti
+  title: "Scelta del timeframe e combinazione con le EMA"
+  video_index: 5
+  duration_minutes: 19
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_NN_05_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, candle_pattern, trend]
+    source:
+      timecode: "01:33-02:40"
+    conditions:
+      - "chart_cleanliness(asset, timeframe_5m) == DIRTY"
+      - "price_alternates_above_below_ema(ema10) == true"
+      - "spike_count_recent > threshold"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [5m]
+      market_regime: []
+    rationale: "Se a timeframe 5 minuti le candele vanno continuamente sopra e sotto le EMA con spike enormi, il grafico è sporco e non operabile a quel timeframe."
+    notes: "Esempio su SIREN: a TF 5 minuti fa schifo, le EMA non fanno il loro lavoro. Quando trovi un TF sporco, se scendi ulteriormente (es. 1 minuto) è sempre peggio."
+
+  - id: BULL_NN_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, trend]
+    source:
+      timecode: "02:44-04:54"
+    conditions:
+      - "chart_cleanliness(asset, current_timeframe) == DIRTY"
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se il timeframe corrente è sporco, si deve salire di timeframe (da 5m a 30m, da 30m a 1h, da 1h a 4h) fino a trovare pulizia nelle EMA."
+    notes: "La regola è: se sporco a basso TF, salire. Da 1 minuto a 5 minuti a 30 minuti a 1 ora a 4 ore fino a trovare dove le EMA comandano in maniera pulita."
+
+  - id: BULL_NN_05_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema, ema223, trend]
+    source:
+      timecode: "04:47-06:04"
+    conditions:
+      - "price_holds_above_ema223(timeframe_30m) == true"
+      - "touch_count(ema223_level) >= 2"
+      - "candle_close_above_ema223 == true consistently"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Quando il prezzo tiene costantemente sopra l'EMA 223 a TF 30 minuti, indica la presenza di compratori forti a quel livello; lo stop loss va sotto quel livello."
+    notes: "Esempio su SIREN TF 30m: la 223 tiene come supporto, il prezzo non va sotto. Indica che i 'pullman di cinesi' (compratori con cash) stanno sostenendo il prezzo a quel livello."
+
+  - id: BULL_NN_05_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, daily]
+    source:
+      timecode: "12:49-13:43"
+    conditions:
+      - "ema60_daily_above_price == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Se nel daily l'EMA 60 è sopra il prezzo (EMA in testa), fa da tappo/resistenza rendendo molto più difficile un'esplosione al rialzo; in quel caso si evita il long."
+    notes: "Bull controlla sempre il daily per verificare se c'è una EMA in testa. Se non c'è EMA in testa, il campo è libero e la strada porta dritta al bancomat."
+
+  - id: BULL_NN_05_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema, ema5, trend, scalping]
+    source:
+      timecode: "07:02-07:31"
+    conditions:
+      - "price_holds_above_ema5(timeframe_30m) == true"
+      - "candle_touches_ema5_and_bounces == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Quando dopo un breakout il prezzo tiene sopra l'EMA 5 a TF 30m con rimbalzi precisi, indica che il compratore ha molta fretta e il trend è molto forte."
+    notes: "L'EMA 5 che tiene significa che l'intensità di acquisto è massima; il compratore non aspetta nemmeno l'EMA 10."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_NN_05_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, daily]
+    source:
+      timecode: "08:41-09:15"
+    statement: "I timeframe utilizzati da Bull sono: 1 minuto, 5 minuti, 30 minuti, 1 ora, 4 ore, daily, weekly, mensile. Il daily è il più importante di tutti perché ogni candela registra il movimento di un intero giorno."
+    rationale: "La gerarchia dei timeframe è fondamentale per la pianificazione operativa."
+
+  - id: BULL_NN_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "09:15-09:37"
+    statement: "Bull parte sempre dal timeframe 30 minuti per cercare conformazioni, poi verifica nel daily se ci sono EMA in testa che potrebbero bloccare il trade."
+    rationale: "Il workflow operativo standard prevede TF 30m per le entry e daily per la conferma direzionale."
+
+  - id: BULL_NN_05_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "09:21-10:32"
+    statement: "Bull usa la classifica 24 ore (non daily) per trovare i titoli con le migliori performance: la classifica 24h calcola la variazione rispetto a esattamente 24 ore fa, non dalla chiusura della candela daily."
+    rationale: "La differenza tra classifica 24h e daily è significativa: 24h dà il quadro più aggiornato del momentum."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "La scelta del timeframe giusto è critica: se un grafico è sporco a un TF basso, si sale fino a trovare pulizia. Il workflow è: classifica 24h per trovare i titoli, TF 30m per le conformazioni, daily per verificare assenza di EMA in testa."

@@ -1,0 +1,136 @@
+video:
+  id: YT_BULL_P_020
+  series: principianti
+  title: "Live trading short: tre sessioni multi-crypto in mercato ribassista"
+  video_index: 20
+  duration_minutes: 8
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_20_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [reversal, stop_loss, ema60, scalping, candle_pattern]
+    source:
+      timecode: "00:36-02:08"
+    conditions:
+      - price_bouncing_with_lower_highs_sequence >= 3
+      - each_high_lower_than_previous == true
+      - ema60_acting_as_resistance == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Enter short when three successive highs are each lower than the previous and EMA60 acts as resistance — the pattern of lower highs is the mechanical confirmation of a short entry."
+    notes: "Stop must be above the most recent high (which is above EMA60). After a strappo (strong move down), immediately move stop to breakeven. On a reversal candle (return above entry body), close the short."
+
+  - id: BULL_P_20_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [stop_loss, ema60, scalping, risk_management]
+    source:
+      timecode: "01:54-02:08"
+    conditions:
+      - short_position_open == true
+      - strong_down_move_occurred == true
+      - price_recovering_above_candle_body == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "After a strong downward strappo, if price recovers above the candle body of the spike candle, close the short immediately — recovery above the body invalidates the continuation."
+    notes: "Example: BNB short, after strappo price recovered toward entry. 'Se ritorna sopra il corpo devo chiudere' — the body of the spike candle is the exit reference, not a MA."
+
+  - id: BULL_P_20_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [reversal, ema60, candle_pattern, scalping, stop_loss]
+    source:
+      timecode: "02:49-04:35"
+    conditions:
+      - lower_highs_pattern_confirmed == true
+      - price_goes_above_ema60_then_fails == true
+      - candle_high_below_previous_swing_high == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "Enter short when lower highs persist even after price crosses above EMA60 — the key is confirming the most recent high is LOWER than the prior swing high before entering."
+    notes: "Stop options: just above 0.26 round number, or above the most recent swing high. The tighter the stop, the better the R:R. BNB example: entry confirmed when post-EMA60-cross high was lower than pre-cross high."
+
+  - id: BULL_P_20_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, ema60, reversal, scalping, stop_loss]
+    source:
+      timecode: "04:39-06:56"
+    conditions:
+      - large_green_candle_closes_above_ema60 == true
+      - next_candle_makes_new_high == true
+      - second_candle_closes_red_below_ema60 == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "A large bullish candle closing above EMA60 followed by a green high and then a red close below EMA60 is a failed breakout signal — the red close below EMA60 is the short entry trigger."
+    notes: "BTC + SOL example: 'bellissima candela verde' above EMA60, second candle makes high but closes red back below EMA60 — this is a 'finta' (fake) and valid short. Stop above EMA60 or above the failed green candle's high. Exit when new lows made or at new daily low."
+
+  - id: BULL_P_20_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, scalping, btc_index, risk_management]
+    source:
+      timecode: "06:18-07:03"
+    conditions:
+      - short_position_open == true
+      - price_making_new_intraday_lows == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [1m]
+      market_regime: [bearish]
+    rationale: "When price makes new intraday lows, panic selling intensifies — new daily lows are easier targets for shorts, justify holding and tightening TP rather than closing early."
+    notes: "Example: BTC short at new daily lows, 'è più facile che ci sia panico quindi qua si va giù fatti bene'. Closed at +710 USDT vs initial +136 first opportunity."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_20_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, ema60, scalping, risk_management]
+    source:
+      timecode: "01:42-02:08"
+    statement: "The EMA60 is a valid short reference only if it has been tested multiple times and respected; if price has already spiked above it, it is no longer a reference — the swing high above EMA60 becomes the stop level."
+    rationale: "A tested and respected EMA60 provides a mechanical stop location; an EMA60 that has already been violated by a spike is too uncertain to use as stop and needs to be replaced by the actual swing high."
+
+  - id: BULL_P_20_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, scalping, risk_management, stop_loss]
+    source:
+      timecode: "07:12-07:54"
+    statement: "Understanding how to enter a short mechanically is straightforward — click 'sell' on a futures platform. The difficulty is in reading when to enter (lower highs, failed breakout, EMA60 resistance), not the mechanics."
+    rationale: "Beginners focus on the wrong complexity (platform mechanics) rather than the real challenge (pattern recognition and timing). Redirecting attention to price structure is essential for progress."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Three live short setups demonstrate the core short-entry toolkit: lower-highs sequence with EMA60 resistance, failed-breakout red close below EMA60, and post-strappo recovery above candle body as mandatory exit. All three require a stop directly above the most recent swing high."

@@ -1,0 +1,186 @@
+video:
+  id: BULL_LTCRA_05
+  series: live-trading-crypto-analisi
+  title: "Due Trade su APE - Terzo/Quarto Tocco, Muro, Iceberg Exit, EMA 5 vs EMA 10"
+  video_index: 5
+  duration_minutes: ~
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_05_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, breakout, book, trigger]
+    source:
+      timecode: "~"
+    conditions:
+      - touch_count(level) >= 3
+      - muro_at_level_identified == true
+      - muro_coperto_bene == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Enter at the muro level on a terzo tocco or quarto tocco when the muro is well-covered (coperto bene). The wall provides the reference and the multiple touches provide the compression."
+    notes: "First trade on APE. Entry with stop limit placed before the muro. The muro coperto bene = safe setup. Resulted in +164 USDT."
+
+  - id: BULL_LTCRA_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [breakout, candelina, stop_loss]
+    source:
+      timecode: "~"
+    conditions:
+      - breakout_occurred == true
+      - first_candle_after_breakout == true
+      - candle_close_below_breakout_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "After a breakout, the first candle must not close below the breakout level. A close below on the first candle invalidates the breakout entirely."
+    notes: "The first candle is the critical test. If it survives (closes above breakout level), the second candle is very unlikely to close below."
+
+  - id: BULL_LTCRA_05_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [breakout, candelina, continuation]
+    source:
+      timecode: "~"
+    conditions:
+      - breakout_occurred == true
+      - first_candle_closed_above_breakout == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "If the first candle after breakout survives (closes above breakout level), the second candle has very high probability of holding. Confidence increases after first candle confirmation."
+    notes: "This is the continuation confirmation. After first candle holds, the trader can increase confidence in the trade and hold for target."
+
+  - id: BULL_LTCRA_05_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [take_profit, book, scalping]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - price_approaching_target == true
+      - position_size_large == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Use iceberg orders to exit large positions near the target. Exit at approximately 92% of the theoretical target to ensure fills before price reverses."
+    notes: "Bull exits at 92% of target on the first trade. Better to fill at a slightly lower price than to miss the exit chasing the last few ticks."
+
+  - id: BULL_LTCRA_05_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, ema10, trigger, breakout]
+    source:
+      timecode: "~"
+    conditions:
+      - touch_count(new_level) >= 3
+      - ema10_pulizia == true
+      - ema10_precision_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "A second terzo tocco at a different level, confirmed by EMA 10 pulizia (clean alignment and precision). EMA 10 precision acts as a confidence indicator for the setup."
+    notes: "Second trade on APE at a different level. EMA 10 pulizia/precision confirmed the setup. Resulted in +180 USDT."
+
+  - id: BULL_LTCRA_05_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema5, ema10, stop_loss, take_profit]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - ema5_not_holding == true
+      - ema10_holding == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When EMA 5 is not holding price but EMA 10 still is, this signals reduced momentum. Tighten the take profit target and reduce expectations for the trade."
+    notes: "EMA 5 not holding = less confidence in the move. Bull reduces target and tightens stop. If EMA 10 also breaks, exit immediately."
+
+  - id: BULL_LTCRA_05_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop_loss, invalidation]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - ema5_not_holding == true
+      - ema10_not_holding == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "When both EMA 5 and EMA 10 fail to hold price, the setup is fully invalidated. Exit immediately regardless of profit or loss."
+    notes: "This is the cascade invalidation: EMA 5 breaks first (warning), then EMA 10 breaks (hard exit). The two-step process gives time to prepare."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_05_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, trigger, breakout]
+    source:
+      timecode: "~"
+    statement: "Multiple terzo tocco setups at different levels on the same asset is a very interesting scenario. Each level provides an independent entry opportunity with its own risk/reward."
+    rationale: "When an asset shows multiple terzo tocco patterns at different prices, it indicates strong structural levels and high trader attention on that asset."
+
+  - id: BULL_LTCRA_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema10, ema5, trend, confidence]
+    source:
+      timecode: "~"
+    statement: "EMA 10 pulizia (clean, precise alignment with price) is a confidence indicator. When price respects EMA 10 with precision, the setup has higher probability. When only EMA 5 holds but EMA 10 is messy, reduce confidence."
+    rationale: "The quality of EMA alignment directly correlates with setup reliability. Clean EMAs reflect orderly buying; messy EMAs reflect uncertainty."
+
+  - id: BULL_LTCRA_05_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, take_profit, risk_management]
+    source:
+      timecode: "~"
+    statement: "Do not aim for 100% of the theoretical target. Exit at approximately 92% using iceberg orders to ensure fills. The last few percent carry disproportionate risk of reversal."
+    rationale: "Exiting slightly before the exact target ensures fills and avoids the common trap of price reversing at the exact level while waiting for a perfect fill."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "Terzo/quarto tocco entry at muro level when well-covered. First candle after breakout must hold above breakout level. Iceberg exit at 92% of target. EMA 10 pulizia = confidence indicator. EMA 5 not holding but EMA 10 holding = tighten target. Multiple terzo tocco at different levels on same asset is very interesting."

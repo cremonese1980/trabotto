@@ -1,0 +1,244 @@
+video:
+  id: BULL_LSSY_03
+  series: live-streaming-su-youtube
+  title: "Live Q&A Discord: book, analisi mattutina, orari operativi"
+  video_index: 3
+  duration_minutes: 111
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LSSY_03_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, trend, reversal]
+    source:
+      timecode: "07:54-08:40"
+    conditions:
+      - "book_large_level_identified == true"
+      - "price_approaching_large_level == true"
+      - "touch_count(large_level) == 1"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando c'e un livello grande nel book e il prezzo si avvicina per la prima volta, i compratori si mettono davanti al livello facendo salire il prezzo; il rimbalzo al primo tocco e probabile."
+    notes: "Chi vuole comprare si mette davanti al supporto grande, non dietro. Il loro stop e sul livello grande o appena dopo, quindi c'e spazio per il rimbalzo. Funziona sia per supporti (long) che per resistenze (short)."
+
+  - id: BULL_LSSY_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, trend, breakout]
+    source:
+      timecode: "08:40-09:10"
+    conditions:
+      - "book_large_level_identified == true"
+      - "touch_count(large_level) >= 2"
+      - "front_runners_stops_triggered == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Alla seconda volta che il prezzo tocca il livello grande nel book, i compratori che si erano messi davanti sono gia stati scaricati e i loro stop scattati; finito quel pezzo enorme c'e il vuoto totale."
+    notes: "Dopo il primo tocco i front-runner sono gia consumati. Quando il livello grande si rompe c'e il vuoto dietro, quindi lo spike e molto forte. Ottimo per andare short dopo la rottura del supporto."
+
+  - id: BULL_LSSY_03_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [cambio_candela, daily, trend]
+    source:
+      timecode: "61:06-62:55"
+    conditions:
+      - "daily_candle_change_occurred == true"
+      - "previous_daily_candle_color == RED"
+      - "new_daily_candle_green_spike == false"
+      - "new_daily_candle_near_zero_or_red == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Il top del cambio candela e quando la nuova candela daily e 'vergine': non ha ancora fatto verde, e partita a zero o leggermente in rosso. Il passaggio da rosso a verde e il momento migliore per entrare long."
+    notes: "Se il cambio candela ha gia sparato in verde, il momento migliore e passato. Il top e il cambio candela vergine (pari o pochissimo verde). Se va in rosso di poco dopo lo zero, lo zero diventa il punto di ingresso."
+
+  - id: BULL_LSSY_03_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [daily, trigger, trend]
+    source:
+      timecode: "63:56-65:30"
+    conditions:
+      - "price_near_previous_day_high == true OR price_near_previous_day_low == true"
+      - "current_lateralization_near_level == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Il massimo e il minimo del giorno precedente funzionano come calamite: quando il prezzo si avvicina a quei livelli, tende ad attrarli. Se coincidono con una lateralizzazione in corso, il valore come trigger aumenta enormemente."
+    notes: "Bull segna sempre massimo (linea gialla), minimo (linea rossa) e zero (linea verde) del giorno. Se il minimo attuale coincide col minimo del giorno prima, e una bomba. Funziona anche con massimi/minimi settimanali e mensili."
+
+  - id: BULL_LSSY_03_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [scalping, trend, regime_filter]
+    source:
+      timecode: "86:11-87:45"
+    conditions:
+      - "market == CRYPTO"
+      - "current_time >= 14:00 CET"
+      - "current_time <= 16:00 CET"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Dalle 14 in poi (prima dell'apertura del Nasdaq alle 15:30) tendenzialmente ci sono correzioni violente nel mercato crypto; Bull cerca lo short in quel periodo e va piu pesante."
+    notes: "La correzione puo arrivare prima, durante o dopo l'apertura del Nasdaq, ma tendenzialmente prima. Non fare long in quell'orario a meno che non sia un breakout da chiudere immediatamente nella stessa candela."
+
+  - id: BULL_LSSY_03_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [breakout, scalping, trigger]
+    source:
+      timecode: "89:24-90:16"
+    conditions:
+      - "breakout_from_lateralization == true"
+      - "first_candle_after_breakout == true"
+      - "elapsed_seconds_since_breakout < 50"
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando c'e un breakout da una lateralizzazione, la prima candela e fondamentale per capire la forza: bisogna lasciarla sfogare almeno 50 secondi prima di decidere se chiudere o tenere."
+    notes: "In bolla la prima candela puo fare 7-10%; in periodi calmi magari 0.5% e finisce li (chiudere subito). Non mettere il take profit prima dei 50 secondi su un breakout da lateralizzazione."
+
+  - id: BULL_LSSY_03_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [scalping, regime_filter, risk_management]
+    source:
+      timecode: "85:06-85:44"
+    conditions:
+      - "market == CRYPTO"
+      - "current_time >= 08:50 CET"
+      - "current_time <= 09:15 CET"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "All'apertura dei mercati europei (9:00) ci sono fluttuazioni strane nel crypto; potresti beccarti stop non dovuti a errori di valutazione ma a sbalzi dell'apertura. Aspettare che lo spostamento si esaurisca."
+    notes: "Non e un errore grafico ma un effetto dell'apertura dei mercati tradizionali. Dopo che lo spostamento violento si e esaurito, il prezzo tende a normalizzarsi verso le EMA: si puo entrare sulla normalizzazione."
+
+  - id: BULL_LSSY_03_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [psychology, risk_management, regime_filter]
+    source:
+      timecode: "108:45-110:10"
+    conditions:
+      - "clean_conformations_found == 0"
+      - "all_charts_dirty == true"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se non trovi nessuna conformazione pulita e tutti i grafici sono sporchi con zigzag e medie mobili confuse, non fare niente: e un grosso guadagno perche quando operi per forza butti solo soldi."
+    notes: "Vatti a fare la spesa, porta fuori il cane, torna fra un'ora. Se dopo un'ora ancora non c'e niente, giorno di vacanza forzata. Vale anche per periodi interi: ci possono essere settimane senza opportunita (specialmente su piazza affari)."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LSSY_03_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "04:30-06:26"
+    statement: "Su mercati a bassa liquidita (es. piazza affari) il book e fondamentale perche ogni proposta ha un valore preciso e i livelli sono quantificabili; su mercati ad alta liquidita (Binance Futures) il book e meno leggibile perche i livelli si equivalgono, e conta di piu la lettura della candela e delle EMA."
+    rationale: "La strategia di lettura del book cambia radicalmente in base alla liquidita del mercato."
+
+  - id: BULL_LSSY_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, beginner]
+    source:
+      timecode: "09:59-10:33"
+    statement: "Su Binance Futures, Bull raggruppa il book quasi al massimo (raggruppamento 10 su Bitcoin) perche con tanta liquidita senza raggruppamento i prezzi flashano su e giu creando solo confusione."
+    rationale: "Il raggruppamento alto trasforma un book illeggibile in uno utile, evidenziando solo i livelli veramente significativi."
+
+  - id: BULL_LSSY_03_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, beginner]
+    source:
+      timecode: "57:53-60:34"
+    statement: "Analisi mattutina di Bull: sempre Bitcoin, Ethereum e BNB (sono l'indice crypto); poi i migliori e peggiori nella classifica 24h, cercando il passaggio rosso-verde (cambio candela) e le lateralizzazioni gia formate."
+    rationale: "La routine mattutina sistematica assicura di non perdere le migliori opportunita e di avere sempre il polso del mercato."
+
+  - id: BULL_LSSY_03_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, scalping]
+    source:
+      timecode: "45:08-47:04"
+    statement: "Saper vendere in perdita e il piu grosso guadagno nello scalping: piu chiudi velocemente le perdite, piu guadagnerai. Non vendere porta ad accumulare perdite, demoralizzazione e alla fine all'abbandono del trading."
+    rationale: "Il meccanismo psicologico del non chiudere (ero a +200, ora sono a -50, aspetto) porta a una valanga di perdite crescenti che distrugge sia il conto che la psicologia."
+
+  - id: BULL_LSSY_03_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, scalping]
+    source:
+      timecode: "90:49-91:48"
+    statement: "Il take profit deve adattarsi al regime di mercato: in bolla si punta a 200-400 USD; in mercato calmo ci si accontenta anche di 80-100 USD. Se aspetti sempre la stessa cifra, in certi periodi non arrivera mai e andrai a zero."
+    rationale: "I movimenti cambiano drasticamente tra periodi di bolla e periodi calmi; non adattarsi porta a chiudere sempre sullo stop invece che in profitto."
+
+  - id: BULL_LSSY_03_CTX_06
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "103:38-105:02"
+    statement: "Meglio concentrarsi su poche operazioni ben seguite che aprire tante posizioni contemporaneamente; se due conformazioni sono uguali (es. due breakout), meglio sceglierne una e andare piu pesante piuttosto che seguirne due male."
+    rationale: "Troppe posizioni aperte impediscono di seguirle bene, portano a stop presi per distrazione e a opportunita buttate."
+
+  - id: BULL_LSSY_03_CTX_07
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, beginner]
+    source:
+      timecode: "84:17-84:42"
+    statement: "Se Bull potesse scegliere un solo momento per operare, sarebbe il cambio candela daily (2:00 di notte, o 1:00 senza ora legale): e il momento con le migliori opportunita in assoluto."
+    rationale: "Il cambio candela e il punto di massima dislocazione tra venditori/compratori della giornata precedente e la nuova giornata."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 7
+  core_message: "Il book al primo tocco di un livello grande offre un rimbalzo probabile; dal secondo tocco il livello si consuma. Il cambio candela 'vergine' (rosso-verde senza spike verde) e il setup top. Massimo e minimo del giorno precedente sono calamite. Dalle 14:00 cercare short. Non operare se i grafici sono sporchi."

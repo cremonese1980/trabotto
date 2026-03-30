@@ -1,0 +1,122 @@
+# Low-confidence segments for: 041_BULL_BOT_segnale_BUD_+_rispondo_alle_vostre_domande.mp3
+# Total flagged: 39
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.795)
+  "quindi ho fatto una cartella ho fatto una cartella"
+
+[0:30-0:34] (confidence: -0.247)
+  "la cartella casa bull e raccolgo un po di domande ok allora mi avete chiesto"
+
+[0:34-0:45] (confidence: -0.247)
+  "mi sente molto bene ottimo allora mi avete chiesto ma se c'è un bad ma lo spike quindi"
+
+[0:45-0:53] (confidence: -0.247)
+  "l'ombra è enorme rispetto al corpo quindi ho trovato questo caso qua che si fa entra qua"
+
+[3:55-4:03] (confidence: -0.471)
+  "questo è chiaro e magari è chiaro anche con alcun altro però ci sono altre situazioni per esempio"
+
+[4:03-4:07] (confidence: -0.471)
+  "questo qua state sentendo giusto ragazzi"
+
+[4:11-4:16] (confidence: -0.471)
+  "in qualche cenno di vita allora ok grande sabe"
+
+[10:04-10:12] (confidence: -0.196)
+  "qua c'è la 60 e poi dopo va giù io non chiudo non chiudo perché comandava lema 60 a time frame"
+
+[10:12-10:20] (confidence: -0.196)
+  "minuto non ho chiuso perché comandava lema 5 time frame 30 minuti e poi dopo a fare in"
+
+[10:20-10:24] (confidence: -0.196)
+  "balsa e infatti comandava lema 5 a time frame 30 minuti comanda sempre lema nel time frame più"
+
+[10:24-10:29] (confidence: -0.196)
+  "grande l'importante è che non fate questo errore qua perché vi conosco già ok voi cosa fate?"
+
+[18:15-18:18] (confidence: -0.627)
+  "arriva il segnale capito questo"
+
+[18:26-18:28] (confidence: -0.627)
+  "post auto debug"
+
+[18:35-18:44] (confidence: -0.627)
+  "ok quando il bad si entra allora il bad si entra ragazzi andate a vedere però le sfumature"
+
+[23:50-23:58] (confidence: -0.103)
+  "book era carico sia in denaro che in lettera forse un po più in denaro e in teoria doveva"
+
+[23:58-24:06] (confidence: -0.103)
+  "darmi fiducia e non sono uscito perché scendeva lentamente ed ho avuto l'illusione che sarebbe"
+
+[24:06-24:15] (confidence: -0.103)
+  "salito vedendo il book carico anche per questo non ho messo lo stop in macchina che rimaneva"
+
+[24:15-24:19] (confidence: -0.103)
+  "sempre più carico ma continuava a scendere sono rimasto bloccato a guardare il prezzo scendere per"
+
+[25:10-25:19] (confidence: -0.457)
+  "polli non va bene non va bene mettiamo qualcosa che è un book che può essere leggibile"
+
+[25:23-25:28] (confidence: -0.457)
+  "ok questo è leggibile allora facciamo uno screen così non si cambia non cambia"
+
+[25:32-25:33] (confidence: -0.457)
+  "ok ciao"
+
+[25:33-25:33] (confidence: -2.781)
+  "ok"
+
+[25:33-26:03] (confidence: -0.575)
+  "Allora se noi abbiamo fatto l'ingresso abbiamo l'EMA 10."
+
+[26:03-26:12] (confidence: -0.268)
+  "Che è il nostro stop ed è a 393. Noi però non usciamo quando tocca 393."
+
+[26:12-26:20] (confidence: -0.268)
+  "Perché non usciamo? Perché abbiamo il livello a 391. Non ha nessun senso uscire qua se abbiamo"
+
+[26:20-26:26] (confidence: -0.268)
+  "il prezzo coperto. Quindi se c'è l'EMA che comanda, che è l'EMA 10 che comanda,"
+
+[31:56-32:01] (confidence: -0.413)
+  "allora come faccio, ve lo ingrandisco così"
+
+[32:13-32:21] (confidence: -0.413)
+  "ok dai un po' più grande così allora, dai un po' si vede, allora cosa succede qua che"
+
+[34:05-34:12] (confidence: -0.163)
+  "dovete uscire, non c'entra nulla il book, non avete il vantaggio di capire bene l'ingresso e"
+
+[34:12-34:18] (confidence: -0.163)
+  "capire bene l'uscita, basata semplicemente sull'ema, quindi si può anche fare trading così ma avete"
+
+[34:18-34:25] (confidence: -0.163)
+  "lo svantaggio di non capire, cioè per esempio qua dopo ha fatto quello che doveva fare, ha fatto la sua"
+
+[34:25-34:30] (confidence: -0.163)
+  "candela ma perché uno qua non vende? Magari qua nel book vedevamo che c'era un livello gigantesco e"
+
+[39:31-39:35] (confidence: -0.165)
+  "vi dà la mano per poter avere sempre i bad sotto, ok? Perché molti, soprattutto all'inizio,"
+
+[39:35-39:41] (confidence: -0.165)
+  "quando state studiando, fate fatica a trovarli i bad, dopo quando li capite li vedrete ovunque,"
+
+[39:41-39:50] (confidence: -0.165)
+  "e dopo il bello di vederli ovunque è che dopo riuscite a capire quando ha senso fare l'ingresso"
+
+[39:50-39:56] (confidence: -0.165)
+  "col bad e quando no, quando cercare il bad e quando no, quali sono quelli migliori e quelli"
+
+[41:04-41:09] (confidence: -0.252)
+  "più o meno normali non è un problema, l'ingresso è questo qua dello spike, ok? Il top comunque è"
+
+[41:09-41:17] (confidence: -0.252)
+  "il bad con 4 candeline piccole, quello è proprio il top, ok? A voi comunque fateli la vostra esperienza,"
+
+[41:17-41:23] (confidence: -0.252)
+  "con le linee, poi passate pochi soldi, sembravano di 50 sdpi,"
+

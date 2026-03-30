@@ -1,0 +1,139 @@
+video:
+  id: BULL_LTCA_05
+  series: live-trade-con-analisi
+  title: "Trade in perdita: come capire la finta, regola dei 40 secondi, EMA 223"
+  video_index: 5
+  duration_minutes: 8
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LTCA_05_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema223, ema10, trend, breakout]
+    source:
+      timecode: "00:54-01:39"
+    conditions:
+      - "ema223_acted_as_support == true"
+      - "ema10_commanding_perfectly == true"
+      - "candle_of_rest_near_ema223 == true"
+      - "price_bounced_off_ema223 == true"
+      - "candle_closed_above_ema223_previously == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando la EMA 223 ha funzionato come supporto, la EMA 10 comanda perfettamente con candele precise, e appare una candela di riposo che sfiora la 223, l'ingresso long sopra quel livello e un setup ad alta probabilita."
+    notes: "La EMA 223 su timeframe 1 minuto corrisponde alla EMA 10 su timeframe 30 minuti. Quindi questo setup e equivalente a una finta sulla EMA 10 del 30m. Il target naturale e la EMA 60 sul 1m. Funziona 8-9 volte su 10, ma quando fallisce bisogna uscire subito."
+
+  - id: BULL_LTCA_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, invalidation, timing]
+    source:
+      timecode: "04:01-04:28"
+    conditions:
+      - "position_open == true"
+      - "candle_below_key_ema == true"
+      - "seconds_remaining_in_candle <= 20"
+      - "price_not_accelerating_back == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Negli ultimi 20 secondi della candela, se il prezzo non sta accelerando per tornare sopra il livello chiave, la candela chiudera contro: uscire prima della chiusura senza aspettare lo stop."
+    notes: "La regola dei 20 secondi finali: se mancano 20 secondi e non c'e accelerazione, la candela e persa. Non aspettare la chiusura formale, il danno e gia fatto. Prepararsi ad uscire al livello grande nel book per minimizzare le fee (ordine nel book, non a mercato)."
+
+  - id: BULL_LTCA_05_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, timing, trend]
+    source:
+      timecode: "04:36-05:07"
+    conditions:
+      - "position_open == true"
+      - "candle_against_position == true"
+      - "second_40_of_candle_reached == true"
+      - "price_not_recovering == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dal quarantesimo secondo della candela in poi, il prezzo deve iniziare ad accelerare nella direzione del trade. Se al quarantesimo secondo non sta recuperando, la candela e una finta confermata e si deve uscire."
+    notes: "La regola dei 40 secondi: al 40esimo secondo la candela deve mostrare la sua vera natura. Se e bruttissima e non accelera, anche se il setup era perfetto (pulizia EMA, conformazione bella), bisogna uscire. Non importa aspettare lo stop: il non-accelerare e gia il segnale."
+
+  - id: BULL_LTCA_05_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema223, invalidation]
+    source:
+      timecode: "03:32-04:01"
+    conditions:
+      - "position_long == true"
+      - "price_below_ema223 == true"
+      - "candle_not_yet_closed == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Se il prezzo scende sotto la EMA 223 ma la candela non ha ancora chiuso, aspettare: potrebbe essere una finta (spike sotto che torna sopra). Il livello critico e la CHIUSURA candela sotto la 223, non lo spike."
+    notes: "Stessa logica della finta intra-candela sulla EMA 60 (video 004): lo spike sotto non conta, conta la chiusura. Pero dal quarantesimo secondo in poi, se non sta accelerando per tornare sopra, la chiusura sotto e quasi certa e bisogna anticipare l'uscita."
+
+  - id: BULL_LTCA_05_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, iceberg, scalping]
+    source:
+      timecode: "01:46-03:11"
+    conditions:
+      - "iceberg_order_placed == true"
+      - "book_level_consumed_by_iceberg == true"
+      - "remaining_size_in_book == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Con l'ordine iceberg, le fee si pagano solo sulla quantita visibile nel book al momento del click; il resto della size che entra nel book viene eseguito gratis man mano che il mercato lo consuma."
+    notes: "Esempio: 15.000 boost di posizione, nel book c'erano solo 1.300 boost. L'iceberg ha pagato fee solo su quei 1.300, il resto (quasi 14.000) e entrato nel book ed e stato eseguito gratis. Per l'uscita, stessa logica: se c'e un livello grande nel book, si esce li pagando fee minime."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LTCA_05_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "05:35-06:00"
+    statement: "Nonostante la pulizia delle EMA, nonostante tutto il ragionamento, nonostante questa sia una conformazione che funziona 8-9 volte su 10, questa volta non ha funzionato. Bisogna uscire subito e accettare la perdita."
+    rationale: "Anche i setup migliori falliscono; la disciplina nell'uscita e piu importante della qualita dell'ingresso."
+
+  - id: BULL_LTCA_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, ema223, beginner]
+    source:
+      timecode: "07:23-07:46"
+    statement: "La EMA 223 su timeframe 1 minuto corrisponde alla EMA 10 su timeframe 30 minuti. Quando la finta avviene sulla EMA 223 (1m), il target naturale e la EMA 60 (1m). Se dopo la rottura della 223 il prezzo fa chiusura candela sopra, si entra; il target e perlomeno la 60."
+    rationale: "La corrispondenza cross-timeframe (223 su 1m = 10 su 30m) permette di applicare le regole della finta sulla 10 anche su timeframe piu bassi."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "La EMA 223 su 1m equivale alla EMA 10 su 30m: la finta sulla 223 ha target alla 60. La regola dei 40 secondi: dal quarantesimo secondo la candela deve accelerare nella direzione del trade, altrimenti uscire. Gli ultimi 20 secondi sono il punto di decisione finale. Anche setup che funzionano 8-9/10 possono fallire: la disciplina nell'uscita e tutto."

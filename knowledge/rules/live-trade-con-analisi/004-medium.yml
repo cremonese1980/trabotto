@@ -1,0 +1,138 @@
+video:
+  id: BULL_LTCA_04
+  series: live-trade-con-analisi
+  title: "Live trade in perdita: doppia EMA, finta intra-candela, trigger invertito"
+  video_index: 4
+  duration_minutes: 10
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LTCA_04_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema10, ema60, trend, breakout]
+    source:
+      timecode: "00:53-02:07"
+    conditions:
+      - "ema60_broken_upward == true"
+      - "ema10_commanding_below_price == true"
+      - "ema10_clean == true"
+      - "ema60_clean == true"
+      - "price_retesting_breakout_level == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando sia la EMA 10 che la EMA 60 sono pulite e il prezzo ha rotto la 60 al rialzo con la 10 che comanda perfettamente, l'ingresso long al retest del livello di rottura ha doppio supporto EMA."
+    notes: "Il doppio supporto (EMA 10 + EMA 60) e il motivo per entrare QUI invece di aspettare il bad: lo stop e vicinissimo (sotto la 60) e hai due reti di sicurezza. L'ingresso era prima del livello bad, proprio perche le due EMA pulite davano fiducia."
+
+  - id: BULL_LTCA_04_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, ema60, invalidation, candle_pattern]
+    source:
+      timecode: "02:07-04:16"
+    conditions:
+      - "position_long == true"
+      - "ema60_as_support == true"
+      - "candle_spike_below_ema60 == true"
+      - "candle_closes_above_ema60 == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Se il prezzo fa uno spike sotto la EMA 60 ma la candela CHIUDE sopra, e una finta: si resta in posizione. Lo spike sotto non conta; conta solo la chiusura della candela."
+    notes: "Esempio live: il prezzo e sceso sotto la 60, Bull aveva la mano sul bottone di vendita, ma ha aspettato la chiusura candela. Mancavano 43 secondi, la candela e tornata sopra. Regola: 'Non deve fare chiusura a candela sotto, mi puo fare uno spike ma non mi puo fare chiusura.' Bull abbassa il prezzo di uscita preventivamente ma non clicca finche la candela non chiude."
+
+  - id: BULL_LTCA_04_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [trigger, reversal, invalidation]
+    source:
+      timecode: "04:50-05:08"
+    conditions:
+      - "finta_level_established == true"
+      - "price_returns_to_finta_level == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Una volta che si e stabilito un livello di finta (spike sotto che e tornato sopra), se il prezzo torna a quel livello NON aspettare un'altra chiusura candela: uscire subito, perche quel livello e diventato trigger per lo short."
+    notes: "Prima finta: aspetti chiusura candela. Seconda volta che torna al livello della finta: esci immediatamente. Il livello della finta diventa un 'ottimo livello per andare short', quindi restare long e autolesionismo."
+
+  - id: BULL_LTCA_04_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, position_sizing, scalping]
+    source:
+      timecode: "01:35-02:07"
+    conditions:
+      - "position_size > book_visible_liquidity"
+      - "iceberg_order_available == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Per posizioni grandi rispetto alla liquidita visibile nel book, usare ordini iceberg (mostrando solo 1/4 della size) per non spaventare il mercato e per essere eseguiti senza slippage."
+    notes: "Esempio: 82.000 USDT di posizione, iceberg da 20.000 (1/4). Nel book si vedono solo 15.000 ma l'iceberg permette di entrare senza impatto. Per uscire, stessa logica: l'iceberg filtra immediatamente anche con poco nel book."
+
+  - id: BULL_LTCA_04_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, trend, breakout]
+    source:
+      timecode: "05:18-06:25"
+    conditions:
+      - "finta_survived == true"
+      - "price_accelerating_after_finta == true"
+      - "breakout_level_reached == true"
+      - "spike_in_boost_only == true"
+      - "no_spike_in_usdt == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il breakout fa lo spike solo nel book denominato in boost ma non in USDT, non e un vero breakout: il livello trigger non e stato rotto nel grafico di riferimento. Se l'avesse fatto in USDT si sarebbe venduto."
+    notes: "Distinzione critica su Binance: lo stesso titolo puo avere grafici diversi in USDT e in boost (BTC). Uno spike nel grafico secondario (boost) non conta se non si riflette nel primario (USDT). Il trigger vale solo sul grafico su cui si opera."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LTCA_04_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, beginner]
+    source:
+      timecode: "01:08-01:30"
+    statement: "La pulizia delle EMA e il fondamento per fidarsi del trade anche senza conferma dal book: se la EMA 10 comanda perfettamente e la EMA 60 funziona bene, ci si basa sulla pulizia grafica senza bisogno di livelli grandi nel book."
+    rationale: "La pulizia delle EMA puo sostituire la conferma del book come base di fiducia per l'ingresso."
+
+  - id: BULL_LTCA_04_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, psychology]
+    source:
+      timecode: "08:33-09:07"
+    statement: "Perdita di 82 boost (con fee incluse) su un trade da 82.000: poi dopo ha fatto un'operazione da quasi 500 USDT. E importante uscire, aspettare un'altra conformazione, e via. La perdita piccola non rovina la giornata."
+    rationale: "La perdita piccola e controllata permette di rimanere lucidi per la prossima opportunita, che spesso arriva subito dopo."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Il doppio supporto EMA (10 + 60 pulite) giustifica l'ingresso prima del bad classico. La finta intra-candela si gestisce aspettando la chiusura: spike sotto non conta, chiusura sotto si. Il livello della finta diventa trigger per la direzione opposta. Ordini iceberg per posizioni grandi. Spike nel book secondario non contano se non confermati nel primario."

@@ -1,0 +1,148 @@
+video:
+  id: BULL_T_013
+  series: tecniche
+  title: "EMA 223 - Nuovo riferimento di supporto e resistenza"
+  video_index: 13
+  duration_minutes: 15
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_13_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, retest, candle_pattern, trend]
+    source:
+      timecode: "07:02-07:29"
+    conditions:
+      - price_makes_spike_down_to_ema223 == true
+      - first_retest_of_ema223_after_drop == true
+      - wick_touches_ema223 == true AND candle_body_closes_above == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "The first retest of EMA 223 after a drop acts as a strong support, similar to how EMA 60 behaves."
+    notes: "Bull found EMA 223 behaves like EMA 60 as a bounce level on first retest. The spike to EMA 223 and bounce is a high-probability long entry zone."
+
+  - id: BULL_T_13_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, ema60, breakout, reversal]
+    source:
+      timecode: "07:39-08:30"
+    conditions:
+      - price_below_ema60 == true
+      - ema223_is_below_current_price == true
+      - price_approaching_ema223 == true
+    action:
+      - ENTER_LONG
+    stop_loss: "Below EMA 223"
+    applicability:
+      timeframes: []
+      market_regime: [bearish]
+    rationale: "When price breaks below EMA 60, EMA 223 provides the next reference for a bounce entry."
+    notes: "Bull previously had no reference below EMA 60. EMA 223 fills that gap. He places buy orders slightly above EMA 223 to catch the spike bounce."
+
+  - id: BULL_T_13_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, ema60, candle_pattern, reversal]
+    source:
+      timecode: "10:44-11:29"
+    conditions:
+      - price_descending_toward_ema223 == true (or ema60)
+      - candle_makes_large_wick_touching_ema == true
+      - next_candle_is_green == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "A large wick touching EMA 223 (or EMA 60) followed by an opposite-color candle signals strong rejection and reversal."
+    notes: "This pattern works identically on EMA 60 and EMA 223. The wick shows rejection, the next candle color confirms direction. Same logic applies in reverse for shorts: wick up to resistance EMA, next candle red = enter short."
+
+  - id: BULL_T_13_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, ema60, short, reversal, candle_pattern]
+    source:
+      timecode: "11:13-11:29"
+    conditions:
+      - price_ascending_toward_ema223_resistance == true (or ema60 resistance)
+      - candle_makes_large_wick_up_touching_ema == true
+      - next_candle_is_red == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Mirror of the long setup: wick rejection at EMA resistance followed by a red candle confirms short entry."
+    notes: "When price rises into EMA 223 or EMA 60 acting as resistance, a large upper wick rejection followed by a red candle is a short signal."
+
+  - id: BULL_T_13_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema223, ema60, regime_filter]
+    source:
+      timecode: "09:45-10:11"
+    conditions:
+      - asset_recently_tested_ema60_and_bounced == true
+      - asset_then_broke_above_ema60 == true
+      - asset_then_fell_back_below_ema60 == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "After a failed bounce above EMA 60, the next target for spike support is EMA 223."
+    notes: "Sequence: test EMA 60, bounce above, fail and crash back below EMA 60. In this scenario, EMA 223 becomes the key level to watch for the spike catch."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_13_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema223, ema60, ema]
+    source:
+      timecode: "00:54-01:36"
+    statement: "Bull uses EMA 5, 10, and 60 for crypto instead of the traditional 5, 10, 50 because EMA 60 proved more precise on crypto charts than EMA 50."
+    rationale: "Understanding Bull's EMA framework is essential for applying his techniques correctly."
+
+  - id: BULL_T_13_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema223, ema, psychology]
+    source:
+      timecode: "02:43-04:17"
+    statement: "Bull was initially afraid EMA 223 would bias his breakout trades by creating false reference points, but found it actually provides useful support/resistance without causing psychological interference."
+    rationale: "Knowing the limitations and mental risks of adding indicators helps traders evaluate whether to adopt EMA 223."
+
+  - id: BULL_T_13_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema223, ema, beginner]
+    source:
+      timecode: "06:00-06:52"
+    statement: "EMA 223 is only 11% different from EMA 200 but provides noticeably more precise touches on crypto; if you already use EMA 200 and it works for you, keep it."
+    rationale: "The adjustment is incremental, not revolutionary. Traders comfortable with EMA 200 should not feel forced to switch."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "EMA 223 replaces EMA 200 as a more precise support/resistance level for crypto, especially useful as a reference below EMA 60. The key pattern is a wick touching EMA 223 (or 60) followed by an opposite-color candle confirming reversal direction."

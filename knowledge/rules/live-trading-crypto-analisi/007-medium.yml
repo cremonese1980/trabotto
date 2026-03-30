@@ -1,0 +1,168 @@
+video:
+  id: BULL_LTCRA_07
+  series: live-trading-crypto-analisi
+  title: "QUICK perfezione: EMA 60 pulita, entry sul muro, trigger level"
+  video_index: 7
+  duration_minutes: 11
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_07_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, ema10, candelina, trend]
+    source:
+      timecode: "00:30-02:00"
+    conditions:
+      - ema60_never_had_body_close_below == true
+      - ema10_precision_on_price == true
+      - candelline_tight_above_ema60 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "The perfezione pattern: EMA 60 has never had a single candle body close below it. Combined with EMA 10 precision, this signals an extremely clean trend with strong hidden buying."
+    notes: "Perfezione is the highest-quality setup. No candle body closing below EMA 60 means every dip was bought before it could print a bearish close. EMA 10 precision confirms continuous accumulation."
+
+  - id: BULL_LTCRA_07_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, book, trigger]
+    source:
+      timecode: "02:00-03:30"
+    conditions:
+      - perfezione_pattern_detected == true
+      - muro_vendita_level_identified == true
+      - stop_limit_order_placed_at_muro == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below EMA 10"
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "Enter ON the muro level via stop limit order, not after the breakout. The stop limit triggers at the touch of the wall, giving you the earliest possible entry."
+    notes: "Critical distinction: entry is ON the muro (touch), not after it breaks. Use stop limit order type. This captures the first tick of the breakout."
+
+  - id: BULL_LTCRA_07_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [position_sizing, book, risk_management]
+    source:
+      timecode: "03:00-03:45"
+    conditions:
+      - setup_quality == perfezione
+      - book_liquidity == low
+      - spread_wide == true
+    action:
+      - REDUCE_SIZE
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "When liquidity is low (wide spread, thin book), reduce position size to avoid slippage and ensure clean entry/exit."
+    notes: "Even on a perfezione setup, size was reduced to ~8000 USDT due to low liquidity on QUICK. Quality of setup does not override liquidity constraints."
+
+  - id: BULL_LTCRA_07_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, breakout, invalidation]
+    source:
+      timecode: "04:00-05:30"
+    conditions:
+      - long_position_active == true
+      - breakout_executed == true
+      - candle_body_closes_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "After breakout, every candle MUST close its body above EMA 10. A body close below EMA 10 invalidates the momentum and requires immediate exit."
+    notes: "Wicks below EMA 10 are acceptable; body closes are not. This is the post-breakout confirmation rule for perfezione trades."
+
+  - id: BULL_LTCRA_07_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, breakout, take_profit]
+    source:
+      timecode: "05:30-07:00"
+    conditions:
+      - long_position_active == true
+      - price_passed_trigger_level == true
+      - price_returns_below_trigger_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "The trigger level concept: once price passes a key level, that level becomes the floor. If price returns below the trigger level, sell immediately."
+    notes: "The trigger level is a point of no return. Passing it means the move should accelerate. Returning below it means the move has failed. No second chances."
+
+  - id: BULL_LTCRA_07_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trigger, scalping, take_profit]
+    source:
+      timecode: "07:00-08:30"
+    conditions:
+      - long_position_active == true
+      - price_passed_trigger_level == true
+      - no_acceleration_within_current_minute == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "After passing the trigger level, price must demonstrate force within the current minute candle. If the minute closes without acceleration, sell immediately."
+    notes: "The current minute rule: after trigger, the market must prove itself within one candle. No proof = no trade. This prevents holding through slow bleeds."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_07_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, trend, psychology]
+    source:
+      timecode: "01:00-01:45"
+    statement: "Perfezione means the EMA 60 has never been violated by a candle body close. This is the strongest possible trend signature and indicates that every single dip was bought before sellers could print a close below support."
+    rationale: "Recognizing perfezione as the highest-quality pattern helps prioritize trades and justify tighter entries."
+
+  - id: BULL_LTCRA_07_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [take_profit, psychology, risk_management]
+    source:
+      timecode: "09:00-10:00"
+    statement: "Chi se ne frega (who cares): +4.22% in 2 candles is excellent. Do not regret missing more. Be content with consistent small wins rather than chasing rare large ones."
+    rationale: "The contentment philosophy prevents overtrading and revenge trading. +328 USDT on 8000 USDT in minutes is an outstanding return."
+
+  - id: BULL_LTCRA_07_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, position_sizing, beginner]
+    source:
+      timecode: "03:15-03:45"
+    statement: "Never force full size on a low-liquidity asset. The spread will eat your profits and slippage on exit can turn a winner into a loser."
+    rationale: "Liquidity is the silent killer of good setups. Size must always be calibrated to the book depth, not just the pattern quality."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "The perfezione pattern (EMA 60 never violated by body close) is the highest-quality setup. Enter ON the muro via stop limit, not after. Post-entry: candles must close above EMA 10, trigger levels are points of no return, and force must be demonstrated within the current minute. +328 USDT (+4.22%) on QUICK with reduced size due to low liquidity."

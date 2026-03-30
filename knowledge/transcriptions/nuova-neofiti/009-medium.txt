@@ -1,0 +1,298 @@
+0:00 ciao a tutti e benvenuti su Skype in the Bull, nuovo video della playlist per i off-tee,
+0:05 attenzione vedete il mega pullman di cinesi che arriva col cash in mano e questi sono i
+0:11 camion di scarpe, quindi quando arriva il pullman con i cinesi con tutti questi soldi
+0:17 capite che i prezzi non possono che salire, c'è proprio una sproporzione tra il camion
+0:22 e il pullman di cinesi, questa stessa sproporzione lo andremo a vedere nel book, il book è qualcosa
+0:27 di incredibile, lei ha incredibilmente paura di questa puntata perché pensa che sia molto
+0:33 difficile ma ha ragione, è molto difficile ma vedrete che vi piacerà, ok? Ho chiesto se avevo
+0:39 qualche domanda sulla puntata precedente, quindi bitcoin come indice, no è convinta di averlo
+0:44 capito, me l'ha descritto e definitivamente aveva ragione, ma ve lo rispiego e riassumo in attimo,
+0:48 quindi in pratica abbiamo bitcoin, anzi avevo un'altra immagine che l'altra volta non l'avevo
+0:52 fatto vedere, così ne approfitto per farvelo vedere, eccolo qua, allora qua abbiamo bitcoin
+0:59 forte e qualcosa che mentre bitcoin sale scende, questo significa che è molto più debole, ok?
+1:05 ma quello che interessa a noi è magari abbiamo bitcoin che sale e noi saliamo di meno, quello
+1:13 in realtà è più debole rispetto a bitcoin, ok? quindi no good, appena bitcoin finisce di salire
+1:20 questo scenderà molto di più, ok? e anche viceversa, cioè bitcoin che è debole, vediamo
+1:25 qualcosa che lateralizza o sale, appena bitcoin finisce di scendere inizia a lateralizzare e
+1:31 quell'altro salirà, ok? questa era un po' riassunto, questa immagine l'avevo preparata
+1:36 un'altra volta, mi ero dimenticato, ma abbiamo un mega pull medicinesi, ma iniziamo, ah qua
+1:42 l'ho fatta anche in maniera diversa, che questo è un livello grande nel book, quindi un camion molto
+1:47 più grande che arriva davanti al negozio, molto più grande degli altri, il prezzo non può che
+1:51 scendere perché ci sono molte più scape da vendere e per convincere le persone a comprare
+1:56 devi abbassare il prezzo, ok? se tu hai una casa in vendita, a 300 mila e nessuno viene a chiederti
+2:04 ha comprato da 300 mila, se lo metti a 200 vedrai che qualcuno lo trovi, ok? questo è lo stesso
+2:08 concetto, ne arrivano tanti da vendere, se lo vedi al prezzo intero non li venderai mai, tu lo
+2:14 abbassi e ce la fai, quando sono i saldi vendono tutto, proprio perché è solo questione di domanda
+2:19 offerta, ma andiamo a vedere cosa ci dice la nostra intelligenza artificiale sul book, quindi cos'è il
+2:26 book di negoziazione, cos'è il book di negoziazione, quindi order book in inglese,
+2:33 io lo chiamo semplicemente book, il book è la tabella che mostra tutti gli ordini di acquisto
+2:39 e vendita presenti sul mercato, quindi è come se tu fuori dal negozio vedessi tutti questi camion
+2:45 che stanno arrivando e vedessi anche i compratori che sono dentro il negozio, ok? sui mercati questa
+2:51 cosa che tu vedi nei negozi i compratori, quindi i cinesi che stanno comprando e il pullman fuori,
+2:56 il camion fuori con le scarpe che stanno arrivando, nel trading si chiama book, li vedi e finalmente
+3:03 questa rappresentazione, poi abbiamo tutti gli esempi, serve a capire dove sono posizionati
+3:10 i compratori e i venditori, quindi dove potrebbe muoversi il prezzo, quindi se tu guardi fuori
+3:15 dalla finestra e vedi che sta arrivando quel camion gigante che abbiamo visto prima,
+3:18 capirai che ci sarà troppe scarpe da vendere, quindi il prezzo dovrà scendere, ok? struttura
+3:25 base, vedo che ti stai già appassionando tantissimo, ma qua è una parte difficile,
+3:29 ma quando farò vedere proprio veramente il book quelli belli secondo me ti scatterà
+3:33 qualcosa, il book è diviso in due parti, bid, compratori, non importa che in realtà impari bid
+3:43 e ask, sinceramente non lo so neanche io, non me ne frega niente, è rosso verde ma poi vedrai insomma,
+3:48 ordini di chi vuole comprare a un certo prezzo, ok? quindi bid sono i compratori, quindi gli ordini,
+3:54 quindi nei negozi di scarpe sono quelli che sono disposti a comprare la scarpa che ne sono a 100
+3:59 euro, poi vedrai quelli che sono disposti a comprarla a 95 e quelli che sono disposti a
+4:02 comprarla a 90, lo vedrai nel book, ask sono invece i venditori, quindi ordini di chi vuole vendere
+4:08 ad un certo prezzo, quindi negoziante che prende le scarpe dal camion e mette le scarpe nel negozio
+4:15 ad un certo prezzo, ok? e questi sono i venditori ask, ordini di chi vuole vendere ad un certo prezzo,
+4:22 esempio semplificato, chiaramente semplificato che a me non piace per niente ma comunque te lo faccio
+4:27 vedere lo stesso, questi sono i prezzi 99,60 99,70 99,80 mettiamo che sono le scarpe, ok? quindi
+4:34 ci sono 50 scarpe a 99,80 120 scarpe a 99,70 300 scarpe a 99,60, in vendita invece ne abbiamo 100
+4:46 qua infatti a me non piace come esempio perché non abbiamo il prezzo di chi vende quindi
+4:51 televisione artificiale qua secondo me però vi faccio vedere il suo esempio magari voi riuscite
+4:55 a capire qualcosa, qua si vede praticamente il primo che vende la scarpa lo vende è disposto a
+5:01 vendere a 110, il primo che lo vuol comprare è disposto a comprarlo 99,80 la quantità è 50,
+5:10 voi vedrete dopo insomma, il prezzo centrale tra il miglior bid e il miglior ask si chiama spread,
+5:17 in realtà è la differenza fra chi compra e chi vende, lo spread, lo spread che si sentirà
+5:23 nel telegiornale quando si parla lo spread fra noi e la Germania quindi praticamente quanto paghiamo
+5:30 noi di tassi sul nostro debito rispetto alla Germania adesso si parla sui telegiornali di
+5:35 questo spread qua, quando noi facciamo schifo come Italia che abbiamo tanto debito il pil va
+5:40 male abbiamo tanto spread quindi c'è tanta differenza fra noi e la Germania, la Germania
+5:44 spenderà meno di interessi rispetto a noi che invece spenderemo tanto interesse, in quello si
+5:49 nel trading lo spread è semplicemente la distanza fra chi vuole comprare e chi vuole vendere cioè
+5:55 c'è uno che è disposto a vendere la scarpa a 120 e c'è uno che è disposto a comprarla a 110,
+6:00 nessuno dei due è ancora d'accordo quindi serve qualcun altro o che lo vende a 110 e che veda ci
+6:06 vuole qualcun altro di mezzo, quella differenza però si chiama spread, più compratori ci sono e
+6:11 più venditori ci sono più è probabile che lo spread è basso, meno compratori meno venditori
+6:17 lo spread è più alto, c'è più differenza ok? capirai anche questo dopo. Concetti chiave per
+6:23 capire il book, miglior prezzo best bid, miglior prezzo a cui qualcuno vuole comprare, best ask,
+6:30 miglior prezzo a cui qualcuno vuole vendere, io non uso mai questi termini, liquidi, più ordini
+6:36 ci sono ad un prezzo più quel livello è forte, più ordini ci sono ad un prezzo più quel livello
+6:45 è forte, più cinesi col cash ad un certo livello, tipo ci sono 10 cinesi che sono disposti a
+6:54 comprare la scarpa a 100 euro è più forte rispetto a 5 cinesi che sono disposti a pagarlo sempre a
+7:04 100 euro, più ce n'è a 100 euro più è forte quel livello quindi più è probabile che il prezzo poi
+7:08 si alzerà, questo lo capirei dopo. Supporti e resistenze, se nel book trovi molti ordini buy,
+7:13 possibile supporto, questo è importante, quindi se nel book trovi molti ordini buy,
+7:18 quindi se nel book trovi quel pullman di cinese di gente che vuole comprare,
+7:22 è un supporto, il che significa sempre discorso del tavolo, più cinesi abbiamo che vogliono
+7:31 comprare più difficile che il prezzo possa scendere, perché abbiamo tanti compratori,
+7:34 questo sta dicendo, e al contrario se abbiamo il camion enorme di scarpe da vendere più difficile
+7:41 che il prezzo salirà perché hanno tante scarpe da vendere quindi devono abbassare il prezzo,
+7:48 e qua si parla di supporto, quando sono i compratori quindi trovi nei compratori si
+7:55 chiama supporto perché il prezzo non scende quindi c'è supporto, la base si chiama supporto,
+7:59 resistenze invece al contrario è per il prezzo che non sale perché ci sono tanti venditori.
+8:06 Market order, quando qualcuno compra o vende subito prende all'equità presente nel book,
+8:11 ecco questo è molto importante, è una cosa che noi non vediamo nel book,
+8:15 quando compri a market, compri a mercato significa che arriva il cinese che dice non mi interessa,
+8:27 io voglio comprare immediatamente 10 scarpe, non mi interessa il prezzo, quindi non entrò nel
+8:38 negozio, non mi guarderò in giro a vedere i prezzi, entro e dico semplicemente dammi 10 scarpe quel
+8:45 che è il prezzo, quello che è è, quindi se abbiamo 10 scarpe a 120 comprerò tutti quelle 10 scarpe a
+8:51 120, se invece ne abbiamo solo 5 comprerà 5 a 120 e gli altri 5 a un prezzo più alto,
+8:59 perché lui ne vuole comprare 10 subito ma solo 5 sono a 120, gli altri sono a 125 e lui comprerà
+9:06 125, ma questo non entra mai nel book non lo vedi, semplicemente arriva e si prende la scarpa e ti
+9:12 dà subito i soldi, non rimane lì fermo ad aspettare un prezzo che vuole lui, non dice comprerò voglio
+9:18 comprare 10 scarpe a 115, lui dice io le voglio subito, qual è il prezzo? 120, boh li prendo,
+9:24 se sono solo 5 sono dispiatti, gli altri 5 le comprerò a un prezzo ancora più alto fino a quando
+9:29 non ha tutte 10, questo è molto importante perché noi non vediamo queste cose nel book.
+9:34 Come lo usa uno scalper? uno scalper, gli scalper guardano nel book per capire dove
+9:43 stanno entrando i grandi ordini, dove può fermarsi il prezzo? assolutamente sì se il
+9:49 mercato è sbilanciato by or sell, assolutamente sì, quindi dove può fermarsi il prezzo? perché
+9:56 se noi abbiamo quel camion gigante di scarpe che abbiamo visto prima, lì il prezzo non salirà,
+10:03 in quando il camion è pieno il prezzo delle due può scendere, quindi se arriva quello che vuole
+10:09 comprare subito 10 scarpe ce n'è mille li, quindi 10 li compra non c'è nessun problema, il prezzo
+10:16 non va a salire, se invece un camion piccolo che ne ha solo 5 di scarpe, se arriva uno che ne vuole
+10:22 comprare 10, il prezzo sale, comprerà quei 5 ma il resto salirà, quindi noi capiamo leggendo il
+10:29 book se il prezzo può salire o scendere da li e questo è il vantaggio, guardando il book noi
+10:37 riusciamo a guardare fuori dalla finestra del negozio, vediamo il camion grande che sta arrivando,
+10:42 bene, capiamo che il prezzo probabilmente inizierà a scendere. Spiegazione ultra semplice,
+10:48 questo è l'ultimo pezzo, poi abbiamo finito, il book è come la fila supermercato, gente con il
+10:55 carrello, comparatori, noi siamo i pulveni cinesi invece, gente alla cassa, venditori, invece li
+11:01 sono i camion con le scarpe, se il prezzo si muove quando una fila supera l'altro, quando la gente
+11:11 con il carrello supera i venditori, ci sono troppe persone che vogliono comprare rispetto agli oggetti
+11:18 in vendita e quindi il prezzo salirà, sempre discorsi scarcità, bene io penso che tu non
+11:23 abbia capito niente, giusto ancora? Ecco secondo me invece dove capirai è questa spiegazione,
+11:28 sta qua, prendo subito un esempio, anzitutto per così, aspetta, qua lo possiamo allargare così,
+11:38 ok, questo è il book reale di Bybit, dove io opero, è il secondo che si sta ispirando al mondo,
+11:46 il primo per crescita e soprattutto anche la mia tecnologia di trading, incredibile, ma fra
+11:52 l'altro ragazzi avete visto che l'argento, ho chiesto io l'argento di essere tradato nei derivati,
+11:58 arrivato, adesso ho chiesto anche il petrolio, vedremo se arriverà anche il petrolio, ok? Detto
+12:02 ciò, questo è il book, allora il rosso sono i venditori, quindi i camion di scarpe che vediamo
+12:12 fuori, il verde sono i cinesi, i compratori all'interno del negozio, vedi che questo è
+12:19 il prezzo, quindi in verde a sinistra vediamo il prezzo, a salire va in rosso e a scendere in verde,
+12:28 tu puoi trovare su altri exchange ribaltato come colore, ma chi se ne frega, l'importante è capire
+12:33 che sopra ai prezzi diciamo che salgono, più alti, e sotto ai prezzi più bassi, in mezzo c'è il prezzo
+12:42 reale che sta scambiando, quindi qua sono le persone che entrano nel negozio e guardano e dicono
+12:50 per me i prezzi sono troppo alti metto un prezzo più basso e questa è la quantità, quante scarpe,
+12:56 ok? Io voglio comprare 549 euro di scarpe al prezzo di 17,21, di più non sono disposto,
+13:05 devi aspettare che qualcuno voglia vendere una scarpa 549 euro di scarpe a questo prezzo,
+13:13 in questo momento non c'è, il primo prezzo dove tu puoi comprare puoi comprare 1536 euro di scarpe
+13:21 però al prezzo di 17,25, vedi 17,25 è più alto di 17,21, 17,25 è più alto di 17,21 giusto? Ok,
+13:31 quindi se voglio comprare subito posso comprare 1536 euro, dollari, USDT, quindi dollari,
+13:38 posso comprare in questo momento 1536 euro di scarpe, quindi entro nel negozio a 17,25,
+13:46 se io ne voglio comprare 10.000 euro di scarpe, 10.000 dollari scuse, di scarpe, e non voglio,
+13:54 non mi interessa il prezzo, ho bisogno di comprarlo subito, dovrò fare questo calcolo qua,
+14:00 ho 10.000 dollari, qua ce n'è solo 1536, mi li compro a questo prezzo qua, 17,25,
+14:07 poi vado a un prezzo ancora più alto, 17,26, ci sono altri quasi 5.000, io ne ho 10.000 quindi
+14:14 qua siamo 5, 6 e mezzo, 6.500, devo arrivare a 10.000, qua c'è altri 1.500 quindi vado a 7,8.000,
+14:22 ma devo alzare il prezzo a 27, e il rimanente mi va a finire qua, quindi utilizzando tutti
+14:29 questi livelli, quindi salendo sempre di prezzo, sono riuscito a comprare 10.000 euro di scarpe,
+14:33 ma ho fatto salire il prezzo, perché avevo fretta, se non avevo fretta potevo metterlo nel verde,
+14:40 potevo dire ne compro 10.000 a 17,2, 17.200, mettevo qua 10.000 euro e vediamo se arrivava
+14:48 tu cambio di scarpe e faccio una bassa del prezzo per arrivare fino là, ok? Quindi se quando tu
+14:55 vedi il negozio puoi scegliere, poi lo prezzo più basso lo inserisci nel verde e vedi se arrivano
+15:01 più scarpe che il prezzo scende, tu entri, hai fretta, puoi entrare comprare le scarpe,
+15:06 andare subito a casa, perché devi andare a vedere la Durso che c'è a poverigiocinque, devi
+15:10 andare subito qua, non c'è abbastanza, c'è solo 1.500, tu hai 10.000, vai livello dopo,
+15:14 quindi prezzo più alto, non è ancora abbastanza, vai ancora un prezzo più alto e da lì capisci
+15:18 che il prezzo sale, quindi quando qualcuno ha fretta compra e fa salire il prezzo, quando
+15:26 qualcuno ha fretta non di comprare ma di vendere, dovrà fare lo stesso ragionamento,
+15:31 dovrà vendere e farà scendere il prezzo, se uno ha 10.000 dollari di scarpe e vuole vendere subito
+15:37 perché deve andare a mangiare, può vedere l'ultimo video di Sculpting the Bull su YouTube,
+15:41 video di analisi tecnica, venderà, qua c'è solo 500, deve abbastare il prezzo, quindi deve vendere
+15:47 le sue scarpe a meno e va di livello fino a quando non si ferma, dove è che arriva il bello del book?
+15:54 Non quando vediamo dei livelli tutti simili, questi sono abbastanza simili, quando iniziamo a vedere dei
+16:00 livelli più grandi, vedi qua sono 13.600, 15.600, qua sono più grandi, qua c'è addirittura un 28.000,
+16:08 dice qualcuno che dice io col cavolo che vendo a 17.5, io lo vendo solo a 17.33,
+16:15 cosa significa? Che se tu sei in fila, quando tu vai al supermercato, la prima cosa che fai
+16:22 quando vai dalla fila, guardi quanto sono pieni i carrelli, se tu trovi un carrello troppo pieno,
+16:30 ce n'è tre, uno dietro l'altro, tu non vai neanche in quella fila lì, vai e cerchi una fila con meno,
+16:34 qua cosa succede? Se tu vedi che ci sono troppi carrelli pieni,
+16:39 andrai a vendere a un prezzo inferiore in modo di essere prima di quei carrelli, ok?
+16:50 Ti faccio un altro esempio più chiaro,
+16:52 eccolo qua, con un grafico, questo mi piace un sacco perché è un esempio con il grafico, ok?
+17:04 Perché qua? Vabbè comunque, qua c'era un livello, non si capisce perché qua sto perdendo dei soldi,
+17:16 vabbè comunque, interessante perché qua ero short, sì, qua sono short 100.000,
+17:22 sì, è sell, ero nato short, non ho ancora rotto il livello evidentemente, vabbè comunque,
+17:29 sto lavorando per rompere la 10, ah ok, perché non sono uscito, perché è giusto,
+17:36 qua c'è un livello a 0.813, eccolo, ho capito, l'ho capito, qua sono short ma non sono uscito
+17:44 perché il 0.1813 è qua, quindi questo prezzo non ha superato, ok, allora, questo è già difficile
+17:54 perché vedi il grafico, però nel book vedi che c'è un livello molto più grande degli altri,
+17:57 ok? Il che significa è che lì si è posizionato quel camion, vediamo se riesco a aprire,
+18:05 due in uno, eccolo qua, qua c'è questo camion molto grande che sta fermando il prezzo perché
+18:11 prima di far salire il prezzo questo deve, devi finire di vendere queste scarpe, solo dopo che
+18:19 hai finito di vendere tutte queste scarpe puoi pensare che il prezzo possa salire, ok? Quella
+18:24 rappresentazione lo vedi qua, quindi lì c'è un camion pieno di scarpe dove io che sto
+18:31 appuntando a far sì che possa scendere il prezzo proprio perché è presente quel camion,
+18:37 mi sono messo short, in questo caso avevo le ma 10 che sta ancora tenendo ma appena non tiene
+18:42 questo qua poi dopo andrà, vedi, il mio target era qua sotto, andrà nel livello sotto, ok? E qua
+18:46 non trovo niente, se io qua avesse avuto anche lì un pezzo grande probabilmente non avrei fatto
+18:52 neanche questo trade perché avrei capito che c'è un supporto e sarei entrato quando iniziava a
+18:58 finire quel supporto, quindi quando il prezzo sarebbe sceso ad un livello grande e vedevo che
+19:04 quel camion piano piano inizia a scendere di scarpe prima che finisca di vendere le scarpe,
+19:09 io entro short, finisce le scarpe e il prezzo crolla, ok? In questo caso è al contrario,
+19:15 quindi questo è un prezzo in vendita, quindi io per uscire da questo trade questo livello
+19:20 doveva iniziare a scendere da 30 mila, questo è 30 mila dollari, doveva scendere anche ne so,
+19:23 a 15 mila, quindi capivo che stava iniziando a comprare, dopo io compravo i miei 10 mila e
+19:30 uscivo dal trade, anche in perdita, ma è questo che mi sta facendo capire che invece in realtà
+19:34 il prezzo vuole scendere, perché mi sta difendendo, fa da resistenza a far sì che il prezzo possa
+19:40 salire, quindi se c'è una resistenza che impedisce che il prezzo possa salire io dico ok, il prezzo
+19:47 da lì è difficile che possa salire, allora io voglio guadagnare in discesa,
+19:50 se davanti al negozio arriva quel camion gigante e quel camion gigante di scarpe è questo qua,
+19:57 io posso pensare che il prezzo vuole scendere, tutti gli altri che entrano nel negozio che
+20:03 vogliono vendere le scarpe lo venderanno a un prezzo inferiore a quello del camion,
+20:06 quindi qua tu arrivi nel negozio, vedi il camion fuori, dici ok, lui che prezzo vuole vendere?
+20:11 a 0,18,3 io devo per forza vendere a prima, per avere qualche possibilità di poter vendere,
+20:18 e viceversa, ma questo ha anche un simbolo di tanti venditori, invece quando lo trovo sotto è il
+20:27 simbolo di tanti compratori, quindi il guardare fuori del negozio è proprio questo, vedo i livelli,
+20:31 da qua poi posso lavorare coi grafici ok, vediamo un altro esempio, adesso è ancora un po' arobo,
+20:40 giusto? ok questo è un bel esempio, al contrario in acquisto, vedi che è molto più grande?
+20:48 questo è 83 mila dollari, rispetto agli altri livelli qua c'è addirittura 92 dollari,
+20:54 113 dollari, 3000, e qua c'è 83 mila dollari, quindi è difficilissimo che il prezzo possa scendere
+21:01 sotto, se io entro nel negozio e voglio comprare devo per forza essere disposto a comprare un
+21:06 prezzo più alto, ragazzi dovete capire che lei in questo momento è disperata, ha una faccia in
+21:12 cui sta dicendo questo è ancora arabo, giusto? esatto, questo è ancora arabo, allora cerchiamo
+21:18 di capire, questo è il Pullman di cinesi per eccellenza, quindi tu entri nel negozio e stai
+21:29 vedendo un sacco di questi cinesi, vedete che lo riapro, tu stai vedendo questi pazzi pieni di soldi
+21:37 che vogliono comprare scarpe, e ci sono proprio le scarpe che vuoi comprare tu, e dici tu cosa fai
+21:44 li? vuoi comprati le scarpe e ci sono tutti questi pazzi che vogliono comprare scarpe a tutte le
+21:49 parti, l'unico è dire ok ci sono troppi comparatori, niente devo comprare subito al primo livello che
+21:56 c'è qua, perché altrimenti se tu ti metti qua è difficile, di sicuro non ti metti dopo tutti i
+22:04 compratori, allora ragazzi qua devo capire come poter far capire, vediamo se ho altro esempio ok?
+22:13 vediamo vediamo vediamo, qua c'è un altro grafico, in questo caso sono in gain, ecco perché ero
+22:20 andato short qua
+22:29 esatto, anche qua non sono uscito perché poi avevo eventualmente
+22:36 o volevo fare un altro ingresso, che cos'è sta roba qua? vabbè comunque fatto sta, questo mi è
+22:41 piaciuto perché? perché qua, eccolo qua, c'è il supporto, quindi qua c'è un altro livello short,
+22:49 io sono già short ma c'è un altro livello short, short è quando guadagni che il prezzo scende,
+22:54 però prima di entrare col secondo ingresso ho il pullman di cinesi qua, vedi che è molto più grande
+23:02 degli altri livelli? qua ho 10.000 ma qua ho 38.000, è molto più grande degli altri livelli, quindi io
+23:07 non entrerò short, qua aspetterò di vedere questo il pullman di cinesi che i cinesi finiscono i
+23:16 soldi, questi sono i soldi, questo è esattamente quanti soldi hanno i cinesi, tu li vedi nell'autobus
+23:23 così, ma nel book tu ti fanno la somma, la somma di tutti questi cinesi è questo, 10.000 più 38.000,
+23:32 quando questo sta finendo, quindi se io voglio entrare short con 10.000, non ha senso che
+23:41 entro adesso perché rimangono ancora 38.000 che è un supporto, sta tenendo sul prezzo,
+23:49 è quel tavolo in cui ti stai dando le martellate, quando però anche quello inizia a scendere quindi
+23:56 la 38.000 arriva a 15.000 e io devo entrare con 10.000 significa che dopo rimarranno solo 5.000,
+24:02 i cinesi sono finiti e da lì sì che vi posso aspettare che il tavolo si rompe e il prezzo
+24:09 scende, questo è il vantaggio del book, che io leggendo il book ho la somma di quanti soldi
+24:16 hanno i cinesi, questo è un po' più chiaro vero? Ragazzi mi ha fatto il mezzo miracolo,
+24:22 però questo effettivamente è più chiaro, quindi questa è la somma dei cinesi, quindi non ha senso
+24:29 che io vado short adesso cioè guadagnare a ribasso, io ero già sopra, ma qua per fare
+24:34 il secondo ingresso aspetto che si venga a mangiare questo e da lì mi posso aspettare la
+24:37 bella accelerazione invece. Vediamo se c'ho altri esempi, so che c'è un esempio con un livello
+24:43 gigantesco anche qua vedete dei livelli grandi quindi anche qua questi sono i supporti quindi
+24:48 quanti soldi c'hanno i cinesi, prima di andare short qua aspetto che si possa finire questo livello
+24:53 è anche vero che cosa succede spesso il prezzo scende verso i supporti, quindi scende per capire
+25:06 dove i cinesi stanno comprando e da lì rimbalza, cioè capiscono che è vero che i soldi ci sono,
+25:15 è come se il prezzo scendesse, cioè è come se tu ti avvicinassi per guardarsi se i soldi sono veri,
+25:20 se ce li hanno veramente o no, magari sono soldi finti, tu vai lì vai a vedere al prezzo che lo
+25:25 stanno mettendo, se effettivamente tirano fuori i soldi tu li puoi vedere da vicino vedi che i
+25:29 soldi sono reali e dici ok allora questo è un supporto vero è solo la prima martellata perché
+25:35 la prima martellata è la prima volta che arriva quel prezzo da lì ci possiamo aspettare il rimbalzo
+25:39 poi la seconda volta che ci va iniziano a consumare di più i loro portafogli,
+25:44 la terza volta rimarrà solo 10.000 e dopo andrà distrutto il livello e questa è la logica dietro
+25:52 la terza martellata per questo è che quando hai livelli grossi nel buco li puoi usare anche come
+25:57 rimbalzo, come protezione, perché è un supporto se è nel prezzo di acquista è un supporto,
+26:02 fosse qua sopra una resistenza, vi faccio vedere dei livelli grandi, ecco qua c'è un livello enorme,
+26:07 dove è il livello grande? vedi un numero particolarmente grande rispetto agli altri,
+26:13 esatto 393 mila ok? questa è 15 mila, questa è 393 mila, qua abbiamo un mega pull mandicinese,
+26:22 questa è gigantesca proprio, fanno il cash vero ok? quindi no anzi questo è in vendita quindi
+26:30 questo è il camion, questo è il camion in vendita quindi questo è il camion gigantesco che ne ha
+26:34 una barca piena proprio, il camion strappino di scarpe, quindi il prezzo rimane basso,
+26:40 prima di comprare e da qua che si formano le conformazioni, come fa? perché si fa quel terzo
+26:48 tocco che abbiamo visto le altre volte, che è quella tre volte che va a martellare? perché c'è
+26:53 qualcosa che impedisce che il prezzo possa salire oltre la martellata, oltre quel livello, da lì
+26:58 abbiamo quelle laterizzazioni, abbiamo quei terzi tocchi, abbiamo i bad, abbiamo tutte le
+27:02 conformazioni che vedremo, molte conformazioni breakout, tecnicamente avvengono perché nel book
+27:07 ci sono dei compratori o venditori grandi, in questa casa è molto grande quindi il prezzo
+27:12 da lì non può salire, prima di salire deve scendere questo prezzo qua, deve andare da 393,
+27:18 a 300, a 250, a 200, 150, deve scendere, gente compra compra compra compra, quando poi arriva
+27:24 la macchina, sono 20.000, tu entri e da lì dopo che ti puoi aspettare quell'esplosione,
+27:28 perché dopo il camion gigante non c'è più niente, quasi si formano le conformazioni,
+27:38 perché il prezzo si avvicina, tu vedi la tua barra, il prezzo si avvicina e poi viene rigettato
+27:45 perché non riesce a superarlo e quindi torna giù, poi ritorna su e viene rigettato di nuovo,
+27:50 poi ritorna su e viene rigettato fino a quando questo scende di prezzo, ogni volta che va
+27:54 vicino si abbassa quindi da 393 diventa 300, poi fa un terzo tocco, arriva da 300 a 250,
+28:02 ma non lo rompe, quindi torna giù, fa un quarto tocco che va a 150.000, al quinto tocco vedi
+28:07 che va a 50.000, tu li fai in ingresso, finito i soldi, poi hai l'esplosione, questo è un po'
+28:13 tecnicamente che avviene e questo è il vantaggio, ma noi non troviamo sempre dei livelli, delle
+28:20 volte non ci sono, non li vedi e che non si vogliono mostrare. Se vuoi ti posso complicare
+28:27 molto la vita adesso che ti dico un'altra cosa, ti dico solo questo, senza dire quell'altra cosa
+28:34 ancora più complessa perché andremo a fare altre cose del book, questa è solo la prima puntata,
+28:39 perché sul book vi dobbiamo parlare tanto, però per esempio io posso anche fare finta,
+28:48 posso arrivare col camion pieno di scarpe ma ci sono solo le scatole, in realtà non ci sono le
+28:52 scarpe, come faccio a capirlo? Quando arrivi là la prima volta apri la scatola e guardi cosa c'è,
+29:00 quindi se io quando arrivo qua questo si sposta, è finta, lo sta facendo apposta per cercare di
+29:09 far tenere i prezzi bassi. Quindi se tu vuoi fare finta, tu sei short, vuoi che il prezzo non salga,
+29:17 tu puoi fare finta mettendo dei prezzi grossi nel book, ma sono solo le scarpe, sono solo le
+29:22 scatole delle scarpe, non c'è la scarpa. Come fai a capir se è vero? Quando ci arriva ci guardi
+29:28 dentro, dici ok compro un paio, vuoi vedere cosa c'è dentro, se c'è la scarpa vuoi dire che questo
+29:33 è vero, questo non si mosso. Quando invece si avvicina e questo si muove è finto, quindi semplicemente
+29:38 è come se non ci fosse, quindi non ti fai fregare. Quindi tu semplicemente guardi e dici che prezzo
+29:44 ha, il prezzo grande? 20.42, bene, se dopo mezz'ora tu guardi invece di 20.42 è 20.49 è finto.
+29:54 E quindi è come se non ci fosse, sta facendo una finta. Si mettono i camion pieni di scarpe davanti
+30:01 ai negozi per finta, cioè con le scatole ma senza la scarpa dentro, per cercare di tenere i prezzi
+30:07 bassi. Se lui ha la convenienza, no? Ma al contrario può essere anche in acquisto. Per cercare
+30:15 di fintamente di tenere i prezzi alti, il negoziante fa venire un pullman di cinesi senza soldi,
+30:22 cioè con i soldi finti. E dopo uno entra e dice cavolo, pieno di cinesi, hanno in mano tutti i
+30:28 soldi, no aspetta aspetta, c'è la scarpa che voglio io, lo compro subito. In realtà loro
+30:32 vogliono i soldi finti. Come fai a capire se sono soldi veri o no? Entra nei negozi e dice
+30:36 vediamo un attimo se vedo almeno uno di questi cinesi che compra. Se vedo uno di questi cinesi
+30:43 che compra e la cassiera verifica i soldi sono veri vuol dire che quel pullman è vero. Altrimenti
+30:49 è tutto un bluff. E questo accade per cercare di manovrare le cose, quindi deve avere locca anche
+30:56 per capire cosa stai guardando e cosa no. Il neofita dice sempre, ma quello si sta muovendo
+31:00 per il pezzo lì. E sta muovendo proprio per cercare di confonderti le idee. Noi trader sappiamo
+31:07 che è normale e quindi se si muove è come se non ci fosse, quindi diventa invisibile. Non ci
+31:12 facciamo fregare. Quando invece lo tocca e non si muove è vero e quindi lo usiamo come resistenza,
+31:19 come supporto. Abbiamo capito già un punto in più? Ragazzi questa è la prima puntata del
+31:24 book ce ne saranno credo almeno due o tre. Vedo un sorriso sottile, ma c'è già un sorriso. Forse
+31:32 hai capito qualcosina? Scrivetelo nei commenti e iscrivetevi al canale. Ciao!

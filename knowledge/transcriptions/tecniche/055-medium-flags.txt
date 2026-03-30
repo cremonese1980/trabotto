@@ -1,0 +1,221 @@
+# Low-confidence segments for: 055_Tecnica_del_FUNDING_RATE_Tutorial_completo.mp3
+# Total flagged: 72
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:06-3:14] (confidence: -0.184)
+  "volte al giorno e in questo caso alle 9 per cambio candela era l'una e allo"
+
+[3:14-3:20] (confidence: -0.184)
+  "scadere allo scadere che avete alle 9 si pagava l'uno e mezzo per cento poi qua"
+
+[3:20-3:24] (confidence: -0.184)
+  "vedete due perché il prezzo è continuato a discostarsi quindi ha aumentato il"
+
+[3:24-3:27] (confidence: -0.184)
+  "founding rate da 1 e mezzo è andato addirittura a meno 2 ok e poi qua c'è"
+
+[3:27-3:32] (confidence: -0.184)
+  "l'orario in cui va a scadere quindi ricapitolando cosa accade quando i due"
+
+[3:32-3:37] (confidence: -0.147)
+  "prezzi sono diversi fra il mercato spot e il mercato perpetuo il mercato"
+
+[3:37-3:41] (confidence: -0.147)
+  "perpetuo il mercato dove ci sono i futures dove possiamo andare anche short"
+
+[3:41-3:46] (confidence: -0.147)
+  "dove c'è tantissima liquidità c'è più liquidità rispetto al mercato binance spot"
+
+[3:46-3:50] (confidence: -0.147)
+  "ok e sono due mercati diversi talmente sono"
+
+[3:50-3:53] (confidence: -0.147)
+  "diversi e talmente è reale che devono mettere un founding rate cioè devono"
+
+[3:53-3:57] (confidence: -0.147)
+  "dire nei mercati azionari cosa fanno quando ci sono dei problemi non di"
+
+[3:57-4:02] (confidence: -0.171)
+  "differenza di prezzo ma oscillazioni troppo grandi spesso tolgono la"
+
+[4:02-4:05] (confidence: -0.171)
+  "possibilità di andare short invece qua invece di toglierla possibilità per"
+
+[4:05-4:08] (confidence: -0.171)
+  "fortuna ha fatto una cosa più intelligente hanno messo una tassa ok"
+
+[4:08-4:14] (confidence: -0.171)
+  "quindi disincentiva ecco grazie a questa logica quindi praticamente dicono non"
+
+[4:14-4:18] (confidence: -0.171)
+  "non ti togliamo la possibilità di andare short tu puoi andare short ma devi pagare"
+
+[4:18-4:21] (confidence: -0.171)
+  "una tassa del 2 per cento che è tantissimo o in questo caso quando è"
+
+[4:21-4:25] (confidence: -0.171)
+  "scaduto era l'uno e mezzo per cento è tantissimo quindi va a disincentivare"
+
+[4:50-4:56] (confidence: -0.21)
+  "quando è scaduto ok quindi voi dovete capire prima come è possibile che ci"
+
+[4:56-5:01] (confidence: -0.21)
+  "sia questa differenza di prezzo è proprio perché qualcuno di grande di"
+
+[5:01-5:06] (confidence: -0.21)
+  "enorme infatti qua abbiamo anche il segnale del bull bot che si chiama"
+
+[5:06-5:13] (confidence: -0.21)
+  "founding rate e big balena in base agli spostamenti qua per esempio il segnale"
+
+[5:13-5:17] (confidence: -0.21)
+  "big balena c'è già una differenza fra spot e per peto del 159 per cento quindi"
+
+[5:17-5:21] (confidence: -0.162)
+  "ti avverte che attenzione su questo titolo qua si sta già discostando"
+
+[5:21-5:28] (confidence: -0.162)
+  "perché io non vorrei farvi fare comunque la prima la prima tecnica poi"
+
+[5:28-5:31] (confidence: -0.162)
+  "ve lo racconto insomma e quindi praticamente ti dice che si sta già"
+
+[5:31-5:35] (confidence: -0.162)
+  "spostando e quindi voi potete fare attenzione quando si sposta io vi"
+
+[5:35-5:42] (confidence: -0.162)
+  "consiglio di avere sempre i due grafici di aver sempre due grafici sotto quindi"
+
+[6:39-6:42] (confidence: -0.168)
+  "prezzo non è salito fortemente quando sale fortemente quindi siamo anche nel"
+
+[6:42-6:46] (confidence: -0.168)
+  "caso in cui qualcuno semplicemente ha guadagnato tantissimo non gli interessa"
+
+[6:46-6:50] (confidence: -0.168)
+  "vendere un prezzo più alto perché ha delle quantità talmente enormi che deve"
+
+[6:50-6:54] (confidence: -0.168)
+  "iniziare a vendere prima vi ricordo che se hai delle percentuali di società quindi"
+
+[6:54-6:58] (confidence: -0.168)
+  "stiamo parlando di mille o 10.000 o 100.000 dollari stiamo parlando di milioni"
+
+[6:58-7:02] (confidence: -0.168)
+  "di dollari quindi se delle percentuali ci vogliono addirittura più giorni quindi"
+
+[7:02-7:05] (confidence: -0.168)
+  "una persona può anche dire ok basta non mi interessa adesso inizia a vendere"
+
+[7:05-7:11] (confidence: -0.177)
+  "anticipo e quindi proprio proprio per il fatto che si va a discostare"
+
+[7:11-7:15] (confidence: -0.177)
+  "incentiverò le persone a comprare io invece venderò le mie quota enormi"
+
+[7:15-7:19] (confidence: -0.177)
+  "magari invece di metterci tre giorni ci metterò due giorni questo è però"
+
+[7:19-7:25] (confidence: -0.177)
+  "interessante capire proprio se questa balena questo fondo quel che è sta"
+
+[7:25-7:32] (confidence: -0.177)
+  "iniziando a andare short o se questa balena o fondo quel che è sta vendendo"
+
+[8:58-9:03] (confidence: -0.216)
+  "su gli altri due e gli altri due tecniche sono queste qua"
+
+[9:03-9:09] (confidence: -0.216)
+  "quindi una volta capito il perché e che cos'è il founding rate cerchiamo di"
+
+[9:09-9:17] (confidence: -0.216)
+  "capire due tecniche allora se noi siamo short quindi siamo quel fondo che è short"
+
+[9:17-9:23] (confidence: -0.216)
+  "verrà disincentivato ad aumentare i suoi short prima dello scadere"
+
+[9:50-9:56] (confidence: -0.175)
+  "5 secondi prima della scadenza siamo short noi anche prima di scadere quindi"
+
+[9:56-9:59] (confidence: -0.175)
+  "entro 5 secondi prima dobbiamo chiudere perché altrimenti dobbiamo pagare il"
+
+[9:59-10:05] (confidence: -0.175)
+  "famoso founding rate che in questo caso era l'uno e mezzo per cento a chi è long"
+
+[10:05-10:10] (confidence: -0.175)
+  "ok quindi noi saremo disincentivati se sei disincentivato ad andare short cosa"
+
+[10:10-10:15] (confidence: -0.175)
+  "può accadere può accadere che appunto il prezzo possa salire perché appunto"
+
+[10:15-10:21] (confidence: -0.226)
+  "sei disincentivato ad andare short e se sei short sei incentivato a chiudere e se"
+
+[10:21-10:25] (confidence: -0.226)
+  "chiudi gli short cosa devi fare devi comprare quindi praticamente è più"
+
+[10:25-10:28] (confidence: -0.226)
+  "facile che si possono avere dei movimenti long ok quindi io di solito"
+
+[10:28-10:32] (confidence: -0.226)
+  "quando c'è quando c'è il founding rate auto cosa faccio mettere gli alert"
+
+[10:32-10:36] (confidence: -0.226)
+  "un'ora prima quindi in questo caso era alle 9 io metto un alert un'ora prima e"
+
+[10:36-10:39] (confidence: -0.226)
+  "aspetto di vedere se ci sono delle conformazioni per poter andare long"
+
+[10:39-10:45] (confidence: -0.178)
+  "perché appunto sarà avrò diciamo il venti in pop cioè avrò più possibilità"
+
+[10:45-10:52] (confidence: -0.178)
+  "che che con il discorso del long io posso avere un qualcosa a favore ok in"
+
+[10:52-10:55] (confidence: -0.178)
+  "questo caso l'ho sfruttato malissimo perché appunto o mi sono svegliato tardi"
+
+[10:55-10:58] (confidence: -0.178)
+  "oppure insomma non lo so però comunque sono uscito a fare il mio rimbalzo però"
+
+[10:58-11:02] (confidence: -0.178)
+  "qua vedete è proprio un trend rialzista ovviamente non è sempre così ma voi"
+
+[11:02-11:08] (confidence: -0.178)
+  "aspettate una conformazione per andare long nell'ora prima dello scadere e"
+
+[11:34-11:42] (confidence: -0.203)
+  "perché uno può dire io semplicemente tengo il long faccio scadere"
+
+[11:42-11:46] (confidence: -0.203)
+  "l'orario mi incasso 1 e mezzo poi vendo ma vedrete che sarà difficilissimo che"
+
+[11:46-11:50] (confidence: -0.203)
+  "voi riuscirete a incassare cioè riuscirete a incassarli ma poi non"
+
+[11:50-11:54] (confidence: -0.203)
+  "riuscirete a vendere all'1 e mezzo per cento sopra l'1 e mezzo per cento ok"
+
+[11:54-11:57] (confidence: -0.203)
+  "quindi in pratica è come se non lo prendeste quindi questa tecnica io vorrei"
+
+[11:57-12:04] (confidence: -0.203)
+  "che lo chiudeste prima dello scadere quindi 10 secondi prima dello"
+
+[16:39-16:44] (confidence: -0.186)
+  "molto interessante e poi dopo questo è il livello estremamente trigger ok"
+
+[16:44-16:49] (confidence: -0.186)
+  "quindi questa è la tecnica del founding rate vorrei che teneste d'occhio l'ora"
+
+[16:49-16:54] (confidence: -0.186)
+  "prima per avere il vento in poppa per sfruttare questo fatto di del disincentivo"
+
+[16:54-17:03] (confidence: -0.186)
+  "degli short fregarvene di incassare la parte del founding rate se volete fare"
+
+[17:03-17:06] (confidence: -0.186)
+  "queste prove con una size piccola fatela ma vedrete che è molto difficile e la"
+

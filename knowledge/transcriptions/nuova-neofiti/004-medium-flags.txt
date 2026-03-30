@@ -1,0 +1,158 @@
+# Low-confidence segments for: 004_Cosa_sono_le_EMA_Ema_5_10_60_223_50_200_Corso_di_Trading_Online.mp3
+# Total flagged: 51
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.292)
+  "Ciao a tutti e benvenuti su Scarpe in the Bull. Nuova puntata per la playlist dei neofiti."
+
+[0:06-0:10] (confidence: -0.292)
+  "Parliamo di EMA, l'ho già accennato prima, oggi è il giorno in cui andremo a"
+
+[0:10-0:18] (confidence: -0.292)
+  "approfondire l'EMA. EMA 5 è la più veloce, EMA 10 che segue, poi l'EMA 60"
+
+[0:18-0:24] (confidence: -0.292)
+  "vedete che diventa quasi di traverso e poi abbiamo l'A223. Lo vediamo meglio"
+
+[0:24-0:28] (confidence: -0.292)
+  "sul bull web, queste sono le tre applicazioni, quindi Trading View, Discord"
+
+[1:51-1:57] (confidence: -0.202)
+  "fa a ciò che è successo ieri. L'EMA è più reattiva, esponenziale, pesa di più"
+
+[1:57-2:02] (confidence: -0.202)
+  "i prezzi più recenti. Ecco una struttura chiara per spiegare a"
+
+[2:02-2:08] (confidence: -0.202)
+  "qualcuno. La metafora del presente che conta. Immagino di voler valutare"
+
+[2:08-2:13] (confidence: -0.202)
+  "l'umore di un amico, la media semplice SMA guarda come si è comportato"
+
+[2:13-2:19] (confidence: -0.202)
+  "negli ultimi 10 giorni e fa una media matematica. L'EMA invece dice ok ma come"
+
+[3:09-3:16] (confidence: -0.231)
+  "dinamica, molti trader usano la EMA a 20 o 50 periodi come una barriera quando il"
+
+[3:16-3:20] (confidence: -0.231)
+  "prezzo scende e tocca la linea spesso rimbalza il supporto, i cross incroci"
+
+[3:20-3:24] (confidence: -0.231)
+  "infatti con le EMA abbiamo anche gli incroci, senza le EMA non possiamo avere"
+
+[3:24-3:29] (confidence: -0.231)
+  "incroci. Quando una EMA a breve termine, esempio 9 periodi, taglia verso"
+
+[3:29-3:34] (confidence: -0.231)
+  "l'alto, una EMA lunga è considerato un segnale di acquisto."
+
+[3:34-3:40] (confidence: -0.421)
+  "Va bene, vi faccio vedere prima un'altra cosa che non ho fatto, non ho salvato."
+
+[3:40-3:49] (confidence: -0.421)
+  "Ecco qua, vogliamo che le apre, apre qua, no good, ok, eccolo qua, vi faccio vedere"
+
+[3:49-3:52] (confidence: -0.421)
+  "questo,"
+
+[3:53-4:00] (confidence: -0.421)
+  "questo, eccolo qua. Allora abbiamo la nostra EMA che uso io per il mondo"
+
+[5:48-5:52] (confidence: -0.22)
+  "segnalare il cambio di trend, io credo che un neofita non possa aver capito nulla"
+
+[5:52-5:55] (confidence: -0.22)
+  "di quel colletto fino adesso, infatti dopo andrò a spiegarne meglio"
+
+[5:55-6:01] (confidence: -0.22)
+  "EMA 60 su time frame 5 minuti, su un grafico a 5 minuti la EMA 60 calcola la media"
+
+[6:01-6:08] (confidence: -0.22)
+  "degli ultimi 300 minuti, perché è il time frame 5 minuti per l'EMA 60 quindi"
+
+[6:08-6:15] (confidence: -0.22)
+  "ogni candela da 5 minuti calcola l'ultima 60 candela da 5 minuti"
+
+[6:15-6:20] (confidence: -0.284)
+  "quindi per questo fa 300 minuti, infatti 5 minuti per 60, ovvero l'ultimo 5 hour di"
+
+[6:20-6:26] (confidence: -0.284)
+  "trading quindi si muoverà ogni 60 candele da 5 minuti, ve lo spiego meglio"
+
+[6:26-6:31] (confidence: -0.284)
+  "col grafico, il ruolo è il battito cardio che è una sessione giornaliera intraday"
+
+[6:31-6:36] (confidence: -0.284)
+  "cosa significa? se il prezzo è sopra l'EMA 60 a 5 minuti la giornata è chiaramente"
+
+[6:36-6:40] (confidence: -0.284)
+  "realzista, non sono assolutamente d'accordo, i trader la usano spesso come"
+
+[6:40-6:44] (confidence: -0.284)
+  "supporto per comprare i ritracciamenti durante la mattinata o pomeriggio, qua ci"
+
+[6:44-6:49] (confidence: -0.209)
+  "può anche stare, la sensibilità è molto fluida e segue i movimenti del prezzo"
+
+[6:49-6:54] (confidence: -0.209)
+  "con una certa precisione chirurgica, EMA 60 su time frame 30 minuti, quindi qua"
+
+[6:54-6:57] (confidence: -0.209)
+  "fa un esempio EMA 60 time frame 5 e time frame 30, poi lo andiamo a vedere sul grafico"
+
+[6:57-7:02] (confidence: -0.209)
+  "qui la musica cambia, la EMA 60 time frame 30 minuti calcola la media degli ultimi"
+
+[7:02-7:10] (confidence: -0.209)
+  "1800 minuti perché ogni candela del time frame 30 minuti, una candela"
+
+[7:10-7:16] (confidence: -0.223)
+  "ogni 30 minuti ce ne vogliono 60 per fare nascere la prima EMA, quindi"
+
+[7:16-7:20] (confidence: -0.223)
+  "ovviamente il tempo è molto di più rispetto a quello da 5 quindi si va a"
+
+[7:20-7:24] (confidence: -0.223)
+  "vedere effettivamente magari i livelli daily, ovvero l'ultime 30 ore di trading"
+
+[7:24-7:28] (confidence: -0.223)
+  "nel suo ruolo è una bustola per il trend multijornaliero, qua sono d'accordo, cosa"
+
+[7:28-7:32] (confidence: -0.223)
+  "indica? non guarda più solo a oggi ma tiene conto anche di come si è chiuso il"
+
+[7:32-7:39] (confidence: -0.223)
+  "mercato ieri, se il prezzo rompe l'EMA 60 su M30 non è solo un piccolo"
+
+[7:39-7:44] (confidence: -0.424)
+  "movimento passeggero ma è un probabile cambi di direzione nei prossimi 2-3 giorni"
+
+[7:44-7:49] (confidence: -0.424)
+  "è molto più pesante, difficile da rompere rispetto a quella da time frame 5"
+
+[7:49-7:54] (confidence: -0.424)
+  "allora andiamo sul grafico così vi faccio capire"
+
+[7:54-7:58] (confidence: -0.424)
+  "perché però adesso penso che un neofitan possa aver capito nulla, non ho capito"
+
+[7:58-8:07] (confidence: -0.424)
+  "nulla io sinceramente, quindi semplicemente EMA 5, la rossa"
+
+[14:54-14:58] (confidence: -0.175)
+  "ma in breve ti spiego che perché il terzo tocco è importante se tu hai un martello"
+
+[14:58-15:05] (confidence: -0.175)
+  "e dai un ammartellato sul tavolo è altamente probabile che con la prima martellata il tavolo"
+
+[15:05-15:12] (confidence: -0.175)
+  "non si romperà ci dai un'altra martellata il tavolo si indebolirà ma non si rompe"
+
+[15:12-15:20] (confidence: -0.175)
+  "alla terza volta è altamente probabile non esiste il 100% è altamente probabile che il"
+
+[21:44-21:47] (confidence: -0.628)
+  "alla prossima ciao ciao ciao"
+

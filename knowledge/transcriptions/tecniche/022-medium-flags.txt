@@ -1,0 +1,122 @@
+# Low-confidence segments for: 022_BUD_SPENCER_Tecnica_di_Trading_Tutorial.mp3
+# Total flagged: 39
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.532)
+  "Ciao Trader, siete su Scappi da Bull. Finalmente la tecnica di Bud Spencer. Sigla."
+
+[0:33-0:41] (confidence: -0.32)
+  "Io amo questa tecnica. I imparate bene perché studiate, fate primi test senza soldi,"
+
+[0:41-0:49] (confidence: -0.32)
+  "mettete le linee ma imparate questa tecnica perché non non non riuscirete più a farne meno."
+
+[0:49-0:57] (confidence: -0.32)
+  "È uno spettacolo ragazzi. Ho ben quattro video live, live trading, non devo neanche"
+
+[0:57-1:04] (confidence: -0.271)
+  "tirare fuori un disegno ed è spettacolare. Perché mi piace? Allora innanzitutto si chiama"
+
+[1:04-1:09] (confidence: -0.271)
+  "Bud Spencer. Avete scelto voi, mi ha fatto il sondaggio. La community della Bull Family"
+
+[1:09-1:17] (confidence: -0.271)
+  "decide sempre tutto e niente. Allora nasce dalla tecnica dello schiaffo. Technica dello schiaffo"
+
+[1:17-1:25] (confidence: -0.271)
+  "quando anticamente nella pre-story si andava short, una volta esisteva incredibile sembra"
+
+[1:25-1:31] (confidence: -0.297)
+  "una sembra una roba veramente tantissimo tempo fa. Tanto tempo fa si poteva andare short e"
+
+[1:31-1:38] (confidence: -0.297)
+  "quindi si arrivava da una lunga salita. Qua è Shiba addirittura quando era 0 18 comunque si"
+
+[1:38-1:45] (confidence: -0.297)
+  "arrivava da una lunga salita. Poi quando scendeva è la lemma 10 che comanda appena spaccava"
+
+[1:45-1:51] (confidence: -0.297)
+  "le ma 10 poi se andava a schiaffeggiare short per andare a fare i nuovi minimi ok? Ma noi"
+
+[5:14-5:19] (confidence: -0.36)
+  "stancato quindi vado avanti ecco ci sta arrivando"
+
+[5:19-5:34] (confidence: -0.36)
+  "ok ecco vediamo il momento ecco nostro stop limit è entrato avete sentito il bel rumorino"
+
+[5:34-5:42] (confidence: -0.36)
+  "e adesso che fa? Andiamo a beccarci il rialzo ok? Perché questa volta i soldi ci sono andiamo a"
+
+[7:28-7:41] (confidence: -0.19)
+  "e ho fatto la chiusura 10.144 9.000 e sono 175 ok? Avrei potuto aspettare nuovi massimi ma"
+
+[7:41-7:48] (confidence: -0.19)
+  "io sono contentato invece ci sarà anche l'esempio di nuovi massimi quindi voi dopo prendete il"
+
+[7:48-7:53] (confidence: -0.19)
+  "feeling e vedete se uscir subito o andate a tener per nuovi massimi ok? Dipende d'occasione in"
+
+[7:53-7:58] (confidence: -0.19)
+  "questo caso potete capire perché ha tenuto per i nuovi massimi perché la tecnica dello schiaffo"
+
+[9:04-9:09] (confidence: -0.232)
+  "beccato l'ingresso e adesso è andato a salire con i nuovi massimi quindi questo è condizione"
+
+[9:09-9:14] (confidence: -0.232)
+  "eccezionale non succede spesso questo tipo qua. Di solito siamo più distanti dai nuovi massimi"
+
+[9:14-9:20] (confidence: -0.232)
+  "però tenetelo d'occhio perché quando succede questo è molto importante. Io qua punto a esplosione totale"
+
+[11:23-11:31] (confidence: -0.3)
+  "chissà dove però chi se ne frega l'importante è fare entrare il cash ok. Importante quello."
+
+[11:31-11:35] (confidence: -0.3)
+  "E niente questi sono quattro esempi quindi state capendo avete capito qualcosa?"
+
+[11:35-11:41] (confidence: -0.3)
+  "Ve lo rispiego perché mi piace veramente un sacco, vi deve piacere questa tecnica qua"
+
+[11:41-11:52] (confidence: -0.3)
+  "perché è spettacolare, qua si vede meglio. Megasalita, che succede? Succede che finora o poi"
+
+[12:46-12:58] (confidence: -0.208)
+  "1 e 10 nel book e chiudo a 1 e 10 e chiudo 1 e 10 e 1 e 5 poi dopo è andato a 3 però chi se ne frega"
+
+[12:58-13:03] (confidence: -0.208)
+  "abbiamo incassato e quindi non ce ne può frega di meno cioè ovviamente avrei preferito che facesse"
+
+[13:03-13:08] (confidence: -0.208)
+  "fosse andato to the moon in questo momento qua però abbiamo incassato chi se ne frega ok?"
+
+[13:08-13:13] (confidence: -0.208)
+  "mentalità giusta è questa chi se ne frega l'importante è incassare comunque sono tante"
+
+[13:13-13:18] (confidence: -0.219)
+  "sono cifre alte però anche se lavorato con cifre più basse l'importante è incassare chi se ne frega"
+
+[13:18-13:23] (confidence: -0.219)
+  "del resto deve essere profitevole non importa quanto dovete abituarvi chi se ne frega dopo"
+
+[13:23-13:28] (confidence: -0.219)
+  "va a 20 abbiamo fatto la nostra operazione bene chiudiamo siamo contenti siamo felici abbiamo"
+
+[13:28-13:35] (confidence: -0.219)
+  "saldo in tasca questa è la tecnica per essere profitevoli allora come usiamo il bull bot per"
+
+[13:35-13:43] (confidence: -0.219)
+  "arrivare qua? Allora ovviamente il viagra a rialzo ci può servire quando becchiamo i titoli che"
+
+[16:28-16:34] (confidence: -0.183)
+  "spettacolare perché perché se non riuscite a fare gli ingressi di quei titoli che salgono"
+
+[16:34-16:39] (confidence: -0.183)
+  "tanto non avete non vi sentite fare quelli ingressi lì perché sono ingressi difficili"
+
+[16:39-16:44] (confidence: -0.183)
+  "bene aspettate semplicemente ritracciamento e tecnica lo schiaffo è uno spettacolo iscrivetevi"
+
+[16:44-16:51] (confidence: -0.183)
+  "a youtube ormai siamo a 5000 e poi viene avviene il rilascio nuovo del bull bot i nuovi segnali"
+

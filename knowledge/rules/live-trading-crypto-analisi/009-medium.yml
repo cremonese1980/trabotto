@@ -1,0 +1,189 @@
+video:
+  id: BULL_LTCRA_09
+  series: live-trading-crypto-analisi
+  title: "3 trade: BTC short su lateralizzazione EMA 60 + HOT long cup and handle"
+  video_index: 9
+  duration_minutes: 14
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_09_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, scalping, candelina]
+    source:
+      timecode: "00:30-02:30"
+    conditions:
+      - lateralization_detected_on_ema60 == true
+      - timeframe == 1m
+      - price_consolidating_directly_on_ema60 == true
+      - ema60_acting_as_support_about_to_break == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above the lateralization range high + spike allowance"
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_down]
+    rationale: "Short setup: when price forms a lateralization sitting directly on EMA 60 at the 1m timeframe, the break below signals continuation. Entry on the break below the range."
+    notes: "BTC trade #1: lateralization on EMA 60 is the classic short setup. The EMA acts as a shelf; when the shelf breaks, gravity takes over. Use limit orders for entry, not market."
+
+  - id: BULL_LTCRA_09_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, scalping, risk_management]
+    source:
+      timecode: "02:30-03:30"
+    conditions:
+      - short_entry_on_lateralization_break == true
+      - lateralization_range_identified == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above lateralization high + spike buffer"
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_down]
+    rationale: "Stop placement must be outside the lateralization range with additional buffer for spikes. Spikes above the range are normal and should not trigger the stop."
+    notes: "Account for the fact that lateralizations have false breakouts (spikes). The stop must survive a spike while still being tight enough to limit loss."
+
+  - id: BULL_LTCRA_09_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [scalping, take_profit, candle_pattern]
+    source:
+      timecode: "03:30-05:00"
+    conditions:
+      - short_position_active == true
+      - approaching_end_of_candle == true
+      - no_acceleration_downward == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_down]
+    rationale: "When approaching the end of the current candle and price has not accelerated in your direction, be prepared to close manually. Do not rely on the hard stop alone."
+    notes: "Manual close priority over hard stop. If the candle is dying without conviction, exit before the close. The next candle may reverse. BTC shorts: +191 and +186 USDT."
+
+  - id: BULL_LTCRA_09_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [scalping, invalidation, trend]
+    source:
+      timecode: "04:30-05:30"
+    conditions:
+      - short_position_active == true
+      - btc_stops_making_new_lows == true
+      - price_stabilizing_above_recent_low == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_down]
+    rationale: "Close a BTC short immediately when BTC stops making new lows. The absence of new lows signals the selling momentum is exhausted."
+    notes: "Do not wait for a bounce to confirm. The moment new lows stop appearing, the short thesis is weakening. Exit and reassess."
+
+  - id: BULL_LTCRA_09_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [candle_pattern, breakout, pullback]
+    source:
+      timecode: "06:00-08:30"
+    conditions:
+      - cup_and_handle_pattern_detected == true
+      - manico_forming == true
+      - breakout_above_manico_high == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below the manico low"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "Cup and handle: the manico (handle) breakout is the entry, not the cup. The cup provides the context; the handle provides the trigger."
+    notes: "HOT long trade. The manico is the small pullback after the cup completes. Enter on the breakout above the handle's high. Result: +174 USDT."
+
+  - id: BULL_LTCRA_09_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, regime_filter, trend]
+    source:
+      timecode: "08:30-10:30"
+    conditions:
+      - btc_dropping == true
+      - altcoin_holding_strong == true
+      - altcoin_not_following_btc_down == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When BTC drops but an altcoin stays strong and does not follow down, the altcoin is showing exceptional relative strength. This is a very bullish signal for the altcoin."
+    notes: "BTC is the potenziometro (potentiometer) for all altcoins. When the index drops and the altcoin holds, it means buyers are aggressively accumulating despite adverse conditions."
+
+  - id: BULL_LTCRA_09_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [btc_index, risk_management, scalping]
+    source:
+      timecode: "10:30-12:00"
+    conditions:
+      - limit_order_placed_for_altcoin_long == true
+      - btc_showing_sudden_weakness == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: []
+    rationale: "Cancel or adjust limit orders when BTC shows sudden weakness. Wait for BTC to stabilize, then re-enter at a potentially better price on confirmation."
+    notes: "Dynamic order management: orders are not set-and-forget. Monitor BTC continuously and cancel/adjust altcoin orders based on BTC behavior. Re-enter at better levels when BTC stabilizes."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_09_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, trend, psychology]
+    source:
+      timecode: "09:00-10:00"
+    statement: "Bitcoin is the index and potentiometer for all crypto. Every altcoin trade must consider BTC direction. BTC weak + altcoin strong = very bullish altcoin. BTC strong + altcoin weak = avoid the altcoin."
+    rationale: "Treating BTC as the market index provides a regime filter that prevents trading altcoins against the prevailing market direction."
+
+  - id: BULL_LTCRA_09_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, stop_loss, risk_management]
+    source:
+      timecode: "03:00-04:00"
+    statement: "Prefer manual close over hard stop on scalp trades. The trader's eyes are better than a fixed price level. If the candle is dying without conviction, close before the stop is hit."
+    rationale: "Hard stops on 1m scalps often get triggered by noise. Active management (manual close) preserves capital better than passive stops on very short timeframes."
+
+  - id: BULL_LTCRA_09_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [candle_pattern, breakout, beginner]
+    source:
+      timecode: "07:00-08:00"
+    statement: "In cup and handle patterns, the cup is context and the handle is the trade. Never enter on the cup formation itself. Wait for the handle to form and break out."
+    rationale: "Beginners often enter too early on the cup, taking on unnecessary drawdown while the handle forms."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "Three trades demonstrating BTC as the market index: BTC shorts on EMA 60 lateralization breaks with manual close priority (+191, +186 USDT), and HOT long on cup and handle with BTC relative strength confirmation (+174 USDT). Always adjust altcoin orders based on real-time BTC behavior."

@@ -1,0 +1,56 @@
+# Low-confidence segments for: 008_Come_fare_Trading_Scalping_sui_forti_rialzi_TUTORIAL_Psg_Waves_btc.mp3
+# Total flagged: 17
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:18-0:30] (confidence: -0.161)
+  "questo è il daily, appunto dal daily si può vedere questo trend decisamente a rialzo e la"
+
+[0:30-0:35] (confidence: -0.161)
+  "cosa è che è molto difficile da poter fare gli ingressi perché in qualsiasi momento questo può"
+
+[0:35-0:41] (confidence: -0.161)
+  "anche tranquillamente andare a correggere e potrebbe adesso tranquillamente iniziare a scendere,"
+
+[7:27-7:33] (confidence: -0.214)
+  "cosa lunga che stanno spingendo per esempio qua siamo ai 5 minuti, questo si va a ristringere"
+
+[7:33-7:42] (confidence: -0.214)
+  "da 60 dei 5 minuti va a ristringere inizia a spingere anche lui abbiamo un insieme di forze"
+
+[7:42-7:47] (confidence: -0.214)
+  "che vanno nella nostra direzione e ci possono far fare quello spike che interessa a noi per"
+
+[7:47-7:59] (confidence: -0.265)
+  "per fare scalping, scalping veloce. Bene quindi ricordiamo, quindi qua c'è bitcoin, un minuto,"
+
+[7:59-8:06] (confidence: -0.265)
+  "ecco vedi nonostante bitcoin che per me è l'indice, in questo momento qua sta salendo"
+
+[8:06-8:12] (confidence: -0.265)
+  "fatto dei veri spike nonostante questo wave è rimasto al palo, quindi sta caricando,"
+
+[9:03-9:09] (confidence: -0.227)
+  "perché sta andando sopra lateralizzazione ok? Bisogna guardare più cose altrimenti rischiamo"
+
+[9:09-9:18] (confidence: -0.227)
+  "facilmente di avere ingressi e poi discese. Poi altra cosa da notare questo comunque che è in un"
+
+[9:18-9:24] (confidence: -0.227)
+  "trend leggero realzista nella lateralizzazione lunga ha sempre sporcato la 60 vedi? Questo è il"
+
+[9:24-9:29] (confidence: -0.227)
+  "time frame a un minuto, questa è la 60, l'ha sempre sporcato quindi se noi avessimo fatto"
+
+[9:29-9:43] (confidence: -0.186)
+  "un ingresso qua sopra al massimo di prima a questo spike qua e va su fa dei nuovi massimi"
+
+[9:43-9:49] (confidence: -0.186)
+  "di zona diciamo poi va a ritracciare sappiamo già che può rimanere con un trend realzista"
+
+[9:49-9:54] (confidence: -0.186)
+  "no? Stante vado sotto alla 60 ok? Questo lo dobbiamo calcolare prima, non bisogna essere fiscali"
+
+[11:46-11:49] (confidence: -0.93)
+  "manca poco ciao a tutti"
+

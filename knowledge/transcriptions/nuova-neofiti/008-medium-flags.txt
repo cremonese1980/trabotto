@@ -1,0 +1,23 @@
+# Low-confidence segments for: 008_Come_usare_BITCOIN_come_indice_Corso_di_Trading_Online.mp3
+# Total flagged: 6
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:41-1:49] (confidence: -0.2)
+  "indice, perché vediamo oro che sta facendo un terzo tocco, plus, perché c'è anche il massimo"
+
+[1:49-1:54] (confidence: -0.2)
+  "di ieri, comunque sta facendo un terzo tocco, un tocco, secondo tocco. Vedi, io ho l'alert lì,"
+
+[1:54-2:01] (confidence: -0.2)
+  "perché lì si fa il terzo tocco, quindi abbiamo un punto trigger, ma abbiamo anche, si può formare"
+
+[2:01-2:07] (confidence: -0.2)
+  "anche un altro punto trigger qua sotto, che magari è un bad, che ne so, un bad che non sai ancora che"
+
+[19:34-19:40] (confidence: -0.434)
+  "di qua, ma ricordatevi che poi faremo un video o più video di riassunto della"
+
+[19:40-19:43] (confidence: -0.434)
+  "prese per i neofiti, mettete un like, iscrivetevi, ciao!"
+

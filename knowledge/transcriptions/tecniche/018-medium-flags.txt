@@ -1,0 +1,62 @@
+# Low-confidence segments for: 018_LA_TECNICA_DELLA_FINTA_Ecco_come_funziona_Tecnica_di_Trading.mp3
+# Total flagged: 19
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:36-0:53] (confidence: -0.412)
+  "Allora qua abbiamo Parisian German ai tempi d'oro, quindi tempi di Messi diciamo."
+
+[0:53-1:02] (confidence: -0.412)
+  "Sembra un mesi secoli fa, non è poi passato così tanto e quindi io sono dentro questa operazione"
+
+[1:02-1:09] (confidence: -0.248)
+  "A43, dove c'è questa linea su spot appunto non rimane quando tu sei dentro e poi più avanti"
+
+[1:09-1:15] (confidence: -0.248)
+  "si vedrà nella cronologia e questa è la seconda operazione. Allora, innanzitutto vi faccio vedere"
+
+[1:15-1:20] (confidence: -0.248)
+  "capire l'impostazione, cose che dovreste guardare anche voi. Quando entrate e fate"
+
+[1:20-1:28] (confidence: -0.248)
+  "delle operazioni ci vuole pulizia nei disegni, cioè guardate la perfezione delle MA10, perfezione"
+
+[2:43-2:50] (confidence: -0.18)
+  "gli stop, attaccato diciamo alle ma 10 che dovrebbe essere il mio stop, ce l'ho in macchina,"
+
+[2:50-2:56] (confidence: -0.18)
+  "nel senso, non in macchina, ce l'ho pronto il 42.9 che poi ovviamente in un attimo puoi abbassare"
+
+[2:56-3:02] (confidence: -0.18)
+  "nel caso in cui dove si vende non metti mercato e clicchi a 100%, quindi veloce fai mercato 100%,"
+
+[3:02-3:07] (confidence: -0.18)
+  "hai già un nuovo ordine inserito e vende qualsiasi prezzo, oppure al limite ce l'hai già,"
+
+[3:07-3:11] (confidence: -0.18)
+  "quando tu vai con un prezzo inferiore questo rimane sempre uguale, ok? Se vai con un prezzo"
+
+[6:52-7:00] (confidence: -0.189)
+  "vendere qua, chiusura candela sotto dovrei comunque tenere, va a caricare quindi diventa"
+
+[7:00-7:04] (confidence: -0.189)
+  "sempre più pesante, sempre più, mancano 51 secondi, quindi siamo in inizio, però qua sta"
+
+[7:04-7:12] (confidence: -0.189)
+  "facendo già la finta, quindi qua vi fa credere che purtroppo andrà a chiudere sotto e invece"
+
+[7:35-7:43] (confidence: -0.2)
+  "una finta, proprio perché ha rotto prima il supporto, ha caricato in lettera, quindi ha fatto"
+
+[7:43-7:48] (confidence: -0.2)
+  "a capire che c'era un pezzo grosso quindi da lì voleva andare giù, invece e quindi era sotto le"
+
+[7:48-7:52] (confidence: -0.2)
+  "ma 10, ha beccato tutti gli scettici, quindi tutti quelli che ha detto ok adesso cambia trend"
+
+[7:52-7:57] (confidence: -0.2)
+  "vendo vendo, poi è arrivato il tipo per farti capire da qua non si passa, dominio totale,"
+
+[7:57-8:01] (confidence: -0.2)
+  "cioè il dominio che fa questi disegni belli precisi, ha detto andate a vedere quel paese,"
+

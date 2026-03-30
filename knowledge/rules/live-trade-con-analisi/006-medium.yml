@@ -1,0 +1,137 @@
+video:
+  id: BULL_LTCA_06
+  series: live-trade-con-analisi
+  title: "Gestione trade short: viagra + finta, stop loss progressivo, chiusura manuale"
+  video_index: 6
+  duration_minutes: 6
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_LTCA_06_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [viagra, finta, trend, reversal]
+    source:
+      timecode: "00:00-00:26"
+    conditions:
+      - "viagra_pattern_active == true"
+      - "ema10_holding_as_resistance == true"
+      - "finta_above_resistance_occurred == true"
+      - "price_closed_back_below_resistance == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il mercato e in condizione di viagra (ipercomprato/ipervenduto con EMA 10 come resistenza) e il prezzo fa una finta sopra la resistenza ma chiude sotto, l'ingresso short e ottimo perche combina due conformazioni forti."
+    notes: "La combo viagra + finta e una delle piu affidabili. Il prezzo ha scaricato sopra la resistenza e poi ha chiuso sotto: segnale di esaurimento confermato. I livelli daily fungono da riferimento aggiuntivo per il target."
+
+  - id: BULL_LTCA_06_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [candle_pattern, scalping, trigger]
+    source:
+      timecode: "00:31-00:45"
+    conditions:
+      - "hammer_candle_forming == true"
+      - "seconds_to_candle_close <= 30"
+      - "hammer_direction_confirms_trade == true"
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando manca poco alla chiusura (30 secondi) e la candela sta formando un hammer nella direzione attesa, si puo anticipare l'ingresso perche e altamente probabile che chiuda come hammer."
+    notes: "Esempio: mancavano circa 30 secondi alla chiusura della candela. Il prezzo ha fatto i massimi ed e tornato indietro. Bull e partito short anticipando la chiusura hammer. L'anticipazione e possibile solo quando la forma della candela e gia chiara."
+
+  - id: BULL_LTCA_06_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [stop_loss, risk_management, scalping]
+    source:
+      timecode: "01:02-03:14"
+    conditions:
+      - "position_short == true"
+      - "candle_made_new_high == true"
+      - "candle_returning_below_high == true"
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Dopo l'ingresso short, lo stop va posizionato leggermente sotto il livello di ingresso; poi abbassato progressivamente al massimo di ogni candela successiva, perche il massimo della candela diventa trigger per il long."
+    notes: "Progressione dello stop in 3 fasi: (1) iniziale leggermente sotto l'ingresso, (2) abbassato al massimo della candela successiva perche quel massimo e trigger per il long, (3) abbassato ancora quando il prezzo fa nuovi massimi piu bassi. Ogni massimo di candela e un potenziale trigger long, quindi lo stop va sempre li."
+
+  - id: BULL_LTCA_06_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema, ema5, ema10, trend, invalidation]
+    source:
+      timecode: "01:37-02:56"
+    conditions:
+      - "position_short == true"
+      - "price_approaching_ema5 == true"
+      - "ema5_holding_as_support == true"
+      - "price_not_breaking_ema10 == true"
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Il target minimo dello short e la rottura della EMA 10. Se il prezzo arriva alla EMA 5 ma la 5 tiene come supporto e la 10 non viene rotta, il trade non ha ancora raggiunto il target ma non e invalidato: si aspetta con lo stop progressivamente abbassato."
+    notes: "Se la EMA 5 dimostra che vuole tenere (il prezzo rimbalza sulla 5), il breakdown verso la 10 diventa meno probabile. Lo stop va comunque abbassato sopra il corpo della candela corrente. Il target minimo resta la 10; se non la raggiunge, si chiude manualmente prima dello stop."
+
+  - id: BULL_LTCA_06_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [stop_loss, scalping, risk_management]
+    source:
+      timecode: "04:26-05:02"
+    conditions:
+      - "position_open == true"
+      - "price_approaching_stop_level == true"
+      - "stop_would_result_in_small_gain == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Quando il prezzo si avvicina al livello di stop e lo stop e stato abbassato abbastanza da garantire un piccolo guadagno, chiudere manualmente prima che lo stop venga toccato: zero stress e si incassa comunque."
+    notes: "Esempio: lo stop era stato abbassato cosi tanto che anche se toccato avrebbe dato un piccolo gain. Quando il prezzo si e avvicinato, Bull ha chiuso manualmente a +30$. Non c'e bisogno di aspettare di andare in rosso: chiudere prima della perdita con un piccolo guadagno e la strategia ottimale quando il trade non funziona come previsto."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_LTCA_06_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, risk_management, beginner]
+    source:
+      timecode: "05:40-05:57"
+    statement: "La gestione dello stop loss e la carta per essere profittevoli. Non va come volete voi, dovete capirlo: il trade non sempre funziona, ma la gestione progressiva dello stop (abbassarlo costantemente) trasforma anche un trade mediocre in un piccolo guadagno o una perdita zero."
+    rationale: "La profittabilita nel trading dipende piu dalla gestione dello stop che dalla qualita degli ingressi."
+
+  - id: BULL_LTCA_06_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, psychology]
+    source:
+      timecode: "03:14-03:27"
+    statement: "Quando apri un trade e hai gia lo stop in un punto dove guadagni anche se viene preso, che stress hai? Zero. Questo e il modo giusto di operare: lo stress scompare quando lo stop e progressivamente abbassato fino a garantire guadagno."
+    rationale: "La gestione psicologica del trade migliora drasticamente quando lo stop e posizionato in modo che qualsiasi esito sia positivo o neutro."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "La combo viagra + finta e un ingresso short molto affidabile. L'anticipazione dell'hammer a 30 secondi dalla chiusura candela permette ingressi migliori. Lo stop va abbassato progressivamente in 3 fasi: il massimo di ogni candela e trigger per il long, quindi lo stop va sempre li. Chiudere manualmente prima dello stop quando si e gia in guadagno: zero stress, piccolo profitto garantito. La gestione dello stop loss e la vera chiave della profittabilita."

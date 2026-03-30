@@ -1,0 +1,113 @@
+video:
+  id: BULL_T_035
+  series: tecniche
+  title: "Terzo tocco dell'EMA 60 - Segnale a TF 5 minuti e 30 minuti"
+  video_index: 35
+  duration_minutes: 7
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_35_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, ema60, breakout, trigger]
+    source:
+      timecode: "00:38-01:24"
+    conditions:
+      - ema60_touch_count >= 3
+      - timeframe == "5m" or timeframe == "30m"
+      - price_near_ema60 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Tre o piu' tocchi della EMA 60 indicano una resistenza trovata; la rottura successiva produce accelerazione."
+    notes: "A TF 5 minuti il terzo tocco della EMA 60 corrisponde spesso alla rottura della EMA 223 a TF 1 minuto."
+
+  - id: BULL_T_35_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, ema60, breakout]
+    source:
+      timecode: "03:18-04:07"
+    conditions:
+      - ema60_touch_count >= 3
+      - price_breaks_above_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Dopo il terzo tocco, alla rottura della EMA 60 si fa l'ingresso. Il segnale ha gia' dimostrato la resistenza da rompere."
+    notes: "Se il segnale arriva quando ha gia' rotto, aspettare retest o livello successivo."
+
+  - id: BULL_T_35_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [terzo_tocco, ema60, ema223]
+    source:
+      timecode: "01:30-01:47"
+    conditions:
+      - terzo_tocco_ema60_5m == true
+      - ema223_1m_breakout_coincides == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [5m, 1m]
+      market_regime: []
+    rationale: "Il terzo tocco della EMA 60 a 5 minuti che coincide con la rottura della EMA 223 a 1 minuto e' un super segnale."
+    notes: "Verificare sempre a TF 1 minuto se la rottura della EMA 60 a 5 minuti coincide con EMA 223 a 1 minuto."
+
+  - id: BULL_T_35_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [terzo_tocco, ema60, stop_loss]
+    source:
+      timecode: "05:47-05:59"
+    conditions:
+      - position_open == true
+      - entry_was_terzo_tocco_ema60 == true
+      - candle_close_below_ema60 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Lo stop e' la chiusura candela sotto la EMA 60: se torna sotto significa che il terzo tocco non ha funzionato."
+    notes: "Chiusura candela sotto EMA 60, non lo spike momentaneo."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_35_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, ema60, beginner]
+    source:
+      timecode: "05:07-06:04"
+    statement: "Non si fa l'ingresso appena arriva il segnale: si aspetta sempre una conformazione. Il target puo' essere la EMA 223 o l'incrocio."
+    rationale: "Il segnale indica il livello ma l'ingresso richiede conformazione visiva nel dettaglio del timeframe inferiore."
+
+  - id: BULL_T_35_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, beginner]
+    source:
+      timecode: "06:11-06:30"
+    statement: "Testare prima con le linee senza soldi reali; poi con poco capitale. Solo quando si ha una statistica profittevole si aumenta la size."
+    rationale: "Approccio graduale riduce le perdite durante la fase di apprendimento."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Il terzo tocco della EMA 60 a TF 5 e 30 minuti segnala una resistenza testata piu' volte: alla rottura si entra, con stop alla chiusura candela sotto la EMA 60. A 5 minuti coincide spesso con la rottura della EMA 223 a 1 minuto."

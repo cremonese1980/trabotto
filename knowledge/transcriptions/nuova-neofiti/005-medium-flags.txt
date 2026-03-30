@@ -1,0 +1,35 @@
+# Low-confidence segments for: 005_EMA_e_Time_Frame_nel_Trading_Corso_di_Trading_Online.mp3
+# Total flagged: 10
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[6:07-6:17] (confidence: -0.202)
+  "il caso reale a 0.20.9 a 0.209 0.209 ci sono soldi ci sono dei"
+
+[6:17-6:21] (confidence: -0.202)
+  "comparatori che non fanno scendere il prezzo e sta tenendo benissimo l'ema"
+
+[6:21-6:26] (confidence: -0.202)
+  "l'ema è una media è una media move come ho visto prima quindi sale in base al"
+
+[6:26-6:31] (confidence: -0.202)
+  "prezzo ok questa è la più lenta quindi qua sapendo che qua sta facendo una"
+
+[6:31-6:37] (confidence: -0.202)
+  "cosa pulita noi sappiamo dove dobbiamo uscire perché se il prezzo dovesse"
+
+[7:55-8:02] (confidence: -0.151)
+  "soldi da lì non ci sono gli spike quindi quando mancano i soldi quindi manca il"
+
+[8:02-8:07] (confidence: -0.151)
+  "comando ed il prezzo sale scende molto casualmente quando invece arriva i soldi"
+
+[8:07-8:10] (confidence: -0.151)
+  "il prezzo non può scendere perché ci sono i soldi quindi perché qualcuno"
+
+[8:10-8:16] (confidence: -0.151)
+  "dovrebbe vendere una cosa sotto a questo prezzo qua se ci sono i soldi il"
+
+[8:16-8:21] (confidence: -0.151)
+  "prezzo scende quando non ci sono più soldi e questo è l'insieme nel capire il"
+

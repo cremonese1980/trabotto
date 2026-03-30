@@ -1,0 +1,226 @@
+video:
+  id: BULL_T_020
+  series: tecniche
+  title: "Cambio Shimano - Trading la compressione tra EMA 60 e EMA 223 per anticipare l'incrocio"
+  video_index: 20
+  duration_minutes: 27
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_20_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, ema60, ema223, breakout, trend]
+    source:
+      timecode: "01:51-03:29"
+    conditions:
+      - price_trading_between_ema60_and_ema223 == true
+      - ema60_and_ema223_converging == true
+      - price_makes_breakout_through_ema223 == true (in direction of impending crossover)
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "The shimano setup identifies price compressed between EMA 60 and EMA 223, with the breakout through EMA 223 anticipating the EMA 60/223 crossover."
+    notes: "The shimano is an early signal for the EMA 60/223 crossover. Price oscillating between the two EMAs creates a channel; the breakout through EMA 223 (in the direction the crossover will happen) is the entry trigger. Works on all timeframes identically."
+
+  - id: BULL_T_20_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, ema223, breakout, trigger]
+    source:
+      timecode: "05:28-06:28"
+    conditions:
+      - shimano_setup_active == true
+      - ema223_acting_as_resistance_with_precision == true (clean touches, no dirty wicks)
+      - price_breaks_above_ema223 == true
+    action:
+      - ENTER_LONG
+    stop_loss: "Below EMA 223 / re-entry into the channel"
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "The breakout entry is at the EMA 223 level, especially when it has shown precision as resistance. Stop is inside the channel."
+    notes: "Look for precision on the EMA that acts as the breakout boundary (the one in the direction of the impending crossover). If EMA 223 was touched cleanly multiple times, the breakout is more reliable. If price re-enters the channel after breaking out, close immediately."
+
+  - id: BULL_T_20_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, ema60, ema223, short, breakout]
+    source:
+      timecode: "14:13-15:28"
+    conditions:
+      - shimano_setup_active == true
+      - price_breaks_below_ema60_or_ema223 == true (toward bearish crossover)
+      - ema60_approaching_ema223_from_above == true (bearish cross imminent)
+    action:
+      - ENTER_SHORT
+    stop_loss: "Above previous swing high within the shimano channel"
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "For shorts, the shimano breakout is downward through the lower EMA boundary, anticipating a bearish EMA 60/223 crossover."
+    notes: "LUNA example: price was squeezed between EMAs, broke down. The stop is very tight (just above the channel), making risk/reward excellent. When the channel narrows (funnel shape), entry can be anticipated."
+
+  - id: BULL_T_20_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [shimano, ema60, ema223, trend, regime_filter]
+    source:
+      timecode: "03:53-04:39"
+    conditions:
+      - shimano_breakout_direction == toward_ema60_223_crossover
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "Always favor the breakout direction that leads to the EMA 60/223 crossover. The opposite direction is more likely a fakeout."
+    notes: "If EMA 60 is above EMA 223 and converging, favor long breakouts above EMA 223 (which will pull EMA 60 up for bullish cross). If EMA 60 is below and converging, favor short breakouts. Trading against the crossover direction is possible but less reliable."
+
+  - id: BULL_T_20_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [shimano, ema60, ema223, trend]
+    source:
+      timecode: "04:58-05:15"
+    conditions:
+      - ema223_dominated_price_for_extended_period == true
+      - shimano_setup_forming == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "The longer EMA 223 has dominated (acted as resistance/support), the more powerful the eventual shimano breakout and trend change."
+    notes: "Extended EMA 223 dominance means the shimano breakout, when it comes, is more likely a genuine trend change rather than a fakeout. Short-lived shimano patterns (quick in and out of the channel) have less significance."
+
+  - id: BULL_T_20_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, stop_loss, risk_management]
+    source:
+      timecode: "12:17-12:45"
+    conditions:
+      - shimano_breakout_trade_active == true
+      - price_re_enters_shimano_channel == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "If price breaks out of the shimano channel and then re-enters it, the breakout has failed and the position must be closed."
+    notes: "The stop is at the zero line (breakout level). Check the order book for the exact level - if there is a large order slightly below zero, use that as stop instead. Re-entry into the channel invalidates the setup."
+
+  - id: BULL_T_20_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [shimano, btc_index, regime_filter]
+    source:
+      timecode: "06:28-07:49"
+    conditions:
+      - shimano_long_setup == true
+      - asset_breaking_out_before_btc == true (asset is ahead of BTC)
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "For long shimano trades, the ideal condition is the asset breaking out while BTC is still inside its own shimano or range. This shows relative strength."
+    notes: "For shorts, the ideal is the opposite: BTC is not yet weak but the asset is already breaking down. If BTC has already crashed and the asset breaks down late, the move may be exhausted."
+
+  - id: BULL_T_20_08
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [shimano, reversal, ema60, ema223, trend]
+    source:
+      timecode: "16:15-16:52"
+    conditions:
+      - shimano_short_breakout_occurred == true
+      - price_failed_to_continue_lower == true
+      - price_reclaims_breakout_level_and_re_enters_channel == true
+      - price_breaks_above_upper_ema_boundary == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 30m, daily]
+      market_regime: []
+    rationale: "A failed shimano short that re-enters the channel and breaks above the upper boundary is a powerful long reversal signal."
+    notes: "Watch failed shimano breakouts carefully. If the short breakout fails and price reclaims the channel, then breaks above the upper EMA, the reversal long is very strong. This shows the attempted trend change failed and the original trend resumes with force."
+
+  - id: BULL_T_20_09
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, book, breakout, trigger]
+    source:
+      timecode: "08:19-09:00"
+    conditions:
+      - shimano_setup_active == true
+      - price_at_ema223_resistance == true
+      - order_book_shows_resistance_at_specific_level == true
+      - price_tested_same_level_before == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "The exact entry level is determined by the order book resistance combined with previous test levels at EMA 223."
+    notes: "If the book shows resistance at 67 but price previously tested 66.5 precisely, the entry is at 66.5 (the retested level). If wicks had spoiled higher, the entry would be higher. Use the cleanest tested level."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_20_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [shimano, risk_management, scalping]
+    source:
+      timecode: "22:23-22:38"
+    statement: "Be careful during the American pre-market crazy hour (around 15:30 CET) because even perfect shimano setups can produce fakeout spikes that re-enter the channel and reverse."
+    rationale: "US market open creates unpredictable volatility that can invalidate technical setups."
+
+  - id: BULL_T_20_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [shimano, beginner, risk_management]
+    source:
+      timecode: "24:59-25:18"
+    statement: "Higher timeframe shimano setups produce larger gains but also larger losses. Master the technique on 1-minute first, then scale to larger timeframes."
+    rationale: "Proportional risk increases with timeframe; competence on the fastest timeframe transfers to all others."
+
+  - id: BULL_T_20_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [shimano, btc_index, risk_management]
+    source:
+      timecode: "12:45-13:07"
+    statement: "Bitcoin is the index for crypto trading. Learn to read BTC to understand the context of any altcoin trade. Not following BTC leads to many avoidable losses."
+    rationale: "BTC correlation is the single most important external factor in all altcoin trading decisions."
+
+summary:
+  total_machine_executable: 9
+  total_context_only: 3
+  core_message: "The cambio shimano technique trades the breakout from a price channel compressed between EMA 60 and EMA 223, favoring the direction that leads to the EMA 60/223 crossover. Entry is at the EMA boundary breakout with a tight stop inside the channel. The longer the compression lasted and the cleaner the EMA precision, the stronger the breakout. Failed shimano breakouts that reverse are powerful signals in the opposite direction."

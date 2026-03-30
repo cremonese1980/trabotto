@@ -1,0 +1,110 @@
+# Low-confidence segments for: 016_LIVE_TRADING_Short_Eth_2_Short_Bitcoin_Stop_a_Zero_Btc_Analisi_completa.mp3
+# Total flagged: 35
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:30-0:59] (confidence: -0.213)
+  "In pratica faccio il video di oggi solo per riascoltarmi"
+
+[0:59-1:08] (confidence: -0.187)
+  "la sigla. Grazie Andy di questa sigla spettacolare. Ovviamente è una sigla lunga, sono 30 secondi,"
+
+[1:08-1:15] (confidence: -0.187)
+  "ma potete schippare. Poi ricordatevi che non ho, non metto su una pubblicità, non c'è"
+
+[1:15-1:21] (confidence: -0.187)
+  "niente prima del video, non c'è niente in mezzo al video, quindi avete solo questa penalità"
+
+[1:21-1:29] (confidence: -0.365)
+  "di 30 secondi. Vabbè, allora, niente, qua siamo su Ethereum, qua impostazione short,"
+
+[1:29-1:40] (confidence: -0.365)
+  "quindi qua siamo in Ethereum, è andato sopra la 60, creato il suo bel spike, è tornato"
+
+[1:40-1:49] (confidence: -0.365)
+  "sotto, poi dopo qua fa un po' di zigzag. Dov'è che decido di entrare? Decido di entrare qua."
+
+[2:18-2:24] (confidence: -0.247)
+  "giù seguendo questa linea che poi è comunque il mio ingresso, il rosso, oppure ho aspettato,"
+
+[2:24-2:30] (confidence: -0.247)
+  "visto che non è andato alla 60, ho visto che comunque stava tenendo bene la lemma 10,"
+
+[2:30-2:35] (confidence: -0.247)
+  "la linea gialla, quindi quando ha fatto il mini rebounce, quindi io qua, anche se ha"
+
+[2:35-2:41] (confidence: -0.247)
+  "toccato questa base, non sono entrato e anche se la 10 stava funzionando, solo perché qua"
+
+[2:41-2:47] (confidence: -0.197)
+  "era un po' zigzagato sopra sotto, insomma, era abbastanza incerto, ma quando ho visto"
+
+[2:47-2:54] (confidence: -0.197)
+  "questi spike che sono andati sopra, sopra la 10 iniziava a tenere, poi qua, soprattutto,"
+
+[2:54-3:00] (confidence: -0.197)
+  "mi ha fatto un verde leggermente sopra la 10, poi mi ha fatto l'emmer, adesso qua non si"
+
+[3:00-3:07] (confidence: -0.197)
+  "vede bene, mi ha fatto l'emmer, la candela dopo mi ha portato di nuovo qua su questa"
+
+[3:07-3:12] (confidence: -0.15)
+  "linea che è il corpo di questa base, quindi qua mi ha fatto vedere che ha un supporto"
+
+[3:12-3:18] (confidence: -0.15)
+  "interessante, quando mi ha fatto capire che c'era questo supporto anche qua, io dopo"
+
+[3:18-3:25] (confidence: -0.15)
+  "sono andato short, tenendo lo stop, qua vedete che è rimasto inserito lo stop iniziale,"
+
+[3:25-3:34] (confidence: -0.15)
+  "lo stop iniziale era, diciamo, sopra a questa candela che si era fermata leggermente sopra"
+
+[4:01-4:08] (confidence: -0.293)
+  "semplice, mettetelo spostato, quindi ogni minuto o due lo spostate, insomma vedete voi,"
+
+[4:13-4:20] (confidence: -0.293)
+  "però una volta che tiene bene la linea gialla, quando ha chiusura del candela sopra, dovete"
+
+[4:23-4:28] (confidence: -0.293)
+  "chiudere, andiamo a vedere invece qua cosa succede, allora qua vedete che ho due posizioni"
+
+[11:56-12:03] (confidence: -0.215)
+  "a correre, quando invece non ho questa, non ho una convinzione forte su questa cosa,"
+
+[12:03-12:09] (confidence: -0.215)
+  "lo chiudo nei primi spike, insomma, e c'è qua questa convinzione che ovviamente non"
+
+[12:09-12:16] (confidence: -0.215)
+  "va per il verso giusto, qua è la terza volta che va a testare, quindi niente, poi dopo,"
+
+[12:16-12:24] (confidence: -0.215)
+  "se facciamo una chiusura che dopo vi spiego, vi spiego cosa avrei potuto fare, ok, qua"
+
+[17:57-18:04] (confidence: -0.16)
+  "dopo, ok, che è verso 29, quindi 29.400, quindi 29.000 è quello dove c'è, vedi, questo"
+
+[18:04-18:08] (confidence: -0.16)
+  "supporto che comunque è bello grande rispetto agli altri, ovviamente il numero pari, io"
+
+[18:08-18:13] (confidence: -0.16)
+  "anche senza guardare sai già che i numeri pari grossi, hai cifre grosse, e lo metto"
+
+[18:13-18:22] (confidence: -0.16)
+  "prima a 40, vedi, nonostante ci sia un prezzo grosso che è il 120, comunque tanto, però"
+
+[21:06-21:13] (confidence: -0.132)
+  "quando faccio i video mi perdo tutto, mi perdo degli spike, comunque va bene, mi sacrifico"
+
+[21:13-21:21] (confidence: -0.132)
+  "per la famiglia, quindi qua perché, perché entro long, qua sono su bitcoin, perché ha"
+
+[21:21-21:25] (confidence: -0.132)
+  "fatto questa discesa lunghissima, testato una volta e andato giù, poi più avanti ha testato"
+
+[21:25-21:30] (confidence: -0.132)
+  "la seconda volta e poi andato giù, terza volta, ancora niente e poi ci stiamo avvicinando"
+
+[21:30-21:35] (confidence: -0.132)
+  "dove sta ritestando troppe volte, quindi qua mi fa capire che ha forza, quindi questa prima"
+

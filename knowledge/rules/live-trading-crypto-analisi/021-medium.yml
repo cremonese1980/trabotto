@@ -1,0 +1,178 @@
+video:
+  id: BULL_LTCRA_21
+  series: live-trading-crypto-analisi
+  title: "SHIBA ICO Scalp + XLM ATH Breakout - Book Reading su Nuova Listing, Progressive Stop Gain"
+  video_index: 21
+  duration_minutes: 11
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_21_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ico, new_listing, book, raggruppare]
+    source:
+      timecode: "00:00-02:30"
+    conditions:
+      - asset_is_new_listing == true
+      - chart_history_absent == true
+      - book_raggruppato == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m]
+      market_regime: [unknown]
+    rationale: "On ICO or new listing, the chart has no history and is useless. Raggruppare the order book heavily and read quantities only. Price levels are meaningless on a brand new asset; only the relative size of buy vs sell quantities matters."
+    notes: "SHIBA first listing: price crashed from 0.50 to 0.26 in minutes. No chart to read. Bull raggruppato the book heavily and focused exclusively on quantity analysis. Chart is irrelevant in first minutes of a new listing."
+
+  - id: BULL_LTCRA_21_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [ico, sell_side, discharge, quantities]
+    source:
+      timecode: "02:30-04:30"
+    conditions:
+      - asset_is_new_listing == true
+      - big_sellers_discharging == true
+      - sell_side_quantities_shrinking == true
+      - sell_side_becoming_empty == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_down, unknown]
+    rationale: "Wait for big sellers to finish discharging their positions. Watch the sell-side quantities in the book: when they shrink significantly and the sell side becomes empty, the selling pressure is exhausted. This is the prerequisite for a bounce entry."
+    notes: "On SHIBA, massive sell-side quantities drove price from 0.50 to 0.26. Bull waited patiently, watching sell quantities decrease candle by candle until the sell side emptied out."
+
+  - id: BULL_LTCRA_21_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ico, bounce, entry, resistance]
+    source:
+      timecode: "04:30-06:00"
+    conditions:
+      - sell_side_empty == true
+      - price_bouncing == true
+      - resistance_level_identified == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_reversal]
+    rationale: "Buy at the first bounce when the sell side is empty and a resistance target has been identified from the book. Empty sell side + bounce = sellers exhausted, buyers stepping in. The identified resistance gives a clear take-profit level."
+    notes: "SHIBA entry: sell side emptied, price bounced, resistance identified in book. Result: +432 USDT in 23 seconds. Then re-bought at similar price for +90 USDT. Speed of execution is critical on new listings."
+
+  - id: BULL_LTCRA_21_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ath, breakout, stop, entry]
+    source:
+      timecode: "06:00-08:00"
+    conditions:
+      - price_at_new_ath == true
+      - breakout_confirmed == true
+      - stop_below_breakout_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up]
+    rationale: "On ATH breakout, enter long with stop placed just below the breakout level. The stop should be close to entry to keep risk tight. ATH breakouts have no overhead resistance, but demand tight risk management because there is no chart reference above."
+    notes: "XLM ATH breakout: stop placed below the breakout level, close to entry. This keeps the risk small. Result: +810 USDT, then +288 on re-entry."
+
+  - id: BULL_LTCRA_21_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [dritto_per_dritto, exit, momentum]
+    source:
+      timecode: "08:00-09:30"
+    conditions:
+      - long_position_active == true
+      - price_moving_dritto_per_dritto == true
+      - no_consolidation == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When price goes dritto per dritto (straight up without any pause or consolidation), do not hold the position long. Exit quickly because straight moves without consolidation are unsustainable and reverse sharply."
+    notes: "Dritto per dritto = no consolidation pauses = exit fast. If instead price consolidates between legs, it builds a base and can be held longer. The pattern of the move determines hold duration."
+
+  - id: BULL_LTCRA_21_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [new_highs, frequency, exit]
+    source:
+      timecode: "09:00-10:00"
+    conditions:
+      - long_position_active == true
+      - new_high_count_in_session >= 3
+      - new_highs_happening_too_fast == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "When price hits new highs too many times too fast (e.g., 3rd new high in the same morning session), exit immediately. Rapid successive new highs exhaust buying momentum and precede sharp reversals."
+    notes: "XLM made multiple new highs in rapid succession during the morning. Bull exited immediately when the frequency of new highs accelerated. Too fast = unsustainable."
+
+  - id: BULL_LTCRA_21_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_gain, progressive, lock_profit]
+    source:
+      timecode: "09:30-11:00"
+    conditions:
+      - long_position_active == true
+      - position_in_profit == true
+      - price_making_higher_highs == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up]
+    rationale: "Progressively raise the stop gain as price makes new highs. Each new high should trigger an upward adjustment of the stop to lock in accumulated profits. This ensures that even if a reversal occurs, a significant portion of the gains is preserved."
+    notes: "Progressive stop gain on XLM: as each new high was made, the stop was raised. This locked profits on each leg up. Combined with the dritto per dritto rule, this creates a systematic exit approach."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_21_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ico, book, chart_useless]
+    source:
+      timecode: "00:30-02:00"
+    statement: "On a brand new listing or ICO, the chart is completely useless. There is no history, no EMAs, no support/resistance. The only tool available is the order book, raggruppato heavily, reading quantities only. Price levels on a new listing are meaningless; what matters is the balance of buy vs sell pressure measured in quantities."
+    rationale: "Technical analysis requires historical data. On the first minutes of a new listing, there is none. The book becomes the only source of truth, but it must be raggruppato to see the aggregate picture, not individual price levels."
+
+  - id: BULL_LTCRA_21_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [consolidation, hold, dritto_per_dritto]
+    source:
+      timecode: "08:30-09:30"
+    statement: "The pattern of a move determines how long to hold. If price consolidates between legs (pauses, builds bases, then continues), the position can be held longer because each consolidation confirms buyer commitment. If price goes dritto per dritto (straight without pauses), exit fast because the move is unsustainable."
+    rationale: "Consolidation within a trend is healthy and shows orderly accumulation. Dritto per dritto moves are often driven by panic buying or short squeezes and reverse sharply when momentum runs out."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "SHIBA ICO: chart is useless on new listings, raggruppare book and read quantities only. Wait for big sellers to discharge (sell-side shrinking), then buy at first bounce when sell side empties (+432 in 23 seconds, +90 re-entry). XLM ATH breakout: stop below breakout level, close to entry. Dritto per dritto = exit fast, consolidation = can hold. Too many new highs too fast = exit immediately. Progressive stop gain to lock profits. +810 XLM, +288 re-entry."

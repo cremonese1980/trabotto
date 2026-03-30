@@ -1,0 +1,170 @@
+video:
+  id: BULL_LTCRA_20
+  series: live-trading-crypto-analisi
+  title: "4 Trade: RLC Daily Breakout, ETH Triple EMA 60 Short, EOS Loss Intelligente"
+  video_index: 20
+  duration_minutes: 13
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_20_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, lateralizzazione, breakout, entry]
+    source:
+      timecode: "00:00-03:00"
+    conditions:
+      - timeframe == daily
+      - lateralizzazione_days >= 5
+      - explosion_candle_yesterday == true
+      - price_testing_yesterday_spike_high == true
+      - day_number == 2
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily, 1h]
+      market_regime: [range_breakout]
+    rationale: "After 5+ days of lateralizzazione on the daily chart followed by an explosion candle, the second day testing yesterday's spike high is a good entry point. The lateralizzazione compresses energy and the first explosion confirms direction."
+    notes: "RLC trade: 5-day daily lateralizzazione then explosion. Day 2 testing the spike high of day 1 = entry. Result: +840. The second day confirmation reduces the risk of a false breakout."
+
+  - id: BULL_LTCRA_20_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, ema5, conviction, hold]
+    source:
+      timecode: "02:00-04:00"
+    conditions:
+      - long_position_active == true
+      - conviction_level == very_high
+      - setup_timeframe == daily
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily, 1h]
+      market_regime: [trend_up]
+    rationale: "When very convinced about a daily setup, hold the position until EMA 10 breaks on candle close. EMA 5 touches are tolerable and should not trigger exits. EMA 10 is the real stop level for high-conviction daily trades."
+    notes: "Conviction-based hold management: very convinced = tolerate EMA 5 touches, only exit on EMA 10 break. This gives daily trades room to breathe through normal pullbacks."
+
+  - id: BULL_LTCRA_20_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [spike, conviction, exit, scalping]
+    source:
+      timecode: "03:00-04:00"
+    conditions:
+      - long_position_active == true
+      - conviction_level == low_or_medium
+      - spike_count >= 1
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m, 15m]
+      market_regime: [trend_up]
+    rationale: "When less convinced about a setup, do not hold through spikes. Exit on spike 1, 2, or maximum 3. Lower conviction demands tighter profit-taking to protect gains from reversals."
+    notes: "Conviction determines exit strategy: low conviction = exit on first spikes (1-2-3 max). High conviction = hold through spikes to EMA 10. This is a sliding scale, not binary."
+
+  - id: BULL_LTCRA_20_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, triple_test, short, crypto]
+    source:
+      timecode: "04:00-08:00"
+    conditions:
+      - ema60_test_count >= 3
+      - ema60_tests_are_precise == true
+      - price_below_spike_levels == true
+      - asset_class == crypto
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: [trend_down, range]
+    rationale: "When EMA 60 is tested 3 times with precision (perfezione) and price then drops below spike levels, enter short. Triple precise EMA 60 tests in crypto are a highly reliable reversal signal. EMA 60 is used in crypto specifically because it works with perfezione (not EMA 50)."
+    notes: "ETH short #1: EMA 60 tested 3 times perfectly. Short entered when price went below spike levels after the triple test. Stop initially above EMA 60. Result: +329. ETH short #2: same pattern repeated at higher level, triple test of EMA 60. Result: +281."
+
+  - id: BULL_LTCRA_20_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_progression, tighten, confirmation]
+    source:
+      timecode: "06:00-08:30"
+    conditions:
+      - position_open == true
+      - direction_confirmed_by_new_lows == true
+      - position_in_profit == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: [5m, 15m, 30m]
+      market_regime: [trend_down, trend_up]
+    rationale: "Start with a wider stop to give the trade room to develop. After direction is confirmed by new lows (for shorts) or new highs (for longs), progressively tighten the stop to lock in gains. The initial wide stop prevents premature exit; the tightening secures profits."
+    notes: "Stop progression pattern: wide at entry (above EMA 60 for shorts), then tighten after each new low confirms direction. This is a two-phase approach: phase 1 = survive, phase 2 = protect."
+
+  - id: BULL_LTCRA_20_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [ema10, stop, loss, intelligent]
+    source:
+      timecode: "09:00-11:00"
+    conditions:
+      - position_open == true
+      - stop_is_close_to_entry == true
+      - ema10_broken_against_position == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 15m]
+      market_regime: [trend_down, trend_up]
+    rationale: "When a setup looks right but price does not move explosively (no strappo), and the close stop at EMA 10 triggers, accept the small loss. A close stop means the loss is small, and a small loss on a correctly identified setup is an intelligent trade."
+    notes: "EOS short: setup looked correct but no strappo materialized. Stopped out at EMA 10. Result: -67. Bull emphasizes this is fine: close stop = small loss = intelligent trade. The problem is only when losses are large due to wide stops on weak setups."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_20_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, crypto, precision]
+    source:
+      timecode: "04:30-05:30"
+    statement: "In crypto, EMA 60 works with perfezione (perfection). This is why Bull uses EMA 60 and not EMA 50 for crypto markets. The precision of price reactions at EMA 60 on crypto charts is remarkably consistent and forms the backbone of many setups."
+    rationale: "EMA 60 on crypto has empirically proven to produce precise bounces and rejections. The choice of 60 over the more conventional 50 is based on observed precision in crypto specifically."
+
+  - id: BULL_LTCRA_20_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [proportion, target, candle_size]
+    source:
+      timecode: "07:00-08:00"
+    statement: "Estimate targets using proportion-based analysis: measure the size of the impulse candles that created the move and project similar-sized moves for continuation. Candle body sizes give a proportional expectation for how far the next leg can extend."
+    rationale: "Markets tend to move in proportional legs. By measuring the candle bodies of the initial impulse, traders can set realistic targets for the continuation without relying on arbitrary round numbers."
+
+  - id: BULL_LTCRA_20_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [loss, risk_management, psychology]
+    source:
+      timecode: "10:00-11:00"
+    statement: "A loss with a close stop is an intelligent trade, not a failure. The key metric is not win rate but the size of losses versus gains. Close stop = small loss = you live to trade another day. The only bad loss is a large one from a wide stop on a low-conviction setup."
+    rationale: "Trading psychology demands reframing losses. A -67 loss with a close stop on a valid setup is superior to a -500 loss from holding a bad position. Cut losses short, let winners run."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Four trades demonstrating conviction-based management. RLC daily: 5-day lateralizzazione then explosion, 2nd day entry, hold to EMA 10 break when very convinced (+840). ETH shorts: triple EMA 60 test with precision = reliable short signal, stop progression from wide to tight (+329, +281). EOS loss: correct setup but no strappo, close stop = small intelligent loss (-67). EMA 60 in crypto works with perfezione. Conviction determines hold duration: high = EMA 10 stop, low = exit on spikes."

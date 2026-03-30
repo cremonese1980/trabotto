@@ -1,0 +1,172 @@
+video:
+  id: BULL_LTCRA_10
+  series: live-trading-crypto-analisi
+  title: "Spot tricks e BullBot: shimano 30min su COTI e YGG, scorciatoie tastiera per spot"
+  video_index: 10
+  duration_minutes: 14
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_10_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema, breakout, shimano, trend]
+    source:
+      timecode: "03:07-03:52"
+    conditions:
+      - bullbot_shimano_detected == true
+      - timeframe == 30m
+      - key_level_inside_shimano_identified == true
+      - key_level_is_round_number == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "BullBot shimano on 30min with a key level (livello pari) inside the pattern allows anticipating the breakout via ordine condizionato (stop limit) at that level."
+    notes: "COTI trade: shimano on 30min, key level inside the pattern used to anticipate breakout. Place stop limit at the level, set trigger price and max price (max must be above trigger). Bought 0.55, sold for +463 USDT."
+
+  - id: BULL_LTCRA_10_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, trigger, daily]
+    source:
+      timecode: "05:39-06:09"
+    conditions:
+      - bullbot_signal_detected == true
+      - daily_trend_very_strong == true
+      - timeframe == 30m
+      - key_level_identified == true
+      - price_approaching_key_level == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m, daily]
+      market_regime: [trend_up]
+    rationale: "When daily is very strong and 30min shows a key level with bullbot signal, place ordine condizionato at the level. Strong daily trend provides high confidence for the 30min entry."
+    notes: "YGG trade: daily near all-time highs, 30min level at 15.6 touched multiple times. Ordine condizionato at level, went cycling, came back to profit. Bought 15.04, sold 16.565, +1164 USDT. Conformazione with incrocio confirmed the move."
+
+  - id: BULL_LTCRA_10_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [risk_management, leverage, ema60]
+    source:
+      timecode: "06:35-07:08"
+    conditions:
+      - trading_mode == spot
+      - timeframe >= 30m
+      - strong_trend_identified == true
+      - ema60_acting_as_support == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "On spot, higher timeframes like 30min are safe because there is no liquidation risk. Even with ugly candles and spikes, EMA 60 holds in a strong trend and price recovers."
+    notes: "On futures with leva 10-20, a spike on 30min kills you via liquidation. On spot, you can ride through the volatility. The EMA 60 acted as support despite a large ugly candle, then price recovered."
+
+  - id: BULL_LTCRA_10_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [trend, stop_loss, ema60]
+    source:
+      timecode: "06:54-07:18"
+    conditions:
+      - spot_long_position_active == true
+      - timeframe == 30m
+      - trend_identified_as_strong == true
+      - price_breaks_below_ema60 == false
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "In a strong 30min trend on spot, hold the position as long as EMA 60 holds. Identify very strong levels for the stop; the trend must be confirmed as very strong before using this approach."
+    notes: "Bull emphasizes: individuare livelli molto forti for the stop, and the trend must be fortissimo (very strong). The daily must confirm the trend direction. If EMA 60 breaks, exit."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_10_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, risk_management]
+    source:
+      timecode: "00:30-01:44"
+    statement: "Everything on futures also exists on spot. Spot is the entire market; futures is only a small, more liquid subset. Switching to spot means access to all instruments, including everything that was on futures."
+    rationale: "Many traders thought moving to spot would lose futures instruments. Understanding that spot encompasses all of futures eliminates this concern."
+
+  - id: BULL_LTCRA_10_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, position_sizing, beginner]
+    source:
+      timecode: "01:53-02:35"
+    statement: "Buy BNB to get 25% fee discount on Binance spot (0.1% becomes 0.075%). Use a referral link for an additional discount. Fees matter, especially on high-frequency spot trading."
+    rationale: "Fee optimization is critical for spot traders. The BNB discount significantly reduces friction costs over many trades."
+
+  - id: BULL_LTCRA_10_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, beginner, trend]
+    source:
+      timecode: "02:40-03:07"
+    statement: "On spot, use higher timeframes (especially 30min) as Bull did when starting with 1000 EUR. The 30min timeframe is spettacolare for spot because it allows placing orders and walking away."
+    rationale: "Higher timeframes reduce screen time and are safer on spot due to no liquidation risk. Ideal for traders who cannot monitor charts constantly."
+
+  - id: BULL_LTCRA_10_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "07:51-09:00"
+    statement: "Use keyboard shortcuts to make spot trading fast: F2 for buy with fixed amount (e.g. 10000 USDT), configure the order book level (compra 2 = second level) to automatically calculate price and quantity. This eliminates manual price entry."
+    rationale: "Speed is critical even on spot. Keyboard shortcuts remove the perception that spot is slow and error-prone compared to futures."
+
+  - id: BULL_LTCRA_10_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [risk_management, beginner, scalping]
+    source:
+      timecode: "09:28-10:07"
+    statement: "Configure sell shortcut (Space) to 100% of portfolio. This prevents the common mistake of accidentally selling only 94% and showing a false loss. On spot there is no margin, so selling 100% is always correct for a full exit."
+    rationale: "Partial sells due to clicking errors create confusion and apparent losses. Automating 100% sell eliminates this mistake."
+
+  - id: BULL_LTCRA_10_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [beginner, scalping]
+    source:
+      timecode: "10:38-11:15"
+    statement: "Use F1 to quickly cancel open orders. The workflow is: F2 to buy (places order in book), F1 to cancel if needed, Space to sell 100%. This three-key system (F2/F1/Space) covers the entire spot trading cycle."
+    rationale: "A minimal keyboard workflow (buy/cancel/sell) makes spot execution as fast as futures, removing the main objection traders have against spot."
+
+  - id: BULL_LTCRA_10_CTX_07
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [leverage, risk_management]
+    source:
+      timecode: "06:35-06:54"
+    statement: "Do not use 30min timeframe with futures and leva 10 or higher. Spikes on 30min candles will liquidate you. This timeframe is only viable on spot where there is no liquidation."
+    rationale: "Futures with high leverage and higher timeframes is a guaranteed way to get liquidated. The combination of wide candle ranges and leverage creates unsurvivable drawdowns."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 7
+  core_message: "Spot trading with BullBot shimano on 30min timeframe: COTI (+463 USDT) and YGG (+1164 USDT) trades using ordini condizionati at key levels inside shimano patterns, placed before going cycling. Higher timeframes are safe on spot (no liquidation risk, EMA 60 holds in strong trends). Keyboard shortcuts (F2 buy, F1 cancel, Space sell 100%) make spot execution fast and error-free."

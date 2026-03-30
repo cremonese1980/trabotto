@@ -1,0 +1,146 @@
+video:
+  id: BULL_T_008
+  series: tecniche
+  title: "Scalping su titoli in esplosione - Lateralizzazione e breakout sui massimi"
+  video_index: 8
+  duration_minutes: 12
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_08_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [scalping, lateralization, breakout, all_time_high]
+    source:
+      timecode: "01:27-02:23"
+    conditions:
+      - asset_in_strong_uptrend_daily == true
+      - lateralization_detected_on_lower_tf == true
+      - lateralization_high_near_period_high == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "On assets exploding upward, wait for a lateralization near the highs. The breakout above the lateralization high is the entry."
+    notes: "Do not enter daily trades on explosive assets (stop too far). Instead, scalp the lateralization breakouts on lower timeframes."
+
+  - id: BULL_T_08_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [scalping, breakout, candelina, stop_loss]
+    source:
+      timecode: "02:15-03:10"
+    conditions:
+      - lateralization_near_highs_detected == true
+      - price_breaks_above_max_candle_body_in_range == true
+    action:
+      - ENTER_LONG
+    stop_loss: "below the lateralization spike low"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "Entry is above the maximum candle body in the lateralization range. Stop is below the minimum spike of the range."
+    notes: "The tighter the lateralization, the tighter the stop. Wide lateralizations with tall candles have wider stops."
+
+  - id: BULL_T_08_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [scalping, all_time_high, breakout, trigger]
+    source:
+      timecode: "04:55-06:06"
+    conditions:
+      - lateralization_high == period_high OR lateralization_high == all_time_high
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "The most powerful breakout happens when the lateralization high coincides with the all-time high or period high."
+    notes: "At all-time highs, shorts must close (buy), new longs enter, and FOMO kicks in. These three forces combined create explosive spikes."
+
+  - id: BULL_T_08_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [scalping, ema60, lateralization, trend]
+    source:
+      timecode: "09:18-09:54"
+    conditions:
+      - asset_in_uptrend == true
+      - lateralization_on_1m == true
+      - ema60_1m_consistently_below_price == true
+      - price_sporadically_dips_below_ema60 == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m]
+      market_regime: [trend_up]
+    rationale: "If during lateralization the price consistently dips below EMA 60 on 1m, adjust the EMA period higher (70, 80, 90) to find the true support."
+    notes: "EMA 60 is a guideline, not a fixed rule. The actual trend support may be at a different period. Customize to fit the asset's behavior."
+
+  - id: BULL_T_08_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [scalping, lateralization, btc_index, breakout]
+    source:
+      timecode: "08:06-08:50"
+    conditions:
+      - lateralization_breakout_potential == true
+      - btc_is_weak == true
+      - asset_only_rising_because_btc_rising == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_up]
+    rationale: "If the asset is near breakout but only because BTC is pulling it up (not on its own strength), wait for the all-time high level instead of entering at a lower breakout."
+    notes: "When BTC is making spikes but the asset stays flat, the asset is showing weakness. Only enter at the maximum strategic point (ATH)."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_08_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, all_time_high, risk_management]
+    source:
+      timecode: "00:53-01:27"
+    statement: "Do not make daily entries on assets in explosive uptrends. The references (EMAs) are too far below for a reasonable stop loss."
+    rationale: "Daily technique requires nearby support for stop placement. Explosive assets have no nearby support."
+
+  - id: BULL_T_08_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, breakout, short]
+    source:
+      timecode: "06:47-07:09"
+    statement: "At all-time highs, shorts are forced to close (buy), new longs pile in, and FOMO creates panic buying. This triple force drives explosive spikes."
+    rationale: "Understanding the mechanics behind ATH breakouts helps traders hold through the initial volatility."
+
+  - id: BULL_T_08_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, scalping, trend]
+    source:
+      timecode: "10:52-11:06"
+    statement: "EMA 60 is Bull's standard but it can be adjusted. In equity markets, EMA 50 is more common. Always match the EMA to the asset's actual behavior."
+    rationale: "Rigid adherence to a single EMA period can cause premature exits on assets that trend on a different rhythm."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "To trade explosive assets, avoid daily entries (stop too far) and instead scalp lateralization breakouts near all-time highs on the 1m or 5m timeframe. The strongest breakouts occur when the lateralization high coincides with the ATH."

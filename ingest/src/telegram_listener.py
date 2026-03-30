@@ -30,6 +30,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from telethon import TelegramClient, events
+from kafka_producer import publish_signal
+from signal_normalizer import normalize
 
 # Load config from .env
 load_dotenv()
@@ -124,15 +126,45 @@ async def main():
         log_message_to_file(message)
 
     # Now listen for new messages in real-time
+    # @client.on(events.NewMessage(chats=channel))
+    # async def handler(event):
+    #     timestamp = event.message.date.strftime("%Y-%m-%d %H:%M:%S")
+    #     text = event.message.text or "[media/no text]"
+    #     logger.info(f"NEW SIGNAL [{timestamp}]: {text[:300]}")
+    #     log_message_to_file(event.message)
+    #
+    # logger.info(f"\nListening for new messages on '{CHANNEL_NAME}'...")
+    # logger.info("Press Ctrl+C to stop.\n")
     @client.on(events.NewMessage(chats=channel))
     async def handler(event):
         timestamp = event.message.date.strftime("%Y-%m-%d %H:%M:%S")
         text = event.message.text or "[media/no text]"
-        logger.info(f"NEW SIGNAL [{timestamp}]: {text[:300]}")
+
+        # Extract URL from message if present
+        url = None
+        if text and "bullweb.scalpingthebull.com" in text:
+            import re
+            url_match = re.search(r'https://bullweb\.scalpingthebull\.com/[^\s\)]+', text)
+            if url_match:
+                url = url_match.group(0)
+
+        # Normalize the signal
+        signal = normalize(text, url)
+        publish_signal(signal)
+
+        # Log raw
         log_message_to_file(event.message)
 
-    logger.info(f"\nListening for new messages on '{CHANNEL_NAME}'...")
-    logger.info("Press Ctrl+C to stop.\n")
+        # Log normalized
+        if signal["skipped"]:
+            logger.info(f"SKIPPED [{timestamp}]: {signal['pair']} — {signal['skip_reason']}")
+        else:
+            logger.info(
+                f"SIGNAL [{timestamp}]: "
+                f"{signal['exchange']} | {signal['pair']} | {signal['timeframe']} | "
+                f"{signal['strategy']} | diff={signal['diff_24h_pct']}% | "
+                f"perfezione={signal['perfezione']}"
+            )
 
     await client.run_until_disconnected()
 

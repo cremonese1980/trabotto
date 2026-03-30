@@ -1,0 +1,74 @@
+# Low-confidence segments for: 038_Due_NUOVI_SEGNALI_del_BULL_BOT_Cavallino_e_ATH_500_Tutorial.mp3
+# Total flagged: 23
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[1:41-1:48] (confidence: -0.466)
+  "solo il 6.5%, quindi ricordiamo 8.34, andiamo a vedere cosa stava facendo KNC, quindi KNC,"
+
+[1:54-2:01] (confidence: -0.466)
+  "KNC, ma che non c'è, va be', passiamo anche nei 5 minuti, ecco 8.34, ok? E' un Cavallino"
+
+[2:11-2:18] (confidence: -1.023)
+  "ieso 9.34, vi vendete conto dove era? Era qua anoohli inizio, qual è il ragionamento"
+
+[2:18-2:25] (confidence: -1.023)
+  "dietro al Cavallino, anche dopo c'è anche a TH500, subito dopo, spettacolare. Allora"
+
+[2:25-2:31] (confidence: -1.023)
+  "nel segnale bomber possiamo avere dei segnali che ci raggiungono perché fanno delle candele"
+
+[2:31-2:38] (confidence: -1.023)
+  "di una certa percentuale ok? E quindi ci arrivano, però delle volte dipende dal 2%"
+
+[4:00-4:05] (confidence: -0.432)
+  "arrivando il cavallino che potrebbe essere il cavallo pazzo del giorno ok?"
+
+[4:05-4:11] (confidence: -0.432)
+  "ditemi su twitch se state capendo questa cosa"
+
+[4:12-4:17] (confidence: -0.432)
+  "ditemi se avete capito"
+
+[4:17-4:26] (confidence: -0.432)
+  "yes ok ok ok eh si è una figata una figata ragazzi capito? quindi il cavallino è"
+
+[4:42-4:55] (confidence: -0.522)
+  "capiamo la strategia che cosa stiamo facendo ok? 8.35 noi dobbiamo sempre"
+
+[4:55-5:06] (confidence: -0.522)
+  "aspettare ecco dobbiamo sempre aspettare una conformazione come faccio qua?"
+
+[5:06-5:11] (confidence: -0.522)
+  "faccio schifo ad usare e andiamo qua"
+
+[6:34-6:41] (confidence: -0.459)
+  "full favorite che cos'è invece oltre ai 9 500? andiamo a vedere sempre che oggi è"
+
+[6:41-6:47] (confidence: -0.459)
+  "arrivato perché stamattina è arrivato sempre su KNC perché a che è arrivato?"
+
+[6:47-6:54] (confidence: -0.459)
+  "è arrivato più tardi ecco le 9 e mezza perché cosa c'era le 9 e mezza? andiamo a vedere in pelli"
+
+[6:55-6:59] (confidence: -0.477)
+  "allora intanto alle 9 e mezza il prezzo"
+
+[6:59-7:08] (confidence: -0.477)
+  "il prezzo alle 9 e mezza andiamo a vedere quanto era qua"
+
+[7:08-7:13] (confidence: -0.477)
+  "prima di questo spot quindi era 4 36 ok? andiamo a vedere le daily"
+
+[9:27-9:35] (confidence: -0.197)
+  "quando siete rilassati si spera che inizia a funzionare il contrario ok? bravi quindi"
+
+[9:35-9:45] (confidence: -0.197)
+  "finiamo il video con ATH500 quindi segnala segnalerà da oggi in poi ovviamente adesso"
+
+[9:45-9:49] (confidence: -0.197)
+  "siamo in un periodo un po' di crolli però comunque nonostante i periodi di crolli oggi"
+
+[9:49-9:55] (confidence: -0.197)
+  "c'è stato un all time high ed è stato segnalato nella nostra versione beta quindi i massimi storici"
+

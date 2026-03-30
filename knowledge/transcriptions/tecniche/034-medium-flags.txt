@@ -1,0 +1,239 @@
+# Low-confidence segments for: 034_Come_uso_il_BULL_BOT_Tutorial_con_esempi_reali_con_soldi_reali.mp3
+# Total flagged: 78
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:22-0:35] (confidence: -0.331)
+  "Mi dava glmr, quindi sono andato su glmr, aveva segnalato alle due, vediamo a che ora"
+
+[0:35-0:46] (confidence: -0.331)
+  "aveva segnalato, alle due dodici, che erano in saldi e torniamo qua, due e dodici, quindi"
+
+[0:46-0:54] (confidence: -0.264)
+  "quando ero proprio raccrollato e io sono rientrato a casa, che era qua, mi ho spettato che tornasse"
+
+[0:54-0:59] (confidence: -0.264)
+  "a questo livello e ho fatto, anzi no, era qua, ho spettato che tornasse, quindi già"
+
+[0:59-1:03] (confidence: -0.264)
+  "sopra la 60, quindi ottimo, quindi faceva capire che voleva fare un'inversione o comunque"
+
+[1:03-1:06] (confidence: -0.264)
+  "un rimbalzo e quindi crollo veramente fenomenale."
+
+[1:06-1:13] (confidence: -0.264)
+  "Tornato allo stesso livello ho fatto l'ingresso, l'ingresso è qui, ho beccato lo spike, sono"
+
+[1:13-1:18] (confidence: -0.205)
+  "uscito, poi ho spettato la stessa cosa, ho fatto un livello, ho tornato giù e invece"
+
+[1:18-1:22] (confidence: -0.205)
+  "di entrare quando tornava al livello sono entrato, visto che ha fatto le candeline,"
+
+[1:22-1:26] (confidence: -0.205)
+  "quindi questo come fosse un bada allungato, anche se qua ovviamente è andato troppo giù,"
+
+[1:26-1:30] (confidence: -0.205)
+  "però alla fine ha chiuso, ho fatto una candellina piccola, questo era il livello, vedi l'ingresso"
+
+[1:30-1:35] (confidence: -0.205)
+  "era il livello dell'uscita della 10 e così ho fatto poi l'ingresso, ho fatto l'uscita,"
+
+[1:35-1:48] (confidence: -0.439)
+  "quindi ho fatto 2,5%, magari ve lo faccio vedere su Telegram, ecco, quindi 1,1,2, quindi"
+
+[1:48-1:52] (confidence: -0.439)
+  "questo quello col bullbot, cascafagiolo per il video, 2,44% e poi ho fatto quest'altro"
+
+[1:52-1:57] (confidence: -0.439)
+  "2,45%, quindi più o meno due operazioni simili, ottimo."
+
+[1:57-2:06] (confidence: -0.232)
+  "E questo è giusto per farvi capire subito come funziona e che io utilizzo, però questa"
+
+[2:06-2:13] (confidence: -0.232)
+  "è sezione saldi, io poi uso tantissime altre cose, quindi andiamo a vedere, ovviamente"
+
+[2:13-2:21] (confidence: -0.232)
+  "la mia stanza preferita è Bomba e vi spiego come fare, adesso c'ho anche Trading View,"
+
+[2:21-2:26] (confidence: -0.232)
+  "si può utilizzare tranquillamente nella versione gratuita, vi faccio descrivere come, quindi"
+
+[2:26-2:29] (confidence: -0.243)
+  "esempio esce una bomba, questa fra l'altro è bellissima, questa è uscita anche in"
+
+[2:29-2:32] (confidence: -0.243)
+  "un'altra bomba, allora cosa serve il segnale bomba? Perché questa è la mia stanza preferita?"
+
+[2:32-2:37] (confidence: -0.243)
+  "Perché non è solo bomba, ma è max ieri, quindi i massimi di ieri, quindi quando ci"
+
+[2:37-2:42] (confidence: -0.243)
+  "avviciniamo ai massimi di ieri mi arriva un segnale e poi c'è il doppio tocco che poi"
+
+[2:42-2:48] (confidence: -0.243)
+  "è un triplo tocco su diversi timeframes, quindi è fantastico, dopo andiamo a vedere."
+
+[2:48-2:53] (confidence: -0.243)
+  "E qua c'è il video che fa vedere il segnale bomba, doppio tocco, eccetera."
+
+[2:53-2:57] (confidence: -0.203)
+  "Quindi un esempio, per esempio qua mi piace tantissimo perché abbiamo candelline e poi"
+
+[2:57-3:02] (confidence: -0.203)
+  "lo spike, quindi qua già il segnale bomba cosa mi fa capire? Che la candela paga, perché"
+
+[3:02-3:07] (confidence: -0.203)
+  "deve fare almeno un 2,5%, cioè deve fare comunque una candela superiore al 2%, quindi"
+
+[3:07-3:12] (confidence: -0.203)
+  "mi fa capire già che è un qualcosa che paga, quindi mi interessa lavorarci, ci clicco sopra,"
+
+[3:12-3:16] (confidence: -0.203)
+  "in automatico mi apre il grafico senza dover andare su Binance e mi apre Trading View,"
+
+[3:16-3:20] (confidence: -0.203)
+  "che potete avere tranquillamente in maniera gratuita, oh questo è un bellissimo esempio,"
+
+[3:20-3:24] (confidence: -0.287)
+  "quindi si fa un segnale bomba, fa il rialzo, arriva il segnale bomba perché fa una candela"
+
+[3:24-3:33] (confidence: -0.287)
+  "enorme, vediamo la percentuale di questa candela, 7%, ok, quindi ovviamente è un segnale bomba,"
+
+[3:33-3:38] (confidence: -0.287)
+  "ma bastava anche molto meno e poi tornate indietro, adesso questo è completamente sballato, però"
+
+[3:38-3:42] (confidence: -0.287)
+  "io dopo arrivo a dire, questa conformazione ce l'avete anche in versione gratuita, quindi"
+
+[3:42-3:49] (confidence: -0.287)
+  "scrivetevi a Trading View, vi fate un vostro profilo, mettete le EMA, 5, 10, 50 e 200,"
+
+[4:17-4:20] (confidence: -0.219)
+  "sballato, poi andiamo a vedere qualche esempio, però nel caso in cui dovessi tornare di nuovo"
+
+[4:20-4:25] (confidence: -0.219)
+  "su io voglio essere avertito, quindi con Trading View basta cliccare qua e aggiungi un alert,"
+
+[4:25-4:36] (confidence: -0.219)
+  "ok lì ti suona, ma nel caso basta andare su Binance, cliccate sulla campanellina e"
+
+[4:36-4:42] (confidence: -0.219)
+  "riesce questo, crea avviso, mettete il pezzo, scrivete la coppia e scrivete il prezzo,"
+
+[4:42-4:47] (confidence: -0.272)
+  "stiamo a posto, ok, non c'è bisogno, con Trading View nella versione gratuita hai uno o due,"
+
+[4:47-4:52] (confidence: -0.272)
+  "questo alert che puoi inserire così facilmente, questo è comodo perché poi lo puoi spostare,"
+
+[4:52-4:58] (confidence: -0.272)
+  "ma non c'è bisogno di fare a buonamento, l'importante è poter aprire velocemente i"
+
+[4:58-5:02] (confidence: -0.272)
+  "grafici dei segnali, ok, poi dopo io so che se arriva a questo livello qua,"
+
+[5:02-5:05] (confidence: -0.272)
+  "voglio essere avertito perché potrebbe tornare su, ok in questo caso comunque è completamente"
+
+[5:05-5:15] (confidence: -0.244)
+  "sballato, andiamo a vedere questo per esempio, andiamo a vedere Wing, apriamo quindi vedi,"
+
+[5:15-5:20] (confidence: -0.244)
+  "comodissimo Trading View proprio per questo, ecco ci fa vedere, ok questo secondo me ha fatto"
+
+[5:20-5:25] (confidence: -0.244)
+  "un listing perché hanno fatto queste candele che secondo me sono gigantesche, 6-7% quindi uguali,"
+
+[5:25-5:28] (confidence: -0.244)
+  "questi sono quelli sballati che hanno fatto dei listing, però comunque sempre interessante,"
+
+[5:28-5:34] (confidence: -0.244)
+  "quindi dove voglio sapere nel caso in cui mi sei avertito, ovviamente possiamo fare l'uscita"
+
+[9:05-9:16] (confidence: -0.198)
+  "anche sui massimi del giorno precedente e così andiamo a vedere cosa sarebbe successo, ecco,"
+
+[9:16-9:22] (confidence: -0.198)
+  "qua c'era il livello di alert, ribasta, ritornava al rialzo e poi dopo c'era il trigger dei massimi"
+
+[9:22-9:28] (confidence: -0.198)
+  "del giorno precedente e rialzo target uscita, ok, capito quant'è fantastico il pull pot,"
+
+[14:25-14:33] (confidence: -0.156)
+  "aperto col daily, questo è il daily che non va bene, questo per esempio qua, in questo daily"
+
+[14:33-14:40] (confidence: -0.156)
+  "vediamo che non va bene come segnale, ogni tanto Binance ci butta dei segnali assolutamente"
+
+[14:40-14:46] (confidence: -0.156)
+  "sbagliati, vedi? Perché dal grafico si capiva che invece era interessante, e invece non lo era,"
+
+[14:46-14:53] (confidence: -0.156)
+  "quindi purtroppo Binance, è vero che i dati che ci danno sono gratis, ma spesso sono sballati,"
+
+[15:20-15:25] (confidence: -0.188)
+  "10 giorni, non lo segnala quando sta facendo il massimo, perché noi vogliamo saperlo prima,"
+
+[15:25-15:31] (confidence: -0.188)
+  "quindi semplicemente si inserisce un alert, ok? Avete un segnale qua per esempio,"
+
+[15:31-15:36] (confidence: -0.188)
+  "quando è che torna di nuovo, interessante, ci ha segnalato l'altro giorno, noi comunque"
+
+[15:36-15:42] (confidence: -0.188)
+  "teniamo un alert, in view basta mettere un livello così, prima di andare a superare il livello dei"
+
+[15:42-15:46] (confidence: -0.188)
+  "massimi dei corpi, che può essere il trigger, poi puoi rompere la 200 di 3, quindi molto interessante,"
+
+[16:40-16:51] (confidence: -0.301)
+  "lui ci avverte, quando c'è qualcosa noi ce l'abbiamo, e allora mettiamo auto, emersione, a che ora ce l'ha detto?"
+
+[16:51-16:59] (confidence: -0.301)
+  "ah ok no, quello era, ero rimasto indietro, è una roba troppo vecchia, ecco, glm emersione,"
+
+[16:59-17:04] (confidence: -0.301)
+  "incrocio, questo è le 17 e 27, quindi dieci minuti fa, giustamente ci ha segnalato quello che"
+
+[19:13-19:21] (confidence: -0.246)
+  "da aspettare l'emersione, quindi qua aspettiamo che si avvicini un attimino al 223 che comanda"
+
+[19:21-19:26] (confidence: -0.246)
+  "da un secolo, guardate che roba, spettacolare, guardiamo anche time frame per 30 minuti,"
+
+[19:26-19:33] (confidence: -0.246)
+  "bellissimo, incrocio di basso, adesso abbiamo a 10 che comanda, molto interessante questo ok,"
+
+[19:33-19:39] (confidence: -0.246)
+  "molto interessante, i saldi veramente hanno la pesca, pesca come i saldi, io amo queste cose qua"
+
+[20:03-20:10] (confidence: -0.185)
+  "con all'interno il livello grosso, quindi ci dice già il martello plus ultra, quindi non credo di"
+
+[20:10-20:16] (confidence: -0.185)
+  "inserirlo in questa stanza, qua avrà una stanza solo sua perché diventerà uno dei segnali più"
+
+[20:16-20:21] (confidence: -0.185)
+  "importanti che abbiamo e qui sui potete avere le rinnovatiche anche solo di quello lì, quindi lo"
+
+[20:21-20:28] (confidence: -0.185)
+  "tolgo, non sarà in questa stanza, ci sarà proprio un martello, si chiamerà martello livello e quindi"
+
+[20:28-20:33] (confidence: -0.258)
+  "andrà sopra il martello, però io tengo sempre aperto questo, poi quando arriva qualcosa,"
+
+[20:33-20:37] (confidence: -0.258)
+  "ad esempio, ecco adesso vedi ho una notifica, perché ho una notifica nuova di Shimano,"
+
+[20:37-20:42] (confidence: -0.258)
+  "vado a vedere, vado a vedere se è interessante, ha un minuto, clicco, apro, ce l'ho già,"
+
+[20:42-20:51] (confidence: -0.258)
+  "ecco, è all'interno del Shimano ma è lontanissimo, quindi questo è uno Shimano bruttissimo, quindi"
+
+[20:51-20:56] (confidence: -0.258)
+  "per adesso questo non lo trai in considerazione, però è dopo, torno nella stanza bomba, così non"
+

@@ -1,0 +1,83 @@
+# Low-confidence segments for: 027_LA_TECNICA_BNB_IL_MODO_MIGLIORE_PER_GUADAGNARE_CON_LE_NUOVE_ICO_DI_BINANCE_TUTORIAL.mp3
+# Total flagged: 26
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:02] (confidence: -0.728)
+  "Ciao trader, siete su scappina bull."
+
+[0:02-0:04] (confidence: -0.728)
+  "La tecnica di BNB, sigla."
+
+[0:04-0:29] (confidence: -0.45)
+  "Allora, qua siamo alla tecnica di BNB."
+
+[0:29-0:32] (confidence: -0.45)
+  "Ok, una tecnica fantastica Daily."
+
+[0:32-0:39] (confidence: -0.154)
+  "Attenzione, tecnica Daily, ma anche, come qualsiasi tecnica Daily, anche intraday, come ho fatto io."
+
+[0:39-0:42] (confidence: -0.154)
+  "Ma comunque, una cosa interessante."
+
+[0:42-0:49] (confidence: -0.154)
+  "Sfruttiamo i movimenti particolari che fa BNB per quanto riguarda gli ICO."
+
+[0:49-0:52] (confidence: -0.154)
+  "Le nuove quotazioni di criptovalute."
+
+[0:52-0:57] (confidence: -0.154)
+  "Non le coppie in generale, ma quelle che fa in esclusiva BNB."
+
+[0:57-1:00] (confidence: -0.154)
+  "Cioè quelle con cui fa staking, eccetera."
+
+[1:00-1:04] (confidence: -0.091)
+  "Ok, quindi proprio quelle che farma lui."
+
+[1:04-1:06] (confidence: -0.091)
+  "Perché c'è questa differenza?"
+
+[1:06-1:12] (confidence: -0.091)
+  "Perché appunto quelli che fa BNB sono quelli dove arrivano tutti i soldi,"
+
+[1:12-1:15] (confidence: -0.091)
+  "perché le persone vogliono avere in anteprima l'ICO."
+
+[1:15-1:19] (confidence: -0.091)
+  "E per fare questo bisogna fare staking, cioè comprare BNB."
+
+[1:19-1:24] (confidence: -0.091)
+  "E quindi questo fa sì che BNB possa fare dei movimenti diversi rispetto agli altri."
+
+[1:24-1:25] (confidence: -0.091)
+  "Ok?"
+
+[1:25-1:29] (confidence: -0.091)
+  "Hanno una specie di ciclicità legata agli ICO."
+
+[11:36-11:40] (confidence: -0.192)
+  "tu compravai a Aedes e ti trovavi un bel, non mi ricordo,"
+
+[11:40-11:45] (confidence: -0.192)
+  "20 o 30% del tuo capitale, ti veniva dato il nuovo IPO,"
+
+[11:45-11:48] (confidence: -0.192)
+  "perché nel mercato nazionale si chiama IPO,"
+
+[11:48-11:52] (confidence: -0.192)
+  "addirittura, ma penso che fosse addirittura il 30% o il 20%, se non mi ricordo,"
+
+[11:52-11:58] (confidence: -0.192)
+  "quindi non è l'1% o il 2% o il 3% come qua, è il 20 o 30%,"
+
+[11:58-12:01] (confidence: -0.192)
+  "e dopo la prima giornata faceva il botto, è spettacolare,"
+
+[13:48-13:54] (confidence: -0.146)
+  "a questo punto, e ovviamente a Discord, che c'è tutta la family, la città che si muove,"
+
+[13:54-13:57] (confidence: -0.146)
+  "e c'è il mitico bullbot. Ciao!"
+

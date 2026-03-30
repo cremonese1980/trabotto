@@ -1,0 +1,190 @@
+video:
+  id: BULL_T_006
+  series: tecniche
+  title: "Daily con Stop a Zero - Conformazione laterale e breakout"
+  video_index: 6
+  duration_minutes: 23
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_06_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, breakout, lateralization, ema60, ema223]
+    source:
+      timecode: "02:05-02:44"
+    conditions:
+      - timeframe == 30m
+      - lateralization_detected == true
+      - price_above_ema60 == true
+      - price_above_ema223 == true
+      - breakout_above_lateralization_high == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "The ideal daily entry is a lateralization on the 30m TF with price above both EMA 60 and EMA 223, followed by a breakout."
+    notes: "Being above both EMAs confirms bullish trend. The lateralization discharges sellers. The breakout is the trigger."
+
+  - id: BULL_T_06_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, breakeven, stop_loss, book]
+    source:
+      timecode: "02:44-02:55"
+    conditions:
+      - daily_breakout_long_active == true
+      - price_moved_in_favor == true
+      - first_candle_after_breakout_closed_above_entry == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [30m, 5m]
+      market_regime: []
+    rationale: "After breakout, once price moves in your direction, immediately set stop to zero or to the nearest large book level."
+    notes: "The book level should be close to breakeven. Use the largest bid cluster below entry as the stop."
+
+  - id: BULL_T_06_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, breakout, invalidation, exit]
+    source:
+      timecode: "09:41-10:32"
+    conditions:
+      - breakout_executed == true
+      - candle_close_below_breakout_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "After a breakout, if the candle closes back below the breakout level, exit immediately. The breakout has failed."
+    notes: "Do not hope. If breakout fails, exit, wait for the next conformazione, and re-enter. Multiple small losses are acceptable."
+
+  - id: BULL_T_06_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, terzo_tocco, lateralization, candelina]
+    source:
+      timecode: "08:49-09:13"
+    conditions:
+      - timeframe >= 5m
+      - terzo_tocco_detected == true
+      - ema60_below_price == true
+      - ema223_below_price == true
+      - few_spikes_in_pattern == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: [trend_up]
+    rationale: "A clean terzo tocco with EMA 60 and EMA 223 below and few spikes indicates controlled buying. Enter at breakout."
+    notes: "Clean charts (few spikes) mean buyers are in control. Spikey charts mean no one is in control - avoid."
+
+  - id: BULL_T_06_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, trigger, yesterday_high, tre_cime]
+    source:
+      timecode: "00:47-01:12"
+    conditions:
+      - daily_tre_cime_pattern_detected == true
+      - price_breaks_above_first_cima == true
+    action:
+      - ENTER_LONG
+    take_profit: "breakout above highest cima"
+    applicability:
+      timeframes: [daily, 30m]
+      market_regime: [trend_up]
+    rationale: "The tre cime (three peaks) pattern: when price breaks the first peak, the target is the breakout of the highest peak."
+    notes: "Bull used DOGE as example. The daily analysis identified tre cime the day before, then entry was on the next day at the breakout of the first cima."
+
+  - id: BULL_T_06_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, breakout, acceleration, exit]
+    source:
+      timecode: "17:44-18:27"
+    conditions:
+      - breakout_executed == true
+      - breakout_did_not_accelerate == true
+      - candle_close_below_entry == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "When a breakout does not produce immediate acceleration and closes below entry, exit. A false breakout is an excellent short opportunity."
+    notes: "The difficult part of this technique is exiting when it does not work. Do not hold hoping. Exit, wait for next conformazione."
+
+  - id: BULL_T_06_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, lateralization, candelina, ema10]
+    source:
+      timecode: "17:41-17:58"
+    conditions:
+      - lateralization_with_small_candles == true
+      - price_above_ema10 == true
+      - breakout_level_above_ema60 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "Lateralization with small candles above EMA 10, with breakout level above EMA 60, is the ideal conformazione for daily stop-zero technique."
+    notes: "This discharges all sellers. When the lid pops, the move is explosive because all selling pressure has been absorbed."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_06_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, candle_pattern, psychology]
+    source:
+      timecode: "08:03-08:17"
+    statement: "Clean chart patterns with few spikes indicate buyer control. Spikey patterns indicate no one is in control and should be avoided."
+    rationale: "Chart cleanliness is a proxy for institutional buying dominance."
+
+  - id: BULL_T_06_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, risk_management, psychology]
+    source:
+      timecode: "20:28-20:53"
+    statement: "Take profits early. Do not hold daily trades hoping for moonshots. Close when you have a gain, then look for the next setup."
+    rationale: "The less time spent in the market, the less exposure to adverse events. Quick gains compound better than rare large wins."
+
+  - id: BULL_T_06_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, breakout, invalidation]
+    source:
+      timecode: "18:05-18:27"
+    statement: "A percentage of breakouts will fail and reverse. This is normal. The false breakout is an excellent opportunity for a short trade."
+    rationale: "Accepting breakout failure as part of the system prevents emotional attachment to losing positions."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "Daily with stop at zero requires finding a clean lateralization on the 30m timeframe above EMA 60 and EMA 223, entering at breakout, and immediately placing stop at breakeven. If breakout fails, exit and wait for the next conformazione."

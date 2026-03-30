@@ -1,0 +1,178 @@
+video:
+  id: BULL_LTCRA_17
+  series: live-trading-crypto-analisi
+  title: "Multiple Shorts - Massimi Scendenti, EMA 60 Inaffidabile, Finta su Retest, Nuovi Minimi e Panico"
+  video_index: 17
+  duration_minutes: 8.5
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_LTCRA_17_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [massimi_scendenti, lower_highs, coppa_manico, short]
+    source:
+      timecode: "~"
+    conditions:
+      - pattern_massimi_scendenti == true
+      - at_least_two_lower_highs == true
+      - price_at_second_lower_high == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Always-lower highs pattern (coppa manico cucchiaino) signals persistent selling pressure. Enter short at the 2nd lower high, but place the stop above the highest point of the sequence, not just above the current lower high."
+    notes: "Trade 1. The pattern of progressively lower highs (each rally attempt fails at a lower level) shows sellers are in control. Bull enters at the 2nd lower high. +336 USDT."
+
+  - id: BULL_LTCRA_17_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, unreliable, lower_highs, stop_placement]
+    source:
+      timecode: "~"
+    conditions:
+      - price_exceeded_ema60_multiple_times == true
+      - ema60_not_holding_as_resistance == true
+      - massimi_scendenti_pattern == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, choppy]
+    rationale: "When price has gone above EMA 60 multiple times, EMA 60 is no longer a reliable resistance reference. Switch to using the nearest lower high as the stop level instead. The lower highs pattern provides more reliable structure than the compromised EMA."
+    notes: "BNB trade 2. EMA 60 was repeatedly exceeded, making it useless as resistance. Bull used the lower highs as stop reference instead. +569 USDT."
+
+  - id: BULL_LTCRA_17_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [strappo, stop_zero, breakeven, immediate]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - strappo_in_direction == true
+      - trade_in_profit == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up]
+    rationale: "Immediately after a strappo (sharp impulse move) in your direction, move the stop to zero (breakeven). The strappo provides a buffer of profit, and moving to breakeven ensures you cannot lose on the trade if it reverses."
+    notes: "Applied across all three sessions. After any strappo, the first action is always to secure the position by moving stop to entry price."
+
+  - id: BULL_LTCRA_17_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [strappo, body, reversal, exit]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - strappo_candle_formed == true
+      - price_returns_above_strappo_body == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up]
+    rationale: "If after a strappo candle, price returns above the body of that candle, the strappo has been invalidated. The move that appeared impulsive has been fully retraced, meaning the momentum has reversed. Close the position immediately."
+    notes: "Key exit rule across sessions. The strappo body is the critical level - a return above it means the sharp move was absorbed and buyers (or sellers in reverse) have regained control."
+
+  - id: BULL_LTCRA_17_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [finta, ema60, retest, reversal]
+    source:
+      timecode: "~"
+    conditions:
+      - ema60_retest_with_strong_green_candle == true
+      - next_candle_fails_to_continue == true
+      - failed_green_candle == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "Finta on EMA 60 retest: a mega green candle retests EMA 60 looking like a recovery, but the very next candle fails to continue upward. When a beautiful green candle's momentum dies immediately, it is a bruttissimo segnale (terrible signal for bulls) and a strong short entry."
+    notes: "BTC+SOL trade 3. The big green candle traps longs who believe in the recovery. When the next candle fails, those trapped longs become fuel for the selloff. +710 BTC, +302 SOL."
+
+  - id: BULL_LTCRA_17_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [nuovi_minimi, panico, hold, bigger_move]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - direction == short
+      - nuovi_minimi_di_giornata == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When price makes new lows for the day (nuovi minimi di giornata), panic selling kicks in and the move tends to accelerate. Hold the short position through new daily lows as the panic effect drives larger moves than normal conditions."
+    notes: "BTC trade 3. New daily lows trigger stop losses and panic from holders, creating a cascade effect. This is when shorts produce the biggest profits."
+
+  - id: BULL_LTCRA_17_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [strappo, exhaustion, exit, no_continuation]
+    source:
+      timecode: "~"
+    conditions:
+      - position_open == true
+      - strappo_completed == true
+      - no_further_strappo == true
+      - momentum_fading == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down, trend_up]
+    rationale: "When no further strappo follows the initial one and momentum is fading, close the position. Do not overstay in the trade hoping for another impulse. The absence of a continuation strappo signals the move is done."
+    notes: "Applied across sessions. Bull closes when the strappo energy is spent and no follow-through appears. Overstaying after strappo exhaustion leads to giving back profits."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_LTCRA_17_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, reliability, assessment]
+    source:
+      timecode: "~"
+    statement: "EMA 60 reliability must be assessed before using it as a reference. If price has crossed above and below EMA 60 multiple times recently, it has lost its significance as dynamic support/resistance. Switch to structural levels like lower highs or lower lows instead."
+    rationale: "An EMA that gets repeatedly violated is no longer respected by the market. Continuing to use it as a reference leads to false signals. The lower highs pattern provides a more reliable framework when EMA 60 is compromised."
+
+  - id: BULL_LTCRA_17_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [finta, trap, green_candle, danger]
+    source:
+      timecode: "~"
+    statement: "A strong green candle on an EMA 60 retest in a downtrend is often a trap rather than a reversal signal. The more convincing the green candle looks, the more dangerous the trap when the next candle fails to follow through. This finta pattern is one of the highest-conviction short setups."
+    rationale: "The psychology is that the green candle draws in buyers believing in a reversal. When the next candle fails, these buyers become trapped and must exit, adding selling pressure to an already bearish structure."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "Lower highs pattern (massimi scendenti) = short at 2nd lower high with stop above highest point. EMA 60 unreliable when repeatedly crossed - use lower highs instead. After strappo: immediately move stop to zero, exit if price returns above strappo body. Finta on EMA 60 retest (strong green candle + failed continuation) = high-conviction short. New daily lows trigger panic for bigger moves. +336, +569, +710 BTC, +302 SOL."

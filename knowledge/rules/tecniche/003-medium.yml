@@ -1,0 +1,184 @@
+video:
+  id: BULL_T_003
+  series: tecniche
+  title: "Tecnica del Daily - Parte 1"
+  video_index: 3
+  duration_minutes: 30
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_03_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, breakout, all_time_high, trend]
+    source:
+      timecode: "03:32-05:58"
+    conditions:
+      - timeframe == daily
+      - price_approaching_period_high == true
+      - price_above_ema5_daily == true
+      - price_above_ema10_daily == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "On the daily timeframe, buy when price is trending above EMA 5 and EMA 10 and approaching period highs for a breakout."
+    notes: "Crypto is preferred over stocks because 24h trading avoids gap risk on stop losses. Bull grew from 1000 to 10000 USD in one month using this technique."
+
+  - id: BULL_T_03_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [daily, stop_loss, ema60, trend]
+    source:
+      timecode: "06:26-06:50"
+    conditions:
+      - daily_long_active == true
+      - daily_candle_close_below_ema60 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "EMA 60 on the daily is the trend divider. A candle closing below it signals trend reversal and requires exit."
+    notes: "The stop is based on candle CLOSE, not intraday spike. If price wicks below EMA 60 but closes above, hold the position."
+
+  - id: BULL_T_03_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [daily, stop_loss, ema10, retest]
+    source:
+      timecode: "09:37-09:56"
+    conditions:
+      - daily_long_active == true
+      - daily_candle_close_below_ema10 == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "EMA 10 on the daily is the tighter stop for positions entered near it. Closing below EMA 10 signals weakness."
+    notes: "This tighter stop is used when entry was near EMA 10. For entries at breakout highs, EMA 60 is the wider stop reference."
+
+  - id: BULL_T_03_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, pullback, ema10, retest]
+    source:
+      timecode: "09:29-10:02"
+    conditions:
+      - timeframe == daily
+      - asset_recently_spiked_up == true
+      - price_retracing_to_ema10_daily == true
+    action:
+      - ENTER_LONG
+    stop_loss: "daily candle close below EMA 10"
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "After a strong spike up, buying the pullback to EMA 10 on the daily provides a closer stop and higher reward-to-risk."
+    notes: "This is the retracement variant of the daily technique. Works best on assets that have pumped hard and are pulling back to EMA 10 for the first time."
+
+  - id: BULL_T_03_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, ema60, regime_filter, btc_index]
+    source:
+      timecode: "10:09-10:25"
+    conditions:
+      - asset_retracing_to_ema5_only == true
+      - asset_did_not_reach_ema10 == true
+      - price_drops_directly_from_ema5_to_ema10 == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "If a spiked asset only touches EMA 5 and does not reach EMA 10 directly, do not enter. Wait for EMA 10 retest or skip."
+    notes: "When price bounces off EMA 5 only, the pullback is insufficient. If it later falls through EMA 5 to EMA 10 over multiple days, it is no longer a valid direct retracement."
+
+  - id: BULL_T_03_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [btc_index, regime_filter, daily, trend]
+    source:
+      timecode: "23:34-24:11"
+    conditions:
+      - btc_price_above_ema60_daily == true
+      - btc_trend == sideways OR btc_trend == up
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up, sideways]
+    rationale: "The daily technique for buying breakouts works only when Bitcoin (the index) is above EMA 60 daily and trending up or sideways."
+    notes: "When BTC is below EMA 60 daily and trending down, switch to retracement buys (pullbacks to EMA 10) instead of breakout buys."
+
+  - id: BULL_T_03_07
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, regime_filter, btc_index]
+    source:
+      timecode: "24:11-25:31"
+    conditions:
+      - btc_price_below_ema60_daily == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_down]
+    rationale: "When Bitcoin is below EMA 60 on the daily, avoid daily breakout longs. Market sentiment is bearish and breakouts are likely to fail."
+    notes: "In this regime, look for assets rising against the negative trend for potential trades, but be aware they may reverse when BTC recovers."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_03_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, beginner, book]
+    source:
+      timecode: "22:45-23:08"
+    statement: "The daily technique does not require reading the order book. It is ideal for beginners who have not yet learned book reading."
+    rationale: "Removing the need for book reading lowers the barrier to entry for new traders."
+
+  - id: BULL_T_03_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, btc_index, psychology]
+    source:
+      timecode: "28:43-29:01"
+    statement: "Bull does not trade Bitcoin directly for daily technique. He uses BTC as an index and trades altcoins that move more."
+    rationale: "Altcoins provide higher percentage moves than Bitcoin, making the daily technique more profitable on them."
+
+  - id: BULL_T_03_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, risk_management]
+    source:
+      timecode: "07:47-08:10"
+    statement: "Avoid buying assets that have already spiked far above all EMAs with no nearby support. These are 'already gone' setups."
+    rationale: "No close reference for a stop loss means uncontrolled downside risk."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "The daily technique buys breakouts to new period highs or pullbacks to EMA 10 on the daily timeframe. Bitcoin must be above EMA 60 daily for breakout buys. Stop loss is based on candle close below EMA 10 or EMA 60."

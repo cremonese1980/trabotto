@@ -1,0 +1,93 @@
+video:
+  id: YT_BULL_P_041
+  series: principianti
+  title: "Psicologia del trader: dal reality TV al trading, dedizione e selezione delle conformazioni"
+  video_index: 41
+  duration_minutes: 105
+
+entities:
+  - id: BULL_P_41_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema10, daily, trigger, regime_filter, pullback]
+    source:
+      timecode: "18:14-19:57"
+    conditions:
+      - daily_chart_clean_uptrend_ema10_dominant == true
+      - tf1h_price_pulled_back_and_tested_ema10_first_time == true
+      - ema10_held_on_retest == true
+    action:
+      - MONITOR_LEVEL
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["60min", "1d"]
+      market_regime: [bullish]
+    rationale: "L'EMA 10 sul timeframe 1h dopo un forte movimento daily è il supporto di retest primario; un hold confermato lì imposta una continuazione ad alta probabilità verso nuovi massimi."
+    notes: "Riferimento all'EMA 10 1h retest come 'supporto per eccellenza' in crypto dopo una forte candela daily."
+
+  - id: BULL_P_41_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema10, daily, regime_filter, candle_pattern]
+    source:
+      timecode: "18:49-19:20"
+    conditions:
+      - tf30min_ema10_bounce_count == 2
+      - daily_chart_has_room_to_run == true
+    action:
+      - WAIT
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: ["30min", "60min"]
+      market_regime: [bullish]
+    rationale: "Che un rimbalzo a 30m avvenga al primo o al secondo tocco determina la qualità del setup; il secondo tocco su 30m combinato con il primo tocco su 1h produce un allineamento multi-frame più forte."
+    notes: "Promessa di un video successivo che spiega la 'candela di azzurramento' per differenziare i rimbalzi 30m vs 1h."
+
+  - id: BULL_P_41_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "29:38-29:52"
+    statement: "Il principio anti-FOMO: cercare conformazioni lontane dai momenti di FOMO; operare per impulso anziché da un processo razionale porta a ingressi privi della massima lucidità e tende a produrre posizioni intrappolate."
+    rationale: "Le decisioni impulsive attivano il cervello veloce (combatti-o-fuggi) anziché il processo analitico; le due modalità producono sistematicamente qualità di trade diversa."
+
+  - id: BULL_P_41_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, position_sizing, risk_management]
+    source:
+      timecode: "30:12-30:50"
+    statement: "Una serie di vittorie non indica che le competenze sono migliorate; un trader che raddoppia il conto in un breve periodo per fortuna e poi aumenta aggressivamente la size incontrerà una grande perdita che annullerà tutto."
+    rationale: "Scambiare la fortuna per abilità durante una serie porta a sovradimensionare esattamente quando la regressione è più probabile; l'abilità può essere valutata solo su centinaia di trade."
+
+  - id: BULL_P_41_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "39:04-40:28"
+    statement: "Postare trade ogni giorno crea una compulsione a fare trading anche quando non esiste alcuna conformazione; questa pressione contrasta direttamente con la disciplina di aspettare il setup giusto e dovrebbe essere evitata."
+    rationale: "La frequenza dei post sui social incentiva la quantità di trade rispetto alla qualità, minando la selettività che rende una strategia profittevole."
+
+  - id: BULL_P_41_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "37:15-38:55"
+    statement: "La stessa metodologia analitica usata per selezionare le conformazioni di trading — raccogliere molteplici punti dati, stabilire una gerarchia di evidenze, filtrare il rumore — è direttamente trasferibile al processo decisionale in qualsiasi situazione ad alto rischio nella vita."
+    rationale: "Riconoscere l'universalità del processo decisionale razionale rinforza la sua applicazione coerente durante il trading live quando l'interferenza emotiva è massima."
+
+summary:
+  total_machine_executable: 2
+  total_context_only: 4
+  core_message: "Una sessione focalizzata sulla psicologia con una terapista ospite usa le esperienze televisive e di vita del conduttore come analogie per l'approccio analitico e gerarchico alle conformazioni di trading, con due ancore tecniche sulla qualità del retest EMA 10 multi-timeframe e quattro linee guida psicologiche su FOMO, serie vincenti, compulsione da posting e processo decisionale razionale."

@@ -1,0 +1,56 @@
+# Low-confidence segments for: 005_Live_Trading_+209usdt_su_Wan_+360euro_su_Telecom_Analisi_completa_del_trade_con_soldi_reali.mp3
+# Total flagged: 17
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.424)
+  "Ciao trader, siete su Scopin'Bull, due live trade fra cui One che ho appena fatto stamattina"
+
+[0:06-0:15] (confidence: -0.424)
+  "quindi Binance, mondo cripto e anche un trade che ho fatto su Telecom Italia, Short quindi su un mercato azionario"
+
+[0:16-0:19] (confidence: -0.424)
+  "partiamo da One, l'ho fatto prima postato già su Telegram"
+
+[0:20-0:28] (confidence: -0.424)
+  "allora qua praticamente questa è la linea dei massimi di giornata perché ieri ho fatto una mega esplosione, fatta siamo più 58%"
+
+[5:37-5:39] (confidence: -0.428)
+  "Quindi"
+
+[5:40-5:44] (confidence: -0.428)
+  "Comunque le ma 10 mi ha fatto capire che c'è potenza in chi sta acquistando"
+
+[5:45-5:50] (confidence: -0.428)
+  "Ok mi ha fatto capire se non ci fosse stato il livello non avrei potuto fare l'ingresso questo è l'ingresso"
+
+[5:51-5:53] (confidence: -0.428)
+  "41 attenta torniamo indietro"
+
+[5:57-5:59] (confidence: -0.428)
+  "0 c 5 7 41"
+
+[6:01-6:06] (confidence: -0.428)
+  "9550 io sono uscito 8 7 9.000 7 50 e 59 ok"
+
+[11:28-11:30] (confidence: -0.523)
+  "E quindi ho fatto un'operazione di 466"
+
+[11:31-11:35] (confidence: -0.523)
+  "Ho fatto finito l'eseguito qua non c'è più niente nel portafoglio"
+
+[11:35-11:37] (confidence: -0.523)
+  "Prima ho fatto un'operazione di 466"
+
+[11:37-11:40] (confidence: -0.523)
+  "Sommo si sommano quelli che ho fatto adesso quindi"
+
+[11:42-11:47] (confidence: -0.523)
+  "Tutti ecco 826 meno i 466 fa 360 euro"
+
+[11:47-11:49] (confidence: -0.523)
+  "Quindi questa è un'operazione a 360 euro"
+
+[11:51-11:55] (confidence: -0.523)
+  "Importante farvi capire che cos'è un supporto ok questo è un supportone"
+

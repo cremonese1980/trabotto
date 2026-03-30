@@ -1,0 +1,137 @@
+video:
+  id: YT_BULL_P_046
+  series: principianti
+  title: "Come gestire lo stop loss in un trade short live: gestione attiva e trailing"
+  video_index: 46
+  duration_minutes: 6
+
+entities:
+
+  - id: BULL_P_46_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, candelina, candle_pattern, reversal, ema10, trigger]
+    source:
+      timecode: "00:00-00:51"
+    conditions:
+      - trend_context == "viagra"
+      - ema10_tested == true
+      - candle_type == "hammer_or_reversal"
+      - candle_close_near_high == true
+      - previous_level_fintato == true
+    action:
+      - ENTER_SHORT
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [trending_down, viagra]
+    rationale: "In regime viagra con EMA10 come resistenza, una candela hammer sui massimi che poi torna indietro è il segnale di ingresso short."
+    notes: "Bull descrive: era in viagra, la EMA10 ha fatto la finta, ha aspettato il massimo con mancanza di 30 secondi alla chiusura e poi è partito short. La candelina sui massimi in retracement è il trigger."
+
+  - id: BULL_P_46_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, short, candle_pattern, risk_management]
+    source:
+      timecode: "01:02-01:15"
+    conditions:
+      - position_side == "short"
+      - entry_filled == true
+      - previous_candle_made_local_high == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [trending_down]
+    rationale: "Dopo l'ingresso short, lo stop si posiziona leggermente sopra il massimo della candela di ingresso."
+    notes: "Logica: se il prezzo torna sopra il massimo di quella candela, l'ipotesi short è invalidata e il mercato probabilmente sta riprendendo al rialzo."
+
+  - id: BULL_P_46_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [take_profit, short, ema10, ema5, trigger]
+    source:
+      timecode: "01:37-01:48"
+    conditions:
+      - position_side == "short"
+      - ema5_reached == true
+      - ema10_below_current_price == true
+    action:
+      - MONITOR_LEVEL
+      - TIGHTEN_TP
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [trending_down]
+    rationale: "Il target minimo per uno short è la rottura della EMA10; prima però si osserva il comportamento sulla EMA5 come livello intermedio."
+    notes: "Bull dice esplicitamente: 'il mio target non può essere la 5, è minimo la 10'. La EMA5 è solo un livello di osservazione per decidere se il movimento continua."
+
+  - id: BULL_P_46_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, short, candle_pattern, trailing, risk_management]
+    source:
+      timecode: "03:35-03:50"
+    conditions:
+      - position_side == "short"
+      - new_local_high_formed == true
+      - new_high_is_lower_than_entry == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [trending_down]
+    rationale: "Ogni nuovo massimo locale più basso del precedente è trigger per il long: lo stop short può essere abbassato al massimo di quella candeletta."
+    notes: "Bull: 'già il massimo di questa candela è trigger per il long, quindi posso abbassarlo ancora di più'. Questo permette di avere stop a zero o in piccolo guadagno."
+
+  - id: BULL_P_46_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, short, ema5, invalidation, risk_management]
+    source:
+      timecode: "05:13-05:34"
+    conditions:
+      - position_side == "short"
+      - ema5_holding_as_support == true
+      - ema10_not_broken == true
+      - expected_target_not_reached == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["5min", "30min"]
+      market_regime: [trending_down]
+    rationale: "Se la EMA5 regge come supporto e la EMA10 non viene rotta, l'ipotesi short non si sta concretizzando: meglio chiudere in positivo o a zero."
+    notes: "Bull chiude manualmente a +30 quando capisce che la EMA5 tiene: 'non c'era nessun motivo per non chiuderlo prima, tanto qua mi aspettavo che doveva essere in alto la 10'."
+
+  - id: BULL_P_46_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, psychology, risk_management]
+    source:
+      timecode: "05:46-05:57"
+    statement: "La gestione dello stop loss è la carta fondamentale per essere profittevoli; non va dove vuoi tu, devi capirlo prima."
+    rationale: "Il trade live dimostra che uno stop gestito attivamente (trailing verso il basso in short) permette di chiudere positivo anche quando il target non viene raggiunto."
+
+  - id: BULL_P_46_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, stop_loss, risk_management]
+    source:
+      timecode: "03:20-03:38"
+    statement: "Aprire un'operazione con stop già a zero o in leggero guadagno elimina completamente lo stress; si può ragionare lucidamente senza paura di perdere."
+    rationale: "La gestione attiva dello stop riduce il carico emotivo e permette decisioni più razionali durante il trade."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Trade short live in regime viagra con ingresso sulla candelina hammer sui massimi EMA10: il video mostra la gestione attiva dello stop loss con trailing progressivo verso il basso man mano che si formano massimi decrescenti, e la logica di uscita anticipata quando la EMA5 regge come supporto. Il target minimo per uno short è sempre la EMA10, mai la EMA5."

@@ -10,8 +10,12 @@ pip install openai-whisper yt-dlp
 
 source ~/dev/whisper-env/bin/activate
 cd ~/dev/trabotto
-python ingest/src/transcribe.py "URL" --model large
+python ingest/src/telegram_listener.py
 
+
+
+
+python ingest/src/transcribe.py "URL" --model medium
 
 
 Playlist NEOFITI
@@ -28,8 +32,9 @@ https://www.youtube.com/watch?v=rVLZk680Uas&list=PLz-eqtk4L3R8LP2H-Xb6u8qpmVWECc
 python ingest/src/transcribe.py "https://www.youtube.com/watch?v=rVLZk680Uas" --model medium
 
 
-Playlist Tecniche di tranding
+Playlist tecniche di tranding
 https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb
+python ingest/src/transcribe.py "https://www.youtube.com/playlist?list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb" --model medium
 
 video 1
 https://www.youtube.com/watch?v=Ad-s9vWQ53U&list=PLz-eqtk4L3R8PROY_4ly-3tQ9k9YwdfDb&index=1
@@ -42,6 +47,23 @@ python ingest/src/transcribe.py "https://www.youtube.com/watch?v=FTar9aXmBYs" --
 python ingest/src/transcribe.py "https://www.youtube.com/watch?v=bEpWpvtJWDg" --model medium
 
 
+
+Nuova playlist per neofiti 
+python ingest/src/transcribe.py  https://www.youtube.com/playlist?list=PLz-eqtk4L3R_yVy8v0NwYyxs2TruxITjO --model medium
+
+
+Live trading crypto analisi
+python ingest/src/transcribe.py https://www.youtube.com/playlist?list=PLz-eqtk4L3R8611cYrgve5srhHtD4GafN --model medium
+
+
+
+Live trade con analisi 
+python ingest/src/transcribe.py https://www.youtube.com/playlist?list=PLz-eqtk4L3R8w9-ENQfOR8o-Fgv1AMZTM --model medium
+
+
+
+Live streaming su youtube 
+python ingest/src/transcribe.py https://www.youtube.com/playlist?list=PLz-eqtk4L3R_Ok8wj8tGDp5oxZkp6VU7e --model medium
 
 ______________________________________
 CODEX PROMPT

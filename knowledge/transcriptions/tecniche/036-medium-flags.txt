@@ -1,0 +1,116 @@
+# Low-confidence segments for: 036_Nuovo_segnale_del_BULL_BOT_MURO_Indica_livelli_giganti_nel_book_Tecnica_di_Trading.mp3
+# Total flagged: 37
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.405)
+  "Ciao a tutti e benvenuti su Sculpt the Bull. Oggi abbiamo un segnale nuovo che si chiama"
+
+[0:05-0:12] (confidence: -0.405)
+  "muro che indica i livelli dentro al book. Questa è una grandissima novità. Sigla!"
+
+[0:23-0:28] (confidence: -0.405)
+  "Quindi il bull bot ci segnala per la prima volta quello che abbiamo dentro al book. Quindi"
+
+[1:51-1:59] (confidence: -0.324)
+  "molto più segnali. Invece del muro abbiamo poca roba. Per esempio 11.21 stamattina CVX. Quindi uno"
+
+[1:59-2:07] (confidence: -0.324)
+  "clicca anzi a muro a 30 quindi uno clicca va a vedere. Apreta il in-view anche senza averlo"
+
+[2:07-2:17] (confidence: -0.324)
+  "a buonamento. E vede 30 dov'è? Ecco qua è 30. E 30 è un ottimo livello fra l'altro. Adesso"
+
+[2:17-2:21] (confidence: -0.213)
+  "è passato un sacco di tempo da stamattina però effettivamente c'era qualcosa perché non è riuscito"
+
+[2:21-2:26] (confidence: -0.213)
+  "ad andare a rompere. E quindi qua sicuramente è da andare allertare. Andiamo a vedere nel book se c'è"
+
+[2:26-2:36] (confidence: -0.213)
+  "qualcosa. Effettivamente ancora. Quindi 30. CVX. Andiamo a vedere. A 30. Ecco adesso non c'è più niente."
+
+[2:36-2:41] (confidence: -0.213)
+  "Non c'è più niente. Quindi o è andato a scaricarsi e quindi ha fatto sì che poi il"
+
+[2:41-2:48] (confidence: -0.191)
+  "prezzo scendesse. Oppure quando si avvicina o ritorna o comunque rimane così. Nel caso in"
+
+[2:48-2:55] (confidence: -0.191)
+  "cui comunque quando si avvicina quindi qua sicuramente un alert a 29.90 assolutamente. E quando si"
+
+[2:55-2:59] (confidence: -0.191)
+  "avvicina si vedrà se poi torna il muro quindi semplicemente sarà tolto visto che il prezzo è"
+
+[2:59-3:04] (confidence: -0.191)
+  "rasceso oppure è andato a scaricarsi. Quindi se quando si avvicina non abbiamo più il muro significa"
+
+[3:04-3:07] (confidence: -0.191)
+  "che è andato scaricarsi e quindi ottimo. Abbiamo comunque già il livello che ha notato a ritestarlo"
+
+[3:07-3:12] (confidence: -0.294)
+  "più volte. Quindi ottimo. E aspetta andiamo a vedere se c'è qualcosa che troviamo effettivamente"
+
+[3:12-3:36] (confidence: -0.294)
+  "nel book. Andiamo a vedere. Beta ok. Ecco Kp3r. Kp3r. Muro a 580. Andiamo a vedere 580. 580."
+
+[10:12-10:18] (confidence: -0.144)
+  "uno spike a toccarlo ma non ci deve poi tornare dei pezzi grossi ok? Nel caso in cui comunque ha"
+
+[10:18-10:25] (confidence: -0.144)
+  "chiuso la candela dopo che l'ha rotto chiude allo stesso prezzo o sotto ragazzi dovete assolutamente"
+
+[10:25-10:30] (confidence: -0.144)
+  "uscire ok? Non perdete tempo perché non ha funzionato. Quando si rompe il tappo deve accelerare"
+
+[10:30-10:34] (confidence: -0.144)
+  "deve andare a fare la roba lì per questo che io non faccio mai gli ingressi dopo proprio perché"
+
+[10:34-10:38] (confidence: -0.144)
+  "appunto rotto deve accelerare è lì il mio game quindi già la prima candela devo poter essere"
+
+[10:38-10:43] (confidence: -0.192)
+  "soddisfatto poi vedete voi insomma fatemi dell'esperienza. Se fa già alla pena rompe"
+
+[10:43-10:47] (confidence: -0.192)
+  "una candelona grande io tendenzialmente entro con il minuto entro con il minuto esco già. Poi"
+
+[10:47-10:56] (confidence: -0.192)
+  "se ho altri trigger quindi non so questo è il massimo anche daily quindi ho un muro prima"
+
+[10:56-10:59] (confidence: -0.192)
+  "di andare a fare massimo daily io tengo fino alla rottura poi da lì ci sono altri livelli trigger"
+
+[10:59-11:03] (confidence: -0.192)
+  "quindi mi posso aspettare che dopo vada a fare altri nuovi massimi oppure c'è il massimo del giorno"
+
+[11:03-11:09] (confidence: -0.183)
+  "prima o qualcosa nel daily allora lì posso dire ok allora tengo la rottura del tappo per andare"
+
+[11:09-11:16] (confidence: -0.183)
+  "poi a raggiungere traguardi che trovo nel daily quindi in quel caso potete magari tenere una volta"
+
+[11:16-11:20] (confidence: -0.183)
+  "che ha chiuso la prima candela in verde stop a zero tanto non c'è più andare una volta che l'ha"
+
+[11:20-11:25] (confidence: -0.183)
+  "chiuso ok? Poi è vero la seconda candela potrebbe fare come tutti i break out andarlo andare a"
+
+[11:25-11:32] (confidence: -0.183)
+  "pungere quindi magari però se si fa già il 3 4 per cento la seconda candela non ci deve arrivare"
+
+[13:23-13:27] (confidence: -0.176)
+  "dove si possono formare delle conformazioni da lì veramente si possono fare dei movimenti"
+
+[13:27-13:33] (confidence: -0.176)
+  "pazzeschi ok? Quindi andatelo a studiare voi mettetevi lì esce il segnale mettete una linea"
+
+[13:33-13:38] (confidence: -0.176)
+  "mettete un alert e studiate la cosa fatevi dell'esperienza e capirete quant'è fantastico"
+
+[13:38-13:44] (confidence: -0.176)
+  "questo segnale. Detto questo iscrivetevi a youtube iscrivetevi a due canali telegram nei commenti"
+
+[13:44-13:50] (confidence: -0.176)
+  "youtube scrivete se avete dei dubbi eventualmente spiegherò quando uscirà poi la seconda versione"
+

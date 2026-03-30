@@ -1,0 +1,224 @@
+video:
+  id: YT_BULL_P_013
+  series: principianti
+  title: "Terzo Tocco Plus e Terzo Tocco Plus Plus (Live Seminar)"
+  video_index: 13
+  duration_minutes: 47
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_P_13_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [terzo_tocco, timeframe, trigger, regime_filter]
+    source:
+      timecode: "00:46-01:14"
+    conditions:
+      - timeframe >= 30m
+      - terzo_tocco_detected == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h, 4h]
+      market_regime: []
+    rationale: "Terzo tocco plus is only valid at minimum 30-minute timeframe — below this the setup degrades."
+    notes: "Instructor explicitly states this is the minimum TF and is the reason he recommends this technique to beginners."
+
+  - id: BULL_P_13_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, trigger, daily, continuation]
+    source:
+      timecode: "01:24-05:14"
+    conditions:
+      - terzo_tocco_detected == true
+      - first_touch_timestamp >= yesterday_open
+      - first_touch_timestamp <= yesterday_close
+      - first_touch_level == yesterday_high OR first_touch_level == yesterday_low
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h]
+      market_regime: []
+    rationale: "Terzo tocco becomes PLUS when the first touch coincides with yesterday's high or low, which is already an automatic trigger level in the system."
+    notes: "Use H24 view (not daily candle) to identify first touch — daily candle opens at 2 AM and may miss the move."
+
+  - id: BULL_P_13_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, all_time_high, trigger, continuation]
+    source:
+      timecode: "05:25-07:11"
+    conditions:
+      - terzo_tocco_detected == true
+      - first_touch_day == yesterday
+      - current_level == all_time_high OR current_level == all_time_low
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h]
+      market_regime: []
+    rationale: "Terzo tocco becomes PLUS PLUS when the touch level coincides with all-time high (long) or all-time low (short) in addition to yesterday's trigger."
+    notes: "Three triggers stacked: terzo tocco + yesterday H/L + ATH/ATL. This is the highest probability variant."
+
+  - id: BULL_P_13_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, trigger, breakout, candle_pattern]
+    source:
+      timecode: "08:36-09:35"
+    conditions:
+      - terzo_tocco_detected == true
+      - price >= yesterday_high + 1_tick
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m, 1h]
+      market_regime: []
+    rationale: "Entry is triggered when price makes even one tick above the trigger level — that single tick signals the breakout."
+    notes: "If price never reaches the trigger level, the setup has not fired. Patience required — can take hours at 30m TF."
+
+  - id: BULL_P_13_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [terzo_tocco, stop_loss, ema10, candle_pattern]
+    source:
+      timecode: "07:50-08:12"
+    conditions:
+      - position_open == true
+      - candle_close_below_ema10_30m == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Staying in position waiting for EMA10 on 30m after a failed terzo tocco plus is incorrect — exit on the first failed candle."
+    notes: "Do NOT wait for EMA10 at 30m if the level fails. Exit as soon as the trigger candle closes back inside without follow-through."
+
+  - id: BULL_P_13_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, stop_loss, ema10, candle_pattern]
+    source:
+      timecode: "11:49-12:22"
+    conditions:
+      - position_open == true
+      - trigger_level_reached == true
+      - candle_closes_back_inside_formation == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "When price touches the trigger level but closes back inside the formation without explosion, the trade has failed — exit immediately."
+    notes: "If you are slightly in profit when closing, still exit. Do not use that small gain as reason to hold and wait."
+
+  - id: BULL_P_13_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [terzo_tocco, take_profit, candle_pattern]
+    source:
+      timecode: "14:49-15:27"
+    conditions:
+      - position_open == true
+      - current_candle_30m_closing == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "Exit at end of the first 30m candle after trigger — probability of a second 30m candle continuing the move is below 50%."
+    notes: "Instructor advises not to stay past the closing of the first 30m trigger candle unless additional triggers are present."
+
+  - id: BULL_P_13_08
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [terzo_tocco, ema10, trigger, pullback]
+    source:
+      timecode: "40:56-41:11"
+    conditions:
+      - terzo_tocco_detected == true
+      - price_at_ema10_30m == true
+      - second_touch_confirmed == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "Optimal entry is anticipating the terzo tocco when price is at EMA10 on 30m — this gives a tighter stop and better risk/reward."
+    notes: "Entering at EMA10 means the stop is the cambio colore or formation low; when the trigger fires, the R:R is greatly improved."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_P_13_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, beginner, trigger]
+    source:
+      timecode: "00:59-01:19"
+    statement: "Terzo tocco plus is recommended as the first technique for beginners because the 30m minimum TF filters noise and the trigger structure is clear."
+    rationale: "The elevated timeframe and stacked triggers reduce impulsive entries and help beginners build correct habits."
+
+  - id: BULL_P_13_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, trigger, daily]
+    source:
+      timecode: "34:00-36:50"
+    statement: "Conformations (not news) reveal where big money is accumulating. Trump coin example: the setup showed accumulation before the dinner announcement went public."
+    rationale: "Pattern recognition allows anticipating news-driven moves because insiders always leak information through their trading activity."
+
+  - id: BULL_P_13_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, trigger, candle_pattern, timeframe]
+    source:
+      timecode: "36:53-38:05"
+    statement: "The ideal entry scenario is when the trigger level is hit at the start of a new candle period — the setup fires cleanly and timing ambiguity is removed."
+    rationale: "When a trigger fires in the last 1-2 minutes of a candle it either explodes immediately or must be exited — no middle ground."
+
+  - id: BULL_P_13_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, book, trigger]
+    source:
+      timecode: "38:28-40:55"
+    statement: "Entering after the trigger level is broken (stop-limit above the level) means you only get filled when trades fail. Always anticipate or enter at the level — never after."
+    rationale: "Market dynamics at trigger levels cause slippage — those who wait to confirm get filled only on false breakouts."
+
+  - id: BULL_P_13_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, terzo_tocco]
+    source:
+      timecode: "42:30-43:55"
+    statement: "Track every setup in a personal trade journal: whether it triggered, whether it worked, how you entered. After 3-6 months this personal statistics file becomes invaluable."
+    rationale: "Building personal statistics accelerates learning more than watching any number of instructional videos."
+
+summary:
+  total_machine_executable: 8
+  total_context_only: 5
+  core_message: "Terzo tocco becomes PLUS when the first touch aligns with yesterday's H/L (automatic trigger), and PLUS PLUS when it also aligns with ATH/ATL. Minimum 30m timeframe. Exit at close of first 30m trigger candle if no explosion — do NOT wait for EMA10."

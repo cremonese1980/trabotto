@@ -1,0 +1,193 @@
+video:
+  id: YT_BULL_P_032
+  series: principianti
+  title: "Stop loss e ingressi - come usare EMA e book insieme"
+  video_index: 32
+  duration_minutes: 22
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_P_32_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, ema10, ema60, ema223, regime_filter]
+    source:
+      timecode: "0:36-1:05"
+    conditions:
+      - "dominant_ema_identified == true"
+      - "price_respects_ema_cleanly == true (no large spikes piercing and not recovering)"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1m]
+      market_regime: []
+    rationale: "Before any entry, identify which EMA is commanding the move on the current timeframe — price must bounce cleanly off that EMA without disorderly spikes."
+    notes: "The commanding EMA can be EMA 5, 10, 60, or 223. Only EMA 10, 60, and 223 are used for actual entries; EMA 5 is monitored but not traded directly. Each timeframe may have a different commanding EMA."
+
+  - id: BULL_P_32_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, book, stop_loss, trigger]
+    source:
+      timecode: "3:47-6:46"
+    conditions:
+      - "dominant_ema_identified == true (e.g. EMA 10 on 30m)"
+      - "price_near_dominant_ema == true"
+      - "large_book_support_level_below_ema == true (e.g. 600k-700k USD)"
+      - "book_support_level_intact == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m, 1m]
+      market_regime: []
+    rationale: "When price tests the commanding EMA and there is a massive book wall just below it, enter long: the book wall provides the real stop zone and reduces fake-out risk."
+    notes: "Bull bought at 2.19 with a 600-700k USD wall below at 2.15-2.16. The book wall, not just the EMA line, defines the true support zone. Entry can be placed in advance in the book."
+
+  - id: BULL_P_32_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [stop_loss, book, ema10]
+    source:
+      timecode: "6:15-7:36"
+    conditions:
+      - "ema_entry_taken == true"
+      - "book_support_identified_below_ema == true"
+      - "price_breaks_below_book_support_level == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Stop is not the EMA line itself but the book support level below the EMA. If price breaks through that book level, exit immediately without waiting for candle close."
+    notes: "The book defines the real floor. If the dominant EMA is at 2.19 and the book wall is at 2.15, stop is at 2.15. If price clears 2.15, all protection is gone — exit. For beginners, set a hard stop-limit order at that book level."
+
+  - id: BULL_P_32_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [breakout, candle_pattern, trigger, stop_loss]
+    source:
+      timecode: "12:47-15:08"
+    conditions:
+      - "breakout_level_identified == true (large book wall)"
+      - "breakout_candle_1_closes_green == true"
+      - "breakout_candle_1_is_large_green == false"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "At a breakout level, if the first post-breakout candle is NOT a big green candle, exit immediately without waiting for a stop."
+    notes: "The first candle after breakout must be strong and green. Weakness on candle 1 means the breakout is failing — do not wait for stop or candle close, just sell."
+
+  - id: BULL_P_32_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [breakout, candle_pattern, stop_loss]
+    source:
+      timecode: "15:08-16:47"
+    conditions:
+      - "breakout_candle_1_large_green == true"
+      - "breakout_candle_2_forming == true"
+      - "second_40_of_candle_2_reached == true"
+      - "candle_2_closing_near_open_or_red == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "Candle 2 after a breakout is highly likely to be red (a rest candle). If by second 40 of candle 2 the candle is not recovering and shows no strength, exit or move stop to breakeven."
+    notes: "From second 40 of candle 2, a stop at the entry level (0 P&L) can be placed in the machine. Candle 3 must show acceleration; if not, close. The retest of entry level is acceptable if supported by book."
+
+  - id: BULL_P_32_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, ema10, ema60, ema223, candle_pattern]
+    source:
+      timecode: "9:41-9:59"
+    conditions:
+      - "ema_has_multiple_irregular_spikes == true (price repeatedly above and below EMA)"
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "An EMA with disorderly spikes above and below is not commanding — it cannot be trusted for entry or stop placement."
+    notes: "EMA must be clean and precise with price bouncing once and recovering, not repeatedly crossing. Dirty EMA = no trade on that timeframe; check another timeframe."
+
+  - id: BULL_P_32_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [breakout, book, trigger]
+    source:
+      timecode: "14:12-14:35"
+    conditions:
+      - "breakout_level_has_large_book_wall == true"
+      - "book_wall_drops_from_1M_to_200k == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m]
+      market_regime: []
+    rationale: "For breakout entries, place a limit order just above the resistance level. When the large wall is consumed (drops from e.g. 1M to 200k), that confirms real buying — click to enter or trigger fills automatically."
+    notes: "This avoids being filled on a fake spike into the wall. Only when the wall is clearly eaten by buyers should entry be confirmed. Place limit at level + 1 tick (e.g. 2.601 if level is 2.600)."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_P_32_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, ema10, ema60, ema223, beginner]
+    source:
+      timecode: "20:05-20:32"
+    statement: "Only four EMAs matter: 5, 10, 60, 223 (crypto); 10, 50, 200 for equities. No oscillators, no volume bars, no other indicators. The chart must remain clean and readable."
+    rationale: "Adding indicators clutters the chart and hides the price action. Clean charts let you see conformazioni clearly; the book replaces volume indicators."
+
+  - id: BULL_P_32_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, beginner, psychology]
+    source:
+      timecode: "11:36-12:03"
+    statement: "Beginners lack the courage to close a losing position. Until experience is built, use automated stop-limit orders (OCO or stop-limit) placed at the book support level — this prevents becoming an involuntary holder."
+    rationale: "Emotional inability to close a loss is the most common beginner failure. Mechanical stops bypass the psychological barrier."
+
+  - id: BULL_P_32_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, book, terzo_tocco]
+    source:
+      timecode: "10:22-10:36"
+    statement: "On the first touch of a support EMA, price may fake below it and then return. The second touch is already weaker and more likely to generate false entries. Only trade the first touch at a commanding EMA."
+    rationale: "The commanding EMA's first retest is the highest probability moment; subsequent retests have increasingly lower odds of holding."
+
+  - id: BULL_P_32_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema, ema10, ema60, ema223, book]
+    source:
+      timecode: "1:12-2:12"
+    statement: "The commanding EMA acts as a mobile wall that rises with price in an uptrend. Buyers with enough capital are actively defending it, which is why clean bounces are predictive — they reveal the location of smart money support."
+    rationale: "Understanding the EMA as a real monetary commitment (not just a technical line) explains why clean EMAs are tradeable and dirty ones are not."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 4
+  core_message: "Stop placement is not the EMA line but the book support level below it; a commanding EMA combined with a massive book wall defines both entry and stop, while breakout entries require the first post-breakout candle to be strongly green or exit immediately."

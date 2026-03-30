@@ -1,0 +1,102 @@
+video:
+  id: YT_BULL_P_025
+  series: principianti
+  title: "Psicologia del Trading — Non rientrare dopo chiusura prematura"
+  video_index: 25
+  duration_minutes: 33
+
+entities:
+  - id: BULL_P_25_CTX_01
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management, beginner]
+    source:
+      timecode: "01:32-02:10"
+    statement: "Quando chiudi un'operazione troppo presto e il mercato prosegue nella stessa direzione, non rientrare mai subito nella stessa direzione. È uno degli errori più comuni nei trader nuovi."
+    rationale: "Rientrare subito dopo una chiusura prematura è guidato dall'emotività, non dalla logica, e quasi sempre porta a perdite."
+
+  - id: BULL_P_25_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, stop_loss, risk_management]
+    source:
+      timecode: "05:20-06:30"
+    statement: "Dopo aver chiuso un'operazione prematuramente, la reazione corretta è non fare nulla: osservare senza aprire nuove posizioni nella stessa direzione, attendendo eventualmente lo short dopo il panico di vendita."
+    rationale: "Agire per recuperare il mancato guadagno è una delle cause principali di perdite compounding."
+
+  - id: BULL_P_25_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, candle_pattern]
+    source:
+      timecode: "06:00-08:05"
+    statement: "Dopo la distruzione totale del prezzo, attendere la prima candela verde per un ingresso long contrarian; dopo uno spike prolungato verso l'alto, attendere la conformazione di inversione per entrare short."
+    rationale: "Attendere la prima candela verde dopo il panico massimo massimizza le probabilità di entrata in trend."
+
+  - id: BULL_P_25_CTX_04
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "09:05-09:57"
+    statement: "Se stai già cercando di recuperare una perdita o un guadagno mancato, spegni il computer immediatamente e allontanati dai mercati. Il tentativo di recupero quasi sempre amplia le perdite."
+    rationale: "Lo stato mentale di 'revenge trading' rimuove la lucidità necessaria per rispettare le proprie regole."
+
+  - id: BULL_P_25_CTX_05
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "10:07-11:00"
+    statement: "Quando si raggiunge il proprio obiettivo di guadagno giornaliero — anche nella prima mezz'ora — chiudere il computer, staccare e fare altro. Non cercare di fare il doppio o il triplo nello stesso giorno."
+    rationale: "L'overtrading dopo aver raggiunto l'obiettivo giornaliero erode i guadagni e aumenta il rischio psicologico."
+
+  - id: BULL_P_25_CTX_06
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner]
+    source:
+      timecode: "11:10-12:35"
+    statement: "Dopo ogni sessione di trading — in gain o in perdita — è fondamentale staccare completamente dai mercati e fare attività fisiche o hobby non correlati. Lo sport è il metodo più efficace per scaricare l'adrenalina accumulata."
+    rationale: "Il reset mentale tra sessioni mantiene la lucidità e la capacità di rispettare le regole operative."
+
+  - id: BULL_P_25_CTX_07
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, leverage]
+    source:
+      timecode: "15:10-17:54"
+    statement: "Evitare di isolarsi e lavorare H24 davanti ai mercati. Perdere i riferimenti sociali, emotivi e relazionali rende lo trader psicologicamente vulnerabile nei momenti di perdita, con conseguenze potenzialmente gravi."
+    rationale: "La resilienza psicologica dipende da un ecosistema di vita equilibrato, non solo dalla capacità tecnica."
+
+  - id: BULL_P_25_CTX_08
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, risk_management]
+    source:
+      timecode: "26:25-28:12"
+    statement: "Per ridurre l'ansia legata al rischio di perdere tutto, separare fisicamente il capitale di trading dal capitale di riserva: lavorare con una quota ridotta e tenere la riserva su un conto separato inaccessibile durante le sessioni."
+    rationale: "La consapevolezza che esiste un cuscinetto di sicurezza riduce le decisioni guidate dalla paura e migliora la lucidità operativa."
+
+  - id: BULL_P_25_CTX_09
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, beginner, risk_management]
+    source:
+      timecode: "19:10-20:50"
+    statement: "Non tenere posizioni overnight su asset ad alta volatilità (crypto, azionario americano) se questo impedisce di dormire. La qualità del sonno impatta direttamente la lucidità e le performance operative del giorno successivo."
+    rationale: "Un trader riposato prende decisioni migliori e rispetta le regole con maggiore costanza."
+
+summary:
+  total_machine_executable: 0
+  total_context_only: 9
+  core_message: "La psicologia del trading si divide in due sfere: la gestione emotiva durante le operazioni (non rientrare dopo chiusura prematura, non fare revenge trading) e la psicologia di vita da trader (staccare, dormire, non isolarsi). La storia di GameStop illustra come osservare senza agire sia spesso la decisione più redditizia."

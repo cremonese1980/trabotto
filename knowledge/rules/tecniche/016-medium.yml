@@ -1,0 +1,135 @@
+video:
+  id: BULL_T_016
+  series: tecniche
+  title: "Pesca Notturna parte 2 - Risultati reali e posizionamento ordini su EMA 5 e EMA 10"
+  video_index: 16
+  duration_minutes: 10
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_16_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema5, ema10, limit_order, continuation]
+    source:
+      timecode: "01:07-01:23"
+    conditions:
+      - asset_already_on_ema5_daily == true
+      - correction_may_deepen == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "If price is already at EMA 5 daily when placing the order, it is too late for EMA 5; target EMA 10 or a level between the two."
+    notes: "In the TRUE example, price was already on EMA 5 when Bull was setting up the pesca. He placed the order between EMA 5 and EMA 10 instead, which did not trigger. Lesson: adapt the target to where price already is."
+
+  - id: BULL_T_16_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema5, limit_order, candle_pattern]
+    source:
+      timecode: "03:19-03:54"
+    conditions:
+      - previous_daily_candle == large_green
+      - current_daily_candle_turning_red == true
+      - limit_buy_placed_above_ema5_daily == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "After a super green daily candle followed by a red reversal, limit buy above EMA 5 catches the overnight pullback."
+    notes: "SHIBA example: huge green candle, then a large red candle intraday. Limit at 711, caught the bounce perfectly. Never place the order exactly on the EMA line because the next day's candle shift moves the EMA up."
+
+  - id: BULL_T_16_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema10, limit_order, continuation]
+    source:
+      timecode: "08:04-09:34"
+    conditions:
+      - price_already_near_ema5_daily == true
+      - ema10_daily_is_the_key_support == true
+      - limit_buy_placed_between_ema5_and_ema10 == true OR limit_buy_placed_near_ema10 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "When EMA 5 has already been reached or nearly reached, shift the pesca notturna target to EMA 10 or a midpoint."
+    notes: "GTC, DOT, XRP examples: all were already near EMA 5 at bedtime, so Bull targeted EMA 10 area. He placed orders at a midpoint between EMA 5 and EMA 10, and all triggered overnight."
+
+  - id: BULL_T_16_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [btc_index, exit, regime_filter]
+    source:
+      timecode: "06:42-07:11"
+    conditions:
+      - pesca_notturna_positions_open == true
+      - btc_testing_ema5_daily == true
+      - btc_making_new_intraday_highs == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [daily, 1m]
+      market_regime: [bullish]
+    rationale: "Use BTC behavior as the exit signal for all pesca notturna positions: if BTC bounces and makes new highs, sell everything."
+    notes: "Bull watches BTC on 1m after waking up. If BTC has bounced and is making highs, he closes all pesca positions. If BTC breaks below the EMA crossover on 1m, he also closes everything."
+
+  - id: BULL_T_16_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [daily, ema5, limit_order, futures]
+    source:
+      timecode: "01:42-02:42"
+    conditions:
+      - pesca_notturna_setup_active == true
+      - using_futures == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [daily]
+      market_regime: [bullish]
+    rationale: "On futures, place the limit order slightly lower than on spot to account for futures premium and get a better fill."
+    notes: "Bull places the futures order a bit lower than the spot order on the same asset. Sometimes spot triggers but futures does not (DOGE example: missed by a hair on futures)."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_16_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, beginner, risk_management]
+    source:
+      timecode: "09:59-10:26"
+    statement: "To master the pesca notturna, you must first master daily chart reading. Even for 1-minute scalping, always identify daily levels first to avoid getting caught in fakeouts."
+    rationale: "The daily chart is the foundation of all of Bull's techniques; without it, lower timeframe entries become gambling."
+
+  - id: BULL_T_16_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, risk_management, psychology]
+    source:
+      timecode: "10:26-10:40"
+    statement: "If the daily chart does not show clear entries at support/resistance levels, do nothing. Watching and learning is better than forcing trades."
+    rationale: "Discipline to sit out when there is no setup prevents unnecessary losses."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 2
+  core_message: "Pesca notturna part 2 confirms the technique with real results: place limit orders above EMA 5 daily (or between EMA 5 and EMA 10 when already near EMA 5), use lower levels for futures, and exit based on BTC morning behavior. Never place orders exactly on the EMA line because the EMA shifts with the next candle."

@@ -1,0 +1,146 @@
+video:
+  id: BULL_T_036
+  series: tecniche
+  title: "Segnale Muro - Livelli grossi nel book come trigger per conformazioni"
+  video_index: 36
+  duration_minutes: 14
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_36_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, trigger, terzo_tocco]
+    source:
+      timecode: "04:33-05:57"
+    conditions:
+      - large_wall_in_ask_detected == true
+      - wall_size_usd > 200000
+      - price_below_wall_level == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "I livelli grossi nel book fanno da tappo: la gente vende prima, creando conformazioni (terzo tocco, bud allungato, martello) sotto il muro."
+    notes: "Il segnale muro indica dove si formeranno le conformazioni. Aspettare la conformazione sotto il muro prima di entrare."
+
+  - id: BULL_T_36_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, terzo_tocco, trigger]
+    source:
+      timecode: "07:28-08:25"
+    conditions:
+      - wall_touch_count == 3
+      - conformazione_before_wall == true
+    action:
+      - ENTER_LONG
+    stop_loss: "sotto il livello del muro se non accelera"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Al terzo tocco del muro con conformazione precedente, si entra con stop limit appena il muro viene toccato."
+    notes: "Al terzo tocco fare direttamente stop limit sopra il muro (es. 5.80 stop, 5.81 limite). Al primo tocco non entrare o entrare solo al limite quando il muro viene mangiato."
+
+  - id: BULL_T_36_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, bud, trigger]
+    source:
+      timecode: "07:05-07:55"
+    conditions:
+      - wall_touch_count == 2
+      - bud_formation_before_wall == true
+    action:
+      - ENTER_LONG
+    take_profit: "livello del muro"
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Al secondo tocco, cercare un bud prima del muro: l'ingresso e' sul bud con target al mangiarsi del muro."
+    notes: "Se il muro viene rotto, si guadagna ancora di piu'. Altrimenti si chiude in gain col bud."
+
+  - id: BULL_T_36_04
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [book, breakout, invalidation]
+    source:
+      timecode: "09:19-10:05"
+    conditions:
+      - position_open == true
+      - wall_breakout_entry == true
+      - immediate_acceleration == false
+      - candle_close_at_or_below_wall_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Quando si rompe un tappo nel book il prezzo deve accelerare pesantemente. Se non accelera o chiude candela allo stesso livello, uscire."
+    notes: "Non aspettare EMA 5 o EMA 10 come stop. Se alla rottura del muro non parte immediatamente, il gas non c'e'. Se fa spike e poi tornano pezzi grossi in vendita sullo stesso livello, uscire."
+
+  - id: BULL_T_36_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [book, take_profit, daily, trigger]
+    source:
+      timecode: "10:43-11:20"
+    conditions:
+      - position_open == true
+      - wall_breakout_successful == true
+      - daily_trigger_level_exists == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, daily]
+      market_regime: []
+    rationale: "Dopo la rottura del muro con prima candela verde, stop a zero. Se ci sono trigger nel daily (massimo daily, massimo giorno prima) si tiene per target piu' alti."
+    notes: "Dopo prima candela verde chiusa, stop a breakeven. Tenere solo se c'e' un trigger piu' alto nel daily."
+
+  - id: BULL_T_36_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, bud, terzo_tocco, candelina]
+    source:
+      timecode: "12:22-13:01"
+    conditions:
+      - wall_touch_count == 2
+      - two_rest_candles_after_touch == true
+      - third_candle_consuming_wall == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Al secondo tocco, se fa due candele di riposo e alla terza va a mangiare il muro, si puo' entrare anche se e' solo il secondo tocco."
+    notes: "Logica del bud applicata al muro: tocca, due candele di riposo, terza candela mangia. Anche una sola candela di riposo puo' bastare."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_36_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, trigger]
+    source:
+      timecode: "02:26-03:07"
+    statement: "Quando il muro scompare prima che il prezzo ci arrivi, potrebbe essersi scaricato: il livello resta comunque valido come riferimento testato piu' volte."
+    rationale: "Anche senza il muro fisico nel book, il livello mantiene importanza tecnica per le conformazioni che si sono formate sotto."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 1
+  core_message: "Il segnale muro indica i livelli grossi nel book che creano tappi: sotto questi livelli si formano conformazioni (terzo tocco, bud, martello). L'ingresso dipende dal numero di tocchi e dalla conformazione, e alla rottura il prezzo deve accelerare immediatamente."

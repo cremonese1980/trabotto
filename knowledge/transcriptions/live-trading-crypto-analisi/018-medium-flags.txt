@@ -1,0 +1,56 @@
+# Low-confidence segments for: 018_LIVE_TRADING_SHORT_BNB_LONG_XRP_Analisi_completa.mp3
+# Total flagged: 17
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:16] (confidence: -0.409)
+  "ciao traders, siete su scappi in the bull. allora due live trading, queste ieri su bnb short e poi ho stamattina il breakout con doppia conferma di time frame di xlp"
+
+[0:16-0:25] (confidence: -0.409)
+  "allora partiamo da qua e non ho fatto la schermata fuori per vedere la"
+
+[0:25-0:31] (confidence: -0.191)
+  "discesa comunque il motivo per cui sono entrato qua io sono già entrato quindi"
+
+[0:31-0:35] (confidence: -0.191)
+  "questa è la linea dove io sono entrato e questo è il mio stop ok sono entrato per"
+
+[0:35-0:41] (confidence: -0.191)
+  "due motivi allora qua c'è stato un test diciamo verso il 60 non c'è mai avvicinato"
+
+[0:41-0:45] (confidence: -0.191)
+  "è sceso giù poi di nuovo ha fatto uguale non si è avvicinato ha ribalzato è andato"
+
+[0:45-0:49] (confidence: -0.191)
+  "giù ok quindi praticamente stiamo vedendo lo stesso pattern ok stiamo"
+
+[0:49-0:53] (confidence: -0.191)
+  "facendo sta vedendo che sta facendo questo in continuazione ok quindi"
+
+[5:16-5:32] (confidence: -0.482)
+  "adesso sono sopra di 200 qua stiamo parlando di 26 bnb 26 bnb 26 x 330 u8.500 usdt quindi non è"
+
+[5:59-6:04] (confidence: -0.207)
+  "chiudo non vendo qua uguale nato sopra ma poi fatto la chiusura in rosso qua bellissima finta"
+
+[6:04-6:10] (confidence: -0.207)
+  "però comunque è rimasto rosso ed è rimasto sotto al coso al alla 10 se questa candela qua questa"
+
+[6:10-6:17] (confidence: -0.207)
+  "dopo dopo questa questo spiccone ribasso a questo punto qua quindi appareggiando diciamo il corpo"
+
+[6:17-6:23] (confidence: -0.207)
+  "della candela prima avrai chiuso qua in manuale invece continua prosegue quindi sta facendo il"
+
+[6:45-6:56] (confidence: -0.246)
+  "253 253 usb ok e poi prossimo questo amico è oggi stamattina prima di andare al centro commerciale"
+
+[6:56-7:03] (confidence: -0.246)
+  "di verona fra l'altro che stamattina non sono andato in bici che pioveva e quindi ho lavorato"
+
+[7:03-7:09] (confidence: -0.246)
+  "un po e ho fatto questo qua allora questo è molto molto molto molto molto molto interessante"
+
+[7:09-7:14] (confidence: -0.246)
+  "perché intanto vediamo questa configurazione piace molto perché comunque andato a spaccare"
+

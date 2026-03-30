@@ -1,0 +1,174 @@
+video:
+  id: BULL_T_029
+  series: tecniche
+  title: "Segnale incrocio EMA 60/223 e segnale saldi - anticipare il cambio trend"
+  video_index: 29
+  duration_minutes: 20
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_29_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, ema223, trend, breakout]
+    source:
+      timecode: "00:35-03:18"
+    conditions:
+      - "bullbot_emersione_signal == true"
+      - "ema60_approaching_ema223_from_below == true"
+      - "long_downtrend_preceded_signal == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: [downtrend_reversal]
+    rationale: "The emersione signal detects when EMA 60 is approaching EMA 223 from below after a long downtrend, indicating a potential trend-changing crossover. The longer the prior downtrend, the more significant the potential reversal."
+    notes: "Available in three timeframes: 1m, 5m, and 30m. The signal arrives BEFORE the crossover happens, giving time to prepare. Do not enter on the signal itself - wait for a proper chart formation."
+
+  - id: BULL_T_29_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, breakout, continuation]
+    source:
+      timecode: "03:50-04:52"
+    conditions:
+      - "bullbot_emersione_signal == true"
+      - "price_below_ema223 == true"
+      - "lateralization_below_ema223 == true"
+      - "price_breaks_above_ema223 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: [downtrend_reversal]
+    rationale: "The ideal entry for the EMA 60/223 crossover is a lateralization just below EMA 223 followed by a breakout above it. The breakout pulls EMA 60 upward and accelerates the crossover."
+    notes: "This is the top configuration. Avoid entering when price already spiked above EMA 223 and arrived at the crossover percentage already extended. The lateralization below EMA 223 is key because the breakout compresses the spring."
+
+  - id: BULL_T_29_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, ema223, exit, take_profit]
+    source:
+      timecode: "06:25-07:09"
+    conditions:
+      - "emersione_long_entry == true"
+      - "price_spiked_toward_ema60_ema223_crossover_zone == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "Sell when price spikes to the zone where EMA 60 would cross EMA 223. After the spike, price does not need to keep rising for the crossover to complete - mere lateralization will cause EMA 60 to catch up automatically with each new candle."
+    notes: "Calculate that EMA 60 rises with each candle even if price stays flat. So once the spike brings price to the crossover zone, take profit. A second entry can be made later on the actual crossover breakout after new lateralization."
+
+  - id: BULL_T_29_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema60, ema223, pullback, daily]
+    source:
+      timecode: "10:45-12:14"
+    conditions:
+      - "bullbot_saldi_signal == true"
+      - "asset_daily_price_dropped_significantly == true"
+      - "ema60_diverging_from_ema223_downward == true"
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [daily]
+      market_regime: [oversold]
+    rationale: "The saldi (sales) signal detects assets that have crashed significantly on the daily timeframe, identifying potential bounce candidates before the EMA 60/223 crossover signal would fire."
+    notes: "Saldi is a pre-cursor to the emersione signal. It catches assets during the crash phase, allowing anticipation of the future crossover. The signal has no specific timeframe - it is based on daily price action."
+
+  - id: BULL_T_29_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, breakout, shimano, continuation]
+    source:
+      timecode: "08:09-08:53"
+    conditions:
+      - "bullbot_emersione_signal == true"
+      - "price_broke_above_ema60 == true"
+      - "lateralization_above_ema60_below_ema223 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: [downtrend_reversal]
+    rationale: "When the emersione signal fires and price breaks above EMA 60 but stays below EMA 223, the shimano zone is entered. A lateralization in this zone followed by EMA 223 breakout is a valid entry."
+    notes: "If price does not break EMA 223 but lateralizes between EMA 60 and EMA 223 (shimano), wait for the EMA 223 breakout. The lateralization in the shimano zone can be used with the shimano technique separately."
+
+  - id: BULL_T_29_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema60, ema223, terzo_tocco, anticipation]
+    source:
+      timecode: "12:01-13:07"
+    conditions:
+      - "bullbot_saldi_signal == true"
+      - "price_touched_ema60_from_below_count >= 3"
+      - "price_breaks_above_ema60 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [oversold_bounce]
+    rationale: "Using the saldi signal, look for a terzo tocco on EMA 60 from below. On the third touch and breakout of EMA 60, enter long to anticipate the eventual EMA 60/223 crossover."
+    notes: "This entry is well before the crossover, giving a much better price. The terzo tocco on EMA 60 confirms buying interest building. Target is EMA 223 initially, then hold if crossover materializes."
+
+  - id: BULL_T_29_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema223, take_profit, exit]
+    source:
+      timecode: "15:47-15:59"
+    conditions:
+      - "long_position_from_saldi_or_emersione == true"
+      - "price_reached_ema223 == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m, 30m]
+      market_regime: []
+    rationale: "When entering from below on a saldi or emersione signal, the first resistance is EMA 223. Take profit at EMA 223 as it may act as resistance and reject price."
+    notes: "Can re-enter if a new lateralization forms and breaks EMA 223. But the initial target should be EMA 223 to lock in the move."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_29_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, ema223, regime_filter, daily]
+    source:
+      timecode: "16:26-17:07"
+    statement: "In any market condition, use the appropriate signal: in crashes use saldi to find bounce candidates, in recoveries use emersione to find crossover setups, in rallies use bomba or other signals. Master multiple techniques and choose based on market regime."
+    rationale: "No single technique works in all conditions. The edge comes from matching the right tool to the current market state."
+
+  - id: BULL_T_29_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema60, ema223, beginner]
+    source:
+      timecode: "05:29-05:52"
+    statement: "The bullbot signals are not entry signals. They are screening tools that replace having thousands of monitors. Always verify the chart formation before entering."
+    rationale: "Blind entry on signals without chart confirmation leads to losses on false signals."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "The emersione signal detects potential EMA 60/223 crossovers before they happen across 3 timeframes, with the ideal entry being a lateralization below EMA 223 followed by breakout. The saldi signal finds crashed assets for bounce plays, allowing even earlier anticipation of crossovers. Both signals are screening tools requiring chart confirmation before entry."

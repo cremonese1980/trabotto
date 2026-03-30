@@ -1,0 +1,156 @@
+video:
+  id: BULL_T_023
+  series: tecniche
+  title: "50 sfumature di Bud - varianti, bud to the moon e struttura universale"
+  video_index: 23
+  duration_minutes: 20
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_23_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, candle_pattern, breakout, trigger]
+    source:
+      timecode: "03:22-05:00"
+    conditions:
+      - "large_green_candle_detected == true (panic/FOMO candle, significantly larger than recent candles)"
+      - "spike_high_level_recorded == true"
+      - "candles_of_rest_after_spike >= 2"
+      - "candle_bodies_small_relative_to_spike == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "The bud structure is universal: a large FOMO candle creates a spike level, followed by at least two small rest candles. This structure works anywhere regardless of EMA position."
+    notes: "The classic bud requires EMA 10 break, but the universal bud structure only requires a panic/FOMO candle significantly larger than surrounding candles, then rest, then breakout of the spike level."
+
+  - id: BULL_T_23_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, continuation, terzo_tocco]
+    source:
+      timecode: "09:00-10:19"
+    conditions:
+      - "spike_high_level_recorded == true"
+      - "candles_of_rest_after_spike >= 4"
+      - "all_rest_candles_are_small == true"
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: []
+      market_regime: [bullish]
+    rationale: "A bud to the moon is a bud with 4+ small rest candles before breakout. The extended compression increases the probability of a larger move and allows holding the position longer."
+    notes: "The more rest candles before breakout, the higher the probability of a sustained move. A bud to the moon near a second or third touch level is ideal because the position can be held through the touch breakout."
+
+  - id: BULL_T_23_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, ema60, ema223, regime_filter]
+    source:
+      timecode: "06:50-07:48"
+    conditions:
+      - "bud_setup_active == true"
+      - "price_below_ema60 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "A bud below EMA 60 is still valid. The structure matters more than the EMA context. Do not confuse bud with viagra: viagra requires testing EMA 10 before breakout, while bud is a spike-then-rest-then-breakout pattern."
+    notes: "Bud works below EMA 60 and EMA 223. The key difference from viagra is the entry mechanics: bud enters on spike level breakout after rest candles, viagra enters on EMA 10 close."
+
+  - id: BULL_T_23_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, book, stop_limit, trigger]
+    source:
+      timecode: "04:20-04:53"
+    conditions:
+      - "bud_setup_active == true"
+      - "large_book_level_near_spike_high == true"
+      - "book_level_slightly_below_spike == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "When there is a large order book level slightly below the spike high, anticipate the entry at that book level rather than waiting for the exact spike breakout."
+    notes: "If the book level is slightly above the spike, wait for that higher level. Adjust entry price based on nearby book walls. If no notable book levels exist, use the spike high exactly."
+
+  - id: BULL_T_23_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, ema60, rimbalzo, regime_filter]
+    source:
+      timecode: "13:26-14:15"
+    conditions:
+      - "price_below_ema60 == true"
+      - "price_below_ema223 == true"
+      - "bud_to_the_moon_setup == true (spike + 4 or more rest candles)"
+      - "breakout_of_spike_level_crosses_ema60 == true"
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: [oversold_bounce]
+    rationale: "A bud to the moon setup below both EMA 60 and EMA 223 where the breakout also crosses EMA 60 is extremely powerful because it combines a compressed pattern with an EMA breakout."
+    notes: "After a large drop (e.g. +200%), wait for price to touch EMA 60 for the first time, let it rest with small candles around EMA 60, then enter on breakout of the bud level which also breaks EMA 60."
+
+  - id: BULL_T_23_06
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [bud, invalidation, candle_pattern]
+    source:
+      timecode: "15:21-16:40"
+    conditions:
+      - "bud_entry_triggered == true"
+      - "breakout_candle_closes_as_red == true"
+      - "no_acceleration_on_breakout == true"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "If the breakout candle that should be the profit candle closes red or shows no acceleration, it signals weakness and the bud has failed."
+    notes: "Do not wait for EMA 10 break to exit. If the candle immediately after entry fails to accelerate, exit immediately. The bud demands instant acceleration after breakout."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_23_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, psychology, profit_taking]
+    source:
+      timecode: "12:28-12:39"
+    statement: "Even on bud to the moon setups, when the position is up 40% and the target is still far, it is acceptable to take profit early rather than risk a reversal."
+    rationale: "Large unrealized gains create psychological pressure; locking in profit maintains discipline."
+
+  - id: BULL_T_23_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [bud, viagra, beginner]
+    source:
+      timecode: "07:04-07:48"
+    statement: "Do not confuse bud with viagra. Viagra requires EMA 10 dominance for many candles and enters on EMA 10 close. Bud is a spike-rest-breakout pattern that can occur anywhere."
+    rationale: "Mixing up the two techniques leads to wrong entry points and missed setups."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 2
+  core_message: "The bud structure is universal: a large FOMO/panic candle creates a spike level, followed by at least 2 rest candles (4+ for bud to the moon), then entry on breakout. It works at any EMA position, and the key is that the breakout must produce immediate acceleration or the trade is exited."

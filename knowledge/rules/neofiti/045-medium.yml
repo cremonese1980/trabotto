@@ -1,0 +1,155 @@
+video:
+  id: YT_BULL_P_045
+  series: principianti
+  title: "Come fare trading in vacanza o con poco tempo: daily e time frame grandi"
+  video_index: 45
+  duration_minutes: 30
+
+entities:
+
+  - id: BULL_P_45_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, stop_loss, risk_management, trigger]
+    source:
+      timecode: "18:08-19:02"
+    conditions:
+      - trade_open == true
+      - stop_loss_inserted == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily, "60min", "30min"]
+      market_regime: []
+    rationale: "Lo stop loss deve essere inserito prima dell'entrata, specialmente operando in mobilità dove si può perdere la connessione."
+    notes: "La regola è codice di famiglia (VFAM): chi non inserisce lo stop viene bannato dalla community. Garantisce che un'interruzione di connessione non porti a perdite illimitate."
+
+  - id: BULL_P_45_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, terzo_tocco, all_time_high, ema, trigger]
+    source:
+      timecode: "05:59-08:12"
+    conditions:
+      - daily_level_identified == true
+      - daily_level_type IN [terzo_tocco, all_time_high, all_time_low, livello_fintato]
+      - ema_not_overhead == true
+      - lateralization_present == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: [trending, ranging]
+    rationale: "I terzi tocchi sui massimi/minimi storici nel daily senza EMA overhead sono i setup di massima qualità da cercare in mobilità."
+    notes: "Il setup ideale in vacanza è un terzo tocco su all time high o all time low daily con spazio libero sopra (no EMA in testa). La laterizzazione conferma il rifiuto del livello."
+
+  - id: BULL_P_45_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, stop_loss, risk_management, pullback]
+    source:
+      timecode: "22:18-23:50"
+    conditions:
+      - daily_level_identified == true
+      - lateralization_candles >= 3
+      - setup_type IN [terzo_tocco, bad_fintato, terzo_tocco_plus]
+      - stop_loss_pct <= 1.0
+    action:
+      - ENTER_LONG
+      - ENTER_SHORT
+    stop_loss: "1% dal punto di ingresso"
+    applicability:
+      timeframes: [daily, "60min", "30min"]
+      market_regime: [trending]
+    rationale: "Una conformazione elaborata (≥3 candele di laterizzazione) nel daily permette di piazzare uno stop loss dell'1% con rischio controllato anche in mobilità."
+    notes: "Lo stop dell'1% deve essere inserito prima dell'entrata. Una struttura con molte ore di lavoro garantisce che il livello sia davvero significativo."
+
+  - id: BULL_P_45_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [stop_loss, daily, risk_management, trigger]
+    source:
+      timecode: "11:08-12:00"
+    conditions:
+      - position_open == true
+      - price_reached_trigger_level == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [daily, "60min", "30min"]
+      market_regime: [trending]
+    rationale: "Una volta raggiunto il livello trigger principale, lo stop si sposta a breakeven eliminando il rischio di perdita."
+    notes: "Nel trade di esempio (ZKJ) Bull ha spostato lo stop da -1% progressivamente fino a breakeven dopo l'accelerazione post-trigger."
+
+  - id: BULL_P_45_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [ema, daily, regime_filter, pullback]
+    source:
+      timecode: "12:55-13:18"
+    conditions:
+      - daily_level_identified == true
+      - ema_overhead == true
+      - ema_distance_pct < 2.0
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "Se c'è un'EMA troppo vicina sopra il livello daily, il prezzo non riuscirà ad andare a target prima di colpirla, rendendo il setup di bassa qualità."
+    notes: "L'EMA overhead blocca il percorso verso il target; il setup migliore ha EMA distante o assente sopra il punto di ingresso."
+
+  - id: BULL_P_45_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, beginner, psychology]
+    source:
+      timecode: "14:43-15:20"
+    statement: "In mobilità o vacanza non si opera mai a time frame 1 minuto o 5 minuti; si parte sempre dal daily per trovare il livello, poi al massimo si scende a 1 ora o 30 minuti."
+    rationale: "Time frame piccoli richiedono attenzione continua incompatibile con la mobilità; il daily permette di impostare stop e target e lasciare lavorare il mercato."
+
+  - id: BULL_P_45_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, trigger, all_time_high, terzo_tocco]
+    source:
+      timecode: "13:25-14:43"
+    statement: "Il setup ideale per operare con poco tempo è un terzo tocco sui massimi o minimi storici (all time high / all time low) nel daily senza ostacoli EMA."
+    rationale: "I livelli ATH/ATL daily sono i più significativi e offrono le maggiori probabilità di movimento direzionale netto."
+
+  - id: BULL_P_45_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [stop_loss, beginner, psychology]
+    source:
+      timecode: "24:26-25:15"
+    statement: "Il grande vantaggio del mercato crypto H24 è che lo stop loss viene eseguito sempre, anche dormendo o senza connessione, senza rischio di gap overnight come nell'azionario."
+    rationale: "Questa caratteristica rende il crypto ideale per chi opera in mobilità: lo stop inserito prima è una garanzia assoluta."
+
+  - id: BULL_P_45_CTX_04
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [psychology, daily, beginner]
+    source:
+      timecode: "21:18-21:32"
+    statement: "Operare in mobilità richiede di saper selezionare e agire solo sulle grandi opportunità; evitare la foga di trovare sempre un'operazione."
+    rationale: "La disciplina di attesa è amplificata dalla mobilità: meglio perdere un trade che forzare un ingresso su un livello mediocre."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 4
+  core_message: "Il video insegna come operare in vacanza o con poco tempo: trovare un livello daily di altissima qualità (terzo tocco su ATH/ATL, laterizzazione elaborata, no EMA overhead), inserire lo stop all'1% prima di entrare, poi lasciare lavorare il mercato spostando progressivamente lo stop a breakeven. Mai operare a time frame inferiori a 30 minuti in mobilità."

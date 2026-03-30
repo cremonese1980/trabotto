@@ -1,0 +1,149 @@
+video:
+  id: BULL_T_007
+  series: tecniche
+  title: "Come guadagnare con i ribassi - Long e Short nei crolli"
+  video_index: 7
+  duration_minutes: 16
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_07_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [rialzi, breakout, trend, ema60]
+    source:
+      timecode: "05:30-06:10"
+    conditions:
+      - market_in_downtrend == true
+      - ema60_acting_as_resistance_on_5m == true
+      - price_breaks_above_ema60_5m == true
+      - btc_also_breaking_ema60_trend == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "During a crash, identify the dominant downtrend on the 5m EMA 60. When price breaks above it (especially if BTC does too), enter long for the bounce."
+    notes: "The longer the downtrend that breaks, the more significant the breakout. Multiple timeframe confirmation (1m + 5m + BTC) strengthens the signal."
+
+  - id: BULL_T_07_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [rialzi, breakout, trend, continuation]
+    source:
+      timecode: "08:22-08:55"
+    conditions:
+      - long_bounce_active == true
+      - dominant_trend_broken_on_5m == true
+      - new_trend_forming_above_ema60 == true
+    action:
+      - WAIT
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When a dominant downtrend breaks and a new uptrend forms, hold the position longer than usual instead of scalping out quickly."
+    notes: "Normally Bull sells quickly on 1m scalps, but with multiple trend break confirmations he holds for the full move. Went from +900 to +1186 USD by holding."
+
+  - id: BULL_T_07_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [rialzi, breakeven, stop_loss, ema60]
+    source:
+      timecode: "11:52-12:20"
+    conditions:
+      - long_bounce_active == true
+      - price_moved_in_favor == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "After a successful bounce entry, stop goes to breakeven. If price breaks above EMA 60, stop moves to just below EMA 60."
+    notes: "Wait for candle close confirmation. A wick below EMA 60 that recovers (finta) is acceptable; a close below is not."
+
+  - id: BULL_T_07_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [short, ema60, retest, scalping]
+    source:
+      timecode: "11:16-11:52"
+    conditions:
+      - market_in_downtrend == true
+      - price_tested_ema60_as_resistance == true
+      - price_rejected_from_ema60 == true
+      - lateralization_below_ema60 == true
+    action:
+      - ENTER_SHORT
+    stop_loss: "above EMA 60"
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "In a crash, when price bounces to EMA 60 and gets rejected, enter short with stop above EMA 60."
+    notes: "Look for lateralization forming a base for new lows. Each time it tests and fails at EMA 60, short conviction increases."
+
+  - id: BULL_T_07_05
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: HARD
+    tags: [short, exit, candle_pattern]
+    source:
+      timecode: "12:51-13:11"
+    conditions:
+      - short_active == true
+      - large_red_candle_followed_by_fast_recovery == true
+      - green_candle_appears == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [1m, 5m]
+      market_regime: [trend_down]
+    rationale: "When shorting and a mega red candle is followed by a quick recovery and green candle, stops are closing. Exit on the first green candle."
+    notes: "This is a scalping exit rule. When you see shorts covering (green candle after spike down), take profits immediately."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_07_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [rialzi, psychology, trend]
+    source:
+      timecode: "10:37-10:55"
+    statement: "During a crash, you can go long by waiting for the dominant downtrend to break. The bounce will come, but you must wait for the trend change signal."
+    rationale: "Buying dips blindly is gambling. Waiting for trend break confirmation is systematic."
+
+  - id: BULL_T_07_CTX_02
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [leverage, risk_management, beginner]
+    source:
+      timecode: "04:31-05:02"
+    statement: "Bull uses 20x leverage but strongly discourages it. Beginners should use maximum 1x (2x for crypto futures) because a 5% adverse move at 20x wipes the account."
+    rationale: "Leverage amplifies both gains and losses. At 1x, a 50% adverse move is needed for liquidation, providing ample room for error."
+
+  - id: BULL_T_07_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [btc_index, short, trend]
+    source:
+      timecode: "06:42-06:56"
+    statement: "Bitcoin is the index. Identify trend changes on BTC first, then trade the altcoin that moves more in the same direction."
+    rationale: "BTC leads the crypto market. Trading altcoins aligned with BTC trend changes provides leverage on the move without using margin leverage."
+
+summary:
+  total_machine_executable: 5
+  total_context_only: 3
+  core_message: "During market crashes, go long by waiting for the dominant EMA 60 downtrend to break on the 5m timeframe with BTC confirmation. Go short by selling rejections at EMA 60 resistance with tight stops above it."

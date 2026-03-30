@@ -1,0 +1,160 @@
+video:
+  id: BULL_T_044
+  series: tecniche
+  title: "Trading con il doppio book e selezione titoli che pagano"
+  video_index: 44
+  duration_minutes: 23
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_44_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: LIQUIDITY_GATE
+    severity: HARD
+    tags: [book, risk_management, trigger]
+    source:
+      timecode: "01:39-02:01"
+    conditions:
+      - book_level_large_in_usdt == true
+      - book_level_large_in_boost == false
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se il livello grande nel book USDT non e' confermato dal book boost, il livello potrebbe essere finto."
+    notes: "Il doppio book rivela divergenze tra USDT e boost. Un livello presente solo in USDT senza conferma boost non e' affidabile per ingresso."
+
+  - id: BULL_T_44_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, take_profit, trigger]
+    source:
+      timecode: "02:10-02:49"
+    conditions:
+      - position_open == true
+      - book_level_large_in_boost_before_target == true
+    action:
+      - TIGHTEN_TP
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Se nel book boost esiste un livello grande prima del target originale, il take profit va spostato prima di quel livello."
+    notes: "Esempio: target a 824 ma livello grande boost a 823, si mette TP a 822. Il book boost mostra ostacoli non visibili nel solo USDT."
+
+  - id: BULL_T_44_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [book, trend, risk_management]
+    source:
+      timecode: "06:00-06:25"
+    conditions:
+      - asset_daily_percentage_move < 0.5
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Operare solo su titoli che pagano, cioe' che hanno movimenti percentuali significativi."
+    notes: "Se un titolo fa candele che si muovono dello 0.15% non vale la pena operarci. Si regalano solo fee a Binance."
+
+  - id: BULL_T_44_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [book, bomba, trend]
+    source:
+      timecode: "06:46-07:14"
+    conditions:
+      - asset_in_top5_gainers == true OR asset_in_top5_losers == true
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: ["1m", "5m"]
+      market_regime: []
+    rationale: "I primi 5 migliori e peggiori in classifica sono quelli che pagano di piu'."
+    notes: "Sia i migliori che i peggiori sono titoli con alta volatilita' e quindi interessanti per il book trading."
+
+  - id: BULL_T_44_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [book, trigger, invalidation]
+    source:
+      timecode: "17:44-18:14"
+    conditions:
+      - entry_on_book_level_breakout == true
+      - candle_close_below_broken_level == true
+      - candle_timeframe == "1m"
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Quando si entra alla rottura di un livello trigger nel book, se la candela del minuto chiude sotto il livello rotto, bisogna uscire immediatamente."
+    notes: "Non aspettare l'EMA come stop. Nei momenti trigger il prezzo deve partire subito; se non parte c'e' un problema."
+
+  - id: BULL_T_44_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [book, terzo_tocco, trigger]
+    source:
+      timecode: "18:33-18:48"
+    conditions:
+      - touch_count(book_level) >= 3
+      - book_level_large == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: []
+      market_regime: []
+    rationale: "Un livello grande nel book toccato per la terza volta ha alta probabilita' di breakout."
+    notes: "Se il livello nel book ha permesso di fare il terzo tocco, alla terza volta che ci va molto probabilmente distrugge e parte."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_44_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, risk_management]
+    source:
+      timecode: "10:07-10:30"
+    statement: "Usare il doppio book (USDT + boost) riduce il rischio di beccare finte; livelli grandi in boost non visibili in USDT sono particolarmente affidabili."
+    rationale: "Il doppio book offre una visione piu' completa della liquidita' e conferma o smentisce i livelli apparenti."
+
+  - id: BULL_T_44_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, ema]
+    source:
+      timecode: "19:16-21:05"
+    statement: "Si puo' fare trading solo col book ma e' un grosso handicap: senza le EMA non si capisce se c'e' la conformazione (terzo tocco, shimano, viagra, ecc.)."
+    rationale: "Combinare la lettura del book con le 4 EMA permette di selezionare meglio i trade e ridurre le finte."
+
+  - id: BULL_T_44_CTX_03
+    entity_type: WARNING
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [book, risk_management]
+    source:
+      timecode: "10:43-12:11"
+    statement: "Il book di profondita' e' inutile su Binance perche' il book e' raggruppabile; e' utile solo su mercati dove il book non si puo' raggruppare (es. Nasdaq)."
+    rationale: "Su Binance il raggruppamento del book rende visibili i livelli senza bisogno del depth chart."
+
+summary:
+  total_machine_executable: 6
+  total_context_only: 3
+  core_message: "Il doppio book (USDT + boost) e' uno strumento potente per identificare livelli reali e filtrare finte, ma va sempre combinato con la lettura delle EMA e delle conformazioni tecniche per selezionare i trade migliori."

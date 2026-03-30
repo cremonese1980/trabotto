@@ -1,0 +1,186 @@
+video:
+  id: BULL_T_051
+  series: tecniche
+  title: "Segnale Molla e Rimbalzi - uscita shimano e rimbalzi su EMA a TF5"
+  video_index: 51
+  duration_minutes: 17
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_51_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, ema60, ema10, breakout]
+    source:
+      timecode: "06:42-07:17"
+    conditions:
+      - price_inside_shimano == true
+      - ema60_acts_as_resistance == true
+      - ema10_acts_as_support == true
+      - small_candles_between_ema10_and_ema60 == true
+      - ema10_crossing_above_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La molla e' la compressione tra EMA 60 (resistenza) e EMA 10 (supporto) all'interno dello shimano; quando l'EMA 10 incrocia l'EMA 60 si esce al rialzo."
+    notes: "L'EMA 10 spinge il prezzo fuori dallo shimano. L'ideale sono candeline piccole con nessuna chiusura sotto l'EMA 10. Dopo la finta l'accelerazione e' piu' probabile."
+
+  - id: BULL_T_51_02
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, bud, breakout]
+    source:
+      timecode: "03:39-04:47"
+    conditions:
+      - price_inside_shimano == true
+      - ema10_commanding == true
+      - no_candle_close_below_ema10 == true
+      - bud_to_the_moon_at_shimano_exit == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "La conformazione migliore per la molla: candeline sotto la 60, EMA 10 che comanda senza chiusure sotto, e bad to the moon come uscita dallo shimano."
+    notes: "Ingresso all'uscita del bad. Se chiude candela sotto il livello di uscita, uscire immediatamente. La perdita sara' minima (circa 0.39%)."
+
+  - id: BULL_T_51_03
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [shimano, invalidation, stop_loss]
+    source:
+      timecode: "04:17-04:47"
+    conditions:
+      - molla_entry == true
+      - position_open == true
+      - candle_close_below_shimano_exit_level == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: ["1m"]
+      market_regime: []
+    rationale: "Se dopo l'ingresso sulla molla il prezzo chiude candela sotto il livello di uscita dello shimano, uscire immediatamente."
+    notes: "Quando mancano 10 secondi e il prezzo e' gia' sotto, prepararsi a uscire entro la chiusura candela. Perdita minima."
+
+  - id: BULL_T_51_04
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema223, pullback, candle_pattern]
+    source:
+      timecode: "09:04-11:44"
+    conditions:
+      - timeframe == "5m"
+      - first_touch_ema223_5m == true
+      - price_arrived_straight_down == true
+      - hammer_candle_at_ema223 == true
+    action:
+      - ENTER_LONG
+    stop_loss: "chiusura candela sotto il livello della candela hammer"
+    take_profit: "EMA 60 a timeframe 5m"
+    applicability:
+      timeframes: ["5m"]
+      market_regime: []
+    rationale: "Il primo tocco dell'EMA 223 a timeframe 5 minuti, quando il prezzo arriva dritto senza lateralizzazione, e' un rimbalzo potente con target EMA 60."
+    notes: "Il segnale arriva prima del tocco per dare tempo di cercare la conformazione. L'ideale e' quando arriva dritto per dritto (no lateralizzazione sopra). La conformazione puo' essere un hammer o una candelina piccola."
+
+  - id: BULL_T_51_05
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema60, pullback, candle_pattern]
+    source:
+      timecode: "10:29-11:33"
+    conditions:
+      - timeframe == "5m"
+      - first_touch_ema60_5m == true
+      - price_arrived_straight_down == true
+      - entry_setup_present == true
+    action:
+      - ENTER_LONG
+    stop_loss: "chiusura candela sotto il livello dello spike"
+    take_profit: "EMA 60 a timeframe 5m o ritorno ai massimi"
+    applicability:
+      timeframes: ["5m"]
+      market_regime: []
+    rationale: "Il primo tocco dell'EMA 60 a timeframe 5 minuti dopo una bella salita senza lateralizzazione e' un rimbalzo da sfruttare."
+    notes: "Piu' il prezzo arriva dritto sull'EMA senza pause, meglio e'. Se ha gia' fatto un rimbalzo prima, il secondo tocco e' piu' pericoloso."
+
+  - id: BULL_T_51_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [ema60, ema223, risk_management]
+    source:
+      timecode: "15:58-16:38"
+    conditions:
+      - touch_count(ema_level_5m) >= 2
+      - previous_bounce_already_occurred == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: ["5m"]
+      market_regime: []
+    rationale: "Se l'EMA a 5 minuti e' gia' stata toccata e ha gia' rimbalzato, il secondo tocco e' piu' pericoloso."
+    notes: "Il primo tocco e' il migliore. Al secondo tocco il rimbalzo e' meno affidabile, bisogna aspettare la rottura del livello precedente."
+
+  - id: BULL_T_51_07
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [shimano, ema10, candle_pattern]
+    source:
+      timecode: "12:39-13:26"
+    conditions:
+      - rimbalzo_entry == true
+      - position_open == true
+      - small_candle_formed == true
+    action:
+      - ENTER_LONG
+    stop_loss: "chiusura candela sotto il livello dello spike"
+    applicability:
+      timeframes: ["5m"]
+      market_regime: []
+    rationale: "Su rimbalzi a timeframe 5 minuti, la candelina piccola e' un ingresso con stop strettissimo: ingresso ai massimi della candelina, stop sotto."
+    notes: "Se mancano 10-15 secondi e il prezzo e' vicino allo stop, uscire comunque. Paga poco quindi la perdita e' minima; aspettare un'altra conformazione."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_51_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [shimano, ema60, ema223]
+    source:
+      timecode: "00:07-00:25"
+    statement: "La molla e' collegata allo shimano: e' l'uscita dello shimano dove l'EMA 10 comprime il prezzo contro l'EMA 60 e lo butta fuori."
+    rationale: "Capire il legame tra molla e shimano e' fondamentale per identificare il setup correttamente."
+
+  - id: BULL_T_51_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [scalping, ema60, ema223]
+    source:
+      timecode: "16:38-17:08"
+    statement: "Si puo' usare il timeframe 1 minuto per micro-ingressi (es. bad to the moon) e poi sfruttare i target a timeframe 5 minuti, che pagano di piu'."
+    rationale: "Combinare timeframe diversi permette ingressi precisi con target piu' ampi."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 2
+  core_message: "La molla e' la compressione tra EMA 10 (supporto) e EMA 60 (resistenza) all'interno dello shimano; i rimbalzi a timeframe 5 minuti sul primo tocco di EMA 60 o 223 sono potenti se il prezzo arriva dritto, con conformazione e stop stretto."

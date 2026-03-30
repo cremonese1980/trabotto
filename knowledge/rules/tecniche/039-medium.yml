@@ -1,0 +1,117 @@
+video:
+  id: BULL_T_039
+  series: tecniche
+  title: "Finta sulla EMA 10 a TF 30 minuti - Rimbalzo con anti-incrocio"
+  video_index: 39
+  duration_minutes: 8
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+  - id: BULL_T_39_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, ema223, reversal, trend]
+    source:
+      timecode: "00:30-01:53"
+    conditions:
+      - tf30_price_touches_ema10_from_above == true
+      - tf30_trend_still_bullish == true
+      - tf1m_price_at_or_below_ema223 == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1m]
+      market_regime: [bullish]
+    rationale: "Quando a TF 30 minuti il prezzo tocca la EMA 10 (ultimo supporto nel trend rialzista), a TF 1 minuto ci si trova alla EMA 223 o sotto: e' il momento di cercare il rimbalzo."
+    notes: "Il segnale del bullbot avverte sia quando si avvicina alla EMA 10 sia quando la tocca. Non entrare a caso sulla EMA 10: spostarsi a TF 1 minuto per la conformazione."
+
+  - id: BULL_T_39_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [ema10, ema223, candelina, martello, bud]
+    source:
+      timecode: "02:05-02:45"
+    conditions:
+      - tf30_ema10_touch_signal == true
+      - tf1m_price_below_ema223 == true
+      - tf1m_conformazione_detected == true
+      - tf1m_anti_incrocio_forming == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 30m]
+      market_regime: [bullish]
+    rationale: "A TF 1 minuto, sotto la EMA 223, aspettare conformazione (martello, bud, candeline) che porti sopra la EMA 223 e faccia l'anti-incrocio."
+    notes: "Esempio: candeline sotto EMA 223, poi martello, poi rottura della EMA 223. Coincide quasi sempre con l'anti-incrocio a TF 1 minuto."
+
+  - id: BULL_T_39_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: SOFT
+    tags: [ema10, ema60, bud, reversal]
+    source:
+      timecode: "04:49-05:18"
+    conditions:
+      - tf30_ema10_touch_signal == true
+      - tf1m_price_above_ema223 == true
+      - tf1m_bud_below_ema60 == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [1m, 30m]
+      market_regime: [bullish]
+    rationale: "Se a TF 1 minuto non si e' scesi sotto la EMA 223, cercare un bud sotto la EMA 60 per entrare puntando sull'anti-incrocio."
+    notes: "In questo caso il bud sotto la EMA 60 che porta alla rottura della EMA 60 produce l'anti-incrocio."
+
+  - id: BULL_T_39_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [ema10, take_profit, daily, trigger]
+    source:
+      timecode: "04:03-04:27"
+    conditions:
+      - position_open == true
+      - entry_was_ema10_tf30_bounce == true
+      - daily_trigger_level_exists == false
+    action:
+      - EXIT_POSITION
+    take_profit: "rimbalzo primo spike dopo conformazione"
+    applicability:
+      timeframes: [30m, daily]
+      market_regime: []
+    rationale: "Senza trigger nel daily si fa semplicemente il rimbalzo e ci si accontenta. Con un trigger daily si puo' tenere per nuovi massimi."
+    notes: "Il rimbalzo sulla EMA 10 a TF 30 puo' dare dal 3% al 15-18% a seconda del contesto daily."
+
+  # === CONTEXT-ONLY ===
+  - id: BULL_T_39_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema10, beginner, risk_management]
+    source:
+      timecode: "07:23-07:50"
+    statement: "All'inizio testare senza soldi: mettere linee, osservare a TF 1 minuto, segnare l'inversione. Solo quando si ha feeling e statistica profittevole si mettono i soldi."
+    rationale: "Approccio graduale per costruire esperienza prima di rischiare capitale reale."
+
+  - id: BULL_T_39_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [ema10, book, trigger]
+    source:
+      timecode: "03:32-03:58"
+    statement: "Il book aiuta a calibrare l'ingresso: se e' coperto fino a un certo livello si ha un buon stop. Esempio: book coperto fino a 2.08 fornisce lo stop naturale."
+    rationale: "Il book fornisce la conferma che il supporto e' reale e permette di posizionare lo stop con precisione."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Quando a TF 30 minuti il prezzo tocca la EMA 10 in trend rialzista, spostarsi a TF 1 minuto dove ci si trova alla EMA 223: la prima conformazione (bud, martello, candeline) per l'anti-incrocio e' l'ingresso per il rimbalzo."

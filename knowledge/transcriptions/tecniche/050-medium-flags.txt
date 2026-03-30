@@ -1,0 +1,47 @@
+# Low-confidence segments for: 050_PULLMAN_DI_CINESI_Segnale_del_Bull_Bot_Indica_livelli_grossi_nel_BOOK_in_acquisto_TUTORIAL.mp3
+# Total flagged: 14
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[4:29-4:37] (confidence: -0.59)
+  "quindi sempre qua a 394 eccolo qua più su"
+
+[4:37-4:44] (confidence: -0.59)
+  "94 qua ecco una volta che è stato testato"
+
+[4:44-4:49] (confidence: -0.542)
+  "alle 6.31"
+
+[4:49-4:58] (confidence: -0.542)
+  "alle 6.31 94"
+
+[4:58-5:00] (confidence: -0.542)
+  "qua"
+
+[5:00-5:09] (confidence: -0.542)
+  "qua dopo stato testato in questo caso l'ha rotto quindi s'era dovuto uscire"
+
+[5:09-5:13] (confidence: -0.542)
+  "nel caso che poi dovessi recuperare ok ma comunque qua era meglio appunto il"
+
+[7:20-7:26] (confidence: -0.21)
+  "nel book che viene testato quindi dimostra che è un livello vero che non"
+
+[7:26-7:31] (confidence: -0.21)
+  "si è mosso ok e niente e quello è il vostro stop quindi come qua c'è stato"
+
+[7:31-7:36] (confidence: -0.21)
+  "il secondo esempio dove poi ha preso il livello poi dopo l'ha rotto si esce e amen"
+
+[7:36-7:40] (confidence: -0.21)
+  "quindi lo stop è praticamente a zero poi si torna su intanto con la conformazione"
+
+[7:40-7:45] (confidence: -0.21)
+  "ma questo è al di là ok niente scrivete nei commenti se non avete"
+
+[7:45-7:52] (confidence: -0.292)
+  "capito qualcosa e fatemi sapere perché questo è veramente clamoroso clamoroso"
+
+[7:52-7:56] (confidence: -0.292)
+  "ciao ragazzi"
+

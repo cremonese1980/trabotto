@@ -1,0 +1,229 @@
+0:00 Ciao a tutti e adesso siete su Scapina Bull. Si può fare trading solo guardando il book?
+0:05 Sigla!
+0:06 Allora vi ricordo che questo video è completamente gratis e senza pubblicità, quindi mettete
+0:23 il like, mi raccomando ragazzi che è gratis anche per voi se mettete il like.
+0:27 Detto ciò, si può fare trading solo col book, puoi andarmelo a vedere come io uso il doppio
+0:32 book perché c'è una grande novità. Quindi andiamo a studiare e ragioniamo insieme.
+0:36 Quindi qua potete vedere un setup dove ho andato a vedere poi il video del doppio book,
+0:42 quindi come opero con doppio book. E questo è praticamente il doppio book. Quindi qua
+0:46 ho il book in boost, così non pago fee se l'ordine rimane nel book, quindi se compro
+0:53 deve rimanere nel book verde per non pagare, se vendo deve rimanere nel book rosso per
+0:58 non pagare, altrimenti si paga come in USDT. Però vedete che ci sono delle differenze.
+1:03 Quindi appunto qua ci sono le quantità più grosse in USDT, ma ogni tanto capita il contrario.
+1:09 Quando capita il contrario per me è estremamente interessante, quindi i livelli, quindi per
+1:13 esempio 821, 821 non c'abbiamo niente, qua ce l'abbiamo 822 ma è poca roba. Se ha 820,
+1:23 anzi 825, ecco qua c'è pezzi enormi. Facciamo un esempio se 818, 818 niente c'abbiamo pezzi
+1:32 grandi qua. Eh, interessante sì. Qua allora, qua abbiamo da 818, quindi 815, fine 818.
+1:39 Ecco qua finiscono, vedete che, ecco questo è un bel esempio, finisce il livello con
+1:46 pezzi grandi in USDT e sembra vuoto, ma in boost invece è pieno, quindi questo non sarebbe
+1:51 un ingresso da fare, ok? Lo capisco solo con il doppio book, quindi capisco che qua
+1:56 finiscono i livelli, ma in USDT invece ho dei livelli molto grandi rispetto a qua e
+2:01 quindi no good, ok? Quindi importante, sto scoprendo proprio usando il doppio book che
+2:06 posso andare a vedere queste differenze, ma anche un'altra cosa molto importante,
+2:10 se io sono dentro un trade e ho il target, che ne so, entro nel trade, il target è 824
+2:17 perché 825 c'è questo pezzo enorme, se però a 823 che qua non c'è niente, ci fosse un
+2:25 pezzo grande, quindi un, che ne so, un 20.000, io userai il target prima, quindi l'822, ok?
+2:33 Quindi i livelli grandi in boost sono molto importanti e sono sensibili anche in USDT,
+2:39 quindi io ho un vantaggio così, quindi non andrei a mettermi a 824, mi metterai a 823
+2:45 se ci fossi il livello, quindi addirittura 822, capito? Quindi il doppio book è fantastico
+2:49 per questo, quindi vi consiglio, andate a vedere il video che ho fatto del doppio book e iniziate
+2:54 a ragionare sapendo di poter avere questo vantaggio qua. Detto ciò, qua c'è il doppio book ma possiamo
+2:59 organizzare un'altra cosa che vorrei farvi capire per quanto riguarda operare solo col book,
+3:05 quindi apriamo due grafici, ok? Poi qua cliccate sempre qua sopra layout e potete scegliere,
+3:15 in questo caso dove sono lì scegliete qua e hai praticamente un altro book con un altro
+3:21 fatto di poter ordinare, anche un altro order book, quindi dove poter inserire l'ordine, ok? Ma noi
+3:27 possiamo crearci uno noi, ok? Ti faccio vedere che è figata, quindi basta cliccare più, poi scegliete
+3:35 order book, mettete qua, ok? Ne mettete quante ne volete, mettiamone per questo esempio qua,
+3:47 ne mettiamo 5 sopra e 5 sotto, 1 2 3 4 e 5, vedete come è facile? Ok? Poi chiudete,
+4:01 aprite qua e poi fate così, guardate che storia, guardate che bellezza, mettete 1 qua, 2, 3,
+4:15 4, voi potete allargare ancora di più, trovate spazio quanto volete, facciamoci stare anche questo,
+4:25 5 così, ok? E 5 sotto, vi spiego subito poi il perché, 1 adesso di default è tutto bitcoin,
+4:43 ovviamente a noi non interessa, ma noi possiamo fare delle cose molto interessanti così,
+4:52 quindi noi se abbiamo spazio possiamo avere questa impostazione qua, poi lo possiamo salvare,
+4:59 ok? Lo salvi come ti chiami, multi bull book, ok? Conferma e così dopo ti rimane salvato,
+5:10 così ogni volta non devi stare a rifare questa cosa qua, poi dopo avete usdt,
+5:14 qua potete anche mettere boost, ok? Quindi potete mettere ava boost, ava usdt, ok? E così dopo ce
+5:25 l'avete tutti e due sotto, ok? Ovviamente potete andare a allungare e così allungate anche i book
+5:34 per avere più livelli, ok? Potete farlo quanto vi pare, adesso che lo sto facendo velocemente,
+5:39 e quindi così potete avere le coppie blz in usdt e qua mettiamo in boost blz, ok? E così potete
+5:53 vedere quello che vi spiegavo prima, quindi se ci sono delle divergenze, però non fate, non perdete
+6:00 tempo per poter selezionare, non dovete andare lì a uno a uno a selezionare, a fare tutte le listine,
+6:05 è completamente inutile, voi dovete scegliere quelli che pagano, ok? Perché è inutile trovare
+6:09 un livello nel book, quindi inutile avere un livello grande nel book e poi dopo voi fate
+6:15 l'operazione quando rompe quel livello grande e poi dopo fa uno sputo, oppure fa comunque un
+6:19 movimento che sembra grande, vai a vedere ha fatto lo 0-15% ok? Dovete sempre operare solo con titoli
+6:25 che pagano, come si fa a scegliere quelli che pagano? Allora, prima vi spiego senza operare con
+6:33 col bullbot, ok? Quindi anche per chi non ha il bullbot è giusto capire come fare, ok? Perché
+6:42 bullbot ha un filtro, ma poi dopo vi spiego. Allora, senza usare il bullbot semplicemente
+6:46 basta dare nei primi in classifica, questi di trading view sono quelli dal cambio candela,
+6:52 altrimenti andate quelli su binance e cliccate questi qua, quindi i primi in classifica,
+7:01 potete fare i primi 5 in classifica fra i migliori e anche se avete fatto due page,
+7:07 magari fate i migliori 5 e anche i peggiori 5, ok? Questi in automatico, se siete bravi in matematica,
+7:14 anche i peggiori sono quelli che pagano di più, ok? Quindi sia migliori che peggiori. Poi,
+7:18 io cosa faccio? Io in realtà uso poi, usando poi il bullbot, adesso lo vado ad aprire,
+7:26 vado a vedermi le varie conformazioni, quindi non vado ovviamente a controllare
+7:34 tutto il mercato per capire se c'hanno dei livelli, non ha nessun senso. Si va,
+7:38 per chi ha bullbot va semplicemente, aspetta il segnale, aspetta il segnale bomba, quando è un
+7:44 segnale bomba significa che è un titolo che si è svegliato, sta facendo i massimi, quindi è interessante,
+7:49 bene, andiamo a mettere suoi, poi su il doppio book, quindi questo non ci serve più, andiamo a
+7:54 mettere il doppio book, quindi quello era un FI, un FI lo mettiamo, lo SDT, poi mettiamo un FI in boost,
+8:04 ok? E lo ce lo teniamo sott'occhio, ovviamente qua andiamo ad allargare, lo raggruppiamo in modo
+8:12 che possiamo vedere più livelli possibili, poi ovviamente noi possiamo anche scegliere di vedere
+8:17 solo il rosso, quindi solo la vendita, quindi ci interessa vedere solo quando abbiamo in vendita
+8:22 qualche livello, perfetto, mettiamo solo il rosso, questo col book di Binance veramente è un sogno
+8:27 poter fare queste cose qua, e raggruppatelo in modo che ha senso, non tenetelo così a nudo,
+8:33 perché non riuscite a vedere in profondità, quindi andate a raggruppare in modo che potete
+8:38 vedere una certa profondità e andate a vedere se ci sono dei livelli grandi, ok? In questo caso qua
+8:42 non stiamo vedendo nulla, neanche in boost, stiamo vedendo nulla, ma lo tieni sott'occhio, sapete
+8:49 già che paga perché è un segnale bomba, quindi in automatico se non paga non verrà mai segnalato
+8:54 un segnale bomba, e così anche per i doppi tocchi, così per cavallino, quindi sappiamo già che
+9:01 ci sono i titoli nuovi che stanno arrivando, ok? Questo che c'è un 3% dal superamento del giorno
+9:07 precedente, quindi questo è un segnale ottimo, quindi non importa andare a vedere tutte le coppie
+9:12 che va a finire che selezionate dei livelli grandi nel book, ma di coppie che non pagano,
+9:16 state lì due ore aspettare che viene mangiato il livello nel book e poi dopo passa, fa magari
+9:22 anche una candela enorme, magari fa una bella candela verde, chiudete, andate a vedere, avete
+9:27 fatto il più 0,15% perché siete andati su qualcosa che non paga, quindi no good, molto no good,
+9:32 e invece qua abbiamo tutto, poi in più noi abbiamo anche che segnale? Abbiamo anche segnale muro,
+9:37 ok? Ci segnala già, quindi questo è fantastico e noi nel bullbot abbiamo già un filtro che se non
+9:45 paga non ci segnalerà mai, ok? Quindi abbiamo già un muro, quindi andiamo a aprire SSV,
+9:49 lo andiamo a aprire, lo andiamo a vedere, lui ci dice già qual è il muro, e ha 18, perfetto,
+9:55 e lo vediamo già, ok? Quindi non c'è bisogno di perdere tempo in altre cose. Quindi vi consiglio
+10:02 tantissimo questa cosa di vedere il doppio book e di vedere i diversi livelli perché rischiate
+10:08 sempre meno di beccare delle finte se usate il doppio book, è fantastico, quindi se trovate un
+10:13 livello grande in USDT e non c'è in boost va benissimo, nel caso in cui fossero su tutte e due
+10:19 va benissimo, nel caso in cui fossero sfalzati ma soprattutto se ci sono dei livelli molto più
+10:23 grandi in boost che in USDT, occhio perché quello è un livello fantastico e usando solo USDT non
+10:30 lo avresti mai visto, quindi è fantastico, sia siete dentro un trade per capire bene quando uscire,
+10:37 sia se dovete entrare perché non vi fate fregare come nell'esempio prima, ok? Poi il buco di
+10:43 profondità, vedo che ad alcuni affascina a capire il buco di profondità, io lo trovo completamente
+10:49 inutile per quanto riguarda Binance, perché è inutile? Perché noi possiamo raggruppare il book,
+10:55 ok? Potendo raggruppare il book noi riusciamo a vedere i livelli, vedi riusciamo a vedere che
+10:58 qua c'è un livello bello grande, c'è bisogno di vedere il buco di profondità, il buco di profondità
+11:02 invece l'ho trovato utile sul Nasdaq, vi faccio vedere un video che ho registrato pochi minuti
+11:08 prima, pochi minuti fa, questo è Tesla, questo è il book, il book non è raggruppabile, quindi se
+11:15 un group non è raggruppabile può essere bello, interessante a usare il book di profondità,
+11:19 vedete qua, vedete questo quando vedete gli spike dei gradoni così significa che ci sono
+11:25 dei pezzi grandi, ok? Di fatti qua abbiamo questi 2600, un pezzo grande, lo vedete qua,
+11:31 quindi quando vedete una cosa così capite che c'è qualcosa nel book, provate a vedere a velocità
+11:35 reale come si muove, non potendolo raggruppare si muove tantissimo, quindi qua per esempio non vedi
+11:40 che c'è livello perché non c'è più in là, ok? Non potendolo raggruppare non lo vedi, ecco,
+11:45 sta spuntando adesso, ma col book di profondità lo avresti visto, ok? Quindi se il book non è,
+11:51 non c'è la possibilità di poterlo raggruppare, il book di profondità vi segnala i pezzi grandi,
+11:56 che magari non vedresti perché appunto sono distanti, non sono distanti di prezzo,
+12:01 sono semplicemente distanti perché il prezzo non è raggruppabile, ok? Avete capito? Quindi su
+12:06 Binance lo trovo completamente inutile, su altri mercati con il book non raggruppabile può essere
+12:11 utile, ok? Infatti qua su Nazdaq lo tengo sopra proprio perché a colpo d'occhio lo vedi soprattutto
+12:16 perché non potendolo raggruppare, io non lo terrai mai così a nudo ma purtroppo non si può
+12:21 raggruppare e quindi è l'unico modo che lo trovo interessante, ok? Quindi su Binance non serve.
+12:27 Allora fate questo esercizio qua, ok? Cercate di, è un grosso vantaggio avere il doppio book,
+12:34 veramente un grossissimo vantaggio, oltre al fatto di non pagare fee e oltre al fatto che
+12:38 io riesco addirittura a pagare pochissimo fee, cioè anche quando compro nel rosso,
+12:43 quindi compro nel rosso che dovrei pagare, io vengo a una size di 10.000, questo per esempio
+12:47 1.800, io pagherei fee solo per 1.800, il restante 8.000 e 2 non pagherei fee, ok? Cioè che poi era
+12:56 qua, per esempio qua in UST in quel caso lì avrei pagato e invece qua non avrei pagato,
+13:05 quindi per esempio se io vado a comprare un fee, ok, qua sì, se io andassi a comprare a 8 e...
+13:18 aspetta un attimo, ok, 0.1, 0.1, ecco, ecco, non capivo, ok, 6.400 e qua abbiamo il 6.400,
+13:32 quindi qua con 10.000 vado a comprare questi 6.000, mi rimangono fuori 4.000, pago fee per 6.000,
+13:38 i 4.000 non pago fee, quindi comunque pago meno. Ogni volta che io vado a vendere e vendo nel book,
+13:43 quindi mi arriva a target e riesco a vedere diversi livelli, per esempio 73,
+13:47 vedete c'è un livello molto grande qua, qua c'è 74, quindi dopo, quindi non mi interessa,
+13:54 se ci fosse qualcosa prima tipo a 70, se ci fosse un livello grande qua andrei a vendere a 69,
+13:59 sarebbe nel book e non pagherei fee, ok? Nel caso in cui invece voressi comprare a 67 c'è nel 1000,
+14:07 entro con 10.000, se vengo eseguito completamente, avete visto se guardate quell'altro video che
+14:11 spesso proprio vengo fillato, anche se qua vedo size piccolissima, anche con 400-500 boost,
+14:17 posso essere fillato con 10.000 ma pago solo per 400 boost e i fee, tutto il resto è gratis,
+14:24 quindi incredibile, è un vantaggio enorme. Poi ovvio, voi dite, io sto imparando, sto usando solo
+14:28 50 boost, sì, però se voi iniziate già a abituarvi, quando poi diventerete profittevoli e iniziate
+14:35 a alzare la size, quando alzate la size chiedete a tutti i ragazzi, quando si alza la size è un
+14:40 grosso problema. Se voi iniziate però già a ragionare come se avesse una size più grande,
+14:44 avrete meno difficoltà, ok? Quindi è un ottimo esercizio, allenatevi pure. Quindi iniziate a
+14:51 fare questa cosa qua, avete minus della possibilità di avere questi doppi book, poi voi potete all'inizio
+14:57 anche usare non so, 10 book tutti solo in USDT, boost per adesso non mi interessa, si è da proprio
+15:04 l'inizio, quindi guardate solo USDT, tenete i miglior 5 e i peggiori 5 e poi quando arrivino
+15:09 ai segnali del bull bot andate a mettere quelli che pagano di più, quelli più interessanti li
+15:13 mettete qua, avete sempre il book sotto occhio, ok? Poi potete scegliere se mettete tutti e due,
+15:17 solo il verde e solo il rosso, ok? Però per comprare è interessante vedere le vendite,
+15:22 ovvio se ci sono dei pezzi grandi in acquisto è ottimo però quindi è importante capire la
+15:29 rapportatura, ma prima individuate magari un livello importante in vendita, quindi anche solo
+15:35 per fare il vostro ingresso, poi dopo una volta che lo avete individuato, quindi vedete non so,
+15:39 9.8, vedete un livello grande, quindi quello eventualmente potrebbe essere il vostro ingresso
+15:45 all'ortura di quel livello lì, voi dopo magari mettete il doppio book e così dopo vedete se viene
+15:50 accompagnato anche dal book in verde, quindi se ci sono i pezzi grandi anche lì, per poi andare
+15:55 a sfondare quel livello, ok? Poi continuo a vedere tante persone che non capiscono perché
+16:01 non vengono fillati, allora vi faccio un esempio, vogliamo comprare sul muro questo qua, 9.8 2,
+16:08 ci sono 40.000, 15.000, io non voglio comprare appena tocca quel livello lì, ok? Voglio comprare
+16:14 subito dopo, sì, ma dopo che finisce un muro le probabilità di essere fillati non sono facili,
+16:21 perché spesso appunto da lì essendo quando si rompa un livello importante diventa un punto trigger,
+16:26 cioè dove si sommano chi acquista e chi chiude gli stop e quindi c'è un forte interesse nell'entrare,
+16:34 quindi spesso c'è una persona sola che si mangia quando so, quando ce n'è 40.000 va a 20.000 compra,
+16:42 questo è quello che faccio spesso io, e non solo compra solo 82, compra fino a 85, compra magari
+16:48 50.000 quindi compra 20.000 qua e anche 20.000 qua più quelli in mezzo, quindi se voi mettete
+16:55 uno stop limit 8.9 e 9.8 2 1 con limit 8.9 e 9.8 3 molto probabilmente non verrete fillati,
+17:06 quindi se mettete 9.8 2 1 quindi leggermente dopo fino a 9.8 3 90% delle volte non verrete
+17:14 fillati, ok? Quindi non ha nessun senso, quindi o fate come faccio io che aspettate che venga
+17:20 mangiata almeno viene assaggiata poi cliccate e comprate, oppure io addirittura se il livello
+17:25 non è gigantesco, quindi in questo caso questo 41.000 che non è grande, io devo comprare appena
+17:29 lo tocca, appena lo tocca, poi io so che io entro con 10.000 15.000 20.000 e so che sono io
+17:35 comunque a fare da innesco, ok? Poi dopo se voi quando entrate il livello, quel minuto in cui voi
+17:44 entrate non viene chiuso, quindi si prova a mangiare questo ma non riesce a superarlo, dovete uscire,
+17:49 subito non dovete aspettare l'ema, se poi quando voi entrate, entrate sul livello, quindi mettete
+17:56 uno stop limit a 9.8 2 quindi appena lo tocca voi entrate, bene, quel minuto lì entro il minuto,
+18:02 appena voi entrate mangia tutto, sale su, perfetto, se poi dopo quel minuto lì chiude sotto il livello
+18:07 del muro dovete uscire, non dovete aspettare l'ema, ok? Mi raccomando perché quando va a rompere un
+18:14 livello trigger e noi entriamo nei momenti trigger deve partire, se non parte significa
+18:19 che c'è un problema, poi dipende dalla conformazione, ci sono alcune conformazioni
+18:23 dove magari aspettate l'ema 10, c'è l'ema 10 che comando, quindi magari potreste fare un ingresso,
+18:28 potrebbe anche andare a testare l'ema 10 e poi dopo tenete quello lì, lì vedete voi, però io vi
+18:33 consiglio sempre se il livello è stato studiato bene, è un terzo tocco magari sui massimi e
+18:38 trovate un livello nel book che ha permesso di fare quel terzo tocco, la terza volta che ci va,
+18:43 molto probabilmente appena lo tocca distrugge e parte, questo è quello che noi cerchiamo di
+18:48 fargli fare, ok? Quindi questo, ecco, ho fatto un esempio su quello che si vedeva meno, comunque
+18:55 avete capito, ok? Poi magari ne riparliamo a casa buona, ecco qua per esempio 9, 8, 5, adesso lo
+19:04 vedete bene, ok? Questo è un livello, poi il problema è, questo livello qua è un terzo tocco,
+19:11 è un secondo tocco, è un primo tocco, come facciamo a saperlo se guardiamo solo il book?
+19:16 Quindi alla domanda si può fare trading solo col book? Sì, si può fare, ma perché farlo senza
+19:22 sapere se c'è una conformazione? Dal book, solo dal book, non possiamo capirlo se è una conformazione,
+19:27 perché magari questa è la prima volta che ci va e a noi non interessa entrare la prima volta o
+19:32 non ci interessa entrare la seconda se non c'è una conformazione interessante, ok? Noi, per aver
+19:38 meno probabilità di finte, entriamo al terzo tocco, quindi la terza volta che ci va, come facciamo
+19:43 a saperlo se guardiamo solo il book? Ok, non lo sappiamo, quindi è importantissimo, ragazzi,
+19:48 vi faccio vedere, io oggi ho fatto, cioè io spesso faccio trade senza il book, per esempio quando
+19:53 lavoro su CFD, questo è Saipan, quindi no, vabbè comunque anche qua, faccio l'esempio al contrario,
+20:01 questo ho usato il book, era importante però sapere che entravo alla rottura delle EMA 10,
+20:08 se io non avessi saputo, quindi è vero che ho guardato la rottura di un livello, ma se il livello
+20:14 fosse stato qua, qua in alto, non sarei entrato short, sono entrato short perché ha rotto un
+20:19 livello importante che era le EMA 10 e quindi essendo un titolo che era salito tantissimo ieri,
+20:26 aveva bisogno di riposare, quindi io ho visto che ha rotto un livello, ma se non ci fossi
+20:31 stato le EMA 10 non sarei entrato short, quindi per me è importante capire se c'è la conformazione,
+20:36 quindi guardare solo il book, dal mio punto di vista è un grosso handicap, quindi si può fare
+20:42 sì, ma è un grosso handicap, cioè non capite se c'è la conformazione, non capite se è il secondo
+20:48 tocco, se sta facendo un martello, se sta facendo un bad, come fate a capirlo? Non sapete se è un
+20:54 viagra, come fate a saperlo? Non sapete se siete dentro lo shimano? Ragazzi abbiamo la fortuna di
+20:59 poter avere 4 EMA, sono gli 11 indicatori che abbiamo, abbiamo 4 EMA, utilizziamoli, non andiamo
+21:05 alla cieca e sfruttiamo la lettura del book, quindi uniamo le cose insieme, ok? Questo è il
+21:11 mio consiglio, poi voi sperimentate se vi trate bene solo con le conformazioni, bene, vi trate
+21:15 bene solo con il book, bene, vi trate bene con tutte e due come capita a me, perfetto, meglio
+21:20 ancora ok? È sempre meglio poter selezionare, quindi fare meno trade possibili, ma selezionandoli,
+21:28 ovviamente se guardate solo il book, come fate a fare la selezione? Avete bisogno di selezionare
+21:33 la conformazione, come fate a sapere se c'è una conformazione perfezione? Lo sapete guardando
+21:38 la conformazione, guardando le EMA, no? Sono solo 4 e sono gratis, utilizzateli. Quindi niente,
+21:45 quindi fate queste prove qua, provate a vedere come vi trovate, ovviamente Binance numero 1 che
+21:50 ci permette questa cosa qua di raggruppare, di vedere qualsiasi book, qualsiasi lato o in
+21:54 acquisto o in vendita o tutte e due e possiamo raggruppare come vogliamo per poter vedere la
+21:59 profondità e poter capire il più possibile dove ci sono i livelli importanti. In più se avete anche
+22:04 bullbot ragazzi abbiamo anche il segnale, muro che ci indica veramente che ci sono dei muri,
+22:08 pazzesco e voi comunque, oppure tramite le conformazioni, poi non fatevi fregare dai muri
+22:15 grandi nel book se non c'è, se non paga il titolo, ok? Pagare significa che precedentemente
+22:22 fa delle candele che fanno un minimo di movimento per far sì che poi quando parte noi possiamo essere
+22:28 soddisfatti. Se parte, fa lo 0-15% cosa ce ne facciamo di uscire? Regaliamo solo FIA Binance,
+22:34 non ha nessun senso. Noi abbiamo lavorato su quelle che pagano, per questo nel bullbot abbiamo
+22:38 messo un filtro, abbiamo aggiunto da poco in modo che tutti i segnali che arrivano comunque pagano,
+22:44 sono inutili avere dei segnali a vuoto così abbiamo semplificato il numero di segnali che
+22:49 arrivano e niente. Allora come al solito mettete un like, ricordatevi tutti i video del canale
+22:55 Scalping a Bull YouTube sono gratis e senza pubblicità. Mettete un like che è gratis per voi,
+23:01 iscrivetevi al canale che è gratis per voi e domande nei commenti così a casa bull ne
+23:08 riparliamo eventualmente faccio la seconda versione di questo video, faccio magari eventualmente la
+23:18 parte 2, quindi scrivete le domande, ne parliamo a casa bull e eventualmente faccio la seconda
+23:22 versione. Ovviamente il 3 settembre nel webinar andremo a vedere i vari livelli e capirete dal
+23:29 vivo come poter gestire queste cose in base alle conformazioni quindi guardando l'ema. Ciao ragazzi,
+23:36 iscrivetevi a youtube, telegram, ai due gruppi telegram, discord, twitch e instagram ciao

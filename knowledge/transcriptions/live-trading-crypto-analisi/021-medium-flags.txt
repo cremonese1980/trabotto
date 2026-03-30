@@ -1,0 +1,107 @@
+# Low-confidence segments for: 021_Live_Trading_ICO_SHIBA_e_2_long_su_XLM_Analisi_trade.mp3
+# Total flagged: 34
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:07] (confidence: -0.407)
+  "ciao traders, siete su scappi in the bull. Oggi tre live trading, primo live trading è un"
+
+[0:07-0:16] (confidence: -0.407)
+  "osseo, si chiama shiba, quindi un cane nuovo, non è più dodge ma shiba, sigla è shib,"
+
+[0:16-0:22] (confidence: -0.407)
+  "questa proprio appena aperta, quindi faccio questa prima cosa faccio questa qua, registrazione,"
+
+[1:34-1:43] (confidence: -0.247)
+  "quantità enormi, qua iniziasseci finalmente qualcosa, andiamo avanti, andiamo avanti,"
+
+[1:43-1:53] (confidence: -0.247)
+  "ecco sta finendo lo 0.3, ha finito lo 0.3, qua le quantità ci sono ma ci sono anche qua, andiamo,"
+
+[3:22-3:32] (confidence: -0.299)
+  "gonfiando, però insomma ha detto ok, 10% sono contento, ok, dato eseguito, ok, ecco, eseguito,"
+
+[3:32-3:51] (confidence: -0.278)
+  "poi fa finisce e ci ho fatto 432 usdt, 23 secondi, 23 secondi di questo trade, ok,"
+
+[4:13-4:24] (confidence: -0.23)
+  "praticamente è 0.000, quindi sono 4.000 più il numero, quindi da 0.30 fino a 45, io mi son"
+
+[4:24-4:30] (confidence: -0.23)
+  "perso tutto questo, però tendenzialmente faccio questa roba qua, faccio una cosa molto veloce e"
+
+[4:30-4:37] (confidence: -0.23)
+  "capita, quindi malissimo, però bene, insomma 432, 23 secondi, vanno più che bene, poi nel frattempo"
+
+[4:37-4:42] (confidence: -0.228)
+  "qua è andato a scendere, è andato a ricomprarlo più o meno allo stesso prezzo, quindi lo ho"
+
+[4:42-4:49] (confidence: -0.228)
+  "comprato 26.87, la prima volta è chiuso 29.99, l'ho ricomprato 26.81, ma l'ho richiuso subito,"
+
+[4:49-4:56] (confidence: -0.228)
+  "27.30, sono altri 90 e niente, adesso sta lateralizzando, quindi potrebbe iniziare a"
+
+[4:56-5:05] (confidence: -0.228)
+  "fare una bella conformazione, vedremo, poi andiamo a vedere gli altri due invece, così vedete anche"
+
+[5:58-6:01] (confidence: -0.148)
+  "dritto, non pensavo che fosse dritto dritto, pensavo che si lateralizzasse un attimo, infatti"
+
+[6:01-6:08] (confidence: -0.148)
+  "avevo messo il posto al gruppo pensando che magari scendesse un attimo e poi nasse su dopo, invece"
+
+[6:08-6:13] (confidence: -0.148)
+  "è andato dritto per dritto, quando fa dritto per dritto io non tengo tanto, ok? Se è consolida"
+
+[6:13-6:18] (confidence: -0.148)
+  "tengo, posso tenere di più, posso seguire le medie mobili, invece ha rotto subito, è andato"
+
+[6:18-6:24] (confidence: -0.148)
+  "dritto per dritto, quindi io qua tengo poco, visto che sono già su di tanto, qua vedete,"
+
+[6:47-6:58] (confidence: -0.326)
+  "e il ribasso almeno quel guadagno me lo rassicuro, lo metto comunque sotto qua, sotto ai massimi,"
+
+[6:58-7:07] (confidence: -0.326)
+  "quindi sotto la linea di rottura che poteva essere un ingresso, ok se adesso poteva su io"
+
+[7:52-7:58] (confidence: -0.191)
+  "nuovi massimi, è tornato giù, qua mi è piaciuto, quindi al ritorno qua sopra sono entrato, questo è"
+
+[7:58-8:07] (confidence: -0.191)
+  "il mio ingresso e però tengo poco perché comunque nuovi massimi qua, nuovi massimi qua, troppo vicini,"
+
+[8:07-8:13] (confidence: -0.191)
+  "ok qua è andato a fare nuovi massimi, magari ne va a rompere, scendeva giù, latalizzava, testava un"
+
+[8:13-8:18] (confidence: -0.191)
+  "paio di volte, allora potevo andare dentro più convinto e lasciar scorrere, invece anche qua ha"
+
+[8:43-8:48] (confidence: -0.242)
+  "su nuovi massimi non mi piace e quindi tendo a chiudere subito, appena faccio un minimo di"
+
+[8:48-8:55] (confidence: -0.242)
+  "guadagno chiudo, se invece avesse latalizzato di più, se questo fosse stato diciamo il primo massimo,"
+
+[8:55-9:07] (confidence: -0.242)
+  "allora aspetta qua, ecco, questa è la terza volta in mattina che faccio i massimi,"
+
+[9:31-9:41] (confidence: -0.244)
+  "cane, andiamo a vedere in diretta cosa sta facendo, shiba ancora lateralizza, quindi hai capito"
+
+[9:41-9:47] (confidence: -0.244)
+  "come faccio io, come ho fatto anche nell'altro video dell'ICO, aspetto di vedere il book,"
+
+[9:47-9:55] (confidence: -0.244)
+  "raggruppo molto perché all'inizio il book è molto molto veloce, il prezzo è da 0,50 andato a 0,26"
+
+[9:55-10:02] (confidence: -0.249)
+  "e 87 dove ho comprato io, è stata praticamente una discesa unica, ok, quindi ci vuole un book"
+
+[10:02-10:06] (confidence: -0.249)
+  "molto raggruppato per poter leggere cosa sta succedendo, in questo caso qua stiamo vedendo"
+
+[10:06-10:18] (confidence: -0.249)
+  "un muro enorme a 35, 35 è molto in alto, però ancora sì, qua già un ingresso a 2, 32 già potrebbe"
+

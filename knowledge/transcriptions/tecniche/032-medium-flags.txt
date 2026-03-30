@@ -1,0 +1,59 @@
+# Low-confidence segments for: 032_CROLLO_ESTREMO_Tutorial_per_PRO_Non_provate_se_non_siete_esperti.mp3
+# Total flagged: 18
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:05] (confidence: -0.359)
+  "Ciao trade, siete su scappi.de.bull. Allora appena fatto questo video molto interessante"
+
+[0:05-0:12] (confidence: -0.359)
+  "perché stiamo parlando di GLMR il pazz di oggi, il cavallo pazzo di oggi più 36% ma"
+
+[0:12-0:16] (confidence: -0.359)
+  "il daily è potentissimo quindi veramente ha fatto dei movimenti pazzeschi. Questa linea"
+
+[0:16-0:22] (confidence: -0.359)
+  "sono i nuovi massimi di oggi, è il secondo tocco e poi è andato su, ha fatto sua conformazione"
+
+[0:22-0:25] (confidence: -0.359)
+  "e poi c'è questo bellissimo a candela rossa che non dice ma che cos'è, cos'è che succede?"
+
+[0:25-0:32] (confidence: -0.228)
+  "Bene è uno che ha fretta ok era un pezzo di forse anche 2 milioni perché quando è arrivato"
+
+[0:32-0:39] (confidence: -0.228)
+  "a 15 quindi praticamente da qua è andato da 16 a 15 ed è rimasto più di un milione qua ok che"
+
+[0:39-0:45] (confidence: -0.228)
+  "sta facendo da tappo quindi ha fatto tutto questa candelona. Vi faccio capire come fare trading su"
+
+[0:45-0:52] (confidence: -0.228)
+  "sto lavoro ovviamente voi questo è solo per mega esperti ok e adesso capirete perché è solo per"
+
+[2:08-2:17] (confidence: -0.169)
+  "un spike a dismisura così deve subito accelerare alza vedi ho già tolto avete visto ho già tolto"
+
+[2:17-2:22] (confidence: -0.169)
+  "l'ordine ho già tolto l'ordine appena ho visto che non è andata a spikeare ok avrei dovuto"
+
+[2:22-2:27] (confidence: -0.169)
+  "chiudere qua avrei fatto il guadagno ma comunque poteva fare di più solitamente in queste operazioni"
+
+[2:27-2:31] (confidence: -0.169)
+  "qua schizza di più quindi mi tolgo e vedo cosa succede perché dovrebbe tornare a crollare"
+
+[6:20-6:27] (confidence: -0.279)
+  "sono 111 vcd t ovviamente quantità era quasi metà size comunque un 2 per cento così però"
+
+[6:27-6:34] (confidence: -0.279)
+  "il ragionamento è questo ok che dice ma è follia fatta queste cose qua e non c'era neanche l'ema"
+
+[6:34-6:39] (confidence: -0.279)
+  "come supporto c'è il book ok ma si fa quando c'è questi pezzi giganteschi quando ci sono questi"
+
+[6:39-6:44] (confidence: -0.279)
+  "pezzi giganteschi che non sono altro che persone che hanno velocemente bisogno di vendere ok questo"
+
+[6:44-6:50] (confidence: -0.279)
+  "è in straguadagno in frane niente quindi va dice ok vieni voglio vendere 2 milioni di dollari"
+

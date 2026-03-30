@@ -1,0 +1,194 @@
+# Low-confidence segments for: 014_TECNICA_DI_TRADING_La_Tecnica_della_Bicicletta_Parte_2_Ecco_qualche_esempio.mp3
+# Total flagged: 63
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[0:00-0:06] (confidence: -0.414)
+  "Ciao Trader, siete su Skape in the Bull. Oggi parliamo della tecnica di trading e tecnica"
+
+[0:06-0:12] (confidence: -0.414)
+  "della bicicletta. Approfittiamo che oggi ho fatto 3 trade con la tecnica della bici, quindi"
+
+[0:12-0:13] (confidence: -0.414)
+  "sigla!"
+
+[0:30-0:59] (confidence: -0.397)
+  "Allora parliamo della tecnica della bicicletta. Oggi su Telegram vi ho postato 3 trade con"
+
+[1:24-1:30] (confidence: -0.217)
+  "bici praticamente parte dal daily. Quindi bisogna individuare un qualcosa nel daily."
+
+[1:30-1:34] (confidence: -0.217)
+  "Perché nel daily? Perché c'è bisogno di un trend che possa durare del tempo, che possa"
+
+[1:34-1:44] (confidence: -0.217)
+  "durare diverse ore. Parti appunto dal trend più lento che è il daily. E qua quando ho"
+
+[1:44-1:53] (confidence: -0.217)
+  "visto lì eravamo qua sotto. Quindi eravamo in verde, già in verde. Prendevamo di mira,"
+
+[1:54-2:01] (confidence: -0.253)
+  "i massimi del giorno prima. Ovviamente ho guardato anche il discorso bitcoin, che mi sembrava"
+
+[2:01-2:05] (confidence: -0.253)
+  "che appunto theta fosse più forte di bitcoin, che già comunque oggi era abbastanza forte."
+
+[2:05-2:13] (confidence: -0.253)
+  "Quindi puntavo a questo. Poi qua c'era la resistenza delle MA10, dove io infatti poi"
+
+[2:13-2:22] (confidence: -0.253)
+  "sono uscito. Mi sono uscito proprio a 4.64. In realtà appena ha speccato sopra, poi dopo"
+
+[6:43-6:52] (confidence: -0.309)
+  "posto e qua ho fatto un 309 USDT, quindi 309 dollari più o meno. Ok, passiamo all'altro"
+
+[6:52-6:59] (confidence: -0.309)
+  "esempio. L'altro esempio, quindi i due del calcio che è uno daily molto interessante,"
+
+[6:59-7:06] (confidence: -0.309)
+  "ecco questo è Paris Angerman, che ho fatto dopo, ho iniziato a star...vabbè, più o"
+
+[7:06-7:10] (confidence: -0.309)
+  "meno ho fatto comunque in mattinata. Qua è uguale, quindi prima è stato a vedermi il"
+
+[7:10-7:17] (confidence: -0.234)
+  "daily, andiamo a vedermi il daily. E passiamo sul trading, qua. Allora, Paris Angerman,"
+
+[7:17-7:22] (confidence: -0.234)
+  "ecco il daily, daily spettacolare. Perché spettacolare? Perché ha dato rompere la 60,"
+
+[7:22-7:30] (confidence: -0.234)
+  "ha fatto il retest della 60 con, guarda cosa sta dominando, le ma 10, le ma 10 fantasticamente."
+
+[7:30-7:38] (confidence: -0.234)
+  "Ieri le ma 10 ha spaccato, l'ha fatto fare questo bello spike, oggi ha fatto poco negativo"
+
+[7:38-7:40] (confidence: -0.279)
+  "e il resto era tutto in positivo, quindi non sono andato a giocarmi che serveva andato"
+
+[7:40-7:47] (confidence: -0.279)
+  "a fare l'esploit. L'ha fatto, io ovviamente ho tenuto poco come al solito, però abbiamo"
+
+[7:47-7:55] (confidence: -0.279)
+  "fatto un bel gain anche qua, stiamo parlando di, anche qua, più 298 USDT. Ok, qua c'è,"
+
+[8:46-8:51] (confidence: -0.233)
+  "breakout interessante e da lì hai detto, da lì fai partire la bicicletta, quindi vai a cercare"
+
+[8:51-8:59] (confidence: -0.233)
+  "un ingresso con time frame a minuto, quindi qua c'era stato un massimo, c'era una resistenza,"
+
+[8:59-9:04] (confidence: -0.233)
+  "quando ho fatto il breakout sono entrato, poi dopo ha sporcato, ma comunque qua avevo lemma molto"
+
+[9:04-9:09] (confidence: -0.233)
+  "distante, quindi il 223 è sempre molto distante, non ha mai intaccato e qua l'ho chiuso molto"
+
+[9:09-9:14] (confidence: -0.233)
+  "presto perché dopo di fare questo breakout grande io non ce l'ho fatto tenere, ho chiuso, basta,"
+
+[9:38-9:46] (confidence: -0.224)
+  "poi vai a vedere col time frame a minuto un ingresso che abbia senso, per esempio poteva"
+
+[9:46-9:55] (confidence: -0.224)
+  "essere qua e poi lasci lavorare, tieni come stop il time frame più lungo, o vai su un 5 minuti,"
+
+[9:55-10:04] (confidence: -0.224)
+  "ma con la 223 ti dà tanto spazio, vedi anche in questo caso, ah questa è proprio di stamattina,"
+
+[13:27-13:33] (confidence: -0.235)
+  "del cambio di candela che quello è fantastico però ci vuole una bella candela il primo giorno"
+
+[13:33-13:38] (confidence: -0.235)
+  "e il secondo giorno iniziare in rosso e poi dopo partire su oppure se sei su un questo futuro se"
+
+[13:38-13:42] (confidence: -0.235)
+  "puoi fare il contrario che magari se ha fatto già lo spike e rialza è andato a trovare una"
+
+[13:42-13:47] (confidence: -0.235)
+  "resistenza puoi fare la tecnica della bicicletta al contrario cioè che punti è fatto che possa"
+
+[13:47-13:53] (confidence: -0.235)
+  "scendere e poi hai lo stop sempre con l'ema distante e man mano lo vai sempre a spostare"
+
+[14:17-14:23] (confidence: -0.236)
+  "avevo postato questo video dove spiegavo che avrei fatto il video di questa sera qua era"
+
+[14:23-14:27] (confidence: -0.236)
+  "torbo e il tempo non era bellissimo al ritorno in bicicletta ero con la mia famiglia quindi"
+
+[14:27-14:35] (confidence: -0.236)
+  "mia moglie mia figlia e con le bici elettriche e comunque c'era la salita da fare e praticamente"
+
+[14:35-14:41] (confidence: -0.236)
+  "abbiamo beccato cioè un certo punto fulmini, pioggia una cosa pazzesca insomma vedevo fulmini"
+
+[14:41-14:45] (confidence: -0.236)
+  "in lontananza e poi dopo iniziata proprio diluviare quindi ci andute fermare fortunatamente c'era"
+
+[15:36-15:45] (confidence: -0.204)
+  "però spiegavo appunto il fatto che sono convinto che se tu dai tanto aiuti comunque le persone"
+
+[15:45-15:49] (confidence: -0.204)
+  "questa comunità sta aiutando comunque tante persone non sono solo io che sto aiutando"
+
+[15:49-15:54] (confidence: -0.204)
+  "sono anche gli altri che sono arrivati che stanno aiutando i nuovi entrati che comunque è proprio"
+
+[15:54-15:58] (confidence: -0.204)
+  "una famiglia no io lo chiamano bull family proprio perché ci stiamo dando la mano tutti insieme"
+
+[15:58-16:03] (confidence: -0.204)
+  "io ho sempre detto allora io comunque sicuramente sto dando tanto nel mio tempo sto avendo comunque"
+
+[16:30-16:37] (confidence: -0.265)
+  "per aver imparato a fare questo mestiere ma anche per altre per altre cose detto ciò ero in questo"
+
+[16:37-16:43] (confidence: -0.265)
+  "ristorante diluviava bici elettriche fuori c'è niente ci siamo messi lì un po' a mangiare dei gelati"
+
+[16:43-16:52] (confidence: -0.265)
+  "e bere un po' acqua ovviamente e niente dopo c'è stato punto che va beh dai facciamo così chiamiamo"
+
+[18:09-18:15] (confidence: -0.367)
+  "fare giro di famiglia c'è sempre qualcosina e avevo 30 euro mi vergognavo quasi però comunque"
+
+[18:15-18:21] (confidence: -0.367)
+  "io dato questi 31 no no no assolutamente non devi assolutamente finirò lo faccio col cuore"
+
+[18:21-18:28] (confidence: -0.367)
+  "ci mancherebbe insomma al fine ho dovuto insistere proprio io l'ho fatto c'è perché io l'ho messo"
+
+[18:28-18:33] (confidence: -0.367)
+  "in tasca e niente quindi neanche i soldi voleva comunque ovviamente io lasciati i soldi e niente"
+
+[19:28-19:33] (confidence: -0.237)
+  "porteranno solo delle essere solo delle cose positive e anche voi sto vedendo che tantissimi"
+
+[19:33-19:40] (confidence: -0.237)
+  "di voi che stanno facendo parte di questa nuova di questo nuovo mondo che sono una famiglia mi"
+
+[19:40-19:45] (confidence: -0.237)
+  "piace tantissimo non leggo appunto di che date una mano ai nuovi entrati postati video gli fate"
+
+[19:45-19:50] (confidence: -0.237)
+  "capire il percorso di fatte capire le stanze da seguire fate capire gruppo telegram come"
+
+[19:50-19:57] (confidence: -0.237)
+  "funziona insomma mi piace proprio che no sembrate proprio qualcuno di nuovo entra in casa vostra e"
+
+[20:49-20:56] (confidence: -0.161)
+  "telegram e due gruppi telegram sulla chat siamo arrivati quasi a mille e poi discord che"
+
+[20:56-21:03] (confidence: -0.161)
+  "saloperativa veramente sta andando a bomba e attenzione perché si stanno muovendo anche il"
+
+[21:03-21:08] (confidence: -0.161)
+  "gruppo anche la stanza nasdaq e piazza fari quindi presto io penso che per settembre partirà la"
+
+[21:08-21:14] (confidence: -0.161)
+  "saloperativa anche per il nasdaq e piazza fari e niente dai scriveteli fate parte anche voi di"
+
+[21:14-21:19] (confidence: -0.161)
+  "questa bellissima famiglia ci saranno tante persone che vorranno dare una mano come io ho fatto loro"
+

@@ -1,0 +1,186 @@
+video:
+  id: BULL_T_005
+  series: tecniche
+  title: "Tecnica del Daily 3 - Segnali BullBot e stop con TF 30min EMA 223"
+  video_index: 5
+  duration_minutes: 34
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_05_01
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, ema223, stop_loss, tf30ema60]
+    source:
+      timecode: "09:56-10:06"
+    conditions:
+      - daily_long_active == true
+      - timeframe_for_stop == 30m
+      - candle_close_below_ema223_30m == true
+    action:
+      - EXIT_POSITION
+    applicability:
+      timeframes: [30m]
+      market_regime: []
+    rationale: "The maximum stop for a daily technique trade is EMA 223 on the 30-minute timeframe, which is much tighter than EMA 10 on the daily."
+    notes: "This is Bull's recommended compromise: tighter than daily EMA 10 stop, but wide enough to let the trade breathe. Wait for 30m candle close."
+
+  - id: BULL_T_05_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, entry, breakout, candle_pattern]
+    source:
+      timecode: "04:14-05:08"
+    conditions:
+      - daily_signal_received == true
+      - conformazione_visible_on_5m_or_30m == true
+      - book_level_identified == true OR breakout_level_identified == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: [trend_up]
+    rationale: "When a daily signal arrives, do not enter blindly. Find a conformazione (pattern) on a lower timeframe (5m or 30m) and use the book for precise entry."
+    notes: "Bull enters only when he sees a conformazione at 1m, 5m, or 30m. The daily signal is the context; the lower TF conformazione is the trigger."
+
+  - id: BULL_T_05_03
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: MONITORING
+    severity: SOFT
+    tags: [daily, stop_loss, bicicletta, breakeven]
+    source:
+      timecode: "09:22-09:34"
+    conditions:
+      - daily_long_active == true
+      - position_in_profit == true
+      - bicicletta_mode == true
+    action:
+      - MOVE_SL_TO_BREAKEVEN
+    applicability:
+      timeframes: [5m, 30m]
+      market_regime: []
+    rationale: "The bicicletta technique variant puts stop at zero immediately after entry goes in the right direction."
+    notes: "Bicicletta is a different technique from pure daily. With pure daily, the stop stays at EMA 10 daily or EMA 223 on 30m. With bicicletta, stop goes to breakeven."
+
+  - id: BULL_T_05_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, ema223, lateralization, breakout]
+    source:
+      timecode: "14:00-15:00"
+    conditions:
+      - timeframe == daily
+      - ema223_daily_recently_appeared == true
+      - price_breaking_above_ema223_daily == true
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "When EMA 223 on the daily first appears and price breaks above it, this is a powerful setup because 223 is a major resistance that flips to support."
+    notes: "EMA 223 takes 223 candles to form. When it first appears on a newer asset and gets broken, the move can be explosive."
+
+  - id: BULL_T_05_05
+    entity_type: INVALIDATION
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [daily, btc_index, regime_filter, risk_management]
+    source:
+      timecode: "29:28-31:02"
+    conditions:
+      - btc_daily_risk_of_downward_spike == true
+      - btc_price_near_support_with_small_candles == true
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: []
+    rationale: "When Bitcoin's daily shows risk of downward spikes (small indecisive candles near support), avoid daily entries on altcoins."
+    notes: "In this scenario, use bicicletta technique (short timeframe with stop at zero) instead of daily holds. Only do daily when BTC risks upward spikes."
+
+  - id: BULL_T_05_06
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [daily, all_time_high, stop_loss, risk_management]
+    source:
+      timecode: "20:42-21:06"
+    conditions:
+      - asset_approaching_all_time_high == true
+      - price_arrived_straight_without_consolidation == true
+      - stop_distance_pct > 10
+    action:
+      - SKIP_TRADE
+    applicability:
+      timeframes: [daily]
+      market_regime: [trend_up]
+    rationale: "When an asset arrives at all-time highs in a straight line without consolidation, the stop is too far away for a daily entry."
+    notes: "Prefer assets that have spiked, lateralized, then recharge before breaking highs. Straight-line arrivals have no nearby support for stops."
+
+  - id: BULL_T_05_07
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [daily, shimano, breakout, tf30ema60]
+    source:
+      timecode: "27:52-28:06"
+    conditions:
+      - timeframe == 30m
+      - shimano_pattern_detected_30m == true
+      - price_breaking_out_of_shimano == true
+    action:
+      - ENTER_LONG
+    applicability:
+      timeframes: [30m]
+      market_regime: [trend_up]
+    rationale: "A shimano pattern breakout on the 30-minute timeframe acts as a daily entry. It provides the consolidation and compression needed."
+    notes: "Shimano at 30m is equivalent to a daily conformazione. Use EMA 223 on 30m as the stop."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_05_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, risk_management, psychology]
+    source:
+      timecode: "23:22-23:48"
+    statement: "When you have gains, take them. Do not hold for 100% more when you already have a good profit. Use bullbot signals to find the next trade."
+    rationale: "Greed destroys daily trades. The bullbot provides continuous new signals, removing the fear of missing out after closing a winner."
+
+  - id: BULL_T_05_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, bicicletta, scalping]
+    source:
+      timecode: "08:18-08:24"
+    statement: "The bicicletta technique is a variant where the stop is immediately placed at breakeven, unlike pure daily technique."
+    rationale: "Distinguishing between bicicletta and daily technique prevents confusion about stop placement rules."
+
+  - id: BULL_T_05_CTX_03
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [daily, entry, book]
+    source:
+      timecode: "25:42-26:14"
+    statement: "If you cannot read the order book, enter at the breakout level (superamento). Reading the book allows anticipating entries for better prices."
+    rationale: "Book reading is an advanced skill that improves entry prices but is not required for the daily technique."
+
+summary:
+  total_machine_executable: 7
+  total_context_only: 3
+  core_message: "Daily technique part 3 introduces the EMA 223 on the 30-minute timeframe as the optimal stop level, uses bullbot signals for trade selection, and emphasizes finding lower-timeframe conformazioni before entering daily setups."

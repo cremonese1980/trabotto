@@ -1,0 +1,112 @@
+video:
+  id: BULL_T_001
+  series: tecniche
+  title: "Terzo Tocco Plus e Terzo Tocco Plus Plus"
+  video_index: 1
+  duration_minutes: 4
+
+entities:
+
+  # === MACHINE-EXECUTABLE ===
+
+  - id: BULL_T_01_01
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, breakout, retest, trigger]
+    source:
+      timecode: "00:00-00:31"
+    conditions:
+      - terzo_tocco_detected == true
+      - touch_count(resistance_level) >= 3
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h, 4h, daily]
+      market_regime: []
+    rationale: "The terzo tocco (triple touch) pattern is a base setup where price tests the same level three times before breaking out."
+    notes: "This video builds on the basic terzo tocco by adding conditions that make it more powerful (plus and plus plus variants)."
+
+  - id: BULL_T_01_02
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: HARD
+    tags: [terzo_tocco, daily, trigger, timeframe]
+    source:
+      timecode: "00:46-01:14"
+    conditions:
+      - timeframe >= 30m
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h, 4h, daily]
+      market_regime: []
+    rationale: "Terzo tocco plus requires minimum 30-minute timeframe for validity."
+    notes: "Bull recommends this as the first technique for beginners due to the higher timeframe reducing noise."
+
+  - id: BULL_T_01_03
+    entity_type: SETUP
+    category: MACHINE_EXECUTABLE
+    scope: TRADE_EXECUTION
+    severity: HARD
+    tags: [terzo_tocco, daily, trigger, continuation]
+    source:
+      timecode: "01:24-02:33"
+    conditions:
+      - terzo_tocco_detected == true
+      - first_touch_day == yesterday
+      - first_touch_level == yesterday_high OR first_touch_level == yesterday_low
+    action:
+      - CLASSIFY_SETUP
+    applicability:
+      timeframes: [30m, 1h, 4h]
+      market_regime: []
+    rationale: "Terzo tocco plus requires the first touch to be from the previous day, making it coincide with yesterday's high/low trigger level."
+    notes: "Yesterday's high/low is already a trigger level in the bull web system. When a terzo tocco aligns with this level, the setup becomes 'plus' (enhanced)."
+
+  - id: BULL_T_01_04
+    entity_type: RULE
+    category: MACHINE_EXECUTABLE
+    scope: PRE_FILTER
+    severity: SOFT
+    tags: [terzo_tocco, daily, timeframe]
+    source:
+      timecode: "02:34-03:16"
+    conditions:
+      - reference_timeframe == 24h (not daily candle)
+    action:
+      - MONITOR_LEVEL
+    applicability:
+      timeframes: [30m, 1h]
+      market_regime: []
+    rationale: "Bull uses 24-hour reference instead of daily candle to identify the first touch, because the daily candle opens at 2 AM and may miss intraday moves."
+    notes: "The 24h window captures the actual high/low more accurately than the daily candle which starts at a fixed time."
+
+  # === CONTEXT-ONLY ===
+
+  - id: BULL_T_01_CTX_01
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, beginner]
+    source:
+      timecode: "00:59-01:14"
+    statement: "Terzo tocco plus is the recommended first technique for beginners in the bull family."
+    rationale: "The higher timeframe requirement (30m+) and clear trigger levels make it easier to learn and less prone to false signals."
+
+  - id: BULL_T_01_CTX_02
+    entity_type: GUIDELINE
+    category: CONTEXT_ONLY
+    scope: GLOBAL
+    tags: [terzo_tocco, trigger]
+    source:
+      timecode: "01:51-02:09"
+    statement: "Three automatic trigger levels exist: cambio colore, yesterday's high, and yesterday's low."
+    rationale: "Understanding the trigger framework helps identify when a terzo tocco coincides with an automatic trigger, upgrading it to plus status."
+
+summary:
+  total_machine_executable: 4
+  total_context_only: 2
+  core_message: "Terzo tocco plus is a terzo tocco where the first touch aligns with yesterday's high or low, making it a more powerful setup. Minimum timeframe is 30 minutes."

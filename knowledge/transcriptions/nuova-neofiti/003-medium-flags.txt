@@ -1,0 +1,200 @@
+# Low-confidence segments for: 003_Come_si_leggono_le_Candele_Corso_di_trading_online_Gratis.mp3
+# Total flagged: 65
+# Review these by listening to the video at the given timecodes.
+# Fix the text directly in the main transcript file after review.
+
+[3:23-3:28] (confidence: -0.602)
+  "finta, ma poi vedrai, allora per esempio questa candela qua dove ha aperto?"
+
+[3:28-3:34] (confidence: -0.602)
+  "qui esattamente qua, poi cosa ha fatto?"
+
+[3:34-3:40] (confidence: -0.602)
+  "fino qua, probabilmente che giù, ok va bene fino a?"
+
+[3:40-3:42] (confidence: -0.602)
+  "fino qua, poi?"
+
+[3:42-3:43] (confidence: -0.602)
+  "su?"
+
+[3:43-3:45] (confidence: -0.602)
+  "sì, fino a?"
+
+[3:45-3:49] (confidence: -0.602)
+  "fino qua, poi?"
+
+[3:49-3:49] (confidence: -0.602)
+  "e poi?"
+
+[3:49-3:51] (confidence: -0.602)
+  "chiuso qua?"
+
+[3:53-3:58] (confidence: -0.405)
+  "esatto, poi ho chiuso qua, candela dopo?"
+
+[3:58-4:08] (confidence: -0.405)
+  "questo è difficile, giustamente è largo, quindi questa forma la conformazione con un livello"
+
+[4:08-4:14] (confidence: -0.405)
+  "bad, che non ha mai superato quindi quando capirai la tecnica bad questo non ha mai iniziato"
+
+[4:14-4:16] (confidence: -0.405)
+  "ma ok, la candela dopo dove ha aperto?"
+
+[4:16-4:20] (confidence: -0.405)
+  "qui, sì, poi?"
+
+[4:20-4:20] (confidence: -0.405)
+  "giù"
+
+[4:20-4:22] (confidence: -0.405)
+  "fino a dove?"
+
+[5:12-5:19] (confidence: -0.553)
+  "creato un'altra conformazione, questo poi ha funzionato e qua il cash entrava, e allora due"
+
+[5:19-5:24] (confidence: -0.553)
+  "letture di questa candela qua del bad con la X, quindi qua dove è iniziata questa candela?"
+
+[5:24-5:25] (confidence: -0.553)
+  "qui?"
+
+[5:25-5:25] (confidence: -0.553)
+  "qui?"
+
+[5:25-5:26] (confidence: -0.553)
+  "qui?"
+
+[5:26-5:28] (confidence: -0.553)
+  "qui?"
+
+[5:28-5:29] (confidence: -0.553)
+  "qui?"
+
+[5:29-5:29] (confidence: -0.553)
+  "qui?"
+
+[5:29-5:30] (confidence: -0.553)
+  "qui?"
+
+[5:30-5:31] (confidence: -0.553)
+  "qui?"
+
+[5:31-5:32] (confidence: -0.553)
+  "qui?"
+
+[5:32-5:33] (confidence: -0.553)
+  "qui?"
+
+[5:33-5:34] (confidence: -0.553)
+  "qui?"
+
+[5:34-5:40] (confidence: -0.553)
+  "poi su fino a qua, fino a qua, superando quindi il livello bad, ok? e poi ha chiuso dove?"
+
+[5:40-5:41] (confidence: -0.553)
+  "qua"
+
+[6:09-6:14] (confidence: -0.185)
+  "esplodere, potrebbe esplodere, qua ha fatto capire che invece non c'era quell'esplosione,"
+
+[6:14-6:19] (confidence: -0.185)
+  "poi capirai più avanti il perché ci deve essere quell'esplosione, ed è lì sgammiamo che in realtà"
+
+[6:19-6:25] (confidence: -0.185)
+  "era solo una finta e quindi vale il contrario, che il prezzo non salirà ma scenderà, e di"
+
+[6:25-6:31] (confidence: -0.185)
+  "fatti poi ha fatto la sua conformazione, ha creato un minimo che è bad short, alla rottura qua ha"
+
+[6:31-6:36] (confidence: -0.185)
+  "fatto quello che qua non ha fatto, qua era una finta quindi si chiudeva e perdevi quel poco che era"
+
+[8:40-8:46] (confidence: -0.18)
+  "di pulizia nel trading, quindi quando apri un grafico che fa veramente schifo, e ve lo faccio vedere"
+
+[8:46-8:52] (confidence: -0.18)
+  "sempre su bitcoin, che a quattro ore invece funziona bene, quindi vedete che la media mobile,"
+
+[8:52-8:57] (confidence: -0.18)
+  "per esempio la gialla, lo tiene bene, quando lo rompe però fa sempre chiusure molto precise,"
+
+[8:57-9:03] (confidence: -0.18)
+  "da lì possiamo capire l'andamento, ok? poi quando rompe l'emba vedi accelera, questo è pulito,"
+
+[10:22-10:28] (confidence: -0.141)
+  "che devono arrivare alla banca, la strada principale addirittura il cartello che ti"
+
+[10:28-10:34] (confidence: -0.141)
+  "spiega che cos'è, il cartello è la tecnica, tu però puoi scegliere di operare anche su queste"
+
+[10:34-10:40] (confidence: -0.141)
+  "strade dove andrai a morire come prima, dove non è illuminato, dove addirittura la strada è sbarata"
+
+[10:40-10:44] (confidence: -0.141)
+  "ed è ovviamente molto più difficile, quasi impossibile arrivare alla banca, eccoci qua,"
+
+[10:44-10:50] (confidence: -0.141)
+  "hai un sentiero bello pulito, illuminato col cartello, vuol dire che segue le media mobili,"
+
+[11:17-11:27] (confidence: -0.229)
+  "questo fa veramente schifo, qua invece è bello pulito, quando lo vediamo prima, poi può succedere"
+
+[11:27-11:33] (confidence: -0.229)
+  "che c'è un momento in cui fa schifo e tu dici ok, su quel titolo non opero, opero su qualcos'altro,"
+
+[11:33-11:38] (confidence: -0.229)
+  "ma non hai detto che sarà schifo per sempre, perché a un certo punto se arriva qualcuno con"
+
+[11:38-11:43] (confidence: -0.229)
+  "borse di soldi a comprare, vedrete che il grafico poi diventa pulito, quando spiegherò il book,"
+
+[12:07-12:13] (confidence: -0.2)
+  "vuole comprare, questo è il book di Bybit, gli ho preso Bybit, quello che sponsorizzava"
+
+[12:13-12:19] (confidence: -0.2)
+  "la F1, brava, si è messo gli occhiali ragazzi, quindi gli sta interessando la cosa, allora qua"
+
+[12:19-12:25] (confidence: -0.2)
+  "vedete i livelli, i prezzi, ok? quindi il prezzo più basso è quello più giù, è quello più vicino"
+
+[12:25-12:30] (confidence: -0.2)
+  "a quello reale, questo è il prezzo battuto, 0.21627, questo è lo spread di cui parlavamo"
+
+[12:30-12:39] (confidence: -0.201)
+  "nelle altre puntate, 21.500 euro, facciamo 21.500 euro, e qua sono 21.800 euro,"
+
+[12:39-12:47] (confidence: -0.201)
+  "ok? mettiamoci in una macchina, è una panda, qua lo vogliono comprare la panda a 21.500 euro,"
+
+[12:47-12:54] (confidence: -0.201)
+  "qua invece c'è qualcuno che vuole vendere la panda a 21.800, l'ultimo scambio, quindi l'ultimo"
+
+[12:54-13:01] (confidence: -0.215)
+  "che ha comprato e venduto l'ha fatto a 21.627, quindi se lui ha fretta di vendere abbasserà il"
+
+[13:01-13:10] (confidence: -0.215)
+  "prezzo a 21.500, quindi avrà abbassare di 300 euro, se qualcuno vuole comprare, adesso con certezza"
+
+[13:10-13:16] (confidence: -0.215)
+  "di comprare, deve comprare a 21.800, ok? poi qua ci fa vedere la quantità in realtà, qua fa vedere"
+
+[13:16-13:26] (confidence: -0.133)
+  "che c'è 9.000 dollari a questo prezzo, quindi a 0.0218 ci sono 9.000 dollari in vendita, qua"
+
+[13:26-13:33] (confidence: -0.133)
+  "ci sono solo 24 dollari in vendita ma qua ce n'è 22.000 dollari in vendita, cosa significa? questo"
+
+[13:33-13:40] (confidence: -0.133)
+  "è quel camion parcheggiato fuori dal negozio pieno di scarpe che sta per entrare, quindi non"
+
+[14:00-14:08] (confidence: -0.211)
+  "scarsità quindi semplicemente deve finire quel carico che ha il camion e dopo vedete qua tutto"
+
+[14:08-14:13] (confidence: -0.211)
+  "libero 620, 0, 300, vuol dire che dopo i prezzi salgono ma non ci sono persone che vogliono vendere"
+
+[14:13-14:20] (confidence: -0.211)
+  "quindi dopo se tu l'hai comprato qua è facile venderlo qua, che non c'è niente, se tu qua compri"
+
