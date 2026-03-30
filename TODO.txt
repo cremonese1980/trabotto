@@ -1,95 +1,22 @@
 TODO
 
-*	next step to collect all rules?
-
 *	telegram-raw duplicated in ingest
 
+*	github actions + github quality check Review
+*	docker-compose.yml Review
 
-*	github actions
-*	github quality check
-
-*	docker-compose.yml
 
 ___________________________
-OPUS
-Read ALL .yml files in knowledge/rules/ (all subdirectories recursively).
-Read knowledge/vocabulary-clean.json for terminology reference.
-Read the review report at knowledge/rules/report-claude.md for known issues.
+Codex
 
-Create knowledge/rules/consolidated-rules.yml containing:
+*	MDC accross modules
+*	review rule loader
+* 	bybit impl
+* 	module testing
 
-1. ONLY entities with category: MACHINE_EXECUTABLE (skip all CONTEXT_ONLY)
-2. DEDUPLICATE: if two entities from different videos have the same conditions 
-   and action (even with different IDs), keep only ONE — pick the one with:
-   - more specific conditions
-   - more precise timecodes
-   - from the tecniche playlist (preferred over neofiti/live)
-   Add a field "also_in:" listing the other video IDs where this rule appears.
-3. FIX known issues from report-claude.md:
-   - Replace "conviction_level" with observable conditions
-   - Replace "chart_clean", "trend_very_strong", "asset_dormant" with parametric conditions
-   - Fix ID prefix: neofiti should use N not P
-   - Reclassify iceberg/execution mechanics as CONTEXT_ONLY (exclude from this file)
-4. NORMALIZE language: all rationale and notes in English
-5. ADD a field "source_files:" listing all yml files where this rule was found
 
-Sort by: strategy name, then severity (HARD first), then scope.
 
-Also create knowledge/rules/consolidated-context.yml with ALL CONTEXT_ONLY 
-entities, deduplicated, for the RAG system.
-
-Also create knowledge/rules/RULES_INDEX.md with:
-- Total rules count by strategy
-- Total rules count by scope  
-- Total rules count by severity
-- List of all unique strategies found
-- List of all unique conditions used (for building the rule engine evaluator)
-- Image linking: map knowledge/evidence/ filenames to matching rules by tag
-
-Do NOT modify any original .yml files.
-
-___________________________
-SONNET
-Read docs/ARCHITECTURE.md for context.
-
-In trabotto-infrastructure, create the Kafka producer/consumer skeleton:
-
-1. Add spring-kafka dependency to trabotto-infrastructure/pom.xml
-
-2. Create com.trabotto.infrastructure.kafka.producer.SignalProducer:
-   - Injects KafkaTemplate<String, String>
-   - Method publishSignal(Signal signal) → publishes to "signals.incoming"
-   - Key = signal.pair(), value = JSON serialized signal
-   - Logs every publish
-
-3. Create com.trabotto.infrastructure.kafka.consumer.SignalConsumer:
-   - @KafkaListener on "signals.incoming"
-   - Receives the message, deserializes to Signal
-   - For now: just logs "Received signal: {pair} {strategy} {timeframe}"
-   - TODO comment: "wire to SignalProcessingUseCase"
-
-4. Create com.trabotto.infrastructure.kafka.config.KafkaConfig:
-   - @Configuration class
-   - Topic creation bean for: signals.incoming, decisions.pending, 
-     orders.approved, orders.executed, orders.rejected,
-     monitor.tick, monitor.action, trades.closed,
-     shadow.opened, shadow.closed
-
-5. Update docker-compose.yml: add Kafka + Zookeeper services
-   (ports 9092 for Kafka, 2181 for Zookeeper)
-
-6. Add application-dev.yml in trabotto-boot with:
-   - spring.kafka.bootstrap-servers=localhost:9092
-   - spring.kafka.consumer.group-id=trabotto-dev
-
-7. Write one integration test using Testcontainers:
-   - Start Kafka container
-   - Publish a test Signal via SignalProducer
-   - Verify SignalConsumer receives it
-   - Assert pair and strategy match
-
-Comments in English. Production-grade code.
-___________________________
+_______________
 
 LOW priority
 
@@ -103,9 +30,12 @@ LOW priority
 *	Download whole channel's trade's images from discord
 
 
-
+____________________________________________________________________________________________________________________________________
 
 DONE
+
+
+
 
 *	Claude Code for rules review
 * 	.venv dentro ingest??
