@@ -1,5 +1,9 @@
 TODO
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 *	telegram-raw duplicated in ingest
 
 *	github actions + github quality check Review
@@ -34,11 +38,15 @@ ________________________________________________________________________________
 
 DONE
 
+<<<<<<< Updated upstream
 
 
 
 *	Claude Code for rules review
 * 	.venv dentro ingest??
+=======
+*	next step to collect all rules?
+>>>>>>> Stashed changes
 *	Codex for codifing rules from trasnscriptions for tecniche di trading
 *	Codex for codifing rules from trasnscriptions for Nuova playlist per neofiti
 *	Codex for codifing rules from trasnscriptions for Live trading crypto analisi
