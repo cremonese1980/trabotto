@@ -196,6 +196,18 @@ public interface ExchangePort {
     boolean isPairAvailable(String pair);
 
     /**
+     * Get order book depth for liquidity assessment.
+     * Used by LIQUIDITY_GATE rules before entry.
+     */
+    OrderBookSnapshot getOrderBookDepth(String pair, int depth);
+
+    /**
+     * Get 24h trading volume for a pair.
+     * Low volume pairs risk unfilled orders.
+     */
+    BigDecimal get24hVolume(String pair);
+
+    /**
      * Testnet vs live is a config concern, not a code concern.
      */
     boolean isTestnet();
@@ -342,6 +354,32 @@ Signal + MarketData → RuleEngine.evaluate(signal, marketData, ruleSet)
   ML can be introduced to: calibrate confidence scores, weight rules by historical
   win rate, optimize thresholds. But ML requires data first — and data comes from V1.
 
+
+### 5.1 Consolidated Rules (SSOT)
+
+Rules are stored in `knowledge/rules/consolidated-rules.yml` — the Single Source of Truth.
+
+- 743 MACHINE_EXECUTABLE rules, deduplicated from ~200 Bull videos across 6 playlists
+- 470 CONTEXT_ONLY entities in `consolidated-context.yml` (for RAG)
+- Index in `RULES_INDEX.md` with statistics and image linking
+
+**Rule structure:**
+- id, entity_type (SETUP/RULE/INVALIDATION), category, scope, severity
+- tags (for strategy matching), conditions (pseudo-code), action (standard list)
+- stop_loss, take_profit (when specified), applicability, rationale, notes
+- source_files (traceability to original video)
+
+**Standard actions (DRAFT — will expand):**
+ENTER_LONG, ENTER_SHORT, EXIT_POSITION, SKIP_TRADE, MOVE_SL_TO_BREAKEVEN,
+REDUCE_SIZE, TIGHTEN_TP, MONITOR_LEVEL, CLASSIFY_SETUP, WAIT
+
+**Rule Engine v1 does NOT filter by timeframe.** Bull's conformations are identical 
+across all TFs — only SL/TP magnitude and monitoring frequency scale with TF. 
+Exception: a few rules are explicitly daily-only (cambio_colore, bicicletta).
+
+**Perfezione** (chart cleanliness) is a first-class quality signal reflecting 
+Bull's "chi comanda" principle: clean EMAs = someone controlling with money = predictable.
+
 ---
 
 ## 6. Kafka Topics
@@ -361,6 +399,24 @@ Signal + MarketData → RuleEngine.evaluate(signal, marketData, ruleSet)
 
 **Idempotency:** every message has a deterministic key.  
 Duplicate signals (same pair + strategy + timestamp window) are deduplicated.
+
+### 6.1 Watchlist / Incubator
+
+Not all signals warrant immediate action. Some show developing conformations 
+that may become tradeable after N more candles.
+
+| Topic                  | Key    | Purpose                                    |
+|------------------------|--------|--------------------------------------------|
+| `signals.watchlist`    | pair   | Signals with verdict WAIT or MONITOR_LEVEL |
+
+**Flow:**
+1. Signal arrives → rule engine evaluates → verdict = WAIT or MONITOR_LEVEL
+2. Signal published to `signals.watchlist`
+3. WatchlistMonitor re-evaluates periodically (configurable per TF)
+4. If conditions improve → promote to `decisions.pending`
+5. If expired (setup invalidated, too much time) → discard
+
+**Status:** Topic defined. Re-evaluation logic is TODO.
 
 ---
 
@@ -639,15 +695,17 @@ trabotto/
 │
 ├── ingest/                              # Python sidecar (NOT a Maven module)
 │   ├── pyproject.toml
-│   ├── requirements.txt                 # telethon, confluent-kafka, etc.
+│   ├── requirements.txt
+│   ├── Dockerfile
 │   ├── src/
-│   │   ├── telegram_listener.py         # Telethon Client API → listen to BullBot channel
-│   │   ├── signal_normalizer.py         # parse raw message → structured signal JSON
+│   │   ├── telegram_listener.py         # Telethon Client API → BullBot channel
+│   │   ├── signal_normalizer.py         # parse raw message → structured signal dict
 │   │   ├── kafka_producer.py            # publish to signals.incoming
-│   │   └── transcribe.py               # audio transcription utility
-│   │   # TODO: bullweb_poller.py — BullWeb REST API + Cognito SRP auth (fallback)
-│   ├── tests/
-│   └── Dockerfile
+│   │   └── transcribe.py               # Whisper transcription utility
+│   │   # TODO: bullweb_poller.py — BullWeb REST API fallback
+│   └── tests/
+│       ├── test_signal_normalizer.py    # full coverage, all strategies
+│       └── test_telegram_listener.py    # smoke tests
 │
 ├── trabotto-domain/                     # pure domain model, zero dependencies
 │   └── src/main/java/
@@ -656,31 +714,39 @@ trabotto/
 │           ├── port/                    # SignalSourcePort, ExchangePort, AiAdvisoryPort
 │           └── engine/                  # RuleEngine, PolicyEngine, DecisionAggregator
 │
-├── trabotto-infrastructure/             # all adapters
+├── trabotto-infrastructure/
 │   └── src/main/java/
 │       └── com/trabotto/infrastructure/
 │           ├── exchange/
-│           │   ├── bybit/              # BybitExchangeAdapter
-│           │   └── binance/            # (future)
+│           │   └── bybit/              # BybitExchangeAdapter (TODO)
 │           ├── ai/
-│           │   ├── ollama/             # OllamaAdvisoryAdapter
-│           │   ├── anthropic/          # AnthropicAdvisoryAdapter
-│           │   └── openai/             # OpenAiAdvisoryAdapter
+│           │   ├── ollama/             # OllamaAdvisoryAdapter (TODO)
+│           │   ├── anthropic/          # AnthropicAdvisoryAdapter (TODO)
+│           │   └── openai/             # OpenAiAdvisoryAdapter (TODO)
 │           ├── persistence/
-│           │   └── postgresql/         # DecisionRepository, RuleRepository,
-│           │                           # ShadowTradeRepository
-│           └── kafka/
-│               ├── producer/           # DecisionProducer, OrderProducer, MonitorProducer
-│               └── consumer/           # SignalConsumer, DecisionConsumer, OrderConsumer
+│           │   └── postgresql/         # Flyway migrations V001-V003 ✓
+│           ├── rules/
+│           │   ├── YamlRuleLoader.java          # loads consolidated-rules.yml ✓
+│           │   ├── ConsolidatedRule.java         # YAML deserialization DTO ✓
+│           │   └── ConsolidatedRulesYaml.java   # wrapper for top-level YAML ✓
+│           ├── kafka/
+│           │   ├── config/
+│           │   │   ├── KafkaConfig.java         # topic definitions ✓
+│           │   │   └── ObjectMapperConfig.java   # Jackson config ✓
+│           │   ├── producer/
+│           │   │   └── SignalProducer.java       # publishes to signals.incoming ✓
+│           │   └── consumer/
+│           │       └── SignalConsumer.java       # receives signals, calls use case ✓
 │
-├── trabotto-application/                # use cases, orchestration
+├── trabotto-application/
 │   └── src/main/java/
 │       └── com/trabotto/application/
-│           ├── SignalProcessingUseCase.java
-│           ├── DecisionExecutionUseCase.java
-│           ├── TradeMonitoringUseCase.java
-│           ├── ShadowTradeUseCase.java  # track skipped trades
-│           └── RuleManagementUseCase.java
+│           ├── engine/
+│           │   └── DefaultRuleEngine.java       # strategy tag matching, confidence ✓
+│           ├── SignalProcessingUseCase.java      # signal → rule engine → log verdict ✓
+│           ├── DecisionExecutionUseCase.java     # (TODO)
+│           ├── TradeMonitoringUseCase.java       # (TODO)
+│           └── ShadowTradeUseCase.java           # (TODO)
 │
 ├── trabotto-boot/                       # Spring Boot entry point, config
 │   └── src/main/java/
@@ -798,7 +864,7 @@ This clean boundary means:
 
 - [x] ~~Telegram channel: confirm it stays active post-April 2025~~ → CONFIRMED active
 - [x] ~~TDLib vs Telethon~~ → **Telethon (Python sidecar)** — pragmatism wins
-- [ ] BullBot signal format: catalog ALL strategy types and message patterns
+- [x] BullBot signal format: catalog ALL strategy types and message patterns → DONE (25+ strategies cataloged from live Telegram data)
 - [ ] Bybit API: testnet account setup + API keys
 - [ ] Ollama model selection for advisory (llama3, mistral?)
 - [ ] Ollama model selection for monitoring (must be fast + cheap)
@@ -806,6 +872,11 @@ This clean boundary means:
 - [ ] How to handle signals for pairs not available on Bybit testnet
 - [ ] Trade Monitor: exact polling intervals per TF (needs real-world tuning)
 - [ ] BTC index: which TF candles to fetch for BTC context?
+- [ ] Liquidity gate: getOrderBookDepth() and get24hVolume() — when to implement?
+- [ ] Watchlist re-evaluation: how often, what triggers promotion?
+- [ ] Standard actions list: current list is DRAFT, needs expansion from live trading
+- [ ] Rule language: replace tag-in-description hack with proper Tag field in domain Rule
+- [ ] Evidence images: automated linking to rules via RULES_INDEX.md
 
 ---
 
@@ -825,3 +896,18 @@ This clean boundary means:
 | Overfitting rules to past data    | Out-of-sample validation period               |
 | Slippage on illiquid pairs        | Liquidity filter in policy engine             |
 | Cascading losses                  | Max daily loss + cooldown + kill switch        |
+
+---
+
+## 16. Environments
+
+| Environment | AI Provider    | Exchange          | Rules        | Purpose                    |
+|-------------|----------------|-------------------|--------------|----------------------------|
+| Dev         | Ollama (local) | Bybit testnet     | Full ruleset | Development, unit tests    |
+| Staging     | Claude/GPT     | Bybit testnet     | Full ruleset | Integration, paper trading |
+| Prod        | Claude/GPT     | Bybit live        | Full ruleset | Live trading (5 USDT min)  |
+
+All environments use the same codebase. Differences are config-only:
+- `bybit.base-url`: testnet.bybit.com vs api.bybit.com
+- `trabotto.ai.provider`: ollama / anthropic / openai
+- `trabotto.mode`: DEV / STAGING / PROD
