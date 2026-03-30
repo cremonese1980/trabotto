@@ -14,6 +14,10 @@ import org.springframework.kafka.config.TopicBuilder;
 @EnableKafka
 public class KafkaConfig {
 
+    public static final String SIGNALS_INCOMING = "signals.incoming";
+    public static final String SIGNALS_WATCHLIST = "signals.watchlist";
+    public static final String DECISIONS_PENDING = "decisions.pending";
+
     // Normalised signals entering the decision pipeline
     @Bean
     public NewTopic signalsIncoming() {
