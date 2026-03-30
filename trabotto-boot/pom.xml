@@ -5,15 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.0</version>
-        <relativePath/>
+        <groupId>com.trabotto</groupId>
+        <artifactId>trabotto</artifactId>
+        <version>0.1.0</version>
     </parent>
 
-    <groupId>com.trabotto</groupId>
     <artifactId>trabotto-boot</artifactId>
-    <version>0.1.0</version>
     <name>trabotto-boot</name>
 
     <properties>
@@ -24,17 +21,46 @@
         <dependency>
             <groupId>com.trabotto</groupId>
             <artifactId>trabotto-domain</artifactId>
-            <version>0.1.0</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.trabotto</groupId>
             <artifactId>trabotto-application</artifactId>
-            <version>0.1.0</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.trabotto</groupId>
             <artifactId>trabotto-infrastructure</artifactId>
-            <version>0.1.0</version>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
